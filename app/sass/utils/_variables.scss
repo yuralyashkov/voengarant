@@ -1,0 +1,8 @@
+$mainFontFamily:"myriad-pro", sans-serif;
+$container:1325px;
+
+@mixin breakpoint($breakpoint) {
+  @media screen and ($breakpoint){
+    @content;
+  }
+}

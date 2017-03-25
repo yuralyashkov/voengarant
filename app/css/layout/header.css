@@ -1,0 +1,11 @@
+header .top {
+  height: 41px;
+  background: #303030;
+  overflow: hidden; }
+
+header nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: middle; }
+  header nav ul li a {
+    color: #f1f1f1; }

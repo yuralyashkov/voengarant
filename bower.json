@@ -17,6 +17,7 @@
     "swiper": "^3.4.2",
     "jquery-ui": "^1.12.1",
     "bootstrap-sass": "^3.3.7",
-    "normalize-css": "^5.0.0"
+    "normalize-css": "^5.0.0",
+    "breakpoint-sass": "^2.7.1"
   }
 }

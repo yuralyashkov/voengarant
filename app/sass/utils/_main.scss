@@ -1,0 +1,74 @@
+body {
+  font-family: $mainFontFamily;
+  font-size: 16px;
+}
+
+ul {
+  margin: 0;
+}
+
+.inlineVertical {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: $container;
+  margin: 0 auto;
+  max-width: ($container / 1920px * 100%);
+  padding-left: 0;
+  padding-right: 0;
+  outline: 1px solid red;
+
+  &__header {
+    display: table-cell;
+  }
+}
+
+.top-line {
+  display: table;
+  width: 100%;
+}
+
+.container-side {
+  width: (293px / 1920px * 100%);
+  display: table-cell;
+  box-sizing: border-box;
+  vertical-align: middle;
+
+  @include breakpoint("max-width: 1440px") {
+    width: (200px / 1920px * 100%);
+  }
+
+  img {
+    @extend .inlineVertical;
+  }
+
+  span {
+    @extend .inlineVertical;
+  }
+
+}
+
+.container-right {
+  @extend .container-side;
+  padding-right: (45px / 1920px * 100%);
+
+  @include breakpoint("max-width: 1440px") {
+    padding-right: (25px / 1920px * 100%);
+  }
+
+  text-align: right;
+}
+.container-left {
+  @extend .container-side;
+  padding-left: (45px / 1920px * 100%);
+
+  @include breakpoint("max-width: 1440px") {
+    padding-left: (25px / 1920px * 100%);
+  }
+}
