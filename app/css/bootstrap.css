@@ -5807,3 +5807,10 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+
+.btn {
+  font-size: 16px;
+  font-weight: 300;
+  border: none; }
+  .btn-primary {
+    background: #d2294b; }

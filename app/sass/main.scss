@@ -1,8 +1,13 @@
 @import "utils/variables";
 
+//bootstrap
+@import "bootstrap";
+
 
 //main
 @import "utils/_main";
 @import "layout/_header";
+//all
+@import "layout/dicsount";
 //home
 @import "layout/home/_top-slider";

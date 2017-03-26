@@ -1,5 +1,6 @@
 .slider-home {
   height: 635px;
+  margin-bottom: 180px;
 
   .swiper-pagination {
     .swiper-pagination-bullet {
@@ -14,6 +15,8 @@
     cursor: pointer;
     border-radius: 50%;
     border: 1px solid #fff;
+    background: #dedede;
+    opacity: 1;
   }
 
   .swiper-pagination-bullets {

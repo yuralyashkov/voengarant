@@ -1,0 +1,21 @@
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+a:hover {
+  color: inherit;
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: 300;
+  border: none;
+  font-family: $mainFontFamily;
+  border-radius: 13px;
+  padding: 2px 18px;
+  &-primary {
+    background: #d2294b;
+    &:hover {
+      background: #f03553;
+    }
+  }
+}
+
