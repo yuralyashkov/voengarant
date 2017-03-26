@@ -1,6 +1,7 @@
 body {
   font-family: "myriad-pro", sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  padding-top: 151px; }
 
 ul {
   margin: 0; }
@@ -18,7 +19,10 @@ a {
   max-width: 69.01042%;
   padding-left: 0;
   padding-right: 0;
-  outline: 1px solid red; }
+  outline: 1px solid rgba(255, 0, 0, 0.28); }
+  @media screen and (max-width: 1440px) {
+    .container {
+      max-width: 78.26389%; } }
   .container__header {
     display: table-cell; }
 
@@ -31,10 +35,14 @@ a {
   display: table-cell;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  vertical-align: middle; }
+  vertical-align: middle;
+  outline: 1px solid rgba(0, 0, 255, 0.32); }
   @media screen and (max-width: 1440px) {
     .container-side, .container-right, .container-left {
       width: 10.41667%; } }
+
+.col-md-3 {
+  outline: rgba(255, 69, 0, 0.49); }
 
 .container-right {
   padding-right: 2.34375%;
@@ -56,7 +64,8 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
-  left: 0; }
+  left: 0;
+  z-index: 3; }
   .header .top a {
     display: inline-block;
     vertical-align: middle;
@@ -126,7 +135,8 @@ a {
   position: fixed;
   top: 41px;
   left: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 2; }
   .header__navigation .row.container__navigation__row {
     margin-left: -40px;
     margin-right: -40px; }
@@ -202,3 +212,40 @@ a {
     display: table-cell; }
   .header__navigation .container-side a span, .header__navigation .container-right a span, .header__navigation .container-left a span {
     vertical-align: middle; }
+
+.slider-home {
+  height: 635px; }
+  .slider-home .swiper-pagination .swiper-pagination-bullet {
+    margin: 0 9px; }
+  .slider-home .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #fff; }
+  .slider-home .swiper-pagination-bullets {
+    bottom: -5px; }
+  .slider-home .swiper-pagination-bullet-active {
+    background: #cb3541;
+    border-color: #cb3541; }
+  .slider-home .swiper-slide {
+    text-align: center;
+    position: relative; }
+    .slider-home .swiper-slide__content {
+      position: absolute;
+      bottom: 45px;
+      text-align: center;
+      width: 100%; }
+  .slider-home__img {
+    margin-bottom: 15px;
+    display: block;
+    margin: 0 auto; }
+  .slider-home__title {
+    color: #303030;
+    font-size: 48px;
+    line-height: 60px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    margin-bottom: 17px; }
+  .slider-home__text {
+    font-size: 24px; }

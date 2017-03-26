@@ -1,6 +1,8 @@
 @import "utils/variables";
 
 
-
-@import "utils/main";
+//main
+@import "utils/_main";
 @import "layout/_header";
+//home
+@import "layout/home/_top-slider";

@@ -4,12 +4,13 @@
 
   .top {
     height: 41px;
-    background: #303030;
+    background: $color;
     overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
     left: 0;
+    z-index: 3;
 
     a {
       display: inline-block;
@@ -115,6 +116,7 @@
     top: 41px;
     left: 0;
     width: 100%;
+    z-index: 2;
 
     .row.container__navigation__row {
       margin-left: -40px;

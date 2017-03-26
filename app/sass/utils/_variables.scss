@@ -1,5 +1,7 @@
 $mainFontFamily:"myriad-pro", sans-serif;
+$titleFontFamily:'Roboto Slab', serif;
 $container:1325px;
+$color: #303030;
 
 @mixin breakpoint($breakpoint) {
   @media screen and ($breakpoint){
