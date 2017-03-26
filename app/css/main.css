@@ -5938,6 +5938,8 @@ a {
   width: 100%;
   left: 0;
   z-index: 3; }
+  .header .top .top-line .container-left a {
+    margin-top: -2px; }
   .header .top a {
     display: inline-block;
     vertical-align: middle;
@@ -5960,7 +5962,7 @@ a {
 
 .header .container-side a span, .header .container-right a span, .header .container-left a span {
   padding-left: 5px;
-  vertical-align: top; }
+  vertical-align: middle; }
 
 .header .container-side a:hover span, .header .container-right a:hover span, .header .container-left a:hover span {
   text-decoration: underline; }
@@ -6148,8 +6150,10 @@ a {
       .discount-card__link {
         font-size: 17px; } }
 
-.block__developers .block__title, .block__developers .tab-content .developer__description > span, .tab-content .block__developers .developer__description > span {
-  margin-bottom: 7px; }
+.block__developers {
+  margin-top: 143px; }
+  .block__developers .block__title, .block__developers .tab-content .developer__description > span, .tab-content .block__developers .developer__description > span {
+    margin-bottom: 7px; }
 
 .row__developers {
   margin-top: 39px;
@@ -6231,7 +6235,6 @@ a {
 .special {
   background: url("../images/special_bg.png") bottom center no-repeat;
   height: 420px;
-  margin-bottom: 143px;
   text-align: center;
   color: #333333;
   position: relative; }
@@ -6289,37 +6292,37 @@ a {
         color: #fff; }
     .special__order .note {
       color: #777777; }
-  .special .slide-modal {
-    background: #303030;
-    padding: 65px 0 135px;
+
+.slide-modal {
+  background: #303030;
+  padding: 65px 0 135px;
+  position: relative;
+  width: 100%;
+  text-align: left;
+  z-index: 1;
+  color: #fff;
+  display: none; }
+  .slide-modal__close {
+    width: 40px;
+    height: 40px;
     position: absolute;
-    top: 100%;
-    width: 100%;
-    text-align: left;
-    z-index: 1;
+    bottom: -20px;
+    background: #309bf7;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -20px;
+    cursor: pointer;
+    font-size: 18px;
     color: #fff;
-    display: none; }
-    .special .slide-modal__close {
-      width: 40px;
-      height: 40px;
-      position: absolute;
-      bottom: -20px;
-      background: #309bf7;
-      border-radius: 50%;
-      left: 50%;
-      margin-left: -20px;
-      cursor: pointer;
-      font-size: 18px;
-      color: #fff;
-      text-align: center;
-      line-height: 40px;
-      font-weight: 100; }
-      .special .slide-modal__close:hover {
-        background: #2ea0ff; }
-    .special .slide-modal .block__title, .special .slide-modal .tab-content .developer__description > span, .tab-content .special .slide-modal .developer__description > span {
-      font-size: 36px;
-      color: #fff;
-      font-weight: 300; }
+    text-align: center;
+    line-height: 40px;
+    font-weight: 100; }
+    .slide-modal__close:hover {
+      background: #2ea0ff; }
+  .slide-modal .block__title, .slide-modal .tab-content .developer__description > span, .tab-content .slide-modal .developer__description > span {
+    font-size: 36px;
+    color: #fff;
+    font-weight: 300; }
 
 .slider-home {
   height: 635px;

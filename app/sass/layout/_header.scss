@@ -12,6 +12,14 @@
     left: 0;
     z-index: 3;
 
+    .top-line {
+      .container-left {
+        a {
+          margin-top: -2px;
+        }
+      }
+    }
+
     a {
       display: inline-block;
       vertical-align: middle;
@@ -43,7 +51,7 @@
 
   .container-side a span {
     padding-left: 5px;
-    vertical-align: top;
+    vertical-align: middle;
   }
 
   .container-side a:hover span {

@@ -1,7 +1,6 @@
 .special {
   background: url('../images/special_bg.png') bottom center no-repeat;
   height: 420px;
-  margin-bottom: 143px;
   text-align: center;
   color: #333333;
   position: relative;
@@ -82,41 +81,42 @@
     }
   }
 
-  .slide-modal {
-    background: $color;
-    padding: 65px 0 135px;
+
+}
+
+.slide-modal {
+  background: $color;
+  padding: 65px 0 135px;
+  position: relative;
+  width: 100%;
+  text-align: left;
+  z-index: 1;
+  color: #fff;
+  display: none;
+
+  &__close {
+    width: 40px;
+    height: 40px;
     position: absolute;
-    top: 100%;
-    width: 100%;
-    text-align: left;
-    z-index: 1;
+    bottom: -20px;
+    background: #309bf7;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -20px;
+    cursor: pointer;
+    font-size: 18px;
     color: #fff;
-    display: none;
-
-    &__close {
-      width: 40px;
-      height: 40px;
-      position: absolute;
-      bottom: -20px;
-      background: #309bf7;
-      border-radius: 50%;
-      left: 50%;
-      margin-left: -20px;
-      cursor: pointer;
-      font-size: 18px;
-      color: #fff;
-      text-align: center;
-      line-height: 40px;
-      font-weight: 100;
-      &:hover {
-        background: #2ea0ff;
-      }
+    text-align: center;
+    line-height: 40px;
+    font-weight: 100;
+    &:hover {
+      background: #2ea0ff;
     }
+  }
 
-    .block__title {
-      font-size: 36px;
-      color: #fff;
-      font-weight: 300;
-    }
+  .block__title {
+    font-size: 36px;
+    color: #fff;
+    font-weight: 300;
   }
 }
