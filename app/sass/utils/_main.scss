@@ -9,6 +9,28 @@ ul {
   margin: 0;
 }
 
+.more {
+  margin-left: 18px;
+  color: #309bf7;
+
+  &:after {
+    display: inline-block;
+    content: '>';
+    margin-left: 15px;
+  }
+}
+
+*:focus, *:target {
+  outline: none;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: $mainFontFamily;
+}
+
 .inlineVertical {
   display: inline-block;
   vertical-align: middle;

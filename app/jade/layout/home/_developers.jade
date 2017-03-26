@@ -9,44 +9,55 @@
                     .col-md-6
                         .row
                             .col-md-3.developer-tab
-                                a(href="javascript:void(0)")
+                                a(href="javascript:void(0)", data-id="developer-1")
                                     img(src="./images/developers_slider/pik.png")
                                     span ПИК
                             .col-md-3.developer-tab
-                                a(href="javascript:void(0)").active
-                                    img(src="./images/developers_slider/pik.png")
-                                    span ПИК
+                                a(href="javascript:void(0)", data-id="developer-2").active
+                                    img(src="./images/developers_slider/d2.png")
+                                    span Самолет
+                            .col-md-3.developer-tab
+                                a(href="javascript:void(0)")
+                                    img(src="./images/developers_slider/d3.png")
+                                    span A 101
                             .col-md-3.developer-tab
                                 a(href="javascript:void(0)")
                                     img(src="./images/developers_slider/pik.png")
-                                    span ПИК
-                            .col-md-3.developer-tab
-                                a(href="javascript:void(0)")
-                                    img(src="./images/developers_slider/pik.png")
-                                    span ПИК
+                                    span МИЦ
                     .col-md-6
                         .row
                             .col-md-3.developer-tab
                                 a(href="javascript:void(0)")
-                                    img(src="./images/developers_slider/pik.png")
+                                    img(src="./images/developers_slider/d4.png")
                                     span ПИК
                             .col-md-3.developer-tab
                                 a(href="javascript:void(0)")
-                                    img(src="./images/developers_slider/pik.png")
-                                    span ПИК
+                                    img(src="./images/developers_slider/d5.png")
+                                    span Кортрос
                             .col-md-3.developer-tab
                                 a(href="javascript:void(0)")
-                                    img(src="./images/developers_slider/pik.png")
-                                    span ПИК
+                                    img(src="./images/developers_slider/d6.png")
+                                    span Лидер групп
                             .col-md-3.developer-tab
                                 a(href="/")
-                                    img(src="./images/developers_slider/pik.png")
+                                    img(src="./images/developers_slider/d7.png")
                                     span ВСЕ
 
-                .tab-content#developer-1
+                .tab-content.active#developer-1
                     .row
                         .col-md-5
                             img(src="./images/developers_slider/developer1.png")
-                        .col-md-7
-                            span Скидка до 80 000 р.
+                        .col-md-6.developer__description
+                            span Скидка до <span class="block__title">80 000</span> р.
                             p Строительство и продажа жилых и коммерческих помещений, парковочных мест.  Описания проектов с визуализацией объектов и ходом строительства. Каталог квартир  с ценами и планировками.
+                            p Онлайн-бронирование.  А101 входит в Группу «Бин», включающую активы целого ряда отраслей: нефтяные и угольные холдинги, торговые центры, гостиницы, строительные компании,, исполнению жилых районов с единой концепцией «лучшее со всего мира».
+                            a(href="#").more Объекты застройщика
+                .tab-content#developer-2
+                    .row
+                        .col-md-5
+                            img(src="./images/developers_slider/developer1.png")
+                        .col-md-6.developer__description
+                            span Скидка до <span class="block__title">80 000</span> р.
+                            p Строительство и продажа жилых и коммерческих помещений, парковочных мест.  Описания проектов с визуализацией объектов и ходом строительства. Каталог квартир  с ценами и планировками.
+                            p Онлайн-бронирование.  А101 входит в Группу «Бин», включающую активы целого ряда отраслей: нефтяные и угольные холдинги, торговые центры, гостиницы, строительные компании,, исполнению жилых районов с единой концепцией «лучшее со всего мира».
+                            a(href="#").more Объекты застройщика

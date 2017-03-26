@@ -6,7 +6,7 @@
 
 .row__developers {
   margin-top: 39px;
-  margin-bottom: 65px;
+  margin-bottom: 93px;
   .col-md-6:first-child .row .developer-tab:first-child {
     padding-left: 15px;
   }
@@ -23,6 +23,7 @@
       @include grayscale;
       opacity: 0.6;
       margin-bottom: 5px;
+      height: 60px;
     }
 
     a {
@@ -47,5 +48,43 @@
         @include ungrayscale;
       }
     }
+  }
+}
+
+.tab-content {
+  display: none;
+  padding-bottom: 90px;
+  &.active {
+    display: block;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .developer__description {
+    text-align: left;
+    color: #1f1f1f;
+
+    p {
+      font-size: 18px;
+      padding-left: 18px;
+    }
+
+    > span {
+      margin-bottom: 4px;
+      @extend .block__title;
+      font-size: 36px;
+      display: inline-block;
+      vertical-align: middle;
+      padding-left: 18px;
+    }
+
+
+
+  }
+  .block__title {
+    display: inline-block;
+    vertical-align: middle;
   }
 }

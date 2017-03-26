@@ -1,0 +1,121 @@
+.special {
+  background: url('../images/special_bg.png') bottom center no-repeat;
+  height: 420px;
+  margin-bottom: 143px;
+  text-align: center;
+  color: #333333;
+  position: relative;
+  &__title {
+    font-size: 36px;
+    font-family: $titleFontFamily;
+    display: block;
+  }
+  &__text {
+    font-size: 18px;
+    font-family: $titleFontFamily;
+    font-weight: 300;
+    margin-bottom: 25px;
+    display: block;
+  }
+  img {
+    margin-bottom: 15px;
+    display: inline-block;
+  }
+  &__btns {
+    > a:first-child {
+      margin-right: 40px;
+    }
+  }
+
+  &__description {
+    font-weight: 300;
+    font-size: 18px;
+    a.more {
+      margin-left: 0;
+      margin-top: 30px;
+      display: inline-block;
+    }
+    .block__title {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__order {
+    text-align: center;
+
+    form {
+      margin-top: 30px;
+    }
+
+    input, textarea {
+      background: #404040;
+      border: none;
+      line-height: 38px;
+      color: #fff;
+      padding: 0 20px;
+      border-radius: 20px;
+      display: block;
+      width: 100%;
+      max-width: 405px;
+      margin: 0 auto 5px;
+      box-sizing: border-box;
+      resize: none;
+    }
+
+    textarea {
+      height: 85px;
+    }
+
+    button {
+      margin-top: 25px;
+      font-size: 18px;
+      font-weight: 300;
+      &:hover {
+        text-decoration: underline;
+        color: #fff;
+      }
+    }
+
+    .note {
+      color: #777777;
+    }
+  }
+
+  .slide-modal {
+    background: $color;
+    padding: 65px 0 135px;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    text-align: left;
+    z-index: 1;
+    color: #fff;
+    display: none;
+
+    &__close {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      bottom: -20px;
+      background: #309bf7;
+      border-radius: 50%;
+      left: 50%;
+      margin-left: -20px;
+      cursor: pointer;
+      font-size: 18px;
+      color: #fff;
+      text-align: center;
+      line-height: 40px;
+      font-weight: 100;
+      &:hover {
+        background: #2ea0ff;
+      }
+    }
+
+    .block__title {
+      font-size: 36px;
+      color: #fff;
+      font-weight: 300;
+    }
+  }
+}

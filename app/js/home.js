@@ -9,4 +9,24 @@ var HomeSlider = new Swiper ('.slider-home', {
     // If we need pagination
     pagination: '.swiper-pagination',
     paginationClickable: true
-})
+});
+
+$(function () {
+
+    $('.developer-tab a').click(function () {
+        var id = $(this).data('id');
+        $('.developer-tab a').removeClass('active');
+
+        $(this).addClass('active');
+        $('.tab-content').hide();
+        $('#'+id).fadeIn();
+        return false;
+    });
+
+    $('.special__content a').click(function () {
+        $('#special-order').slideDown();
+        $('html, body').animate({ scrollTop: $('#special-order').offset().top - 200 }, 500);
+        return false;
+    });
+
+});

@@ -13,8 +13,22 @@ a:hover {
   padding: 2px 18px;
   &-primary {
     background: #d2294b;
+    &.gradient {
+      background-image: linear-gradient(to bottom, #c83552, #9e2840);
+    }
     &:hover {
       background: #f03553;
+    }
+  }
+  &-default {
+    color: #fff;
+    background: #232323;
+    &.gradient {
+      background-image: linear-gradient(to bottom, #393939, #202020);
+    }
+    &:hover {
+      background: #131313;
+      color: #fff;
     }
   }
 }

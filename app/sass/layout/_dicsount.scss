@@ -40,20 +40,39 @@
   padding: 25px 40px;
   max-width: 100%;
   background-size: 100% auto;
+  @include breakpoint("max-width: 1140px"){
+    padding: 13px 40px;
+  }
   &__title {
     font-size: 36px;
     margin-bottom: 13px;
+    @include breakpoint("max-width: 1060px"){
+      margin-bottom: 0;
+    }
   }
   &__text {
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 27px;
+    @include breakpoint("max-width: 1680px"){
+      line-height: 19px;
+    }
+    @include breakpoint("max-width: 1520px"){
+      margin-bottom: 12px;
+    }
+    @include breakpoint("max-width: 1280px"){
+      font-size: 16px;
+      line-height: 16px;
+    }
   }
   &__link {
     font-size: 21px;
     color: #fafafa;
     &:hover {
       text-decoration: none;
+    }
+    @include breakpoint("max-width: 1140px"){
+      font-size: 17px;
     }
   }
 }
