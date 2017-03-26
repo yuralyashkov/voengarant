@@ -6278,7 +6278,8 @@ a {
       box-sizing: border-box;
       resize: none; }
     .special__order textarea {
-      height: 85px; }
+      height: 85px;
+      line-height: 22px; }
     .special__order button {
       margin-top: 25px;
       font-size: 18px;
