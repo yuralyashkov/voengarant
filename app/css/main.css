@@ -6365,18 +6365,40 @@ a {
   .slider-home__text {
     font-size: 24px; }
 
-.footer-right span:first-child, .footer-right__logo {
+.footer-contact__number, .footer-contact__social {
   display: inline-block; }
 
-.footer-right__logo {
-  float: right; }
-  .footer-right__logo img {
-    padding-right: 5px; }
-
-.footer-right span:first-child {
+.footer-contact__number {
   float: left; }
+  .footer-contact__number span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px; }
+  .footer-contact__number span:last-child {
+    color: #2891c0;
+    margin-left: 5px; }
+  .footer-contact__number img {
+    max-height: 20px;
+    padding-right: 15px; }
 
-.footer-right span {
-  font-size: 14px;
-  font-weight: 300;
-  color: #777777; }
+.footer-contact__social {
+  float: right; }
+
+.footer-contact a {
+  padding-left: 10px; }
+
+.footer-right {
+  margin-top: 45px;
+  background-color: #ffffff; }
+  .footer-right span:first-child, .footer-right__logo {
+    display: inline-block; }
+  .footer-right__logo {
+    float: right; }
+    .footer-right__logo img {
+      padding-right: 5px; }
+  .footer-right span:first-child {
+    float: left; }
+  .footer-right span {
+    font-size: 14px;
+    font-weight: 300;
+    color: #777777; }
