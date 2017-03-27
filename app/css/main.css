@@ -6379,6 +6379,15 @@ footer a {
   color: #333333;
   font-weight: 300; }
 
+footer a:focus {
+  color: #23527c;
+  text-decoration: none;
+  opacity: 0.8;
+  cursor: pointer; }
+
+footer a:hover {
+  text-decoration: none; }
+
 .footer-contact__number, .footer-contact__social {
   display: inline-block; }
 
