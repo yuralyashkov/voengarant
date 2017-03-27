@@ -6364,3 +6364,19 @@ a {
     margin-bottom: 17px; }
   .slider-home__text {
     font-size: 24px; }
+
+.footer-right span:first-child, .footer-right__logo {
+  display: inline-block; }
+
+.footer-right__logo {
+  float: right; }
+  .footer-right__logo img {
+    padding-right: 5px; }
+
+.footer-right span:first-child {
+  float: left; }
+
+.footer-right span {
+  font-size: 14px;
+  font-weight: 300;
+  color: #777777; }

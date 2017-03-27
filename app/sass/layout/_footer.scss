@@ -1,0 +1,20 @@
+.footer-right{
+  span:first-child,&__logo{
+    display:inline-block;
+  }
+  &__logo{
+    float: right;
+
+    img{
+      padding-right: 5px;
+    }
+  }
+  span:first-child{
+    float: left;
+  }
+  span{
+    font-size: 14px;
+    font-weight:300;
+    color: #777777;
+  }
+}
