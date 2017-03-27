@@ -1,3 +1,33 @@
+footer
+    .container
+        .row
+            .col-md-8
+                ul.col-md-4 Услуги
+                    -var list=['Кооператив','Новостройки','Вторичка','Вопрос юристу','Удаленная сделка','Ипотека повторно','Контроль']
+                    for listLi in list
+                        a
+                            li= listLi
+                ul.col-md-4  Информация
+                    -var list=['Объединение','Новости','Форум','Аналитика','Информация','Калькуляторы','Партнеры','Инициативы','Отзывы','Контакты']
+                    for listLi in list
+                        a
+                            li= listLi
+                ul.col-md-4  Дополнительно
+                    -var list=['Застройщики','Банки','Росвоенипотека','Общественная организация УНС','Молодострой','Народный фронт','Взаимодействие']
+                    for listLi in list
+                        a
+                            li= listLi
+            .col-md-4
+                ul.col-md-6 Связь
+                    -var list=['Регформа','В банк','Жалоба','Презентация']
+                    for listLi in list
+                        a
+                            li= listLi
+                ul.col-md-6  Кабинет
+                    -var list=['Аккаунт','Избранное','Документы']
+                    for listLi in list
+                        a
+                            li= listLi
 section.footer-contact
     .container
         .footer-contact__number

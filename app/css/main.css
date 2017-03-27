@@ -6365,6 +6365,20 @@ a {
   .slider-home__text {
     font-size: 24px; }
 
+footer ul {
+  display: inline-block;
+  float: left;
+  padding: 0;
+  height: 280px;
+  color: #333333; }
+
+footer li {
+  display: block; }
+
+footer a {
+  color: #333333;
+  font-weight: 300; }
+
 .footer-contact__number, .footer-contact__social {
   display: inline-block; }
 
