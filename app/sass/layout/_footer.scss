@@ -1,3 +1,17 @@
+.footer-contact{
+  &__number,&__social{
+    display: inline-block;
+  }
+  &__number{
+    float: left;
+    span{
+
+    }
+  }
+  &__social{
+    float: right;
+  }
+}
 .footer-right{
   span:first-child,&__logo{
     display:inline-block;
