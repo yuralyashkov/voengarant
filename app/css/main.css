@@ -6365,6 +6365,44 @@ a {
   .slider-home__text {
     font-size: 24px; }
 
+.bank {
+  padding-bottom: 170px;
+  padding-top: 135px; }
+  .bank .block__text, .bank .block__title, .bank .tab-content .developer__description > span, .tab-content .bank .developer__description > span, .bank .more {
+    display: block;
+    text-align: center;
+    padding-bottom: 25px; }
+  .bank .block__title, .bank .tab-content .developer__description > span, .tab-content .bank .developer__description > span {
+    margin: 0 auto;
+    padding-top: 45px;
+    padding-bottom: 5px; }
+  .bank .more {
+    margin: 0;
+    padding-bottom: 40px; }
+  .bank ul {
+    padding: 0;
+    margin: 0; }
+  .bank li {
+    display: inline-block;
+    float: left;
+    width: 265px; }
+  .bank .center img {
+    height: 39px;
+    display: block;
+    padding-left: 17px; }
+  .bank .center-right img {
+    display: inherit;
+    padding-left: 30px;
+    height: 57px;
+    margin-top: -10px; }
+  .bank li:last-child img {
+    height: 33px;
+    display: block;
+    padding-left: 45px;
+    margin-top: 4px; }
+  .bank img {
+    height: 45px; }
+
 footer {
   height: 350px;
   padding-top: 45px;
