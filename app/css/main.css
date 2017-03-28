@@ -6365,46 +6365,35 @@ a {
   .slider-home__text {
     font-size: 24px; }
 
-.bank {
-  padding-bottom: 170px;
-  padding-top: 135px; }
-  .bank .block__text, .bank .block__title, .bank .tab-content .developer__description > span, .tab-content .bank .developer__description > span, .bank .more {
+.social {
+  padding-top: 175px;
+  text-align: center; }
+  .social img {
     display: block;
+    margin: 0 auto; }
+  .social .middle-text {
+    display: block;
+    font-family: "Roboto Slab";
+    font-weight: 100;
+    font-size: 36px;
+    color: #777777;
     text-align: center;
-    padding-bottom: 25px; }
-  .bank .block__title, .bank .tab-content .developer__description > span, .tab-content .bank .developer__description > span {
+    margin-top: 20px;
+    line-height: 46px; }
+  .social .block__text {
+    display: block;
+    margin-top: 17px; }
+  .social .social__img {
     margin: 0 auto;
-    padding-top: 45px;
-    padding-bottom: 5px; }
-  .bank .more {
-    margin: 0;
-    padding-bottom: 40px; }
-  .bank ul {
-    padding: 0;
-    margin: 0; }
-  .bank li {
-    display: inline-block;
-    float: left;
-    width: 20%; }
-  .bank .center img {
-    height: 39px;
-    display: block;
-    padding-left: 17px; }
-  .bank .center-right img {
-    display: inherit;
-    padding-left: 30px;
-    height: 57px;
-    margin-top: -10px; }
-  .bank li:last-child img {
-    height: 33px;
-    display: block;
-    padding-left: 45px;
-    margin-top: 4px; }
-  .bank img {
-    height: 45px; }
+    padding-top: 30px; }
+    .social .social__img img {
+      display: inline-block;
+      padding-right: 10px; }
+    .social .social__img img:last-child {
+      padding-right: 0; }
 
 .reviews {
-  padding-top: 200px; }
+  padding-top: 195px; }
   .reviews .block__title, .reviews .tab-content .developer__description > span, .tab-content .reviews .developer__description > span, .reviews .block__text, .reviews .more {
     display: block;
     text-align: center; }
@@ -6457,6 +6446,44 @@ a {
       padding-top: 43px; }
     .reviews li span:last-child {
       display: block; }
+
+.bank {
+  padding-bottom: 170px;
+  padding-top: 135px; }
+  .bank .block__text, .bank .block__title, .bank .tab-content .developer__description > span, .tab-content .bank .developer__description > span, .bank .more {
+    display: block;
+    text-align: center;
+    padding-bottom: 25px; }
+  .bank .block__title, .bank .tab-content .developer__description > span, .tab-content .bank .developer__description > span {
+    margin: 0 auto;
+    padding-top: 45px;
+    padding-bottom: 5px; }
+  .bank .more {
+    margin: 0;
+    padding-bottom: 40px; }
+  .bank ul {
+    padding: 0;
+    margin: 0; }
+  .bank li {
+    display: inline-block;
+    float: left;
+    width: 20%; }
+  .bank .center img {
+    height: 39px;
+    display: block;
+    padding-left: 17px; }
+  .bank .center-right img {
+    display: inherit;
+    padding-left: 30px;
+    height: 57px;
+    margin-top: -10px; }
+  .bank li:last-child img {
+    height: 33px;
+    display: block;
+    padding-left: 45px;
+    margin-top: 4px; }
+  .bank img {
+    height: 45px; }
 
 footer {
   height: 350px;
