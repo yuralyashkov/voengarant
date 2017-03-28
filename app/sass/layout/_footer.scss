@@ -1,11 +1,13 @@
 footer{
+  height: 350px;
+  padding-top: 45px;
+  border-top:solid 2px #e5e5e5;
   ul{
     display: inline-block;
     float: left;
     padding: 0;
     height: 280px;
     color: #333333;
-
   }
   li{
     display: block;
@@ -13,6 +15,7 @@ footer{
   a{
     color: #333333;
     font-weight: 300;
+    line-height: 26px;
   }
     a:focus{
       color: #23527c;
@@ -22,7 +25,23 @@ footer{
     }
     a:hover{
       text-decoration: none;
+      cursor: pointer;
     }
+  .indent1{
+    padding-left: 25px;
+  }
+  .indent2{
+    padding-left: 0px;
+  }
+  .indent3{
+    padding-left: 80px;
+  }
+  .indent4{
+    padding-left: 85px;
+    li:last-child{
+      padding-top: 25px;
+    }
+  }
 }
 .footer-contact{
   &__number,&__social{
@@ -41,19 +60,23 @@ footer{
     }
     img{
       max-height: 20px;
-      padding-right: 15px;
+      padding-right: 13px;
     }
   }
   &__social{
     float: right;
-  }
-  a{
-    padding-left: 10px;
+    margin-right: 25px;
+    img{
+      padding-left: 15px;
+      max-height: 30px;
+    }
   }
 }
 .footer-right{
   margin-top: 45px;
   background-color: #ffffff;
+  height: 30px;
+
   span:first-child,&__logo{
     display:inline-block;
   }
@@ -69,7 +92,11 @@ footer{
   }
   span{
     font-size: 14px;
+    line-height: 30px;
     font-weight:300;
     color: #777777;
+  }
+  &__logo{
+    padding-right: 25px;
   }
 }
