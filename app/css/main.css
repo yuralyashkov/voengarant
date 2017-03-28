@@ -6365,8 +6365,25 @@ a {
   .slider-home__text {
     font-size: 24px; }
 
+.analitic {
+  padding-top: 225px;
+  font-size: 18px; }
+  .analitic .container {
+    padding-left: 13px; }
+  .analitic .block__title, .analitic .tab-content .developer__description > span, .tab-content .analitic .developer__description > span {
+    display: block;
+    margin: 0;
+    padding-bottom: 10px; }
+  .analitic .analitic-info {
+    padding-top: 21px; }
+  .analitic .more {
+    display: block;
+    margin: 45px 0 0; }
+  .analitic .col-md-7 {
+    padding-left: 5px; }
+
 .social {
-  padding-top: 175px;
+  padding-top: 167px;
   text-align: center; }
   .social img {
     display: block;
@@ -6503,11 +6520,7 @@ footer {
     line-height: 26px; }
   footer a:focus {
     color: #23527c;
-    text-decoration: none;
     opacity: 0.8;
-    cursor: pointer; }
-  footer a:hover {
-    text-decoration: none;
     cursor: pointer; }
   footer .indent1 {
     padding-left: 25px; }
