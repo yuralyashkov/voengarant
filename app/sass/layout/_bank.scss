@@ -1,4 +1,3 @@
-$container:1325px;
 .bank{
   padding-bottom: 170px;
   padding-top: 135px;
@@ -23,7 +22,7 @@ $container:1325px;
   li{
     display: inline-block;
     float: left;
-    width: ($container / 5);
+    width: ($container / 5 / $container * 100%);
 
   }
   .center img{
