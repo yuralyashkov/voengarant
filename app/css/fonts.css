@@ -58,3 +58,8 @@
     font-style: normal;
     font-weight: normal;
 }
+/* font-family: "Open Sans"; */
+@font-face {
+    font-family: "OpenSansLight";
+    src: url("../fonts/open-sans/OpenSans-Light.ttf");
+}
