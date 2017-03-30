@@ -1,0 +1,115 @@
+.news{
+  padding-top: 50px;
+  .block__title,.block__text,.more{
+    display: block;
+    text-align: center
+  }
+  .block__title{
+    margin: 0 auto 15px;
+  }
+  .block__text{
+    margin: 0 auto 21px;
+  }
+  .more{
+    margin:0 auto 45px;
+  }
+  .row:first-child{
+    margin-bottom: 59px;
+  }
+  .news__info{
+    padding-top: 25px;
+
+    .news__info__text{
+      padding-left: 25px;
+      padding-right: 59px;
+      height: 300px;
+      background-color: #ffffff;
+
+      &:first-child{
+        padding-left: 41px;
+        padding-right: 43px;
+      }
+
+      span:first-child{
+        display: block;
+        margin-bottom: 32px;
+        font-family: "Roboto Slab";
+        font-weight: 300;
+        color: #58cafe;
+      }
+      .action{
+        margin-top: 5px;
+        height: 18px;
+        margin-left: -15px;
+
+        .red,.blue{
+          display: inline-block;
+          float: left;
+          height: 20px;
+          color: #ffffff;
+          font-size: 14px;
+          line-height: 20px;
+          text-align: center;
+        }
+        .blue{
+          width: 95px;
+          background:url("../images/icons/news-blue.png");
+        }
+        .red{
+          width: 70px;
+          background:url("../images/icons/news-red.png");
+        }
+      }
+      .big{
+        display: block;
+        margin-bottom: 40px ;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 24px;
+        font-family: "Roboto Slab";
+      }
+      .middle{
+        display: block;
+        margin-bottom: 50px;
+        font-family: "OpenSansLight";
+        font-size: 14px;
+        line-height: 18px;
+      }
+      span:last-child{
+        display: block;
+        font-size: 12px;
+        line-height: 24px;
+        color: #727272;
+      }
+    }
+  }
+  .news__banner{
+    padding-top: 32px;
+    padding-left:45px ;
+    height: 707px;
+    width: 645px;
+    background:url('../images/icons/news-main.png') center no-repeat;
+
+    span,&__img{
+      display: block;
+      font-family: OpenSansLight;
+      color: #ffffff;
+      line-height: 20px;
+    }
+    ._big{
+      font-family: "Roboto Slab";
+      font-size: 36px;
+      margin-bottom: 15px;
+      line-height: 53px;
+    }
+    &__img {
+      margin-top: -12px;
+      img{
+        display: inline-block;
+        max-width: 16%;
+        margin-right: 29px;
+        margin-top: 5px;
+      }
+    }
+  }
+}
