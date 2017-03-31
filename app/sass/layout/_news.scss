@@ -20,21 +20,24 @@
     padding-bottom: 25px;
 
     .row{
+      display: table;
       margin: 0 7.5px;
       padding-bottom: 10px;
 
       .col-md-6{
+        display: table-cell;
         padding: 0 7.5px;
       }
     }
     .news__info__text{
-      height: auto;
+      height: 100%;
       padding: 25px 20px 25px 10px;
       background-color: #ffffff;
 
       span:first-child{
         display: block;
         margin-bottom: 30px;
+        height: 20px;
         font-family: "Roboto Slab";
         font-weight: 300;
         color: #58cafe;
