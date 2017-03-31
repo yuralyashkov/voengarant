@@ -4,9 +4,9 @@
 
   &__img{
     position: absolute;
-    top: 19%;
+    top: 12%;
     left: -19px;
-    width: 37.1%;
+    width: 37.3%;
   }
 
   .block__title{
@@ -23,24 +23,25 @@
     font-size: 36px;
   }
   .block__text{
-    font-family: OpenSansLight;
-    margin-bottom: 20px;
+    margin-bottom: 27px;
     padding-right: 180px;
     line-height: 24px;
   }
   .more{
-    margin: 0;
-    padding-bottom: 40px;
+    display: block;
+    margin: 0 0 32px;
   }
   p{
-    padding-top: 30px;
+    padding-top: 23px;
   }
   &__context{
-
     &__element{
       display: inline-block;
       float: left;
-
+      text-align: center;
+      font-size: 12px;
+      margin-right:5px ;
+      padding-bottom: 25px;
     }
   }
 }

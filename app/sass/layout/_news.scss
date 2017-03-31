@@ -13,6 +13,18 @@
   .more{
     margin:0 auto 45px;
   }
+  .row{
+    display: table;
+    float: none;
+    .col-md-6{
+      display: table-cell;
+      float: none;
+      vertical-align: middle;
+    }
+    .col-md-6:last-child{
+      vertical-align: top;
+    }
+  }
   .row:first-child{
     margin-bottom: 59px;
   }
@@ -23,9 +35,12 @@
       display: table;
       margin: 0 7.5px;
       padding-bottom: 10px;
+      float: none;
 
       .col-md-6{
         display: table-cell;
+        float: none;
+        vertical-align: middle;
         padding: 0 7.5px;
       }
     }
@@ -92,6 +107,7 @@
     padding-left:45px ;
     height: 700px;
     background:url('../images/icons/news-main.png') left no-repeat;
+    background-size: cover ;
 
     span,&__img{
       display: block;
