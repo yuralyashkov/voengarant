@@ -56,6 +56,38 @@ button {
   }
 }
 
+.radio, .checkbox {
+  label {
+    span.checkbox {
+      width: 12px;
+      height: 12px;
+      background: #f1f1f1;
+      border: 1px solid #b8b8b8;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 12px;
+    }
+    span.checkbox-text {
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+  input {
+    display: none;
+  }
+  input:checked + label {
+    span.checkbox {
+      background: #2891c0;
+      border-color: #2891c0;
+    }
+  }
+  img {
+    margin-right: 15px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
 
 a {
   text-decoration: none;
