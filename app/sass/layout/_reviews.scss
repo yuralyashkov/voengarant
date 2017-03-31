@@ -1,5 +1,5 @@
 .reviews{
-  padding-top: 195px;
+  padding-top: 190px;
   .block__title,.block__text,.more{
     display: block;
     text-align: center;
@@ -18,15 +18,19 @@
     margin: 0;
     padding: 0;
   }
+  .row{
+    display: table;
+    width: 100%;
+    margin: 0 -7.5px;
+  }
   .row:first-child{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+
   }
   &__info{
-    background-color: #e3e3e3;
     text-align: center;
-    height: 480px;
-    margin-left: 10px;
-    margin-right: -5px;
+    background-color: #e3e3e3;background-color: #e3e3e3;
+    padding: 30px 70px;
   }
   ._light{
     background-color: #ffffff;
@@ -39,12 +43,13 @@
     padding-top: 47px;
   }
   li{
-    display: inline-block;
+    display: table-column;
     float: left;
+    padding: 0 7.5px;
+    overflow: hidden;
 
     span:first-child{
       display: block;
-      padding-top: 28px;
       padding-bottom: 35px;
       font-family: "Roboto Slab", serif;
     }
@@ -55,8 +60,7 @@
     }
     .reviews__text{
       display: block;
-      width: 285px;
-      height: 185px;
+      min-height: 185px;
       margin: 0 auto;
       line-height: 20px;
       padding-top: 33px;

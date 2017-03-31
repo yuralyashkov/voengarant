@@ -4,7 +4,7 @@
   .block__text,.block__title,.more{
     display: block;
     text-align: center;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
   }
   .block__title{
     margin: 0 auto;
@@ -13,37 +13,23 @@
   }
   .more{
     margin: 0;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
   ul{
     padding: 0;
-    margin: 0;
+    margin: 0 ( -4.90566% / 2);
+    overflow: hidden;
+
   }
   li{
     display: inline-block;
-    float: left;
+    padding: 0 (4.90566% / 2);
     width: ($container / 5 / $container * 100%);
 
   }
-  .center img{
-    height: 39px;
-    display: block;
-    padding-left: 17px;
-  }
-  .center-right img{
-    display: inherit;
-    padding-left: 30px;
-    height: 57px;
-    margin-top: -10px;
-  }
-  li:last-child img{
-    height: 33px;
-    display: block;
-    padding-left: 45px;
-    margin-top: 4px;
-  }
   img{
-    height: 45px;
+    width: 100%;
+    height: auto;
   }
 
 

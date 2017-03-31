@@ -1,0 +1,46 @@
+.dependents{
+  padding-top: 285px;
+  position: relative;
+
+  &__img{
+    position: absolute;
+    top: 19%;
+    left: -19px;
+    width: 37.1%;
+  }
+
+  .block__title{
+    margin-bottom: 34px;
+  }
+  .block__text:first-child{
+    margin-bottom: 30px;
+  }
+  .middle-text{
+    display: block;
+    margin-bottom: 20px;
+    font-family: "Roboto Slab";
+    font-weight: 300;
+    font-size: 36px;
+  }
+  .block__text{
+    font-family: OpenSansLight;
+    margin-bottom: 20px;
+    padding-right: 180px;
+    line-height: 24px;
+  }
+  .more{
+    margin: 0;
+    padding-bottom: 40px;
+  }
+  p{
+    padding-top: 30px;
+  }
+  &__context{
+
+    &__element{
+      display: inline-block;
+      float: left;
+
+    }
+  }
+}
