@@ -2,7 +2,18 @@
     .container
         .row
             .col-md-5
-                .block__title Новостройки
-                p Выбирайте из лучших застройщиков, присоединяйтесь к объединению ВоенГарант и получайте особые условия!
+                .filter
+                    .block__title Новостройки
+                    p Выбирайте из лучших застройщиков, присоединяйтесь к объединению ВоенГарант и получайте особые условия!
+
+                    .radio
+                        input(type="radio", name="type", value="pik")#type_pik
+                        label(for="type_pik")
+                            span.checkbox
+                            img(src="./images/filter__pik.png")
+                            span.checkbox-text Эксклюзивные предложения<br> застройщика на карте
+
+
+
             .col-md-7
                 .block__title Карта

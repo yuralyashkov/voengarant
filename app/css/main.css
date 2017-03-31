@@ -5884,6 +5884,31 @@ button {
   font-weight: 300;
   line-height: 21px; }
 
+.radio label span.checkbox, .checkbox label span.checkbox {
+  width: 12px;
+  height: 12px;
+  background: #f1f1f1;
+  border: 1px solid #b8b8b8;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 12px; }
+
+.radio label span.checkbox-text, .checkbox label span.checkbox-text {
+  display: inline-block;
+  vertical-align: top; }
+
+.radio input, .checkbox input {
+  display: none; }
+
+.radio input:checked + label span.checkbox, .checkbox input:checked + label span.checkbox {
+  background: #2891c0;
+  border-color: #2891c0; }
+
+.radio img, .checkbox img {
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: middle; }
+
 a {
   text-decoration: none; }
 
@@ -6324,6 +6349,17 @@ a {
     font-size: 36px;
     color: #fff;
     font-weight: 300; }
+
+.block__map {
+  background: #fff;
+  padding-top: 130px; }
+  .block__map .filter {
+    padding-left: 15px;
+    width: 100%; }
+    .block__map .filter .block__title, .block__map .filter .tab-content .developer__description > span, .tab-content .block__map .filter .developer__description > span {
+      margin-bottom: 5px; }
+    .block__map .filter p {
+      font-size: 18px; }
 
 .slider-home {
   height: 635px;
