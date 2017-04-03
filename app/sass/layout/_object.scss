@@ -15,35 +15,83 @@
     background-size: cover;
 
     &__block{
-      height: 470px;
+      height: 480px;
       color: #ffffff;
       position: relative;
+      overflow: hidden;
 
       &__info{
         position: absolute;
-        bottom: 0;
-        left: 40px;
+        bottom: 70px;
+        left: 50px;
 
         span{
           display: block;
-          padding-bottom: 15px;
         }
         .title{
-          padding-bottom: 30px;
+          padding-bottom: 15px;
           font-family: "Roboto Slab";
           font-size: 36px;
           font-weight: 300;
+          text-transform: uppercase;
         }
         &__text{
           .info{
             display: inline-block;
             float: left;
+            margin-right: 50px;
             .img,span{
               display: inline-block;
+              height: 40px;
+              vertical-align: middle;
+            }
+            .img{
+              margin-right: 5px;
             }
           }
         }
 
+      }
+      .sale{
+        position: absolute;
+        right: -15px;
+        bottom: 70px;
+        background: #ae2d47;
+        padding: 0 40px 0 10px;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+    }
+  }
+  ._smal{
+    height: 230px;
+    .object__context__block__info{
+      top: 35px;
+    }
+  }
+  ._indent{
+    padding: 0 40px 0 0;
+  }
+  .row{
+    padding-bottom: 15px;
+  }
+  ._in-row{
+    padding-top: 15px;
+    height: 235px;
+  }
+  .object__next{
+    padding-top: 35px;
+    text-align: center;
+    a{
+      display: inline-block;
+      margin-right: 15px;
+      img,span{
+        display: block;
+        margin: 0 auto;
+      }
+      span{
+        text-decoration: none;
+        color: #727272;
       }
     }
   }

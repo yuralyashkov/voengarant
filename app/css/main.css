@@ -6375,26 +6375,63 @@ a {
     padding-top: 50px;
     background-size: cover; }
     .object__context__block {
-      height: 470px;
+      height: 480px;
       color: #ffffff;
-      position: relative; }
+      position: relative;
+      overflow: hidden; }
       .object__context__block__info {
         position: absolute;
-        bottom: 0;
-        left: 40px; }
+        bottom: 70px;
+        left: 50px; }
         .object__context__block__info span {
-          display: block;
-          padding-bottom: 15px; }
+          display: block; }
         .object__context__block__info .title {
-          padding-bottom: 30px;
+          padding-bottom: 15px;
           font-family: "Roboto Slab";
           font-size: 36px;
-          font-weight: 300; }
+          font-weight: 300;
+          text-transform: uppercase; }
         .object__context__block__info__text .info {
           display: inline-block;
-          float: left; }
+          float: left;
+          margin-right: 50px; }
           .object__context__block__info__text .info .img, .object__context__block__info__text .info span {
-            display: inline-block; }
+            display: inline-block;
+            height: 40px;
+            vertical-align: middle; }
+          .object__context__block__info__text .info .img {
+            margin-right: 5px; }
+      .object__context__block .sale {
+        position: absolute;
+        right: -15px;
+        bottom: 70px;
+        background: #ae2d47;
+        padding: 0 40px 0 10px;
+        border-radius: 5px;
+        font-size: 14px; }
+  .object ._smal {
+    height: 230px; }
+    .object ._smal .object__context__block__info {
+      top: 35px; }
+  .object ._indent {
+    padding: 0 40px 0 0; }
+  .object .row {
+    padding-bottom: 15px; }
+  .object ._in-row {
+    padding-top: 15px;
+    height: 235px; }
+  .object .object__next {
+    padding-top: 35px;
+    text-align: center; }
+    .object .object__next a {
+      display: inline-block;
+      margin-right: 15px; }
+      .object .object__next a img, .object .object__next a span {
+        display: block;
+        margin: 0 auto; }
+      .object .object__next a span {
+        text-decoration: none;
+        color: #727272; }
 
 .slider-home {
   height: 635px;
