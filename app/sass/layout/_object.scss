@@ -1,0 +1,50 @@
+.object{
+  padding-top: 50px;
+  .block__title{
+    display: block;
+    text-align: center;
+    font-size: 36px;
+    font-family: "Roboto Slab";
+    font-weight: 300;
+  }
+  .block__text{
+    text-align: center;
+  }
+  &__context{
+    padding-top: 50px;
+    background-size: cover;
+
+    &__block{
+      height: 470px;
+      color: #ffffff;
+      position: relative;
+
+      &__info{
+        position: absolute;
+        bottom: 0;
+        left: 40px;
+
+        span{
+          display: block;
+          padding-bottom: 15px;
+        }
+        .title{
+          padding-bottom: 30px;
+          font-family: "Roboto Slab";
+          font-size: 36px;
+          font-weight: 300;
+        }
+        &__text{
+          .info{
+            display: inline-block;
+            float: left;
+            .img,span{
+              display: inline-block;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}

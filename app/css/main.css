@@ -6361,6 +6361,41 @@ a {
     .block__map .filter p {
       font-size: 18px; }
 
+.object {
+  padding-top: 50px; }
+  .object .block__title, .object .tab-content .developer__description > span, .tab-content .object .developer__description > span {
+    display: block;
+    text-align: center;
+    font-size: 36px;
+    font-family: "Roboto Slab";
+    font-weight: 300; }
+  .object .block__text {
+    text-align: center; }
+  .object__context {
+    padding-top: 50px;
+    background-size: cover; }
+    .object__context__block {
+      height: 470px;
+      color: #ffffff;
+      position: relative; }
+      .object__context__block__info {
+        position: absolute;
+        bottom: 0;
+        left: 40px; }
+        .object__context__block__info span {
+          display: block;
+          padding-bottom: 15px; }
+        .object__context__block__info .title {
+          padding-bottom: 30px;
+          font-family: "Roboto Slab";
+          font-size: 36px;
+          font-weight: 300; }
+        .object__context__block__info__text .info {
+          display: inline-block;
+          float: left; }
+          .object__context__block__info__text .info .img, .object__context__block__info__text .info span {
+            display: inline-block; }
+
 .slider-home {
   height: 635px;
   margin-bottom: 180px; }
@@ -6437,22 +6472,36 @@ a {
   .about-project .about-project-slider {
     text-align: center;
     padding: 74px;
-    height: 586px;
-    background-size: cover; }
+    height: 586px; }
     .about-project .about-project-slider span {
-      display: block; }
+      display: block;
+      padding-bottom: 15px; }
     .about-project .about-project-slider span:first-child {
       font-family: "Roboto Slab";
       color: #333333;
       font-size: 18px; }
+    .about-project .about-project-slider button {
+      height: 26px;
+      background: #ae2d47;
+      border-radius: 15px;
+      padding: 0 25px;
+      text-align: center;
+      margin-left: -25px;
+      color: #ffffff; }
   .about-project .slider-home {
     width: 91%;
     margin-top: 20px;
-    height: 635px; }
+    height: 635px;
+    margin-bottom: 0; }
   .about-project .swiper-slide {
     width: 100%; }
   .about-project .swiper-wrapper {
-    margin-left: 30px; }
+    margin-left: 30px;
+    background: url("../images/icons/about-project-slide.png");
+    background-size: cover; }
+  .about-project .swiper-slide__content {
+    position: relative;
+    bottom: 0; }
   .about-project .swiper-pagination {
     margin-bottom: 40px; }
 

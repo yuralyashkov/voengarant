@@ -43,28 +43,46 @@
     text-align: center;
     padding: 74px;
     height: 586px;
-    background-size: cover;
+
 
     span{
       display: block;
+      padding-bottom: 15px;
     }
     span:first-child{
       font-family: "Roboto Slab";
       color: #333333;
       font-size: 18px;
     }
+    button{
+      height: 26px;
+      background: #ae2d47;
+      border-radius: 15px;
+      padding: 0 25px;
+      text-align: center;
+      margin-left: -25px;
+      color: #ffffff;
+
+    }
   }
   .slider-home{
     width: 91%;
     margin-top: 20px;
     height: 635px;
+    margin-bottom: 0 ;
   }
   .swiper-slide{
     width: 100%;
   }
   .swiper-wrapper {
     margin-left: 30px;
+    background: url("../images/icons/about-project-slide.png");
+    background-size: cover;
 
+  }
+  .swiper-slide__content{
+    position: relative;
+    bottom: 0;
   }
   .swiper-pagination {
     margin-bottom: 40px;
