@@ -4,9 +4,10 @@
     padding-top: 15px;
     background-size: cover;
     .col-md-6:first-child{
-      padding: 0 10px;
+      padding:0 15px 0 10px;
     }
     &__block{
+      display: block;
       height: 480px;
       color: #ffffff;
       position: relative;
@@ -54,6 +55,13 @@
         font-size: 14px;
       }
     }
+      &__block:hover{
+        color:#ffffff;
+        opacity: 0.8;
+      }
+      &__block:focus{
+        color: #ffffff;
+      }
   }
   .block__text{
     padding-left: 15px;

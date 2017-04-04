@@ -12,7 +12,8 @@
                             span.checkbox
                             img(src="./images/icons/new-house-radio1.png")
                             span.checkbox-text Эксклюзивные предложения<br> застройщика на карте
-                        label(for="type_pik")
+                        input(type="radio", name="type", value="pik")#type_pik2
+                        label(for="type_pik2")
                             span.checkbox
                             img(src="./images/icons/new-house-radio2.png")
                             span.checkbox-text Смотреть на карте лучшие объекты<br>по рейтингу ВоенГаранта
@@ -46,7 +47,7 @@
                         label(for="type")
                             span.checkbox
                             span.checkbox-text Акции
-                    .selection._first
+                    .selection
                         span Готовность
                         .img
                             img(src="./images/icons/new-house-selection.png")
@@ -70,4 +71,4 @@
                         span на весь экран
                     .str
                         img(src="./images/icons/map-str.png")
-                        span Обнулить<br>                фильтр
+                        span Обнулить<br>фильтр

@@ -17,11 +17,12 @@
     padding-bottom: 55px;
   }
   ul{
+    float: none;
     margin: 0;
     padding: 0;
   }
   .row{
-    display: table;
+    display: flex;
     width: 100%;
     margin: 0 -7.5px;
   }
@@ -31,8 +32,10 @@
   }
   &__info{
     text-align: center;
-    background-color: #e3e3e3;background-color: #e3e3e3;
     padding: 30px 70px;
+    a{
+      display: inline-block;
+    }
   }
   ._light{
     background-color: #ffffff;
@@ -45,10 +48,12 @@
     padding-top: 47px;
   }
   li{
-    display: table-column;
-    float: left;
-    padding: 0 7.5px;
+    display: inline-block;
+    float: none;
+    margin: 0 7.5px;
+    padding: 0;
     overflow: hidden;
+    background-color: #e3e3e3;
 
     span:first-child{
       display: block;
@@ -70,6 +75,7 @@
     .reviews__logo{
       padding-bottom: 20px;
       padding-top: 35px;
+      max-width: 100%;
 
     }
     span:last-child{
@@ -77,5 +83,6 @@
     }
 
   }
+
 }
 
