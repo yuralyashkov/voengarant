@@ -34,20 +34,24 @@ footer
 
 section.footer-contact
     .container
-        .footer-contact__number
-            img(src="./images/icons/footer-number.png")
-            span Вы можете связаться с нами по телефону
-            span +7 800 500-43-44
-        .footer-contact__social
-            a(href="#")
-                img(src="./images/icons/vk-social-logotype.png")
-            a(href="#")
-                img(src="./images/icons/facebook-logo-button.png")
-            a(href="#")
-                img(src="./images/icons/OK_logo.png")
+        .row
+            .footer-contact__number.col-md-6
+                img(src="./images/icons/footer-number.png")
+                span Вы можете связаться с нами по телефону
+                span +7 800 500-43-44
+            .footer-contact__social.col-md-6
+                a(href="#")
+                    img(src="./images/icons/vk-social-logotype.png")
+                a(href="#")
+                    img(src="./images/icons/facebook-logo-button.png")
+                a(href="#")
+                    img(src="./images/icons/OK_logo.png")
 section.footer-right
     .container
-        span © Военгарант, 2016 г. Все права защищены.
-        .footer-right__logo
-            img(src="./images/icons/footer-right.png")
-            span Разработано NTI systems
+        .row
+            .col-md-6
+                span © Военгарант, 2016 г. Все права защищены.
+
+            .footer-right__logo.col-md-6
+                img(src="./images/icons/footer-right.png")
+                span Разработано NTI systems

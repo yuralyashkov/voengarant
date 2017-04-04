@@ -1,0 +1,95 @@
+.object{
+  padding-top: 35px;
+  &__context{
+    padding-top: 15px;
+    background-size: cover;
+    .col-md-6:first-child{
+      padding: 0 10px;
+    }
+    &__block{
+      height: 480px;
+      color: #ffffff;
+      position: relative;
+      overflow: hidden;
+
+      &__info{
+        position: absolute;
+        bottom: 70px;
+        left: 50px;
+
+        span{
+          display: block;
+        }
+        .title{
+          padding-bottom: 15px;
+          font-family: "Roboto Slab";
+          font-size: 36px;
+          font-weight: 300;
+          text-transform: uppercase;
+        }
+        &__text{
+          .info{
+            display: inline-block;
+            float: left;
+            margin-right: 50px;
+            .img,span{
+              display: inline-block;
+              height: 40px;
+              vertical-align: middle;
+            }
+            .img{
+              margin-right: 5px;
+            }
+          }
+        }
+
+      }
+      .sale{
+        position: absolute;
+        right: -15px;
+        bottom: 75px;
+        background: #ae2d47;
+        padding: 0 40px 0 10px;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+    }
+  }
+  .block__text{
+    padding-left: 15px;
+  }
+  ._smal{
+    height: 230px;
+    .object__context__block__info{
+      top: 25px;
+    }
+  }
+  ._indent{
+    padding-left: 10px;
+  }
+  .row{
+    padding-bottom: 15px;
+    margin: 0;
+  }
+  ._in-row{
+    padding-top: 15px;
+    height: 235px;
+  }
+  .object__next{
+    padding-top: 30px;
+    text-align: center;
+    a{
+      display: inline-block;
+      margin-right: 15px;
+      img,span{
+        display: block;
+        margin: 0 auto;
+        padding-left: 12px;
+      }
+      span{
+        text-decoration: none;
+        color: #727272;
+      }
+    }
+  }
+}

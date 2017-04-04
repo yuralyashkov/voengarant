@@ -1,12 +1,14 @@
 .reviews{
-  padding-top: 190px;
+  padding-top: 215px;
   .block__title,.block__text,.more{
     display: block;
     text-align: center;
   }
   .block__title{
     margin: 0;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    font-weight: 300;
+    font-size: 36px;
   }
   .block__text{
     padding-bottom:25px ;
@@ -60,14 +62,15 @@
     }
     .reviews__text{
       display: block;
-      min-height: 185px;
+      min-height: 190px;
       margin: 0 auto;
       line-height: 20px;
       padding-top: 33px;
     }
     .reviews__logo{
       padding-bottom: 20px;
-      padding-top: 43px;
+      padding-top: 35px;
+
     }
     span:last-child{
       display: block;

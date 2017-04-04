@@ -5,12 +5,17 @@
   &__img{
     position: absolute;
     top: 12%;
-    left: -19px;
+    left: 50px;
     width: 37.3%;
   }
-
+  .col-md-6{
+    padding-left: 90px;
+    padding-top: 30px;
+  }
   .block__title{
-    margin-bottom: 34px;
+    margin-bottom: 18px;
+    font-size: 36px;
+    font-weight: 300;
   }
   .block__text:first-child{
     margin-bottom: 30px;
@@ -23,13 +28,13 @@
     font-size: 36px;
   }
   .block__text{
-    margin-bottom: 27px;
-    padding-right: 180px;
+    margin-bottom: 55px;
     line-height: 24px;
+    padding-right: 105px;
   }
   .more{
     display: block;
-    margin: 0 0 32px;
+    margin: -35px 0 35px;
   }
   p{
     padding-top: 23px;

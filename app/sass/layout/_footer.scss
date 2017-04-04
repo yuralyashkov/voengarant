@@ -2,6 +2,11 @@ footer{
   height: 350px;
   padding-top: 45px;
   border-top:solid 2px #e5e5e5;
+  .row{
+    margin-left: -10px;
+    margin-right: -20px;
+  }
+
   ul{
     display: inline-block;
     float: left;
@@ -40,6 +45,9 @@ footer{
   }
 }
 .footer-contact{
+  .row{
+    margin: 0;
+  }
   &__number,&__social{
     display: inline-block;
   }
@@ -61,7 +69,7 @@ footer{
   }
   &__social{
     float: right;
-    margin-right: 25px;
+    text-align: right;
     img{
       padding-left: 15px;
       max-height: 30px;
@@ -72,6 +80,9 @@ footer{
   margin-top: 45px;
   background-color: #ffffff;
   height: 30px;
+  .row{
+    margin: 0;
+  }
 
   span:first-child,&__logo{
     display:inline-block;
@@ -93,6 +104,6 @@ footer{
     color: #777777;
   }
   &__logo{
-    padding-right: 25px;
+    text-align: right;
   }
 }
