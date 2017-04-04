@@ -6114,18 +6114,37 @@ a {
 
 .block__discount {
   margin-bottom: 155px; }
+  .block__discount .col-md-12 {
+    padding: 0; }
+    .block__discount .col-md-12 .row {
+      padding: 0; }
+      .block__discount .col-md-12 .row .col-md-3, .block__discount .col-md-12 .row .col-md-5 {
+        padding: 0; }
+      .block__discount .col-md-12 .row .col-md-3 {
+        padding-right: -15px; }
 
 .discount {
   padding-left: 15px;
   color: #1f1f1f; }
+  .discount .btn {
+    font-size: 16px;
+    font-weight: 300;
+    border: none;
+    font-family: "myriad-pro", sans-serif;
+    border-radius: 5px;
+    padding: 5px 20px; }
   .discount__list {
     padding-left: 18px;
     font-size: 18px;
     line-height: 22px;
     font-weight: 300;
     margin-bottom: 22px; }
+  .discount__title {
+    font-family: "Roboto Slab";
+    font-weight: 300;
+    font-size: 36px; }
   .discount__footnote {
-    font-size: 18px;
+    font-size: 14px;
     color: #777777;
     display: block;
     font-weight: 300;
@@ -6136,13 +6155,14 @@ a {
   width: 569px;
   height: 278px;
   float: right;
-  margin-right: 25px;
+  margin-right: 20px;
   color: #fafafa;
-  font-family: "Roboto Slab", serif;
-  font-weight: 100;
+  font-family: "myriad-pro", sans-serif;
+  font-weight: 300;
   padding: 25px 40px;
   max-width: 100%;
-  background-size: 100% auto; }
+  background-size: 100% auto;
+  margin-top: -25px; }
   @media screen and (max-width: 1140px) {
     .discount-card {
       padding: 13px 40px; } }
@@ -6153,7 +6173,7 @@ a {
       .discount-card__title {
         margin-bottom: 0; } }
   .discount-card__text {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 22px;
     margin-bottom: 27px; }
     @media screen and (max-width: 1680px) {
@@ -6166,9 +6186,13 @@ a {
       .discount-card__text {
         font-size: 16px;
         line-height: 16px; } }
+  .discount-card .discount-card__text:first-child {
+    font-size: 16px; }
+  .discount-card .discount-card__text:last-child {
+    font-size: 18px; }
   .discount-card__link {
-    font-size: 21px;
-    color: #fafafa; }
+    font-size: 18px;
+    color: #2f97f0; }
     .discount-card__link:hover {
       text-decoration: none; }
     @media screen and (max-width: 1140px) {
@@ -6513,7 +6537,7 @@ a {
 
 .slider-home {
   height: 635px;
-  margin-bottom: 180px; }
+  margin-bottom: 280px; }
   .slider-home .swiper-pagination .swiper-pagination-bullet {
     margin: 0 9px; }
   .slider-home .swiper-pagination-bullet {
@@ -6543,13 +6567,15 @@ a {
     margin: 0 auto; }
   .slider-home__title {
     color: #303030;
-    font-size: 48px;
+    font-size: 60px;
     line-height: 60px;
     font-family: "Roboto Slab", serif;
-    font-weight: 300;
-    margin-bottom: 17px; }
+    font-weight: 100;
+    margin-bottom: 17px;
+    margin-top: 30px; }
   .slider-home__text {
-    font-size: 24px; }
+    font-size: 24px;
+    font-weight: 300; }
 
 .about-project {
   padding-top: 110px; }
