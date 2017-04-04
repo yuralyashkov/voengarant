@@ -1,19 +1,11 @@
 .object{
-  padding-top: 50px;
-  .block__title{
-    display: block;
-    text-align: center;
-    font-size: 36px;
-    font-family: "Roboto Slab";
-    font-weight: 300;
-  }
-  .block__text{
-    text-align: center;
-  }
+  padding-top: 35px;
   &__context{
-    padding-top: 50px;
+    padding-top: 15px;
     background-size: cover;
-
+    .col-md-6:first-child{
+      padding: 0 10px;
+    }
     &__block{
       height: 480px;
       color: #ffffff;
@@ -55,7 +47,7 @@
       .sale{
         position: absolute;
         right: -15px;
-        bottom: 70px;
+        bottom: 75px;
         background: #ae2d47;
         padding: 0 40px 0 10px;
         border-radius: 5px;
@@ -63,24 +55,28 @@
       }
     }
   }
+  .block__text{
+    padding-left: 15px;
+  }
   ._smal{
     height: 230px;
     .object__context__block__info{
-      top: 35px;
+      top: 25px;
     }
   }
   ._indent{
-    padding: 0 40px 0 0;
+    padding-left: 10px;
   }
   .row{
     padding-bottom: 15px;
+    margin: 0;
   }
   ._in-row{
     padding-top: 15px;
     height: 235px;
   }
   .object__next{
-    padding-top: 35px;
+    padding-top: 30px;
     text-align: center;
     a{
       display: inline-block;
@@ -88,6 +84,7 @@
       img,span{
         display: block;
         margin: 0 auto;
+        padding-left: 12px;
       }
       span{
         text-decoration: none;

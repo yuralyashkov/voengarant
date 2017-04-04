@@ -1,6 +1,6 @@
 .block__map {
   background: #fff;
-  padding-top: 130px;
+  padding-top: 135px;
 
   .filter {
     padding-left: 15px;
@@ -61,71 +61,52 @@
     }
 
   }
+  .col-md-5{
+    padding-top: 25px;
+  }
   .col-md-7{
-    border:solid 1px #e4e4e4;
-    position: relative;
+
     height: 700px;
+    padding-left: 0 ;
 
-    .search,.plus,.menus,.scr,.str{
-      position: absolute;
-    }
-    .search{
-      top: -25px;
-      right: 45%;
-      text-align: center;
-      img,span{
-        display: inline-block;
+    .map-context{
+      width: 95%;
+      height: 100%;
+      position: relative;
+      border:solid 1px #e4e4e4;
+      .search,.plus,.menus,.scr,.str{
+        position: absolute;
+        text-align: center;
+        img,span{
+          display: inline-block;
+        }
+        span{
+          width:100%;
+        }
       }
-      span{
-        width:100%;
+      .search{
+        top: -30px;
+        right: 37.5%;
+      }
+      .plus{
+        right: -24px;
+        top: 36%;
+      }
+      .menus{
+        right: -23px;
+        bottom: 31.5%;
+      }
+      .scr{
+        bottom: -85px;
+        right: 40%;
       }
 
-    }
-    .plus{
-      right: -40px;
-      top:25%;
-      text-align: center;
-      img,span{
-        display: inline-block;
-      }
-      span{
-        width:100%;
-      }
-    }
-    .menus{
-      right: -40px;
-      bottom: 25%;
-      text-align: center;
-      img,span{
-        display: inline-block;
-      }
-      span{
-        width:100%;
-      }
-    }
-    .scr{
-      bottom: -45px;
-      right: 45%;
-      text-align: center;
-      img,span{
-        display: inline-block;
-      }
-      span{
-        width:100%;
+      .str{
+        left: -63px;
+        top: 46.5%;
       }
     }
 
-    .str{
-      left: -45px;
-      top:50%;
-      text-align: center;
-      img,span{
-        display: inline-block;
-      }
-      span{
-        width:100%;
-      }
-    }
   }
 
 
