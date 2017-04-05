@@ -1,5 +1,5 @@
 .news{
-  padding-top: 220px;
+  padding-top: 210px;
   .block__title,.block__text,.more{
     display: block;
     text-align: center
@@ -13,7 +13,7 @@
     margin: 0 auto 25px;
   }
   .more{
-    margin:0 auto 45px;
+    margin:0 auto 40px;
   }
   .row{
     display: table;
@@ -22,10 +22,11 @@
       display: table-cell;
       float: none;
       vertical-align: middle;
-      padding: 0 30px 0 0;
+      padding:  0;
     }
     .col-md-6:last-child{
       vertical-align: top;
+      padding-right:30px ;
     }
   }
   .row:first-child{
@@ -35,26 +36,21 @@
     padding-bottom: 25px;
 
     .row{
-      display: table;
-      margin: 0 7.5px;
-      float: none;
+      display: flex;
+      margin: 0 15px;
       height: 100%;
-
-
       .col-md-6{
-        display: table-cell;
-        float: none;
-        vertical-align: middle;
+        margin: 0 7.5px;
         padding: 0 7.5px;
+        background-color: #ffffff;
       }
     }
     .row:first-child{
-      padding-bottom: 20px;
+      padding-bottom: 10px;
     }
     .news__info__text{
       height: 100%;
-      padding: 18px 15px 25px 25px;
-      background-color: #ffffff;
+      padding: 25px 15px 25px 10px;
 
       span:first-child{
         display: block;
@@ -67,7 +63,7 @@
       .action{
         margin-top: 5px;
         height: 18px;
-        margin-left: -25px;
+        margin-left: -15px;
 
         .red,.blue{
           display: inline-block;

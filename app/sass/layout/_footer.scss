@@ -53,10 +53,12 @@ footer{
   }
   &__number{
     float: left;
+
     span{
       display: inline-block;
       vertical-align: middle;
       font-size: 18px;
+      line-height: 29px;
     }
     span:last-child{
       color: #2891c0;
@@ -71,7 +73,7 @@ footer{
     float: right;
     text-align: right;
     img{
-      padding-left: 15px;
+      padding-left: 10px;
       max-height: 30px;
     }
   }

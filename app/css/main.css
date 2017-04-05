@@ -6122,7 +6122,7 @@ a {
     vertical-align: middle; }
 
 .block__discount {
-  margin-bottom: 150px; }
+  margin-bottom: 155px; }
   .block__discount .col-md-12 {
     padding: 0; }
     .block__discount .col-md-12 .row {
@@ -6135,36 +6135,40 @@ a {
 .discount {
   padding-left: 15px;
   color: #1f1f1f; }
+  .discount .col-md-4 {
+    padding: 0 30px; }
   .discount__list {
     padding-left: 18px;
     font-size: 18px;
     line-height: 22px;
     font-weight: 300;
-    margin-bottom: 22px; }
+    margin-bottom: 20px; }
   .discount__title {
     font-family: "Roboto Slab";
     font-weight: 300;
-    font-size: 36px; }
+    font-size: 36px;
+    margin-bottom: 20px; }
   .discount__footnote {
     font-size: 14px;
     color: #777777;
     display: block;
     font-weight: 300;
-    margin-top: 20px; }
+    margin-top: 20px;
+    line-height: 17px; }
 
 .discount-card {
   background: url("../images/discount_bg.png") no-repeat;
   width: 569px;
   height: 278px;
   float: right;
-  margin-right: 20px;
   color: #fafafa;
   font-family: "myriad-pro", sans-serif;
   font-weight: 300;
-  padding: 25px 40px;
+  padding: 35px 40px;
   max-width: 100%;
   background-size: 100% auto;
-  margin-top: -25px; }
+  margin-top: -25px;
+  margin-right: 15px; }
   @media screen and (max-width: 1140px) {
     .discount-card {
       padding: 13px 40px; } }
@@ -6278,6 +6282,8 @@ a {
     .tab-content .developer__description p {
       font-size: 18px;
       padding-left: 18px; }
+    .tab-content .developer__description p:first-child {
+      margin-top: -10px; }
     .tab-content .developer__description > span {
       font-size: 36px;
       display: inline-block;
@@ -6512,7 +6518,7 @@ a {
   .object ._smal {
     height: 230px; }
     .object ._smal .object__context__block__info {
-      top: 25px; }
+      top: 30px; }
   .object ._indent {
     padding-left: 10px; }
   .object .row {
@@ -6522,7 +6528,7 @@ a {
     padding-top: 15px;
     height: 235px; }
   .object .object__next {
-    padding-top: 30px;
+    padding-top: 35px;
     text-align: center; }
     .object .object__next a {
       display: inline-block;
@@ -6537,7 +6543,7 @@ a {
 
 .slider-home {
   height: 635px;
-  margin-bottom: 270px; }
+  margin-bottom: 273px; }
   .slider-home .swiper-pagination .swiper-pagination-bullet {
     margin: 0 9px; }
   .slider-home .swiper-pagination-bullet {
@@ -6562,7 +6568,6 @@ a {
       text-align: center;
       width: 100%; }
   .slider-home__img {
-    margin-bottom: 15px;
     display: block;
     margin: 0 auto; }
   .slider-home__title {
@@ -6571,14 +6576,14 @@ a {
     line-height: 60px;
     font-family: "Roboto Slab", serif;
     font-weight: 100;
-    margin-bottom: 17px;
+    margin-bottom: 20px;
     margin-top: 30px; }
   .slider-home__text {
     font-size: 24px;
     font-weight: 300; }
 
 .about-project {
-  padding-top: 132px; }
+  padding-top: 140px; }
   .about-project .col-md-6 {
     padding-left: 30px; }
   .about-project .block__title, .about-project .tab-content .developer__description > span, .tab-content .about-project .developer__description > span {
@@ -6696,7 +6701,7 @@ a {
     color: #777777; }
 
 .news {
-  padding-top: 220px; }
+  padding-top: 210px; }
   .news .block__title, .news .tab-content .developer__description > span, .tab-content .news .developer__description > span, .news .block__text, .news .more {
     display: block;
     text-align: center; }
@@ -6707,7 +6712,7 @@ a {
   .news .block__text {
     margin: 0 auto 25px; }
   .news .more {
-    margin: 0 auto 45px; }
+    margin: 0 auto 40px; }
   .news .row {
     display: table;
     float: none; }
@@ -6715,29 +6720,30 @@ a {
       display: table-cell;
       float: none;
       vertical-align: middle;
-      padding: 0 30px 0 0; }
+      padding: 0; }
     .news .row .col-md-6:last-child {
-      vertical-align: top; }
+      vertical-align: top;
+      padding-right: 30px; }
   .news .row:first-child {
     margin-bottom: 59px; }
   .news .news__info {
     padding-bottom: 25px; }
     .news .news__info .row {
-      display: table;
-      margin: 0 7.5px;
-      float: none;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0 15px;
       height: 100%; }
       .news .news__info .row .col-md-6 {
-        display: table-cell;
-        float: none;
-        vertical-align: middle;
-        padding: 0 7.5px; }
+        margin: 0 7.5px;
+        padding: 0 7.5px;
+        background-color: #ffffff; }
     .news .news__info .row:first-child {
-      padding-bottom: 20px; }
+      padding-bottom: 10px; }
     .news .news__info .news__info__text {
       height: 100%;
-      padding: 18px 15px 25px 25px;
-      background-color: #ffffff; }
+      padding: 25px 15px 25px 10px; }
       .news .news__info .news__info__text span:first-child {
         display: block;
         margin-bottom: 30px;
@@ -6748,7 +6754,7 @@ a {
       .news .news__info .news__info__text .action {
         margin-top: 5px;
         height: 18px;
-        margin-left: -25px; }
+        margin-left: -15px; }
         .news .news__info .news__info__text .action .red, .news .news__info .news__info__text .action .blue {
           display: inline-block;
           float: left;
@@ -6804,7 +6810,7 @@ a {
       margin-top: -10px; }
 
 .analitic {
-  padding-top: 200px;
+  padding-top: 220px;
   font-size: 18px; }
   .analitic .container {
     padding-left: 13px; }
@@ -6848,7 +6854,7 @@ a {
       padding-right: 0; }
 
 .reviews {
-  padding-top: 215px; }
+  padding-top: 210px; }
   .reviews .block__title, .reviews .tab-content .developer__description > span, .tab-content .reviews .developer__description > span, .reviews .block__text, .reviews .more {
     display: block;
     text-align: center; }
@@ -6879,8 +6885,6 @@ a {
     padding: 30px 70px; }
     .reviews__info a {
       display: inline-block; }
-  .reviews ._light {
-    background-color: #ffffff; }
   .reviews ._indent {
     margin-left: -13px; }
   .reviews ._center .reviews__logo {
@@ -6891,8 +6895,7 @@ a {
     float: none;
     margin: 0 7.5px;
     padding: 0;
-    overflow: hidden;
-    background-color: #e3e3e3; }
+    overflow: hidden; }
     .reviews li span:first-child {
       display: block;
       padding-bottom: 35px;
@@ -6913,6 +6916,14 @@ a {
       max-width: 100%; }
     .reviews li span:last-child {
       display: block; }
+  .reviews .row:nth-child(even) li:nth-child(even) {
+    background-color: #ffffff; }
+  .reviews .row:nth-child(even) li:nth-child(odd) {
+    background-color: #e3e3e3; }
+  .reviews .row:nth-child(odd) li:nth-child(odd) {
+    background-color: #ffffff; }
+  .reviews .row:nth-child(odd) li:nth-child(even) {
+    background-color: #e3e3e3; }
 
 .seo {
   padding-top: 230px;
@@ -6922,55 +6933,59 @@ a {
     font-size: 36px;
     font-weight: 300;
     text-align: center;
-    line-height: 46px; }
+    line-height: 44px; }
   .seo .block__text {
     text-align: center; }
   .seo .but {
     background: url("../images/icons/seo-b1.png");
     margin: 30px auto 165px; }
-  .seo .seo-context {
-    background: #303030;
-    padding-top: 60px; }
-    .seo .seo-context .row {
-      text-align: center; }
-    .seo .seo-context .col-md-8 {
-      display: inline-block;
-      float: none;
-      padding-left: 75px;
-      padding-right: 140px; }
-    .seo .seo-context .block__title, .seo .seo-context .tab-content .developer__description > span, .tab-content .seo .seo-context .developer__description > span {
-      font-size: 36px;
-      font-weight: 300;
-      color: #fafafa;
-      padding-top: 60px;
-      text-align: left; }
-    .seo .seo-context .block__text {
-      color: #777777;
-      text-align: left; }
-    .seo .seo-context a {
-      padding-top: 60px;
-      display: inline-block;
-      position: relative; }
-    .seo .seo-context .but {
-      position: absolute;
-      margin: 0;
-      bottom: -20px;
-      right: -45px;
-      background: url("../images/icons/seo-b2.png"); }
+
+.seo-context {
+  display: none;
+  background: #303030;
+  padding-top: 60px; }
+  .seo-context .row {
+    text-align: center; }
+  .seo-context .col-md-8 {
+    display: inline-block;
+    float: none;
+    padding-left: 75px;
+    padding-right: 140px; }
+  .seo-context .block__title, .seo-context .tab-content .developer__description > span, .tab-content .seo-context .developer__description > span {
+    font-size: 36px;
+    font-weight: 300;
+    color: #fafafa;
+    padding-top: 60px;
+    text-align: left; }
+  .seo-context .block__text {
+    color: #777777;
+    text-align: left; }
+  .seo-context a {
+    padding-top: 55px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer; }
+  .seo-context .but {
+    position: absolute;
+    margin: 0;
+    bottom: -20px;
+    right: -45px;
+    background: url("../images/icons/seo-b2.png"); }
 
 .but {
   display: block;
+  cursor: pointer;
   outline: none;
   width: 32px;
   height: 32px; }
 
 .bank {
   padding-top: 55px;
-  padding-bottom: 85px; }
+  padding-bottom: 90px; }
   .bank .block__text, .bank .block__title, .bank .tab-content .developer__description > span, .tab-content .bank .developer__description > span, .bank .more {
     display: block;
     text-align: center;
-    padding-bottom: 30px; }
+    padding-bottom: 25px; }
   .bank .block__title, .bank .tab-content .developer__description > span, .tab-content .bank .developer__description > span {
     margin: 0 auto;
     padding-top: 45px;
@@ -6994,6 +7009,9 @@ a {
       width: 100%;
       padding-top: 10px;
       font-size: 14px; }
+    .bank li span:first-child {
+      font-size: 18px;
+      font-weight: 600; }
   .bank li:hover img {
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
@@ -7061,7 +7079,8 @@ footer {
   .footer-contact__number span {
     display: inline-block;
     vertical-align: middle;
-    font-size: 18px; }
+    font-size: 18px;
+    line-height: 29px; }
   .footer-contact__number span:last-child {
     color: #2891c0;
     margin-left: 5px; }
@@ -7073,7 +7092,7 @@ footer {
   float: right;
   text-align: right; }
   .footer-contact__social img {
-    padding-left: 15px;
+    padding-left: 10px;
     max-height: 30px; }
 
 .footer-right {
