@@ -78,6 +78,9 @@
       font-size: 18px;
       padding-left: 18px;
     }
+    p:first-child{
+      margin-top: -10px;
+    }
 
     > span {
       @extend .block__title;
@@ -85,6 +88,7 @@
       display: inline-block;
       vertical-align: middle;
       padding-left: 18px;
+
     }
     span{
       margin-bottom: 0;

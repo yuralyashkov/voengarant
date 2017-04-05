@@ -1,5 +1,5 @@
 .reviews{
-  padding-top: 215px;
+  padding-top: 210px;
   .block__title,.block__text,.more{
     display: block;
     text-align: center;
@@ -17,11 +17,12 @@
     padding-bottom: 55px;
   }
   ul{
+    float: none;
     margin: 0;
     padding: 0;
   }
   .row{
-    display: table;
+    display: flex;
     width: 100%;
     margin: 0 -7.5px;
   }
@@ -31,12 +32,12 @@
   }
   &__info{
     text-align: center;
-    background-color: #e3e3e3;background-color: #e3e3e3;
     padding: 30px 70px;
+    a{
+      display: inline-block;
+    }
   }
-  ._light{
-    background-color: #ffffff;
-  }
+
   ._indent{
     margin-left: -13px;
   }
@@ -45,9 +46,10 @@
     padding-top: 47px;
   }
   li{
-    display: table-column;
-    float: left;
-    padding: 0 7.5px;
+    display: inline-block;
+    float: none;
+    margin: 0 7.5px;
+    padding: 0;
     overflow: hidden;
 
     span:first-child{
@@ -70,6 +72,7 @@
     .reviews__logo{
       padding-bottom: 20px;
       padding-top: 35px;
+      max-width: 100%;
 
     }
     span:last-child{
@@ -77,5 +80,22 @@
     }
 
   }
+  .row:nth-child(even){
+    li:nth-child(even){
+      background-color: #ffffff;
+    }
+    li:nth-child(odd){
+      background-color: #e3e3e3;
+    }
+  }
+  .row:nth-child(odd){
+    li:nth-child(odd){
+      background-color: #ffffff;
+    }
+    li:nth-child(even){
+      background-color: #e3e3e3;
+    }
+  }
+
 }
 

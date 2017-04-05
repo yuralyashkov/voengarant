@@ -6,7 +6,7 @@
     font-size: 36px;
     font-weight: 300;
     text-align: center;
-    line-height: 46px;
+    line-height: 44px;
   }
   .block__text{
     text-align: center;
@@ -15,47 +15,50 @@
     background: url("../images/icons/seo-b1.png");
     margin: 30px auto 165px;
   }
-  .seo-context{
-    background: #303030;
-    padding-top: 60px;
-    .row{
-      text-align: center;
-    }
-    .col-md-8{
-      display: inline-block;
-      float: none;
-      padding-left: 75px;
-      padding-right: 140px;
-    }
+}
+.seo-context{
+  display: none;
+  background: #303030;
+  padding-top: 60px;
+  .row{
+    text-align: center;
+  }
+  .col-md-8{
+    display: inline-block;
+    float: none;
+    padding-left: 75px;
+    padding-right: 140px;
+  }
 
-    .block__title{
-      font-size: 36px;
-      font-weight: 300;
-      color: #fafafa;
-      padding-top: 60px;
-      text-align: left;
-    }
-    .block__text{
-      color: #777777;
-      text-align: left;
-    }
-    a{
-      padding-top: 60px;
-      display: inline-block;
-      position: relative;
-    }
-    .but{
-      position: absolute;
-      margin: 0;
-      bottom: -20px;
-      right: -45px;
-      background: url("../images/icons/seo-b2.png");
-    }
+  .block__title{
+    font-size: 36px;
+    font-weight: 300;
+    color: #fafafa;
+    padding-top: 60px;
+    text-align: left;
+  }
+  .block__text{
+    color: #777777;
+    text-align: left;
+  }
+  a{
+    padding-top: 55px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+  }
+  .but{
+    position: absolute;
+    margin: 0;
+    bottom: -20px;
+    right: -45px;
+    background: url("../images/icons/seo-b2.png");
   }
 }
 
 .but{
   display: block;
+  cursor: pointer;
   outline: none;
   width: 32px;
   height: 32px;
