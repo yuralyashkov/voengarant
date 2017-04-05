@@ -31,19 +31,22 @@
     span{
       display: inline-block;
       width: 100%;
-      padding-top: 10px;
-      font-size: 14px;
-    };
-    span:first-child{
       font-size: 18px;
       font-weight: 600;
+    }
+    span:last-child{
+      font-size: 14px;
+      font-weight: 300;
+      @include breakpointFull("max-width: 1920px","min-width: 1680px"){
+        font-size: 16px;
+      }
     }
   }
   li:hover{
     img{
       @include ungrayscale;
     }
-    span:first-child{
+    span:nth-child(2){
       color: #0e386f;
     }
   }

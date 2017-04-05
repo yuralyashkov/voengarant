@@ -6148,6 +6148,10 @@ a {
     font-weight: 300;
     font-size: 36px;
     margin-bottom: 20px; }
+    @media screen and (max-width: 1920px) and (min-width: 1680px) {
+      .discount__title {
+        font-size: 35px;
+        margin-bottom: 15px; } }
   .discount__footnote {
     font-size: 14px;
     color: #777777;
@@ -6155,6 +6159,9 @@ a {
     font-weight: 300;
     margin-top: 20px;
     line-height: 17px; }
+    @media screen and (max-width: 1920px) and (min-width: 1680px) {
+      .discount__footnote {
+        font-size: 16px; } }
 
 .discount-card {
   background: url("../images/discount_bg.png") no-repeat;
@@ -6164,46 +6171,39 @@ a {
   color: #fafafa;
   font-family: "myriad-pro", sans-serif;
   font-weight: 300;
-  padding: 35px 40px;
+  padding: 35px;
   max-width: 100%;
   background-size: 100% auto;
   margin-top: -25px;
   margin-right: 15px; }
-  @media screen and (max-width: 1140px) {
+  @media screen and (max-width: 1920px) and (min-width: 1680px) {
     .discount-card {
-      padding: 13px 40px; } }
+      margin-right: 0;
+      padding: 20px;
+      margin-top: -20px; } }
   .discount-card__title {
     font-size: 36px;
     margin-bottom: 13px; }
-    @media screen and (max-width: 1060px) {
-      .discount-card__title {
-        margin-bottom: 0; } }
   .discount-card__text {
     font-size: 14px;
-    line-height: 22px;
-    margin-bottom: 27px; }
-    @media screen and (max-width: 1680px) {
+    margin-bottom: 10px; }
+    @media screen and (max-width: 1920px) and (min-width: 1680px) {
       .discount-card__text {
-        line-height: 19px; } }
-    @media screen and (max-width: 1520px) {
-      .discount-card__text {
-        margin-bottom: 12px; } }
-    @media screen and (max-width: 1280px) {
-      .discount-card__text {
-        font-size: 16px;
-        line-height: 16px; } }
+        font-size: 16px; } }
   .discount-card .discount-card__text:first-child {
-    font-size: 16px; }
-  .discount-card .discount-card__text:last-child {
-    font-size: 18px; }
+    font-size: 16px;
+    margin-bottom: 60px; }
+    @media screen and (max-width: 1920px) and (min-width: 1680px) {
+      .discount-card .discount-card__text:first-child {
+        font-size: 18px; } }
   .discount-card__link {
     font-size: 18px;
     color: #2f97f0; }
     .discount-card__link:hover {
       text-decoration: none; }
-    @media screen and (max-width: 1140px) {
+    @media screen and (max-width: 1920px) and (min-width: 1680px) {
       .discount-card__link {
-        font-size: 17px; } }
+        font-size: 20px; } }
 
 .block__developers {
   margin-top: 175px; }
@@ -6508,6 +6508,9 @@ a {
         padding: 0 40px 0 10px;
         border-radius: 5px;
         font-size: 14px; }
+        @media screen and (max-width: 1920px) and (min-width: 1680px) {
+          .object__context__block .sale {
+            bottom: 40px; } }
     .object__context__block:hover {
       color: #ffffff;
       opacity: 0.8; }
@@ -6665,6 +6668,9 @@ a {
   .dependents .col-md-6 {
     padding-left: 90px;
     padding-top: 30px; }
+    @media screen and (max-width: 1920px) and (min-width: 1680px) {
+      .dependents .col-md-6 {
+        padding-left: 15px; } }
   .dependents .block__title, .dependents .tab-content .developer__description > span, .tab-content .dependents .developer__description > span {
     margin-bottom: 18px;
     font-size: 36px;
@@ -6716,6 +6722,9 @@ a {
   .news .row {
     display: table;
     float: none; }
+    @media screen and (max-width: 1920px) and (min-width: 1680px) {
+      .news .row {
+        margin-right: 30px; } }
     .news .row .col-md-6 {
       display: table-cell;
       float: none;
@@ -6724,6 +6733,11 @@ a {
     .news .row .col-md-6:last-child {
       vertical-align: top;
       padding-right: 30px; }
+      @media screen and (max-width: 1920px) and (min-width: 1680px) {
+        .news .row .col-md-6:last-child {
+          padding-right: 30px;
+          background: url("../images/icons/news-main.png") left no-repeat;
+          background-size: cover; } }
   .news .row:first-child {
     margin-bottom: 59px; }
   .news .news__info {
@@ -6739,11 +6753,18 @@ a {
         margin: 0 7.5px;
         padding: 0 7.5px;
         background-color: #ffffff; }
+        @media screen and (max-width: 1920px) and (min-width: 1680px) {
+          .news .news__info .row .col-md-6 {
+            padding-right: 30px;
+            background: #ffffff; } }
     .news .news__info .row:first-child {
       padding-bottom: 10px; }
     .news .news__info .news__info__text {
       height: 100%;
       padding: 25px 15px 25px 10px; }
+      @media screen and (max-width: 1920px) and (min-width: 1680px) {
+        .news .news__info .news__info__text {
+          padding: 25px 7px 25px 10px; } }
       .news .news__info .news__info__text span:first-child {
         display: block;
         margin-bottom: 30px;
@@ -6782,17 +6803,27 @@ a {
         margin-bottom: 50px;
         font-size: 14px;
         line-height: 18px; }
+        @media screen and (max-width: 1920px) and (min-width: 1680px) {
+          .news .news__info .news__info__text .middle {
+            font-size: 16px; } }
       .news .news__info .news__info__text span:last-child {
         display: block;
         font-size: 12px;
         line-height: 24px;
         color: #727272; }
+        @media screen and (max-width: 1920px) and (min-width: 1680px) {
+          .news .news__info .news__info__text span:last-child {
+            font-size: 14px; } }
   .news .news__banner {
     padding-top: 30px;
     padding-left: 45px;
     height: 700px;
     background: url("../images/icons/news-main.png") left no-repeat;
     background-size: cover; }
+    @media screen and (max-width: 1920px) and (min-width: 1680px) {
+      .news .news__banner {
+        height: 730px;
+        background: transparent; } }
     .news .news__banner span, .news .news__banner__img {
       display: block;
       color: #ffffff;
@@ -7007,11 +7038,14 @@ a {
     .bank li span {
       display: inline-block;
       width: 100%;
-      padding-top: 10px;
-      font-size: 14px; }
-    .bank li span:first-child {
       font-size: 18px;
       font-weight: 600; }
+    .bank li span:last-child {
+      font-size: 14px;
+      font-weight: 300; }
+      @media screen and (max-width: 1920px) and (min-width: 1680px) {
+        .bank li span:last-child {
+          font-size: 16px; } }
   .bank li:hover img {
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
@@ -7019,7 +7053,7 @@ a {
     -o-filter: grayscale(0%);
     filter: none;
     -webkit-filter: grayscale(0); }
-  .bank li:hover span:first-child {
+  .bank li:hover span:nth-child(2) {
     color: #0e386f; }
   .bank img {
     width: 100%;
@@ -7114,5 +7148,8 @@ footer {
     line-height: 30px;
     font-weight: 300;
     color: #777777; }
+    @media screen and (max-width: 1920px) and (min-width: 1680px) {
+      .footer-right span {
+        font-size: 16px; } }
   .footer-right__logo {
     text-align: right; }
