@@ -1,6 +1,12 @@
 .analitic{
   padding-top: 220px;
   font-size: 18px;
+  .col-md-7{
+    @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+      width: 90%;
+      padding-left: 30px;
+    }
+  }
   .container{
     padding-left: 13px;
   }
@@ -8,8 +14,6 @@
     display: block;
     margin:0;
     padding-bottom: 20px;
-    font-size: 36px;
-    font-weight: 300;
   }
   .analitic-info{
     padding-top: 21px;

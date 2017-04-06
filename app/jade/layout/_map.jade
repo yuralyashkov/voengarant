@@ -5,56 +5,58 @@
                 .filter
                     .block__title Новостройки
                     p Выбирайте из лучших застройщиков, присоединяйтесь к объединению ВоенГарант и получайте особые условия!
-
-                    .radio
-                        input(type="radio", name="type", value="pik")#type_pik
-                        label(for="type_pik")
-                            span.checkbox
-                            img(src="./images/icons/new-house-radio1.png")
-                            span.checkbox-text Эксклюзивные предложения<br> застройщика на карте
-                        input(type="radio", name="type", value="pik")#type_pik2
-                        label(for="type_pik2")
-                            span.checkbox
-                            img(src="./images/icons/new-house-radio2.png")
-                            span.checkbox-text Смотреть на карте лучшие объекты<br>по рейтингу ВоенГаранта
-                    .selection._first
-                        span Москва и область
-                        .img
-                            img(src="./images/icons/new-house-selection.png")
-                    .selection
-                        span Город
-                        .img
-                            img(src="./images/icons/new-house-selection.png")
-                    .selection
-                        span Застройщики
-                        .img
-                            img(src="./images/icons/new-house-selection.png")
-                    .selection
-                        span Банки
-                        .img
-                            img(src="./images/icons/new-house-selection.png")
-                    .inputs
-                         input(placeholder="Цена от")
-                         input(placeholder="Цена до")
-                    .radio._new
-                        input(type="radio", name="type", value="pik")#type
-                        label(for="type")
-                            span.checkbox
-                            span.checkbox-text Ремонт
-                        label(for="type")
-                            span.checkbox
-                            span.checkbox-text Скидка от ВоенГаранта
-                        label(for="type")
-                            span.checkbox
-                            span.checkbox-text Акции
-                    .selection
-                        span Готовность
-                        .img
-                            img(src="./images/icons/new-house-selection.png")
-                    .selection
-                        span Срок сдачи
-                        .img
-                            img(src="./images/icons/new-house-selection.png")
+                    .filter__context
+                        .radio
+                            input(type="radio", name="type", value="pik")#type_pik
+                            label(for="type_pik")
+                                span.checkbox
+                                img(src="./images/icons/new-house-radio1.png")
+                                span.checkbox-text Эксклюзивные предложения<br> застройщика на карте
+                            input(type="radio", name="type", value="pik")#type_pik2
+                            label(for="type_pik2")
+                                span.checkbox
+                                img(src="./images/icons/new-house-radio2.png")
+                                span.checkbox-text Смотреть на карте лучшие объекты<br>по рейтингу ВоенГаранта
+                        .selector
+                            .selection._first
+                                span Москва и область
+                                .img
+                                    img(src="./images/icons/new-house-selection.png")
+                            .selection
+                                span Город
+                                .img
+                                    img(src="./images/icons/new-house-selection.png")
+                            .selection
+                                span Застройщики
+                                .img
+                                    img(src="./images/icons/new-house-selection.png")
+                            .selection
+                                span Банки
+                                .img
+                                    img(src="./images/icons/new-house-selection.png")
+                        .inputs
+                             input(placeholder="Цена от")
+                             input(placeholder="Цена до")
+                        .radio._new
+                            input(type="radio", name="type", value="pik")#type
+                            label(for="type")
+                                span.checkbox
+                                span.checkbox-text Ремонт
+                            label(for="type")
+                                span.checkbox
+                                span.checkbox-text Скидка от ВоенГаранта
+                            label(for="type")
+                                span.checkbox
+                                span.checkbox-text Акции
+                        .selector
+                            .selection
+                                span Готовность
+                                .img
+                                    img(src="./images/icons/new-house-selection.png")
+                            .selection
+                                span Срок сдачи
+                                .img
+                                    img(src="./images/icons/new-house-selection.png")
 
 
             .col-md-7

@@ -1,5 +1,6 @@
 .reviews{
   padding-top: 210px;
+
   .block__title,.block__text,.more{
     display: block;
     text-align: center;
@@ -7,8 +8,6 @@
   .block__title{
     margin: 0;
     padding-bottom: 20px;
-    font-weight: 300;
-    font-size: 36px;
   }
   .block__text{
     padding-bottom:25px ;
@@ -25,6 +24,15 @@
     display: flex;
     width: 100%;
     margin: 0 -7.5px;
+    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+      display: block;
+    }
+    .col-md-4{
+      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
   }
   .row:first-child{
     margin-bottom: 10px;
@@ -68,6 +76,9 @@
       margin: 0 auto;
       line-height: 20px;
       padding-top: 33px;
+      @include breakpointFull("max-width: 1680px","min-width: 1280px"){
+        min-height: 290px;
+      }
     }
     .reviews__logo{
       padding-bottom: 20px;

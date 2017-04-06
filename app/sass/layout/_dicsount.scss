@@ -12,6 +12,24 @@
       .col-md-3{
         padding-right: -15px;
       }
+      .col-md-4{
+        padding-left: 30px;
+      }
+      .col-md-3,.col-md-4{
+        @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+          width: 50%;
+        }
+      }
+      .col-md-5{
+        @include breakpointFull("max-width: 1680px","min-width: 1280px"){
+          width: 90%;
+          padding-top: 100px;
+        }
+        @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+           width: 90%;
+           padding-top: 100px;
+        }
+      }
     }
   }
 }
@@ -31,14 +49,20 @@
     line-height: 22px;
     font-weight: 300;
     margin-bottom: 20px;
+    @include breakpointFull("max-width: 1680px","min-width: 1280px"){
+      font-size: 20px;
+    }
+    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+      font-size: 22px;
+    }
   }
   &__title {
-    font-family: "Roboto Slab";
-    font-weight: 300;
-    font-size: 36px;
     margin-bottom: 20px;
     @include breakpointFull("max-width: 1920px","min-width: 1680px"){
-      font-size: 35px;
+        font-size: 35px;
+        margin-bottom: 15px;
+      }
+    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
       margin-bottom: 15px;
     }
   }
@@ -52,6 +76,9 @@
     line-height: 17px;
     @include breakpointFull("max-width: 1920px","min-width: 1680px"){
       font-size: 16px;
+    }
+    @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+      font-size: 18px;
     }
   }
 }
@@ -84,12 +111,19 @@
     @include breakpointFull("max-width: 1920px","min-width: 1680px"){
       font-size: 16px;
     }
+    @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+      font-size: 18px;
+    }
   }
   .discount-card__text:first-child{
     font-size: 16px;
     margin-bottom: 60px;
     @include breakpointFull("max-width: 1920px","min-width: 1680px"){
       font-size: 18px;
+    }
+    @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+      font-size: 20px;
+      margin-bottom: 40px;
     }
   }
   &__link {
@@ -100,6 +134,9 @@
     }
     @include breakpointFull("max-width: 1920px","min-width: 1680px"){
       font-size: 20px;
+    }
+    @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+      font-size: 22px;
     }
   }
 }

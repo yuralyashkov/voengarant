@@ -1,14 +1,19 @@
 .about-project{
-  padding-top: 140px;
+  padding-top: 130px;
   .col-md-6{
     padding-left: 30px;
-
+    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+      width: 100%;
+    }
   }
   .block__title{
     padding-top: 25px;
     margin: 0;
     font-size: 36px;
     font-weight: 300;
+    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+      font-size: 42px;
+    }
   }
   ._regular{
     display: block;
@@ -49,19 +54,32 @@
     text-align: center;
     padding: 74px;
     height: 586px;
+    @include breakpointFull("max-width: 1680px","min-width: 1280px"){
+      padding: 60px 60px 60px 15px;
+    }
+
 
 
     span{
       display: block;
       padding-bottom: 15px;
+      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+        padding-bottom: 20px;
+      }
     }
     span:first-child{
       font-family: "Roboto Slab";
       color: #333333;
       font-size: 18px;
+      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+        font-size: 22px;
+      }
     }
     button{
       margin-left: -45px;
+      @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+        margin-left: 0;
+      }
 
     }
   }
@@ -70,13 +88,17 @@
     margin-top: 20px;
     height: 600px;
     margin-bottom: 0 ;
+
   }
   .swiper-slide{
     width: 100%;
+    @include breakpointFull("max-width: 1680px","min-width: 1280px"){
+      width: 100% !important;
+    }
   }
   .swiper-wrapper {
     margin-left: 45px;
-    background: url("../images/icons/about-project-slide.png");
+    background: url("../images/icons/about-project-slide.png") 100% no-repeat;
     background-size: cover;
 
   }
@@ -93,5 +115,8 @@
     color: #309bf7;
     margin: 0;
     display: block;
+    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+      font-size: 20px;
+    }
   }
 }

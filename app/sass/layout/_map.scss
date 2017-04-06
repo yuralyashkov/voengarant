@@ -10,13 +10,23 @@
       font-family: "Roboto Slab";
       font-weight: 300;
       font-size: 36px;
+      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+        font-size: 42px;
+      }
     }
 
     p {
       font-size: 18px;
+      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+        font-size: 20px;
+      }
     }
     .radio{
       margin-top: 25px;
+      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+        display: inline-block;
+        width: 50%;
+      }
 
       label{
         padding-left: 0;
@@ -24,6 +34,17 @@
         width: 100%;
       }
       
+    }
+    .radio:nth-child(1){
+      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+        vertical-align: bottom;
+      }
+    }
+    .selector{
+      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+        display: inline-block;
+        width: 50%;
+      }
     }
     ._new{
       margin-top: 45px;
@@ -63,17 +84,26 @@
   }
   .col-md-5{
     padding-top: 25px;
+    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+      width: 100%;
+    }
   }
   .col-md-7{
 
     height: 700px;
     padding-left: 0 ;
+    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+      width: 100%;
+      text-align: center;
+    }
 
     .map-context{
+      display: inline-block;
       width: 95%;
       height: 100%;
       position: relative;
       border:solid 1px #e4e4e4;
+
       .search,.plus,.menus,.scr,.str{
         position: absolute;
         text-align: center;
