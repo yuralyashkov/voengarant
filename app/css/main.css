@@ -5990,28 +5990,6 @@ a {
       padding: 15px 40px;
       width: auto; } }
 
-.header .burger {
-  display: none; }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
-    .header .burger {
-      display: table-cell;
-      width: 13%;
-      cursor: pointer; } }
-  .header .burger img {
-    max-height: 41px; }
-  .header .burger .burger__menu {
-    width: 100%;
-    margin: 0;
-    position: absolute;
-    background: #0a0a0a;
-    top: 40px;
-    z-index: 99; }
-    .header .burger .burger__menu nav {
-      height: 100%; }
-    .header .burger .burger__menu li {
-      display: block;
-      color: #ffffff; }
-
 @media screen and (max-width: 1024px) and (min-width: 750px) {
   .header .container__header {
     display: none; } }
@@ -6027,35 +6005,28 @@ a {
   z-index: 3; }
   @media screen and (max-width: 1024px) and (min-width: 750px) {
     .header .top {
-      padding: 0 5.733%; } }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
-    .header .top {
+      overflow: inherit;
       height: 75px;
-      line-height: 75px; } }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
-    .header .top {
-      overflow: inherit; } }
-  .header .top .phone_mobile {
-    display: none;
-    padding-right: 30%; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
-      .header .top .phone_mobile {
-        display: block; } }
+      padding: 0 5.73%; } }
   .header .top .top-line .container-left a {
     margin-top: -2px; }
   @media screen and (max-width: 1024px) and (min-width: 750px) {
     .header .top .top-line .container-left {
       display: none; } }
   .header .top .top-line .container-left_mobile {
-    display: none;
-    padding-left: 35.333%; }
+    display: none; }
     @media screen and (max-width: 1024px) and (min-width: 750px) {
       .header .top .top-line .container-left_mobile {
-        display: table-cell;
-        width: 90%; } }
-    .header .top .top-line .container-left_mobile img {
-      max-height: 35px;
-      vertical-align: text-bottom; }
+        display: inline-block;
+        line-height: 75px;
+        margin-left: 33%;
+        margin-right: 26.8%; } }
+  .header .top .top-line .phone_mobile {
+    display: none; }
+    @media screen and (max-width: 1024px) and (min-width: 750px) {
+      .header .top .top-line .phone_mobile {
+        display: inline-block;
+        line-height: 75px; } }
   .header .top a {
     display: inline-block;
     vertical-align: middle;
@@ -6153,25 +6124,17 @@ a {
       .header__navigation .row.container__navigation__row {
         margin-left: -10px;
         margin-right: -10px; } }
-  .header__navigation .container-right {
-    display: table-cell; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
-      .header__navigation .container-right {
-        display: none; } }
-    .header__navigation .container-right a {
-      color: #777777;
-      font-size: 18px;
-      display: block;
-      line-height: 24px; }
-      @media screen and (max-width: 1024px) and (min-width: 750px) {
-        .header__navigation .container-right a {
-          display: none; } }
-      @media screen and (max-width: 1440px) {
-        .header__navigation .container-right a {
-          font-size: 14px; } }
-      @media screen and (max-width: 1140px) {
-        .header__navigation .container-right a {
-          font-size: 12px; } }
+  .header__navigation .container-right a {
+    color: #777777;
+    font-size: 18px;
+    display: block;
+    line-height: 24px; }
+    @media screen and (max-width: 1440px) {
+      .header__navigation .container-right a {
+        font-size: 14px; } }
+    @media screen and (max-width: 1140px) {
+      .header__navigation .container-right a {
+        font-size: 12px; } }
   .header__navigation .col-md-3 {
     text-align: center; }
   .header__navigation .col-md-3 a {
@@ -6605,6 +6568,11 @@ a {
         content: ' '; }
     .special__order .politic {
       display: none; }
+      @media screen and (max-width: 1024px) and (min-width: 750px) {
+        .special__order .politic {
+          display: inline-block;
+          float: right;
+          margin-top: 35px; } }
     .special__order .note {
       color: #777777; }
       @media screen and (max-width: 1280px) and (min-width: 1024px) {
@@ -7879,7 +7847,7 @@ footer {
       height: 15px;
       position: absolute;
       top: 0;
-      background-image: url("../../../images/icons/add-to-favorites.png");
+      background-image: url("../images/icons/add-to-favorites.png");
       background-repeat: no-repeat; }
       @media screen and (max-width: 950px) {
         .object-main .sale-information .group-title a {
@@ -7961,13 +7929,13 @@ footer {
             top: -70%;
             left: 50%;
             margin-left: -11px;
-            background: url("../../../images/icons/reiting-decor.png") center no-repeat; }
+            background: url("../images/icons/reiting-decor.png") center no-repeat; }
         .object-table .object-content .content-top .reiting:last-child .blocks, .object-table .object-content .content-bottom .reiting:last-child .blocks {
           background: -webkit-gradient(linear, left top, right bottom, from(#c14065), to(#c14065));
           background: -webkit-linear-gradient(top left, #c14065, #c14065);
           background: linear-gradient(to bottom right, #c14065, #c14065); }
           .object-table .object-content .content-top .reiting:last-child .blocks:first-child:before, .object-table .object-content .content-bottom .reiting:last-child .blocks:first-child:before {
-            background: url("../../../images/icons/reiting-decor-red.png") center no-repeat; }
+            background: url("../images/icons/reiting-decor-red.png") center no-repeat; }
         .object-table .object-content .content-top .reiting .reiting-content, .object-table .object-content .content-bottom .reiting .reiting-content {
           font-size: 14px;
           font-family: "myriad-pro", sans-serif;
@@ -8005,7 +7973,7 @@ footer {
     display: -ms-flexbox;
     display: flex; }
     .remote-transaction .background .left-part {
-      background: url("../../../images/remote-transaction.png") no-repeat center;
+      background: url("../images/remote-transaction.png") no-repeat center;
       float: left;
       background-size: 90%;
       width: 33.96%; }
@@ -8114,88 +8082,6 @@ footer {
           width: 16px;
           height: 16px;
           margin: 0 8px 0 0; }
-    @media screen and (min-width: 951px) {
-      .remote-transaction .background .xs-block {
-        display: none; } }
-    .remote-transaction .background .xs-block .title {
-      font-family: "Roboto Slab", serif;
-      font-size: 30px;
-      color: #333333;
-      display: block;
-      margin: 74px 0 40px 0; }
-    .remote-transaction .background .xs-block .links {
-      margin: 0 0 42px 0;
-      display: inline-block; }
-      .remote-transaction .background .xs-block .links a {
-        display: inline-block;
-        margin: 0 26px 0 0; }
-        .remote-transaction .background .xs-block .links a:last-child {
-          margin: 0; }
-        .remote-transaction .background .xs-block .links a img {
-          width: 47px;
-          height: 48px;
-          -webkit-filter: grayscale(100%);
-          -moz-filter: grayscale(100%);
-          -ms-filter: grayscale(100%);
-          -o-filter: grayscale(100%);
-          filter: grayscale(100%);
-          -webkit-filter: url(../images/grayscale.svg);
-          filter: url(../images/grayscale.svg);
-          filter: gray;
-          -webkit-filter: grayscale(1);
-          opacity: .85; }
-        .remote-transaction .background .xs-block .links a:hover img {
-          -webkit-filter: grayscale(0%);
-          -moz-filter: grayscale(0%);
-          -ms-filter: grayscale(0%);
-          -o-filter: grayscale(0%);
-          filter: none;
-          -webkit-filter: grayscale(0);
-          opacity: 1; }
-    .remote-transaction .background .xs-block .list {
-      font-family: "Roboto Slab", serif;
-      font-size: 30px;
-      color: #333333;
-      margin: 0 0 5px 0;
-      display: block; }
-    .remote-transaction .background .xs-block .list-content {
-      font-family: "myriad-pro", sans-serif;
-      font-size: 20px;
-      color: #777777;
-      margin: 0 0 35px 0;
-      display: block; }
-    .remote-transaction .background .xs-block .butttons .button {
-      display: inline-block;
-      font-family: "myriad-pro", sans-serif;
-      font-size: 20px;
-      color: #ffffff;
-      border-radius: 5px;
-      padding-left: 1.13208%;
-      padding-right: 1.13208%;
-      line-height: 40px;
-      vertical-align: middle;
-      height: 47px;
-      margin: 0 3.68189% 0 0;
-      opacity: .9; }
-      .remote-transaction .background .xs-block .butttons .button:first-child {
-        margin: 0 5px 0 0; }
-      .remote-transaction .background .xs-block .butttons .button_red {
-        background-color: #d2294b; }
-      .remote-transaction .background .xs-block .butttons .button_blue {
-        background-color: #309bf7; }
-      .remote-transaction .background .xs-block .butttons .button_black {
-        background-color: #303030; }
-      .remote-transaction .background .xs-block .butttons .button:last-child {
-        margin: 0; }
-      .remote-transaction .background .xs-block .butttons .button:hover {
-        opacity: 1;
-        text-decoration: none; }
-      .remote-transaction .background .xs-block .butttons .button img {
-        display: inline-block;
-        vertical-align: middle;
-        width: 16px;
-        height: 16px;
-        margin: 0 8px 0 0; }
 
 .top-rated-developers {
   overflow: hidden;
@@ -8598,7 +8484,7 @@ footer {
     color: #333333;
     padding-left: 3.84615%;
     padding-right: 3.84615%;
-    background: url("../../../images/icons/select.png") right no-repeat, #fdfdfd;
+    background: url("../images/icons/select.png") right no-repeat, #fdfdfd;
     -webkit-appearance: none !important;
     -moz-appearance: none !important;
     appearance: none !important; }
