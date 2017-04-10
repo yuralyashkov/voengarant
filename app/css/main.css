@@ -6019,14 +6019,15 @@ a {
       .header .top .top-line .container-left_mobile {
         display: inline-block;
         line-height: 75px;
-        margin-left: 33%;
-        margin-right: 26.8%; } }
+        margin-left: 33%; } }
   .header .top .top-line .phone_mobile {
     display: none; }
     @media screen and (max-width: 1024px) and (min-width: 750px) {
       .header .top .top-line .phone_mobile {
         display: inline-block;
-        line-height: 75px; } }
+        line-height: 75px;
+        float: right;
+        margin-right: 7.5%; } }
   .header .top a {
     display: inline-block;
     vertical-align: middle;
@@ -6643,11 +6644,22 @@ a {
       @media screen and (max-width: 1280px) and (min-width: 1024px) {
         .block__map .filter .block__title, .block__map .filter .tab-content .developer__description > span, .tab-content .block__map .filter .developer__description > span {
           font-size: 42px; } }
+      @media screen and (max-width: 1024px) and (min-width: 750px) {
+        .block__map .filter .block__title, .block__map .filter .tab-content .developer__description > span, .tab-content .block__map .filter .developer__description > span {
+          font-size: 45px;
+          text-align: center; } }
     .block__map .filter p {
       font-size: 18px; }
       @media screen and (max-width: 1280px) and (min-width: 1024px) {
         .block__map .filter p {
           font-size: 20px; } }
+      @media screen and (max-width: 1024px) and (min-width: 750px) {
+        .block__map .filter p {
+          font-size: 30px;
+          text-align: center; } }
+    @media screen and (max-width: 1024px) and (min-width: 750px) {
+      .block__map .filter__context {
+        display: none; } }
     .block__map .filter .radio {
       margin-top: 25px; }
       @media screen and (max-width: 1280px) and (min-width: 1024px) {
@@ -6913,9 +6925,8 @@ a {
       height: 75px;
       text-align: center;
       background: #303030;
-      bottom: 75px;
-      width: 100%;
-      position: absolute; }
+      bottom: 0;
+      width: 100%; }
       .burger .burger__menu .burger__button img {
         vertical-align: middle; }
 
@@ -7210,6 +7221,10 @@ a {
     @media screen and (max-width: 1280px) and (min-width: 1024px) {
       .news .block__title, .news .tab-content .developer__description > span, .tab-content .news .developer__description > span {
         font-size: 42px; } }
+    @media screen and (max-width: 1024px) and (min-width: 750px) {
+      .news .block__title, .news .tab-content .developer__description > span, .tab-content .news .developer__description > span {
+        font-size: 45px;
+        text-align: center; } }
   .news .block__text {
     margin: 0 auto 25px; }
   .news .more {
