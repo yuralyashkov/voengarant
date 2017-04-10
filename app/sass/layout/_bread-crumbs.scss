@@ -1,0 +1,82 @@
+.bread-crumbs {
+  overflow: hidden;
+  @include breakpoint("max-width: 950px") {
+    display: none;
+  }
+  .col-md-5 {
+    padding: 0;
+  }
+  .bread-crumbs__list {
+    list-style: none;
+    margin: 0;
+    padding: 17px 0 0 0;
+    float: left;
+    li {
+      display: inline-block;
+      float: left;
+      padding: 0 4px 0 0;
+      a {
+        line-height: 24px;
+        font-size: 14px;
+        font-family: $mainFontFamily;
+        font-weight: 300;
+        color: #333333;
+        @include breakpoint("max-width: 390px"){
+          font-size: 12px;
+        }
+        @include breakpoint("max-width: 350px"){
+          font-size: 10px;
+        }
+      }
+      &:first-child {
+        padding: 0 12px 0 0;
+        a {
+          color: #777777;
+          &:after {
+            content: ':';
+          }
+        }
+      }
+      &:last-child {
+        padding: 0;
+        a img {
+          vertical-align: baseline;
+          @include breakpoint("max-width: 390px"){
+            width: 80%;
+            height: 85%;
+          }
+          @include breakpoint("max-width: 350px"){
+            width: 60%;
+            height: 65%;
+          }
+        }
+      }
+
+      .city:before {
+        content: url('../../images/icons/place.png');
+        padding: 0 5px 0 0;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 24px;
+      }
+    }
+    .list-decor:after {
+      content: '/';
+      padding: 0 0 0 4px;
+      color: #333333;
+    }
+    .rezidential {
+       line-height: 24px;
+       font-size: 14px;
+       font-family: $mainFontFamily;
+       font-weight: 300;
+       color: #333333;
+      @include breakpoint("max-width: 390px"){
+        font-size: 12px;
+      }
+      @include breakpoint("max-width: 350px"){
+        font-size: 10px;
+      }
+     }
+  }
+}
