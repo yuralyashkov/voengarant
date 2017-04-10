@@ -4,6 +4,17 @@ body
     header.header
         .top
             .top-line
+                .burger
+                    img(src="./images/icons/burger.png")
+                    .burger__menu
+                        nav
+                            ul
+                                - var TopList = ['Новости', 'Информация', 'Форум', 'Отзывы', 'Калькуляторы', 'Аналитика', 'Объединение', 'Инициативы', 'Партнеры', 'Контакты']
+                                for item in TopList
+                                    li
+                                        a(href='#')= item
+
+
                 .container-left
                     a(href="/")
                         img(src="./images/logo.png")

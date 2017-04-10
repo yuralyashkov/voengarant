@@ -1,5 +1,15 @@
 .object{
   padding-top: 35px;
+  @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+    padding-top: 90px;
+  }
+  .col-md-6{
+    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+      width: 100%;
+      margin-bottom: 15px;
+      padding-bottom: 0;
+    }
+  }
   &__context{
     padding-top: 15px;
     background-size: cover;
@@ -8,7 +18,7 @@
     }
     &__block{
       display: block;
-      height: 480px;
+      height: 230px;
       color: #ffffff;
       position: relative;
       overflow: hidden;
@@ -53,6 +63,13 @@
         padding: 0 40px 0 10px;
         border-radius: 5px;
         font-size: 14px;
+        @include breakpointFull("max-width: 1920px","min-width: 1680px"){
+          bottom: 40px;
+        }
+        @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+          bottom: 20px;
+          font-size: 16px;
+        }
       }
     }
       &__block:hover{
@@ -67,9 +84,9 @@
     padding-left: 15px;
   }
   ._smal{
-    height: 230px;
-    .object__context__block__info{
-      top: 30px;
+    height: 480px;
+    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+      height: 230px;
     }
   }
   ._indent{
@@ -78,10 +95,16 @@
   .row{
     padding-bottom: 15px;
     margin: 0;
+    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+      padding-bottom: 0;
+    }
   }
   ._in-row{
     padding-top: 15px;
     height: 235px;
+    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+      padding-top: 0;
+    }
   }
   .object__next{
     padding-top: 35px;

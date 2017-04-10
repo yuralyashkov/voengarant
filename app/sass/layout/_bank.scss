@@ -10,8 +10,6 @@
     margin: 0 auto;
     padding-top: 45px;
     padding-bottom: 15px;
-    font-size: 36px;
-    font-weight: 300;
   }
   .more{
     margin: 0;
@@ -28,22 +26,37 @@
     padding: 0 (2.641509% / 2);
     width: ($container / 6 / $container * 100%);
     text-align: center;
+    @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+      width: ($container / 3/ $container * 100%);
+    }
     span{
       display: inline-block;
       width: 100%;
-      padding-top: 10px;
-      font-size: 14px;
-    };
-    span:first-child{
       font-size: 18px;
       font-weight: 600;
+      @include breakpointFull("max-width: 1920px","min-width: 1280px"){
+        font-size: 20px;
+      }
+      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+        font-size: 22px;
+      }
+    }
+    span:last-child{
+      font-size: 14px;
+      font-weight: 300;
+      @include breakpointFull("max-width: 1920px","min-width: 1280px"){
+        font-size: 16px;
+      }
+      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+        font-size: 18px;
+      }
     }
   }
   li:hover{
     img{
       @include ungrayscale;
     }
-    span:first-child{
+    span:nth-child(2){
       color: #0e386f;
     }
   }
