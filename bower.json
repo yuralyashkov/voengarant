@@ -3,13 +3,14 @@
   "description": "",
   "main": "gulpfile.js",
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/yuralyashkov/voengarant",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "app/bower_components"
   ],
   "dependencies": {
     "jquery": "^3.2.1",
@@ -19,5 +20,8 @@
     "bootstrap-sass": "^3.3.7",
     "normalize-css": "^5.0.0",
     "breakpoint-sass": "^2.7.1"
-  }
+  },
+  "authors": [
+    "Kate-Kiryanova <kate.kiryanovaaa@gmail.com>"
+  ]
 }

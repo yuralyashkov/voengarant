@@ -1,7 +1,9 @@
 
 
 .header {
-
+  @include breakpoint("max-width: 950px") {
+    display: none;
+  }
   .top {
     height: 41px;
     background: $color;

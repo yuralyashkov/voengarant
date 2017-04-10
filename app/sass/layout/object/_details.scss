@@ -1,0 +1,260 @@
+.details {
+  ul {
+    list-style: none;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-bottom: 1px solid #919191;
+    li {
+      box-sizing: border-box;
+      a {
+        font-family: $mainFontFamily;
+        font-size: 18px;
+        color: #777777;
+        text-decoration: none;
+        padding: 0 0 24px 0;
+        display: block;
+        box-sizing: border-box;
+        @include breakpoint("max-width: 1330px"){
+          font-size: 16px;
+        }
+        @include breakpoint("max-width: 1200px"){
+          font-size: 14px;
+        }
+        @include breakpoint("max-width: 1080px"){
+          font-size: 13px;
+        }
+        @include breakpoint("max-width: 1020px"){
+          font-size: 12px;
+        }
+        &:hover {
+          text-decoration: none;
+        }
+        img {
+          padding: 0 (8px / $container * 100%) 0 0;
+        }
+      }
+    }
+  }
+  .ui-tabs-active {
+    box-sizing: border-box;
+    border-bottom: 4px solid #191919;
+    a, a:focus, a:active, a:hover {
+      outline: none;
+      color: #333333;
+      font-weight: 600;
+      text-decoration: none;
+      box-sizing: border-box;
+      @include breakpoint("max-width: 1330px"){
+        font-size: 16px;
+      }
+      @include breakpoint("max-width: 1200px"){
+        font-size: 14px;
+      }
+      @include breakpoint("max-width: 1080px"){
+        font-size: 13px;
+      }
+      @include breakpoint("max-width: 1020px"){
+        font-size: 12px;
+      }
+    }
+  }
+  .banks {
+    a {
+      display: block;
+      text-decoration: none;
+      img {
+        width: 100%;
+        padding: 55px 0 0 0;
+        @include grayscale;
+      }
+      .procent {
+        display: block;
+        font-size: 18px;
+        font-family: $mainFontFamily;
+        color: #777777;
+        margin: 20px 0 20px 0;
+      }
+      .license {
+        display: block;
+        font-size: 14px;
+        font-family: $mainFontFamily;
+        color: #777777;
+        margin: 0 0 52px 0;
+      }
+      &:hover, &:focus, &:active {
+        img {
+          @include ungrayscale;
+        }
+        .procent {
+          color: #0d5483;
+        }
+        .license {
+          color: #333333;
+        }
+      }
+    }
+  }
+  .calculator {
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .title {
+      font-family: $mainFontFamily;
+      font-size: 30px;
+      color: #1f1f1f;
+      display: block;
+      margin: 0 0 17px 0;
+      @include breakpoint("max-width: 1450px") {
+         font-size: 28px;
+       }
+      @include breakpoint("max-width: 1355px") {
+        font-size: 27px;
+      }
+      @include breakpoint("max-width: 1330px") {
+        font-size: 26px;
+      }
+      @include breakpoint("max-width: 1275px") {
+        font-size: 25px;
+      }
+      @include breakpoint("max-width: 1230px") {
+        font-size: 24px;
+      }
+      @include breakpoint("max-width: 1180px") {
+        font-size: 23px;
+      }
+      @include breakpoint("max-width: 1135px") {
+        font-size: 22px;
+      }
+      @include breakpoint("max-width: 1090px") {
+        font-size: 21px;
+      }
+      @include breakpoint("max-width: 1045px") {
+        font-size: 20px;
+      }
+    }
+    .context {
+      font-family: $mainFontFamily;
+      font-size: 14px;
+      color: #777777;
+      display: block;
+      @include breakpoint("max-width: 1150px") {
+        font-size: 13px;
+      }
+      .blue-text {
+        color: #309bf7;
+      }
+    }
+    .main {
+      margin: 0 0 42px 0;
+    }
+    form {
+      label {
+        margin: 0 0 4px 0;
+        font-weight: 100;
+      }
+      .second-label {
+        margin-top: 18px;
+      }
+      select {
+        width: (250px / 572px * 100%);
+        height: 33px;
+        box-sizing: border-box;
+        border: 1px solid #d3d3d3;
+        border-radius: 5px;
+        font-family: $mainFontFamily;
+        font-size: 18px;
+        color: #333333;
+        padding-left: (22px / 572px * 100%);
+        padding-right: (22px / 572px * 100%);
+        background: url("../../../images/icons/select.png") right no-repeat, #fdfdfd;
+        appearance: none!important;
+        @include breakpoint("max-width: 1200px") {
+          font-size: 16px;
+        }
+        &:active, &:focus {
+          outline: none;
+          box-shadow: 0px 0px 25px 0px rgba(229,236,248,1);
+        }
+        &::-ms-expand {
+          border: 1px solid #d3d3d3;
+          border-radius: 5px;
+        }
+      }
+      select > option {
+        font-family: $mainFontFamily;
+        font-size: 18px;
+        color: #777777;
+        line-height: 24px;
+        @include breakpoint("max-width: 1200px") {
+          font-size: 16px;
+        }
+      }
+      select > option:hover, select > option:checked, select > option::selection, select > option:active, select > option:focus {
+        color: #2f97f0;
+        background-color: #fdfdfd;
+      }
+      .month {
+        margin-right: (20px / 572px * 100%);
+      }
+      button {
+        font-family: $mainFontFamily;
+        font-size: 18px;
+        color: #ffffff;
+        background-color: #309bf7;
+        padding: 8px 35px;
+        border-radius: 5px;
+        margin: 20px 0 0 0;
+        opacity: .9;
+        @include breakpoint("max-width: 1330px") {
+          font-size: 16px;
+        }
+        @include breakpoint("max-width: 1200px") {
+          font-size: 14px;
+          padding: 8px 15px;
+        }
+        &:hover, &:active {
+          opacity: 1;
+        }
+      }
+    }
+    .col-md-4 {
+      select {
+        width: 100%;
+      }
+      input {
+        height: 33px;
+        box-sizing: border-box;
+        border: 1px solid #d3d3d3;
+        border-radius: 5px;
+        font-family: $mainFontFamily;
+        font-size: 18px;
+        color: #333333;
+        padding-left: (22px / 572px * 100%);
+        padding-right: (22px / 572px * 100%);
+        width: 100%;
+        @include breakpoint("max-width: 1200px") {
+          font-size: 16px;
+        }
+      }
+      label {
+        margin: 20px 0 4px 0;
+        &:first-child {
+          margin: 0 0 4px 0;
+        }
+      }
+      a {
+        display: inline-block;
+        float: right;
+        font-family: $mainFontFamily;
+        font-size: 14px;
+        color: #309bf7;
+        margin: 33px 0 0 0;
+        @include breakpoint("max-width: 1200px") {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
