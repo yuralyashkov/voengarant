@@ -1,8 +1,13 @@
 .block__developers {
   .block__title {
-    margin-bottom: 7px;
+    margin-bottom: 15px;
+    font-size: 36px;
+    font-weight: 300;
+    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+      font-size: 42px;
+    }
   }
-  margin-top: 143px;
+  margin-top: 175px;
 }
 
 .row__developers {
@@ -13,7 +18,9 @@
   }
   .col-md-6:last-child .row .developer-tab:last-child {
     padding-right: 15px;
+    padding-left: 0;
   }
+
   .developer-tab {
     text-align: center;
     padding: 0;
@@ -57,6 +64,9 @@
   padding-bottom: 90px;
   &.active {
     display: block;
+    .col-md-5{
+      padding-top: 15px;
+    }
   }
 
   img {
@@ -71,14 +81,20 @@
       font-size: 18px;
       padding-left: 18px;
     }
+    p:first-child{
+      margin-top: -10px;
+    }
 
     > span {
-      margin-bottom: 4px;
       @extend .block__title;
       font-size: 36px;
       display: inline-block;
       vertical-align: middle;
       padding-left: 18px;
+
+    }
+    span{
+      margin-bottom: 0;
     }
 
 
@@ -86,6 +102,7 @@
   }
   .block__title {
     display: inline-block;
-    vertical-align: middle;
+    font-size: 60px;
+    font-weight: 100;
   }
 }

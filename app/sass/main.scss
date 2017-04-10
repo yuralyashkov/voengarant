@@ -12,6 +12,8 @@
 @import "layout/developers";
 @import "layout/special";
 @import "layout/map";
+//object
+@import "layout/object";
 //home
 @import "layout/home/_top-slider";
 //about project
@@ -26,10 +28,13 @@
 @import "layout/_social";
 //reviews
 @import "layout/_reviews";
+//seo
+@import "layout/_seo";
 //bank
 @import "layout/_bank";
 //footer
 @import "layout/_footer";
+
 
 //object
 @import "layout/object/_common";
@@ -57,3 +62,4 @@
 @import "layout/object/_contact";
 //video
 @import "layout/object/_video";
+

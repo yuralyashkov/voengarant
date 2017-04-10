@@ -2,6 +2,11 @@ footer{
   height: 350px;
   padding-top: 45px;
   border-top:solid 2px #e5e5e5;
+  .row{
+    margin-left: -10px;
+    margin-right: -20px;
+  }
+
   ul{
     display: inline-block;
     float: left;
@@ -11,6 +16,7 @@ footer{
   }
   li{
     display: block;
+
   }
   a{
     color: #333333;
@@ -38,17 +44,31 @@ footer{
       padding-top: 25px;
     }
   }
+  @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+    .indent3,.indent4{
+      padding: 0;
+    }
+  }
+
 }
 .footer-contact{
+  .row{
+    margin: 0;
+  }
   &__number,&__social{
     display: inline-block;
   }
   &__number{
     float: left;
+
     span{
       display: inline-block;
       vertical-align: middle;
       font-size: 18px;
+      line-height: 29px;
+      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+        font-size: 20px;
+      }
     }
     span:last-child{
       color: #2891c0;
@@ -61,9 +81,9 @@ footer{
   }
   &__social{
     float: right;
-    margin-right: 25px;
+    text-align: right;
     img{
-      padding-left: 15px;
+      padding-left: 10px;
       max-height: 30px;
     }
   }
@@ -72,6 +92,9 @@ footer{
   margin-top: 45px;
   background-color: #ffffff;
   height: 30px;
+  .row{
+    margin: 0;
+  }
 
   span:first-child,&__logo{
     display:inline-block;
@@ -88,11 +111,17 @@ footer{
   }
   span{
     font-size: 14px;
+    @include breakpointFull("max-width: 1920px","min-width: 1280px"){
+      font-size: 16px;
+    }
+    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+      font-size: 18px;
+    }
     line-height: 30px;
     font-weight:300;
     color: #777777;
   }
   &__logo{
-    padding-right: 25px;
+    text-align: right;
   }
 }

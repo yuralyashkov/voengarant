@@ -1,6 +1,6 @@
 .slider-home {
   height: 635px;
-  margin-bottom: 180px;
+  margin-bottom: 273px;
 
   .swiper-pagination {
     .swiper-pagination-bullet {
@@ -44,22 +44,23 @@
   }
 
   &__img {
-    margin-bottom: 15px;
     display: block;
     margin: 0 auto;
   }
 
   &__title {
     color: $color;
-    font-size: 48px;
+    font-size: 60px;
     line-height: 60px;
     font-family: $titleFontFamily;
-    font-weight: 300;
-    margin-bottom: 17px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    margin-top: 30px;
   }
 
   &__text {
     font-size: 24px;
+    font-weight:300;
   }
 
 }

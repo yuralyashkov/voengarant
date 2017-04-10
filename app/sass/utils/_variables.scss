@@ -8,6 +8,11 @@ $color: #303030;
     @content;
   }
 }
+@mixin breakpointFull($breakpoint1,$breakpoint2) {
+  @media screen and ($breakpoint1) and ($breakpoint2){
+    @content;
+  }
+}
 
 @mixin grayscale() {
   -webkit-filter: grayscale(100%);

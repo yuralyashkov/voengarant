@@ -5,12 +5,35 @@
   &__img{
     position: absolute;
     top: 12%;
-    left: -19px;
     width: 37.3%;
+    @include breakpointFull("max-width: 1680px","min-width: 1280px"){
+      top: 27%;
+    }
+    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+      top: 20%;
+      width: 42.3%;
+    }
   }
-
+  .col-md-6{
+    display: inline-block;
+    float: right;
+    padding-left: 90px;
+    padding-top: 30px;
+    @include breakpointFull("max-width: 1680px","min-width: 1280px"){
+      width: 65%;
+    }
+    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+      width: 70%;
+      padding-left: 140px;
+    }
+  }
   .block__title{
-    margin-bottom: 34px;
+    margin-bottom: 18px;
+    font-size: 36px;
+    font-weight: 300;
+    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+      font-size: 42px;
+    }
   }
   .block__text:first-child{
     margin-bottom: 30px;
@@ -21,20 +44,27 @@
     font-family: "Roboto Slab";
     font-weight: 300;
     font-size: 36px;
+    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+      font-size: 42px;
+      padding-right: 50px;
+    }
   }
   .block__text{
-    margin-bottom: 27px;
-    padding-right: 180px;
+    margin-bottom: 55px;
     line-height: 24px;
+    padding-right: 105px;
   }
   .more{
     display: block;
-    margin: 0 0 32px;
+    margin: -35px 0 35px;
   }
   p{
     padding-top: 23px;
   }
   &__context{
+    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+     margin-left: -190px;
+    }
     &__element{
       display: inline-block;
       float: left;
@@ -42,6 +72,28 @@
       font-size: 12px;
       margin-right:5px ;
       padding-bottom: 25px;
+      color: #777777;
+      @include breakpointFull("max-width: 1920px","min-width: 1280px"){
+        font-size: 14px;
+      }
+      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+        font-size: 16px;
+      }
+      span{
+        @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+          display: block;
+          width: 180px;
+          height: 30px;
+        }
+      }
+
     }
+      &__element:hover{
+        color: #777777;
+        opacity:0.8;
+      }
+      &__element:focus{
+        color: #777777;
+      }
   }
 }

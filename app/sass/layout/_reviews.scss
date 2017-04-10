@@ -1,12 +1,13 @@
 .reviews{
-  padding-top: 190px;
+  padding-top: 210px;
+
   .block__title,.block__text,.more{
     display: block;
     text-align: center;
   }
   .block__title{
     margin: 0;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
   .block__text{
     padding-bottom:25px ;
@@ -15,13 +16,23 @@
     padding-bottom: 55px;
   }
   ul{
+    float: none;
     margin: 0;
     padding: 0;
   }
   .row{
-    display: table;
+    display: flex;
     width: 100%;
     margin: 0 -7.5px;
+    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+      display: block;
+    }
+    .col-md-4{
+      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
   }
   .row:first-child{
     margin-bottom: 10px;
@@ -29,12 +40,12 @@
   }
   &__info{
     text-align: center;
-    background-color: #e3e3e3;background-color: #e3e3e3;
     padding: 30px 70px;
+    a{
+      display: inline-block;
+    }
   }
-  ._light{
-    background-color: #ffffff;
-  }
+
   ._indent{
     margin-left: -13px;
   }
@@ -43,9 +54,10 @@
     padding-top: 47px;
   }
   li{
-    display: table-column;
-    float: left;
-    padding: 0 7.5px;
+    display: inline-block;
+    float: none;
+    margin: 0 7.5px;
+    padding: 0;
     overflow: hidden;
 
     span:first-child{
@@ -60,19 +72,41 @@
     }
     .reviews__text{
       display: block;
-      min-height: 185px;
+      min-height: 190px;
       margin: 0 auto;
       line-height: 20px;
       padding-top: 33px;
+      @include breakpointFull("max-width: 1680px","min-width: 1280px"){
+        min-height: 290px;
+      }
     }
     .reviews__logo{
       padding-bottom: 20px;
-      padding-top: 43px;
+      padding-top: 35px;
+      max-width: 100%;
+
     }
     span:last-child{
       display: block;
     }
 
   }
+  .row:nth-child(even){
+    li:nth-child(even){
+      background-color: #ffffff;
+    }
+    li:nth-child(odd){
+      background-color: #e3e3e3;
+    }
+  }
+  .row:nth-child(odd){
+    li:nth-child(odd){
+      background-color: #ffffff;
+    }
+    li:nth-child(even){
+      background-color: #e3e3e3;
+    }
+  }
+
 }
 

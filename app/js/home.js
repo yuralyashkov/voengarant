@@ -28,5 +28,14 @@ $(function () {
         $('html, body').animate({ scrollTop: $('#special-order').offset().top - 200 }, 500);
         return false;
     });
+    $('.seo a').click(function () {
+        $('#seo').slideDown();
+        $('html, body').animate({ scrollTop: $('#seo').offset().top - 200 }, 500);
+        return false;
+    });
 
 });
+
+function textMsg(seo) {
+    $('#seo').slideToggle();
+}
