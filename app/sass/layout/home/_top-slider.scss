@@ -1,6 +1,9 @@
 .slider-home {
   height: 635px;
   margin-bottom: 273px;
+  @include breakpointFull("max-width: 1024px","min-width: 750px"){
+    margin-bottom: 310px;
+  }
 
   .swiper-pagination {
     .swiper-pagination-bullet {
@@ -56,11 +59,18 @@
     font-weight: 100;
     margin-bottom: 20px;
     margin-top: 30px;
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      font-size: 45px;
+    }
   }
 
   &__text {
     font-size: 24px;
     font-weight:300;
+
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      font-size: 30px;
+    }
   }
 
 }
