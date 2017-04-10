@@ -53,9 +53,22 @@ $(function () {
      * Drop-down in burger menu
      */
     $("a.burger__down").click(function () {
-        $('body').css({"overflow":"hidden"});
+        if( $('body').css('overflow') == "hidden"){
+            $('body').css({"overflow":"inherit"});
+        }
+        else {
+            $('body').css({"overflow":"hidden"});
+        }
+
         $('.profile__menu').css({"display":"none"});
         $(this).closest(".burger").find(".burger__menu").slideToggle();
+        if($(this).closest(".burger").find(".burger__button").css("position") == "fixed"){
+            $(this).closest(".burger").find(".burger__button").css({"position":"inherit"});
+        }
+        else{
+            $(this).closest(".burger").find(".burger__button").css({"position":"fixed"});
+        }
+
         return false;
     });
     /**

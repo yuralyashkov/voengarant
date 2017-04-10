@@ -5,7 +5,6 @@
   .filter {
     padding-left: 15px;
     width: 100%;
-
     .block__title {
       font-family: "Roboto Slab";
       font-weight: 300;
@@ -13,12 +12,24 @@
       @include breakpointFull("max-width: 1280px","min-width: 1024px"){
         font-size: 42px;
       }
+      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+        font-size: 45px;
+        text-align: center;
+      }
     }
-
     p {
       font-size: 18px;
       @include breakpointFull("max-width: 1280px","min-width: 1024px"){
         font-size: 20px;
+      }
+      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+        font-size: 30px;
+        text-align: center;
+      }
+    }
+    &__context{
+      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+        display: none;
       }
     }
     .radio{
