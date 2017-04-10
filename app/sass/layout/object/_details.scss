@@ -168,7 +168,7 @@
         color: #333333;
         padding-left: (22px / 572px * 100%);
         padding-right: (22px / 572px * 100%);
-        background: url("../../../images/icons/select.png") right no-repeat, #fdfdfd;
+        background: url("../images/icons/select.png") right no-repeat, #fdfdfd;
         appearance: none!important;
         @include breakpoint("max-width: 1200px") {
           font-size: 16px;
