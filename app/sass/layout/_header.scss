@@ -1,9 +1,5 @@
 .header {
 
-
-  @include breakpoint("max-width: 950px") {
-    display: none;
-
   .burger{
     display: none;
     @include breakpointFull("max-width: 1024px","min-width: 750px"){
