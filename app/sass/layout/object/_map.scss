@@ -1,48 +1,74 @@
 .object-map {
   overflow: hidden;
   margin: 0 0 87px 0;
-  .col-md-7 {
-
+  .deleloper, .price, .value, .sale, .address, .distance, .form, .ending, .type, .project, .class {
+    font-family: $mainFontFamily;
+    font-size: 18px;
+    color: #727272;
+    display: block;
+    margin: 0 0 9px 0;
+    @include breakpoint("max-width: 1366px"){
+      font-size: 17px;
+    }
+    @include breakpoint("max-width: 950px"){
+      font-size: 35px;
+      margin: 0 0 11px 0;
+      font-weight: 300;
+      line-height: 38px;
+    }
   }
-  .col-md-5 {
-    .deleloper, .price, .value, .sale, .address, .distance, .form, .ending, .type, .project, .class {
-      font-family: $mainFontFamily;
-      font-size: 18px;
-      color: #727272;
-      display: block;
-      margin: 0 0 9px 0;
-      @include breakpoint("max-width: 1366px"){
-        font-size: 17px;
-      }
+  .deleloper-name, .price-name, .value-name, .sale-name, .address-name, .distance-name, .form-name, .ending-name, .type-name, .project-name, .class-name {
+    font-family: $mainFontFamily;
+    font-size: 18px;
+    color: #333333;
+    padding-left: 6px;
+    @include breakpoint("max-width: 1366px"){
+      font-size: 16px;
     }
-    .deleloper-name, .price-name, .value-name, .sale-name, .address-name, .distance-name, .form-name, .ending-name, .type-name, .project-name, .class-name {
-      font-family: $mainFontFamily;
-      font-size: 18px;
-      color: #333333;
-      padding-left: 6px;
-      @include breakpoint("max-width: 1366px"){
-        font-size: 16px;
-      }
+    @include breakpoint("max-width: 950px"){
+      font-size: 35px;
+      padding-left: 11px;
+      font-weight: 300;
+      line-height: 38px;
     }
-    .deleloper, .sale, .distance, .ending, .class {
-      margin: 0 0 26px 0;
+  }
+  .deleloper, .sale, .distance, .ending, .class {
+    margin: 0 0 26px 0;
+    @include breakpoint("max-width: 950px"){
+      margin: 0 0 53px 0;
     }
-    .sale-name {
-      color: #309bf7;
+  }
+  .price-name, .value-name {
+    @include breakpoint("max-width: 950px"){
+      font-weight: 400;
     }
-    a {
-      display: inline-block;
-      img {
+  }
+  .sale-name {
+    color: #309bf7;
+  }
+  a {
+    display: inline-block;
+    img {
+      @include breakpoint("min-width: 951px") {
         max-width: 25px;
         max-height: 26px;
       }
-      span {
-        display: inline-block;
-        vertical-align: middle;
-        font-family: $mainFontFamily;
-        font-size: 18px;
-        color: #777777;
-        padding-left: 8px;
+      @include breakpoint("max-width: 950px"){
+        width: 53px;
+        height: 55px;
+      }
+    }
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      font-family: $mainFontFamily;
+      font-size: 18px;
+      color: #777777;
+      padding-left: 8px;
+      @include breakpoint("max-width: 950px"){
+        font-size: 38px;
+        padding-left: 17px;
+        font-weight: 300;
       }
     }
   }

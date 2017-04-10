@@ -2,53 +2,53 @@
     .container
         #tabs
             ul.row.text-center
-                li.col-md-3.col-sm-3
+                li.col-md-3.col-sm-3.col-xs-4
                     a(href="#tabs-1")
                         span Банки
-                li.col-md-3.col-sm-3
+                li.col-md-3.col-sm-3.col-xs-8
                     a(href="#tabs-2")
                         span Как добраться
-                li.col-md-3.col-sm-3
+                li.col-md-3.col-sm-3.col-xs-3
                     a(href="#tabs-3")
                         span Описание
-                li.col-md-3.col-sm-3
+                li.col-md-3.col-sm-3.col-xs-9
                     a(href="#tabs-4")
                         img(src='./images/icons/check.png')
                         span Общественный контроль
             #tabs-1
                 .row.banks
-                    .col-md-2.text-center
+                    .col-md-2.col-xs-4.text-center
                         a(href='/')
-                            img(src='./images/icons/vtb-24-logo.png')
+                            img(src='./images/icons/vtb-24-logo.png', alt='')
                             span.procent на 10,4%
                             span.license Лицензия Банка России<br>№ Generalynaya 1000 08<br>iyulya 2015
-                    .col-md-2.text-center
+                    .col-md-2.col-xs-4.text-center
                         a(href='/')
-                            img(src='./images/icons/bank-zenit-logo.png')
+                            img(src='./images/icons/bank-zenit-logo.png', alt='')
                             span.procent на 10,4%
                             span.license Лицензия Банка России<br>№ Generalynaya 1000 08<br>iyulya 2015
-                    .col-md-2.text-center
+                    .col-md-2.col-xs-4.text-center
                         a(href='/')
-                            img(src='./images/icons/gazprombank-logo.png')
+                            img(src='./images/icons/gazprombank-logo.png', alt='')
                             span.procent на 10,4%
                             span.license Лицензия Банка России<br>№ Generalynaya 1000 08<br>iyulya 2015
-                    .col-md-2.text-center
+                    .col-md-2.col-xs-4.text-center
                         a(href='/')
-                            img(src='./images/icons/sberbank-logo.png')
+                            img(src='./images/icons/sberbank-logo.png', alt='')
                             span.procent на 10,4%
                             span.license Лицензия Банка России<br>№ Generalynaya 1000 08<br>iyulya 2015
-                    .col-md-2.text-center
+                    .col-md-2.col-xs-4.text-center
                         a(href='/')
-                            img(src='./images/icons/rosselhozbank-logo.png')
+                            img(src='./images/icons/rosselhozbank-logo.png', alt='')
                             span.procent на 10,4%
                             span.license Лицензия Банка России<br>№ Generalynaya 1000 08<br>iyulya 2015
-                    .col-md-2.text-center
+                    .col-md-2.col-xs-4.text-center
                         a(href='/')
-                            img(src='./images/icons/bank-rossia-logo.png')
+                            img(src='./images/icons/bank-rossia-logo.png', alt='')
                             span.procent на 10,4%
                             span.license Лицензия Банка России<br>№ Generalynaya 1000 08<br>iyulya 2015
                 .row.calculator.text-left
-                    .col-md-offset-1.col-md-5
+                    .col-md-offset-1.col-md-5.col-xs-12
                         span.title Расчет накоплений участника НИС
                         span.context.main Калькулятор учитывает доходы от инвестирования средств участников НИС, но при этом погрешность расчета может составлять
                             span.blue-text  до 2%
@@ -88,8 +88,9 @@
                             select(name="inclusion-year[]")
                                 option(desabled) Год
                             button Рассчитать
-                    .col-md-offset-1.col-md-4
+                    .col-md-offset-1.col-md-4.col-xs-12
                         span.title Ипотечный калькулятор
+                        a(href='/').xs-link Все программы банков >
                         form
                             label.context Банк
                             select(name="bank[]")

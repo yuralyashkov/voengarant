@@ -3,123 +3,242 @@
   .background {
     background-color: #efefef;
     display: flex;
+    padding-top: 82px;
+    @include breakpoint("max-width: 1200px"){
+      padding-top: 60px;
+    }
+    @include breakpoint("max-width: 950px"){
+      padding-top: 74px;
+    }
+    @include breakpoint("max-width: 1800px") {
+      br {
+        display: none;
+      }
+    }
+    .title {
+      font-family: $titleFontFamily;
+      color: #333333;
+      display: block;
+    }
+    .list {
+      font-family: $titleFontFamily;
+      color: #333333;
+      display: block;
+    }
+    .list-content {
+      font-family: $mainFontFamily;
+      color: #777777;
+      display: block;
+    }
+    .links {
+      a {
+        display: inline-block;
+        &:last-child {
+          margin: 0;
+        }
+        img {
+          @include grayscale;
+          opacity: .85;
+        }
+        &:hover {
+          img {
+            @include ungrayscale;
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .butttons {
+      .button {
+        text-decoration: none;
+        font-family: $mainFontFamily;
+        color: #ffffff;
+        display: inline-block;
+        border-radius: 5px;
+        opacity: .9;
+        &_red {
+          background-color: #d2294b;
+        }
+        &_blue {
+          background-color: #309bf7;
+          span {
+            padding-left: 0 !important;
+          }
+        }
+        &_black {
+          background-color: #303030;
+        }
+        &:last-child {
+          margin: 0 !important;
+        }
+        &:hover {
+          opacity: 1;
+          text-decoration: none;
+        }
+        span {
+          vertical-align: middle;
+        }
+        img {
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
     .left-part {
-      background: url("../images/remote-transaction.png") no-repeat center;
+      background: url("../images/remote-transaction.png");
+      background-repeat: no-repeat;
+      background-position: top center;
       float: left;
-      background-size: 90%;
-      width: 33.96%;
+      width: (653px / $container * 100%);
+      @include breakpoint("max-width: 1800px") {
+        background-size: 90%;
+      }
+      @include breakpoint("max-width: 1200px"){
+        background-position: center;
+      }
       @include breakpoint("max-width: 950px") {
         display: none;
       }
     }
     .right-part {
-      width: 66.04%;
-      padding: 80px 0 88px 0;
+      padding: 0 0 88px 0;
+      float: right;
+      width: (($container - 653px) / $container * 100%);
       @include breakpoint("max-width: 1200px"){
-        padding: 60px 0 68px 0;
+        padding: 0 0 68px 0;
       }
       @include breakpoint("max-width: 950px") {
         display: none;
       }
-      float: right;
       .title {
-        font-family: $titleFontFamily;
         font-size: 24px;
-        color: #333333;
-        display: block;
-        @include breakpoint("max-width: 1300px"){
-          font-size: 22px;
-        }
-        @include breakpoint("max-width: 1200px"){
-          font-size: 20px;
-        }
-        @include breakpoint("max-width: 1100px"){
-          font-size: 18px;
-        }
+        line-height: 27px;
       }
       .list {
-        font-family: $titleFontFamily;
         font-size: 18px;
-        color: #333333;
+        line-height: 20px;
         margin: 0 0 4px 0;
-        display: block;
         @include breakpoint("max-width: 1100px"){
           font-size: 17px;
+          line-height: 19px;
         }
       }
       .list-content {
-        font-family: $mainFontFamily;
         font-size: 16px;
-        color: #777777;
         margin: 0 0 27px 0;
-        display: block;
         @include breakpoint("max-width: 1100px"){
           font-size: 15px;
           margin: 0 0 20px 0;
         }
       }
       .links {
-        margin: (38px / 1358px * 100%) 0 (29px / 1358px * 100%) 0;
         display: inline-block;
+        margin: (38px / 1358px * 100%) 0 (29px / 1358px * 100%) 0;
         a {
-          display: inline-block;
           margin: 0 15px 0 0;
-          &:last-child {
-            margin: 0;
-          }
           img {
             width: 25px;
             height: 25px;
-            @include grayscale;
-            opacity: .85;
-          }
-          &:hover {
-            img {
-              @include ungrayscale;
-              opacity: 1;
-            }
           }
         }
       }
       .butttons {
         .button {
-          display: inline-block;
-          font-family: $mainFontFamily;
-          font-size: 16px;
-          color: #ffffff;
-          border-radius: 5px;
-          padding-left: (25px / 1358px * 100%);
-          padding-right: (25px / 1358px * 100%);
-          line-height: 30px;
-          vertical-align: middle;
           height: 35px;
-          margin: 0 (50px / 1358px * 100%) 0 0;
-          opacity: .9;
-          &_red {
-            background-color: #d2294b;
+          margin: 0 50px 0 0;
+          @include breakpoint("max-width: 1700px") {
+            margin: 0 20px 0 0;
           }
-          &_blue {
-            background-color: #309bf7;
+          @include breakpoint("max-width: 1205px") {
+            margin: 0 10px 0 0;
           }
-          &_black {
-            background-color: #303030;
-          }
-          &:last-child {
-            margin: 0;
-          }
-          &:hover {
-            opacity: 1;
-            text-decoration: none;
+          span {
+            padding-left: 15px;
+            padding-right: 15px;
+            font-size: 16px;
+            line-height: 35px;
+            @include breakpoint("max-width: 1300px") {
+              font-size: 14px;
+            }
+            @include breakpoint("max-width: 1205px") {
+              font-size: 11px;
+            }
           }
           img {
-            display: inline-block;
-            vertical-align: middle;
             width: 16px;
             height: 16px;
-            margin: 0 8px 0 0;
-
+            margin: 0 8px 0 15px;
           }
         }
+      }
+    }
+    .xs-block {
+      @include breakpoint("min-width: 951px") {
+        display: none;
+      }
+      padding-left: 15px;
+      .row:first-child {
+        margin: 0 0 48px 0;
+      }
+      .title {
+        font-size: 30px;
+        line-height: 35px;
+        margin: 0 0 41px 0;
+        font-weight: 400;
+      }
+      .list {
+        font-size: 30px;
+        line-height: 30px;
+        margin: 0 0 5px 0;
+        font-weight: 300;
+      }
+      .list-content {
+        line-height: 23px;
+        font-size: 20px;
+        margin: 0 0 35px 0;
+        font-weight: 300;
+      }
+      .links {
+        display: block;
+        margin: 0 0 42px 0;
+        a {
+          margin: 0 25px 0 0;
+          img {
+            width: 48px;
+            height: 48px;
+          }
+        }
+      }
+      .butttons {
+        .button {
+          font-size: 17px;
+          font-weight: 300;
+          line-height: 40px;
+          height: 47px;
+          margin: 0 10px 0 0;
+          .button_blue {
+            span {
+              padding-left: 0;
+            }
+          }
+          span {
+            padding-left: 15px;
+            padding-right: 15px;
+          }
+          img {
+            width: 23px;
+            height: 24px;
+            margin: 0 16px 0 15px;
+          }
+        }
+      }
+      .image {
+        background: url("../images/remote-transaction.png");
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: 90%;
+        width: 100%;
+        height: 448px;
       }
     }
   }
