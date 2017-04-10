@@ -33,3 +33,7 @@ $color: #303030;
   filter: none;
   -webkit-filter: grayscale(0);
 }
+
+*:focus {
+  outline: none !important;
+}
