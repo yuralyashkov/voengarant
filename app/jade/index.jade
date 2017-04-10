@@ -1,23 +1,112 @@
 include layout/_headerU
 body
+    .burger
+        a.burger__down
+            img(src="./images/icons/burger.png")
+        .burger__menu
+            .burger__menu__context
+                img(src="./images/icons/burger-logo.png").burger__logo
+                nav
+                    ul
+                        li
+                            a.drop__down Услуги
+                            ul.drop__down__menu
+                                li
+                                    a(href="#")
+                                        img(src="./images/icons/navigation_menu_icon2.png")
+                                        span Кооператив
+                                li
+                                    a(href="#")
+                                        img(src="./images/icons/navigation_menu_icon1.png")
+                                        span Новостройки
+                                li
+                                    a(href="#")
+                                        img(src="./images/icons/navigation_menu_icon9.png")
+                                        span Вторичка
+                                li
+                                    a(href="#")
+                                        img(src="./images/icons/navigation_menu_icon9.png")
+                                        span Вторичка
+                                li
+                                    a(href="#")
+                                        img(src="./images/icons/navigation_menu_icon6.png")
+                                        span Вопрос юристу
+                                li
+                                    a(href="#")
+                                        img(src="./images/icons/navigation_menu_icon10.png")
+                                        span Удаленная сделака
+                                li
+                                    a(href="#")
+                                        img(src="./images/icons/navigation_menu_icon5.png")
+                                        span Ипотека повторно
+                                li
+                                    a(href="#")
+                                        img.interaction(src="./images/icons/navigation_menu_icon8.png")
+                                        span Контроль
+                        li
+                            a.drop__down Информация
+                            ul.drop__down__menu
+                        li
+                            a.drop__down Дополнительно
+                            ul.drop__down__menu
+                                - var TopList = ['застройщики', 'Банки', 'Росвоенипотека', 'УНИС', 'Молодострой', 'Нородный фронт', 'Взаимодействие']
+                                for item in TopList
+                                    li
+                                        a(href='#')
+                                            span= item
+
+                a.burger__button
+                    img(src="./images/icons/burger.png")
+    .profile
+        a.profile__down
+            img(src="./images/icons/profile.png")
+        .profile__menu
+            nav
+                ul
+                    li
+                        a(href="#")
+                            img(src="./images/icons/profile-user.png")
+                            span Войти
+                    li
+                        a(href="#")
+                            img(src="./images/icons/profile-stark.png")
+                            span Избранное
+                    li
+                        a(href="#")
+                            img(src="./images/icons/profile-loop.png")
+                            span Поиск на Военгранат.рф
+                ul
+                    li
+                        a(href="#")
+                            img(src="./images/icons/profile-doc.png")
+                            span Регформа
+                    li
+                        a(href="#")
+                            img(src="./images/icons/profile-doc.png")
+                            span В банк
+                    li
+                        a(href="#")
+                            img(src="./images/icons/profile-doc.png")
+                            span Жалоба
+                    li
+                        a(href="#")
+                            img(src="./images/icons/profile-p.png")
+                            span Презентация
+
+
     .admin-panel
     header.header
         .top
             .top-line
-                .burger
-                    img(src="./images/icons/burger.png")
-                    .burger__menu
-                        nav
-                            ul
-                                - var TopList = ['Новости', 'Информация', 'Форум', 'Отзывы', 'Калькуляторы', 'Аналитика', 'Объединение', 'Инициативы', 'Партнеры', 'Контакты']
-                                for item in TopList
-                                    li
-                                        a(href='#')= item
-
-
+                .container-left_mobile
+                    a(href="/")
+                        img(src="./images/icons/logo-mob.png")
                 .container-left
                     a(href="/")
                         img(src="./images/logo.png")
+                .phone_mobile
+                    a(href="/")
+                        img(src="./images/icons/phone-call.png")
                 .container.container__header
                     nav
                         ul
@@ -105,4 +194,3 @@ body
 
 
 include layout/_footerU
-script(src="./js/home.js")
