@@ -14,10 +14,18 @@
       }
       .col-md-4{
         padding-left: 30px;
+        @include breakpointFull("max-width: 1024px","min-width: 750px"){
+          padding-top: 70px;
+        }
       }
       .col-md-3,.col-md-4{
         @include breakpointFull("max-width: 1680px","min-width: 1024px"){
           width: 50%;
+        }
+        @include breakpointFull("max-width: 1024px","min-width: 750px"){
+          width: 100%;
+          padding-right: 15px;
+          padding-left: 15px;
         }
       }
       .col-md-5{
@@ -28,6 +36,12 @@
         @include breakpointFull("max-width: 1280px","min-width: 1024px"){
            width: 90%;
            padding-top: 100px;
+        }
+        @include breakpointFull("max-width: 1024px","min-width: 750px"){
+          width: 100%;
+          height: 325px;
+          text-align: center;
+          margin-bottom: 60px;
         }
       }
     }
@@ -55,6 +69,12 @@
     @include breakpointFull("max-width: 1280px","min-width: 1024px"){
       font-size: 22px;
     }
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      font-size: 30px;
+      line-height: 30px;
+      margin-bottom: 30px;
+      margin-left: 10px;
+    }
   }
   &__title {
     margin-bottom: 20px;
@@ -64,6 +84,9 @@
       }
     @include breakpointFull("max-width: 1280px","min-width: 1024px"){
       margin-bottom: 15px;
+    }
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      font-size: 60px;
     }
   }
 
@@ -79,6 +102,26 @@
     }
     @include breakpointFull("max-width: 1680px","min-width: 1024px"){
       font-size: 18px;
+    }
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      font-size: 20px;
+      line-height: 20px;
+      margin-top: 30px;
+    }
+    .star{
+      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+        display: inline-block;
+        width: 97%;
+        margin-left: 5px;
+        vertical-align: top;
+      }
+    }
+  }
+  .__fontsize{
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      font-size: 30px;
+      line-height: 30px;
+      margin-top: 30px;
     }
   }
 }
@@ -101,6 +144,16 @@
     padding: 20px;
     margin-top: -20px;
   }
+  @include breakpointFull("max-width: 1024px","min-width: 750px"){
+    width: 665px;
+    margin: 0;
+    float: none;
+    height: 100%;
+    display: inline-block;
+    text-align: left;
+    padding: 50px 0 40px 30px;
+
+  }
   &__title {
     font-size: 36px;
     margin-bottom: 13px;
@@ -114,6 +167,10 @@
     @include breakpointFull("max-width: 1680px","min-width: 1024px"){
       font-size: 18px;
     }
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
   }
   .discount-card__text:first-child{
     font-size: 16px;
@@ -121,7 +178,7 @@
     @include breakpointFull("max-width: 1920px","min-width: 1680px"){
       font-size: 18px;
     }
-    @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+    @include breakpointFull("max-width: 1680px","min-width: 750px"){
       font-size: 20px;
       margin-bottom: 40px;
     }
@@ -137,6 +194,9 @@
     }
     @include breakpointFull("max-width: 1680px","min-width: 1024px"){
       font-size: 22px;
+    }
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      font-size: 20px;
     }
   }
 }
