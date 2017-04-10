@@ -1,0 +1,71 @@
+.infrastructure {
+  .title {
+    font-family: $titleFontFamily;
+    font-size: 36px;
+    color: #333333;
+    display: block;
+  }
+  .context {
+    font-family: $mainFontFamily;
+    font-size: 18px;
+    color: #777777;
+    display: block;
+    margin: 0 0 68px 0;
+  }
+  .row {
+    .col-md-8 {
+      .row {
+        margin: 0 0 107px 0;
+        .first {
+          padding-left: 15px;
+        }
+        .second {
+          padding-left: 60px;
+          @include breakpoint("max-width: 1450px"){
+            padding-left: 30px;
+          }
+          @include breakpoint("max-width: 1330px"){
+            padding-left: 15px;
+          }
+        }
+        .col-md-6 {
+          .line {
+            display: table;
+            img {
+              max-width: 37px;
+              max-height: 36px;
+              display: table-cell;
+            }
+            span {
+              vertical-align: middle;
+              display: table-cell;
+              padding-left: 12px;
+              font-family: $mainFontFamily;
+              font-size: 18px;
+              color: #333333;
+              padding-bottom: 25px;
+              @include breakpoint("max-width: 1450px"){
+                font-size: 15px;
+              }
+              @include breakpoint("max-width: 1330px"){
+                font-size: 13px;
+              }
+              @include breakpoint("max-width: 1200px"){
+                font-size: 12px;
+              }
+              @include breakpoint("max-width: 1150px"){
+                font-size: 11px;
+              }
+              @include breakpoint("max-width: 1050px"){
+                font-size: 10px;
+              }
+            }
+            &:last-child span {
+              padding-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

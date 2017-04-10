@@ -63,3 +63,8 @@
     font-family: "OpenSansLight";
     src: url("../fonts/open-sans/OpenSans-Light.ttf");
 }
+/* font-family: "MyriadProLightSemiExt"; */
+@font-face {
+    font-family: "MyriadProLightSemiExt";
+    src: url("../fonts/MyriadProLightSemiExt/Myriad-Pro-Light-SemiExt.ttf");
+}

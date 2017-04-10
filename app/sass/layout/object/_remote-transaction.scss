@@ -1,0 +1,216 @@
+.remote-transaction {
+  overflow: hidden;
+  .background {
+    background-color: #efefef;
+    display: flex;
+    .left-part {
+      background: url("../../../images/remote-transaction.png") no-repeat center;
+      float: left;
+      background-size: 90%;
+      width: 33.96%;
+      @include breakpoint("max-width: 950px") {
+        display: none;
+      }
+    }
+    .right-part {
+      width: 66.04%;
+      padding: 80px 0 88px 0;
+      @include breakpoint("max-width: 1200px"){
+        padding: 60px 0 68px 0;
+      }
+      @include breakpoint("max-width: 950px") {
+        display: none;
+      }
+      float: right;
+      .title {
+        font-family: $titleFontFamily;
+        font-size: 24px;
+        color: #333333;
+        display: block;
+        @include breakpoint("max-width: 1300px"){
+          font-size: 22px;
+        }
+        @include breakpoint("max-width: 1200px"){
+          font-size: 20px;
+        }
+        @include breakpoint("max-width: 1100px"){
+          font-size: 18px;
+        }
+      }
+      .list {
+        font-family: $titleFontFamily;
+        font-size: 18px;
+        color: #333333;
+        margin: 0 0 4px 0;
+        display: block;
+        @include breakpoint("max-width: 1100px"){
+          font-size: 17px;
+        }
+      }
+      .list-content {
+        font-family: $mainFontFamily;
+        font-size: 16px;
+        color: #777777;
+        margin: 0 0 27px 0;
+        display: block;
+        @include breakpoint("max-width: 1100px"){
+          font-size: 15px;
+          margin: 0 0 20px 0;
+        }
+      }
+      .links {
+        margin: (38px / 1358px * 100%) 0 (29px / 1358px * 100%) 0;
+        display: inline-block;
+        a {
+          display: inline-block;
+          margin: 0 15px 0 0;
+          &:last-child {
+            margin: 0;
+          }
+          img {
+            width: 25px;
+            height: 25px;
+            @include grayscale;
+            opacity: .85;
+          }
+          &:hover {
+            img {
+              @include ungrayscale;
+              opacity: 1;
+            }
+          }
+        }
+      }
+      .butttons {
+        .button {
+          display: inline-block;
+          font-family: $mainFontFamily;
+          font-size: 16px;
+          color: #ffffff;
+          border-radius: 5px;
+          padding-left: (25px / 1358px * 100%);
+          padding-right: (25px / 1358px * 100%);
+          line-height: 30px;
+          vertical-align: middle;
+          height: 35px;
+          margin: 0 (50px / 1358px * 100%) 0 0;
+          opacity: .9;
+          &_red {
+            background-color: #d2294b;
+          }
+          &_blue {
+            background-color: #309bf7;
+          }
+          &_black {
+            background-color: #303030;
+          }
+          &:last-child {
+            margin: 0;
+          }
+          &:hover {
+            opacity: 1;
+            text-decoration: none;
+          }
+          img {
+            display: inline-block;
+            vertical-align: middle;
+            width: 16px;
+            height: 16px;
+            margin: 0 8px 0 0;
+          }
+        }
+      }
+    }
+    .xs-block {
+      @include breakpoint("min-width: 951px") {
+        display: none;
+      }
+      .title {
+        font-family: $titleFontFamily;
+        font-size: 30px;
+        color: #333333;
+        display: block;
+        margin: 74px 0 40px 0;
+      }
+      .links {
+        margin: 0 0 42px 0;
+        display: inline-block;
+        a {
+          display: inline-block;
+          margin: 0 26px 0 0;
+          &:last-child {
+            margin: 0;
+          }
+          img {
+            width: 47px;
+            height: 48px;
+            @include grayscale;
+            opacity: .85;
+          }
+          &:hover {
+            img {
+              @include ungrayscale;
+              opacity: 1;
+            }
+          }
+        }
+      }
+      .list {
+        font-family: $titleFontFamily;
+        font-size: 30px;
+        color: #333333;
+        margin: 0 0 5px 0;
+        display: block;
+      }
+      .list-content {
+        font-family: $mainFontFamily;
+        font-size: 20px;
+        color: #777777;
+        margin: 0 0 35px 0;
+        display: block;
+      }
+      .butttons {
+        .button {
+          display: inline-block;
+          font-family: $mainFontFamily;
+          font-size: 20px;
+          color: #ffffff;
+          border-radius: 5px;
+          padding-left: (15px / $container * 100%);
+          padding-right: (15px / $container * 100%);
+          line-height: 40px;
+          vertical-align: middle;
+          height: 47px;
+          margin: 0 (50px / 1358px * 100%) 0 0;
+          opacity: .9;
+          &:first-child {
+            margin: 0 5px 0 0;
+          }
+          &_red {
+            background-color: #d2294b;
+          }
+          &_blue {
+            background-color: #309bf7;
+          }
+          &_black {
+            background-color: #303030;
+          }
+          &:last-child {
+            margin: 0;
+          }
+          &:hover {
+            opacity: 1;
+            text-decoration: none;
+          }
+          img {
+            display: inline-block;
+            vertical-align: middle;
+            width: 16px;
+            height: 16px;
+            margin: 0 8px 0 0;
+          }
+        }
+      }
+    }
+  }
+}

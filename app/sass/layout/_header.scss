@@ -1,8 +1,41 @@
 .header {
+
+
+  @include breakpoint("max-width: 950px") {
+    display: none;
+
+  .burger{
+    display: none;
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      display: table-cell;
+      width: 13%;
+      cursor: pointer;
+    }
+    img{
+      max-height: 41px;
+    }
+    .burger__menu{
+      width: 100%;
+      margin: 0;
+      position: absolute;
+      background: #0a0a0a;
+      top: 40px;
+      z-index: 99;
+      nav{
+        height: 100%;
+      }
+      li{
+        display: block;
+        color: #ffffff;
+      }
+    }
+  }
+
   .container__header{
     @include breakpointFull("max-width: 1024px","min-width: 750px"){
       display: none;
     }
+
   }
   .top {
     @include breakpointFull("max-width: 1024px","min-width: 750px"){
