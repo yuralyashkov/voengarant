@@ -105,12 +105,7 @@
         border: 1px solid #404040;
         max-width: 63.9%;
         font-size: 30px;
-      }
-    }
-    textarea{
-      @include breakpointFull("max-width: 1024px","min-width: 750px"){
-        max-width: 100%;
-        height: 130px;
+        height: 50px;
       }
     }
     input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
@@ -126,6 +121,10 @@
       @include breakpointFull("max-width: 1280px","min-width: 1024px"){
         height:150px;
       }
+      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+        max-width: 100%;
+        height: 130px;
+      }
     }
 
     button {
@@ -136,7 +135,27 @@
         text-decoration: underline;
         color: #fff;
       }
+      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+        width: 215px;
+        height: 50px;
+        background: #309bf7;
+        color: #ffffff;
+        margin-left: 0;
+        border-radius: 5px;
+      }
+      &:after{
+        content: ' ';
+      }
 
+
+    }
+    .politic{
+      display: none;
+      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+        display: inline-block;
+        float: right;
+        margin-top: 35px;
+      }
     }
 
     .note {
@@ -160,7 +179,10 @@
   z-index: 1;
   color: #fff;
   display: none;
+  @include breakpointFull("max-width: 1024px","min-width: 750px"){
+    padding-bottom: 0;
 
+  }
   .col-md-4,.col-md-7{
     @include breakpointFull("max-width: 1280px","min-width: 1024px"){
       width: 100%;
