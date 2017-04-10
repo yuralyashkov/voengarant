@@ -37,7 +37,7 @@
         height: 15px;
         position: absolute;
         top: 0;
-        background-image: url("../../../images/icons/add-to-favorites.png");
+        background-image: url("../images/icons/add-to-favorites.png");
         background-repeat: no-repeat;
         @include breakpoint("max-width: 950px") {
           width: 62px;
@@ -126,14 +126,14 @@
             top: -70%;
             left: 50%;
             margin-left: -11px;
-            background: url("../../../images/icons/reiting-decor.png") center no-repeat;
+            background: url("../images/icons/reiting-decor.png") center no-repeat;
           }
         }
         &:last-child {
           .blocks {
             background: linear-gradient(to bottom right, #c14065, #c14065);
             &:first-child:before {
-              background: url("../../../images/icons/reiting-decor-red.png") center no-repeat;
+              background: url("../images/icons/reiting-decor-red.png") center no-repeat;
             }
           }
         }
