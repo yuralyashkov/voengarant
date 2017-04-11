@@ -9,12 +9,29 @@
       margin-bottom: 15px;
       padding-bottom: 0;
     }
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      width: 100%;
+      padding-bottom: 5px;
+    }
+  }
+  .block__text{
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      display: none;
+    }
   }
   &__context{
     padding-top: 15px;
-    background-size: cover;
+
     .col-md-6:first-child{
       padding:0 15px 0 10px;
+      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+        padding-bottom: 5px;
+      }
+    }
+    .col-md-6:nth-child(2){
+      .object__context__block__info{
+        bottom:25px;
+      }
     }
     &__block{
       display: block;
@@ -22,11 +39,20 @@
       color: #ffffff;
       position: relative;
       overflow: hidden;
+      background-size:  cover !important;
+      background-repeat:  no-repeat !important;
+      background-position: 100% !important;
 
       &__info{
         position: absolute;
         bottom: 70px;
         left: 50px;
+        @include breakpointFull("max-width: 1024px","min-width: 750px"){
+          bottom: 0;
+          left: 20px;
+          top:25px;
+          font-size: 25px;
+        }
 
         span{
           display: block;
@@ -37,6 +63,10 @@
           font-size: 36px;
           font-weight: 300;
           text-transform: uppercase;
+          @include breakpointFull("max-width: 1024px","min-width: 750px"){
+            font-size: 30px;
+            padding-bottom: 10px;
+          }
         }
         &__text{
           .info{
@@ -52,9 +82,11 @@
               margin-right: 5px;
             }
           }
+
         }
 
       }
+
       .sale{
         position: absolute;
         right: -15px;
@@ -69,6 +101,12 @@
         @include breakpointFull("max-width: 1680px","min-width: 1024px"){
           bottom: 20px;
           font-size: 16px;
+        }
+        @include breakpointFull("max-width: 1024px","min-width: 750px"){
+          bottom: inherit;
+          top:25px;
+          font-size: 25px;
+
         }
       }
     }
@@ -88,6 +126,9 @@
     @include breakpointFull("max-width: 1280px","min-width: 1024px"){
       height: 230px;
     }
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      height: 240px;
+    }
   }
   ._indent{
     padding-left: 10px;
@@ -95,14 +136,20 @@
   .row{
     padding-bottom: 15px;
     margin: 0;
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+    @include breakpointFull("max-width: 1280px","min-width: 750px"){
       padding-bottom: 0;
+      margin: 0 -15px;
+      margin-top: -5px;
     }
   }
   ._in-row{
     padding-top: 15px;
     height: 235px;
     @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+      padding-top: 0;
+    }
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      height: 240px;
       padding-top: 0;
     }
   }
@@ -112,10 +159,15 @@
     a{
       display: inline-block;
       margin-right: 15px;
+
       img,span{
         display: block;
         margin: 0 auto;
         padding-left: 12px;
+        @include breakpointFull("max-width: 1024px","min-width: 750px"){
+          font-size: 35px;
+          font-weight: 300;
+        }
       }
       span{
         text-decoration: none;

@@ -2,51 +2,101 @@ footer{
   height: 350px;
   padding-top: 45px;
   border-top:solid 2px #e5e5e5;
-  .row{
-    margin-left: -10px;
-    margin-right: -20px;
-  }
-
-  ul{
-    display: inline-block;
-    float: left;
-    padding: 0;
-    height: 280px;
-    color: #333333;
-  }
-  li{
-    display: block;
+  @include breakpointFull("max-width: 1024px","min-width: 750px"){
+    height: auto;
 
   }
-  a{
-    color: #333333;
-    font-weight: 300;
-    line-height: 26px;
-  }
+  .footer__context{
+    .row{
+      margin-left: -10px;
+      margin-right: -20px;
+    }
+    ul{
+      display: inline-block;
+      float: left;
+      height: 280px;
+      color: #333333;
+    }
+    li{
+      display: block;
+
+    }
+    a{
+      color: #333333;
+      font-weight: 300;
+      line-height: 26px;
+    }
     a:focus{
       color: #23527c;
       opacity: 0.8;
       cursor: pointer;
     }
 
-  .indent1{
-    padding-left: 25px;
-  }
-  .indent2{
-    padding-left: 0px;
-  }
-  .indent3{
-    padding-left: 80px;
-  }
-  .indent4{
-    padding-left: 85px;
-    li:last-child{
-      padding-top: 25px;
+    .indent1{
+      padding-left: 25px;
+    }
+    .indent2{
+      padding-left: 0px;
+    }
+    .indent3{
+      padding-left: 80px;
+    }
+    .indent4{
+      padding-left: 85px;
+      li:last-child{
+        padding-top: 25px;
+      }
+    }
+    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+      .indent3,.indent4{
+        padding: 0;
+      }
+    }
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      display: none;
     }
   }
-  @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-    .indent3,.indent4{
-      padding: 0;
+
+  .footer__context-mob{
+    display: none;
+    padding-bottom: 55px;
+    margin: 0 -30px;
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      display: block;
+    }
+    li{
+      display: block;
+    }
+    a{
+      cursor: pointer;
+      font-size: 30px;
+      color: #333333;
+      font-weight: 300;
+    }
+    .drop__down{
+      display: inline-block;
+    }
+    .drop__down:after{
+      display: inline-block;
+      line-height: 30px;
+      content: ' ';
+      background: url(../images/icons/footer-mob-close.png) 100%;
+      background-size: cover;
+      float: right;
+      margin-left: 10px;
+      margin-top: 15px;
+      height: 20px;
+      width: 10px;
+    }
+    .drop__down__active:after{
+      background: url(../images/icons/footer-mob-open.png)100%;
+      background-size: cover;
+      height: 20px;
+      width: 20px;
+    }
+
+    .drop__down__menu{
+      display: none;
     }
   }
 
@@ -54,6 +104,9 @@ footer{
 .footer-contact{
   .row{
     margin: 0;
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      margin: 0 -15px;
+    }
   }
   &__number,&__social{
     display: inline-block;
@@ -66,8 +119,15 @@ footer{
       vertical-align: middle;
       font-size: 18px;
       line-height: 29px;
+      color: #777777;
       @include breakpointFull("max-width: 1280px","min-width: 1024px"){
         font-size: 20px;
+      }
+      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+        width: 100%;
+        font-size: 35px;
+        font-weight: 300;
+        line-height: 35px;
       }
     }
     span:last-child{
@@ -77,6 +137,9 @@ footer{
     img{
       max-height: 20px;
       padding-right: 13px;
+      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+        display: none;
+      }
     }
   }
   &__social{
@@ -86,6 +149,9 @@ footer{
       padding-left: 10px;
       max-height: 30px;
     }
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      display: none;
+    }
   }
 }
 .footer-right{
@@ -94,6 +160,9 @@ footer{
   height: 30px;
   .row{
     margin: 0;
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      margin:0 -15px;
+    }
   }
 
   span:first-child,&__logo{
@@ -101,9 +170,14 @@ footer{
   }
   &__logo{
     float: right;
-
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      float: left;
+    }
     img{
-      padding-right: 5px;
+      padding-right: 20px;
+      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      display: none;
+      }
     }
   }
   span:first-child{
@@ -111,11 +185,17 @@ footer{
   }
   span{
     font-size: 14px;
+    color: #777777;
     @include breakpointFull("max-width: 1920px","min-width: 1280px"){
       font-size: 16px;
     }
     @include breakpointFull("max-width: 1280px","min-width: 1024px"){
       font-size: 18px;
+    }
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      font-size: 25px;
+      font-weight: 300;
+      width: 100%;
     }
     line-height: 30px;
     font-weight:300;
