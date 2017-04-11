@@ -1,7 +1,7 @@
 
 footer
     .container
-        .row
+        .row.footer__context
             .col-md-8
                 .row
                     ul.col-md-4 Услуги
@@ -31,6 +31,41 @@ footer
                         for listLi in list
                             li
                                 a= listLi
+        .row.footer__context-mob
+            nav
+                ul
+                    li
+                        a.drop__down Услуги
+                        ul.drop__down__menu
+                            - var TopList = ['Кооператив', 'Новостройки', 'Вторичка', 'Вопрос юристу', 'Удаленная сделака', 'Контроль']
+                            for item in TopList
+                                li
+                                    a(href='#')
+                                        span= item
+                    li
+                        a.drop__down Информация
+                        ul.drop__down__menu
+                            - var TopList = ['Объединение', 'Новости', 'Форум', 'Аналитика', 'Информация', 'Калькуляторы', 'Партнеры','Инициативы','Отзывы','Контакты']
+                            for item in TopList
+                                li
+                                    a(href='#')
+                                        span= item
+                    li
+                        a.drop__down Дополнительно
+                        ul.drop__down__menu
+                            - var TopList = ['застройщики', 'Банки', 'Росвоенипотека', 'Общественная организация УНС', 'Молодострой', 'Нородный фронт', 'Взаимодействие']
+                            for item in TopList
+                                li
+                                    a(href='#')
+                                        span= item
+                    li
+                        a.drop__down Службы
+                        ul.drop__down__menu
+                            - var TopList = ['Регформа','В банк','Жалоба','Презентация']
+                            for item in TopList
+                                li
+                                    a(href='#')
+                                        span= item
 
 section.footer-contact
     .container
@@ -41,11 +76,11 @@ section.footer-contact
                 span +7 800 500-43-44
             .footer-contact__social.col-md-3
                 a(href="#")
-                    img(src="./images/icons/vk-social-logotype.png")
+                    img(src="./images/icons/vk-social-logotype.png" alt="")
                 a(href="#")
-                    img(src="./images/icons/facebook-logo-button.png")
+                    img(src="./images/icons/facebook-logo-button.png" alt="")
                 a(href="#")
-                    img(src="./images/icons/OK_logo.png")
+                    img(src="./images/icons/OK_logo.png" alt="")
 section.footer-right
     .container
         .row
@@ -53,5 +88,5 @@ section.footer-right
                 span © Военгарант, 2016 г. Все права защищены.
 
             .footer-right__logo.col-md-6
-                img(src="./images/icons/footer-right.png")
+                img(src="./images/icons/footer-right.png" alt="")
                 span Разработано NTI systems

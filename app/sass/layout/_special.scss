@@ -37,7 +37,12 @@
   &__btns {
     > a:first-child {
       margin-right: 45px;
+      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+        margin-right: 9.09%;
+        padding: 15px;
+      }
     }
+
   }
 
   &__description {

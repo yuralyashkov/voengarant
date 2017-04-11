@@ -62,12 +62,8 @@ $(function () {
 
         $('.profile__menu').css({"display":"none"});
         $(this).closest(".burger").find(".burger__menu").slideToggle();
-        if($(this).closest(".burger").find(".burger__button").css("position") == "fixed"){
-            $(this).closest(".burger").find(".burger__button").css({"position":"inherit"});
-        }
-        else{
-            $(this).closest(".burger").find(".burger__button").css({"position":"fixed"});
-        }
+        $(this).closest(".burger").find(".burger__button").css({"position":"fixed"});
+
 
         return false;
     });
@@ -98,17 +94,6 @@ $(function () {
         return false;
     });
 
-    /**
-     * Change position of block
-     */
-    var min_width = 1024;
-    $(window).on('resize', function() {
-        var new_width = $(window).width();
-        var container = $('#container');
-        if (new_width <= min_width && !container.hasClass('compact')) {
-            container.addClass('compact');
-            $('#third').insertBefore($('#first'));
 
-        }
-    }).trigger('resize');
+
 });

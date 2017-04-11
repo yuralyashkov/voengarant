@@ -15,19 +15,31 @@
     text-align: center;
     margin-top: 25px;
     line-height: 46px;
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      font-size: 30px;
+    }
   }
   .block__text{
     display: block;
     margin-top: 17px;
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      color: #333333;
+      font-size: 20px;
+    }
   }
   .social__img{
     margin: 0 auto;
-    padding-top: 30px;
+    padding-top: 25px;
     a{
       display: inline-block;
       padding-right: 10px;
     }
-    img:last-child{
+    img{
+      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+        width: 45px;
+      }
+    }
+    a:last-child{
       padding-right: 0;
     }
   }

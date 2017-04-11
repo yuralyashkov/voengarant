@@ -9,9 +9,6 @@
     left: 5.73%;
     z-index: 9;
   }
-  img{
-    max-height: 41px;
-  }
   .burger__logo{
     min-height: 100px;
     margin: 0 auto;
@@ -35,8 +32,11 @@
     }
     ul:nth-child(1){
       padding-left: 4.94%;
-      margin: 85px auto 0;
+      margin: 85px auto 75px;
       width: 66.667%;
+      img{
+        max-width: 46px;
+      }
     }
     ul{
       text-align: left;
@@ -52,6 +52,7 @@
         line-height: 45px;
         color: #ffffff;
         display: block;
+        font-weight: 300;
       }
       &:hover{
         text-decoration: none;

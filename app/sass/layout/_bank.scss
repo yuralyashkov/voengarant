@@ -1,10 +1,15 @@
 .bank{
   padding-top: 55px;
-  padding-bottom: 90px;
+  padding-bottom: 80px;
   .block__text,.block__title,.more{
     display: block;
     text-align: center;
     padding-bottom: 25px;
+  }
+  .block__text{
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      font-size: 20px;
+    }
   }
   .block__title{
     margin: 0 auto;
@@ -26,14 +31,18 @@
     padding: 0 (2.641509% / 2);
     width: ($container / 6 / $container * 100%);
     text-align: center;
-    @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+    @include breakpointFull("max-width: 1680px","min-width: 750px"){
       width: ($container / 3/ $container * 100%);
+    }
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+     margin-bottom: 50px;
     }
     span{
       display: inline-block;
       width: 100%;
       font-size: 18px;
       font-weight: 600;
+      padding-top: 15px;
       @include breakpointFull("max-width: 1920px","min-width: 1280px"){
         font-size: 20px;
       }
