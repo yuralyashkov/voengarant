@@ -1,4 +1,3 @@
-
 .block__discount {
   margin-bottom: 155px;
   .col-md-12 {
@@ -19,9 +18,7 @@
         }
       }
       .col-md-3,.col-md-4{
-        @include breakpointFull("max-width: 1680px","min-width: 1024px"){
-          width: 50%;
-        }
+
         @include breakpointFull("max-width: 1024px","min-width: 750px"){
           width: 100%;
           padding-right: 15px;
@@ -29,14 +26,6 @@
         }
       }
       .col-md-5{
-        @include breakpointFull("max-width: 1680px","min-width: 1280px"){
-          width: 90%;
-          padding-top: 100px;
-        }
-        @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-           width: 90%;
-           padding-top: 100px;
-        }
         @include breakpointFull("max-width: 1024px","min-width: 750px"){
           width: 100%;
           height: 325px;
@@ -63,11 +52,14 @@
     line-height: 22px;
     font-weight: 300;
     margin-bottom: 20px;
-    @include breakpointFull("max-width: 1680px","min-width: 1280px"){
-      font-size: 20px;
+    @include breakpointFull("max-width: 1920px","min-width: 1680px"){
+      font-size: 16px;
     }
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-      font-size: 22px;
+    @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+      font-size: 14px;
+      padding-left: 10px;
+      line-height: 18px;
+      margin-bottom: 15px;
     }
     @include breakpointFull("max-width: 1024px","min-width: 750px"){
       font-size: 30px;
@@ -79,11 +71,12 @@
   &__title {
     margin-bottom: 20px;
     @include breakpointFull("max-width: 1920px","min-width: 1680px"){
-        font-size: 35px;
+        font-size: 32px;
         margin-bottom: 15px;
       }
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-      margin-bottom: 15px;
+    @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+      font-size: 25px;
+      margin-bottom: 5px;
     }
     @include breakpointFull("max-width: 1024px","min-width: 750px"){
       font-size: 60px;
@@ -97,11 +90,13 @@
     font-weight: 300;
     margin-top: 20px;
     line-height: 17px;
-    @include breakpointFull("max-width: 1920px","min-width: 1680px"){
-      font-size: 16px;
-    }
     @include breakpointFull("max-width: 1680px","min-width: 1024px"){
-      font-size: 18px;
+      font-size: 12px;
+      line-height: 12px;
+      margin-top: 8px;
+    }
+    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+      margin-bottom: 20px;
     }
     @include breakpointFull("max-width: 1024px","min-width: 750px"){
       font-size: 20px;
@@ -139,7 +134,7 @@
   background-size: 100% auto;
   margin-top: -25px;
   margin-right: 15px;
-  @include breakpointFull("max-width: 1920px","min-width: 1680px"){
+  @include breakpointFull("max-width: 1920px","min-width: 1024px"){
     margin-right: 0;
     padding: 20px;
     margin-top: -20px;
@@ -154,18 +149,13 @@
     padding: 50px 0 40px 30px;
 
   }
-  &__title {
-    font-size: 36px;
-    margin-bottom: 13px;
-  }
+
   &__text {
     font-size: 14px;
     margin-bottom: 10px;
-    @include breakpointFull("max-width: 1920px","min-width: 1680px"){
-      font-size: 16px;
-    }
+
     @include breakpointFull("max-width: 1680px","min-width: 1024px"){
-      font-size: 18px;
+      font-size: 12px;
     }
     @include breakpointFull("max-width: 1024px","min-width: 750px"){
       font-size: 20px;
@@ -175,10 +165,11 @@
   .discount-card__text:first-child{
     font-size: 16px;
     margin-bottom: 60px;
-    @include breakpointFull("max-width: 1920px","min-width: 1680px"){
-      font-size: 18px;
+    @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+      font-size: 14px;
+      margin-bottom: 40px;
     }
-    @include breakpointFull("max-width: 1680px","min-width: 750px"){
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
       font-size: 20px;
       margin-bottom: 40px;
     }
@@ -189,11 +180,8 @@
     &:hover {
       text-decoration: none;
     }
-    @include breakpointFull("max-width: 1920px","min-width: 1680px"){
-      font-size: 20px;
-    }
     @include breakpointFull("max-width: 1680px","min-width: 1024px"){
-      font-size: 22px;
+      font-size: 16px;
     }
     @include breakpointFull("max-width: 1024px","min-width: 750px"){
       font-size: 20px;

@@ -3,8 +3,8 @@ body {
   font-size: 16px;
   padding-top: 151px;
   background: #fafafa;
-  @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-    font-size: 18px;
+  @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+    font-size: 14px;
   }
 }
 
@@ -51,8 +51,8 @@ button {
     font-family: $titleFontFamily;
     margin-top: -25px;
     margin-bottom: 13px;
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-      font-size: 42px;
+    @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+      font-size: 25px;
     }
     @include breakpointFull("max-width: 1024px","min-width: 750px"){
       font-size: 45px;
@@ -66,8 +66,8 @@ button {
     color: #1f1f1f;
     font-weight: 300;
     line-height: 21px;
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-      font-size: 20px;
+    @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+      font-size: 14px;
     }
     @include breakpointFull("max-width: 1024px","min-width: 750px"){
       font-size: 30px;
@@ -182,10 +182,11 @@ a {
 }
 .btn{
   font-size: 16px;
-  @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-    font-size: 18px;
-    padding: 10px 15px;
+  @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+    font-size: 14px;
+    width: 160px;
   }
+
   @include breakpointFull("max-width: 1024px","min-width: 750px"){
     font-size: 30px;
     padding: 15px 40px;

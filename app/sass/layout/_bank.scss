@@ -31,7 +31,7 @@
     padding: 0 (2.641509% / 2);
     width: ($container / 6 / $container * 100%);
     text-align: center;
-    @include breakpointFull("max-width: 1680px","min-width: 750px"){
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
       width: ($container / 3/ $container * 100%);
     }
     @include breakpointFull("max-width: 1024px","min-width: 750px"){
@@ -43,21 +43,15 @@
       font-size: 18px;
       font-weight: 600;
       padding-top: 15px;
-      @include breakpointFull("max-width: 1920px","min-width: 1280px"){
-        font-size: 20px;
-      }
-      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-        font-size: 22px;
+      @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+        font-size: 16px;
       }
     }
     span:last-child{
       font-size: 14px;
       font-weight: 300;
-      @include breakpointFull("max-width: 1920px","min-width: 1280px"){
-        font-size: 16px;
-      }
-      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-        font-size: 18px;
+      @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+        font-size: 12px;
       }
     }
   }
@@ -73,6 +67,9 @@
     width: 100%;
     height: 100%;
     @include grayscale;
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      width: 80%;
+    }
   }
 
 

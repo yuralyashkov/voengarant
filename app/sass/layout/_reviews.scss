@@ -24,14 +24,8 @@
     display: flex;
     width: 100%;
     margin: 0 -7.5px;
-    @include breakpointFull("max-width: 1280px","min-width: 750px"){
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
       display: block;
-    }
-    .col-md-4{
-      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-        width: 100%;
-        margin-bottom: 15px;
-      }
     }
   }
   .row:first-child{
@@ -41,14 +35,16 @@
   &__info{
     text-align: center;
     padding: 30px 70px;
-    @include breakpointFull("max-width: 1280px","min-width: 750px"){
+    @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+      padding: 30px 40px;
+    }
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
       padding: 30px;
     }
     a{
       display: inline-block;
     }
   }
-
   ._indent{
     margin-left: -13px;
   }
@@ -69,7 +65,7 @@
       padding-bottom: 35px;
       font-family: "Roboto Slab", serif;
       color: #646464;
-      @include breakpointFull("max-width: 1280px","min-width: 750px"){
+      @include breakpointFull("max-width: 1024px","min-width: 750px"){
         font-size: 25px;
       }
     }
@@ -84,10 +80,7 @@
       margin: 0 auto;
       line-height: 20px;
       padding-top: 33px;
-      @include breakpointFull("max-width: 1680px","min-width: 1280px"){
-        min-height: 290px;
-      }
-      @include breakpointFull("max-width: 1280px","min-width: 750px"){
+      @include breakpointFull("max-width: 1024px","min-width: 750px"){
         font-size: 30px;
         font-weight: 300;
         line-height: 30px;
@@ -97,14 +90,14 @@
       padding-bottom: 20px;
       padding-top: 35px;
       max-width: 100%;
-      @include breakpointFull("max-width: 1280px","min-width: 750px"){
+      @include breakpointFull("max-width: 1024px","min-width: 750px"){
         padding-bottom: 35px;
         padding-top: 30px;
       }
     }
     span:last-child{
       display: block;
-      @include breakpointFull("max-width: 1280px","min-width: 750px"){
+      @include breakpointFull("max-width: 1024px","min-width: 750px"){
         font-size: 25px;
         font-weight: 300;
       }
@@ -114,29 +107,17 @@
   .row:nth-child(even){
     li:nth-child(even){
       background-color: #e3e3e3;
-      @include breakpointFull("max-width: 1280px","min-width: 750px"){
-        background-color: #e3e3e3;
-      }
     }
     li:nth-child(odd){
       background-color: #ffffff;
-      @include breakpointFull("max-width: 1280px","min-width: 750px"){
-        background-color: #ffffff;
-      }
     }
   }
   .row:nth-child(odd){
     li:nth-child(odd){
       background-color: #e3e3e3;
-      @include breakpointFull("max-width: 1280px","min-width: 750px"){
-        background-color: #e3e3e3;
-      }
     }
     li:nth-child(even){
       background-color: #ffffff;
-      @include breakpointFull("max-width: 1280px","min-width: 750px"){
-        background-color: #ffffff;
-      }
     }
   }
 
