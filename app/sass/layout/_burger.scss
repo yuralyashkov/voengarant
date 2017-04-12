@@ -1,6 +1,6 @@
 .burger{
   display: none;
-  @include breakpointFull("max-width: 1024px","min-width: 750px"){
+  @include breakpoint("max-width: 1024px"){
     display: block;
     position: fixed;
     width: 13%;
@@ -34,7 +34,7 @@
       padding-left: 4.94%;
       margin: 85px auto 75px;
       width: 72.8%;
-      padding-bottom: 75px;
+      padding-bottom: 150px;
       img{
         max-width: 46px;
       }
@@ -48,7 +48,7 @@
       margin: 0 auto;
     }
     a{
-      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      @include breakpoint("max-width: 1024px"){
         font-size: 36px;
         line-height: 45px;
         color: #ffffff;
@@ -80,7 +80,7 @@
         padding: 0;
       }
       a{
-        @include breakpointFull("max-width: 1024px","min-width: 750px"){
+        @include breakpoint("max-width: 1024px"){
           color: #939393;
         }
       }
@@ -110,7 +110,7 @@
 }
 .profile{
   display: none;
-  @include breakpointFull("max-width: 1024px","min-width: 750px"){
+  @include breakpoint("max-width: 1024px"){
     display: block;
     position: fixed;
     cursor: pointer;
@@ -141,7 +141,7 @@
         margin: 0 auto;
       }
       a{
-        @include breakpointFull("max-width: 1024px","min-width: 750px"){
+        @include breakpoint("max-width: 1024px"){
           font-size: 36px;
           font-weight: 300;
           line-height: 45px;
@@ -161,7 +161,7 @@
     }
     ul:nth-child(2){
       margin-top: 25px;
-      padding-bottom: 75px;
+      padding-bottom: 150px;
       span{
         color: #777777;
         border-bottom: 1px solid #777777;

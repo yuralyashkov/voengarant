@@ -24,7 +24,7 @@
     display: flex;
     width: 100%;
     margin: 0 -7.5px;
-    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+    @include breakpoint("max-width: 1024px"){
       display: block;
     }
   }
@@ -35,10 +35,10 @@
   &__info{
     text-align: center;
     padding: 30px 70px;
-    @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+    @include breakpoint("max-width: 1680px"){
       padding: 30px 40px;
     }
-    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+    @include breakpoint("max-width: 1024px"){
       padding: 30px;
     }
     a{
@@ -65,7 +65,7 @@
       padding-bottom: 35px;
       font-family: "Roboto Slab", serif;
       color: #646464;
-      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      @include breakpoint("max-width: 1024px"){
         font-size: 25px;
       }
     }
@@ -80,7 +80,7 @@
       margin: 0 auto;
       line-height: 20px;
       padding-top: 33px;
-      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      @include breakpoint("max-width: 1024px"){
         font-size: 30px;
         font-weight: 300;
         line-height: 30px;
@@ -90,14 +90,14 @@
       padding-bottom: 20px;
       padding-top: 35px;
       max-width: 100%;
-      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      @include breakpoint("max-width: 1024px"){
         padding-bottom: 35px;
         padding-top: 30px;
       }
     }
     span:last-child{
       display: block;
-      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      @include breakpoint("max-width: 1024px"){
         font-size: 25px;
         font-weight: 300;
       }

@@ -2,7 +2,7 @@ footer{
   height: 350px;
   padding-top: 45px;
   border-top:solid 2px #e5e5e5;
-  @include breakpointFull("max-width: 1024px","min-width: 750px"){
+  @include breakpoint("max-width: 1024px"){
     height: auto;
 
   }
@@ -47,7 +47,7 @@ footer{
         padding-top: 25px;
       }
     }
-    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+    @include breakpoint("max-width: 1024px"){
       display: none;
     }
   }
@@ -56,7 +56,7 @@ footer{
     display: none;
     padding-bottom: 55px;
     margin: 0 -30px;
-    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+    @include breakpoint("max-width: 1024px"){
       display: block;
     }
     li{
@@ -100,7 +100,7 @@ footer{
 .footer-contact{
   .row{
     margin: 0;
-    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+    @include breakpoint("max-width: 1024px"){
       margin: 0 -15px;
     }
   }
@@ -116,11 +116,11 @@ footer{
       font-size: 18px;
       line-height: 29px;
       color: #777777;
-      @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+      @include breakpoint("max-width: 1680px"){
         font-size: 16px;
       }
 
-      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      @include breakpoint("max-width: 1024px"){
         width: 100%;
         font-size: 35px;
         font-weight: 300;
@@ -134,7 +134,7 @@ footer{
     img{
       max-height: 20px;
       padding-right: 13px;
-      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      @include breakpoint("max-width: 1024px"){
         display: none;
       }
     }
@@ -146,7 +146,7 @@ footer{
       padding-left: 10px;
       max-height: 30px;
     }
-    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+    @include breakpoint("max-width: 1024px"){
       display: none;
     }
   }
@@ -157,7 +157,7 @@ footer{
   height: 30px;
   .row{
     margin: 0;
-    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+    @include breakpoint("max-width: 1024px"){
       margin:0 -15px;
     }
   }
@@ -167,12 +167,12 @@ footer{
   }
   &__logo{
     float: right;
-    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+    @include breakpoint("max-width: 1024px"){
       float: left;
     }
     img{
       padding-right: 20px;
-      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      @include breakpoint("max-width: 1024px"){
       display: none;
       }
     }
@@ -183,7 +183,7 @@ footer{
   span{
     font-size: 14px;
     color: #777777;
-    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+    @include breakpoint("max-width: 1024px"){
       font-size: 25px;
       font-weight: 300;
       width: 100%;

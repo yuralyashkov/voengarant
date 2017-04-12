@@ -1,15 +1,15 @@
 .slider-home {
   height: 635px;
   margin-bottom: 273px;
-  @include breakpointFull("max-width: 1680px","min-width: 1280px"){
+  @include breakpoint("max-width: 1680px"){
      height: 480px;
      margin-bottom: 220px;
    }
-  @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+  @include breakpoint("max-width: 1280px"){
     height: 400px;
     margin-bottom: 150px;
   }
-  @include breakpointFull("max-width: 1024px","min-width: 750px"){
+  @include breakpoint("max-width: 1024px"){
     margin-bottom: 310px;
   }
 
@@ -50,18 +50,13 @@
       width: 100%;
     }
 
-
-
   }
 
   &__img {
     display: block;
     margin: 0 auto;
-    @include breakpointFull("max-width: 1680px","min-width: 1280px") {
-      width:45%;
-    }
-    @include breakpointFull("max-width: 1280px","min-width: 1024px") {
-      width:35%;
+    @include breakpoint("max-width: 1680px") {
+      width:55%;
     }
   }
 
@@ -73,26 +68,23 @@
     font-weight: 100;
     margin-bottom: 20px;
     margin-top: 30px;
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-      font-size: 35px;
-      line-height: 35px;
-    }
-    @include breakpointFull("max-width: 1680px","min-width: 1280px"){
+    @include breakpoint("max-width: 1680px"){
       font-size: 45px;
       line-height: 45px;
     }
+
   }
 
   &__text {
     font-size: 24px;
     font-weight:300;
-    @include breakpointFull("max-width: 1680px","min-width: 1280px"){
+    @include breakpoint("max-width: 1680px"){
       font-size:20px;
     }
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+    @include breakpoint("max-width: 1280px"){
       font-size:16px;
     }
-    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+    @include breakpoint("max-width: 1024px"){
       font-size: 30px;
     }
   }

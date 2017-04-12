@@ -1,30 +1,31 @@
 .analitic{
   padding-top: 225px;
   font-size: 18px;
-  @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+  @include breakpoint("max-width: 1680px"){
     font-size: 16px;
   }
   .col-md-7{
-    @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+    @include breakpoint("max-width: 1680px"){
       width: 90%;
-      padding-left: 30px;
     }
-    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+    @include breakpoint("max-width: 1024px"){
       font-size: 30px;
       color: #333333;
       font-weight: 300;
+      padding: 0;
     }
   }
   .col-md-1{
-    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+    @include breakpoint("max-width: 1024px"){
       font-size: 30px;
       font-weight: 300;
       color: #727272;
+      padding: 0;
     }
   }
   .container{
     padding-left: 13px;
-    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+    @include breakpoint("max-width: 1024px"){
       padding: 0;
     }
   }
