@@ -3,7 +3,7 @@ body {
   font-size: 16px;
   padding-top: 151px;
   background: #fafafa;
-  @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+  @include breakpointFull("max-width: 1280px", "min-width: 1024px") {
     font-size: 18px;
   }
 }
@@ -47,10 +47,10 @@ button {
     font-family: $titleFontFamily;
     margin-top: -25px;
     margin-bottom: 13px;
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+    @include breakpointFull("max-width: 1280px", "min-width: 1024px") {
       font-size: 42px;
     }
-    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+    @include breakpointFull("max-width: 1024px", "min-width: 750px") {
       font-size: 45px;
     }
   }
@@ -62,7 +62,7 @@ button {
     color: #1f1f1f;
     font-weight: 300;
     line-height: 21px;
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+    @include breakpointFull("max-width: 1280px", "min-width: 1024px") {
       font-size: 20px;
     }
   }
@@ -158,12 +158,13 @@ a {
   @include breakpoint("max-width: 1440px") {
     padding-right: (25px / 1920px * 100%);
   }
-  @include breakpointFull("max-width: 1024px","min-width: 750px"){
+  @include breakpointFull("max-width: 1024px", "min-width: 750px") {
     display: none;
   }
 
   text-align: right;
 }
+
 .container-left {
   @extend .container-side;
   padding-left: (45px / 1920px * 100%);
@@ -172,13 +173,14 @@ a {
     padding-left: (25px / 1920px * 100%);
   }
 }
-.btn{
+
+.btn {
   font-size: 16px;
-  @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+  @include breakpointFull("max-width: 1280px", "min-width: 1024px") {
     font-size: 18px;
     padding: 10px 15px;
   }
-  @include breakpointFull("max-width: 1024px","min-width: 750px"){
+  @include breakpointFull("max-width: 1024px", "min-width: 750px") {
     font-size: 30px;
     padding: 15px 40px;
     width: auto;
@@ -189,4 +191,14 @@ a {
   border-radius: 5px;
   padding: 5px 20px;
   width: 180px;
+}
+
+.p-l-none {
+  padding-left: 0 ;
+}
+.p-r-none {
+  padding-right: 0 ;
+}
+.row-none{
+  margin:0 ;
 }

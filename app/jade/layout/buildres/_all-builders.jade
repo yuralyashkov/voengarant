@@ -1,0 +1,17 @@
+scetion.all-builders
+    .container
+        span.all-builders__title.block__title.text-center Все застройщики
+        .all-builders__description.text-center
+            p.
+                Десятки тысяч военнослужащих, желающих приобрести жилье! Успешно реализована схема дистанционного <br>
+                ведения сделки (без личного присутствия военнослужащего) на первичном рынке. Таким образом, десятки тысяч <br>
+                военнослужащих, желающих приобрести жилье!
+        ul.clearfix
+            -for(var i = 0; i < 32; i++)
+                li
+                    a(href="#")
+                        .all-builders__logo
+                            img(src="./images/icons/builder-1.png" alt="")
+                        span.all-builders__name Бест
+                        span.all-builders__rate 4.6
+        +arrowDown('Загрузить еще')

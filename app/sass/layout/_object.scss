@@ -1,61 +1,65 @@
-.object{
+.object {
   padding-top: 35px;
-  @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+  @include breakpointFull("max-width: 1280px", "min-width: 1024px") {
     padding-top: 90px;
   }
-  .col-md-6{
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+  .down-arrow {
+    margin: 30px 0 0 0;
+    font-size: $s14;
+  }
+  .col-md-6 {
+    @include breakpointFull("max-width: 1280px", "min-width: 1024px") {
       width: 100%;
       margin-bottom: 15px;
       padding-bottom: 0;
     }
   }
-  &__context{
+  &__context {
     padding-top: 15px;
     background-size: cover;
-    .col-md-6:first-child{
-      padding:0 15px 0 10px;
+    .col-md-6:first-child {
+      padding: 0 15px 0 10px;
     }
-    &__block{
+    &__block {
       display: block;
       height: 230px;
       color: #ffffff;
       position: relative;
       overflow: hidden;
 
-      &__info{
+      &__info {
         position: absolute;
         bottom: 70px;
         left: 50px;
 
-        span{
+        span {
           display: block;
         }
-        .title{
+        .title {
           padding-bottom: 15px;
           font-family: "Roboto Slab";
           font-size: 36px;
           font-weight: 300;
           text-transform: uppercase;
         }
-        &__text{
-          .info{
+        &__text {
+          .info {
             display: inline-block;
             float: left;
             margin-right: 50px;
-            .img,span{
+            .img, span {
               display: inline-block;
               height: 40px;
               vertical-align: middle;
             }
-            .img{
+            .img {
               margin-right: 5px;
             }
           }
         }
 
       }
-      .sale{
+      .sale {
         position: absolute;
         right: -15px;
         bottom: 75px;
@@ -63,64 +67,73 @@
         padding: 0 40px 0 10px;
         border-radius: 5px;
         font-size: 14px;
-        @include breakpointFull("max-width: 1920px","min-width: 1680px"){
+        @include breakpointFull("max-width: 1920px", "min-width: 1680px") {
           bottom: 40px;
         }
-        @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+        @include breakpointFull("max-width: 1680px", "min-width: 1024px") {
           bottom: 20px;
           font-size: 16px;
         }
       }
     }
-      &__block:hover{
-        color:#ffffff;
-        opacity: 0.8;
-      }
-      &__block:focus{
-        color: #ffffff;
-      }
+    &__block:hover {
+      color: #ffffff;
+      opacity: 0.8;
+    }
+    &__block:focus {
+      color: #ffffff;
+    }
   }
-  .block__text{
+  .block__text {
     padding-left: 15px;
   }
-  ._smal{
+  ._smal {
     height: 480px;
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+    @include breakpointFull("max-width: 1280px", "min-width: 1024px") {
       height: 230px;
     }
   }
-  ._indent{
+  ._indent {
     padding-left: 10px;
   }
-  .row{
+  .row {
     padding-bottom: 15px;
     margin: 0;
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+    @include breakpointFull("max-width: 1280px", "min-width: 1024px") {
       padding-bottom: 0;
     }
   }
-  ._in-row{
+  ._in-row {
     padding-top: 15px;
     height: 235px;
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+    @include breakpointFull("max-width: 1280px", "min-width: 1024px") {
       padding-top: 0;
     }
   }
-  .object__next{
-    padding-top: 35px;
-    text-align: center;
-    a{
-      display: inline-block;
-      margin-right: 15px;
-      img,span{
-        display: block;
-        margin: 0 auto;
-        padding-left: 12px;
-      }
-      span{
-        text-decoration: none;
-        color: #727272;
-      }
-    }
-  }
+  //.object__next {
+  //  padding-top: 35px;
+  //  text-align: center;
+  //  a {
+  //    display: inline-block;
+  //    margin-right: 15px;
+  //    img, span {
+  //      display: block;
+  //      margin: 0 auto;
+  //      padding-left: 12px;
+  //    }
+  //    span {
+  //      text-decoration: none;
+  //      color: #727272;
+  //    }
+  //  }
+  //}
+}
+
+.object.object_builders {
+  padding-top: 45px;
+  margin: 0 0 150px 0;
+}
+
+.object.object_double {
+  margin: 0 0 149px 0;
 }

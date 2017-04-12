@@ -1,0 +1,58 @@
+/*ALL-BUILDERS*/
+
+.all-builders {
+  @include myriadL(18, $mainFontFamily, 300);
+  ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 60px 0 0 0;
+    li {
+      float: left;
+      width: (100%/8);
+      margin: 0 0 40px 0;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      &:hover {
+        img {
+          @include ungrayscale;
+        }
+      }
+    }
+    img {
+      transition: .2s;
+      @include grayscale;
+    }
+  }
+  span {
+    display: block;
+  }
+  &__title {
+    margin-top: 0;
+  }
+  font-size: $s18;
+  &__name {
+    color: color(black);
+  }
+  &__rate {
+    color: color(default);
+  }
+  &__description {
+    p {
+      margin: 0;
+    }
+    color: color(build-default);
+  }
+  &__logo {
+    img {
+      width: 100%;
+    }
+    width: 66px;
+    margin: 0 auto 10px auto;
+  }
+
+}
+
+/*ALL-BUILDERS*/

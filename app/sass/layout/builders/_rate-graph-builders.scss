@@ -1,0 +1,37 @@
+/*RATE-GRAPH-BUILDERS*/
+
+.graphic.graphic-builders {
+
+  .graphic__column {
+    position: relative;
+  }
+  .graphic__builder-top {
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    top: -85px;
+    @include myriadL(18, $mainFontFamily, 400);
+    transition: .2s;
+    img {
+      transition: .2s;
+      @include grayscale;
+    }
+    color: color(black);
+    &:hover {
+      color: color(link-more);
+      text-decoration: none;
+      img {
+        @include ungrayscale;
+      }
+    }
+
+  }
+  .graphic__builder-logo {
+    margin: 0 auto 6px auto;
+    width: 40px;
+  }
+
+}
+
+/*END RATE-GRAPH-BUILDERS*/
