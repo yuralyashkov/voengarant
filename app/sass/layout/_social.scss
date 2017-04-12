@@ -15,18 +15,18 @@
     text-align: center;
     margin-top: 25px;
     line-height: 46px;
-    @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+    @include breakpoint("max-width: 1680px"){
       font-size: 25px;
       line-height: 30px;
     }
-    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+    @include breakpoint("max-width: 1024px"){
       font-size: 30px;
     }
   }
   .block__text{
     display: block;
     margin-top: 17px;
-    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+    @include breakpoint("max-width: 1024px"){
       color: #333333;
       font-size: 20px;
     }
@@ -39,7 +39,7 @@
       padding-right: 10px;
     }
     img{
-      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      @include breakpoint("max-width: 1024px"){
         width: 45px;
       }
     }

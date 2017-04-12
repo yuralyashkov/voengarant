@@ -5,21 +5,21 @@
     margin-bottom: 15px;
     font-size: 36px;
     font-weight: 300;
-    @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+    @include breakpoint("max-width: 1680px"){
       font-size: 25px;
     }
-    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+    @include breakpoint("max-width: 1024px"){
       font-size: 45px;
     }
   }
   .block__text{
-    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+    @include breakpoint("max-width: 1024px"){
       line-height: 30px;
     }
   }
   margin-top: 175px;
   .more{
-    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+    @include breakpoint("max-width: 1024px"){
       font-size: 30px;
       margin-top: 30px;
       display: block;
@@ -43,7 +43,7 @@
     .developer__description {
       text-align: left;
       color: #1f1f1f;
-      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      @include breakpoint("max-width: 1024px"){
         padding-top: 60px;
         text-align: center;
       }
@@ -52,10 +52,10 @@
         font-size: 18px;
         padding-left: 18px;
         margin: 0 0 15px;
-        @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+        @include breakpoint("max-width: 1680px"){
           font-size: 14px;
         }
-        @include breakpointFull("max-width: 1024px","min-width: 750px"){
+        @include breakpoint("max-width: 1024px"){
           font-size: 30px;
           font-weight: 100;
         }
@@ -64,7 +64,7 @@
         margin-top: -10px;
       }
       p:nth-child(2){
-        @include breakpointFull("max-width: 1024px","min-width: 750px"){
+        @include breakpoint("max-width: 1024px"){
           display: none;
         }
       }
@@ -75,7 +75,7 @@
         display: inline-block;
         vertical-align: middle;
         padding-left: 18px;
-        @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+        @include breakpoint("max-width: 1680px"){
           font-size: 25px;
         }
       }
@@ -91,10 +91,10 @@
       display: inline-block;
       font-size: 60px;
       font-weight: 100;
-      @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+      @include breakpoint("max-width: 1680px"){
         font-size: 45px;
       }
-      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      @include breakpoint("max-width: 1024px"){
         font-weight: 300;
       }
     }
@@ -104,20 +104,26 @@
 .row__developers {
   margin-top: 39px;
   margin-bottom: 65px;
+  @include breakpoint("max-width: 1024px"){
+    margin: 39px 0 65px;
+  }
   .col-md-6:first-child .row .developer-tab:first-child {
     padding-left: 15px;
-    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+    @include breakpoint("max-width: 1024px"){
       padding: 0;
     }
   }
   .col-md-6:last-child .row .developer-tab:last-child {
-    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+    @include breakpoint("max-width: 1024px"){
       padding:0;
     }
   }
   .col-md-6:last-child{
     padding-left: 10px;
     padding-right: 40px;
+    @include breakpoint("max-width: 1024px"){
+      padding: 0;
+    }
   }
   .col-md-3{
     width: 25%;

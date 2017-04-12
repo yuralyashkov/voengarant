@@ -5845,7 +5845,7 @@ body {
   font-size: 16px;
   padding-top: 151px;
   background: #fafafa; }
-  @media screen and (max-width: 1680px) and (min-width: 1024px) {
+  @media screen and (max-width: 1680px) {
     body {
       font-size: 14px; } }
 
@@ -5855,7 +5855,7 @@ ul {
 .more {
   margin-left: 18px;
   color: #309bf7; }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
+  @media screen and (max-width: 1024px) {
     .more {
       font-size: 30px;
       font-weight: 300; } }
@@ -5884,10 +5884,10 @@ button {
   font-family: "Roboto Slab", serif;
   margin-top: -25px;
   margin-bottom: 13px; }
-  @media screen and (max-width: 1680px) and (min-width: 1024px) {
+  @media screen and (max-width: 1680px) {
     .block__title, .block__developers .tab-content .developer__description > span {
       font-size: 25px; } }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
+  @media screen and (max-width: 1024px) {
     .block__title, .block__developers .tab-content .developer__description > span {
       font-size: 45px; } }
 
@@ -5899,10 +5899,10 @@ button {
   color: #1f1f1f;
   font-weight: 300;
   line-height: 21px; }
-  @media screen and (max-width: 1680px) and (min-width: 1024px) {
+  @media screen and (max-width: 1680px) {
     .block__text {
       font-size: 14px; } }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
+  @media screen and (max-width: 1024px) {
     .block__text {
       font-size: 30px;
       line-height: 30px; } }
@@ -5941,7 +5941,7 @@ a {
   max-width: 69.01042%;
   padding-left: 0;
   padding-right: 0; }
-  @media screen and (max-width: 1280px) and (min-width: 750px) {
+  @media screen and (max-width: 1280px) {
     .container {
       max-width: 88.8%; } }
   .container__header {
@@ -5970,7 +5970,7 @@ a {
   @media screen and (max-width: 1440px) {
     .container-right {
       padding-right: 1.30208%; } }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
+  @media screen and (max-width: 1024px) {
     .container-right {
       display: none; } }
 
@@ -5988,17 +5988,17 @@ a {
   border-radius: 5px;
   padding: 5px 20px;
   width: 180px; }
-  @media screen and (max-width: 1680px) and (min-width: 1024px) {
+  @media screen and (max-width: 1680px) {
     .btn {
       font-size: 14px;
       width: 160px; } }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
+  @media screen and (max-width: 1024px) {
     .btn {
       font-size: 30px;
-      padding: 15px 40px;
+      padding: 5px 40px;
       width: auto; } }
 
-@media screen and (max-width: 1024px) and (min-width: 750px) {
+@media screen and (max-width: 1024px) {
   .header .container__header {
     display: none; } }
 
@@ -6011,26 +6011,26 @@ a {
   width: 100%;
   left: 0;
   z-index: 3; }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
+  @media screen and (max-width: 1024px) {
     .header .top {
       overflow: inherit;
       height: 75px;
       padding: 0 5.73%; } }
   .header .top .top-line .container-left a {
     margin-top: -2px; }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
+  @media screen and (max-width: 1024px) {
     .header .top .top-line .container-left {
       display: none; } }
   .header .top .top-line .container-left_mobile {
     display: none; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .header .top .top-line .container-left_mobile {
         display: inline-block;
         line-height: 75px;
         margin-left: 33%; } }
   .header .top .top-line .phone_mobile {
     display: none; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .header .top .top-line .phone_mobile {
         display: inline-block;
         line-height: 75px;
@@ -6107,7 +6107,7 @@ a {
   left: 0;
   width: 100%;
   z-index: 2; }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
+  @media screen and (max-width: 1024px) {
     .header__navigation {
       display: none; } }
   .header__navigation .row.container__navigation__row {
@@ -6198,15 +6198,15 @@ a {
         padding-right: -15px; }
       .block__discount .col-md-12 .row .col-md-4 {
         padding-left: 30px; }
-        @media screen and (max-width: 1024px) and (min-width: 750px) {
+        @media screen and (max-width: 1024px) {
           .block__discount .col-md-12 .row .col-md-4 {
             padding-top: 70px; } }
-      @media screen and (max-width: 1024px) and (min-width: 750px) {
+      @media screen and (max-width: 1024px) {
         .block__discount .col-md-12 .row .col-md-3, .block__discount .col-md-12 .row .col-md-4 {
           width: 100%;
           padding-right: 15px;
           padding-left: 15px; } }
-      @media screen and (max-width: 1024px) and (min-width: 750px) {
+      @media screen and (max-width: 1024px) {
         .block__discount .col-md-12 .row .col-md-5 {
           width: 100%;
           height: 325px;
@@ -6224,32 +6224,32 @@ a {
     line-height: 22px;
     font-weight: 300;
     margin-bottom: 20px; }
-    @media screen and (max-width: 1920px) and (min-width: 1680px) {
+    @media screen and (max-width: 1920px) {
       .discount__list {
         font-size: 16px; } }
-    @media screen and (max-width: 1680px) and (min-width: 1024px) {
+    @media screen and (max-width: 1680px) {
       .discount__list {
         font-size: 14px;
         padding-left: 10px;
         line-height: 18px;
         margin-bottom: 15px; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .discount__list {
         font-size: 30px;
         line-height: 30px;
         margin-bottom: 30px;
-        margin-left: 10px; } }
+        margin-left: 20px; } }
   .discount__title {
     margin-bottom: 20px; }
-    @media screen and (max-width: 1920px) and (min-width: 1680px) {
+    @media screen and (max-width: 1920px) {
       .discount__title {
         font-size: 32px;
         margin-bottom: 15px; } }
-    @media screen and (max-width: 1680px) and (min-width: 1024px) {
+    @media screen and (max-width: 1680px) {
       .discount__title {
         font-size: 25px;
         margin-bottom: 5px; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .discount__title {
         font-size: 60px; } }
   .discount__footnote {
@@ -6259,26 +6259,26 @@ a {
     font-weight: 300;
     margin-top: 20px;
     line-height: 17px; }
-    @media screen and (max-width: 1680px) and (min-width: 1024px) {
+    @media screen and (max-width: 1680px) {
       .discount__footnote {
         font-size: 12px;
         line-height: 12px;
         margin-top: 8px; } }
-    @media screen and (max-width: 1280px) and (min-width: 1024px) {
+    @media screen and (max-width: 1280px) {
       .discount__footnote {
         margin-bottom: 20px; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .discount__footnote {
         font-size: 20px;
         line-height: 20px;
         margin-top: 30px; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .discount__footnote .star {
         display: inline-block;
         width: 97%;
         margin-left: 5px;
         vertical-align: top; } }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
+  @media screen and (max-width: 1024px) {
     .discount .__fontsize {
       font-size: 30px;
       line-height: 30px;
@@ -6297,12 +6297,12 @@ a {
   background-size: 100% auto;
   margin-top: -25px;
   margin-right: 15px; }
-  @media screen and (max-width: 1920px) and (min-width: 1024px) {
+  @media screen and (max-width: 1920px) {
     .discount-card {
       margin-right: 0;
       padding: 20px;
       margin-top: -20px; } }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
+  @media screen and (max-width: 1024px) {
     .discount-card {
       width: 665px;
       margin: 0;
@@ -6314,21 +6314,21 @@ a {
   .discount-card__text {
     font-size: 14px;
     margin-bottom: 10px; }
-    @media screen and (max-width: 1680px) and (min-width: 1024px) {
+    @media screen and (max-width: 1680px) {
       .discount-card__text {
         font-size: 12px; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .discount-card__text {
         font-size: 20px;
         margin-bottom: 25px; } }
   .discount-card .discount-card__text:first-child {
     font-size: 16px;
     margin-bottom: 60px; }
-    @media screen and (max-width: 1680px) and (min-width: 1024px) {
+    @media screen and (max-width: 1680px) {
       .discount-card .discount-card__text:first-child {
         font-size: 14px;
         margin-bottom: 40px; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .discount-card .discount-card__text:first-child {
         font-size: 20px;
         margin-bottom: 40px; } }
@@ -6337,10 +6337,10 @@ a {
     color: #2f97f0; }
     .discount-card__link:hover {
       text-decoration: none; }
-    @media screen and (max-width: 1680px) and (min-width: 1024px) {
+    @media screen and (max-width: 1680px) {
       .discount-card__link {
         font-size: 16px; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .discount-card__link {
         font-size: 20px; } }
 
@@ -6352,16 +6352,16 @@ a {
     margin-bottom: 15px;
     font-size: 36px;
     font-weight: 300; }
-    @media screen and (max-width: 1680px) and (min-width: 1024px) {
+    @media screen and (max-width: 1680px) {
       .block__developers .block__title, .block__developers .tab-content .developer__description > span {
         font-size: 25px; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .block__developers .block__title, .block__developers .tab-content .developer__description > span {
         font-size: 45px; } }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
+  @media screen and (max-width: 1024px) {
     .block__developers .block__text {
       line-height: 30px; } }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
+  @media screen and (max-width: 1024px) {
     .block__developers .more {
       font-size: 30px;
       margin-top: 30px;
@@ -6378,7 +6378,7 @@ a {
     .block__developers .tab-content .developer__description {
       text-align: left;
       color: #1f1f1f; }
-      @media screen and (max-width: 1024px) and (min-width: 750px) {
+      @media screen and (max-width: 1024px) {
         .block__developers .tab-content .developer__description {
           padding-top: 60px;
           text-align: center; } }
@@ -6386,16 +6386,16 @@ a {
         font-size: 18px;
         padding-left: 18px;
         margin: 0 0 15px; }
-        @media screen and (max-width: 1680px) and (min-width: 1024px) {
+        @media screen and (max-width: 1680px) {
           .block__developers .tab-content .developer__description p {
             font-size: 14px; } }
-        @media screen and (max-width: 1024px) and (min-width: 750px) {
+        @media screen and (max-width: 1024px) {
           .block__developers .tab-content .developer__description p {
             font-size: 30px;
             font-weight: 100; } }
       .block__developers .tab-content .developer__description p:first-child {
         margin-top: -10px; }
-      @media screen and (max-width: 1024px) and (min-width: 750px) {
+      @media screen and (max-width: 1024px) {
         .block__developers .tab-content .developer__description p:nth-child(2) {
           display: none; } }
       .block__developers .tab-content .developer__description > span {
@@ -6403,7 +6403,7 @@ a {
         display: inline-block;
         vertical-align: middle;
         padding-left: 18px; }
-        @media screen and (max-width: 1680px) and (min-width: 1024px) {
+        @media screen and (max-width: 1680px) {
           .block__developers .tab-content .developer__description > span {
             font-size: 25px; } }
       .block__developers .tab-content .developer__description span {
@@ -6412,27 +6412,33 @@ a {
       display: inline-block;
       font-size: 60px;
       font-weight: 100; }
-      @media screen and (max-width: 1680px) and (min-width: 1024px) {
+      @media screen and (max-width: 1680px) {
         .block__developers .tab-content .block__big {
           font-size: 45px; } }
-      @media screen and (max-width: 1024px) and (min-width: 750px) {
+      @media screen and (max-width: 1024px) {
         .block__developers .tab-content .block__big {
           font-weight: 300; } }
 
 .row__developers {
   margin-top: 39px;
   margin-bottom: 65px; }
+  @media screen and (max-width: 1024px) {
+    .row__developers {
+      margin: 39px 0 65px; } }
   .row__developers .col-md-6:first-child .row .developer-tab:first-child {
     padding-left: 15px; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .row__developers .col-md-6:first-child .row .developer-tab:first-child {
         padding: 0; } }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
+  @media screen and (max-width: 1024px) {
     .row__developers .col-md-6:last-child .row .developer-tab:last-child {
       padding: 0; } }
   .row__developers .col-md-6:last-child {
     padding-left: 10px;
     padding-right: 40px; }
+    @media screen and (max-width: 1024px) {
+      .row__developers .col-md-6:last-child {
+        padding: 0; } }
   .row__developers .col-md-3 {
     width: 25%;
     display: inline-block; }
@@ -6493,10 +6499,10 @@ a {
     font-size: 36px;
     font-family: "Roboto Slab", serif;
     display: block; }
-    @media screen and (max-width: 1680px) and (min-width: 1024px) {
+    @media screen and (max-width: 1680px) {
       .special__title {
         font-size: 25px; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .special__title {
         font-size: 45px; } }
   .special__text {
@@ -6506,10 +6512,10 @@ a {
     margin-bottom: 20px;
     margin-top: 10px;
     display: block; }
-    @media screen and (max-width: 1680px) and (min-width: 1024px) {
+    @media screen and (max-width: 1680px) {
       .special__text {
         font-size: 14px; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .special__text {
         font-size: 30px; } }
   .special img {
@@ -6517,35 +6523,35 @@ a {
     display: inline-block; }
   .special__btns > a:first-child {
     margin-right: 45px; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .special__btns > a:first-child {
         margin-right: 9.09%;
         padding: 15px; } }
   .special__description {
     font-weight: 300;
     font-size: 18px; }
-    @media screen and (max-width: 1680px) and (min-width: 1024px) {
+    @media screen and (max-width: 1680px) {
       .special__description {
         font-size: 14px; } }
     .special__description a.more {
       margin-left: 0;
       margin-top: 30px;
       display: inline-block; }
-      @media screen and (max-width: 1024px) and (min-width: 750px) {
+      @media screen and (max-width: 1024px) {
         .special__description a.more {
           font-size: 30px; } }
     .special__description .block__title, .special__description .block__developers .tab-content .developer__description > span, .block__developers .tab-content .special__description .developer__description > span {
       margin-bottom: 40px; }
   .special__order {
     text-align: center; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .special__order {
         text-align: left; } }
     .special__order form {
       margin-top: 30px; }
       .special__order form ._placeholder {
         display: none; }
-        @media screen and (max-width: 1024px) and (min-width: 750px) {
+        @media screen and (max-width: 1024px) {
           .special__order form ._placeholder {
             display: block;
             padding: 10px 0;
@@ -6564,7 +6570,7 @@ a {
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
       resize: none; }
-      @media screen and (max-width: 1024px) and (min-width: 750px) {
+      @media screen and (max-width: 1024px) {
         .special__order input, .special__order textarea {
           margin: 0;
           border-radius: 5px;
@@ -6572,14 +6578,14 @@ a {
           max-width: 63.9%;
           font-size: 30px;
           height: 50px; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .special__order input::-webkit-input-placeholder, .special__order textarea::-webkit-input-placeholder {
         color: transparent; } }
     .special__order textarea {
       height: 85px;
       line-height: 22px;
       padding: 10px 20px; }
-      @media screen and (max-width: 1024px) and (min-width: 750px) {
+      @media screen and (max-width: 1024px) {
         .special__order textarea {
           max-width: 100%;
           height: 130px; } }
@@ -6590,10 +6596,10 @@ a {
       .special__order button:hover {
         text-decoration: underline;
         color: #fff; }
-      @media screen and (max-width: 1680px) and (min-width: 1024px) {
+      @media screen and (max-width: 1680px) {
         .special__order button {
           font-size: 14px; } }
-      @media screen and (max-width: 1024px) and (min-width: 750px) {
+      @media screen and (max-width: 1024px) {
         .special__order button {
           width: 215px;
           height: 50px;
@@ -6605,16 +6611,24 @@ a {
         content: ' '; }
     .special__order .politic {
       display: none; }
-      @media screen and (max-width: 1024px) and (min-width: 750px) {
+      @media screen and (max-width: 1024px) {
         .special__order .politic {
           display: inline-block;
           float: right;
           margin-top: 35px; } }
     .special__order .note {
       color: #777777; }
-      @media screen and (max-width: 1680px) and (min-width: 1024px) {
+      @media screen and (max-width: 1680px) {
         .special__order .note {
           font-size: 12px; } }
+      @media screen and (max-width: 1024px) {
+        .special__order .note {
+          font-size: 20px;
+          width: 64%;
+          display: block; } }
+      @media screen and (max-width: 1024px) {
+        .special__order .note br {
+          display: none; } }
 
 .slide-modal {
   background: #303030;
@@ -6625,10 +6639,10 @@ a {
   z-index: 1;
   color: #fff;
   display: none; }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
+  @media screen and (max-width: 1024px) {
     .slide-modal {
       padding-bottom: 0; } }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
+  @media screen and (max-width: 1024px) {
     .slide-modal .col-md-4, .slide-modal .col-md-7 {
       font-size: 20px;
       padding-bottom: 60px; } }
@@ -6653,10 +6667,10 @@ a {
     font-size: 36px;
     color: #fff;
     font-weight: 300; }
-    @media screen and (max-width: 1680px) and (min-width: 1024px) {
+    @media screen and (max-width: 1680px) {
       .slide-modal .block__title, .slide-modal .block__developers .tab-content .developer__description > span, .block__developers .tab-content .slide-modal .developer__description > span {
         font-size: 25px; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .slide-modal .block__title, .slide-modal .block__developers .tab-content .developer__description > span, .block__developers .tab-content .slide-modal .developer__description > span {
         font-size: 45px; } }
 
@@ -6667,32 +6681,32 @@ a {
     padding-left: 15px;
     width: 100%; }
     .block__map .filter .block__title, .block__map .filter .block__developers .tab-content .developer__description > span, .block__developers .tab-content .block__map .filter .developer__description > span {
-      font-family: "Roboto Slab";
+      font-family: "Roboto Slab", serif;
       font-weight: 300;
       font-size: 36px; }
-      @media screen and (max-width: 1280px) and (min-width: 1024px) {
+      @media screen and (max-width: 1280px) {
         .block__map .filter .block__title, .block__map .filter .block__developers .tab-content .developer__description > span, .block__developers .tab-content .block__map .filter .developer__description > span {
           font-size: 42px; } }
-      @media screen and (max-width: 1024px) and (min-width: 750px) {
+      @media screen and (max-width: 1024px) {
         .block__map .filter .block__title, .block__map .filter .block__developers .tab-content .developer__description > span, .block__developers .tab-content .block__map .filter .developer__description > span {
           font-size: 45px;
           text-align: center; } }
     .block__map .filter p {
       font-size: 18px; }
-      @media screen and (max-width: 1280px) and (min-width: 1024px) {
+      @media screen and (max-width: 1280px) {
         .block__map .filter p {
           font-size: 20px; } }
-      @media screen and (max-width: 1024px) and (min-width: 750px) {
+      @media screen and (max-width: 1024px) {
         .block__map .filter p {
           font-size: 30px;
           text-align: center;
           font-weight: 300; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .block__map .filter__context {
         display: none; } }
     .block__map .filter .radio {
       margin-top: 25px; }
-      @media screen and (max-width: 1280px) and (min-width: 1024px) {
+      @media screen and (max-width: 1280px) {
         .block__map .filter .radio {
           display: inline-block;
           width: 50%; } }
@@ -6700,10 +6714,10 @@ a {
         padding-left: 0;
         padding-bottom: 30px;
         width: 100%; }
-    @media screen and (max-width: 1280px) and (min-width: 1024px) {
+    @media screen and (max-width: 1280px) {
       .block__map .filter .radio:nth-child(1) {
         vertical-align: bottom; } }
-    @media screen and (max-width: 1280px) and (min-width: 1024px) {
+    @media screen and (max-width: 1280px) {
       .block__map .filter .selector {
         display: inline-block;
         width: 50%; } }
@@ -6733,13 +6747,13 @@ a {
       font-weight: 600; }
   .block__map .col-md-5 {
     padding-top: 25px; }
-    @media screen and (max-width: 1280px) and (min-width: 1024px) {
+    @media screen and (max-width: 1280px) {
       .block__map .col-md-5 {
         width: 100%; } }
   .block__map .col-md-7 {
     height: 700px;
     padding-left: 0; }
-    @media screen and (max-width: 1280px) and (min-width: 1024px) {
+    @media screen and (max-width: 1280px) {
       .block__map .col-md-7 {
         width: 100%;
         text-align: center; } }
@@ -6774,18 +6788,18 @@ a {
 
 .object {
   padding-top: 35px; }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
+  @media screen and (max-width: 1024px) {
     .object .col-md-6 {
       width: 100%;
       padding-bottom: 5px; } }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
+  @media screen and (max-width: 1024px) {
     .object .block__text {
       display: none; } }
   .object__context {
     padding-top: 15px; }
     .object__context .col-md-6:first-child {
       padding: 0 10px 0 13px; }
-      @media screen and (max-width: 1024px) and (min-width: 750px) {
+      @media screen and (max-width: 1024px) {
         .object__context .col-md-6:first-child {
           padding: 0 15px 5px 15px; } }
     .object__context .col-md-6:nth-child(2) .object__context__block__info {
@@ -6803,7 +6817,7 @@ a {
         position: absolute;
         bottom: 70px;
         left: 50px; }
-        @media screen and (max-width: 1024px) and (min-width: 750px) {
+        @media screen and (max-width: 1024px) {
           .object__context__block__info {
             bottom: 0;
             left: 20px;
@@ -6817,10 +6831,10 @@ a {
           font-size: 36px;
           font-weight: 300;
           text-transform: uppercase; }
-          @media screen and (max-width: 1680px) and (min-width: 1024px) {
+          @media screen and (max-width: 1680px) {
             .object__context__block__info .title {
               font-size: 25px; } }
-          @media screen and (max-width: 1024px) and (min-width: 750px) {
+          @media screen and (max-width: 1024px) {
             .object__context__block__info .title {
               font-size: 30px;
               padding-bottom: 10px; } }
@@ -6828,7 +6842,7 @@ a {
           display: inline-block;
           float: left;
           margin-right: 50px; }
-          @media screen and (max-width: 1680px) and (min-width: 1024px) {
+          @media screen and (max-width: 1680px) {
             .object__context__block__info__text .info {
               font-size: 14px;
               margin-right: 20px; } }
@@ -6846,14 +6860,14 @@ a {
         padding: 0 40px 0 10px;
         border-radius: 5px;
         font-size: 14px; }
-        @media screen and (max-width: 1920px) and (min-width: 1680px) {
+        @media screen and (max-width: 1920px) {
           .object__context__block .sale {
             bottom: 40px; } }
-        @media screen and (max-width: 1680px) and (min-width: 1024px) {
+        @media screen and (max-width: 1680px) {
           .object__context__block .sale {
             font-size: 12px;
             bottom: 30px; } }
-        @media screen and (max-width: 1024px) and (min-width: 750px) {
+        @media screen and (max-width: 1024px) {
           .object__context__block .sale {
             bottom: inherit;
             top: 25px;
@@ -6867,31 +6881,31 @@ a {
     padding-left: 15px; }
   .object ._smal {
     height: 480px; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .object ._smal {
         height: 240px; } }
   .object ._indent {
     padding-left: 5px; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .object ._indent {
         padding-left: 15px; } }
   .object .row {
     padding-bottom: 15px;
     margin: 0; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .object .row {
         padding-bottom: 0;
         margin: 0 -15px;
         margin-top: -5px; } }
     .object .row .col-md-6:nth-child(1) {
       padding: 0 10px 0 13px; }
-      @media screen and (max-width: 1024px) and (min-width: 750px) {
+      @media screen and (max-width: 1024px) {
         .object .row .col-md-6:nth-child(1) {
           padding: 0 15px 5px 15px; } }
   .object ._in-row {
     padding-top: 15px;
     height: 235px; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .object ._in-row {
         height: 240px;
         padding-top: 0; } }
@@ -6905,7 +6919,7 @@ a {
         display: block;
         margin: 0 auto;
         padding-left: 12px; }
-        @media screen and (max-width: 1024px) and (min-width: 750px) {
+        @media screen and (max-width: 1024px) {
           .object .object__next a img, .object .object__next a span {
             font-size: 35px;
             font-weight: 300; } }
@@ -6915,7 +6929,7 @@ a {
 
 .burger {
   display: none; }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
+  @media screen and (max-width: 1024px) {
     .burger {
       display: block;
       position: fixed;
@@ -6947,7 +6961,7 @@ a {
       padding-left: 4.94%;
       margin: 85px auto 75px;
       width: 72.8%;
-      padding-bottom: 75px; }
+      padding-bottom: 150px; }
       .burger .burger__menu ul:nth-child(1) img {
         max-width: 46px; }
     .burger .burger__menu ul {
@@ -6956,7 +6970,7 @@ a {
       display: block;
       padding: 50px 0;
       margin: 0 auto; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .burger .burger__menu a {
         font-size: 36px;
         line-height: 45px;
@@ -6982,7 +6996,7 @@ a {
       .burger .burger__menu .drop__down__menu li {
         display: block;
         padding: 0; }
-      @media screen and (max-width: 1024px) and (min-width: 750px) {
+      @media screen and (max-width: 1024px) {
         .burger .burger__menu .drop__down__menu a {
           color: #939393; } }
       .burger .burger__menu .drop__down__menu img, .burger .burger__menu .drop__down__menu span {
@@ -7005,7 +7019,7 @@ a {
 
 .profile {
   display: none; }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
+  @media screen and (max-width: 1024px) {
     .profile {
       display: block;
       position: fixed;
@@ -7033,7 +7047,7 @@ a {
       .profile .profile__menu ul li {
         display: block;
         margin: 0 auto; }
-      @media screen and (max-width: 1024px) and (min-width: 750px) {
+      @media screen and (max-width: 1024px) {
         .profile .profile__menu ul a {
           font-size: 36px;
           font-weight: 300;
@@ -7050,7 +7064,7 @@ a {
         vertical-align: middle; }
     .profile .profile__menu ul:nth-child(2) {
       margin-top: 25px;
-      padding-bottom: 75px; }
+      padding-bottom: 150px; }
       .profile .profile__menu ul:nth-child(2) span {
         color: #777777;
         border-bottom: 1px solid #777777; }
@@ -7058,15 +7072,15 @@ a {
 .slider-home {
   height: 635px;
   margin-bottom: 273px; }
-  @media screen and (max-width: 1680px) and (min-width: 1280px) {
+  @media screen and (max-width: 1680px) {
     .slider-home {
       height: 480px;
       margin-bottom: 220px; } }
-  @media screen and (max-width: 1280px) and (min-width: 1024px) {
+  @media screen and (max-width: 1280px) {
     .slider-home {
       height: 400px;
       margin-bottom: 150px; } }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
+  @media screen and (max-width: 1024px) {
     .slider-home {
       margin-bottom: 310px; } }
   .slider-home .swiper-pagination .swiper-pagination-bullet {
@@ -7095,12 +7109,9 @@ a {
   .slider-home__img {
     display: block;
     margin: 0 auto; }
-    @media screen and (max-width: 1680px) and (min-width: 1280px) {
+    @media screen and (max-width: 1680px) {
       .slider-home__img {
-        width: 45%; } }
-    @media screen and (max-width: 1280px) and (min-width: 1024px) {
-      .slider-home__img {
-        width: 35%; } }
+        width: 55%; } }
   .slider-home__title {
     color: #303030;
     font-size: 60px;
@@ -7109,24 +7120,20 @@ a {
     font-weight: 100;
     margin-bottom: 20px;
     margin-top: 30px; }
-    @media screen and (max-width: 1280px) and (min-width: 1024px) {
-      .slider-home__title {
-        font-size: 35px;
-        line-height: 35px; } }
-    @media screen and (max-width: 1680px) and (min-width: 1280px) {
+    @media screen and (max-width: 1680px) {
       .slider-home__title {
         font-size: 45px;
         line-height: 45px; } }
   .slider-home__text {
     font-size: 24px;
     font-weight: 300; }
-    @media screen and (max-width: 1680px) and (min-width: 1280px) {
+    @media screen and (max-width: 1680px) {
       .slider-home__text {
         font-size: 20px; } }
-    @media screen and (max-width: 1280px) and (min-width: 1024px) {
+    @media screen and (max-width: 1280px) {
       .slider-home__text {
         font-size: 16px; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .slider-home__text {
         font-size: 30px; } }
 
@@ -7134,18 +7141,22 @@ a {
   padding-top: 135px; }
   .about-project .col-md-6 {
     padding-left: 30px; }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
+      .about-project .col-md-6 {
+        padding-left: 0; } }
+  @media screen and (max-width: 1024px) {
     .about-project .col-md-6:nth-child(2) {
-      padding: inherit; } }
+      padding: inherit;
+      margin: 0 -20px; } }
   .about-project .block__title, .about-project .block__developers .tab-content .developer__description > span, .block__developers .tab-content .about-project .developer__description > span {
     padding-top: 25px;
     margin: 0;
     font-size: 36px;
     font-weight: 300; }
-    @media screen and (max-width: 1680px) and (min-width: 1024px) {
+    @media screen and (max-width: 1680px) {
       .about-project .block__title, .about-project .block__developers .tab-content .developer__description > span, .block__developers .tab-content .about-project .developer__description > span {
         font-size: 25px; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .about-project .block__title, .about-project .block__developers .tab-content .developer__description > span, .block__developers .tab-content .about-project .developer__description > span {
         font-size: 45px; } }
   .about-project ._regular {
@@ -7153,17 +7164,17 @@ a {
     padding-top: 35px;
     font-weight: 600;
     color: #333333; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .about-project ._regular {
         font-size: 20px;
         padding-top: 20px; } }
   .about-project .block__text {
     padding-top: 23px;
     padding-bottom: 15px; }
-    @media screen and (max-width: 1680px) and (min-width: 1024px) {
+    @media screen and (max-width: 1680px) {
       .about-project .block__text {
         font-size: 14px; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .about-project .block__text {
         font-size: 20px; } }
   .about-project .about-project__button {
@@ -7190,24 +7201,24 @@ a {
     text-align: center;
     padding: 74px;
     height: 586px; }
-    @media screen and (max-width: 1680px) and (min-width: 1024px) {
+    @media screen and (max-width: 1680px) {
       .about-project .about-project-slider {
         padding: 75px 70px 70px; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .about-project .about-project-slider {
         padding: 65px; } }
     .about-project .about-project-slider span {
       display: block;
       padding-bottom: 18px; }
-      @media screen and (max-width: 1680px) and (min-width: 1024px) {
+      @media screen and (max-width: 1680px) {
         .about-project .about-project-slider span {
           font-size: 12px; } }
-      @media screen and (max-width: 1024px) and (min-width: 750px) {
+      @media screen and (max-width: 1024px) {
         .about-project .about-project-slider span {
           display: none; } }
     .about-project .about-project-slider ._mob {
       display: none; }
-      @media screen and (max-width: 1024px) and (min-width: 750px) {
+      @media screen and (max-width: 1024px) {
         .about-project .about-project-slider ._mob {
           display: block;
           font-size: 30px;
@@ -7216,20 +7227,20 @@ a {
       font-family: "Roboto Slab";
       color: #333333;
       font-size: 18px; }
-      @media screen and (max-width: 1680px) and (min-width: 1024px) {
+      @media screen and (max-width: 1680px) {
         .about-project .about-project-slider span:first-child {
           font-size: 14px; } }
-      @media screen and (max-width: 1024px) and (min-width: 750px) {
+      @media screen and (max-width: 1024px) {
         .about-project .about-project-slider span:first-child {
           display: block;
           font-size: 30px;
           font-weight: 300; } }
-      @media screen and (max-width: 1024px) and (min-width: 750px) {
+      @media screen and (max-width: 1024px) {
         .about-project .about-project-slider span:first-child br {
           display: none; } }
     .about-project .about-project-slider button {
       margin-left: -45px; }
-      @media screen and (max-width: 1920px) and (min-width: 750px) {
+      @media screen and (max-width: 1920px) {
         .about-project .about-project-slider button {
           margin-left: 0; } }
   .about-project .slider-home {
@@ -7237,28 +7248,28 @@ a {
     margin-top: 20px;
     height: 600px;
     margin-bottom: 0; }
-    @media screen and (max-width: 1680px) and (min-width: 1024px) {
+    @media screen and (max-width: 1680px) {
       .about-project .slider-home {
         height: 567px; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .about-project .slider-home {
         height: 680px; } }
   .about-project .swiper-slide {
     width: 100%; }
-    @media screen and (max-width: 1680px) and (min-width: 1024px) {
+    @media screen and (max-width: 1680px) {
       .about-project .swiper-slide {
         width: 100% !important; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .about-project .swiper-slide {
         width: 100% !important; } }
   .about-project .swiper-wrapper {
     margin-left: 45px;
     background: url("../images/icons/about-project-slide.png") 100% no-repeat;
     background-size: cover; }
-    @media screen and (max-width: 1680px) and (min-width: 1024px) {
+    @media screen and (max-width: 1680px) {
       .about-project .swiper-wrapper {
         margin-left: 0; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .about-project .swiper-wrapper {
         margin-left: 0; } }
   .about-project .swiper-slide__content {
@@ -7279,42 +7290,39 @@ a {
     position: absolute;
     top: 12%;
     width: 37.3%; }
-    @media screen and (max-width: 1680px) and (min-width: 1024px) {
+    @media screen and (max-width: 1680px) {
       .dependents__img {
         top: 27%; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .dependents__img {
         display: none; } }
   .dependents__img-mob {
     display: none; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .dependents__img-mob {
         position: absolute;
         display: block;
-        top: 40%;
+        top: 35%;
         right: 0; } }
   .dependents .col-md-6 {
     display: inline-block;
     float: right;
     padding-left: 90px;
     padding-top: 30px; }
-    @media screen and (max-width: 1920px) and (min-width: 1680px) {
+    @media screen and (max-width: 1920px) {
       .dependents .col-md-6 {
         padding-left: 0; } }
-    @media screen and (max-width: 1680px) and (min-width: 1024px) {
-      .dependents .col-md-6 {
-        width: 65%; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .dependents .col-md-6 {
         padding-left: 15px; } }
   .dependents .block__title, .dependents .block__developers .tab-content .developer__description > span, .block__developers .tab-content .dependents .developer__description > span {
     margin-bottom: 18px;
     font-size: 36px;
     font-weight: 300; }
-    @media screen and (max-width: 1680px) and (min-width: 1024px) {
+    @media screen and (max-width: 1680px) {
       .dependents .block__title, .dependents .block__developers .tab-content .developer__description > span, .block__developers .tab-content .dependents .developer__description > span {
         font-size: 25px; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .dependents .block__title, .dependents .block__developers .tab-content .developer__description > span, .block__developers .tab-content .dependents .developer__description > span {
         font-size: 45px; } }
   .dependents .block__text:first-child {
@@ -7325,10 +7333,10 @@ a {
     font-family: "Roboto Slab", serif;
     font-weight: 300;
     font-size: 36px; }
-    @media screen and (max-width: 1680px) and (min-width: 1024px) {
+    @media screen and (max-width: 1680px) {
       .dependents .middle-text {
         font-size: 25px; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .dependents .middle-text {
         font-size: 36px;
         padding-right: 260px; } }
@@ -7336,21 +7344,21 @@ a {
     margin-bottom: 55px;
     line-height: 24px;
     padding-right: 105px; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .dependents .block__text span {
         display: none; } }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
+  @media screen and (max-width: 1024px) {
     .dependents .dependents__inherit {
       display: none; } }
   .dependents .more {
     display: block;
     margin: -35px 0 35px; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .dependents .more {
         margin: 0 0 45px; } }
   .dependents p {
     padding-top: 23px; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .dependents p {
         line-height: 30px; } }
   .dependents__context__element {
@@ -7361,31 +7369,34 @@ a {
     margin-right: 5px;
     padding-bottom: 25px;
     color: #777777; }
-    @media screen and (max-width: 1920px) and (min-width: 1024px) {
+    @media screen and (max-width: 1920px) {
       .dependents__context__element {
         font-size: 10px; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .dependents__context__element {
         display: block;
         text-align: left;
         width: 100%;
         padding-bottom: 30px; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .dependents__context__element span {
         display: block;
         text-align: center;
         font-size: 20px;
         max-width: 185px; } }
-    @media screen and (max-width: 1920px) and (min-width: 1024px) {
+    @media screen and (max-width: 1920px) {
       .dependents__context__element img {
         width: 160px; } }
+    @media screen and (max-width: 1024px) {
+      .dependents__context__element img {
+        width: 180px; } }
   .dependents__context__element:hover {
     color: #777777;
     opacity: 0.8; }
   .dependents__context__element:focus {
     color: #777777; }
 
-@media screen and (max-width: 1024px) and (min-width: 750px) {
+@media screen and (max-width: 1024px) {
   .dependents__context:last-child {
     display: none; } }
 
@@ -7398,10 +7409,10 @@ a {
     margin: 0 auto 20px;
     font-size: 36px;
     font-weight: 300; }
-    @media screen and (max-width: 1680px) and (min-width: 1024px) {
+    @media screen and (max-width: 1680px) {
       .news .block__title, .news .block__developers .tab-content .developer__description > span, .block__developers .tab-content .news .developer__description > span {
         font-size: 25px; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .news .block__title, .news .block__developers .tab-content .developer__description > span, .block__developers .tab-content .news .developer__description > span {
         font-size: 45px;
         text-align: center; } }
@@ -7412,7 +7423,7 @@ a {
   .news .row {
     display: table;
     float: none; }
-    @media screen and (max-width: 1920px) and (min-width: 1680px) {
+    @media screen and (max-width: 1920px) {
       .news .row {
         margin-right: 30px; } }
     .news .row .col-md-6 {
@@ -7420,18 +7431,18 @@ a {
       float: none;
       vertical-align: middle;
       padding: 0; }
-      @media screen and (max-width: 1024px) and (min-width: 750px) {
+      @media screen and (max-width: 1024px) {
         .news .row .col-md-6 {
           display: block; } }
     .news .row .col-md-6:last-child {
       vertical-align: top;
       padding-right: 30px; }
-      @media screen and (max-width: 1920px) and (min-width: 1024px) {
+      @media screen and (max-width: 1920px) {
         .news .row .col-md-6:last-child {
           padding-right: 30px;
           background: url("../images/icons/news-main.png") left no-repeat;
           background-size: cover; } }
-      @media screen and (max-width: 1024px) and (min-width: 750px) {
+      @media screen and (max-width: 1024px) {
         .news .row .col-md-6:last-child {
           padding: 0 15px; } }
   .news .row:first-child {
@@ -7445,25 +7456,25 @@ a {
       display: flex;
       margin: 0 15px;
       height: 100%; }
-      @media screen and (max-width: 1024px) and (min-width: 750px) {
+      @media screen and (max-width: 1024px) {
         .news .news__info .row {
           margin: 0 5px; } }
       .news .news__info .row .col-md-6 {
         margin: 0 7.5px;
         padding: 0 7.5px;
         background-color: #ffffff; }
-        @media screen and (max-width: 1920px) and (min-width: 1024px) {
+        @media screen and (max-width: 1920px) {
           .news .news__info .row .col-md-6 {
             background: #ffffff; } }
     .news .news__info .row:first-child {
       padding-bottom: 10px; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .news .news__info .row:nth-child(2) {
         display: none; } }
     .news .news__info .news__info__text {
       height: 100%;
       padding: 25px 15px 25px 10px; }
-      @media screen and (max-width: 1920px) and (min-width: 1680px) {
+      @media screen and (max-width: 1920px) {
         .news .news__info .news__info__text {
           padding: 25px 7px 25px 10px; } }
       .news .news__info .news__info__text span:first-child {
@@ -7473,7 +7484,7 @@ a {
         font-family: "Roboto Slab", serif;
         font-weight: 300;
         color: #58cafe; }
-        @media screen and (max-width: 1024px) and (min-width: 750px) {
+        @media screen and (max-width: 1024px) {
           .news .news__info .news__info__text span:first-child {
             font-size: 20px;
             margin-bottom: 40px;
@@ -7483,7 +7494,7 @@ a {
         margin-top: 5px;
         height: 18px;
         margin-left: -15px; }
-        @media screen and (max-width: 1024px) and (min-width: 750px) {
+        @media screen and (max-width: 1024px) {
           .news .news__info .news__info__text .action {
             margin-bottom: 35px !important; } }
         .news .news__info .news__info__text .action .red, .news .news__info .news__info__text .action .blue {
@@ -7494,7 +7505,7 @@ a {
           font-size: 14px;
           line-height: 20px;
           text-align: center; }
-          @media screen and (max-width: 1024px) and (min-width: 750px) {
+          @media screen and (max-width: 1024px) {
             .news .news__info .news__info__text .action .red, .news .news__info .news__info__text .action .blue {
               font-size: 20px; } }
         .news .news__info .news__info__text .action .blue {
@@ -7511,14 +7522,14 @@ a {
         line-height: 24px;
         font-family: "Roboto Slab", serif;
         color: #777777; }
-        @media screen and (max-width: 1920px) and (min-width: 1680px) {
+        @media screen and (max-width: 1920px) {
           .news .news__info .news__info__text .big {
             font-size: 18px; } }
-        @media screen and (max-width: 1680px) and (min-width: 1024px) {
+        @media screen and (max-width: 1680px) {
           .news .news__info .news__info__text .big {
             font-size: 16px;
             margin-bottom: 20px; } }
-        @media screen and (max-width: 1024px) and (min-width: 750px) {
+        @media screen and (max-width: 1024px) {
           .news .news__info .news__info__text .big {
             font-size: 30px;
             margin-bottom: 60px; } }
@@ -7527,11 +7538,11 @@ a {
         margin-bottom: 50px;
         font-size: 14px;
         line-height: 18px; }
-        @media screen and (max-width: 1680px) and (min-width: 1024px) {
+        @media screen and (max-width: 1680px) {
           .news .news__info .news__info__text .middle {
             font-size: 12px;
             margin-bottom: 20px; } }
-        @media screen and (max-width: 1024px) and (min-width: 750px) {
+        @media screen and (max-width: 1024px) {
           .news .news__info .news__info__text .middle {
             display: none; } }
       .news .news__info .news__info__text span:last-child {
@@ -7539,10 +7550,10 @@ a {
         font-size: 12px;
         line-height: 24px;
         color: #727272; }
-        @media screen and (max-width: 1680px) and (min-width: 1024px) {
+        @media screen and (max-width: 1680px) {
           .news .news__info .news__info__text span:last-child {
             font-size: 10px; } }
-        @media screen and (max-width: 1024px) and (min-width: 750px) {
+        @media screen and (max-width: 1024px) {
           .news .news__info .news__info__text span:last-child {
             font-size: 20px; } }
   .news .news__banner {
@@ -7551,11 +7562,11 @@ a {
     height: 700px;
     background: url("../images/icons/news-main.png") left no-repeat;
     background-size: cover; }
-    @media screen and (max-width: 1920px) and (min-width: 1024px) {
+    @media screen and (max-width: 1920px) {
       .news .news__banner {
         height: 730px;
         background: transparent; } }
-    @media screen and (max-width: 1680px) and (min-width: 1024px) {
+    @media screen and (max-width: 1680px) {
       .news .news__banner {
         height: 100%; } }
     .news .news__banner span, .news .news__banner__img {
@@ -7568,7 +7579,7 @@ a {
       font-weight: 100;
       margin-bottom: 15px;
       line-height: 53px; }
-      @media screen and (max-width: 1680px) and (min-width: 1024px) {
+      @media screen and (max-width: 1680px) {
         .news .news__banner ._big {
           font-size: 25px; } }
     .news .news__banner__img img {
@@ -7580,26 +7591,27 @@ a {
 .analitic {
   padding-top: 225px;
   font-size: 18px; }
-  @media screen and (max-width: 1680px) and (min-width: 1024px) {
+  @media screen and (max-width: 1680px) {
     .analitic {
       font-size: 16px; } }
-  @media screen and (max-width: 1680px) and (min-width: 1024px) {
+  @media screen and (max-width: 1680px) {
     .analitic .col-md-7 {
-      width: 90%;
-      padding-left: 30px; } }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
+      width: 90%; } }
+  @media screen and (max-width: 1024px) {
     .analitic .col-md-7 {
       font-size: 30px;
       color: #333333;
-      font-weight: 300; } }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
+      font-weight: 300;
+      padding: 0; } }
+  @media screen and (max-width: 1024px) {
     .analitic .col-md-1 {
       font-size: 30px;
       font-weight: 300;
-      color: #727272; } }
+      color: #727272;
+      padding: 0; } }
   .analitic .container {
     padding-left: 13px; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .analitic .container {
         padding: 0; } }
   .analitic .block__title, .analitic .block__developers .tab-content .developer__description > span, .block__developers .tab-content .analitic .developer__description > span {
@@ -7627,17 +7639,17 @@ a {
     text-align: center;
     margin-top: 25px;
     line-height: 46px; }
-    @media screen and (max-width: 1680px) and (min-width: 1024px) {
+    @media screen and (max-width: 1680px) {
       .social .middle-text {
         font-size: 25px;
         line-height: 30px; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .social .middle-text {
         font-size: 30px; } }
   .social .block__text {
     display: block;
     margin-top: 17px; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .social .block__text {
         color: #333333;
         font-size: 20px; } }
@@ -7647,7 +7659,7 @@ a {
     .social .social__img a {
       display: inline-block;
       padding-right: 10px; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .social .social__img img {
         width: 45px; } }
     .social .social__img a:last-child {
@@ -7676,7 +7688,7 @@ a {
     display: flex;
     width: 100%;
     margin: 0 -7.5px; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .reviews .row {
         display: block; } }
   .reviews .row:first-child {
@@ -7684,10 +7696,10 @@ a {
   .reviews__info {
     text-align: center;
     padding: 30px 70px; }
-    @media screen and (max-width: 1680px) and (min-width: 1024px) {
+    @media screen and (max-width: 1680px) {
       .reviews__info {
         padding: 30px 40px; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .reviews__info {
         padding: 30px; } }
     .reviews__info a {
@@ -7709,7 +7721,7 @@ a {
       padding-bottom: 35px;
       font-family: "Roboto Slab", serif;
       color: #646464; }
-      @media screen and (max-width: 1024px) and (min-width: 750px) {
+      @media screen and (max-width: 1024px) {
         .reviews li span:first-child {
           font-size: 25px; } }
     .reviews li img:first-child {
@@ -7722,7 +7734,7 @@ a {
       margin: 0 auto;
       line-height: 20px;
       padding-top: 33px; }
-      @media screen and (max-width: 1024px) and (min-width: 750px) {
+      @media screen and (max-width: 1024px) {
         .reviews li .reviews__text {
           font-size: 30px;
           font-weight: 300;
@@ -7731,13 +7743,13 @@ a {
       padding-bottom: 20px;
       padding-top: 35px;
       max-width: 100%; }
-      @media screen and (max-width: 1024px) and (min-width: 750px) {
+      @media screen and (max-width: 1024px) {
         .reviews li .reviews__logo {
           padding-bottom: 35px;
           padding-top: 30px; } }
     .reviews li span:last-child {
       display: block; }
-      @media screen and (max-width: 1024px) and (min-width: 750px) {
+      @media screen and (max-width: 1024px) {
         .reviews li span:last-child {
           font-size: 25px;
           font-weight: 300; } }
@@ -7759,25 +7771,25 @@ a {
     font-weight: 300;
     text-align: center;
     line-height: 44px; }
-    @media screen and (max-width: 1680px) and (min-width: 1024px) {
+    @media screen and (max-width: 1680px) {
       .seo .block__title, .seo .block__developers .tab-content .developer__description > span, .block__developers .tab-content .seo .developer__description > span {
         font-size: 25px;
         line-height: 30px; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .seo .block__title, .seo .block__developers .tab-content .developer__description > span, .block__developers .tab-content .seo .developer__description > span {
         font-size: 45px;
         font-weight: 300;
         line-height: 45px; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .seo .block__title br, .seo .block__developers .tab-content .developer__description > span br, .block__developers .tab-content .seo .developer__description > span br {
         display: none; } }
   .seo .block__text {
     text-align: center; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .seo .block__text {
         font-size: 20px;
         font-family: "Roboto Slab", serif; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .seo .block__text br {
         display: none; } }
   .seo .but {
@@ -7800,7 +7812,7 @@ a {
     float: none;
     padding-left: 75px;
     padding-right: 140px; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .seo-context .col-md-8 {
         padding: 0; } }
   .seo-context .block__title, .seo-context .block__developers .tab-content .developer__description > span, .block__developers .tab-content .seo-context .developer__description > span {
@@ -7809,16 +7821,16 @@ a {
     color: #fafafa;
     padding-top: 60px;
     text-align: left; }
-    @media screen and (max-width: 1680px) and (min-width: 1024px) {
+    @media screen and (max-width: 1680px) {
       .seo-context .block__title, .seo-context .block__developers .tab-content .developer__description > span, .block__developers .tab-content .seo-context .developer__description > span {
         font-size: 25px; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .seo-context .block__title, .seo-context .block__developers .tab-content .developer__description > span, .block__developers .tab-content .seo-context .developer__description > span {
         font-size: 30px; } }
   .seo-context .block__text {
     color: #777777;
     text-align: left; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .seo-context .block__text {
         font-size: 20px; } }
   .seo-context a {
@@ -7834,11 +7846,10 @@ a {
     margin: 0;
     bottom: -20px;
     right: -45px; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .seo-context .but {
         right: -20px;
-        bottom: -30px;
-        line-height: 36px; } }
+        bottom: -25px; } }
 
 .but {
   display: block;
@@ -7852,12 +7863,12 @@ a {
   font-size: 18px;
   text-align: center;
   line-height: 30px; }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
+  @media screen and (max-width: 1024px) {
     .but {
       width: 45px;
       height: 45px;
       font-size: 42px;
-      line-height: 42px; } }
+      line-height: 36px; } }
 
 .bank {
   padding-top: 55px;
@@ -7866,7 +7877,7 @@ a {
     display: block;
     text-align: center;
     padding-bottom: 25px; }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
+  @media screen and (max-width: 1024px) {
     .bank .block__text {
       font-size: 20px; } }
   .bank .block__title, .bank .block__developers .tab-content .developer__description > span, .block__developers .tab-content .bank .developer__description > span {
@@ -7885,10 +7896,10 @@ a {
     padding: 0 1.32075%;
     width: 16.66667%;
     text-align: center; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .bank li {
         width: 33.33333%; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .bank li {
         margin-bottom: 50px; } }
     .bank li span {
@@ -7897,13 +7908,13 @@ a {
       font-size: 18px;
       font-weight: 600;
       padding-top: 15px; }
-      @media screen and (max-width: 1680px) and (min-width: 1024px) {
+      @media screen and (max-width: 1680px) {
         .bank li span {
           font-size: 16px; } }
     .bank li span:last-child {
       font-size: 14px;
       font-weight: 300; }
-      @media screen and (max-width: 1680px) and (min-width: 1024px) {
+      @media screen and (max-width: 1680px) {
         .bank li span:last-child {
           font-size: 12px; } }
   .bank li:hover img {
@@ -7927,7 +7938,7 @@ a {
     filter: url(../images/grayscale.svg);
     filter: gray;
     -webkit-filter: grayscale(1); }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .bank img {
         width: 80%; } }
 
@@ -7935,7 +7946,7 @@ footer {
   height: 350px;
   padding-top: 45px;
   border-top: solid 2px #e5e5e5; }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
+  @media screen and (max-width: 1024px) {
     footer {
       height: auto; } }
   footer .footer__context .row {
@@ -7966,14 +7977,14 @@ footer {
     padding-left: 85px; }
     footer .footer__context .indent4 li:last-child {
       padding-top: 25px; }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
+  @media screen and (max-width: 1024px) {
     footer .footer__context {
       display: none; } }
   footer .footer__context-mob {
     display: none;
     padding-bottom: 55px;
     margin: 0 -30px; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       footer .footer__context-mob {
         display: block; } }
     footer .footer__context-mob li {
@@ -8006,7 +8017,7 @@ footer {
 
 .footer-contact .row {
   margin: 0; }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
+  @media screen and (max-width: 1024px) {
     .footer-contact .row {
       margin: 0 -15px; } }
 
@@ -8021,10 +8032,10 @@ footer {
     font-size: 18px;
     line-height: 29px;
     color: #777777; }
-    @media screen and (max-width: 1680px) and (min-width: 1024px) {
+    @media screen and (max-width: 1680px) {
       .footer-contact__number span {
         font-size: 16px; } }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .footer-contact__number span {
         width: 100%;
         font-size: 35px;
@@ -8036,7 +8047,7 @@ footer {
   .footer-contact__number img {
     max-height: 20px;
     padding-right: 13px; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .footer-contact__number img {
         display: none; } }
 
@@ -8046,7 +8057,7 @@ footer {
   .footer-contact__social img {
     padding-left: 10px;
     max-height: 30px; }
-  @media screen and (max-width: 1024px) and (min-width: 750px) {
+  @media screen and (max-width: 1024px) {
     .footer-contact__social {
       display: none; } }
 
@@ -8056,19 +8067,19 @@ footer {
   height: 30px; }
   .footer-right .row {
     margin: 0; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .footer-right .row {
         margin: 0 -15px; } }
   .footer-right span:first-child, .footer-right__logo {
     display: inline-block; }
   .footer-right__logo {
     float: right; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .footer-right__logo {
         float: left; } }
     .footer-right__logo img {
       padding-right: 20px; }
-      @media screen and (max-width: 1024px) and (min-width: 750px) {
+      @media screen and (max-width: 1024px) {
         .footer-right__logo img {
           display: none; } }
   .footer-right span:first-child {
@@ -8078,7 +8089,7 @@ footer {
     color: #777777;
     line-height: 30px;
     font-weight: 300; }
-    @media screen and (max-width: 1024px) and (min-width: 750px) {
+    @media screen and (max-width: 1024px) {
       .footer-right span {
         font-size: 25px;
         font-weight: 300;
