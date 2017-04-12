@@ -18,6 +18,9 @@
     }
   }
   margin-top: 175px;
+  @include breakpoint("max-width: 1024px"){
+    margin-top: 50px;
+  }
   .more{
     @include breakpoint("max-width: 1024px"){
       font-size: 30px;
@@ -58,6 +61,7 @@
         @include breakpoint("max-width: 1024px"){
           font-size: 30px;
           font-weight: 100;
+          padding-left: 0;
         }
       }
       p:first-child{
@@ -122,7 +126,7 @@
     padding-left: 10px;
     padding-right: 40px;
     @include breakpoint("max-width: 1024px"){
-      padding: 0;
+      padding: 0 15px;
     }
   }
   .col-md-3{

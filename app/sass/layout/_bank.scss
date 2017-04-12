@@ -1,6 +1,9 @@
 .bank{
   padding-top: 55px;
   padding-bottom: 80px;
+  @include breakpoint("max-width: 1024px"){
+    padding-top: 100px;
+  }
   .block__text,.block__title,.more{
     display: block;
     text-align: center;
@@ -46,12 +49,19 @@
       @include breakpoint("max-width: 1680px"){
         font-size: 16px;
       }
+      @include breakpoint("max-width: 1024px"){
+        font-size: 20px;
+        color: #777777;
+      }
     }
     span:last-child{
       font-size: 14px;
       font-weight: 300;
       @include breakpoint("max-width: 1680px"){
         font-size: 12px;
+      }
+      @include breakpoint("max-width: 1024px"){
+        display: none;
       }
     }
   }

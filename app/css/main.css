@@ -5995,7 +5995,7 @@ a {
   @media screen and (max-width: 1024px) {
     .btn {
       font-size: 30px;
-      padding: 5px 40px;
+      padding: 5px 25px;
       width: auto; } }
 
 @media screen and (max-width: 1024px) {
@@ -6188,6 +6188,9 @@ a {
 
 .block__discount {
   margin-bottom: 155px; }
+  @media screen and (max-width: 1024px) {
+    .block__discount {
+      margin-bottom: 125px; } }
   .block__discount .col-md-12 {
     padding: 0; }
     .block__discount .col-md-12 .row {
@@ -6200,7 +6203,7 @@ a {
         padding-left: 30px; }
         @media screen and (max-width: 1024px) {
           .block__discount .col-md-12 .row .col-md-4 {
-            padding-top: 70px; } }
+            padding-top: 50px; } }
       @media screen and (max-width: 1024px) {
         .block__discount .col-md-12 .row .col-md-3, .block__discount .col-md-12 .row .col-md-4 {
           width: 100%;
@@ -6362,6 +6365,9 @@ a {
     .block__developers .block__text {
       line-height: 30px; } }
   @media screen and (max-width: 1024px) {
+    .block__developers {
+      margin-top: 50px; } }
+  @media screen and (max-width: 1024px) {
     .block__developers .more {
       font-size: 30px;
       margin-top: 30px;
@@ -6392,7 +6398,8 @@ a {
         @media screen and (max-width: 1024px) {
           .block__developers .tab-content .developer__description p {
             font-size: 30px;
-            font-weight: 100; } }
+            font-weight: 100;
+            padding-left: 0; } }
       .block__developers .tab-content .developer__description p:first-child {
         margin-top: -10px; }
       @media screen and (max-width: 1024px) {
@@ -6438,7 +6445,7 @@ a {
     padding-right: 40px; }
     @media screen and (max-width: 1024px) {
       .row__developers .col-md-6:last-child {
-        padding: 0; } }
+        padding: 0 15px; } }
   .row__developers .col-md-3 {
     width: 25%;
     display: inline-block; }
@@ -6525,8 +6532,7 @@ a {
     margin-right: 45px; }
     @media screen and (max-width: 1024px) {
       .special__btns > a:first-child {
-        margin-right: 9.09%;
-        padding: 15px; } }
+        margin-right: 9.09%; } }
   .special__description {
     font-weight: 300;
     font-size: 18px; }
@@ -6677,6 +6683,9 @@ a {
 .block__map {
   background: #fff;
   padding-top: 135px; }
+  @media screen and (max-width: 1024px) {
+    .block__map {
+      padding-top: 120px; } }
   .block__map .filter {
     padding-left: 15px;
     width: 100%; }
@@ -7139,15 +7148,14 @@ a {
 
 .about-project {
   padding-top: 135px; }
+  @media screen and (max-width: 1024px) {
+    .about-project {
+      padding-top: 130px; } }
   .about-project .col-md-6 {
     padding-left: 30px; }
-    @media screen and (max-width: 1024px) {
-      .about-project .col-md-6 {
-        padding-left: 0; } }
   @media screen and (max-width: 1024px) {
     .about-project .col-md-6:nth-child(2) {
-      padding: inherit;
-      margin: 0 -20px; } }
+      padding: inherit; } }
   .about-project .block__title, .about-project .block__developers .tab-content .developer__description > span, .block__developers .tab-content .about-project .developer__description > span {
     padding-top: 25px;
     margin: 0;
@@ -7286,6 +7294,9 @@ a {
 .dependents {
   padding-top: 285px;
   position: relative; }
+  @media screen and (max-width: 1024px) {
+    .dependents {
+      padding-top: 120px; } }
   .dependents__img {
     position: absolute;
     top: 12%;
@@ -7302,7 +7313,7 @@ a {
       .dependents__img-mob {
         position: absolute;
         display: block;
-        top: 35%;
+        top: 25%;
         right: 0; } }
   .dependents .col-md-6 {
     display: inline-block;
@@ -7402,6 +7413,9 @@ a {
 
 .news {
   padding-top: 220px; }
+  @media screen and (max-width: 1024px) {
+    .news {
+      padding-top: 90px; } }
   .news .block__title, .news .block__developers .tab-content .developer__description > span, .block__developers .tab-content .news .developer__description > span, .news .block__text, .news .more {
     display: block;
     text-align: center; }
@@ -7444,7 +7458,7 @@ a {
           background-size: cover; } }
       @media screen and (max-width: 1024px) {
         .news .row .col-md-6:last-child {
-          padding: 0 15px; } }
+          margin: 0 15px; } }
   .news .row:first-child {
     margin-bottom: 59px; }
   .news .news__info {
@@ -7532,7 +7546,8 @@ a {
         @media screen and (max-width: 1024px) {
           .news .news__info .news__info__text .big {
             font-size: 30px;
-            margin-bottom: 60px; } }
+            margin-bottom: 60px;
+            line-height: 30px; } }
       .news .news__info .news__info__text .middle {
         display: block;
         margin-bottom: 50px;
@@ -7591,6 +7606,9 @@ a {
 .analitic {
   padding-top: 225px;
   font-size: 18px; }
+  @media screen and (max-width: 1024px) {
+    .analitic {
+      padding-top: 130px; } }
   @media screen and (max-width: 1680px) {
     .analitic {
       font-size: 16px; } }
@@ -7601,14 +7619,12 @@ a {
     .analitic .col-md-7 {
       font-size: 30px;
       color: #333333;
-      font-weight: 300;
-      padding: 0; } }
+      font-weight: 300; } }
   @media screen and (max-width: 1024px) {
     .analitic .col-md-1 {
       font-size: 30px;
       font-weight: 300;
-      color: #727272;
-      padding: 0; } }
+      color: #727272; } }
   .analitic .container {
     padding-left: 13px; }
     @media screen and (max-width: 1024px) {
@@ -7690,7 +7706,11 @@ a {
     margin: 0 -7.5px; }
     @media screen and (max-width: 1024px) {
       .reviews .row {
-        display: block; } }
+        display: block;
+        margin: 0; } }
+    @media screen and (max-width: 1024px) {
+      .reviews .row .col-md-4 {
+        margin: 0; } }
   .reviews .row:first-child {
     margin-bottom: 10px; }
   .reviews__info {
@@ -7766,6 +7786,9 @@ a {
   padding-top: 230px;
   background: url(../images/special_bg.png) no-repeat;
   background-size: cover; }
+  @media screen and (max-width: 1024px) {
+    .seo {
+      padding-top: 180px; } }
   .seo .block__title, .seo .block__developers .tab-content .developer__description > span, .block__developers .tab-content .seo .developer__description > span {
     font-size: 36px;
     font-weight: 300;
@@ -7873,6 +7896,9 @@ a {
 .bank {
   padding-top: 55px;
   padding-bottom: 80px; }
+  @media screen and (max-width: 1024px) {
+    .bank {
+      padding-top: 100px; } }
   .bank .block__text, .bank .block__title, .bank .block__developers .tab-content .developer__description > span, .block__developers .tab-content .bank .developer__description > span, .bank .more {
     display: block;
     text-align: center;
@@ -7911,12 +7937,19 @@ a {
       @media screen and (max-width: 1680px) {
         .bank li span {
           font-size: 16px; } }
+      @media screen and (max-width: 1024px) {
+        .bank li span {
+          font-size: 20px;
+          color: #777777; } }
     .bank li span:last-child {
       font-size: 14px;
       font-weight: 300; }
       @media screen and (max-width: 1680px) {
         .bank li span:last-child {
           font-size: 12px; } }
+      @media screen and (max-width: 1024px) {
+        .bank li span:last-child {
+          display: none; } }
   .bank li:hover img {
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
