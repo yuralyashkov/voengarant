@@ -47,11 +47,6 @@ footer{
         padding-top: 25px;
       }
     }
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-      .indent3,.indent4{
-        padding: 0;
-      }
-    }
     @include breakpointFull("max-width: 1024px","min-width: 750px"){
       display: none;
     }
@@ -73,6 +68,9 @@ footer{
       color: #333333;
       font-weight: 300;
     }
+      a:hover{
+        text-decoration: none;
+      }
     .drop__down{
       display: inline-block;
     }
@@ -86,13 +84,11 @@ footer{
       margin-left: 10px;
       margin-top: 15px;
       height: 20px;
-      width: 10px;
+      width: 20px;
     }
     .drop__down__active:after{
       background: url(../images/icons/footer-mob-open.png)100%;
       background-size: cover;
-      height: 20px;
-      width: 20px;
     }
 
     .drop__down__menu{
@@ -120,9 +116,10 @@ footer{
       font-size: 18px;
       line-height: 29px;
       color: #777777;
-      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-        font-size: 20px;
+      @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+        font-size: 16px;
       }
+
       @include breakpointFull("max-width: 1024px","min-width: 750px"){
         width: 100%;
         font-size: 35px;
@@ -186,12 +183,6 @@ footer{
   span{
     font-size: 14px;
     color: #777777;
-    @include breakpointFull("max-width: 1920px","min-width: 1280px"){
-      font-size: 16px;
-    }
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-      font-size: 18px;
-    }
     @include breakpointFull("max-width: 1024px","min-width: 750px"){
       font-size: 25px;
       font-weight: 300;
@@ -199,7 +190,6 @@ footer{
     }
     line-height: 30px;
     font-weight:300;
-    color: #777777;
   }
   &__logo{
     text-align: right;

@@ -7,26 +7,30 @@
     font-weight: 300;
     text-align: center;
     line-height: 44px;
-    @include breakpointFull("max-width: 1280px","min-width: 750px"){
+    @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+      font-size: 25px;
+      line-height: 30px;
+    }
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
       font-size: 45px;
       font-weight: 300;
       line-height: 45px;
     }
     br{
-      @include breakpointFull("max-width: 1280px","min-width: 750px"){
+      @include breakpointFull("max-width: 1024px","min-width: 750px"){
         display: none;
       }
     }
   }
   .block__text{
     text-align: center;
-    @include breakpointFull("max-width: 1280px","min-width: 750px"){
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
       font-size: 20px;
       font-family: "Roboto Slab", serif;
 
     }
     br{
-      @include breakpointFull("max-width: 1280px","min-width: 750px"){
+      @include breakpointFull("max-width: 1024px","min-width: 750px"){
         display: none;
       }
     }
@@ -55,7 +59,7 @@
     float: none;
     padding-left: 75px;
     padding-right: 140px;
-    @include breakpointFull("max-width: 1280px","min-width: 750px"){
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
       padding: 0;
     }
   }
@@ -66,6 +70,9 @@
     color: #fafafa;
     padding-top: 60px;
     text-align: left;
+    @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+      font-size: 25px;
+    }
     @include breakpointFull("max-width: 1024px","min-width: 750px"){
       font-size: 30px;
     }
@@ -93,7 +100,7 @@
     bottom: -20px;
     right: -45px;
 
-    @include breakpointFull("max-width: 1280px","min-width: 750px"){
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
       right: -20px;
       bottom: -30px;
       line-height: 36px;
@@ -113,7 +120,7 @@
   font-size: 18px;
   text-align: center;
   line-height: 30px;
-  @include breakpointFull("max-width: 1280px","min-width: 750px"){
+  @include breakpointFull("max-width: 1024px","min-width: 750px"){
     width: 45px;
     height: 45px;
     font-size: 42px;

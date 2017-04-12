@@ -2,9 +2,6 @@
   padding-top: 135px;
   .col-md-6{
     padding-left: 30px;
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-      width: 100%;
-    }
   }
   .col-md-6:nth-child(2){
     @include breakpointFull("max-width: 1024px","min-width: 750px"){
@@ -16,8 +13,8 @@
     margin: 0;
     font-size: 36px;
     font-weight: 300;
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-      font-size: 42px;
+    @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+      font-size: 25px;
     }
     @include breakpointFull("max-width: 1024px","min-width: 750px"){
       font-size: 45px;
@@ -30,17 +27,20 @@
     color: #333333;
     @include breakpointFull("max-width: 1024px","min-width: 750px"){
       font-size: 20px;
+      padding-top: 20px;
     }
   }
   .block__text{
     padding-top: 23px;
     padding-bottom:15px;
+    @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+      font-size: 14px;
+    }
     @include breakpointFull("max-width: 1024px","min-width: 750px"){
       font-size: 20px;
     }
   }
-  .about-project__button
-  {
+  .about-project__button {
     padding-top: 41px;
     .line{
       display: inline-block;
@@ -69,8 +69,8 @@
     text-align: center;
     padding: 74px;
     height: 586px;
-    @include breakpointFull("max-width: 1680px","min-width: 1280px"){
-      padding: 60px 60px 60px 15px;
+    @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+      padding: 75px 70px 70px;
     }
     @include breakpointFull("max-width: 1024px","min-width: 750px"){
       padding: 65px;
@@ -78,8 +78,8 @@
     span{
       display: block;
       padding-bottom: 18px;
-      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-        padding-bottom: 20px;
+      @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+        font-size: 12px;
       }
       @include breakpointFull("max-width: 1024px","min-width: 750px"){
         display: none;
@@ -97,8 +97,8 @@
       font-family: "Roboto Slab";
       color: #333333;
       font-size: 18px;
-      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-        font-size: 22px;
+      @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+        font-size: 14px;
       }
       @include breakpointFull("max-width: 1024px","min-width: 750px"){
         display: block;
@@ -116,8 +116,6 @@
       @include breakpointFull("max-width: 1920px","min-width: 750px"){
         margin-left: 0;
       }
-
-
     }
   }
   .slider-home{
@@ -125,6 +123,9 @@
     margin-top: 20px;
     height: 600px;
     margin-bottom: 0 ;
+    @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+      height: 567px;
+    }
     @include breakpointFull("max-width: 1024px","min-width: 750px"){
       height: 680px;
     }
@@ -132,7 +133,7 @@
   }
   .swiper-slide{
     width: 100%;
-    @include breakpointFull("max-width: 1680px","min-width: 1280px"){
+    @include breakpointFull("max-width: 1680px","min-width: 1024px"){
       width: 100% !important;
     }
     @include breakpointFull("max-width: 1024px","min-width: 750px"){
@@ -143,6 +144,9 @@
     margin-left: 45px;
     background: url("../images/icons/about-project-slide.png") 100% no-repeat;
     background-size: cover;
+    @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+      margin-left: 0;
+    }
     @include breakpointFull("max-width: 1024px","min-width: 750px"){
       margin-left: 0;
     }
@@ -160,9 +164,5 @@
     color: #309bf7;
     margin: 0;
     display: block;
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-      font-size: 20px;
-    }
-
   }
 }

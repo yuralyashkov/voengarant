@@ -8,13 +8,17 @@
   }
   .middle-text{
     display: block;
-    font-family: "Roboto Slab";
+    font-family: "Roboto Slab", serif;
     font-weight: 100;
     font-size: 36px;
     color: #777777;
     text-align: center;
     margin-top: 25px;
     line-height: 46px;
+    @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+      font-size: 25px;
+      line-height: 30px;
+    }
     @include breakpointFull("max-width: 1024px","min-width: 750px"){
       font-size: 30px;
     }

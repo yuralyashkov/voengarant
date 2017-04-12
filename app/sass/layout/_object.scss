@@ -1,14 +1,7 @@
 .object{
   padding-top: 35px;
-  @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-    padding-top: 90px;
-  }
+
   .col-md-6{
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-      width: 100%;
-      margin-bottom: 15px;
-      padding-bottom: 0;
-    }
     @include breakpointFull("max-width: 1024px","min-width: 750px"){
       width: 100%;
       padding-bottom: 5px;
@@ -23,9 +16,9 @@
     padding-top: 15px;
 
     .col-md-6:first-child{
-      padding:0 15px 0 10px;
+      padding: 0 10px 0 13px;
       @include breakpointFull("max-width: 1024px","min-width: 750px"){
-        padding-bottom: 5px;
+        padding: 0 15px 5px 15px;
       }
     }
     .col-md-6:nth-child(2){
@@ -35,7 +28,7 @@
     }
     &__block{
       display: block;
-      height: 230px;
+      height: 231px;
       color: #ffffff;
       position: relative;
       overflow: hidden;
@@ -59,10 +52,13 @@
         }
         .title{
           padding-bottom: 15px;
-          font-family: "Roboto Slab";
+          font-family: "Roboto Slab", serif;
           font-size: 36px;
           font-weight: 300;
           text-transform: uppercase;
+          @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+            font-size: 25px;
+          }
           @include breakpointFull("max-width: 1024px","min-width: 750px"){
             font-size: 30px;
             padding-bottom: 10px;
@@ -73,6 +69,10 @@
             display: inline-block;
             float: left;
             margin-right: 50px;
+            @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+              font-size: 14px;
+              margin-right: 20px;
+            }
             .img,span{
               display: inline-block;
               height: 40px;
@@ -99,8 +99,8 @@
           bottom: 40px;
         }
         @include breakpointFull("max-width: 1680px","min-width: 1024px"){
-          bottom: 20px;
-          font-size: 16px;
+          font-size: 12px;
+          bottom: 30px;
         }
         @include breakpointFull("max-width: 1024px","min-width: 750px"){
           bottom: inherit;
@@ -123,31 +123,35 @@
   }
   ._smal{
     height: 480px;
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-      height: 230px;
-    }
     @include breakpointFull("max-width: 1024px","min-width: 750px"){
       height: 240px;
     }
   }
   ._indent{
-    padding-left: 10px;
+    padding-left: 5px;
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      padding-left: 15px;
+    }
   }
   .row{
     padding-bottom: 15px;
     margin: 0;
-    @include breakpointFull("max-width: 1280px","min-width: 750px"){
+    @include breakpointFull("max-width: 1024px","min-width: 750px"){
       padding-bottom: 0;
       margin: 0 -15px;
       margin-top: -5px;
     }
+    .col-md-6:nth-child(1){
+        padding: 0 10px 0 13px;
+      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+        padding: 0 15px 5px 15px;
+      }
+    }
   }
+
   ._in-row{
     padding-top: 15px;
     height: 235px;
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-      padding-top: 0;
-    }
     @include breakpointFull("max-width: 1024px","min-width: 750px"){
       height: 240px;
       padding-top: 0;
