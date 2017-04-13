@@ -36,6 +36,9 @@
   }
   .row:first-child{
     margin-bottom: 10px;
+    @include breakpoint("max-width: 1024px"){
+      margin-bottom: 0;
+    }
 
   }
   &__info{

@@ -154,11 +154,11 @@ footer{
 .footer-right{
   margin-top: 45px;
   background-color: #ffffff;
-  height: 30px;
   .row{
     margin: 0;
     @include breakpoint("max-width: 1024px"){
       margin:0 -15px;
+      height: 60px;
     }
   }
 
