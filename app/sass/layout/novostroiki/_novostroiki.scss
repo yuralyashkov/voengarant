@@ -1,4 +1,11 @@
 .novostroiki {
+  .label_builders{
+    margin-top: 55px;
+    margin-left: 20px;
+  }
+  .builders-tabs__title{
+    margin-bottom: 5px;
+  }
   .special {
     padding-top: 130px;
   }
@@ -6,7 +13,12 @@
     padding-top: 220px;
     margin-bottom: 0;
   }
-
+  .block__map{
+    padding-top: 70px;
+  }
+  .builders-tabs{
+    margin-bottom: 0;
+  }
   .block__developers{
     padding-top: 160px;
   }
