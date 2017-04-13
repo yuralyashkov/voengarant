@@ -1,8 +1,10 @@
-.object{
+.object {
   padding-top: 35px;
+
 
   .col-md-6{
     @include breakpoint("max-width: 1024px"){
+
       width: 100%;
       padding-bottom: 5px;
     }
@@ -12,8 +14,9 @@
       display: none;
     }
   }
-  &__context{
+  &__context {
     padding-top: 15px;
+
 
     .col-md-6:first-child{
       padding: 0 10px 0 13px;
@@ -25,8 +28,9 @@
       .object__context__block__info{
         bottom:25px;
       }
+
     }
-    &__block{
+    &__block {
       display: block;
       height: 231px;
       color: #ffffff;
@@ -36,7 +40,7 @@
       background-repeat:  no-repeat !important;
       background-position: 100% !important;
 
-      &__info{
+      &__info {
         position: absolute;
         bottom: 70px;
         left: 50px;
@@ -47,10 +51,10 @@
           font-size: 25px;
         }
 
-        span{
+        span {
           display: block;
         }
-        .title{
+        .title {
           padding-bottom: 15px;
           font-family: "Roboto Slab", serif;
           font-size: 36px;
@@ -64,21 +68,23 @@
             padding-bottom: 10px;
           }
         }
-        &__text{
-          .info{
+        &__text {
+          .info {
             display: inline-block;
             float: left;
             margin-right: 50px;
+
             @include breakpoint("max-width: 1680px"){
               font-size: 14px;
               margin-right: 20px;
             }
             .img,span{
+
               display: inline-block;
               height: 40px;
               vertical-align: middle;
             }
-            .img{
+            .img {
               margin-right: 5px;
             }
           }
@@ -87,7 +93,7 @@
 
       }
 
-      .sale{
+      .sale {
         position: absolute;
         right: -15px;
         bottom: 75px;
@@ -95,6 +101,7 @@
         padding: 0 40px 0 10px;
         border-radius: 5px;
         font-size: 14px;
+
         @include breakpoint("max-width: 1920px"){
           bottom: 40px;
         }
@@ -107,22 +114,24 @@
           top:25px;
           font-size: 25px;
 
+
         }
       }
     }
-      &__block:hover{
-        color:#ffffff;
-        opacity: 0.8;
-      }
-      &__block:focus{
-        color: #ffffff;
-      }
+    &__block:hover {
+      color: #ffffff;
+      opacity: 0.8;
+    }
+    &__block:focus {
+      color: #ffffff;
+    }
   }
-  .block__text{
+  .block__text {
     padding-left: 15px;
   }
-  ._smal{
+  ._smal {
     height: 480px;
+
     @include breakpoint("max-width: 1024px"){
       height: 240px;
     }
@@ -132,11 +141,14 @@
     @include breakpoint("max-width: 1024px"){
       padding-left: 15px;
     }
+
   }
-  .row{
+  .row {
     padding-bottom: 15px;
     margin: 0;
+
     @include breakpoint("max-width: 1024px"){
+
       padding-bottom: 0;
       margin: 0 -15px;
       margin-top: -5px;
@@ -180,3 +192,4 @@
     }
   }
 }
+

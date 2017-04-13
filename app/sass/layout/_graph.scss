@@ -1,0 +1,139 @@
+/*GRAPH*/
+$builders-column-w: (78px * 100%)/1350px;
+$builders-column-distance: ((630px/7) * 100%)/1350px;
+.graphic {
+  text-align: center;
+  ul {
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    display: inline-block;
+
+  }
+  &__list {
+    position: relative;
+    line-height: 1;
+    &:after {
+      content: " ";
+      width: 100%;
+      background: rgba(1, 1, 1, 0.07);
+      line-height: 1;
+      height: 1px;
+      position: absolute;
+      bottom: 2px;
+    }
+  }
+  &__column {
+    width: $builders-column-w;
+    display: inline-block;
+    margin: 0 $builders-column-distance 0 0;
+    line-height: 1;
+    &:last-child {
+      margin: 0;
+    }
+  }
+  &__list-cell {
+    li {
+      background: color(default);
+      width: 100%;
+      height: 14px;
+      display: block;
+      line-height: 1;
+      margin: 0 0 2px 0;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+  &__cell-top {
+    li {
+      &:first-child {
+        position: relative;
+        &:after {
+          content: ' ';
+          display: inline-block;
+          width: 22px;
+          height: 22px;
+          position: absolute;
+          border-radius: 50%;
+          top: -11px;
+          left: 50%;
+          margin: 0 0 0 -11px;
+        }
+        &:before {
+          content: ' ';
+          width: 10px;
+          height: 10px;
+          background: color(top-point);
+          position: absolute;
+          top: -5px;
+          margin: 0 0 0 -5px;
+          border-radius: 50%;
+          z-index: 5;
+        }
+      }
+    }
+    &_color-b {
+      li {
+        &:first-child {
+          &:after {
+            background: color(top-blue);
+          }
+        }
+      }
+    }
+    &_color-y {
+      li {
+        &:first-child {
+          &:after {
+            background: color(top-yellow);
+          }
+        }
+      }
+    }
+    &_color-r {
+      li {
+        &:first-child {
+          &:after {
+            background: color(top-red);
+          }
+        }
+      }
+    }
+  }
+  &__rate {
+    li {
+      display: inline-block;
+      text-align: center;
+      width: $builders-column-w;
+      margin: 0 $builders-column-distance 0 0 ;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+}
+
+.yellow-cell {
+  li {
+    background: linear-gradient(to right, #dd8615 0%, #e8c835 100%);
+
+  }
+}
+
+.red-cell {
+
+  li {
+    background: linear-gradient(to right, #b01f3b 0%, #e54060 100%);
+
+  }
+}
+
+.blue-cell {
+
+  @include colorGenerate;
+
+}
+
+/*GRAPH*/
