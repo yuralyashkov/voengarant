@@ -1,38 +1,50 @@
 .contact {
   margin: 0 0 72px 0;
+  @include breakpoint("max-width: 1025px") {
+    margin: 0 0 51px 0;
+  }
   .place-name {
-    display: block;
-    font-family: $titleFontFamily;
-    font-size: 36px;
-    color: #333333;
+    @include text($titleFontFamily, #333333, block, 36px, 40px, normal);
     margin: 0 0 14px 0;
+    @include breakpoint("max-width: 1025px") {
+      @include text($titleFontFamily, #333333, block, 45px, 50px, 300);
+      margin: 0 0 43px 0;
+    }
   }
   .place-telephone {
     text-decoration: none;
-    display: inline-block;
-    font-family: $mainFontFamily;
-    font-size: 14px;
-    color: #2f97f0;
+    @include text($mainFontFamily, #2f97f0, inline-block, 14px, 16px, normal);
     margin: 0;
+    @include breakpoint("max-width: 1025px") {
+      @include text($mainFontFamily, #2f97f0, inline-block, 30px, 35px, 400);
+    }
   }
   .place-address {
-    display: block;
-    font-family: $mainFontFamily;
-    font-size: 14px;
-    color: #777777;
+    @include text($mainFontFamily, #777777, block, 14px, 16px, normal);
     margin: 7px 0 18px 0;
+    @include breakpoint("max-width: 1025px") {
+      @include text($mainFontFamily, #777777, block, 30px, 35px, 100);
+      margin: 15px 0 50px 0;
+    }
   }
   .links {
     margin: 0 auto;
     a {
       display: inline-block;
       margin: 0 (13px / $container * 100%) 0 0;
+      @include breakpoint("max-width: 1025px") {
+        margin: 0 24px 0 0;
+      }
       &:last-child {
         margin: 0;
       }
       img {
         width: 25px;
         height: 25px;
+        @include breakpoint("max-width: 1025px") {
+          width: 44px;
+          height: 44px;
+        }
         @include grayscale;
         opacity: .85;
       }

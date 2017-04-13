@@ -1,6 +1,13 @@
 @import "utils/variables";
+
+
+//mixins
+@import "mixins/_mixin.scss";
+
+
 @import "utils/functions";
 @import "components/components";
+
 //bootstrap
 @import "bootstrap";
 
