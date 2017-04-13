@@ -6944,7 +6944,7 @@ a {
       position: fixed;
       width: 13%;
       cursor: pointer;
-      top: 25px;
+      top: 30px;
       left: 5.73%;
       z-index: 9; } }
   .burger .burger__logo {
@@ -9190,3 +9190,72 @@ footer {
   height: 842px;
   margin: 0 0 154px 0;
   background-color: #5f5868; }
+
+/**
+Novostroiki
+ */
+.novostroiki .special {
+  padding-top: 130px; }
+
+.novostroiki .block__discount {
+  padding-top: 220px;
+  margin-bottom: 0; }
+
+.novostroiki .block__developers {
+  padding-top: 160px; }
+
+.novostroiki .seo {
+  padding-top: 150px; }
+
+.novostroiki .bank {
+  padding-top: 55px; }
+
+.novotitle {
+  padding-top: 170px;
+  text-align: center; }
+
+.novo-slider {
+  padding-top: 165px; }
+  .novo-slider .slider-home {
+    height: 320px;
+    margin: 0 auto;
+    color: #ffffff; }
+    .novo-slider .slider-home .swiper-wrapper {
+      padding-top: 50px;
+      border-radius: 5px; }
+    .novo-slider .slider-home img, .novo-slider .slider-home .swiper-slide__content__element {
+      display: inline-block; }
+    .novo-slider .slider-home .swiper-slide__content__element {
+      text-align: left; }
+    .novo-slider .slider-home img {
+      padding-right: 100px;
+      margin-top: -115px; }
+    .novo-slider .slider-home__title {
+      font-size: 36px;
+      line-height: 36px;
+      color: #ffffff;
+      margin-top: 50px; }
+    .novo-slider .slider-home__text {
+      font-size: 16px; }
+    .novo-slider .slider-home .more {
+      display: block;
+      padding-top: 40px;
+      margin: 0;
+      color: #ffffff; }
+    .novo-slider .slider-home .slider-home__sale {
+      position: absolute;
+      background: url("../images/icons/news-red.png") 100% no-repeat;
+      background-size: cover;
+      width: 70px;
+      height: 20px;
+      text-align: center;
+      right: -70px;
+      top: 20px; }
+  .novo-slider .swiper-slide__content {
+    height: 100%;
+    width: 91%;
+    margin-left: 5px;
+    background: #005c9d; }
+  .novo-slider .swiper-pagination {
+    bottom: 20px;
+    width: 95.5%; }
