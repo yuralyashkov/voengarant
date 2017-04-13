@@ -1,14 +1,33 @@
 .analitic{
-  padding-top: 220px;
+  padding-top: 225px;
   font-size: 18px;
+  @include breakpoint("max-width: 1680px"){
+    font-size: 16px;
+  }
   .col-md-7{
-    @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+    @include breakpoint("max-width: 1680px"){
       width: 90%;
-      padding-left: 30px;
+    }
+    @include breakpoint("max-width: 1024px"){
+      font-size: 30px;
+      color: #333333;
+      font-weight: 300;
+      padding: 0;
+    }
+  }
+  .col-md-1{
+    @include breakpoint("max-width: 1024px"){
+      font-size: 30px;
+      font-weight: 300;
+      color: #727272;
+      padding: 0;
     }
   }
   .container{
     padding-left: 13px;
+    @include breakpoint("max-width: 1024px"){
+      padding: 0;
+    }
   }
   .block__title{
     display: block;
