@@ -5,25 +5,37 @@
   .filter {
     padding-left: 15px;
     width: 100%;
-
     .block__title {
-      font-family: "Roboto Slab";
+      font-family: "Roboto Slab", serif;
       font-weight: 300;
       font-size: 36px;
-      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+      @include breakpoint("max-width: 1280px"){
         font-size: 42px;
       }
+      @include breakpoint("max-width: 1024px"){
+        font-size: 45px;
+        text-align: center;
+      }
     }
-
     p {
       font-size: 18px;
-      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+      @include breakpoint("max-width: 1280px"){
         font-size: 20px;
+      }
+      @include breakpoint("max-width: 1024px"){
+        font-size: 30px;
+        text-align: center;
+        font-weight: 300;
+      }
+    }
+    &__context{
+      @include breakpoint("max-width: 1024px"){
+        display: none;
       }
     }
     .radio{
       margin-top: 25px;
-      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+      @include breakpoint("max-width: 1280px"){
         display: inline-block;
         width: 50%;
       }
@@ -36,12 +48,12 @@
       
     }
     .radio:nth-child(1){
-      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+      @include breakpoint("max-width: 1280px"){
         vertical-align: bottom;
       }
     }
     .selector{
-      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+      @include breakpoint("max-width: 1280px"){
         display: inline-block;
         width: 50%;
       }
@@ -84,7 +96,7 @@
   }
   .col-md-5{
     padding-top: 25px;
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+    @include breakpoint("max-width: 1280px"){
       width: 100%;
     }
   }
@@ -92,7 +104,7 @@
 
     height: 700px;
     padding-left: 0 ;
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+    @include breakpoint("max-width: 1280px"){
       width: 100%;
       text-align: center;
     }

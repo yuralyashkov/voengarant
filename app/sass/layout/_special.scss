@@ -9,10 +9,10 @@
     font-size: 36px;
     font-family: $titleFontFamily;
     display: block;
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-      font-size: 42px;
+    @include breakpoint("max-width: 1680px"){
+      font-size: 25px;
     }
-    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+    @include breakpoint("max-width: 1024px"){
       font-size: 45px;
     }
   }
@@ -23,10 +23,10 @@
     margin-bottom: 20px;
     margin-top: 10px;
     display: block;
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-      font-size: 20px;
+    @include breakpoint("max-width: 1680px"){
+      font-size: 14px;
     }
-    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+    @include breakpoint("max-width: 1024px"){
       font-size: 30px;
     }
   }
@@ -37,23 +37,25 @@
   &__btns {
     > a:first-child {
       margin-right: 45px;
+      @include breakpoint("max-width: 1024px"){
+        margin-right: 9.09%;
+        padding: 15px;
+      }
     }
+
   }
 
   &__description {
     font-weight: 300;
     font-size: 18px;
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-      font-size: 20px;
+    @include breakpoint("max-width: 1680px"){
+      font-size: 14px;
     }
     a.more {
       margin-left: 0;
       margin-top: 30px;
       display: inline-block;
-      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-        font-size: 20px;
-      }
-      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      @include breakpoint("max-width: 1024px"){
         font-size: 30px;
       }
     }
@@ -64,7 +66,7 @@
 
   &__order {
     text-align: center;
-    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+    @include breakpoint("max-width: 1024px"){
       text-align: left;
     }
 
@@ -73,7 +75,7 @@
       margin-top: 30px;
       ._placeholder{
         display: none;
-        @include breakpointFull("max-width: 1024px","min-width: 750px"){
+        @include breakpoint("max-width: 1024px"){
           display: block;
           padding: 10px 0;
           color: #777777;
@@ -94,12 +96,8 @@
       margin: 0 auto 5px;
       box-sizing: border-box;
       resize: none;
-      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-        max-width: 505px;
-        line-height: 50px;
-        font-size: 20px;
-      }
-      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+
+      @include breakpoint("max-width: 1024px"){
         margin: 0;
         border-radius: 5px;
         border: 1px solid #404040;
@@ -109,7 +107,7 @@
       }
     }
     input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
-      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      @include breakpoint("max-width: 1024px"){
         color: transparent;
       }
     }
@@ -118,10 +116,8 @@
       height: 85px;
       line-height: 22px;
       padding: 10px 20px;
-      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-        height:150px;
-      }
-      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+
+      @include breakpoint("max-width: 1024px"){
         max-width: 100%;
         height: 130px;
       }
@@ -135,7 +131,10 @@
         text-decoration: underline;
         color: #fff;
       }
-      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      @include breakpoint("max-width: 1680px"){
+        font-size: 14px;
+      }
+      @include breakpoint("max-width: 1024px"){
         width: 215px;
         height: 50px;
         background: #309bf7;
@@ -151,7 +150,7 @@
     }
     .politic{
       display: none;
-      @include breakpointFull("max-width: 1024px","min-width: 750px"){
+      @include breakpoint("max-width: 1024px"){
         display: inline-block;
         float: right;
         margin-top: 35px;
@@ -160,8 +159,18 @@
 
     .note {
       color: #777777;
-      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+      @include breakpoint("max-width: 1680px"){
+        font-size: 12px;
+      }
+      @include breakpoint("max-width: 1024px"){
         font-size: 20px;
+        width: 64%;
+        display: block;
+      }
+      br{
+        @include breakpoint("max-width: 1024px"){
+          display: none;
+        }
       }
     }
 
@@ -179,24 +188,14 @@
   z-index: 1;
   color: #fff;
   display: none;
-  @include breakpointFull("max-width: 1024px","min-width: 750px"){
+  @include breakpoint("max-width: 1024px"){
     padding-bottom: 0;
-
   }
   .col-md-4,.col-md-7{
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-      width: 100%;
-      margin: 0;
-    }
-    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+    @include breakpoint("max-width: 1024px"){
       font-size: 20px;
       padding-bottom: 60px;
 
-    }
-  }
-  .col-md-4{
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-      margin-top: 30px;
     }
   }
   &__close {
@@ -223,10 +222,10 @@
     font-size: 36px;
     color: #fff;
     font-weight: 300;
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-      font-size: 42px;
+    @include breakpoint("max-width: 1680px"){
+      font-size: 25px;
     }
-    @include breakpointFull("max-width: 1024px","min-width: 750px"){
+    @include breakpoint("max-width: 1024px"){
       font-size: 45px;
     }
   }

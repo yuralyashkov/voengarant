@@ -1,9 +1,15 @@
 .about-project{
-  padding-top: 130px;
+  padding-top: 135px;
   .col-md-6{
     padding-left: 30px;
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-      width: 100%;
+    @include breakpoint("max-width: 1024px"){
+      padding-left: 0;
+    }
+  }
+  .col-md-6:nth-child(2){
+    @include breakpoint("max-width: 1024px"){
+      padding: inherit;
+      margin: 0 -20px;
     }
   }
   .block__title{
@@ -11,8 +17,11 @@
     margin: 0;
     font-size: 36px;
     font-weight: 300;
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-      font-size: 42px;
+    @include breakpoint("max-width: 1680px"){
+      font-size: 25px;
+    }
+    @include breakpoint("max-width: 1024px"){
+      font-size: 45px;
     }
   }
   ._regular{
@@ -20,13 +29,22 @@
     padding-top: 35px;
     font-weight: 600;
     color: #333333;
+    @include breakpoint("max-width: 1024px"){
+      font-size: 20px;
+      padding-top: 20px;
+    }
   }
   .block__text{
     padding-top: 23px;
     padding-bottom:15px;
+    @include breakpoint("max-width: 1680px"){
+      font-size: 14px;
+    }
+    @include breakpoint("max-width: 1024px"){
+      font-size: 20px;
+    }
   }
-  .about-project__button
-  {
+  .about-project__button {
     padding-top: 41px;
     .line{
       display: inline-block;
@@ -49,38 +67,59 @@
         button:hover{
           opacity: 0.8;
         }
+
   }
   .about-project-slider{
     text-align: center;
     padding: 74px;
     height: 586px;
-    @include breakpointFull("max-width: 1680px","min-width: 1280px"){
-      padding: 60px 60px 60px 15px;
+    @include breakpoint("max-width: 1680px"){
+      padding: 75px 70px 70px;
     }
-
-
-
+    @include breakpoint("max-width: 1024px"){
+      padding: 65px;
+    }
     span{
       display: block;
-      padding-bottom: 15px;
-      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-        padding-bottom: 20px;
+      padding-bottom: 18px;
+      @include breakpoint("max-width: 1680px"){
+        font-size: 12px;
+      }
+      @include breakpoint("max-width: 1024px"){
+        display: none;
+      }
+    }
+    ._mob{
+      display: none;
+      @include breakpoint("max-width: 1024px"){
+        display: block;
+        font-size: 30px;
+        font-weight: 300;
       }
     }
     span:first-child{
       font-family: "Roboto Slab";
       color: #333333;
       font-size: 18px;
-      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-        font-size: 22px;
+      @include breakpoint("max-width: 1680px"){
+        font-size: 14px;
+      }
+      @include breakpoint("max-width: 1024px"){
+        display: block;
+        font-size: 30px;
+        font-weight: 300;
+      }
+      br{
+        @include breakpoint("max-width: 1024px"){
+          display: none;
+        }
       }
     }
     button{
       margin-left: -45px;
-      @include breakpointFull("max-width: 1680px","min-width: 1024px"){
+      @include breakpoint("max-width: 1920px"){
         margin-left: 0;
       }
-
     }
   }
   .slider-home{
@@ -88,11 +127,20 @@
     margin-top: 20px;
     height: 600px;
     margin-bottom: 0 ;
+    @include breakpoint("max-width: 1680px"){
+      height: 567px;
+    }
+    @include breakpoint("max-width: 1024px"){
+      height: 680px;
+    }
 
   }
   .swiper-slide{
     width: 100%;
-    @include breakpointFull("max-width: 1680px","min-width: 1280px"){
+    @include breakpoint("max-width: 1680px"){
+      width: 100% !important;
+    }
+    @include breakpoint("max-width: 1024px"){
       width: 100% !important;
     }
   }
@@ -100,6 +148,12 @@
     margin-left: 45px;
     background: url("../images/icons/about-project-slide.png") 100% no-repeat;
     background-size: cover;
+    @include breakpoint("max-width: 1680px"){
+      margin-left: 0;
+    }
+    @include breakpoint("max-width: 1024px"){
+      margin-left: 0;
+    }
 
   }
   .swiper-slide__content{
@@ -110,13 +164,9 @@
     margin-bottom: 20px;
   }
   .more{
-    padding-top: 20px;
-    font-size: 18px;
+    padding-top: 30px;
     color: #309bf7;
     margin: 0;
     display: block;
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-      font-size: 20px;
-    }
   }
 }

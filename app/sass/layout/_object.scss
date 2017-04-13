@@ -1,53 +1,85 @@
 .object {
   padding-top: 35px;
-  @include breakpointFull("max-width: 1280px", "min-width: 1024px") {
-    padding-top: 90px;
-  }
-  .down-arrow {
-    margin: 30px 0 0 0;
-    font-size: $s14;
-  }
-  .col-md-6 {
-    @include breakpointFull("max-width: 1280px", "min-width: 1024px") {
+
+
+  .col-md-6{
+    @include breakpoint("max-width: 1024px"){
+
       width: 100%;
-      margin-bottom: 15px;
-      padding-bottom: 0;
+      padding-bottom: 5px;
+    }
+  }
+  .block__text{
+    @include breakpoint("max-width: 1024px"){
+      display: none;
     }
   }
   &__context {
     padding-top: 15px;
-    background-size: cover;
-    .col-md-6:first-child {
-      padding: 0 15px 0 10px;
+
+
+    .col-md-6:first-child{
+      padding: 0 10px 0 13px;
+      @include breakpoint("max-width: 1024px"){
+        padding: 0 15px 5px 15px;
+      }
+    }
+    .col-md-6:nth-child(2){
+      .object__context__block__info{
+        bottom:25px;
+      }
+
     }
     &__block {
       display: block;
-      height: 230px;
+      height: 231px;
       color: #ffffff;
       position: relative;
       overflow: hidden;
+      background-size:  cover !important;
+      background-repeat:  no-repeat !important;
+      background-position: 100% !important;
 
       &__info {
         position: absolute;
         bottom: 70px;
         left: 50px;
+        @include breakpoint("max-width: 1024px"){
+          bottom: 0;
+          left: 20px;
+          top:25px;
+          font-size: 25px;
+        }
 
         span {
           display: block;
         }
         .title {
           padding-bottom: 15px;
-          font-family: "Roboto Slab";
+          font-family: "Roboto Slab", serif;
           font-size: 36px;
           font-weight: 300;
           text-transform: uppercase;
+          @include breakpoint("max-width: 1680px"){
+            font-size: 25px;
+          }
+          @include breakpoint("max-width: 1024px"){
+            font-size: 30px;
+            padding-bottom: 10px;
+          }
         }
         &__text {
           .info {
             display: inline-block;
             float: left;
             margin-right: 50px;
-            .img, span {
+
+            @include breakpoint("max-width: 1680px"){
+              font-size: 14px;
+              margin-right: 20px;
+            }
+            .img,span{
+
               display: inline-block;
               height: 40px;
               vertical-align: middle;
@@ -56,9 +88,11 @@
               margin-right: 5px;
             }
           }
+
         }
 
       }
+
       .sale {
         position: absolute;
         right: -15px;
@@ -67,12 +101,20 @@
         padding: 0 40px 0 10px;
         border-radius: 5px;
         font-size: 14px;
-        @include breakpointFull("max-width: 1920px", "min-width: 1680px") {
+
+        @include breakpoint("max-width: 1920px"){
           bottom: 40px;
         }
-        @include breakpointFull("max-width: 1680px", "min-width: 1024px") {
-          bottom: 20px;
-          font-size: 16px;
+        @include breakpoint("max-width: 1680px"){
+          font-size: 12px;
+          bottom: 30px;
+        }
+        @include breakpoint("max-width: 1024px"){
+          bottom: inherit;
+          top:25px;
+          font-size: 25px;
+
+
         }
       }
     }
@@ -89,51 +131,65 @@
   }
   ._smal {
     height: 480px;
-    @include breakpointFull("max-width: 1280px", "min-width: 1024px") {
-      height: 230px;
+
+    @include breakpoint("max-width: 1024px"){
+      height: 240px;
     }
   }
-  ._indent {
-    padding-left: 10px;
+  ._indent{
+    padding-left: 5px;
+    @include breakpoint("max-width: 1024px"){
+      padding-left: 15px;
+    }
+
   }
   .row {
     padding-bottom: 15px;
     margin: 0;
-    @include breakpointFull("max-width: 1280px", "min-width: 1024px") {
+
+    @include breakpoint("max-width: 1024px"){
+
       padding-bottom: 0;
+      margin: 0 -15px;
+      margin-top: -5px;
+    }
+    .col-md-6:nth-child(1){
+        padding: 0 10px 0 13px;
+      @include breakpoint("max-width: 1024px"){
+        padding: 0 15px 5px 15px;
+      }
     }
   }
-  ._in-row {
+
+  ._in-row{
     padding-top: 15px;
     height: 235px;
-    @include breakpointFull("max-width: 1280px", "min-width: 1024px") {
+    @include breakpoint("max-width: 1024px"){
+      height: 240px;
       padding-top: 0;
     }
   }
-  //.object__next {
-  //  padding-top: 35px;
-  //  text-align: center;
-  //  a {
-  //    display: inline-block;
-  //    margin-right: 15px;
-  //    img, span {
-  //      display: block;
-  //      margin: 0 auto;
-  //      padding-left: 12px;
-  //    }
-  //    span {
-  //      text-decoration: none;
-  //      color: #727272;
-  //    }
-  //  }
-  //}
+  .object__next{
+    padding-top: 35px;
+    text-align: center;
+    a{
+      display: inline-block;
+      margin-right: 15px;
+
+      img,span{
+        display: block;
+        margin: 0 auto;
+        padding-left: 12px;
+        @include breakpoint("max-width: 1024px"){
+          font-size: 35px;
+          font-weight: 300;
+        }
+      }
+      span{
+        text-decoration: none;
+        color: #727272;
+      }
+    }
+  }
 }
 
-.object.object_builders {
-  padding-top: 45px;
-  margin: 0 0 150px 0;
-}
-
-.object.object_double {
-  margin: 0 0 149px 0;
-}

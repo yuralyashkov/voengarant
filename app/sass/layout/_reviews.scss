@@ -24,14 +24,8 @@
     display: flex;
     width: 100%;
     margin: 0 -7.5px;
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+    @include breakpoint("max-width: 1024px"){
       display: block;
-    }
-    .col-md-4{
-      @include breakpointFull("max-width: 1280px","min-width: 1024px"){
-        width: 100%;
-        margin-bottom: 15px;
-      }
     }
   }
   .row:first-child{
@@ -41,11 +35,16 @@
   &__info{
     text-align: center;
     padding: 30px 70px;
+    @include breakpoint("max-width: 1680px"){
+      padding: 30px 40px;
+    }
+    @include breakpoint("max-width: 1024px"){
+      padding: 30px;
+    }
     a{
       display: inline-block;
     }
   }
-
   ._indent{
     margin-left: -13px;
   }
@@ -59,11 +58,16 @@
     margin: 0 7.5px;
     padding: 0;
     overflow: hidden;
+    background-color: #ffffff;
 
     span:first-child{
       display: block;
       padding-bottom: 35px;
       font-family: "Roboto Slab", serif;
+      color: #646464;
+      @include breakpoint("max-width: 1024px"){
+        font-size: 25px;
+      }
     }
     img:first-child{
       display: block;
@@ -76,35 +80,44 @@
       margin: 0 auto;
       line-height: 20px;
       padding-top: 33px;
-      @include breakpointFull("max-width: 1680px","min-width: 1280px"){
-        min-height: 290px;
+      @include breakpoint("max-width: 1024px"){
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 30px;
       }
     }
     .reviews__logo{
       padding-bottom: 20px;
       padding-top: 35px;
       max-width: 100%;
-
+      @include breakpoint("max-width: 1024px"){
+        padding-bottom: 35px;
+        padding-top: 30px;
+      }
     }
     span:last-child{
       display: block;
+      @include breakpoint("max-width: 1024px"){
+        font-size: 25px;
+        font-weight: 300;
+      }
     }
 
   }
   .row:nth-child(even){
     li:nth-child(even){
-      background-color: #ffffff;
+      background-color: #e3e3e3;
     }
     li:nth-child(odd){
-      background-color: #e3e3e3;
+      background-color: #ffffff;
     }
   }
   .row:nth-child(odd){
     li:nth-child(odd){
-      background-color: #ffffff;
+      background-color: #e3e3e3;
     }
     li:nth-child(even){
-      background-color: #e3e3e3;
+      background-color: #ffffff;
     }
   }
 
