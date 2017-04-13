@@ -31,6 +31,9 @@
     @include breakpoint("max-width: 1920px"){
       margin-right: 30px;
     }
+    @include breakpoint("max-width: 1024px"){
+      margin: 0px;
+    }
     .col-md-6{
       display: table-cell;
       float: none;
@@ -49,9 +52,7 @@
         background:url('../images/icons/news-main.png') left no-repeat;
         background-size: cover ;
       }
-      @include breakpoint("max-width: 1024px"){
-        margin: 0 15px;
-      }
+
     }
   }
   .row:first-child{
@@ -64,7 +65,7 @@
       margin: 0 15px;
       height: 100%;
       @include breakpoint("max-width: 1024px"){
-        margin: 0 5px;
+        margin: 0 10px;
       }
       .col-md-6{
         margin: 0 7.5px;
@@ -77,6 +78,9 @@
     }
     .row:first-child{
       padding-bottom: 10px;
+      @include breakpoint("max-width: 1024px"){
+        margin: 0 -7.5px;
+      }
     }
     .row:nth-child(2){
       @include breakpoint("max-width: 1024px"){
