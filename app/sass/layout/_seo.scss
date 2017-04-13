@@ -2,14 +2,41 @@
   padding-top: 230px;
   background: url(../images/special_bg.png) no-repeat;
   background-size: cover;
+  @include breakpoint("max-width: 1024px"){
+    padding-top: 180px;
+  }
   .block__title{
     font-size: 36px;
     font-weight: 300;
     text-align: center;
     line-height: 44px;
+    @include breakpoint("max-width: 1680px"){
+      font-size: 25px;
+      line-height: 30px;
+    }
+    @include breakpoint("max-width: 1024px"){
+      font-size: 45px;
+      font-weight: 300;
+      line-height: 45px;
+    }
+    br{
+      @include breakpoint("max-width: 1024px"){
+        display: none;
+      }
+    }
   }
   .block__text{
     text-align: center;
+    @include breakpoint("max-width: 1024px"){
+      font-size: 20px;
+      font-family: "Roboto Slab", serif;
+
+    }
+    br{
+      @include breakpoint("max-width: 1024px"){
+        display: none;
+      }
+    }
   }
   .but{
     margin: 30px auto 165px;
@@ -35,7 +62,7 @@
     float: none;
     padding-left: 75px;
     padding-right: 140px;
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+    @include breakpoint("max-width: 1024px"){
       padding: 0;
     }
   }
@@ -46,10 +73,19 @@
     color: #fafafa;
     padding-top: 60px;
     text-align: left;
+    @include breakpoint("max-width: 1680px"){
+      font-size: 25px;
+    }
+    @include breakpoint("max-width: 1024px"){
+      font-size: 30px;
+    }
   }
   .block__text{
     color: #777777;
     text-align: left;
+    @include breakpoint("max-width: 1024px"){
+      font-size: 20px;
+    }
   }
   a{
     padding-top: 55px;
@@ -59,7 +95,7 @@
     text-decoration: none;
   }
   a:hover{
-    opacity: 0.8;
+    opacity: 0.9;
   }
   .but{
     position: absolute;
@@ -67,9 +103,9 @@
     bottom: -20px;
     right: -45px;
 
-    @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+    @include breakpoint("max-width: 1024px"){
       right: -20px;
-      bottom: -30px;
+      bottom: -25px;
     }
   }
 }
@@ -86,7 +122,7 @@
   font-size: 18px;
   text-align: center;
   line-height: 30px;
-  @include breakpointFull("max-width: 1280px","min-width: 1024px"){
+  @include breakpoint("max-width: 1024px"){
     width: 45px;
     height: 45px;
     font-size: 42px;

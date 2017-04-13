@@ -6,4 +6,5 @@ $( function() {
     $( "#tabs" ).tabs();
     $( "#pic" ).tabs();
     $( "#maps" ).tabs();
+    $( "#builders-tabs" ).tab();
 } );
