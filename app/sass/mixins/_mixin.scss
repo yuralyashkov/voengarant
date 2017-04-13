@@ -1,0 +1,20 @@
+@mixin button($ff, $fs, $c, $fw, $b, $br, $h, $lh, $o) {
+  font-family: $ff;
+  font-size: $fs;
+  color: $c;
+  font-weight: $fw;
+  border: $b;
+  border-radius: $br;
+  height: $h;
+  line-height: $lh;
+  opacity: $o;
+}
+
+@mixin text($ff, $c, $d, $fs, $lh, $fw) {
+  font-family: $ff;
+  color: $c;
+  display: $d;
+  font-size: $fs;
+  line-height: $lh;
+  font-weight: $fw;
+}

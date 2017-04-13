@@ -7820,7 +7820,7 @@ footer {
       font-family: "Roboto Slab", serif;
       font-size: 36px;
       color: #333333; }
-      @media screen and (max-width: 950px) {
+      @media screen and (max-width: 1025px) {
         .object-main .sale-information .group-title span {
           font-size: 60px; } }
     .object-main .sale-information .group-title a {
@@ -7831,7 +7831,7 @@ footer {
       top: 0;
       background-image: url("../images/icons/add-to-favorites.png");
       background-repeat: no-repeat; }
-      @media screen and (max-width: 950px) {
+      @media screen and (max-width: 1025px) {
         .object-main .sale-information .group-title a {
           width: 62px;
           height: 58px;
@@ -7845,7 +7845,7 @@ footer {
       display: inline-block;
       vertical-align: middle;
       margin: 0 10px 0 0; }
-      @media screen and (max-width: 950px) {
+      @media screen and (max-width: 1025px) {
         .object-main .sale-information .group-name img {
           width: 43px;
           height: 45px; } }
@@ -7855,7 +7855,7 @@ footer {
       color: #333333;
       display: inline-block;
       vertical-align: middle; }
-      @media screen and (max-width: 950px) {
+      @media screen and (max-width: 1025px) {
         .object-main .sale-information .group-name span {
           font-size: 30px; } }
   .object-main .sale-information .group-price {
@@ -7863,47 +7863,56 @@ footer {
     color: #309bf7;
     font-size: 18px;
     display: block; }
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: 1025px) {
       .object-main .sale-information .group-price {
         font-size: 30px; } }
 
 .object-table {
   overflow: hidden;
   margin: 40px 0 67px 0; }
-  .object-table .max-reiting-inscription {
-    display: block;
-    font-family: "myriad-pro", sans-serif;
-    font-size: 16px;
-    color: #777777;
-    width: 86.18868%;
-    margin: 0 auto;
-    text-align: left; }
-    @media screen and (max-width: 950px) {
-      .object-table .max-reiting-inscription {
-        font-size: 20px;
-        width: 100%; } }
-  .object-table .object-content {
+  @media screen and (max-width: 1025px) {
+    .object-table {
+      margin: 76px 0 140px 0; } }
+
+.max-reiting-inscription {
+  display: block;
+  font-family: "myriad-pro", sans-serif;
+  font-size: 16px;
+  color: #777777;
+  width: 86.18868%;
+  margin: 0 auto;
+  text-align: left; }
+  @media screen and (max-width: 1025px) {
+    .max-reiting-inscription {
+      font-size: 20px;
+      width: 100%; } }
+
+/*
+.object-table {
+  .object-content {
     display: table;
-    width: 86.18868%;
+    width: (1142px / $container * 100%);
     margin: 0 auto;
-    border-collapse: collapse; }
-    .object-table .object-content .content-top, .object-table .object-content .content-bottom {
-      display: table-row; }
-      .object-table .object-content .content-top .reiting, .object-table .object-content .content-bottom .reiting {
+    border-collapse: collapse;
+    @include breakpoint("max-width: 1025px") {
+      display: none;
+    }
+    .content-top, .content-bottom {
+      display: table-row;
+      .reiting {
         display: table-cell;
-        width: 12.45614%;
-        padding: 15px 0 0 0; }
-        .object-table .object-content .content-top .reiting .blocks, .object-table .object-content .content-bottom .reiting .blocks {
-          width: 54.92958%;
+        width: (142px / 1140px * 100%);
+        padding: 15px 0 0 0;
+        .blocks {
+          width: (78px / 142px * 100%);
           height: 14px;
           margin: 0 auto 2px auto;
-          background: -webkit-gradient(linear, right top, left bottom, from(#5682ed), to(#9a91f9));
-          background: -webkit-linear-gradient(top right, #5682ed, #9a91f9);
           background: linear-gradient(to bottom left, #5682ed, #9a91f9);
-          position: relative; }
-          .object-table .object-content .content-top .reiting .blocks:last-child, .object-table .object-content .content-bottom .reiting .blocks:last-child {
-            margin: 0 auto; }
-          .object-table .object-content .content-top .reiting .blocks:first-child:before, .object-table .object-content .content-bottom .reiting .blocks:first-child:before {
+          position: relative;
+          &:last-child {
+            margin: 0 auto;
+          }
+          &:first-child:before {
             content: ' ';
             position: absolute;
             width: 22px;
@@ -7911,557 +7920,816 @@ footer {
             top: -70%;
             left: 50%;
             margin-left: -11px;
-            background: url("../images/icons/reiting-decor.png") center no-repeat; }
-        .object-table .object-content .content-top .reiting:last-child .blocks, .object-table .object-content .content-bottom .reiting:last-child .blocks {
-          background: -webkit-gradient(linear, left top, right bottom, from(#c14065), to(#c14065));
-          background: -webkit-linear-gradient(top left, #c14065, #c14065);
-          background: linear-gradient(to bottom right, #c14065, #c14065); }
-          .object-table .object-content .content-top .reiting:last-child .blocks:first-child:before, .object-table .object-content .content-bottom .reiting:last-child .blocks:first-child:before {
-            background: url("../images/icons/reiting-decor-red.png") center no-repeat; }
-        .object-table .object-content .content-top .reiting .reiting-content, .object-table .object-content .content-bottom .reiting .reiting-content {
+            background: url("../images/icons/reiting-decor.png") center no-repeat;
+          }
+        }
+        &:last-child {
+          .blocks {
+            background: linear-gradient(to bottom right, #c14065, #c14065);
+            &:first-child:before {
+              background: url("../images/icons/reiting-decor-red.png") center no-repeat;
+            }
+          }
+        }
+        .reiting-content {
           font-size: 14px;
-          font-family: "myriad-pro", sans-serif;
+          font-family: $mainFontFamily;
           color: #777777;
-          display: block; }
-          @media screen and (max-width: 1330px) {
-            .object-table .object-content .content-top .reiting .reiting-content, .object-table .object-content .content-bottom .reiting .reiting-content {
-              font-size: 13px; } }
-        .object-table .object-content .content-top .reiting .reiting-text, .object-table .object-content .content-bottom .reiting .reiting-text {
-          font-family: "myriad-pro", sans-serif;
+          display: block;
+          @include breakpoint("max-width: 1330px"){
+            font-size: 13px;
+          }
+        }
+        .reiting-text {
+          font-family: $mainFontFamily;
           font-size: 18px;
           color: #333333;
-          display: block; }
-          @media screen and (max-width: 1330px) {
-            .object-table .object-content .content-top .reiting .reiting-text, .object-table .object-content .content-bottom .reiting .reiting-text {
-              font-size: 16px; } }
-    .object-table .object-content .content-top {
-      border-bottom: 1px solid #e8e8e8; }
-  .object-table .object-message img {
-    display: block;
-    margin: 0 auto; }
-  .object-table .object-message span {
-    display: block;
-    margin: 0 auto;
-    font-family: "Roboto Slab", serif;
-    font-size: 18px;
-    color: #333333; }
+          display: block;
+          @include breakpoint("max-width: 1330px"){
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .content-top {
+      border-bottom: 1px solid #e8e8e8;
+    }
+  }
+  .xs-block {
+    @include breakpoint("min-width: 1026px") {
+      display: none;
+    }
+    .content {
+      display: table;
+      width: 100%;
+      .line {
+        &:first-child {
+          margin: 0 0 43px 0;
+        }
+        .block {
+          display: table-cell;
+          width: 25%;
+          .reiting {
+            &:first-child {
+              padding: 15px 0 0 0;
+              border-bottom: 1px solid #dadada;
+            }
+            .blocks {
+              width: 89px;
+              text-align: center;
+              height: 16px;
+              background-color: #00b3ee;
+              margin: 0 auto 3px auto;
+              background: linear-gradient(to bottom left, #5682ed, #9a91f9);
+              position: relative;
+              &:first-child:before {
+                content: ' ';
+                position: absolute;
+                width: 26px;
+                height: 26px;
+                top: -70%;
+                left: 50%;
+                margin-left: -13px;
+                background: url("../images/icons/reiting-decor.png") center no-repeat;
+              }
+              &:last-child {
+                margin: 0 auto;
+              }
+            }
+            .reiting-content {
+              font-size: 20px;
+              font-family: $mainFontFamily;
+              color: #777777;
+              display: block;
+              font-weight: 100;
+              line-height: 23px;
+            }
+            .reiting-text {
+              font-family: $mainFontFamily;
+              font-size: 25px;
+              color: #333333;
+              display: block;
+              font-weight: 400;
+              line-height: 28px;
+            }
+          }
+        }
+      }
+    }
+  }}*/
+.object-message img {
+  display: block;
+  margin: 0 auto; }
 
-.remote-transaction {
-  overflow: hidden; }
-  .remote-transaction .background {
-    background-color: #efefef;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    padding-top: 82px; }
-    @media screen and (max-width: 1200px) {
-      .remote-transaction .background {
-        padding-top: 60px; } }
-    @media screen and (max-width: 950px) {
-      .remote-transaction .background {
-        padding-top: 74px; } }
-    @media screen and (max-width: 1800px) {
-      .remote-transaction .background br {
-        display: none; } }
-    .remote-transaction .background .title {
+.object-message span {
+  display: block;
+  margin: 0 auto;
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  color: #333333; }
+
+@media screen and (max-width: 1800px) {
+  .remote-transaction br {
+    display: none; } }
+
+.remote-transaction .background {
+  background-color: #efefef;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 82px; }
+  @media screen and (max-width: 1200px) {
+    .remote-transaction .background {
+      padding-top: 62px; } }
+  @media screen and (max-width: 1025px) {
+    .remote-transaction .background {
+      padding-top: 74px;
+      display: block; } }
+
+.remote-transaction .left-part {
+  background: url("../images/remote-transaction.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  float: left;
+  width: 49.28302%; }
+  @media screen and (max-width: 1025px) {
+    .remote-transaction .left-part {
+      display: none; } }
+  @media screen and (max-width: 1800px) {
+    .remote-transaction .left-part {
+      background-size: 90%; } }
+
+.remote-transaction .right-part {
+  padding: 0 0 88px 0;
+  float: right;
+  width: 50.71698%; }
+  @media screen and (max-width: 1200px) {
+    .remote-transaction .right-part {
+      padding: 0 0 68px 0; } }
+  @media screen and (max-width: 1025px) {
+    .remote-transaction .right-part {
+      float: none;
+      margin: 0;
+      padding: 0 55px 0 15px;
+      width: 100%; } }
+
+.remote-transaction .title {
+  font-family: "Roboto Slab", serif;
+  color: #333333;
+  display: block;
+  font-size: 24px;
+  line-height: 27px;
+  font-weight: 400; }
+  @media screen and (max-width: 1025px) {
+    .remote-transaction .title {
       font-family: "Roboto Slab", serif;
       color: #333333;
-      display: block; }
-    .remote-transaction .background .list {
+      display: block;
+      font-size: 30px;
+      line-height: 30px;
+      font-weight: 400;
+      margin: 0 0 41px 0; } }
+
+.remote-transaction .links {
+  margin: 2.79823% 0 2.13549% 0; }
+  @media screen and (max-width: 1025px) {
+    .remote-transaction .links {
+      margin: 0 0 42px 0; } }
+  .remote-transaction .links a {
+    display: inline-block;
+    margin: 0 15px 0 0; }
+    @media screen and (max-width: 1025px) {
+      .remote-transaction .links a {
+        margin: 0 25px 0 0; } }
+    .remote-transaction .links a:last-child {
+      margin: 0; }
+    .remote-transaction .links a img {
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: grayscale(100%);
+      -webkit-filter: url(../images/grayscale.svg);
+      filter: url(../images/grayscale.svg);
+      filter: gray;
+      -webkit-filter: grayscale(1);
+      opacity: .9;
+      width: 25px;
+      height: 25px; }
+      @media screen and (max-width: 1025px) {
+        .remote-transaction .links a img {
+          width: 48px;
+          height: 48px; } }
+    .remote-transaction .links a:hover img {
+      -webkit-filter: grayscale(0%);
+      -moz-filter: grayscale(0%);
+      -ms-filter: grayscale(0%);
+      -o-filter: grayscale(0%);
+      filter: none;
+      -webkit-filter: grayscale(0);
+      opacity: 1; }
+
+.remote-transaction .list {
+  font-family: "Roboto Slab", serif;
+  color: #333333;
+  display: block;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  margin: 0 0 4px 0; }
+  @media screen and (max-width: 1100px) {
+    .remote-transaction .list {
       font-family: "Roboto Slab", serif;
       color: #333333;
-      display: block; }
-    .remote-transaction .background .list-content {
+      display: block;
+      font-size: 17px;
+      line-height: 19px;
+      font-weight: 400; } }
+  @media screen and (max-width: 1025px) {
+    .remote-transaction .list {
+      font-family: "Roboto Slab", serif;
+      color: #333333;
+      display: block;
+      font-size: 30px;
+      line-height: 30px;
+      font-weight: 300;
+      margin: 0 0 5px 0; } }
+
+.remote-transaction .list-content {
+  font-family: "myriad-pro", sans-serif;
+  color: #777777;
+  display: block;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  margin: 0 0 27px 0; }
+  @media screen and (max-width: 1100px) {
+    .remote-transaction .list-content {
       font-family: "myriad-pro", sans-serif;
       color: #777777;
-      display: block; }
-    .remote-transaction .background .links a {
-      display: inline-block; }
-      .remote-transaction .background .links a:last-child {
-        margin: 0; }
-      .remote-transaction .background .links a img {
-        -webkit-filter: grayscale(100%);
-        -moz-filter: grayscale(100%);
-        -ms-filter: grayscale(100%);
-        -o-filter: grayscale(100%);
-        filter: grayscale(100%);
-        -webkit-filter: url(../images/grayscale.svg);
-        filter: url(../images/grayscale.svg);
-        filter: gray;
-        -webkit-filter: grayscale(1);
-        opacity: .85; }
-      .remote-transaction .background .links a:hover img {
-        -webkit-filter: grayscale(0%);
-        -moz-filter: grayscale(0%);
-        -ms-filter: grayscale(0%);
-        -o-filter: grayscale(0%);
-        filter: none;
-        -webkit-filter: grayscale(0);
-        opacity: 1; }
-    .remote-transaction .background .butttons .button {
-      text-decoration: none;
+      display: block;
+      font-size: 15px;
+      line-height: 18px;
+      font-weight: normal;
+      margin: 0 0 20px 0; } }
+  @media screen and (max-width: 1025px) {
+    .remote-transaction .list-content {
       font-family: "myriad-pro", sans-serif;
-      color: #ffffff;
-      display: inline-block;
-      border-radius: 5px;
-      opacity: .9; }
-      .remote-transaction .background .butttons .button_red {
-        background-color: #d2294b; }
-      .remote-transaction .background .butttons .button_blue {
-        background-color: #309bf7; }
-        .remote-transaction .background .butttons .button_blue span {
-          padding-left: 0 !important; }
-      .remote-transaction .background .butttons .button_black {
-        background-color: #303030; }
-      .remote-transaction .background .butttons .button:last-child {
-        margin: 0 !important; }
-      .remote-transaction .background .butttons .button:hover {
-        opacity: 1;
-        text-decoration: none; }
-      .remote-transaction .background .butttons .button span {
-        vertical-align: middle; }
-      .remote-transaction .background .butttons .button img {
-        display: inline-block;
-        vertical-align: middle; }
-    .remote-transaction .background .left-part {
-      background: url("../images/remote-transaction.png");
-      background-repeat: no-repeat;
-      background-position: top center;
-      float: left;
-      width: 49.28302%; }
-      @media screen and (max-width: 1800px) {
-        .remote-transaction .background .left-part {
-          background-size: 90%; } }
-      @media screen and (max-width: 1200px) {
-        .remote-transaction .background .left-part {
-          background-position: center; } }
-      @media screen and (max-width: 950px) {
-        .remote-transaction .background .left-part {
-          display: none; } }
-    .remote-transaction .background .right-part {
-      padding: 0 0 88px 0;
-      float: right;
-      width: 50.71698%; }
-      @media screen and (max-width: 1200px) {
-        .remote-transaction .background .right-part {
-          padding: 0 0 68px 0; } }
-      @media screen and (max-width: 950px) {
-        .remote-transaction .background .right-part {
-          display: none; } }
-      .remote-transaction .background .right-part .title {
-        font-size: 24px;
-        line-height: 27px; }
-      .remote-transaction .background .right-part .list {
-        font-size: 18px;
-        line-height: 20px;
-        margin: 0 0 4px 0; }
-        @media screen and (max-width: 1100px) {
-          .remote-transaction .background .right-part .list {
-            font-size: 17px;
-            line-height: 19px; } }
-      .remote-transaction .background .right-part .list-content {
-        font-size: 16px;
-        margin: 0 0 27px 0; }
-        @media screen and (max-width: 1100px) {
-          .remote-transaction .background .right-part .list-content {
-            font-size: 15px;
-            margin: 0 0 20px 0; } }
-      .remote-transaction .background .right-part .links {
-        display: inline-block;
-        margin: 2.79823% 0 2.13549% 0; }
-        .remote-transaction .background .right-part .links a {
-          margin: 0 15px 0 0; }
-          .remote-transaction .background .right-part .links a img {
-            width: 25px;
-            height: 25px; }
-      .remote-transaction .background .right-part .butttons .button {
-        height: 35px;
-        margin: 0 50px 0 0; }
-        @media screen and (max-width: 1700px) {
-          .remote-transaction .background .right-part .butttons .button {
-            margin: 0 20px 0 0; } }
-        @media screen and (max-width: 1205px) {
-          .remote-transaction .background .right-part .butttons .button {
-            margin: 0 10px 0 0; } }
-        .remote-transaction .background .right-part .butttons .button span {
-          padding-left: 15px;
-          padding-right: 15px;
-          font-size: 16px;
-          line-height: 35px; }
-          @media screen and (max-width: 1300px) {
-            .remote-transaction .background .right-part .butttons .button span {
-              font-size: 14px; } }
-          @media screen and (max-width: 1205px) {
-            .remote-transaction .background .right-part .butttons .button span {
-              font-size: 11px; } }
-        .remote-transaction .background .right-part .butttons .button img {
-          width: 16px;
-          height: 16px;
-          margin: 0 8px 0 15px; }
-    .remote-transaction .background .xs-block {
-      padding-left: 15px; }
-      @media screen and (min-width: 951px) {
-        .remote-transaction .background .xs-block {
-          display: none; } }
-      .remote-transaction .background .xs-block .row:first-child {
-        margin: 0 0 48px 0; }
-      .remote-transaction .background .xs-block .title {
-        font-size: 30px;
-        line-height: 35px;
-        margin: 0 0 41px 0;
-        font-weight: 400; }
-      .remote-transaction .background .xs-block .list {
-        font-size: 30px;
-        line-height: 30px;
-        margin: 0 0 5px 0;
-        font-weight: 300; }
-      .remote-transaction .background .xs-block .list-content {
-        line-height: 23px;
-        font-size: 20px;
-        margin: 0 0 35px 0;
-        font-weight: 300; }
-      .remote-transaction .background .xs-block .links {
-        display: block;
-        margin: 0 0 42px 0; }
-        .remote-transaction .background .xs-block .links a {
-          margin: 0 25px 0 0; }
-          .remote-transaction .background .xs-block .links a img {
-            width: 48px;
-            height: 48px; }
-      .remote-transaction .background .xs-block .butttons .button {
-        font-size: 17px;
-        font-weight: 300;
-        line-height: 40px;
-        height: 47px;
-        margin: 0 10px 0 0; }
-        .remote-transaction .background .xs-block .butttons .button .button_blue span {
-          padding-left: 0; }
-        .remote-transaction .background .xs-block .butttons .button span {
-          padding-left: 15px;
-          padding-right: 15px; }
-        .remote-transaction .background .xs-block .butttons .button img {
-          width: 23px;
-          height: 24px;
-          margin: 0 16px 0 15px; }
-      .remote-transaction .background .xs-block .image {
-        background: url("../images/remote-transaction.png");
-        background-repeat: no-repeat;
-        background-position: top left;
-        background-size: 90%;
-        width: 100%;
-        height: 448px; }
+      color: #777777;
+      display: block;
+      font-size: 20px;
+      line-height: 23px;
+      font-weight: 300;
+      margin: 0 0 35px 0; } }
 
-.top-rated-developers {
-  overflow: hidden;
-  margin: 105px 0 0 0; }
-  .top-rated-developers .row {
-    position: relative; }
-    .top-rated-developers .row .title {
-      display: block;
-      font-family: "Roboto Slab", serif;
-      font-size: 18px;
-      color: #333333;
-      margin: 0 0 23px 0; }
-      @media screen and (max-width: 1450px) {
-        .top-rated-developers .row .title {
-          font-size: 16px; } }
-      @media screen and (max-width: 1150px) {
-        .top-rated-developers .row .title {
-          font-size: 15px; } }
-      @media screen and (max-width: 950px) {
-        .top-rated-developers .row .title {
-          font-size: 45px;
-          font-weight: 300;
-          line-height: 50px; } }
-    .top-rated-developers .row .context {
-      display: block;
+@media screen and (max-width: 1025px) {
+  .remote-transaction .buttons {
+    display: none; } }
+
+.remote-transaction .button {
+  font-family: "myriad-pro", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 100;
+  border: none;
+  border-radius: 5px;
+  height: 35px;
+  line-height: 35px;
+  opacity: 0.9;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 50px 0 0; }
+  @media screen and (max-width: 1700px) {
+    .remote-transaction .button {
+      margin: 0 20px 0 0; } }
+  @media screen and (max-width: 1300px) {
+    .remote-transaction .button {
       font-family: "myriad-pro", sans-serif;
       font-size: 14px;
+      color: #ffffff;
+      font-weight: 100;
+      border: none;
+      border-radius: 5px;
+      height: 35px;
+      line-height: 35px;
+      opacity: 0.9; } }
+  @media screen and (max-width: 1205px) {
+    .remote-transaction .button {
+      font-family: "myriad-pro", sans-serif;
+      font-size: 11px;
+      color: #ffffff;
+      font-weight: 100;
+      border: none;
+      border-radius: 5px;
+      height: 35px;
+      line-height: 35px;
+      opacity: 0.9;
+      margin: 0 10px 0 0; } }
+  @media screen and (max-width: 1025px) {
+    .remote-transaction .button {
+      font-family: "myriad-pro", sans-serif;
+      font-size: 20px;
+      color: #ffffff;
+      font-weight: 300;
+      border: none;
+      border-radius: 5px;
+      height: 47px;
+      line-height: 47px;
+      opacity: 0.9;
+      margin: 0 10px 0 0; } }
+  @media screen and (max-width: 950px) {
+    .remote-transaction .button {
+      font-family: "myriad-pro", sans-serif;
+      font-size: 17px;
+      color: #ffffff;
+      font-weight: 400;
+      border: none;
+      border-radius: 5px;
+      height: 47px;
+      line-height: 47px;
+      opacity: 0.9;
+      margin: 0 10px 0 0; } }
+  .remote-transaction .button span {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .remote-transaction .button img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    margin: 0 8px 0 15px; }
+    @media screen and (max-width: 1025px) {
+      .remote-transaction .button img {
+        width: 23px;
+        height: 24px;
+        margin: 0 16px 0 15px; } }
+  .remote-transaction .button_red {
+    background-color: #d2294b; }
+  .remote-transaction .button_blue {
+    background-color: #309bf7; }
+    .remote-transaction .button_blue span {
+      padding-left: 0 !important; }
+  .remote-transaction .button_black {
+    background-color: #303030; }
+  .remote-transaction .button:last-child {
+    margin: 0 !important; }
+  .remote-transaction .button:hover {
+    opacity: 1;
+    text-decoration: none; }
+
+.remote-transaction .xs-buttons {
+  display: block;
+  margin: 0 9px 48px 9px; }
+  @media screen and (min-width: 1026px) {
+    .remote-transaction .xs-buttons {
+      display: none; } }
+  .remote-transaction .xs-buttons .button {
+    margin: 0 26px 0 0; }
+
+.remote-transaction .xs-block {
+  width: 100%;
+  height: 448px; }
+  @media screen and (min-width: 1026px) {
+    .remote-transaction .xs-block {
+      display: none; } }
+
+.remote-transaction .background-image {
+  background: url("../images/remote-transaction.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100%;
+  height: 100%; }
+
+.top-rated-developers {
+  margin: 105px 0 0 0; }
+
+.top-rated-developers .row:last-child {
+  position: relative; }
+
+.top-rated-developers .title {
+  font-family: "Roboto Slab", serif;
+  color: #333333;
+  display: block;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: normal;
+  margin: 0 0 23px 0; }
+  @media screen and (max-width: 1450px) {
+    .top-rated-developers .title {
+      font-family: "Roboto Slab", serif;
+      color: #333333;
+      display: block;
+      font-size: 16px;
+      line-height: 21px;
+      font-weight: normal; } }
+  @media screen and (max-width: 1150px) {
+    .top-rated-developers .title {
+      font-family: "Roboto Slab", serif;
+      color: #333333;
+      display: block;
+      font-size: 15px;
+      line-height: 21px;
+      font-weight: normal; } }
+  @media screen and (max-width: 1025px) {
+    .top-rated-developers .title {
+      font-family: "Roboto Slab", serif;
+      color: #333333;
+      display: block;
+      font-size: 45px;
+      line-height: 50px;
+      font-weight: 300; } }
+
+.top-rated-developers .context {
+  font-family: "myriad-pro", sans-serif;
+  color: #777777;
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  margin: 0 0 24px 0; }
+  @media screen and (max-width: 1450px) {
+    .top-rated-developers .context {
+      font-family: "myriad-pro", sans-serif;
       color: #777777;
-      margin: 0 0 24px 0; }
-      @media screen and (max-width: 1450px) {
-        .top-rated-developers .row .context {
-          font-size: 13px; } }
-      @media screen and (max-width: 1330px) {
-        .top-rated-developers .row .context {
-          font-size: 12px; } }
-      @media screen and (max-width: 950px) {
-        .top-rated-developers .row .context {
-          font-size: 30px;
-          font-weight: 100;
-          margin: 0 0 41px 0;
-          line-height: 35px; } }
-    .top-rated-developers .row .button-block {
-      overflow: hidden; }
-      .top-rated-developers .row .button-block .button {
-        width: 24.145%;
-        margin: 0 0.475% 0 0;
-        float: left; }
-        .top-rated-developers .row .button-block .button:first-child {
-          margin: 0 0.475% 0 1%; }
-        .top-rated-developers .row .button-block .button:last-child {
-          margin: 0 1% 0 0; }
-        .top-rated-developers .row .button-block .button a {
-          display: block;
-          opacity: .9; }
-          .top-rated-developers .row .button-block .button a:hover {
-            opacity: 1; }
-          .top-rated-developers .row .button-block .button a img {
-            width: 100%;
-            max-height: 70px; }
-  .top-rated-developers .close {
-    position: absolute;
-    top: 0;
-    float: right;
-    right: 20%;
-    z-index: 99;
-    width: 2.41509%;
-    max-height: 32px; }
-    @media screen and (max-width: 950px) {
-      .top-rated-developers .close {
-        display: none; } }
-    .top-rated-developers .close a {
-      display: block; }
-      .top-rated-developers .close a img {
-        width: 100%;
-        height: 100%; }
-  .top-rated-developers .xs-close {
-    margin: 67px 0 20px 0; }
-    @media screen and (min-width: 951px) {
-      .top-rated-developers .xs-close {
-        display: none; } }
-    .top-rated-developers .xs-close a {
-      display: inline-block;
-      width: 48px;
-      height: 48px;
-      opacity: .9; }
-      .top-rated-developers .xs-close a:hover {
-        opacity: 1; }
-      .top-rated-developers .xs-close a img {
-        width: 100%;
-        height: 100%; }
+      display: block;
+      font-size: 13px;
+      line-height: 16px;
+      font-weight: normal; } }
+  @media screen and (max-width: 1330px) {
+    .top-rated-developers .context {
+      font-family: "myriad-pro", sans-serif;
+      color: #777777;
+      display: block;
+      font-size: 12px;
+      line-height: 15px;
+      font-weight: normal; } }
+  @media screen and (max-width: 1025px) {
+    .top-rated-developers .context {
+      font-family: "myriad-pro", sans-serif;
+      color: #777777;
+      display: block;
+      font-size: 30px;
+      line-height: 35px;
+      font-weight: 100;
+      margin: 0 0 41px 0; } }
+
+.top-rated-developers .button-block {
+  overflow: hidden; }
+
+.top-rated-developers .button {
+  width: 24.145%;
+  margin: 0 0.475% 0 0;
+  float: left; }
+  .top-rated-developers .button:first-child {
+    margin: 0 0.475% 0 1%; }
+  .top-rated-developers .button:last-child {
+    margin: 0 1% 0 0; }
+  .top-rated-developers .button a {
+    display: block;
+    opacity: .9; }
+    .top-rated-developers .button a:hover {
+      opacity: 1; }
+    .top-rated-developers .button a img {
+      max-width: 100%;
+      max-height: 70px; }
+
+.top-rated-developers .close {
+  position: absolute;
+  top: 0;
+  float: right;
+  right: 20%;
+  z-index: 99;
+  width: 2.41509%;
+  max-height: 32px; }
+  @media screen and (max-width: 1025px) {
+    .top-rated-developers .close {
+      display: none; } }
+  .top-rated-developers .close a {
+    display: block; }
+    .top-rated-developers .close a img {
+      width: 100%;
+      height: 100%; }
+
+.top-rated-developers .xs-close {
+  margin: 67px 0 20px 0; }
+  @media screen and (min-width: 1026px) {
+    .top-rated-developers .xs-close {
+      display: none; } }
+  .top-rated-developers .xs-close a {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    opacity: .9; }
+    .top-rated-developers .xs-close a:hover {
+      opacity: 1; }
+    .top-rated-developers .xs-close a img {
+      width: 100%;
+      height: 100%; }
 
 .layouts-and-prices {
   margin: 84px 0 0 0; }
-  @media screen and (max-width: 950px) {
-    .layouts-and-prices br {
+  @media screen and (max-width: 1025px) {
+    .layouts-and-prices {
+      margin: 140px 0 0 0; }
+      .layouts-and-prices br {
+        display: none; } }
+
+.layouts-and-prices .title {
+  font-family: "Roboto Slab", serif;
+  color: #333333;
+  display: block;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: normal;
+  margin: 0 0 22px 0; }
+  @media screen and (max-width: 1025px) {
+    .layouts-and-prices .title {
+      font-family: "Roboto Slab", serif;
+      color: #333333;
+      display: block;
+      font-size: 45px;
+      line-height: 50px;
+      font-weight: 400; } }
+
+.layouts-and-prices .context {
+  font-family: "myriad-pro", sans-serif;
+  color: #777777;
+  display: block;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: normal;
+  margin: 0 0 52px 0; }
+  @media screen and (max-width: 1025px) {
+    .layouts-and-prices .context {
+      font-family: "myriad-pro", sans-serif;
+      color: #777777;
+      display: block;
+      font-size: 25px;
+      line-height: 30px;
+      font-weight: 100; } }
+
+.layouts-and-prices .table {
+  display: table;
+  width: 86.03774%;
+  border-collapse: collapse;
+  margin: 0 auto 42px auto; }
+  @media screen and (max-width: 1025px) {
+    .layouts-and-prices .table {
       display: none; } }
-  .layouts-and-prices .title {
-    font-family: "Roboto Slab", serif;
-    font-size: 36px;
-    color: #333333;
-    display: block;
-    margin: 0 0 22px 0; }
-    @media screen and (max-width: 950px) {
-      .layouts-and-prices .title {
-        font-size: 45px;
-        font-weight: 300;
-        line-height: 50px; } }
-  .layouts-and-prices .context {
-    font-family: "myriad-pro", sans-serif;
-    font-size: 18px;
-    color: #777777;
-    display: block;
-    margin: 0 0 52px 0; }
-    @media screen and (max-width: 950px) {
-      .layouts-and-prices .context {
-        font-size: 25px;
-        font-weight: 100; } }
-  .layouts-and-prices .table {
-    display: table;
-    width: 86.03774%;
-    border-collapse: collapse;
-    margin: 0 auto 42px auto; }
-    @media screen and (max-width: 950px) {
-      .layouts-and-prices .table {
-        display: none; } }
-    .layouts-and-prices .table .kind, .layouts-and-prices .table .content {
-      display: table-row; }
-    .layouts-and-prices .table .kind-name {
+
+.layouts-and-prices .kind, .layouts-and-prices .content {
+  display: table-row; }
+
+.layouts-and-prices .kind-name {
+  padding: 0 0 8px 0;
+  font-family: "myriad-pro", sans-serif;
+  color: #333333;
+  display: table-cell;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600; }
+  @media screen and (max-width: 1025px) {
+    .layouts-and-prices .kind-name {
       font-family: "myriad-pro", sans-serif;
-      font-size: 18px;
       color: #333333;
-      display: table-cell;
-      font-weight: 600;
-      padding: 0 0 8px 0; }
-    .layouts-and-prices .table .column {
-      display: table-cell;
-      border-right: 1px solid #e4e4e4;
-      padding: 12px 0 11px 0; }
-      .layouts-and-prices .table .column:last-child {
-        border-right: none; }
-      .layouts-and-prices .table .column .layouts, .layouts-and-prices .table .column .price {
-        display: block;
-        font-family: "myriad-pro", sans-serif;
-        font-size: 18px;
-        color: #333333; }
-        @media screen and (max-width: 1150px) {
-          .layouts-and-prices .table .column .layouts, .layouts-and-prices .table .column .price {
-            font-size: 16px; } }
-  .layouts-and-prices .xs-table {
-    margin: 0 0 66px 0; }
-    @media screen and (min-width: 951px) {
-      .layouts-and-prices .xs-table {
-        display: none; } }
-    .layouts-and-prices .xs-table .kind-name {
-      font-family: "myriad-pro", sans-serif;
+      display: block;
       font-size: 35px;
+      line-height: 38px;
+      font-weight: 600; } }
+
+.layouts-and-prices .column {
+  border-right: 1px solid #e4e4e4;
+  padding: 12px 0 11px 0;
+  font-family: "myriad-pro", sans-serif;
+  color: #333333;
+  display: table-cell;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600; }
+  .layouts-and-prices .column:last-child {
+    border-right: none; }
+  @media screen and (max-width: 1025px) {
+    .layouts-and-prices .column {
+      font-family: "myriad-pro", sans-serif;
       color: #333333;
+      display: block;
+      font-size: 35px;
+      line-height: 38px;
       font-weight: 400;
-      display: block;
-      margin: 0 0 12px 0;
-      line-height: 38px; }
-    .layouts-and-prices .xs-table .layouts, .layouts-and-prices .xs-table .price {
-      display: block;
+      padding: 0;
+      margin: 0 0 12px 0; } }
+
+.layouts-and-prices .layouts, .layouts-and-prices .price {
+  font-family: "myriad-pro", sans-serif;
+  color: #333333;
+  display: block;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: normal; }
+  @media screen and (max-width: 1150px) {
+    .layouts-and-prices .layouts, .layouts-and-prices .price {
       font-family: "myriad-pro", sans-serif;
-      font-size: 35px;
       color: #333333;
-      font-weight: 100;
-      line-height: 27px; }
-    .layouts-and-prices .xs-table .layouts {
-      margin: 0 0 19px 0; }
-    .layouts-and-prices .xs-table .price {
-      margin: 0 0 81px 0; }
-    .layouts-and-prices .xs-table .row:last-child .price {
-      margin: 0; }
-  .layouts-and-prices .apartment-layouts {
-    overflow: hidden;
-    margin: 0 0 68px 0; }
-    @media screen and (max-width: 950px) {
-      .layouts-and-prices .apartment-layouts {
-        margin: 0 0 122px 0; } }
-    .layouts-and-prices .apartment-layouts a {
-      display: inline-block;
-      width: 2.33962%;
-      margin: 0 0 10px 0;
-      opacity: .9; }
-      @media screen and (min-width: 951px) {
-        .layouts-and-prices .apartment-layouts a {
-          max-height: 31px; } }
-      @media screen and (max-width: 950px) {
-        .layouts-and-prices .apartment-layouts a {
-          width: 73px;
-          height: 73px !important;
-          margin: 0 0 20px 0; } }
-      .layouts-and-prices .apartment-layouts a:hover {
-        opacity: 1; }
-      .layouts-and-prices .apartment-layouts a img {
-        width: 100%;
-        height: 100%; }
-    .layouts-and-prices .apartment-layouts span {
       display: block;
+      font-size: 16px;
+      line-height: 17px;
+      font-weight: normal; } }
+  @media screen and (max-width: 1025px) {
+    .layouts-and-prices .layouts, .layouts-and-prices .price {
       font-family: "myriad-pro", sans-serif;
-      font-size: 18px;
-      color: #309bf7; }
-      @media screen and (max-width: 1150px) {
-        .layouts-and-prices .apartment-layouts span {
-          font-size: 16px; } }
-      @media screen and (max-width: 950px) {
-        .layouts-and-prices .apartment-layouts span {
-          font-size: 35px;
-          font-weight: 100;
-          line-height: 35px; } }
+      color: #333333;
+      display: block;
+      font-size: 35px;
+      line-height: 27px;
+      font-weight: 100; } }
+
+.layouts-and-prices .xs-table {
+  margin: 0 0 66px 0; }
+  @media screen and (min-width: 1026px) {
+    .layouts-and-prices .xs-table {
+      display: none; } }
+  .layouts-and-prices .xs-table .layouts {
+    margin: 0 0 19px 0; }
+  .layouts-and-prices .xs-table .price {
+    margin: 0 0 81px 0; }
+  .layouts-and-prices .xs-table .row:last-child .price {
+    margin: 0; }
+
+.layouts-and-prices .apartment-layouts {
+  margin: 0 0 68px 0; }
+  @media screen and (max-width: 1024px) {
+    .layouts-and-prices .apartment-layouts {
+      margin: 0 0 122px 0; } }
+  .layouts-and-prices .apartment-layouts a {
+    display: inline-block;
+    width: 2.33962%;
+    margin: 0 0 10px 0;
+    opacity: .9; }
+    @media screen and (min-width: 1026px) {
+      .layouts-and-prices .apartment-layouts a {
+        max-height: 31px; } }
+    @media screen and (max-width: 1025px) {
+      .layouts-and-prices .apartment-layouts a {
+        width: 73px;
+        height: 73px !important;
+        margin: 0 0 20px 0; } }
+    .layouts-and-prices .apartment-layouts a:hover {
+      opacity: 1; }
+    .layouts-and-prices .apartment-layouts a img {
+      width: 100%;
+      height: 100%; }
+  .layouts-and-prices .apartment-layouts span {
+    font-family: "myriad-pro", sans-serif;
+    color: #309bf7;
+    display: block;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: normal; }
+    @media screen and (max-width: 1150px) {
+      .layouts-and-prices .apartment-layouts span {
+        font-family: "myriad-pro", sans-serif;
+        color: #309bf7;
+        display: block;
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: normal; } }
+    @media screen and (max-width: 1025px) {
+      .layouts-and-prices .apartment-layouts span {
+        font-family: "myriad-pro", sans-serif;
+        color: #309bf7;
+        display: block;
+        font-size: 35px;
+        line-height: 35px;
+        font-weight: 100; } }
 
 .object-map {
-  overflow: hidden;
   margin: 0 0 87px 0; }
   .object-map .deleloper, .object-map .price, .object-map .value, .object-map .sale, .object-map .address, .object-map .distance, .object-map .form, .object-map .ending, .object-map .type, .object-map .project, .object-map .class {
     font-family: "myriad-pro", sans-serif;
-    font-size: 18px;
     color: #727272;
     display: block;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: normal;
     margin: 0 0 9px 0; }
     @media screen and (max-width: 1366px) {
       .object-map .deleloper, .object-map .price, .object-map .value, .object-map .sale, .object-map .address, .object-map .distance, .object-map .form, .object-map .ending, .object-map .type, .object-map .project, .object-map .class {
-        font-size: 17px; } }
-    @media screen and (max-width: 950px) {
+        font-family: "myriad-pro", sans-serif;
+        color: #727272;
+        display: block;
+        font-size: 17px;
+        line-height: 20px;
+        font-weight: normal; } }
+    @media screen and (max-width: 1025px) {
       .object-map .deleloper, .object-map .price, .object-map .value, .object-map .sale, .object-map .address, .object-map .distance, .object-map .form, .object-map .ending, .object-map .type, .object-map .project, .object-map .class {
+        font-family: "myriad-pro", sans-serif;
+        color: #727272;
+        display: block;
         font-size: 35px;
-        margin: 0 0 11px 0;
+        line-height: 38px;
         font-weight: 300;
-        line-height: 38px; } }
+        margin: 0 0 11px 0; } }
   .object-map .deleloper-name, .object-map .price-name, .object-map .value-name, .object-map .sale-name, .object-map .address-name, .object-map .distance-name, .object-map .form-name, .object-map .ending-name, .object-map .type-name, .object-map .project-name, .object-map .class-name {
     font-family: "myriad-pro", sans-serif;
-    font-size: 18px;
     color: #333333;
+    display: inline;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: normal;
     padding-left: 6px; }
     @media screen and (max-width: 1366px) {
       .object-map .deleloper-name, .object-map .price-name, .object-map .value-name, .object-map .sale-name, .object-map .address-name, .object-map .distance-name, .object-map .form-name, .object-map .ending-name, .object-map .type-name, .object-map .project-name, .object-map .class-name {
-        font-size: 16px; } }
-    @media screen and (max-width: 950px) {
+        font-family: "myriad-pro", sans-serif;
+        color: #333333;
+        display: inline;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: normal; } }
+    @media screen and (max-width: 1025px) {
       .object-map .deleloper-name, .object-map .price-name, .object-map .value-name, .object-map .sale-name, .object-map .address-name, .object-map .distance-name, .object-map .form-name, .object-map .ending-name, .object-map .type-name, .object-map .project-name, .object-map .class-name {
+        font-family: "myriad-pro", sans-serif;
+        color: #333333;
+        display: inline;
         font-size: 35px;
-        padding-left: 11px;
+        line-height: 38px;
         font-weight: 300;
-        line-height: 38px; } }
+        padding-left: 11px; } }
   .object-map .deleloper, .object-map .sale, .object-map .distance, .object-map .ending, .object-map .class {
     margin: 0 0 26px 0; }
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: 1025px) {
       .object-map .deleloper, .object-map .sale, .object-map .distance, .object-map .ending, .object-map .class {
         margin: 0 0 53px 0; } }
-  @media screen and (max-width: 950px) {
+  @media screen and (max-width: 1025px) {
     .object-map .price-name, .object-map .value-name {
       font-weight: 400; } }
   .object-map .sale-name {
     color: #309bf7; }
   .object-map a {
     display: inline-block; }
-    @media screen and (min-width: 951px) {
+    @media screen and (min-width: 1026px) {
       .object-map a img {
         max-width: 25px;
         max-height: 26px; } }
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: 1025px) {
       .object-map a img {
         width: 53px;
-        height: 55px; } }
+        max-height: 55px; } }
     .object-map a span {
-      display: inline-block;
-      vertical-align: middle;
       font-family: "myriad-pro", sans-serif;
-      font-size: 18px;
       color: #777777;
+      display: inline-block;
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: normal;
+      vertical-align: middle;
       padding-left: 8px; }
-      @media screen and (max-width: 950px) {
+      @media screen and (max-width: 1025px) {
         .object-map a span {
+          font-family: "myriad-pro", sans-serif;
+          color: #777777;
+          display: inline-block;
           font-size: 38px;
-          padding-left: 17px;
-          font-weight: 300; } }
+          line-height: 38px;
+          font-weight: 300;
+          padding-left: 17px; } }
 
 .details ul {
   list-style: none;
   margin: 0 !important;
   padding: 0 !important;
   border-bottom: 1px solid #919191; }
-  @media screen and (max-width: 950px) {
+  @media screen and (max-width: 1025px) {
     .details ul {
       border-bottom: none; } }
   .details ul li {
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: 1025px) {
       .details ul li {
         border-bottom: 1px solid #919191; } }
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: 1025px) {
       .details ul li:first-child, .details ul li:nth-child(3) {
         padding-left: 0;
         text-align: left; } }
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: 1025px) {
       .details ul li:nth-child(2n) {
         padding-right: 0;
         text-align: right; } }
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: 1025px) {
       .details ul li:nth-child(3) a, .details ul li:nth-child(4) a {
         padding-top: 58px; } }
     .details ul li a {
-      font-family: "myriad-pro", sans-serif;
-      font-size: 18px;
-      color: #777777;
       text-decoration: none;
       padding: 0 0 24px 0;
-      display: block;
       -webkit-box-sizing: border-box;
-      box-sizing: border-box; }
+      box-sizing: border-box;
+      font-family: "myriad-pro", sans-serif;
+      color: #777777;
+      display: block;
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: normal; }
       @media screen and (max-width: 1330px) {
         .details ul li a {
           font-size: 16px; } }
@@ -8471,91 +8739,45 @@ footer {
       @media screen and (max-width: 1080px) {
         .details ul li a {
           font-size: 13px; } }
-      @media screen and (max-width: 1020px) {
+      @media screen and (max-width: 1025px) {
         .details ul li a {
-          font-size: 12px; } }
-      @media screen and (max-width: 950px) {
-        .details ul li a {
-          padding-bottom: 15px;
           font-size: 35px;
-          font-weight: 300; } }
+          font-weight: 300;
+          padding-bottom: 15px; } }
       .details ul li a:hover {
         text-decoration: none; }
       .details ul li a img {
         padding: 0 0.60377% 0 0; }
-        @media screen and (max-width: 950px) {
+        @media screen and (max-width: 1025px) {
           .details ul li a img {
             display: none;
             padding: 0; } }
-
-.details .ui-tabs-active {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border-bottom: 4px solid #191919; }
-  @media screen and (max-width: 950px) {
-    .details .ui-tabs-active {
-      border-bottom: 1px solid #919191; } }
-  .details .ui-tabs-active a, .details .ui-tabs-active a:focus, .details .ui-tabs-active a:active, .details .ui-tabs-active a:hover {
-    outline: none;
-    color: #333333;
-    font-weight: 600;
-    text-decoration: none;
+  .details ul .ui-tabs-active {
     -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
-    @media screen and (max-width: 1330px) {
-      .details .ui-tabs-active a, .details .ui-tabs-active a:focus, .details .ui-tabs-active a:active, .details .ui-tabs-active a:hover {
-        font-size: 16px; } }
-    @media screen and (max-width: 1200px) {
-      .details .ui-tabs-active a, .details .ui-tabs-active a:focus, .details .ui-tabs-active a:active, .details .ui-tabs-active a:hover {
-        font-size: 14px; } }
-    @media screen and (max-width: 1080px) {
-      .details .ui-tabs-active a, .details .ui-tabs-active a:focus, .details .ui-tabs-active a:active, .details .ui-tabs-active a:hover {
-        font-size: 13px; } }
-    @media screen and (max-width: 1020px) {
-      .details .ui-tabs-active a, .details .ui-tabs-active a:focus, .details .ui-tabs-active a:active, .details .ui-tabs-active a:hover {
-        font-size: 12px; } }
-    @media screen and (max-width: 950px) {
-      .details .ui-tabs-active a, .details .ui-tabs-active a:focus, .details .ui-tabs-active a:active, .details .ui-tabs-active a:hover {
-        font-size: 35px; } }
-
-.details .banks a {
-  display: block;
-  text-decoration: none; }
-  .details .banks a img {
-    width: 100%;
-    padding: 55px 0 0 0;
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%);
-    -webkit-filter: url(../images/grayscale.svg);
-    filter: url(../images/grayscale.svg);
-    filter: gray;
-    -webkit-filter: grayscale(1); }
-  .details .banks a .procent {
-    display: block;
-    font-size: 18px;
-    font-family: "myriad-pro", sans-serif;
-    color: #777777;
-    margin: 20px 0 20px 0; }
-  .details .banks a .license {
-    display: block;
-    font-size: 14px;
-    font-family: "myriad-pro", sans-serif;
-    color: #777777;
-    margin: 0 0 52px 0; }
-  .details .banks a:hover img, .details .banks a:focus img, .details .banks a:active img {
-    -webkit-filter: grayscale(0%);
-    -moz-filter: grayscale(0%);
-    -ms-filter: grayscale(0%);
-    -o-filter: grayscale(0%);
-    filter: none;
-    -webkit-filter: grayscale(0); }
-  .details .banks a:hover .procent, .details .banks a:focus .procent, .details .banks a:active .procent {
-    color: #0d5483; }
-  .details .banks a:hover .license, .details .banks a:focus .license, .details .banks a:active .license {
-    color: #333333; }
+    box-sizing: border-box;
+    border-bottom: 4px solid #191919; }
+    @media screen and (max-width: 1025px) {
+      .details ul .ui-tabs-active {
+        border-bottom: 1px solid #919191; } }
+    .details ul .ui-tabs-active a, .details ul .ui-tabs-active a:focus, .details ul .ui-tabs-active a:active, .details ul .ui-tabs-active a:hover {
+      outline: none;
+      color: #333333;
+      font-weight: 600;
+      text-decoration: none;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+      @media screen and (max-width: 1330px) {
+        .details ul .ui-tabs-active a, .details ul .ui-tabs-active a:focus, .details ul .ui-tabs-active a:active, .details ul .ui-tabs-active a:hover {
+          font-size: 16px; } }
+      @media screen and (max-width: 1200px) {
+        .details ul .ui-tabs-active a, .details ul .ui-tabs-active a:focus, .details ul .ui-tabs-active a:active, .details ul .ui-tabs-active a:hover {
+          font-size: 14px; } }
+      @media screen and (max-width: 1080px) {
+        .details ul .ui-tabs-active a, .details ul .ui-tabs-active a:focus, .details ul .ui-tabs-active a:active, .details ul .ui-tabs-active a:hover {
+          font-size: 13px; } }
+      @media screen and (max-width: 1025px) {
+        .details ul .ui-tabs-active a, .details ul .ui-tabs-active a:focus, .details ul .ui-tabs-active a:active, .details ul .ui-tabs-active a:hover {
+          font-size: 35px; } }
 
 .details .calculator {
   border: 1px solid #dcdcdc;
@@ -8563,181 +8785,207 @@ footer {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-top: 50px;
-  padding-bottom: 50px; }
-  @media screen and (max-width: 950px) {
+  padding-bottom: 50px;
+  margin: 52px 0 0 0; }
+  @media screen and (max-width: 1025px) {
     .details .calculator {
       border: none;
       border-radius: 0;
-      padding: 114px 0 230px 0; } }
+      padding: 114px 0 0 0; } }
   .details .calculator .title {
-    font-family: "myriad-pro", sans-serif;
-    font-size: 30px;
+    font-family: "Roboto Slab", serif;
     color: #1f1f1f;
     display: block;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
     margin: 0 0 17px 0; }
-    @media screen and (max-width: 1450px) {
-      .details .calculator .title {
-        font-size: 28px; } }
-    @media screen and (max-width: 1355px) {
-      .details .calculator .title {
-        font-size: 27px; } }
-    @media screen and (max-width: 1330px) {
-      .details .calculator .title {
-        font-size: 26px; } }
-    @media screen and (max-width: 1275px) {
-      .details .calculator .title {
-        font-size: 25px; } }
-    @media screen and (max-width: 1230px) {
-      .details .calculator .title {
-        font-size: 24px; } }
-    @media screen and (max-width: 1180px) {
-      .details .calculator .title {
-        font-size: 23px; } }
-    @media screen and (max-width: 1135px) {
-      .details .calculator .title {
-        font-size: 22px; } }
-    @media screen and (max-width: 1090px) {
-      .details .calculator .title {
-        font-size: 21px; } }
-    @media screen and (max-width: 1045px) {
-      .details .calculator .title {
-        font-size: 20px; } }
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: 1025px) {
       .details .calculator .title {
         font-family: "Roboto Slab", serif;
+        color: #1f1f1f;
+        display: block;
         font-size: 45px;
+        line-height: 50px;
         font-weight: 300;
         text-align: center;
-        line-height: 50px;
         margin: 0 0 47px 0; } }
   .details .calculator .context {
     font-family: "myriad-pro", sans-serif;
-    font-size: 14px;
     color: #777777;
-    display: block; }
-    @media screen and (max-width: 1150px) {
+    display: block;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: normal; }
+    @media screen and (max-width: 1025px) {
       .details .calculator .context {
-        font-size: 13px; } }
-    @media screen and (max-width: 950px) {
-      .details .calculator .context {
+        font-family: "myriad-pro", sans-serif;
+        color: #777777;
+        display: block;
         font-size: 30px;
+        line-height: 35px;
         font-weight: 100;
-        text-align: center;
-        line-height: 35px; } }
-    .details .calculator .context .blue-text {
+        text-align: center; } }
+    .details .calculator .context .decor-text {
       color: #309bf7; }
-      @media screen and (max-width: 950px) {
-        .details .calculator .context .blue-text {
+      @media screen and (max-width: 1025px) {
+        .details .calculator .context .decor-text {
           color: #777777;
           font-weight: 400; } }
   .details .calculator .main {
     margin: 0 0 42px 0; }
-  @media screen and (max-width: 950px) {
-    .details .calculator form {
+  .details .calculator form {
+    text-align: left; }
+  @media screen and (max-width: 1025px) {
+    .details .calculator .calculation form {
       text-align: center; } }
-  .details .calculator form label {
-    margin: 0 0 4px 0;
+  .details .calculator label {
+    margin: 18px 0 4px 0;
     font-weight: 100; }
-    @media screen and (max-width: 950px) {
-      .details .calculator form label {
-        color: #333333 !important;
-        font-size: 30px;
-        font-weight: 100;
-        line-height: 30px;
-        margin: 0 0 65px 0; } }
-  .details .calculator form .second-label {
+    .details .calculator label:first-child {
+      margin: 0 0 4px 0; }
+  @media screen and (max-width: 1025px) {
+    .details .calculator .calculation label {
+      font-family: "myriad-pro", sans-serif;
+      color: #333333;
+      display: block;
+      font-size: 30px;
+      line-height: 35px;
+      font-weight: 300;
+      margin: 29px 0 25px 0; } }
+  @media screen and (max-width: 1025px) {
+    .details .calculator .calculation label:first-child {
+      margin: 0 0 25px 0; } }
+  @media screen and (max-width: 1025px) {
+    .details .calculator .mortgage label {
+      margin: 50px 0 8px 0; } }
+  @media screen and (max-width: 950px) {
+    .details .calculator .mortgage label {
+      text-align: left;
+      margin: 50px 0 8px 106px; } }
+  .details .calculator .second-label {
     margin-top: 18px; }
-    @media screen and (max-width: 950px) {
-      .details .calculator form .second-label {
+    @media screen and (max-width: 1025px) {
+      .details .calculator .second-label {
         margin: 30px 0 24px 0; } }
-  .details .calculator form select {
+  .details .calculator select {
+    font-family: "myriad-pro", sans-serif;
+    color: #333333;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: normal;
     width: 43.70629%;
     height: 33px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border: 1px solid #d3d3d3;
     border-radius: 5px;
-    font-family: "myriad-pro", sans-serif;
-    font-size: 18px;
-    color: #333333;
     padding-left: 3.84615%;
     padding-right: 3.84615%;
     background: url("../images/icons/select.png") right no-repeat, #fdfdfd;
     -webkit-appearance: none !important;
     -moz-appearance: none !important;
     appearance: none !important; }
-    @media screen and (max-width: 1200px) {
-      .details .calculator form select {
-        font-size: 16px; } }
-    @media screen and (max-width: 950px) {
-      .details .calculator form select {
+    @media screen and (max-width: 1025px) {
+      .details .calculator select {
         background: url("../images/icons/select-mob.png") right no-repeat, #fdfdfd;
         width: 488px;
         height: 65px;
         margin: 0 auto;
         font-size: 30px;
+        line-height: 33px;
         padding-left: 18px;
         padding-right: 53px;
         font-weight: 300;
-        color: #777777; } }
-    .details .calculator form select:active, .details .calculator form select:focus {
+        color: #777777;
+        display: block; } }
+    .details .calculator select:active, .details .calculator select:focus {
       outline: none;
       -webkit-box-shadow: 0px 0px 25px 0px #e5ecf8;
       box-shadow: 0px 0px 25px 0px #e5ecf8; }
-    .details .calculator form select::-ms-expand {
+    .details .calculator select::-ms-expand {
       border: 1px solid #d3d3d3;
       border-radius: 5px; }
-  .details .calculator form select > option {
+  .details .calculator select > option {
     font-family: "myriad-pro", sans-serif;
     font-size: 18px;
     color: #777777;
     line-height: 24px; }
-    @media screen and (max-width: 1200px) {
-      .details .calculator form select > option {
-        font-size: 16px; } }
-    @media screen and (max-width: 950px) {
-      .details .calculator form select > option {
-        font-size: 25px;
-        line-height: 28px;
-        font-weight: 100; } }
-  .details .calculator form select > option:hover, .details .calculator form select > option:checked, .details .calculator form select > option::-moz-selection, .details .calculator form select > option:active, .details .calculator form select > option:focus {
+  .details .calculator select > option:hover, .details .calculator select > option:checked, .details .calculator select > option::-moz-selection, .details .calculator select > option:active, .details .calculator select > option:focus {
     color: #2f97f0;
     background-color: #fdfdfd; }
-  .details .calculator form select > option:hover, .details .calculator form select > option:checked, .details .calculator form select > option::selection, .details .calculator form select > option:active, .details .calculator form select > option:focus {
+  .details .calculator select > option:hover, .details .calculator select > option:checked, .details .calculator select > option::selection, .details .calculator select > option:active, .details .calculator select > option:focus {
     color: #2f97f0;
     background-color: #fdfdfd; }
-  .details .calculator form .month {
+  .details .calculator .month {
     margin-right: 3.4965%; }
-    @media screen and (max-width: 950px) {
-      .details .calculator form .month {
+    @media screen and (max-width: 1025px) {
+      .details .calculator .month {
         margin: 0 auto 39px auto; } }
-  .details .calculator form button {
+  .details .calculator button {
     font-family: "myriad-pro", sans-serif;
     font-size: 18px;
     color: #ffffff;
+    font-weight: 100;
+    border: none;
+    border-radius: 5px;
+    height: auto;
+    line-height: 18px;
+    opacity: 0.9;
     background-color: #309bf7;
     padding: 8px 35px;
-    border-radius: 5px;
-    margin: 20px 0 0 0;
-    opacity: .9; }
+    margin: 20px 0 0 0; }
     @media screen and (max-width: 1330px) {
-      .details .calculator form button {
+      .details .calculator button {
         font-size: 16px; } }
     @media screen and (max-width: 1200px) {
-      .details .calculator form button {
+      .details .calculator button {
         font-size: 14px;
         padding: 8px 15px; } }
-    @media screen and (max-width: 950px) {
-      .details .calculator form button {
+    @media screen and (max-width: 1025px) {
+      .details .calculator button {
+        font-family: "myriad-pro", sans-serif;
         font-size: 30px;
+        color: #ffffff;
+        font-weight: normal;
+        border: none;
+        border-radius: 5px;
+        height: auto;
         line-height: 25px;
+        opacity: 0.9;
         padding: 21px 70px 25px 70px;
         margin: 35px 0 0 0; } }
-    .details .calculator form button:hover, .details .calculator form button:active {
+    .details .calculator button:hover, .details .calculator button:active {
       opacity: 1; }
-  .details .calculator .col-md-4 select {
-    width: 100%; }
-  .details .calculator .col-md-4 input {
+  @media screen and (min-width: 1026px) {
+    .details .calculator .mortgage .xs-link {
+      display: none; } }
+  @media screen and (max-width: 1025px) {
+    .details .calculator .mortgage .link {
+      display: none; } }
+  .details .calculator a {
+    font-family: "myriad-pro", sans-serif;
+    color: #309bf7;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: normal;
+    float: right;
+    margin: 33px 0 0 0;
+    text-decoration: none; }
+    @media screen and (max-width: 1025px) {
+      .details .calculator a {
+        float: none;
+        font-family: "myriad-pro", sans-serif;
+        color: #777777;
+        display: block;
+        font-size: 35px;
+        line-height: 32px;
+        font-weight: normal;
+        margin: 0 0 40px 0;
+        text-align: center; } }
+  .details .calculator input {
     height: 33px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -8750,73 +8998,73 @@ footer {
     padding-right: 3.84615%;
     width: 100%; }
     @media screen and (max-width: 1200px) {
-      .details .calculator .col-md-4 input {
+      .details .calculator input {
         font-size: 16px; } }
-  .details .calculator .col-md-4 label {
-    margin: 20px 0 4px 0; }
-    .details .calculator .col-md-4 label:first-child {
-      margin: 0 0 4px 0; }
-  .details .calculator .col-md-4 a {
-    display: inline-block;
-    float: right;
-    font-family: "myriad-pro", sans-serif;
-    font-size: 14px;
-    color: #309bf7;
-    margin: 33px 0 0 0; }
-    @media screen and (max-width: 1200px) {
-      .details .calculator .col-md-4 a {
-        font-size: 12px; } }
-    @media screen and (max-width: 950px) {
-      .details .calculator .col-md-4 a {
-        display: none; } }
-  @media screen and (max-width: 950px) {
-    .details .calculator .col-xs-12:last-child .title {
-      margin: 119px 0 9px 0; } }
-  @media screen and (min-width: 951px) {
-    .details .calculator .col-xs-12:last-child .xs-link {
-      display: none; } }
-  @media screen and (max-width: 950px) {
-    .details .calculator .col-xs-12:last-child .xs-link {
-      text-decoration: none;
+    @media screen and (max-width: 1025px) {
+      .details .calculator input {
+        display: block;
+        margin: 0 auto;
+        height: 65px;
+        font-size: 30px;
+        font-weight: 300;
+        padding-left: 22px;
+        padding-right: 22px;
+        width: 488px;
+        line-height: 28px; } }
+  @media screen and (min-width: 1026px) {
+    .details .calculator .mortgage select {
+      width: 100%; } }
+  @media screen and (max-width: 1025px) {
+    .details .calculator .mortgage button {
       display: block;
-      font-family: "myriad-pro", sans-serif;
-      font-size: 35px;
-      line-height: 32px;
-      color: #777777;
-      margin: 0 0 40px 0;
-      text-align: center;
-      float: none; } }
-  .details .calculator .col-xs-12:last-child label {
-    color: #777777;
-    text-align: left;
-    margin: 50px 0 7px 105px; }
-  @media screen and (max-width: 950px) {
-    .details .calculator .col-xs-12:last-child select {
-      width: 488px; } }
-  .details .calculator .col-xs-12:last-child input {
-    height: 65px;
-    font-size: 30px;
-    font-weight: 300;
-    padding-left: 22px;
-    padding-right: 22px;
-    width: 488px;
-    line-height: 28px; }
+      margin: 35px auto 0 auto; } }
+  @media screen and (max-width: 1025px) {
+    .details .calculator .mortgage .title {
+      margin: 119px 0 18px 0;
+      font-size: 44px; } }
 
 .attraction {
   margin: 87px 0 111px 0;
   overflow: hidden; }
+  @media screen and (max-width: 950px) {
+    .attraction {
+      margin: 230px 0 222px 0; } }
   .attraction .title {
     font-family: "Roboto Slab", serif;
-    font-size: 36px;
     color: #333333;
     display: block;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: normal;
     margin: 0 0 17px 0; }
+    @media screen and (max-width: 1025px) {
+      .attraction .title {
+        font-family: "Roboto Slab", serif;
+        color: #333333;
+        display: block;
+        font-size: 45px;
+        line-height: 50px;
+        font-weight: 300;
+        margin: 0 0 24px 0; } }
   .attraction .context {
     font-family: "myriad-pro", sans-serif;
-    font-size: 18px;
     color: #777777;
     display: block;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: normal;
     margin: 0 0 26px 0; }
+    @media screen and (max-width: 1025px) {
+      .attraction .context {
+        font-family: "myriad-pro", sans-serif;
+        color: #777777;
+        display: block;
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 100;
+        margin: 0 0 78px 0; }
+        .attraction .context br {
+          display: none; } }
   .attraction #pic {
     height: auto; }
     .attraction #pic ul {
@@ -8866,70 +9114,133 @@ footer {
 
 .infrastructure .title {
   font-family: "Roboto Slab", serif;
-  font-size: 36px;
   color: #333333;
-  display: block; }
+  display: block;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: normal; }
+  @media screen and (max-width: 1025px) {
+    .infrastructure .title {
+      font-family: "Roboto Slab", serif;
+      color: #333333;
+      display: block;
+      font-size: 45px;
+      line-height: 50px;
+      font-weight: 300;
+      margin: 0 0 23px 0; } }
 
 .infrastructure .context {
   font-family: "myriad-pro", sans-serif;
-  font-size: 18px;
   color: #777777;
   display: block;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: normal;
   margin: 0 0 68px 0; }
+  @media screen and (max-width: 1025px) {
+    .infrastructure .context {
+      font-family: "myriad-pro", sans-serif;
+      color: #333333;
+      display: block;
+      font-size: 30px;
+      line-height: 35px;
+      font-weight: 100;
+      margin: 0 0 73px 0; } }
 
-.infrastructure .row .col-md-8 .row {
+@media screen and (max-width: 1025px) {
+  .infrastructure .l-block {
+    display: none; } }
+
+.infrastructure .l-block .col-lg-8 .row {
   margin: 0 0 107px 0; }
-  .infrastructure .row .col-md-8 .row .first {
+  .infrastructure .l-block .col-lg-8 .row .first {
     padding-left: 15px; }
-  .infrastructure .row .col-md-8 .row .second {
+  .infrastructure .l-block .col-lg-8 .row .second {
     padding-left: 60px; }
     @media screen and (max-width: 1450px) {
-      .infrastructure .row .col-md-8 .row .second {
+      .infrastructure .l-block .col-lg-8 .row .second {
         padding-left: 30px; } }
     @media screen and (max-width: 1330px) {
-      .infrastructure .row .col-md-8 .row .second {
+      .infrastructure .l-block .col-lg-8 .row .second {
         padding-left: 15px; } }
-  .infrastructure .row .col-md-8 .row .col-md-6 .line {
+  .infrastructure .l-block .col-lg-8 .row .col-lg-6 .line {
     display: table; }
-    .infrastructure .row .col-md-8 .row .col-md-6 .line img {
+    .infrastructure .l-block .col-lg-8 .row .col-lg-6 .line img {
       max-width: 37px;
       max-height: 36px;
       display: table-cell; }
-    .infrastructure .row .col-md-8 .row .col-md-6 .line span {
-      vertical-align: middle;
-      display: table-cell;
-      padding-left: 12px;
+    .infrastructure .l-block .col-lg-8 .row .col-lg-6 .line span {
       font-family: "myriad-pro", sans-serif;
-      font-size: 18px;
       color: #333333;
+      display: table-cell;
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: normal;
+      vertical-align: middle;
+      padding-left: 12px;
       padding-bottom: 25px; }
       @media screen and (max-width: 1450px) {
-        .infrastructure .row .col-md-8 .row .col-md-6 .line span {
+        .infrastructure .l-block .col-lg-8 .row .col-lg-6 .line span {
           font-size: 15px; } }
       @media screen and (max-width: 1330px) {
-        .infrastructure .row .col-md-8 .row .col-md-6 .line span {
+        .infrastructure .l-block .col-lg-8 .row .col-lg-6 .line span {
           font-size: 13px; } }
       @media screen and (max-width: 1200px) {
-        .infrastructure .row .col-md-8 .row .col-md-6 .line span {
+        .infrastructure .l-block .col-lg-8 .row .col-lg-6 .line span {
           font-size: 12px; } }
       @media screen and (max-width: 1150px) {
-        .infrastructure .row .col-md-8 .row .col-md-6 .line span {
+        .infrastructure .l-block .col-lg-8 .row .col-lg-6 .line span {
           font-size: 11px; } }
       @media screen and (max-width: 1050px) {
-        .infrastructure .row .col-md-8 .row .col-md-6 .line span {
+        .infrastructure .l-block .col-lg-8 .row .col-lg-6 .line span {
           font-size: 10px; } }
-    .infrastructure .row .col-md-8 .row .col-md-6 .line:last-child span {
+    .infrastructure .l-block .col-lg-8 .row .col-lg-6 .line:last-child span {
       padding-bottom: 0; }
 
-.beside {
-  overflow: hidden;
-  margin: 0 0 81px 0; }
-  .beside .title {
-    font-family: "Roboto Slab", serif;
-    font-size: 36px;
+.infrastructure .xs-block {
+  margin: 0 0 190px 0; }
+  @media screen and (min-width: 1026px) {
+    .infrastructure .xs-block {
+      display: none; } }
+  .infrastructure .xs-block .row {
+    margin-bottom: 46px; }
+    .infrastructure .xs-block .row:last-child {
+      margin-bottom: 0; }
+  .infrastructure .xs-block .col-xs-2, .infrastructure .xs-block .col-sm-2, .infrastructure .xs-block .col-md-2 {
+    text-align: center; }
+    .infrastructure .xs-block .col-xs-2 img, .infrastructure .xs-block .col-sm-2 img, .infrastructure .xs-block .col-md-2 img {
+      width: 67px;
+      height: 65px; }
+  .infrastructure .xs-block .col-xs-10 span, .infrastructure .xs-block .col-sm-10 span, .infrastructure .xs-block .col-md-10 span {
+    font-family: "myriad-pro", sans-serif;
     color: #333333;
     display: block;
+    font-size: 30px;
+    line-height: 33px;
+    font-weight: 100; }
+
+.beside {
+  margin: 0 0 81px 0; }
+  @media screen and (max-width: 1025px) {
+    .beside {
+      margin: 0 0 123px 0; } }
+  .beside .title {
+    font-family: "Roboto Slab", serif;
+    color: #333333;
+    display: block;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: normal;
     margin: 0 0 23px 0; }
+    @media screen and (max-width: 1025px) {
+      .beside .title {
+        font-family: "Roboto Slab", serif;
+        color: #333333;
+        display: block;
+        font-size: 45px;
+        line-height: 50px;
+        font-weight: 300;
+        margin: 0 0 59px 0; } }
   .beside #maps {
     height: auto; }
     .beside #maps ul {
@@ -8940,61 +9251,136 @@ footer {
       position: relative;
       margin: 0;
       padding: 0; }
+      @media screen and (max-width: 1025px) {
+        .beside #maps ul {
+          border: none;
+          margin: 0 0 10px 0; } }
       .beside #maps ul li {
         display: inline-block;
         padding: 0 3.333%; }
+        @media screen and (max-width: 1025px) {
+          .beside #maps ul li {
+            padding: 0;
+            width: 100%; } }
+        @media screen and (max-width: 1025px) {
+          .beside #maps ul li:first-child a {
+            padding-top: 0; } }
+        @media screen and (max-width: 1025px) {
+          .beside #maps ul li:first-child a span {
+            padding-top: 0; } }
         .beside #maps ul li a {
           display: block;
+          text-decoration: none;
           padding-top: 18px;
-          padding-bottom: 18px;
-          text-decoration: none; }
+          padding-bottom: 18px; }
+          @media screen and (max-width: 1025px) {
+            .beside #maps ul li a {
+              padding-top: 30px;
+              padding-bottom: 15px; } }
           .beside #maps ul li a span {
             font-family: "myriad-pro", sans-serif;
             font-size: 16px;
             color: #777777; }
-          @media screen and (max-width: 1135px) {
-            .beside #maps ul li a {
-              font-size: 14px; } }
+            @media screen and (max-width: 1135px) {
+              .beside #maps ul li a span {
+                font-size: 14px; } }
+            @media screen and (max-width: 1025px) {
+              .beside #maps ul li a span {
+                font-size: 30px;
+                font-weight: 100; } }
     .beside #maps .ui-tabs-active {
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
       border-bottom: 2px solid #777777; }
-      .beside #maps .ui-tabs-active a, .beside #maps .ui-tabs-active a:focus, .beside #maps .ui-tabs-active a:active, .beside #maps .ui-tabs-active a:hover {
+      @media screen and (max-width: 1025px) {
+        .beside #maps .ui-tabs-active {
+          border: none; } }
+      .beside #maps .ui-tabs-active a {
         text-decoration: none; }
-        .beside #maps .ui-tabs-active a span, .beside #maps .ui-tabs-active a:focus span, .beside #maps .ui-tabs-active a:active span, .beside #maps .ui-tabs-active a:hover span {
-          font-weight: 600; }
+        @media screen and (max-width: 1025px) {
+          .beside #maps .ui-tabs-active a {
+            border-bottom: 1px solid #c6c6c6; } }
+        .beside #maps .ui-tabs-active a span {
+          color: #777777;
+          font-weight: 500; }
+          @media screen and (max-width: 1025px) {
+            .beside #maps .ui-tabs-active a span {
+              border-bottom: 2px solid #777777;
+              color: #333333;
+              padding: 30px 25px 15px 25px; } }
     .beside #maps .beside-map {
       margin: 12px 0 0 0;
       width: 100%;
       height: 457px;
       background-color: #2b542c; }
+      @media screen and (max-width: 1025px) {
+        .beside #maps .beside-map {
+          margin: 0; } }
 
 .contact {
   margin: 0 0 72px 0; }
+  @media screen and (max-width: 1025px) {
+    .contact {
+      margin: 0 0 51px 0; } }
   .contact .place-name {
-    display: block;
     font-family: "Roboto Slab", serif;
-    font-size: 36px;
     color: #333333;
+    display: block;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: normal;
     margin: 0 0 14px 0; }
+    @media screen and (max-width: 1025px) {
+      .contact .place-name {
+        font-family: "Roboto Slab", serif;
+        color: #333333;
+        display: block;
+        font-size: 45px;
+        line-height: 50px;
+        font-weight: 300;
+        margin: 0 0 43px 0; } }
   .contact .place-telephone {
     text-decoration: none;
-    display: inline-block;
     font-family: "myriad-pro", sans-serif;
-    font-size: 14px;
     color: #2f97f0;
-    margin: 0; }
-  .contact .place-address {
-    display: block;
-    font-family: "myriad-pro", sans-serif;
+    display: inline-block;
     font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+    margin: 0; }
+    @media screen and (max-width: 1025px) {
+      .contact .place-telephone {
+        font-family: "myriad-pro", sans-serif;
+        color: #2f97f0;
+        display: inline-block;
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 400; } }
+  .contact .place-address {
+    font-family: "myriad-pro", sans-serif;
     color: #777777;
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
     margin: 7px 0 18px 0; }
+    @media screen and (max-width: 1025px) {
+      .contact .place-address {
+        font-family: "myriad-pro", sans-serif;
+        color: #777777;
+        display: block;
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 100;
+        margin: 15px 0 50px 0; } }
   .contact .links {
     margin: 0 auto; }
     .contact .links a {
       display: inline-block;
       margin: 0 0.98113% 0 0; }
+      @media screen and (max-width: 1025px) {
+        .contact .links a {
+          margin: 0 24px 0 0; } }
       .contact .links a:last-child {
         margin: 0; }
       .contact .links a img {
@@ -9010,6 +9396,10 @@ footer {
         filter: gray;
         -webkit-filter: grayscale(1);
         opacity: .85; }
+        @media screen and (max-width: 1025px) {
+          .contact .links a img {
+            width: 44px;
+            height: 44px; } }
       .contact .links a:hover img {
         -webkit-filter: grayscale(0%);
         -moz-filter: grayscale(0%);
@@ -9024,3 +9414,7 @@ footer {
   height: 842px;
   margin: 0 0 154px 0;
   background-color: #5f5868; }
+  @media screen and (max-width: 950px) {
+    .video {
+      height: 730px;
+      margin: 0 0 120px 0; } }
