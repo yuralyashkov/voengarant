@@ -1,105 +1,96 @@
 .top-rated-developers {
-  overflow: hidden;
   margin: 105px 0 0 0;
-  .row {
-    position: relative;
-    .title {
-      display: block;
-      font-family: $titleFontFamily;
-      font-size: 18px;
-      color: #333333;
-      margin: 0 0 23px 0;
-      @include breakpoint("max-width: 1450px") {
-        font-size: 16px;
-      }
-      @include breakpoint("max-width: 1150px") {
-        font-size: 15px;
-      }
-      @include breakpoint("max-width: 950px") {
-        font-size: 45px;
-        font-weight: 300;
-      }
+}
+.top-rated-developers .row:last-child {
+  position: relative;
+}
+.top-rated-developers .title {
+  @include text($titleFontFamily, #333333, block, 18px, 23px, normal);
+  margin: 0 0 23px 0;
+  @include breakpoint("max-width: 1450px") {
+    @include text($titleFontFamily, #333333, block, 16px, 21px, normal);
+  }
+  @include breakpoint("max-width: 1150px") {
+    @include text($titleFontFamily, #333333, block, 15px, 21px, normal);
+  }
+  @include breakpoint("max-width: 1025px") {
+    @include text($titleFontFamily, #333333, block, 45px, 50px, 300);
+  }
+}
+.top-rated-developers .context {
+  @include text($mainFontFamily, #777777, block, 14px, 16px, normal);
+  margin: 0 0 24px 0;
+  @include breakpoint("max-width: 1450px") {
+    @include text($mainFontFamily, #777777, block, 13px, 16px, normal);
+  }
+  @include breakpoint("max-width: 1330px") {
+    @include text($mainFontFamily, #777777, block, 12px, 15px, normal);
+  }
+  @include breakpoint("max-width: 1025px") {
+    @include text($mainFontFamily, #777777, block, 30px, 35px, 100);
+    margin: 0 0 41px 0;
+  }
+}
+.top-rated-developers .button-block {
+  overflow: hidden;
+}
+.top-rated-developers .button {
+  width: 24.145%;
+  margin: 0 0.475% 0 0;
+  float: left;
+  &:first-child {
+    margin: 0 0.475% 0 1%;
+  }
+  &:last-child {
+    margin: 0 1% 0 0;
+  }
+  a {
+    display: block;
+    opacity: .9;
+    &:hover {
+      opacity: 1;
     }
-    .context {
-      display: block;
-      font-family: $mainFontFamily;
-      font-size: 14px;
-      color: #777777;
-      margin: 0 0 24px 0;
-      @include breakpoint("max-width: 1450px") {
-        font-size: 13px;
-      }
-      @include breakpoint("max-width: 1330px") {
-        font-size: 12px;
-      }
-      @include breakpoint("max-width: 950px") {
-        font-size: 30px;
-        font-weight: 100;
-        margin: 0 0 41px 0;
-      }
-    }
-    .button-block {
-      overflow: hidden;
-      .button {
-        width: 24.145%;
-        margin: 0 0.475% 0 0;
-        float: left;
-        &:first-child {
-          margin: 0 0.475% 0 1%;
-        }
-        &:last-child {
-          margin: 0 1% 0 0;
-        }
-        a {
-          display: block;
-          opacity: .9;
-          &:hover {
-            opacity: 1;
-          }
-          img {
-            width: 100%;
-            max-height: 70px;
-          }
-        }
-      }
+    img {
+      max-width: 100%;
+      max-height: 70px;
     }
   }
-  .close {
-    position: absolute;
-    top: 0;
-    float: right;
-    right: 20%;
-    z-index: 99;
-    width: (32px / $container * 100%);
-    max-height: 32px;
-    @include breakpoint("max-width: 950px") {
-      display: none;
-    }
-    a {
-      display: block;
-      img {
-        width: 100%;
-        height: 100%;
-      }
+}
+.top-rated-developers .close {
+  position: absolute;
+  top: 0;
+  float: right;
+  right: 20%;
+  z-index: 99;
+  width: (32px / $container * 100%);
+  max-height: 32px;
+  @include breakpoint("max-width: 1025px") {
+    display: none;
+  }
+  a {
+    display: block;
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
-  .xs-close {
-    margin: 67px 0 20px 0;
-    @include breakpoint("min-width: 951px") {
-      display: none;
+}
+.top-rated-developers .xs-close {
+  margin: 67px 0 20px 0;
+  @include breakpoint("min-width: 1026px") {
+    display: none;
+  }
+  a {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    opacity: .9;
+    &:hover {
+      opacity: 1;
     }
-    a {
-      display: inline-block;
-      width: 48px;
-      height: 48px;
-      opacity: .9;
-      &:hover {
-        opacity: 1;
-      }
-      img {
-        width: 100%;
-        height: 100%;
-      }
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
 }

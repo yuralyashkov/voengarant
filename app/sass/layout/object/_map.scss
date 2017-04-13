@@ -1,48 +1,60 @@
 .object-map {
-  overflow: hidden;
   margin: 0 0 87px 0;
-  .col-md-7 {
-
+  .deleloper, .price, .value, .sale, .address, .distance, .form, .ending, .type, .project, .class {
+    @include text($mainFontFamily, #727272, block, 18px, 20px, normal);
+    margin: 0 0 9px 0;
+    @include breakpoint("max-width: 1366px") {
+      @include text($mainFontFamily, #727272, block, 17px, 20px, normal);
+    }
+    @include breakpoint("max-width: 1025px") {
+      @include text($mainFontFamily, #727272, block, 35px, 38px, 300);
+      margin: 0 0 11px 0;
+    }
   }
-  .col-md-5 {
-    .deleloper, .price, .value, .sale, .address, .distance, .form, .ending, .type, .project, .class {
-      font-family: $mainFontFamily;
-      font-size: 18px;
-      color: #727272;
-      display: block;
-      margin: 0 0 9px 0;
-      @include breakpoint("max-width: 1366px"){
-        font-size: 17px;
-      }
+  .deleloper-name, .price-name, .value-name, .sale-name, .address-name, .distance-name, .form-name, .ending-name, .type-name, .project-name, .class-name {
+    @include text($mainFontFamily, #333333, inline, 18px, 20px, normal);
+    padding-left: 6px;
+    @include breakpoint("max-width: 1366px") {
+      @include text($mainFontFamily, #333333, inline, 16px, 20px, normal);
     }
-    .deleloper-name, .price-name, .value-name, .sale-name, .address-name, .distance-name, .form-name, .ending-name, .type-name, .project-name, .class-name {
-      font-family: $mainFontFamily;
-      font-size: 18px;
-      color: #333333;
-      padding-left: 6px;
-      @include breakpoint("max-width: 1366px"){
-        font-size: 16px;
-      }
+    @include breakpoint("max-width: 1025px") {
+      @include text($mainFontFamily, #333333, inline, 35px, 38px, 300);
+      padding-left: 11px;
     }
-    .deleloper, .sale, .distance, .ending, .class {
-      margin: 0 0 26px 0;
+  }
+  .deleloper, .sale, .distance, .ending, .class {
+    margin: 0 0 26px 0;
+    @include breakpoint("max-width: 1025px") {
+      margin: 0 0 53px 0;
     }
-    .sale-name {
-      color: #309bf7;
+  }
+  .price-name, .value-name {
+    @include breakpoint("max-width: 1025px") {
+      font-weight: 400;
     }
-    a {
-      display: inline-block;
-      img {
+  }
+  .sale-name {
+    color: #309bf7;
+  }
+  a {
+    display: inline-block;
+    img {
+      @include breakpoint("min-width: 1026px") {
         max-width: 25px;
         max-height: 26px;
       }
-      span {
-        display: inline-block;
-        vertical-align: middle;
-        font-family: $mainFontFamily;
-        font-size: 18px;
-        color: #777777;
-        padding-left: 8px;
+      @include breakpoint("max-width: 1025px") {
+        width: 53px;
+        max-height: 55px;
+      }
+    }
+    span {
+      @include text($mainFontFamily, #777777, inline-block, 18px, 18px, normal);
+      vertical-align: middle;
+      padding-left: 8px;
+      @include breakpoint("max-width: 1025px") {
+        @include text($mainFontFamily, #777777, inline-block, 38px, 38px, 300);
+        padding-left: 17px;
       }
     }
   }
