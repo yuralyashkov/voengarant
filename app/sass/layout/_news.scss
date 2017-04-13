@@ -1,5 +1,8 @@
 .news{
   padding-top: 220px;
+  @include breakpoint("max-width: 1024px"){
+    padding-top: 90px;
+  }
   .block__title,.block__text,.more{
     display: block;
     text-align: center
@@ -47,7 +50,7 @@
         background-size: cover ;
       }
       @include breakpoint("max-width: 1024px"){
-        padding: 0 15px;
+        margin: 0 15px;
       }
     }
   }
@@ -147,6 +150,7 @@
         @include breakpoint("max-width: 1024px"){
           font-size: 30px;
           margin-bottom: 60px;
+          line-height: 30px;
         }
       }
       .middle{

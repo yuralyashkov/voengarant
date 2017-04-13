@@ -65,6 +65,17 @@
 @import "layout/object/_contact";
 //video
 @import "layout/object/_video";
+
+
+/**
+Novostroiki
+ */
+@import "layout/novostroiki/_novostroiki";
+//title
+@import "layout/novostroiki/_novo-title";
+//slider
+@import "layout/novostroiki/_novo-slide";
+
 //tabs builders
 @import "layout/builders/builders-tabs";
 @import "layout/builders/rate-graph-builders";
@@ -76,3 +87,4 @@
 @import "layout/partners";
 //all-builders
 @import "layout/builders/all-builders";
+

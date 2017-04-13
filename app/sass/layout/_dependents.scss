@@ -1,7 +1,9 @@
 .dependents{
   padding-top: 285px;
   position: relative;
-
+  @include breakpoint("max-width: 1024px"){
+    padding-top: 120px;
+  }
   &__img{
     position: absolute;
     top: 12%;
@@ -18,7 +20,7 @@
     @include breakpoint("max-width: 1024px"){
       position: absolute;
       display: block;
-      top:35%;
+      top:25%;
       right: 0;
     }
   }

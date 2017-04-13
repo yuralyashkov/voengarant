@@ -1,6 +1,9 @@
 .block__map {
   background: #fff;
   padding-top: 135px;
+  @include breakpoint("max-width: 1024px"){
+    padding-top: 120px;
+  }
 
   .filter {
     padding-left: 15px;

@@ -1,5 +1,8 @@
 .block__discount {
   margin-bottom: 155px;
+  @include breakpoint("max-width: 1024px"){
+    margin-bottom: 125px;
+  }
   .col-md-12 {
     padding: 0;
 
@@ -14,7 +17,7 @@
       .col-md-4{
         padding-left: 30px;
         @include breakpoint("max-width: 1024px"){
-          padding-top: 70px;
+          padding-top: 50px;
         }
       }
       .col-md-3,.col-md-4{

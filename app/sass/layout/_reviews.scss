@@ -26,6 +26,12 @@
     margin: 0 -7.5px;
     @include breakpoint("max-width: 1024px"){
       display: block;
+      margin: 0;
+    }
+    .col-md-4{
+      @include breakpoint("max-width: 1024px"){
+        margin: 0;
+      }
     }
   }
   .row:first-child{
