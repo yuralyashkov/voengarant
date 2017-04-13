@@ -82,6 +82,7 @@
     }
   }
 }
+
 .object-table {
   overflow: hidden;
   margin: 40px 0 67px 0;
@@ -110,6 +111,7 @@
     width: (1142px / $container * 100%);
     margin: 0 auto;
     border-collapse: collapse;
+
     @include breakpoint("max-width: 1025px") {
       display: none;
     }
@@ -164,16 +166,34 @@
           @include breakpoint("max-width: 1330px"){
             font-size: 16px;
           }
+
         }
       }
     }
-    .content-top {
-      border-bottom: 1px solid #e8e8e8;
+  }
+  .reiting-content {
+    font-size: 14px;
+    font-family: $mainFontFamily;
+    color: #777777;
+    display: block;
+    @include breakpoint("max-width: 1330px") {
+      font-size: 13px;
     }
   }
+  .reiting-text {
+    font-family: $mainFontFamily;
+    font-size: 18px;
+    color: #333333;
+    display: block;
+    @include breakpoint("max-width: 1330px") {
+      font-size: 16px;
+    }
+  }
+
   .xs-block {
     @include breakpoint("min-width: 1026px") {
       display: none;
+
     }
     .content {
       display: table;
@@ -238,6 +258,7 @@
     display: block;
     margin: 0 auto;
   }
+
   span {
     display: block;
     margin: 0 auto;
@@ -246,3 +267,4 @@
     color: #333333;
   }
 }
+
