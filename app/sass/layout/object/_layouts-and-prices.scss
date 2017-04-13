@@ -1,129 +1,115 @@
 .layouts-and-prices {
   margin: 84px 0 0 0;
-  .title {
-    font-family: $titleFontFamily;
-    font-size: 36px;
-    color: #333333;
-    display: block;
-    margin: 0 0 22px 0;
-    @include breakpoint("max-width: 950px") {
-      font-size: 60px;
+  @include breakpoint("max-width: 1025px") {
+    margin: 140px 0 0 0;
+    br {
+     display: none;
     }
   }
-  .context {
-    font-family: $mainFontFamily;
-    font-size: 18px;
-    color: #777777;
-    display: block;
-    margin: 0 0 52px 0;
-    @include breakpoint("max-width: 950px") {
-      font-size: 25px;
+}
+.layouts-and-prices .title {
+  @include text($titleFontFamily, #333333, block, 36px, 42px, normal);
+  margin: 0 0 22px 0;
+  @include breakpoint("max-width: 1025px") {
+    @include text($titleFontFamily, #333333, block, 45px, 50px, 400);
+  }
+}
+.layouts-and-prices .context {
+  @include text($mainFontFamily, #777777, block, 18px, 20px, normal);
+  margin: 0 0 52px 0;
+  @include breakpoint("max-width: 1025px") {
+    @include text($mainFontFamily, #777777, block, 25px, 30px, 100);
+  }
+}
+.layouts-and-prices .table {
+  display: table;
+  width: (1140px / $container * 100%);
+  border-collapse: collapse;
+  margin: 0 auto 42px auto;
+  @include breakpoint("max-width: 1025px") {
+    display: none;
+  }
+}
+.layouts-and-prices .kind, .layouts-and-prices .content {
+  display: table-row;
+}
+.layouts-and-prices .kind-name {
+  padding: 0 0 8px 0;
+  @include text($mainFontFamily, #333333, table-cell, 18px, 18px, 600);
+  @include breakpoint("max-width: 1025px") {
+    @include text($mainFontFamily, #333333, block, 35px, 38px, 600);
+  }
+}
+.layouts-and-prices .column {
+  border-right: 1px solid #e4e4e4;
+  padding: 12px 0 11px 0;
+  &:last-child {
+    border-right: none;
+  }
+  @include text($mainFontFamily, #333333, table-cell, 18px, 18px, 600);
+  @include breakpoint("max-width: 1025px") {
+    @include text($mainFontFamily, #333333, block, 35px, 38px, 400);
+    padding: 0;
+    margin: 0 0 12px 0;
+  }
+}
+.layouts-and-prices .layouts, .layouts-and-prices .price {
+  @include text($mainFontFamily, #333333, block, 18px, 18px, normal);
+  @include breakpoint("max-width: 1150px") {
+    @include text($mainFontFamily, #333333, block, 16px, 17px, normal);
+  }
+  @include breakpoint("max-width: 1025px") {
+    @include text($mainFontFamily, #333333, block, 35px, 27px, 100);
+  }
+}
+.layouts-and-prices .xs-table {
+  margin: 0 0 66px 0;
+  @include breakpoint("min-width: 1026px") {
+    display: none;
+  }
+  .layouts {
+    margin: 0 0 19px 0;
+  }
+  .price {
+    margin: 0 0 81px 0;
+  }
+  .row:last-child .price {
+    margin: 0;
+  }
+}
+.layouts-and-prices .apartment-layouts {
+  margin: 0 0 68px 0;
+  @include breakpoint("max-width: 1024px") {
+    margin: 0 0 122px 0;
+  }
+  a {
+    display: inline-block;
+    width: (31px / $container * 100%);
+    margin: 0 0 10px 0;
+    opacity: .9;
+    @include breakpoint("min-width: 1026px") {
+      max-height: 31px;
+    }
+    @include breakpoint("max-width: 1025px") {
+      width: 73px;
+      height: 73px !important;
+      margin: 0 0 20px 0;
+    }
+    &:hover {
+      opacity: 1;
+    }
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
-  .table {
-    display: table;
-    width: (1140px / $container * 100%);
-    border-collapse: collapse;
-    margin: 0 auto 42px auto;
-    @include breakpoint("max-width: 950px") {
-      display: none;
+  span {
+    @include text($mainFontFamily, #309bf7, block, 18px, 20px, normal);
+    @include breakpoint("max-width: 1150px") {
+      @include text($mainFontFamily, #309bf7, block, 16px, 28px, normal);
     }
-    .kind, .content {
-      display: table-row;
-    }
-    .kind-name {
-      font-family: $mainFontFamily;
-      font-size: 18px;
-      color: #333333;
-      display: table-cell;
-      font-weight: 600;
-      padding: 0 0 8px 0;
-    }
-    .column {
-      display: table-cell;
-      border-right: 1px solid #e4e4e4;
-      padding: 12px 0 11px 0;
-      &:last-child {
-        border-right: none;
-      }
-      .layouts, .price {
-        display: block;
-        font-family: $mainFontFamily;
-        font-size: 18px;
-        color: #333333;
-        @include breakpoint("max-width: 1150px") {
-          font-size: 16px;
-        }
-      }
-    }
-  }
-  .xs-table {
-    margin: 0 0 66px 0;
-    @include breakpoint("min-width: 951px") {
-      display: none;
-    }
-    .kind-name {
-      font-family: $mainFontFamily;
-      font-size: 35px;
-      color: #333333;
-      font-weight: 600;
-      display: block;
-      margin: 0 0 12px 0;
-    }
-    .layouts, .price {
-      display: block;
-      font-family: $mainFontFamily;
-      font-size: 35px;
-      color: #333333;
-    }
-    .layouts {
-      margin: 0 0 19px 0;
-    }
-    .price {
-      margin: 0 0 81px 0;
-    }
-    .row:last-child .price {
-      margin: 0;
-    }
-  }
-  .apartment-layouts {
-    overflow: hidden;
-    margin: 0 0 68px 0;
-    @include breakpoint("max-width: 950px") {
-      margin: 0 0 122px 0;
-    }
-    a {
-      display: inline-block;
-      width: (31px / $container * 100%);
-      margin: 0 0 10px 0;
-      opacity: .9;
-      @include breakpoint("min-width: 951px") {
-        max-height: 31px;
-      }
-      @include breakpoint("max-width: 950px") {
-        width: 73px;
-        height: 73px !important;
-        margin: 0 0 20px 0;
-      }
-      &:hover {
-        opacity: 1;
-      }
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
-    span {
-      display: block;
-      font-family: $mainFontFamily;
-      font-size: 18px;
-      color: #309bf7;
-      @include breakpoint("max-width: 1150px") {
-        font-size: 16px;
-      }
-      @include breakpoint("max-width: 950px") {
-        font-size: 35px;
-      }
+    @include breakpoint("max-width: 1025px") {
+      @include text($mainFontFamily, #309bf7, block, 35px, 35px, 100);
     }
   }
 }
