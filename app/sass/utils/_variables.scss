@@ -1,15 +1,16 @@
-$mainFontFamily:"myriad-pro", sans-serif;
-$titleFontFamily:'Roboto Slab', serif;
-$container:1325px;
+$mainFontFamily: "myriad-pro", sans-serif;
+$titleFontFamily: 'Roboto Slab', serif;
+$container: 1325px;
 $color: #303030;
 
 @mixin breakpoint($breakpoint) {
-  @media screen and ($breakpoint){
+  @media screen and ($breakpoint) {
     @content;
   }
 }
+
 @mixin breakpointFull($breakpoint1,$breakpoint2) {
-  @media screen and ($breakpoint1) and ($breakpoint2){
+  @media screen and ($breakpoint1) and ($breakpoint2) {
     @content;
   }
 }
@@ -37,3 +38,69 @@ $color: #303030;
 *:focus {
   outline: none !important;
 }
+
+//FONT-SIZE
+
+$s12: 12px;
+$s14: 14px;
+$s16: 16px;
+
+$s18: 18px;
+
+//COLORS
+
+$colors: (
+        default: #777,
+        white: #fff,
+        black: #000,
+        bg: #fafafa,
+        light-red: #e01a22,
+        light-blue: #046eb6,
+        dark-blue: #164074,
+        build-default: #2f2f2f,
+        link-more: #309bf7,
+        top-yellow:#faf4b0,
+        top-red:#fab0bf,
+        top-blue:#b9b7ed,
+        top-point:#f7f7f7,
+);
+$color-blue-cell: (
+        1: #9a91f8,
+        2: #968df8,
+        3: #8f87f6,
+        4: #8880f5,
+        5: #7f78f3,
+        6: #7871f1,
+        7: #726bf0,
+        8: #6b65ef,
+        9: #6661ee,
+        10: #5d58e8,
+);
+
+//_mixins.scss
+$percent: '%';
+@mixin myriadL($size,$font,$weight) {
+
+  font-size: $size + px;
+  font-family: $font;
+  font-weight: $weight;
+
+}
+
+@mixin colorGenerate() {
+
+  @each $key, $value in $color-blue-cell {
+
+    .blue-cell-#{$key} {
+      background: $value;
+
+    }
+
+  }
+
+}
+
+
+
+
+

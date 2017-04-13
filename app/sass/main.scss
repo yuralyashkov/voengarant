@@ -1,5 +1,6 @@
 @import "utils/variables";
-
+@import "utils/functions";
+@import "components/components";
 //bootstrap
 @import "bootstrap";
 
@@ -64,4 +65,14 @@
 @import "layout/object/_contact";
 //video
 @import "layout/object/_video";
-
+//tabs builders
+@import "layout/builders/builders-tabs";
+@import "layout/builders/rate-graph-builders";
+//builder present
+@import "layout/builders/builder-present";
+//graph
+@import "layout/graph";
+//partners
+@import "layout/partners";
+//all-builders
+@import "layout/builders/all-builders";

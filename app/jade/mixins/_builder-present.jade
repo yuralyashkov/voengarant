@@ -1,0 +1,15 @@
+mixin short-prod-desc(pic,name)
+    section.builder-present
+        .container
+            .row.row-none
+                .col-lg-3.col-md-3.p-r-none
+                    .builder-present__logo
+
+                        img(src="./images/icons/#{pic}.png")
+                .col-lg-8.col-md-8.p-l-none.p-l-media
+                    .builder-present__title.block__title #{name}
+                    .builder-present__description
+                        p.
+                            #{pik}
+
+                    a(href="#").more.builder-present__more Подробнее
