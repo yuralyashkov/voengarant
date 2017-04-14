@@ -5,6 +5,9 @@
   }
   .col-md-6{
     padding-left: 30px;
+    @include breakpoint("max-width: 1024px"){
+      width: 100%;
+    }
   }
   .col-md-6:nth-child(2){
     @include breakpoint("max-width: 1024px"){
@@ -72,11 +75,15 @@
     text-align: center;
     padding: 74px;
     height: 586px;
+    @include breakpoint("max-width: 1920px"){
+      padding-left: 50px;
+      padding-right: 90px;
+    }
     @include breakpoint("max-width: 1680px"){
       padding: 75px 70px 70px;
     }
     @include breakpoint("max-width: 1024px"){
-      padding: 65px;
+      padding: 65px 80px;
     }
     span{
       display: block;
@@ -94,10 +101,11 @@
         display: block;
         font-size: 30px;
         font-weight: 300;
+        line-height: 30px;
       }
     }
     span:first-child{
-      font-family: "Roboto Slab";
+      font-family: "Roboto Slab", serif;
       color: #333333;
       font-size: 18px;
       @include breakpoint("max-width: 1680px"){
@@ -107,6 +115,7 @@
         display: block;
         font-size: 30px;
         font-weight: 300;
+        line-height: 30px;
       }
       br{
         @include breakpoint("max-width: 1024px"){
@@ -161,6 +170,9 @@
   }
   .swiper-pagination {
     margin-bottom: 20px;
+    @include breakpoint("max-width: 1920px"){
+      left: 2%;
+    }
   }
   .more{
     padding-top: 30px;
