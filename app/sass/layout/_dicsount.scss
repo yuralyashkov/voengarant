@@ -12,13 +12,11 @@
       padding-right: -15px;
     }
     .col-md-4{
-      padding-left: 30px;
       @include breakpoint("max-width: 1024px"){
         padding-top: 50px;
       }
     }
     .col-md-3,.col-md-4{
-
       @include breakpoint("max-width: 1024px"){
         width: 100%;
         padding-right: 15px;
