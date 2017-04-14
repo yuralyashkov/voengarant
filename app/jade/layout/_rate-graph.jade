@@ -1,78 +1,80 @@
 .object-table
-    .container
-        span.max-reiting-inscription Максимальный рейтинг
-            span.max-reiting  100%
-        .object-content
-            .content-top
-                .reiting
-                    .blocks
-                    .blocks
-                    .blocks
-                    .blocks
-                .reiting
-                    .blocks
-                    .blocks
-                    .blocks
-                    .blocks
-                .reiting
-                    .blocks
-                    .blocks
-                .reiting
-                    .blocks
-                    .blocks
-                    .blocks
-                    .blocks
-                    .blocks
-                    .blocks
-                    .blocks
-                    .blocks
-                    .blocks
-                .reiting
-                    .blocks
-                    .blocks
-                    .blocks
-                    .blocks
-                .reiting
-                    .blocks
-                    .blocks
-                .reiting
-                    .blocks
-                    .blocks
-                    .blocks
-                    .blocks
-                    .blocks
-                    .blocks
-                    .blocks
-                    .blocks
-                    .blocks
-                .reiting
-                    .blocks
-                    .blocks
-            .content-bottom
-                .reiting.text-center
-                    span.reiting-content Застройщик
-                    span.reiting-text 95.5%
-                .reiting.text-center
-                    span.reiting-content Безопасность района
-                    span.reiting-text 96.4%
-                .reiting.text-center
-                    span.reiting-content Транспорт
-                    span.reiting-text 97%
-                .reiting.text-center
-                    span.reiting-content Заселенность района
-                    span.reiting-text 96.4%
-                .reiting.text-center
-                    span.reiting-content Экология
-                    span.reiting-text 95.5%
-                .reiting.text-center
-                    span.reiting-content Инфаструктура
-                    span.reiting-text 93%
-                .reiting.text-center
-                    span.reiting-content Качество
-                    span.reiting-text 95.5%
-                .reiting.text-center
-                    span.reiting-content Общий рейтинг
-                    span.reiting-text 4%
-        .object-message.text-center
-            img(src='./images/icons/mark.png')
-            span Оценка объекта для выставления рейтинга<br>не проводилась
+    span.max-reiting-inscription Максимальный рейтинг
+        span.max-reiting  100%
+    .graphic
+        .graphic__list.clearfix
+            .graphic__column
+                ul.graphic__list-cell.blue-cell.graphic__cell-top.graphic__cell-top_color-b
+                    li.blue-cell-10
+                    li.blue-cell-9
+                    li.blue-cell-8
+                    li.blue-cell-7
+                    li.blue-cell-6
+                    li.blue-cell-5
+                    li.blue-cell-4
+                    li.blue-cell-3
+                    li.blue-cell-2
+                    li.blue-cell-1
+            .graphic__column
+                ul.graphic__list-cell.blue-cell.graphic__cell-top.graphic__cell-top_color-b
+                    li.blue-cell-9
+                    li.blue-cell-8
+                    li.blue-cell-7
+                    li.blue-cell-6
+                    li.blue-cell-5
+                    li.blue-cell-4
+                    li.blue-cell-3
+                    li.blue-cell-2
+                    li.blue-cell-1
+            .graphic__column
+                ul.graphic__list-cell.blue-cell.graphic__cell-top.graphic__cell-top_color-b
+
+                    li.blue-cell-8
+                    li.blue-cell-7
+                    li.blue-cell-6
+                    li.blue-cell-5
+                    li.blue-cell-4
+                    li.blue-cell-3
+                    li.blue-cell-2
+                    li.blue-cell-1
+            .graphic__column
+                ul.graphic__list-cell.yellow-cell.graphic__cell-top.graphic__cell-top_color-y
+                    li
+                    li
+                    li
+                    li
+                    li
+                    li
+                    li
+            .graphic__column
+                ul.graphic__list-cell.yellow-cell.graphic__cell-top.graphic__cell-top_color-y
+                    li
+                    li
+                    li
+                    li
+                    li
+                    li
+            .graphic__column
+                ul.graphic__list-cell.yellow-cell.graphic__cell-top.graphic__cell-top_color-y
+                    li
+                    li
+                    li
+                    li
+                    li
+            .graphic__column
+                ul.graphic__list-cell.red-cell.graphic__cell-top.graphic__cell-top_color-r
+                    li
+                    li
+                    li
+            .graphic__column
+                ul.graphic__list-cell.red-cell.graphic__cell-top.graphic__cell-top_color-r
+                    li
+                    li
+        .graphic__rate
+            ul
+                -var res = '50%'
+                -for(var i = 0; i < 8; i++)
+                li=res
+    .object-message.text-center
+        img(src='./images/icons/mark.png')
+        span Оценка объекта для выставления рейтинга<br>не проводилась
