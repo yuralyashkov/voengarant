@@ -8220,30 +8220,34 @@ footer {
   .footer-right__logo {
     text-align: right; }
 
-.red-line {
-  background-color: #a3344b; }
-  .red-line .col-md-5 {
-    padding: 0; }
-    .red-line .col-md-5 span {
-      color: #f5f5f5;
-      font-size: 16px;
-      font-family: "myriad-pro", sans-serif;
-      font-weight: 300;
-      line-height: 26px; }
-      @media screen and (max-width: 1060px) {
-        .red-line .col-md-5 span {
-          font-size: 14px; } }
-      @media screen and (max-width: 390px) {
-        .red-line .col-md-5 span {
-          font-size: 12px; } }
+.line {
+  opacity: .9; }
+  .line__red {
+    background-color: #a3344b; }
+  .line__blue {
+    background-color: #3e92d9; }
+  .line span {
+    color: #f5f5f5;
+    font-size: 16px;
+    font-family: "myriad-pro", sans-serif;
+    font-weight: 300;
+    line-height: 26px; }
+  .line a {
+    width: 100%;
+    display: block;
+    overflow: hidden; }
+  .line .text {
+    float: left; }
+  .line .decor {
+    float: right; }
+  .line:hover {
+    opacity: 1; }
 
 .bread-crumbs {
   overflow: hidden; }
-  @media screen and (max-width: 950px) {
+  @media screen and (max-width: 1025px) {
     .bread-crumbs {
       display: none; } }
-  .bread-crumbs .col-md-5 {
-    padding: 0; }
   .bread-crumbs .bread-crumbs__list {
     list-style: none;
     margin: 0;
@@ -8380,6 +8384,7 @@ footer {
         font-size: 30px; } }
 
 .object-table {
+  position: relative;
   overflow: hidden;
   margin: 40px 0 67px 0; }
   @media screen and (max-width: 1025px) {
@@ -8391,177 +8396,29 @@ footer {
   font-family: "myriad-pro", sans-serif;
   font-size: 16px;
   color: #777777;
-  width: 86.18868%;
-  margin: 0 auto;
+  margin: 0 0 48px 0;
   text-align: left; }
   @media screen and (max-width: 1025px) {
     .max-reiting-inscription {
       font-size: 20px;
       width: 100%; } }
 
-/*
-.object-table {
-  .object-content {
-    display: table;
-    width: (1142px / $container * 100%);
+.object-message {
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  margin-left: -203px; }
+  .object-message img {
+    display: block;
+    margin: 0 auto; }
+  .object-message span {
+    display: block;
     margin: 0 auto;
-    border-collapse: collapse;
-
-    @include breakpoint("max-width: 1025px") {
-      display: none;
-    }
-    .content-top, .content-bottom {
-      display: table-row;
-      .reiting {
-        display: table-cell;
-        width: (142px / 1140px * 100%);
-        padding: 15px 0 0 0;
-        .blocks {
-          width: (78px / 142px * 100%);
-          height: 14px;
-          margin: 0 auto 2px auto;
-          background: linear-gradient(to bottom left, #5682ed, #9a91f9);
-          position: relative;
-          &:last-child {
-            margin: 0 auto;
-          }
-          &:first-child:before {
-            content: ' ';
-            position: absolute;
-            width: 22px;
-            height: 22px;
-            top: -70%;
-            left: 50%;
-            margin-left: -11px;
-            background: url("../images/icons/reiting-decor.png") center no-repeat;
-          }
-        }
-        &:last-child {
-          .blocks {
-            background: linear-gradient(to bottom right, #c14065, #c14065);
-            &:first-child:before {
-              background: url("../images/icons/reiting-decor-red.png") center no-repeat;
-            }
-          }
-        }
-        .reiting-content {
-          font-size: 14px;
-          font-family: $mainFontFamily;
-          color: #777777;
-          display: block;
-          @include breakpoint("max-width: 1330px"){
-            font-size: 13px;
-          }
-        }
-        .reiting-text {
-          font-family: $mainFontFamily;
-          font-size: 18px;
-          color: #333333;
-          display: block;
-          @include breakpoint("max-width: 1330px"){
-            font-size: 16px;
-          }
-
-        }
-      }
-    }
-  }
-  .reiting-content {
-    font-size: 14px;
-    font-family: $mainFontFamily;
-    color: #777777;
-    display: block;
-    @include breakpoint("max-width: 1330px") {
-      font-size: 13px;
-    }
-  }
-  .reiting-text {
-    font-family: $mainFontFamily;
+    font-family: "Roboto Slab", serif;
     font-size: 18px;
-    color: #333333;
-    display: block;
-    @include breakpoint("max-width: 1330px") {
-      font-size: 16px;
-    }
-  }
+    color: #333333; }
 
-  .xs-block {
-    @include breakpoint("min-width: 1026px") {
-      display: none;
-
-    }
-    .content {
-      display: table;
-      width: 100%;
-      .line {
-        &:first-child {
-          margin: 0 0 43px 0;
-        }
-        .block {
-          display: table-cell;
-          width: 25%;
-          .reiting {
-            &:first-child {
-              padding: 15px 0 0 0;
-              border-bottom: 1px solid #dadada;
-            }
-            .blocks {
-              width: 89px;
-              text-align: center;
-              height: 16px;
-              background-color: #00b3ee;
-              margin: 0 auto 3px auto;
-              background: linear-gradient(to bottom left, #5682ed, #9a91f9);
-              position: relative;
-              &:first-child:before {
-                content: ' ';
-                position: absolute;
-                width: 26px;
-                height: 26px;
-                top: -70%;
-                left: 50%;
-                margin-left: -13px;
-                background: url("../images/icons/reiting-decor.png") center no-repeat;
-              }
-              &:last-child {
-                margin: 0 auto;
-              }
-            }
-            .reiting-content {
-              font-size: 20px;
-              font-family: $mainFontFamily;
-              color: #777777;
-              display: block;
-              font-weight: 100;
-              line-height: 23px;
-            }
-            .reiting-text {
-              font-family: $mainFontFamily;
-              font-size: 25px;
-              color: #333333;
-              display: block;
-              font-weight: 400;
-              line-height: 28px;
-            }
-          }
-        }
-      }
-    }
-  }}*/
-.object-message img {
-  display: block;
-  margin: 0 auto; }
-
-.object-message span {
-  display: block;
-  margin: 0 auto;
-  font-family: "Roboto Slab", serif;
-  font-size: 18px;
-  color: #333333; }
-
-@media screen and (max-width: 1800px) {
-  .remote-transaction br {
-    display: none; } }
+    
 
 .remote-transaction .background {
   background-color: #efefef;
@@ -8595,6 +8452,11 @@ footer {
   padding: 0 0 88px 0;
   float: right;
   width: 50.71698%; }
+  @media screen and (max-width: 1400px) {
+    .remote-transaction .right-part {
+      padding: 0 20px 88px 0; }
+      .remote-transaction .right-part br {
+        display: none; } }
   @media screen and (max-width: 1200px) {
     .remote-transaction .right-part {
       padding: 0 0 68px 0; } }
@@ -8693,7 +8555,7 @@ footer {
   display: block;
   font-size: 16px;
   line-height: 18px;
-  font-weight: normal;
+  font-weight: 100;
   margin: 0 0 27px 0; }
   @media screen and (max-width: 1100px) {
     .remote-transaction .list-content {
@@ -8702,7 +8564,7 @@ footer {
       display: block;
       font-size: 15px;
       line-height: 18px;
-      font-weight: normal;
+      font-weight: 100;
       margin: 0 0 20px 0; } }
   @media screen and (max-width: 1025px) {
     .remote-transaction .list-content {
@@ -8734,7 +8596,7 @@ footer {
   @media screen and (max-width: 1700px) {
     .remote-transaction .button {
       margin: 0 20px 0 0; } }
-  @media screen and (max-width: 1300px) {
+  @media screen and (max-width: 1400px) {
     .remote-transaction .button {
       font-family: "myriad-pro", sans-serif;
       font-size: 14px;
@@ -8745,6 +8607,12 @@ footer {
       height: 35px;
       line-height: 35px;
       opacity: 0.9; } }
+  @media screen and (max-width: 1700px) {
+    .remote-transaction .button {
+      margin: 0 15px 0 0; } }
+  @media screen and (max-width: 1295px) {
+    .remote-transaction .button {
+      margin: 0 10px 0 0; } }
   @media screen and (max-width: 1205px) {
     .remote-transaction .button {
       font-family: "myriad-pro", sans-serif;
@@ -8755,8 +8623,7 @@ footer {
       border-radius: 5px;
       height: 35px;
       line-height: 35px;
-      opacity: 0.9;
-      margin: 0 10px 0 0; } }
+      opacity: 0.9; } }
   @media screen and (max-width: 1025px) {
     .remote-transaction .button {
       font-family: "myriad-pro", sans-serif;
@@ -8972,7 +8839,7 @@ footer {
   display: block;
   font-size: 36px;
   line-height: 42px;
-  font-weight: normal;
+  font-weight: 300;
   margin: 0 0 22px 0; }
   @media screen and (max-width: 1025px) {
     .layouts-and-prices .title {
@@ -8989,7 +8856,7 @@ footer {
   display: block;
   font-size: 18px;
   line-height: 20px;
-  font-weight: normal;
+  font-weight: 100;
   margin: 0 0 52px 0; }
   @media screen and (max-width: 1025px) {
     .layouts-and-prices .context {
@@ -9057,7 +8924,7 @@ footer {
   display: block;
   font-size: 18px;
   line-height: 18px;
-  font-weight: normal; }
+  font-weight: 100; }
   @media screen and (max-width: 1150px) {
     .layouts-and-prices .layouts, .layouts-and-prices .price {
       font-family: "myriad-pro", sans-serif;
@@ -9065,7 +8932,7 @@ footer {
       display: block;
       font-size: 16px;
       line-height: 17px;
-      font-weight: normal; } }
+      font-weight: 100; } }
   @media screen and (max-width: 1025px) {
     .layouts-and-prices .layouts, .layouts-and-prices .price {
       font-family: "myriad-pro", sans-serif;
@@ -9094,45 +8961,42 @@ footer {
       margin: 0 0 122px 0; } }
   .layouts-and-prices .apartment-layouts a {
     display: inline-block;
-    width: 2.33962%;
-    margin: 0 0 10px 0;
+    text-decoration: none;
     opacity: .9; }
+    .layouts-and-prices .apartment-layouts a:hover {
+      opacity: 1; }
     @media screen and (min-width: 1026px) {
-      .layouts-and-prices .apartment-layouts a {
+      .layouts-and-prices .apartment-layouts a img {
         max-height: 31px; } }
     @media screen and (max-width: 1025px) {
-      .layouts-and-prices .apartment-layouts a {
+      .layouts-and-prices .apartment-layouts a img {
         width: 73px;
         height: 73px !important;
         margin: 0 0 20px 0; } }
-    .layouts-and-prices .apartment-layouts a:hover {
-      opacity: 1; }
-    .layouts-and-prices .apartment-layouts a img {
-      width: 100%;
-      height: 100%; }
-  .layouts-and-prices .apartment-layouts span {
-    font-family: "myriad-pro", sans-serif;
-    color: #309bf7;
-    display: block;
-    font-size: 18px;
-    line-height: 20px;
-    font-weight: normal; }
-    @media screen and (max-width: 1150px) {
-      .layouts-and-prices .apartment-layouts span {
-        font-family: "myriad-pro", sans-serif;
-        color: #309bf7;
-        display: block;
-        font-size: 16px;
-        line-height: 28px;
-        font-weight: normal; } }
-    @media screen and (max-width: 1025px) {
-      .layouts-and-prices .apartment-layouts span {
-        font-family: "myriad-pro", sans-serif;
-        color: #309bf7;
-        display: block;
-        font-size: 35px;
-        line-height: 35px;
-        font-weight: 100; } }
+    .layouts-and-prices .apartment-layouts a span {
+      margin: 10px 0 0 0;
+      font-family: "myriad-pro", sans-serif;
+      color: #309bf7;
+      display: block;
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 100; }
+      @media screen and (max-width: 1150px) {
+        .layouts-and-prices .apartment-layouts a span {
+          font-family: "myriad-pro", sans-serif;
+          color: #309bf7;
+          display: block;
+          font-size: 16px;
+          line-height: 28px;
+          font-weight: 100; } }
+      @media screen and (max-width: 1025px) {
+        .layouts-and-prices .apartment-layouts a span {
+          font-family: "myriad-pro", sans-serif;
+          color: #309bf7;
+          display: block;
+          font-size: 35px;
+          line-height: 35px;
+          font-weight: 100; } }
 
 .object-map {
   margin: 0 0 87px 0; }
@@ -9142,7 +9006,7 @@ footer {
     display: block;
     font-size: 18px;
     line-height: 20px;
-    font-weight: normal;
+    font-weight: 100;
     margin: 0 0 9px 0; }
     @media screen and (max-width: 1366px) {
       .object-map .deleloper, .object-map .price, .object-map .value, .object-map .sale, .object-map .address, .object-map .distance, .object-map .form, .object-map .ending, .object-map .type, .object-map .project, .object-map .class {
@@ -9151,7 +9015,7 @@ footer {
         display: block;
         font-size: 17px;
         line-height: 20px;
-        font-weight: normal; } }
+        font-weight: 100; } }
     @media screen and (max-width: 1025px) {
       .object-map .deleloper, .object-map .price, .object-map .value, .object-map .sale, .object-map .address, .object-map .distance, .object-map .form, .object-map .ending, .object-map .type, .object-map .project, .object-map .class {
         font-family: "myriad-pro", sans-serif;
@@ -9212,7 +9076,7 @@ footer {
       display: inline-block;
       font-size: 18px;
       line-height: 18px;
-      font-weight: normal;
+      font-weight: 100;
       vertical-align: middle;
       padding-left: 8px; }
       @media screen and (max-width: 1025px) {
@@ -9260,8 +9124,8 @@ footer {
       display: block;
       font-size: 18px;
       line-height: 18px;
-      font-weight: normal; }
-      @media screen and (max-width: 1330px) {
+      font-weight: 100; }
+      @media screen and (max-width: 1500px) {
         .details ul li a {
           font-size: 16px; } }
       @media screen and (max-width: 1200px) {
@@ -9329,7 +9193,7 @@ footer {
     display: block;
     font-size: 30px;
     line-height: 30px;
-    font-weight: normal;
+    font-weight: 300;
     margin: 0 0 17px 0; }
     @media screen and (max-width: 1025px) {
       .details .calculator .title {
@@ -9347,7 +9211,7 @@ footer {
     display: block;
     font-size: 14px;
     line-height: 14px;
-    font-weight: normal; }
+    font-weight: 100; }
     @media screen and (max-width: 1025px) {
       .details .calculator .context {
         font-family: "myriad-pro", sans-serif;
@@ -9467,12 +9331,28 @@ footer {
     background-color: #309bf7;
     padding: 8px 35px;
     margin: 20px 0 0 0; }
-    @media screen and (max-width: 1330px) {
+    @media screen and (max-width: 1400px) {
       .details .calculator button {
-        font-size: 16px; } }
+        font-family: "myriad-pro", sans-serif;
+        font-size: 16px;
+        color: #ffffff;
+        font-weight: 100;
+        border: none;
+        border-radius: 5px;
+        height: auto;
+        line-height: 16px;
+        opacity: 0.9; } }
     @media screen and (max-width: 1200px) {
       .details .calculator button {
+        font-family: "myriad-pro", sans-serif;
         font-size: 14px;
+        color: #ffffff;
+        font-weight: 100;
+        border: none;
+        border-radius: 5px;
+        height: auto;
+        line-height: 14px;
+        opacity: 0.9;
         padding: 8px 15px; } }
     @media screen and (max-width: 1025px) {
       .details .calculator button {
@@ -9501,10 +9381,13 @@ footer {
     display: inline-block;
     font-size: 14px;
     line-height: 15px;
-    font-weight: normal;
+    font-weight: 100;
     float: right;
     margin: 33px 0 0 0;
     text-decoration: none; }
+    @media screen and (max-width: 1400px) {
+      .details .calculator a {
+        font-size: 12px; } }
     @media screen and (max-width: 1025px) {
       .details .calculator a {
         float: none;
@@ -9513,7 +9396,7 @@ footer {
         display: block;
         font-size: 35px;
         line-height: 32px;
-        font-weight: normal;
+        font-weight: 100;
         margin: 0 0 40px 0;
         text-align: center; } }
   .details .calculator input {
@@ -9553,11 +9436,29 @@ footer {
     .details .calculator .mortgage .title {
       margin: 119px 0 18px 0;
       font-size: 44px; } }
+  .details .calculator .link:after {
+    content: '>';
+    font-family: "myriad-pro", sans-serif;
+    color: #309bf7;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 100;
+    padding-left: 7px; }
+  .details .calculator .xs-link:after {
+    content: '>';
+    font-family: "myriad-pro", sans-serif;
+    color: #777777;
+    display: inline-block;
+    font-size: 35px;
+    line-height: 32px;
+    font-weight: 100;
+    padding-left: 18px; }
 
 .attraction {
   margin: 87px 0 111px 0;
   overflow: hidden; }
-  @media screen and (max-width: 950px) {
+  @media screen and (max-width: 1025px) {
     .attraction {
       margin: 230px 0 222px 0; } }
   .attraction .title {
@@ -9566,7 +9467,7 @@ footer {
     display: block;
     font-size: 36px;
     line-height: 40px;
-    font-weight: normal;
+    font-weight: 300;
     margin: 0 0 17px 0; }
     @media screen and (max-width: 1025px) {
       .attraction .title {
@@ -9583,7 +9484,7 @@ footer {
     display: block;
     font-size: 18px;
     line-height: 20px;
-    font-weight: normal;
+    font-weight: 100;
     margin: 0 0 26px 0; }
     @media screen and (max-width: 1025px) {
       .attraction .context {
@@ -9617,7 +9518,8 @@ footer {
           .attraction #pic ul li a span {
             font-family: "myriad-pro", sans-serif;
             font-size: 16px;
-            color: #f5f5f5; }
+            color: #f5f5f5;
+            font-weight: 100; }
     .attraction #pic .ui-tabs-active {
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
@@ -9649,7 +9551,8 @@ footer {
   display: block;
   font-size: 36px;
   line-height: 42px;
-  font-weight: normal; }
+  font-weight: 300;
+  margin: 0 0 5px 0; }
   @media screen and (max-width: 1025px) {
     .infrastructure .title {
       font-family: "Roboto Slab", serif;
@@ -9666,7 +9569,7 @@ footer {
   display: block;
   font-size: 18px;
   line-height: 20px;
-  font-weight: normal;
+  font-weight: 100;
   margin: 0 0 68px 0; }
   @media screen and (max-width: 1025px) {
     .infrastructure .context {
@@ -9706,7 +9609,7 @@ footer {
       display: table-cell;
       font-size: 18px;
       line-height: 20px;
-      font-weight: normal;
+      font-weight: 100;
       vertical-align: middle;
       padding-left: 12px;
       padding-bottom: 25px; }
@@ -9761,7 +9664,7 @@ footer {
     display: block;
     font-size: 36px;
     line-height: 40px;
-    font-weight: normal;
+    font-weight: 300;
     margin: 0 0 23px 0; }
     @media screen and (max-width: 1025px) {
       .beside .title {
@@ -9811,7 +9714,8 @@ footer {
           .beside #maps ul li a span {
             font-family: "myriad-pro", sans-serif;
             font-size: 16px;
-            color: #777777; }
+            color: #777777;
+            font-weight: 100; }
             @media screen and (max-width: 1135px) {
               .beside #maps ul li a span {
                 font-size: 14px; } }
@@ -9859,7 +9763,7 @@ footer {
     display: block;
     font-size: 36px;
     line-height: 40px;
-    font-weight: normal;
+    font-weight: 300;
     margin: 0 0 14px 0; }
     @media screen and (max-width: 1025px) {
       .contact .place-name {
@@ -9949,6 +9853,109 @@ footer {
     .video {
       height: 730px;
       margin: 0 0 120px 0; } }
+
+.other-object {
+  margin: 92px 0 37px 0; }
+  @media screen and (msx-width: 1025px) {
+    .other-object {
+      margin: 146px 0 58px 0; } }
+  .other-object .title {
+    font-family: "Roboto Slab", serif;
+    color: #2f2f2f;
+    display: block;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 300;
+    margin: 0 0 23px 0; }
+    @media screen and (max-width: 1025px) {
+      .other-object .title {
+        font-family: "Roboto Slab", serif;
+        color: #2f2f2f;
+        display: block;
+        font-size: 45px;
+        line-height: 50px;
+        font-weight: 300;
+        margin: 0 0 48px 0; } }
+  .other-object .context {
+    font-family: "myriad-pro", sans-serif;
+    color: #2f2f2f;
+    display: block;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 300;
+    margin: 0 0 28px 0; }
+    @media screen and (max-width: 1025px) {
+      .other-object .context {
+        font-family: "myriad-pro", sans-serif;
+        color: #2f2f2f;
+        display: block;
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 300;
+        margin: 0 0 51px 0; } }
+  .other-object .link {
+    font-family: "myriad-pro", sans-serif;
+    color: #309bf7;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 300;
+    margin: 0; }
+    @media screen and (max-width: 1025px) {
+      .other-object .link {
+        font-family: "myriad-pro", sans-serif;
+        color: #309bf7;
+        display: inline-block;
+        font-size: 30px;
+        line-height: 32px;
+        font-weight: 300;
+        margin: 0; } }
+    .other-object .link:after {
+      content: '>';
+      padding-left: 12px;
+      font-family: "myriad-pro", sans-serif;
+      color: #309bf7;
+      display: inline-block;
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 300; }
+      @media screen and (max-width: 1025px) {
+        .other-object .link:after {
+          font-family: "myriad-pro", sans-serif;
+          color: #309bf7;
+          display: inline-block;
+          font-size: 30px;
+          line-height: 32px;
+          font-weight: 300; } }
+  .other-object .object__context {
+    padding: 0; }
+  .other-object .row:last-child, .other-object .down-arrow {
+    display: none; }
+
+.object__reviews .block__discount {
+  margin: 0; }
+
+.object__reviews .link {
+  display: inline-block;
+  text-decoration: none;
+  opacity: .9; }
+  @media screen and (max-width: 1025px) {
+    .object__reviews .link {
+      display: none; } }
+  .object__reviews .link img {
+    width: 31px;
+    height: 31px; }
+  .object__reviews .link span {
+    font-family: "myriad-pro", sans-serif;
+    color: #309bf7;
+    display: block;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 100;
+    padding: 10px 0 0 0; }
+  .object__reviews .link:hover {
+    opacity: 1; }
+
 
 /**
 Novostroiki

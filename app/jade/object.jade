@@ -1,12 +1,8 @@
 include layout/_headerU
-body
-    include layout/_header
-    .red-line
-        .container
-            .row
-                .col-md-5.text-left
-                    span Рекомендуем выбрать объекты с высоким рейтингом
 
+body.main-object
+    include layout/_header
+    include layout/_header-line
     include layout/_bread-crumbs
     include layout/object/_sale-image
     include layout/object/_remote-transaction
@@ -19,5 +15,8 @@ body
     include layout/object/_beside
     include layout/object/_contact
     include layout/object/_video
+    include layout/object/_reviews
+    include layout/object/_other-objects
+    include layout/_seo
     include layout/_footer
 include layout/_footerU

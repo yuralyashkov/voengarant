@@ -82,8 +82,8 @@
     }
   }
 }
-
 .object-table {
+  position: relative;
   overflow: hidden;
   margin: 40px 0 67px 0;
   @include breakpoint("max-width: 1025px") {
@@ -95,170 +95,22 @@
   font-family: $mainFontFamily;
   font-size: 16px;
   color: #777777;
-  width: (1142px / $container * 100%);
-  margin: 0 auto;
+  margin: 0 0 48px 0;
   text-align: left;
   @include breakpoint("max-width: 1025px") {
     font-size: 20px;
     width: 100%;
   }
 }
-
-/*
-.object-table {
-  .object-content {
-    display: table;
-    width: (1142px / $container * 100%);
-    margin: 0 auto;
-    border-collapse: collapse;
-
-    @include breakpoint("max-width: 1025px") {
-      display: none;
-    }
-    .content-top, .content-bottom {
-      display: table-row;
-      .reiting {
-        display: table-cell;
-        width: (142px / 1140px * 100%);
-        padding: 15px 0 0 0;
-        .blocks {
-          width: (78px / 142px * 100%);
-          height: 14px;
-          margin: 0 auto 2px auto;
-          background: linear-gradient(to bottom left, #5682ed, #9a91f9);
-          position: relative;
-          &:last-child {
-            margin: 0 auto;
-          }
-          &:first-child:before {
-            content: ' ';
-            position: absolute;
-            width: 22px;
-            height: 22px;
-            top: -70%;
-            left: 50%;
-            margin-left: -11px;
-            background: url("../images/icons/reiting-decor.png") center no-repeat;
-          }
-        }
-        &:last-child {
-          .blocks {
-            background: linear-gradient(to bottom right, #c14065, #c14065);
-            &:first-child:before {
-              background: url("../images/icons/reiting-decor-red.png") center no-repeat;
-            }
-          }
-        }
-        .reiting-content {
-          font-size: 14px;
-          font-family: $mainFontFamily;
-          color: #777777;
-          display: block;
-          @include breakpoint("max-width: 1330px"){
-            font-size: 13px;
-          }
-        }
-        .reiting-text {
-          font-family: $mainFontFamily;
-          font-size: 18px;
-          color: #333333;
-          display: block;
-          @include breakpoint("max-width: 1330px"){
-            font-size: 16px;
-          }
-
-        }
-      }
-    }
-  }
-  .reiting-content {
-    font-size: 14px;
-    font-family: $mainFontFamily;
-    color: #777777;
-    display: block;
-    @include breakpoint("max-width: 1330px") {
-      font-size: 13px;
-    }
-  }
-  .reiting-text {
-    font-family: $mainFontFamily;
-    font-size: 18px;
-    color: #333333;
-    display: block;
-    @include breakpoint("max-width: 1330px") {
-      font-size: 16px;
-    }
-  }
-
-  .xs-block {
-    @include breakpoint("min-width: 1026px") {
-      display: none;
-
-    }
-    .content {
-      display: table;
-      width: 100%;
-      .line {
-        &:first-child {
-          margin: 0 0 43px 0;
-        }
-        .block {
-          display: table-cell;
-          width: 25%;
-          .reiting {
-            &:first-child {
-              padding: 15px 0 0 0;
-              border-bottom: 1px solid #dadada;
-            }
-            .blocks {
-              width: 89px;
-              text-align: center;
-              height: 16px;
-              background-color: #00b3ee;
-              margin: 0 auto 3px auto;
-              background: linear-gradient(to bottom left, #5682ed, #9a91f9);
-              position: relative;
-              &:first-child:before {
-                content: ' ';
-                position: absolute;
-                width: 26px;
-                height: 26px;
-                top: -70%;
-                left: 50%;
-                margin-left: -13px;
-                background: url("../images/icons/reiting-decor.png") center no-repeat;
-              }
-              &:last-child {
-                margin: 0 auto;
-              }
-            }
-            .reiting-content {
-              font-size: 20px;
-              font-family: $mainFontFamily;
-              color: #777777;
-              display: block;
-              font-weight: 100;
-              line-height: 23px;
-            }
-            .reiting-text {
-              font-family: $mainFontFamily;
-              font-size: 25px;
-              color: #333333;
-              display: block;
-              font-weight: 400;
-              line-height: 28px;
-            }
-          }
-        }
-      }
-    }
-  }}*/
 .object-message {
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  margin-left: -203px;
   img {
     display: block;
     margin: 0 auto;
   }
-
   span {
     display: block;
     margin: 0 auto;
