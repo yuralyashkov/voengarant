@@ -42,6 +42,7 @@
 
       @include breakpoint("max-width: 1024px"){
         display: block;
+        width: 100%;
       }
     }
     .col-md-6:last-child{

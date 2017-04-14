@@ -11,6 +11,9 @@
     @include breakpoint("max-width: 1680px"){
       top: 27%;
     }
+    @include breakpoint("max-width: 1280px"){
+      width: 45.3%;
+    }
     @include breakpoint("max-width: 1024px"){
       display: none;
     }
@@ -34,6 +37,7 @@
     }
     @include breakpoint("max-width: 1024px"){
       padding-left: 15px;
+      width: 100%;
     }
   }
   .block__title{

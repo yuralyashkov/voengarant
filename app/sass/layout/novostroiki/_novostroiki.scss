@@ -1,31 +1,40 @@
 .novostroiki {
   .label_builders{
     margin-top: 55px;
-    margin-left: 20px;
+  }
+  .builders-tabs__tabs{
+    .tab-content{
+      padding-top: 15px;
+    }
   }
   .builders-tabs__title{
     margin-bottom: 5px;
   }
   .special {
     padding-top: 130px;
+    height: 550px;
   }
   .block__discount{
     padding-top: 220px;
     margin-bottom: 0;
   }
   .block__map{
-    padding-top: 70px;
+    padding-top: 100px;
+  }
+  .object{
+    padding-top: 50px;
   }
   .builders-tabs{
     margin-bottom: 0;
   }
   .block__developers{
-    padding-top: 160px;
+    margin-top: 160px;
   }
   .seo{
-    padding-top: 150px;
+    padding-top: 160px;
   }
   .bank{
-    padding-top: 55px;
+    padding-top: 45px;
+    padding-bottom: 105px;
   }
 }
