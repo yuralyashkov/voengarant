@@ -1,0 +1,14 @@
+mixin line-link(text, color)
+    .line.text-left(class="#{color}")
+        .container
+            .row
+                .col-xs-12.col-sm-12.col-md-12.col-lg-12
+                    a(href='')
+                        span.text #{text}
+                        span.decor >
+mixin line(text,color)
+    .line.text-left(class="#{color}")
+        .container
+            .row
+                .col-xs-12.col-sm-12.col-md-12.col-lg-12
+                    span #{text}
