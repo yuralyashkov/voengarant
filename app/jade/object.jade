@@ -1,97 +1,22 @@
 include layout/_headerU
-body
-    .admin-panel
-    header.header
-        .top
-            .top-line
-                .container-left
-                    a(href="/")
-                        img(src="./images/logo.png")
-                .container.container__header
-                    nav
-                        ul
-                            - var TopList = ['Новости', 'Информация', 'Форум', 'Отзывы', 'Калькуляторы', 'Аналитика', 'Объединение', 'Инициативы', 'Партнеры', 'Контакты']
-                            for item in TopList
-                                li
-                                    a(href='#')= item
 
-                            li.header__search-btn
-                                a(href="javascript:void(0)")
-                                    img(src="./images/icons/search.png")
-
-                .container-right
-                    a(href="javascript:void(0)")
-                        img(src="./images/icons/user.png")
-                        span Вход
-        .header__navigation
-            .top-line
-                .container-left
-                    a(href="javascript:void(0)")
-                        img(src="./images/icons/navigation_badge.png")
-                        span Регформа
-                    a(href="javascript:void(0)")
-                        img(src="./images/icons/navigation_badge.png")
-                        span Заявка в банк
-                .container.container__navigation
-                    .row.container__navigation__row
-                        .col-md-6
-                            .row
-                                .col-md-3
-                                    a(href="#")
-                                        img(src="./images/icons/navigation_menu_icon1.png")
-                                        span Новостройки
-                                .col-md-3
-                                    a(href="#")
-                                        img(src="./images/icons/navigation_menu_icon3.png")
-                                        span Эксклюзив
-                                .col-md-3
-                                    a(href="#")
-                                        img(src="./images/icons/navigation_menu_icon2.png")
-                                        span Застройщики
-                                .col-md-3
-                                    a(href="#")
-                                        img(src="./images/icons/navigation_menu_icon4.png")
-                                        span Банки
-                        .col-md-6
-                            .row
-                                .col-md-3
-                                    a(href="#")
-                                        img(src="./images/icons/navigation_menu_icon5.png")
-                                        span Ипотека повторно
-                                .col-md-3
-                                    a(href="#")
-                                        img(src="./images/icons/navigation_menu_icon6.png")
-                                        span Вопрос юристу
-                                .col-md-3
-                                    a(href="#")
-                                        img.interaction(src="./images/icons/navigation_menu_icon7.png")
-                                        span Взаимодействие
-                                .col-md-3
-                                    a(href="#")
-                                        img.interaction(src="./images/icons/navigation_menu_icon8.png")
-                                        span Контроль
-
-                .container-right
-                    a(href="#").phone 8 (800) 500-43-44
-                    a(href="#").phone 8 (495) 150-31-71
-    .red-line
-        .container
-            .row
-                .col-md-5.text-left
-                    span Рекомендуем выбрать объекты с высоким рейтингом
-
-include layout/_bread-crumbs
-include layout/object/_sale-image
-include layout/object/_remote-transaction
-include layout/object/_top-rated-developers
-include layout/object/_layouts-and-prices
-include layout/object/_map
-include layout/object/_details
-include layout/object/_attraction
-include layout/object/_infrastructure
-include layout/object/_beside
-include layout/object/_contact
-include layout/object/_video
-include layout/_footer
+body.main-object
+    include layout/_header
+    include layout/_header-line
+    include layout/_bread-crumbs
+    include layout/object/_sale-image
+    include layout/object/_remote-transaction
+    include layout/object/_top-rated-developers
+    include layout/object/_layouts-and-prices
+    include layout/object/_map
+    include layout/object/_details
+    include layout/object/_attraction
+    include layout/object/_infrastructure
+    include layout/object/_beside
+    include layout/object/_contact
+    include layout/object/_video
+    include layout/object/_reviews
+    include layout/object/_other-objects
+    include layout/_seo
+    include layout/_footer
 include layout/_footerU
-script(src="./js/home.js")

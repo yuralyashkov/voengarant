@@ -194,6 +194,8 @@
     @include breakpoint("max-width: 1024px"){
       font-size: 20px;
       padding-bottom: 60px;
+      width: 100%;
+      margin-left: 0;
 
     }
   }

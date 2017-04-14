@@ -3,41 +3,38 @@
   @include breakpoint("max-width: 1024px"){
     margin-bottom: 125px;
   }
-  .col-md-12 {
+  .row {
     padding: 0;
-
-    .row {
+    .col-md-3 ,.col-md-5{
       padding: 0;
-      .col-md-3 ,.col-md-5{
-        padding: 0;
+    }
+    .col-md-3{
+      padding-right: -15px;
+    }
+    .col-md-4{
+      padding-left: 30px;
+      @include breakpoint("max-width: 1024px"){
+        padding-top: 50px;
       }
-      .col-md-3{
-        padding-right: -15px;
-      }
-      .col-md-4{
-        padding-left: 30px;
-        @include breakpoint("max-width: 1024px"){
-          padding-top: 50px;
-        }
-      }
-      .col-md-3,.col-md-4{
+    }
+    .col-md-3,.col-md-4{
 
-        @include breakpoint("max-width: 1024px"){
-          width: 100%;
-          padding-right: 15px;
-          padding-left: 15px;
-        }
+      @include breakpoint("max-width: 1024px"){
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
       }
-      .col-md-5{
-        @include breakpoint("max-width: 1024px"){
-          width: 100%;
-          height: 325px;
-          text-align: center;
-          margin-top: 60px;
-        }
+    }
+    .col-md-5{
+      @include breakpoint("max-width: 1024px"){
+        width: 100%;
+        height: 325px;
+        text-align: center;
+        margin-top: 60px;
       }
     }
   }
+
 }
 
 .discount {
@@ -60,9 +57,12 @@
     }
     @include breakpoint("max-width: 1680px"){
       font-size: 14px;
+      margin-bottom: 10px;
+    }
+    @include breakpoint("max-width: 1280px"){
+      font-size: 12px;
       padding-left: 10px;
-      line-height: 18px;
-      margin-bottom: 15px;
+      line-height: 15px;
     }
     @include breakpoint("max-width: 1024px"){
       font-size: 30px;
@@ -79,7 +79,9 @@
       }
     @include breakpoint("max-width: 1680px"){
       font-size: 25px;
-      margin-bottom: 5px;
+    }
+    @include breakpoint("max-width: 1280px"){
+      font-size: 20px;
     }
     @include breakpoint("max-width: 1024px"){
       font-size: 60px;
@@ -93,13 +95,14 @@
     font-weight: 300;
     margin-top: 20px;
     line-height: 17px;
-    @include breakpoint("max-width: 1680px"){
+    @include breakpoint("max-width: 1480px"){
+      margin-top: 10px;
       font-size: 12px;
-      line-height: 12px;
-      margin-top: 8px;
     }
     @include breakpoint("max-width: 1280px"){
-      margin-bottom: 20px;
+      font-size: 12px;
+      line-height: 15px;
+      margin-top: 5px;
     }
     @include breakpoint("max-width: 1024px"){
       font-size: 20px;
@@ -137,16 +140,14 @@
   background-size: 100% auto;
   margin-top: -25px;
   margin-right: 15px;
-  @include breakpoint("max-width: 1920px"){
-    margin-right: 0;
+  @include breakpoint("max-width: 1480px"){
     padding: 20px;
-    margin-top: -20px;
   }
   @include breakpoint("max-width: 1024px"){
     width: 665px;
+    height: 330px;
     margin: 0;
     float: none;
-    height: 100%;
     display: inline-block;
     text-align: left;
     padding: 50px 0 40px 30px;
@@ -170,7 +171,10 @@
     margin-bottom: 60px;
     @include breakpoint("max-width: 1680px"){
       font-size: 14px;
-      margin-bottom: 40px;
+    }
+    @include breakpoint("max-width: 1280px"){
+      font-size: 12px;
+      margin-bottom: 30px;
     }
     @include breakpoint("max-width: 1024px"){
       font-size: 20px;
@@ -184,7 +188,7 @@
       text-decoration: none;
     }
     @include breakpoint("max-width: 1680px"){
-      font-size: 16px;
+      font-size: 14px;
     }
     @include breakpoint("max-width: 1024px"){
       font-size: 20px;

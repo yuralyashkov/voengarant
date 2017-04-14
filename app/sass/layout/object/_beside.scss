@@ -4,7 +4,7 @@
     margin: 0 0 123px 0;
   }
   .title {
-    @include text($titleFontFamily, #333333, block, 36px, 40px, normal);
+    @include text($titleFontFamily, #333333, block, 36px, 40px, 300);
     margin: 0 0 23px 0;
     @include breakpoint("max-width: 1025px") {
       @include text($titleFontFamily, #333333, block, 45px, 50px, 300);
@@ -55,6 +55,7 @@
             font-family: $mainFontFamily;
             font-size: 16px;
             color: #777777;
+            font-weight: 100;
             @include breakpoint("max-width: 1135px") {
               font-size: 14px;
             }

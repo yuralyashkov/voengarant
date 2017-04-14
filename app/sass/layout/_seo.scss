@@ -63,7 +63,8 @@
     padding-left: 75px;
     padding-right: 140px;
     @include breakpoint("max-width: 1024px"){
-      padding: 0;
+      padding: 0 15px;
+      width: 100%;
     }
   }
 

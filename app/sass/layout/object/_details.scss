@@ -35,8 +35,8 @@
         text-decoration: none;
         padding: 0 0 24px 0;
         box-sizing: border-box;
-        @include text($mainFontFamily, #777777, block, 18px, 18px, normal);
-        @include breakpoint("max-width: 1330px") {
+        @include text($mainFontFamily, #777777, block, 18px, 18px, 100);
+        @include breakpoint("max-width: 1500px") {
           font-size: 16px;
         }
         @include breakpoint("max-width: 1200px") {
@@ -102,7 +102,7 @@
       padding: 114px 0 0 0;
     }
     .title {
-      @include text($titleFontFamily, #1f1f1f, block, 30px, 30px, normal);
+      @include text($titleFontFamily, #1f1f1f, block, 30px, 30px, 300);
       margin: 0 0 17px 0;
       @include breakpoint("max-width: 1025px") {
         @include text($titleFontFamily, #1f1f1f, block, 45px, 50px, 300);
@@ -111,7 +111,7 @@
       }
     }
     .context {
-      @include text($mainFontFamily, #777777, block, 14px, 14px, normal);
+      @include text($mainFontFamily, #777777, block, 14px, 14px, 100);
       @include breakpoint("max-width: 1025px") {
         @include text($mainFontFamily, #777777, block, 30px, 35px, 100);
         text-align: center;
@@ -210,11 +210,6 @@
       font-size: 18px;
       color: #777777;
       line-height: 24px;
-      //@include breakpoint("max-width: 1025px") {
-      //  font-size: 25px;
-      //  line-height: 28px;
-      //  font-weight: 100;
-      //}
     }
     select > option:hover, select > option:checked, select > option::selection, select > option:active, select > option:focus {
       color: #2f97f0;
@@ -231,11 +226,11 @@
       background-color: #309bf7;
       padding: 8px 35px;
       margin: 20px 0 0 0;
-      @include breakpoint("max-width: 1330px") {
-        font-size: 16px;
+      @include breakpoint("max-width: 1400px") {
+        @include button($mainFontFamily, 16px, #ffffff, 100, none, 5px, auto, 16px, .9);
       }
       @include breakpoint("max-width: 1200px") {
-        font-size: 14px;
+        @include button($mainFontFamily, 14px, #ffffff, 100, none, 5px, auto, 14px, .9);
         padding: 8px 15px;
       }
       @include breakpoint("max-width: 1025px") {
@@ -258,13 +253,16 @@
       }
     }
     a {
-      @include text($mainFontFamily, #309bf7, inline-block, 14px, 15px, normal);
+      @include text($mainFontFamily, #309bf7, inline-block, 14px, 15px, 100);
       float: right;
       margin: 33px 0 0 0;
       text-decoration: none;
+      @include breakpoint("max-width: 1400px") {
+        font-size: 12px;
+      }
       @include breakpoint("max-width: 1025px") {
         float: none;
-        @include text($mainFontFamily, #777777, block, 35px, 32px, normal);
+        @include text($mainFontFamily, #777777, block, 35px, 32px, 100);
         margin: 0 0 40px 0;
         text-align: center;
       }
@@ -312,42 +310,15 @@
         font-size: 44px;
       }
     }
+    .link:after {
+      content: '>';
+      @include text($mainFontFamily, #309bf7, inline-block, 14px, 15px, 100);
+      padding-left: 7px;
+    }
+    .xs-link:after {
+      content: '>';
+      @include text($mainFontFamily, #777777, inline-block, 35px, 32px, 100);
+      padding-left: 18px;
+    }
   }
 }
-
-//.banks {
-//   a {
-//     display: block;
-//     text-decoration: none;
-//     img {
-//       width: 100%;
-//       padding: 55px 0 0 0;
-//       @include grayscale;
-//     }
-//     .procent {
-//       display: block;
-//       font-size: 18px;
-//       font-family: $mainFontFamily;
-//       color: #777777;
-//       margin: 20px 0 20px 0;
-//     }
-//     .license {
-//       display: block;
-//       font-size: 14px;
-//       font-family: $mainFontFamily;
-//       color: #777777;
-//       margin: 0 0 52px 0;
-//     }
-//     &:hover, &:focus, &:active {
-//       img {
-//         @include ungrayscale;
-//       }
-//       .procent {
-//         color: #0d5483;
-//       }
-//       .license {
-//         color: #333333;
-//       }
-//     }
-//   }
-// }

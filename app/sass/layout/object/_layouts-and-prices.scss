@@ -8,14 +8,14 @@
   }
 }
 .layouts-and-prices .title {
-  @include text($titleFontFamily, #333333, block, 36px, 42px, normal);
+  @include text($titleFontFamily, #333333, block, 36px, 42px, 300);
   margin: 0 0 22px 0;
   @include breakpoint("max-width: 1025px") {
     @include text($titleFontFamily, #333333, block, 45px, 50px, 400);
   }
 }
 .layouts-and-prices .context {
-  @include text($mainFontFamily, #777777, block, 18px, 20px, normal);
+  @include text($mainFontFamily, #777777, block, 18px, 20px, 100);
   margin: 0 0 52px 0;
   @include breakpoint("max-width: 1025px") {
     @include text($mainFontFamily, #777777, block, 25px, 30px, 100);
@@ -54,9 +54,9 @@
   }
 }
 .layouts-and-prices .layouts, .layouts-and-prices .price {
-  @include text($mainFontFamily, #333333, block, 18px, 18px, normal);
+  @include text($mainFontFamily, #333333, block, 18px, 18px, 100);
   @include breakpoint("max-width: 1150px") {
-    @include text($mainFontFamily, #333333, block, 16px, 17px, normal);
+    @include text($mainFontFamily, #333333, block, 16px, 17px, 100);
   }
   @include breakpoint("max-width: 1025px") {
     @include text($mainFontFamily, #333333, block, 35px, 27px, 100);
@@ -84,32 +84,30 @@
   }
   a {
     display: inline-block;
-    width: (31px / $container * 100%);
-    margin: 0 0 10px 0;
+    text-decoration: none;
     opacity: .9;
-    @include breakpoint("min-width: 1026px") {
-      max-height: 31px;
-    }
-    @include breakpoint("max-width: 1025px") {
-      width: 73px;
-      height: 73px !important;
-      margin: 0 0 20px 0;
-    }
     &:hover {
       opacity: 1;
     }
     img {
-      width: 100%;
-      height: 100%;
+      @include breakpoint("min-width: 1026px") {
+        max-height: 31px;
+      }
+      @include breakpoint("max-width: 1025px") {
+        width: 73px;
+        height: 73px !important;
+        margin: 0 0 20px 0;
+      }
     }
-  }
-  span {
-    @include text($mainFontFamily, #309bf7, block, 18px, 20px, normal);
-    @include breakpoint("max-width: 1150px") {
-      @include text($mainFontFamily, #309bf7, block, 16px, 28px, normal);
-    }
-    @include breakpoint("max-width: 1025px") {
-      @include text($mainFontFamily, #309bf7, block, 35px, 35px, 100);
+    span {
+      margin: 10px 0 0 0;
+      @include text($mainFontFamily, #309bf7, block, 18px, 20px, 100);
+      @include breakpoint("max-width: 1150px") {
+        @include text($mainFontFamily, #309bf7, block, 16px, 28px, 100);
+      }
+      @include breakpoint("max-width: 1025px") {
+        @include text($mainFontFamily, #309bf7, block, 35px, 35px, 100);
+      }
     }
   }
 }
