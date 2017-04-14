@@ -12,6 +12,7 @@
       width: 90%;
     }
     @include breakpoint("max-width: 1024px"){
+      width: 100%;
       font-size: 30px;
       color: #333333;
       font-weight: 300;
@@ -21,7 +22,7 @@
     @include breakpoint("max-width: 1024px"){
       font-size: 30px;
       font-weight: 300;
-      color: #727272;
+      color: #727272
     }
   }
   .container{
