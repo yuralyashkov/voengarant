@@ -1,0 +1,38 @@
+.calculator_block
+    .calculator_block__line
+        .row
+            .col-lg-3.text-center
+                label.calculator_block__nomination(for="amount") Стоимость квартиры:
+                input(type="text" readonly).calculator_block__count#amount
+            .col-lg-9
+                #apartmen-cost
+    .calculator_block__line
+        .row
+            .col-lg-3.text-center
+                label.calculator_block__nomination(for="storage") Размер ваших накоплений
+                input(type="text" readonly).calculator_block__count#storage
+            .col-lg-9
+                span.calculator_block__remark Укажите год и месяц вступления в программу Военная ипотека
+                #your-savings
+    //.calculator_block__line
+        .row
+            .col-lg-3.text-center
+                label.calculator_block__nomination(for="storage") Размер крудита
+                input(type="text" readonly).calculator_block__count#storage
+            .col-lg-9
+                span.calculator_block__remark Укажите свой возраст
+                #your-savings
+    .calculator_block__result
+        .row
+            .col-lg-3.text-center
+                span.name Собственные средства
+                span.result 406 066 руб.
+            .col-lg-3.text-center
+                span.name Процентная ставка
+                span.result 11.75 / 11.75
+            .col-lg-3.text-center
+                span.name Срок кредита
+                span.result 176 мес.
+            .col-lg-3.text-center
+                span.name Переплата по кредиту
+                span.result 2 627 500 руб.

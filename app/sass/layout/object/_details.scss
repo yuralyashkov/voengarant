@@ -1,5 +1,5 @@
 .details {
-  ul {
+  .list {
     list-style: none;
     margin: 0 !important;
     padding: 0 !important;
@@ -7,7 +7,7 @@
     @include breakpoint("max-width: 1025px") {
       border-bottom: none;
     }
-    li {
+    .item {
       box-sizing: border-box;
       @include breakpoint("max-width: 1025px") {
         border-bottom: 1px solid #919191;
@@ -25,13 +25,13 @@
         }
       }
       &:nth-child(3), &:nth-child(4) {
-        a {
+        .main-link {
           @include breakpoint("max-width: 1025px") {
             padding-top: 58px;
           }
         }
       }
-      a {
+      .main-link {
         text-decoration: none;
         padding: 0 0 24px 0;
         box-sizing: border-box;
@@ -48,12 +48,12 @@
         @include breakpoint("max-width: 1025px") {
           font-size: 35px;
           font-weight: 300;
-          padding-bottom: 15px;
+          padding: 0 0 15px 0;
         }
         &:hover {
           text-decoration: none;
         }
-        img {
+        .image {
           padding: 0 (8px / $container * 100%) 0 0;
           @include breakpoint("max-width: 1025px") {
             display: none;
@@ -68,7 +68,7 @@
       @include breakpoint("max-width: 1025px"){
         border-bottom: 1px solid #919191;
       }
-      a, a:focus, a:active, a:hover {
+      .main-link, .main-link:focus, .main-link:active, .main-link:hover {
         outline: none;
         color: #333333;
         font-weight: 600;
@@ -85,240 +85,69 @@
         }
         @include breakpoint("max-width: 1025px") {
           font-size: 35px;
+          //line-height: 40px;
+          //border-bottom: 4px solid #191919;
         }
       }
     }
   }
-  .calculator {
-    border: 1px solid #dcdcdc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin: 52px 0 0 0;
-    @include breakpoint("max-width: 1025px") {
-      border: none;
-      border-radius: 0;
-      padding: 114px 0 0 0;
+  #tabs-1 {
+    ul{
+      padding: 0;
+      margin: 59px ( -4.90566% / 2) 0 ( -4.90566% / 2);
+      overflow: hidden;
     }
-    .title {
-      @include text($titleFontFamily, #1f1f1f, block, 30px, 30px, 300);
-      margin: 0 0 17px 0;
-      @include breakpoint("max-width: 1025px") {
-        @include text($titleFontFamily, #1f1f1f, block, 45px, 50px, 300);
-        text-align: center;
-        margin: 0 0 47px 0;
+    li{
+      display: inline-block;
+      padding: 0 (2.641509% / 2);
+      width: ($container / 6 / $container * 100%);
+      text-align: center;
+      @include breakpoint("max-width: 1024px"){
+        width: ($container / 3/ $container * 100%);
       }
-    }
-    .context {
-      @include text($mainFontFamily, #777777, block, 14px, 14px, 100);
-      @include breakpoint("max-width: 1025px") {
-        @include text($mainFontFamily, #777777, block, 30px, 35px, 100);
-        text-align: center;
+      @include breakpoint("max-width: 1024px"){
+        margin-bottom: 50px;
       }
-      .decor-text {
-        color: #309bf7;
-        @include breakpoint("max-width: 1025px") {
-          color: #777777;
-          font-weight: 400;
-        }
-      }
-    }
-    .main {
-      margin: 0 0 42px 0;
-    }
-    form {
-      text-align: left;
-    }
-    .calculation form {
-      @include breakpoint("max-width: 1025px") {
-        text-align: center;
-      }
-    }
-    label {
-      margin: 18px 0 4px 0;
-      font-weight: 100;
-      &:first-child {
-        margin: 0 0 4px 0;
-      }
-    }
-    .calculation label {
-      @include breakpoint("max-width: 1025px") {
-        @include text($mainFontFamily, #333333, block, 30px, 35px, 300);
-        margin: 29px 0 25px 0;
-      }
-      &:first-child {
-        @include breakpoint("max-width: 1025px") {
-          margin: 0 0 25px 0;
-        }
-      }
-    }
-    .mortgage label {
-      @include breakpoint("max-width: 1025px") {
-        margin: 50px 0 8px 0;
-      }
-      @include breakpoint("max-width: 950px") {
-        text-align: left;
-        margin: 50px 0 8px 106px;
-      }
-    }
-    .second-label {
-      margin-top: 18px;
-      @include breakpoint("max-width: 1025px") {
-        margin: 30px 0 24px 0;
-      }
-    }
-    select {
-      @include text($mainFontFamily, #333333, inline-block, 18px, 20px, normal);
-      width: (250px / 572px * 100%);
-      height: 33px;
-      box-sizing: border-box;
-      border: 1px solid #d3d3d3;
-      border-radius: 5px;
-      padding-left: (22px / 572px * 100%);
-      padding-right: (22px / 572px * 100%);
-      background: url("../images/icons/select.png") right no-repeat, #fdfdfd;
-      appearance: none!important;
-      @include breakpoint("max-width: 1025px") {
-        background: url("../images/icons/select-mob.png") right no-repeat, #fdfdfd;
-        width: 488px;
-        height: 65px;
-        margin: 0 auto;
-        font-size: 30px;
-        line-height: 33px;
-        padding-left: 18px;
-        padding-right: 53px;
-        font-weight: 300;
-        color: #777777;
-        display: block;
-      }
-      &:active, &:focus {
-        outline: none;
-        box-shadow: 0px 0px 25px 0px rgba(229,236,248,1);
-      }
-      &::-ms-expand {
-        border: 1px solid #d3d3d3;
-        border-radius: 5px;
-      }
-    }
-    select > option {
-      //overflow-y: scroll;
-      //-ms-overflow-y: scroll;
-      //overflow-x: hidden;
-      //direction: ltr;
-      font-family: $mainFontFamily;
-      font-size: 18px;
-      color: #777777;
-      line-height: 24px;
-    }
-    select > option:hover, select > option:checked, select > option::selection, select > option:active, select > option:focus {
-      color: #2f97f0;
-      background-color: #fdfdfd;
-    }
-    .month {
-      margin-right: (20px / 572px * 100%);
-      @include breakpoint("max-width: 1025px") {
-        margin: 0 auto 39px auto;
-      }
-    }
-    button {
-      @include button($mainFontFamily, 18px, #ffffff, 100, none, 5px, auto, 18px, .9);
-      background-color: #309bf7;
-      padding: 8px 35px;
-      margin: 20px 0 0 0;
-      @include breakpoint("max-width: 1400px") {
-        @include button($mainFontFamily, 16px, #ffffff, 100, none, 5px, auto, 16px, .9);
-      }
-      @include breakpoint("max-width: 1200px") {
-        @include button($mainFontFamily, 14px, #ffffff, 100, none, 5px, auto, 14px, .9);
-        padding: 8px 15px;
-      }
-      @include breakpoint("max-width: 1025px") {
-        @include button($mainFontFamily, 30px, #ffffff, normal, none, 5px, auto, 25px, .9);
-        padding: 21px 70px 25px 70px;
-        margin: 35px 0 0 0;
-      }
-      &:hover, &:active {
-        opacity: 1;
-      }
-    }
-    .mortgage .xs-link {
-      @include breakpoint("min-width: 1026px") {
-        display: none;
-      }
-    }
-    .mortgage .link {
-      @include breakpoint("max-width: 1025px") {
-        display: none;
-      }
-    }
-    a {
-      @include text($mainFontFamily, #309bf7, inline-block, 14px, 15px, 100);
-      float: right;
-      margin: 33px 0 0 0;
-      text-decoration: none;
-      @include breakpoint("max-width: 1400px") {
-        font-size: 12px;
-      }
-      @include breakpoint("max-width: 1025px") {
-        float: none;
-        @include text($mainFontFamily, #777777, block, 35px, 32px, 100);
-        margin: 0 0 40px 0;
-        text-align: center;
-      }
-    }
-    input {
-      height: 33px;
-      box-sizing: border-box;
-      border: 1px solid #d3d3d3;
-      border-radius: 5px;
-      font-family: $mainFontFamily;
-      font-size: 18px;
-      color: #333333;
-      padding-left: (22px / 572px * 100%);
-      padding-right: (22px / 572px * 100%);
-      width: 100%;
-      @include breakpoint("max-width: 1200px") {
-        font-size: 16px;
-      }
-      @include breakpoint("max-width: 1025px") {
-        display: block;
-        margin: 0 auto;
-        height: 65px;
-        font-size: 30px;
-        font-weight: 300;
-        padding-left: 22px;
-        padding-right: 22px;
-        width: 488px;
-        line-height: 28px;
-      }
-    }
-    .mortgage select {
-      @include breakpoint("min-width: 1026px") {
+      span{
+        display: inline-block;
         width: 100%;
+        font-size: 18px;
+        font-weight: 600;
+        padding-top: 15px;
+        @include breakpoint("max-width: 1680px"){
+          font-size: 16px;
+        }
+        @include breakpoint("max-width: 1024px"){
+          font-size: 20px;
+          color: #777777;
+        }
+      }
+      span:last-child{
+        font-size: 14px;
+        font-weight: 300;
+        @include breakpoint("max-width: 1680px"){
+          font-size: 12px;
+        }
+        @include breakpoint("max-width: 1024px"){
+          display: none;
+        }
       }
     }
-    .mortgage button {
-      @include breakpoint("max-width: 1025px") {
-        display: block;
-        margin: 35px auto 0 auto;
+    li:hover, li:focus{
+      img{
+        @include ungrayscale;
+      }
+      span:nth-child(2){
+        color: #0e386f;
       }
     }
-    .mortgage .title {
-      @include breakpoint("max-width: 1025px") {
-        margin: 119px 0 18px 0;
-        font-size: 44px;
+    img{
+      width: 85%;
+      height: 100%;
+      @include grayscale;
+      @include breakpoint("max-width: 1024px"){
+        width: 80%;
       }
-    }
-    .link:after {
-      content: '>';
-      @include text($mainFontFamily, #309bf7, inline-block, 14px, 15px, 100);
-      padding-left: 7px;
-    }
-    .xs-link:after {
-      content: '>';
-      @include text($mainFontFamily, #777777, inline-block, 35px, 32px, 100);
-      padding-left: 18px;
     }
   }
 }
