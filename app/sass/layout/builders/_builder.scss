@@ -1,2 +1,34 @@
 .builder{
 }
+.build-title{
+  padding-top: 210px;
+  text-align: center;
+  img{
+    display: block;
+    max-width: 195px;
+    margin: 0 auto;
+  }
+  .block__text{
+    width: 58%;
+    margin: 0 auto;
+  }
+  .label_builders{
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  &__status{
+    padding-top: 20px;
+    display: inline-block;
+    img,span{
+      display: inline-block;
+      float: left;
+    }
+    img{
+      padding-right: 5px;
+      padding-top: 3px;
+    }
+  }
+  .max-reiting-inscription{
+    display: none;
+  }
+}

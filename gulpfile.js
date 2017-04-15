@@ -50,16 +50,18 @@ gulp.task('browser-sync', function () {
 gulp.task('default', ['browser-sync', 'sass', 'templates'], function () {
     gulp.watch('./app/sass/layout/*.scss', ['sass']);
     gulp.watch('./app/sass/layout/home/*.scss', ['sass']);
+    gulp.watch('./app/jade/layout/home/*.jade', ['templates']);
 
     gulp.watch('./app/sass/layout/object/*.scss', ['sass']);
     gulp.watch('./app/jade/layout/object/*.jade', ['templates']);
 
 
     gulp.watch('./app/sass/layout/novostroiki/*.scss', ['sass']);
-    gulp.watch('./app/jade/layout/home/*.jade', ['templates']);
     gulp.watch('./app/jade/layout/novostroiki.jade', ['templates']);
 
     gulp.watch('./app/sass/layout/builders/*.scss', ['sass']);
+    gulp.watch('./app/jade/layout/builders/*.jade', ['templates']);
+
     gulp.watch('./app/sass/components/*.scss', ['sass']);
     gulp.watch('./app/sass/utils/*.scss', ['sass']);
     gulp.watch('./app/sass/*.scss', ['sass']);
