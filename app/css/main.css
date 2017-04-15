@@ -8332,23 +8332,6 @@ footer {
 .object-main {
   overflow: hidden;
   margin: 3px 0 29px 0; }
-  .object-main .sale-image {
-    margin: 0 auto;
-    border-radius: 100%;
-    border-left: 1px solid #e3e3e3;
-    border-right: 1px solid #e3e3e3;
-    border-bottom: 1px solid transparent;
-    border-top: 1px solid transparent;
-    width: 41.13208%;
-    height: 545px; }
-    .object-main .sale-image .border {
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      padding: 0 43px; }
-      .object-main .sale-image .border img {
-        display: none;
-        height: 459px;
-        width: 548px; }
   .object-main .sale-information .group-title {
     position: relative; }
     .object-main .sale-information .group-title span {
@@ -8410,6 +8393,11 @@ footer {
     .object-table {
       margin: 76px 0 140px 0; } }
 
+.graphic {
+  position: relative;
+  -webkit-filter: blur(5px);
+  filter: blur(5px); }
+
 .max-reiting-inscription {
   display: block;
   font-family: "myriad-pro", sans-serif;
@@ -8424,12 +8412,12 @@ footer {
 
 .object-message {
   position: absolute;
-  top: 49%;
-  left: 50%;
-  margin-left: -203px; }
+  width: 100%;
+  height: 100%;
+  top: 0; }
   .object-message img {
     display: block;
-    margin: 0 auto; }
+    margin: 10% auto 0 auto; }
   .object-message span {
     display: block;
     margin: 0 auto;
@@ -9565,6 +9553,10 @@ footer {
     border: 1px solid #c8c8c8;
     border-radius: 5px;
     padding: 5px 10px; }
+    .calculator_block__count:active, .calculator_block__count:focus {
+      outline: none;
+      -webkit-box-shadow: 0px 0px 25px 0px #e5ecf8;
+      box-shadow: 0px 0px 25px 0px #e5ecf8; }
   .calculator_block__remark {
     font-family: "myriad-pro", sans-serif;
     color: #777777;
@@ -9593,7 +9585,8 @@ footer {
       line-height: 32px;
       font-weight: normal; }
   .calculator_block .ui-widget.ui-widget-content {
-    width: 89.48433%;
+    margin-top: 13px;
+    width: 100%;
     border: none;
     position: relative; }
   .calculator_block .ui-corner-all,
@@ -9674,6 +9667,53 @@ footer {
     left: 0; }
   .calculator_block .ui-slider-horizontal .ui-slider-range-max {
     right: 0; }
+  .calculator_block .layout-slider {
+    width: 89.48433%; }
+    .calculator_block .layout-slider__second {
+      margin-top: 20px; }
+  .calculator_block .jslider {
+    display: block;
+    width: 100%;
+    height: 1em;
+    position: relative;
+    top: .6em; }
+    .calculator_block .jslider table {
+      width: 100%;
+      vertical-align: top;
+      border-collapse: collapse;
+      border: 0;
+      border-spacing: 2px; }
+      .calculator_block .jslider table tbody {
+        display: table-row-group;
+        vertical-align: middle;
+        border-color: inherit; }
+        .calculator_block .jslider table tbody tr {
+          width: 100%;
+          vertical-align: top;
+          border-color: inherit; }
+          .calculator_block .jslider table tbody tr td {
+            width: 100%;
+            vertical-align: top;
+            padding: 0;
+            text-align: left;
+            border: 0; }
+            .calculator_block .jslider table tbody tr td .jslider-scale {
+              position: relative;
+              top: 9px; }
+              .calculator_block .jslider table tbody tr td .jslider-scale span {
+                position: absolute;
+                height: 6px;
+                border-left: 1px solid #777777;
+                font-size: 0; }
+                .calculator_block .jslider table tbody tr td .jslider-scale span ins {
+                  font-size: 14px;
+                  font-family: "myriad-pro", sans-serif;
+                  font-weight: 100;
+                  text-decoration: none;
+                  position: absolute;
+                  left: 0;
+                  top: -20px;
+                  color: #777777; }
 
 .attraction {
   margin: 87px 0 111px 0;
@@ -10079,7 +10119,7 @@ footer {
   @media screen and (msx-width: 1025px) {
     .other-object {
       margin: 146px 0 58px 0; } }
-  .other-object .title {
+  .other-object .main-title {
     font-family: "Roboto Slab", serif;
     color: #2f2f2f;
     display: block;
@@ -10088,7 +10128,7 @@ footer {
     font-weight: 300;
     margin: 0 0 23px 0; }
     @media screen and (max-width: 1025px) {
-      .other-object .title {
+      .other-object .main-title {
         font-family: "Roboto Slab", serif;
         color: #2f2f2f;
         display: block;
@@ -10096,7 +10136,7 @@ footer {
         line-height: 50px;
         font-weight: 300;
         margin: 0 0 48px 0; } }
-  .other-object .context {
+  .other-object .main-context {
     font-family: "myriad-pro", sans-serif;
     color: #2f2f2f;
     display: block;
@@ -10105,7 +10145,7 @@ footer {
     font-weight: 300;
     margin: 0 0 28px 0; }
     @media screen and (max-width: 1025px) {
-      .other-object .context {
+      .other-object .main-context {
         font-family: "myriad-pro", sans-serif;
         color: #2f2f2f;
         display: block;

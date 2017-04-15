@@ -14,18 +14,34 @@ $( function() {
         }
     });
     $( "#amount" ).val( "руб." + $( "#apartmen-cost" ).slider( "value" ) );
-} );
 
-$( function () {
-    $( "#your-savings" ).slider({
+    $( "#year" ).slider({
         range: "min",
-        value: 2006,
-        min: 2005,
-        max: 2014,
-        step: 1000,
-        slide: function( event, ui ) {
-            $( "#storage" ).val( "руб." + ui.value );
-        }
+        value: 2,
+        min: 1,
+        max: 11,
+        step: 1,
+        orientation: "horizontal",
+        animate: true
     });
-    $( "#storage" ).val( "руб." + $( "#your-savings" ).slider( "value" ) );
+
+    $( "#month" ).slider({
+        value: 10,
+        min: 1,
+        max: 12,
+        step: 1,
+        orientation: "horizontal",
+        range: "min",
+        animate: true
+    });
+
+    $( "#age" ).slider({
+        value: 30,
+        min: 25,
+        max: 45,
+        step: 1,
+        orientation: "horizontal",
+        range: "min",
+        animate: true
+    });
 } );

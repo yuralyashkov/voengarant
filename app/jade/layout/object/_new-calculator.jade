@@ -5,23 +5,162 @@
                 label.calculator_block__nomination(for="amount") Стоимость квартиры:
                 input(type="text" readonly).calculator_block__count#amount
             .col-lg-9
-                #apartmen-cost
+                .layout-slider
+                    span.jslider
+                        table
+                            tbody
+                                tr
+                                    td
+                                        .jslider-scale
+                                            span(style={left:'0%'})
+                                                ins(style={left:'-5px'}) 1
+                                            span(style={left:'10%'})
+                                                ins(style={left:'-8px'}) 2.4
+                                            span(style={left:'20%'})
+                                                ins(style={left:'-8px'}) 3.8
+                                            span(style={left:'30%'})
+                                                ins(style={left:'-9px'}) 5.2
+                                            span(style={left:'40%'})
+                                                ins(style={left:'-9px'}) 6.6
+                                            span(style={left:'50%'})
+                                                ins(style={left:'-4px'}) 8
+                                            span(style={left:'60%'})
+                                                ins(style={left:'-9px'}) 9.4
+                                            span(style={left:'70%'})
+                                                ins(style={left: '-12px'}) 10.8
+                                            span(style={left:'80%'})
+                                                ins(style={left: '-12px'}) 12.6
+                                            span(style={left:'90%'})
+                                                ins(style={left: '-12px'}) 13.6
+                                            span(style={left: '100%'})
+                                                ins(style={left: '-8px'}) 15
+                    #apartmen-cost
     .calculator_block__line
         .row
             .col-lg-3.text-center
-                label.calculator_block__nomination(for="storage") Размер ваших накоплений
-                input(type="text" readonly).calculator_block__count#storage
+                label.calculator_block__nomination Размер ваших накоплений
+                input(type="text").calculator_block__count
             .col-lg-9
-                span.calculator_block__remark Укажите год и месяц вступления в программу Военная ипотека
-                #your-savings
-    //.calculator_block__line
+                span.calculator_block__remark Укажите Год и месяц вступления в программу Военная ипотека
+                .layout-slider
+                    span.jslider
+                        table
+                            tbody
+                                tr
+                                    td
+                                        .jslider-scale
+                                            span(style={left: '0%'})
+                                                ins(style={left: '-15px'}) 2005
+                                            span(style={left: '10%'})
+                                                ins(style={left: '-14px'}) 2006
+                                            span(style={left: '20%'})
+                                                ins(style={left: '-8px'}) 2007
+                                            span(style={left: '30%'})
+                                                ins(style={left: '-15px'}) 2008
+                                            span(style={left: '40%'})
+                                                ins(style={left: '-9px'}) 2009
+                                            span(style={left: '50%'})
+                                                ins(style={left: '-15px'}) 2010
+                                            span(style={left: '60%'})
+                                                ins(style={left: '-15px'}) 2011
+                                            span(style={left: '70%'})
+                                                ins(style={left: '-15px'}) 2012
+                                            span(style={left: '80%'})
+                                                ins(style={left: '-15px'}) 2013
+                                            span(style={left: '90%'})
+                                                ins(style={left: '-15px'}) 2014
+                                            span(style={left: '100%'})
+                                                ins(style={left: '-15px'}) 2015
+                    #year
+                .layout-slider.layout-slider__second
+                    span.jslider
+                        table
+                            tbody
+                                tr
+                                    td
+                                        .jslider-scale
+                                            span(style={left: '0%'})
+                                                ins(style={left: '-5px'}) 1
+                                            span(style={left: '9.09%'})
+                                                ins(style={left: '-5px'}) 2
+                                            span(style={left: '18.18%'})
+                                                ins(style={left: '-5px'}) 3
+                                            span(style={left: '27.27%'})
+                                                ins(style={left: '-5px'}) 4
+                                            span(style={left: '36.36%'})
+                                                ins(style={left: '-5px'}) 5
+                                            span(style={left: '45.45%'})
+                                                ins(style={left: '-5px'}) 6
+                                            span(style={left: '54.54%'})
+                                                ins(style={left: '-5px'}) 7
+                                            span(style={left: '63.63%'})
+                                                ins(style={left: '-5px'}) 8
+                                            span(style={left: '72.72%'})
+                                                ins(style={left: '-5px'}) 9
+                                            span(style={left: '81.81%'})
+                                                ins(style={left: '-7px'}) 10
+                                            span(style={left: '90.9%'})
+                                                ins(style={left: '-7px'}) 11
+                                            span(style={left: '100%'})
+                                                ins(style={left: '-7px'}) 12
+                    #month
+    .calculator_block__line
         .row
             .col-lg-3.text-center
-                label.calculator_block__nomination(for="storage") Размер крудита
-                input(type="text" readonly).calculator_block__count#storage
+                label.calculator_block__nomination Размер кредита
+                input(type="text").calculator_block__count
             .col-lg-9
                 span.calculator_block__remark Укажите свой возраст
-                #your-savings
+                .layout-slider
+                    span.jslider
+                        table
+                            tbody
+                                tr
+                                    td
+                                        .jslider-scale
+                                            span(style={left: '0%'})
+                                                ins(style={left: '-7px'}) 25
+                                            span(style={left: '5%'})
+                                                ins(style={left: '-7px'}) 26
+                                            span(style={left: '10%'})
+                                                ins(style={left: '-7px'}) 27
+                                            span(style={left: '15%'})
+                                                ins(style={left: '-7px'}) 28
+                                            span(style={left: '20%'})
+                                                ins(style={left: '-7px'}) 29
+                                            span(style={left: '25%'})
+                                                ins(style={left: '-7px'}) 30
+                                            span(style={left: '30%'})
+                                                ins(style={left: '-7px'}) 31
+                                            span(style={left: '35%'})
+                                                ins(style={left: '-7px'}) 32
+                                            span(style={left: '40%'})
+                                                ins(style={left: '-7px'}) 33
+                                            span(style={left: '45%'})
+                                                ins(style={left: '-7px'}) 34
+                                            span(style={left: '50%'})
+                                                ins(style={left: '-7px'}) 35
+                                            span(style={left: '55%'})
+                                                ins(style={left: '-7px'}) 36
+                                            span(style={left: '60%'})
+                                                ins(style={left: '-7px'}) 37
+                                            span(style={left: '65%'})
+                                                ins(style={left: '-7px'}) 38
+                                            span(style={left: '70%'})
+                                                ins(style={left: '-7px'}) 39
+                                            span(style={left: '75%'})
+                                                ins(style={left: '-7px'}) 40
+                                            span(style={left: '80%'})
+                                                ins(style={left: '-7px'}) 41
+                                            span(style={left: '85%'})
+                                                ins(style={left: '-7px'}) 42
+                                            span(style={left: '90%'})
+                                                ins(style={left: '-7px'}) 43
+                                            span(style={left: '95%'})
+                                                ins(style={left: '-7px'}) 44
+                                            span(style={left: '100%'})
+                                                ins(style={left: '-7px'}) 45
+                    #age
     .calculator_block__result
         .row
             .col-lg-3.text-center
