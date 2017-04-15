@@ -2,7 +2,9 @@ include layout/_headerU
 
 body.main-object
     include layout/_header
-    include layout/_header-line
+    +line("Рекомендуем выбрать объекты с высоким рейтингом","line__red")
+    +line-link("Рекомендуем выбрать объекты с высоким рейтингом","line__red")
+    +line-link("Рекомендуем выбрать объекты с высоким рейтингом","line__blue")
     include layout/_bread-crumbs
     include layout/object/_sale-image
     include layout/object/_remote-transaction

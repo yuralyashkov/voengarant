@@ -48,6 +48,9 @@
     font-weight: 300;
     font-size: 18px;
     @include breakpoint("max-width: 1680px"){
+      font-size: 16px;
+    }
+    @include breakpoint("max-width: 1280px"){
       font-size: 14px;
     }
     a.more {
@@ -64,21 +67,11 @@
   }
 
   &__order {
-    text-align: center;
-    @include breakpoint("max-width: 1024px"){
-      text-align: left;
-    }
-
-
     form {
-      margin-top: 30px;
+      margin-top: 5px;
       ._placeholder{
-        display: none;
-        @include breakpoint("max-width: 1024px"){
           display: block;
-          padding: 10px 0;
           color: #777777;
-        }
       }
     }
 
@@ -88,13 +81,13 @@
       line-height: 38px;
       color: #fff;
       padding: 0 20px;
-      border-radius: 20px;
+      border-radius: 5px;
       display: block;
       width: 100%;
       max-width: 405px;
-      margin: 0 auto 5px;
       box-sizing: border-box;
       resize: none;
+      margin-bottom: 13px;
 
       @include breakpoint("max-width: 1024px"){
         margin: 0;
@@ -103,11 +96,6 @@
         max-width: 63.9%;
         font-size: 30px;
         height: 50px;
-      }
-    }
-    input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
-      @include breakpoint("max-width: 1024px"){
-        color: transparent;
       }
     }
 
@@ -123,9 +111,17 @@
     }
 
     button {
-      margin-top: 25px;
+      margin-top: 10px;
       font-size: 18px;
       font-weight: 300;
+      width: 155px;
+      height: 35px;
+      background: #309bf7;
+      color: #ffffff;
+      margin-left: 5px;
+      border-radius: 5px;
+      text-align: center;
+
       &:hover {
         text-decoration: underline;
         color: #fff;
@@ -133,13 +129,16 @@
       @include breakpoint("max-width: 1680px"){
         font-size: 14px;
       }
+      @include breakpoint("max-width: 1280px"){
+        font-size: 12px;
+        width: 100px;
+      }
       @include breakpoint("max-width: 1024px"){
+        font-size: 30px;
         width: 215px;
-        height: 50px;
-        background: #309bf7;
-        color: #ffffff;
+        height: 55px;
         margin-left: 0;
-        border-radius: 5px;
+        margin-top: 25px;
       }
       &:after{
         content: ' ';
@@ -148,12 +147,20 @@
 
     }
     .politic{
-      display: none;
-      @include breakpoint("max-width: 1024px"){
         display: inline-block;
         float: right;
-        margin-top: 35px;
-      }
+        margin-top: 15px;
+        @include breakpoint("max-width: 1920px"){
+          font-size: 13px;
+        }
+        @include breakpoint("max-width: 1280px"){
+          font-size: 12px;
+          margin-top: 20px;
+        }
+        @include breakpoint("max-width: 1024px"){
+          font-size: 18px;
+          margin-top: 40px;
+        }
     }
 
     .note {
@@ -180,7 +187,6 @@
 
 .slide-modal {
   background: $color;
-  padding: 65px 0 135px;
   position: relative;
   width: 100%;
   text-align: left;
@@ -191,12 +197,31 @@
     padding-bottom: 0;
   }
   .col-md-4,.col-md-7{
+    padding: 80px 106px 75px 30px;
     @include breakpoint("max-width: 1024px"){
       font-size: 20px;
+      padding-top: 50px;
       padding-bottom: 60px;
+      padding-left: 15px;
+      padding-right: 15px;
       width: 100%;
       margin-left: 0;
+    }
 
+  }
+  .col-md-4{
+    margin: 0;
+    padding-right: 15px;
+  }
+  .col-md-7{
+    width: 64.5%;
+    padding-bottom: 130px;
+    border-right: solid 1px #404040;
+    @include breakpoint("max-width: 1024px"){
+      width: 100%;
+      padding-bottom: 65px;
+      border-bottom: solid 1px #404040;
+      border-right: none;
     }
   }
   &__close {

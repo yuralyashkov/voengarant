@@ -62,6 +62,10 @@
 @import "layout/object/_map";
 //details
 @import "layout/object/_details";
+//calculator
+@import "layout/object/_calculator";
+//new-calculator
+@import "layout/object/_new-calculator";
 //attraction
 @import "layout/object/_attraction";
 //infrastructure
@@ -85,7 +89,9 @@ Novostroiki
 @import "layout/novostroiki/_novo-title";
 //slider
 @import "layout/novostroiki/_novo-slide";
-
+/**
+Builders
+ */
 //tabs builders
 @import "layout/builders/builders-tabs";
 @import "layout/builders/rate-graph-builders";
@@ -97,4 +103,7 @@ Novostroiki
 @import "layout/partners";
 //all-builders
 @import "layout/builders/all-builders";
-
+/**
+Build
+ */
+@import "layout/builders/builder";
