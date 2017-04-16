@@ -1,0 +1,54 @@
+/*CHECKBOX*/
+
+.custom-check {
+  .check {
+
+    padding: 0 0 0 22px;
+    @include myriadL(14, $mainFontFamily, 300);
+    color: color(default);
+    position: relative;
+    &:hover {
+      cursor: pointer;
+    }
+    @include breakpoint("max-width: 991px") {
+      font-size: $s20;
+    }
+  }
+
+  .checker {
+    position: absolute;
+    opacity: 0;
+    left: -9999px;
+
+  }
+
+  .checker:not(checked) + label:before {
+    background: transparent;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 1px solid rgba(10, 10, 10, 0.35);
+    content: ' ';
+    left: 0;
+    top: 2px;
+    @include breakpoint("max-width: 991px") {
+      top: 8px;
+    }
+  }
+
+  .checker:checked + label:after {
+    content: ' ';
+    width: 14px;
+    height: 14px;
+    background: #2891c0;
+    border: 1px solid #2891c0;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    @include breakpoint("max-width: 991px") {
+      top: 8px;
+    }
+  }
+}
+
+/*CHECKBOX*/

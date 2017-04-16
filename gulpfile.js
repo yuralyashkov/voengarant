@@ -51,6 +51,7 @@ gulp.task('default', ['browser-sync', 'sass', 'templates'], function () {
     gulp.watch('./app/sass/layout/*.scss', ['sass']);
     gulp.watch('./app/sass/layout/home/*.scss', ['sass']);
     gulp.watch('./app/sass/layout/builders/*.scss', ['sass']);
+    gulp.watch('./app/sass/layout/bank/*.scss', ['sass']);
     gulp.watch('./app/sass/components/*.scss', ['sass']);
     gulp.watch('./app/sass/utils/*.scss', ['sass']);
     gulp.watch('./app/sass/*.scss', ['sass']);

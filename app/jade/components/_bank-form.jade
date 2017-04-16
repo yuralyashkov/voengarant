@@ -1,0 +1,22 @@
+.bank-page__form
+    .block__title.bank-page__form-title Заявка в банк
+    .bank-page__form-description.
+        Оставляя заявку до обращения к застройщику вы становитесь<br>
+        участником скидочной программы.
+    form#bank-form
+        .bank-page__fields
+            label(for="field-1") Банки
+            input(id="field-1" type="text")
+            label(for="field-2") Фамилия Имя Отчество
+            input(id="field-2" type="text")
+            label(for="field-3") Телефон
+            input(id="field-3" type="tel")
+            label(for="field-4") Электронный адрес
+            input(id="field-4" type="email")
+            label(for="field-5") Регион нахождение объекта
+            input(id="field-5" type="text")
+        +checkbox("checker","checker","Я не робот")
+
+        .bank-page__send.clearfix
+            button(type="submit") Отправить
+            a(href="#") Политика конфиденциальности

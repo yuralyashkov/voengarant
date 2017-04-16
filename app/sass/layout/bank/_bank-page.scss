@@ -1,0 +1,40 @@
+/*BANK*/
+
+.bank-page {
+  padding: 117px 0 140px 0;
+
+  @include myriadL(18, $mainFontFamily, 300);
+  color: color(default);
+  @include breakpoint("max-width: 991px"){
+    font-size: $s30;
+    padding: 38px 0 140px 0;
+
+
+  }
+  &__logo {
+    margin: 15px 0 0 0;
+  }
+  &__title {
+    margin-top: 10px;
+    color: color(black);
+  }
+  &__level {
+    margin: 30px 0 0 0;
+    ul {
+      padding: 0 0 0 20px;
+      margin: 15px 0 0 0;
+    }
+    span {
+      font-weight: 400;
+    }
+    li {
+      margin: 0 0 30px 0;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+}
+
+/*BANK*/

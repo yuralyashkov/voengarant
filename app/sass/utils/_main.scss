@@ -4,7 +4,7 @@ body {
   padding-top: 151px;
   background: #fafafa;
 
-  @include breakpoint("max-width: 1680px"){
+  @include breakpoint("max-width: 1680px") {
     font-size: 14px;
 
   }
@@ -17,7 +17,7 @@ ul {
 .more {
   margin-left: 18px;
   color: #309bf7;
-  @include breakpoint("max-width: 1024px"){
+  @include breakpoint("max-width: 1024px") {
     font-size: 30px;
     font-weight: 300;
   }
@@ -54,10 +54,10 @@ button {
     margin-top: -25px;
     margin-bottom: 13px;
 
-    @include breakpoint("max-width: 1680px"){
+    @include breakpoint("max-width: 1680px") {
       font-size: 25px;
     }
-    @include breakpoint("max-width: 1024px"){
+    @include breakpoint("max-width: 1024px") {
 
       font-size: 45px;
     }
@@ -71,10 +71,10 @@ button {
     font-weight: 300;
     line-height: 21px;
 
-    @include breakpoint("max-width: 1680px"){
+    @include breakpoint("max-width: 1680px") {
       font-size: 14px;
     }
-    @include breakpoint("max-width: 1024px"){
+    @include breakpoint("max-width: 1024px") {
       font-size: 30px;
       line-height: 30px;
 
@@ -126,7 +126,7 @@ a {
   padding-right: 0;
   //outline: 1px solid rgba(255, 0, 0, 0.28);
 
-  @include breakpoint("max-width: 1280px"){
+  @include breakpoint("max-width: 1280px") {
     max-width: 88.8%;
   }
 
@@ -173,7 +173,7 @@ a {
     padding-right: (25px / 1920px * 100%);
   }
 
-  @include breakpoint("max-width: 1024px"){
+  @include breakpoint("max-width: 1024px") {
 
     display: none;
   }
@@ -193,12 +193,12 @@ a {
 .btn {
   font-size: 16px;
 
-  @include breakpoint("max-width: 1680px"){
+  @include breakpoint("max-width: 1680px") {
     font-size: 14px;
     width: 160px;
   }
 
-  @include breakpoint("max-width: 1024px"){
+  @include breakpoint("max-width: 1024px") {
 
     font-size: 30px;
     padding: 5px 40px;
@@ -213,11 +213,17 @@ a {
 }
 
 .p-l-none {
-  padding-left: 0 ;
+  padding-left: 0;
 }
+
 .p-r-none {
-  padding-right: 0 ;
+  padding-right: 0;
 }
-.row-none{
-  margin:0 ;
+
+.p-both-none {
+  padding: 0;
+}
+
+.row-none {
+  margin: 0;
 }

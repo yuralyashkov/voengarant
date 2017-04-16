@@ -3,38 +3,6 @@ $titleFontFamily: 'Roboto Slab', serif;
 $container: 1325px;
 $color: #303030;
 
-@mixin breakpoint($breakpoint) {
-  @media screen and ($breakpoint) {
-    @content;
-  }
-}
-
-@mixin breakpointFull($breakpoint1,$breakpoint2) {
-  @media screen and ($breakpoint1) and ($breakpoint2) {
-    @content;
-  }
-}
-
-@mixin grayscale() {
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%);
-  filter: url(../images/grayscale.svg);
-  filter: gray;
-  -webkit-filter: grayscale(1);
-}
-
-@mixin ungrayscale() {
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  -ms-filter: grayscale(0%);
-  -o-filter: grayscale(0%);
-  filter: none;
-  -webkit-filter: grayscale(0);
-}
-
 *:focus {
   outline: none !important;
 }
@@ -44,8 +12,11 @@ $color: #303030;
 $s12: 12px;
 $s14: 14px;
 $s16: 16px;
-
 $s18: 18px;
+$s20: 20px;
+$s24: 24px;
+$s30: 30px;
+$s36: 36px;
 
 //COLORS
 
@@ -54,6 +25,7 @@ $colors: (
         white: #fff,
         black: #000,
         bg: #fafafa,
+        blue-btn:#309bf7,
         light-red: #e01a22,
         light-blue: #046eb6,
         dark-blue: #164074,
@@ -63,6 +35,9 @@ $colors: (
         top-red:#fab0bf,
         top-blue:#b9b7ed,
         top-point:#f7f7f7,
+        input: #333,
+        input-focus: rgba(113, 158, 240, 0.51),
+        green-bank: #379a1e,
 );
 $color-blue-cell: (
         1: #9a91f8,
@@ -76,31 +51,4 @@ $color-blue-cell: (
         9: #6661ee,
         10: #5d58e8,
 );
-
-//_mixins.scss
-$percent: '%';
-@mixin myriadL($size,$font,$weight) {
-
-  font-size: $size + px;
-  font-family: $font;
-  font-weight: $weight;
-
-}
-
-@mixin colorGenerate() {
-
-  @each $key, $value in $color-blue-cell {
-
-    .blue-cell-#{$key} {
-      background: $value;
-
-    }
-
-  }
-
-}
-
-
-
-
 
