@@ -6123,6 +6123,9 @@ a {
   padding-left: 0;
   padding-right: 0;
   max-width: 88.8%; }
+  @media screen and (max-width: 1280px) {
+    .container {
+      max-width: 88.8%; } }
   .container__header {
     display: table-cell; }
 
@@ -10865,9 +10868,11 @@ Builders
   @media screen and (max-width: 991px) {
     .bank-programs__desktop {
       display: none; } }
-  @media screen and (max-width: 991px) {
-    .bank-programs__desktop__mobile {
-      display: block; } }
+  .bank-programs__mobile {
+    display: none; }
+    @media screen and (max-width: 991px) {
+      .bank-programs__mobile {
+        display: block; } }
   .bank-programs__title {
     display: block;
     color: #777;
