@@ -1,8 +1,10 @@
 .calculator_block
     .calculator_block__line
         .row
-            .col-lg-3.text-center
+            .col-xs-9.col-sm-9.col-md-9.col-lg-3.text-center
                 label.calculator_block__nomination(for="amount") Стоимость квартиры:
+                input(type="text" readonly).calculator_block__count#amount
+            //.xs-block.col-xs-3.col-sm-3.col-md-3
                 input(type="text" readonly).calculator_block__count#amount
             .col-lg-9
                 .layout-slider

@@ -2,6 +2,11 @@
   border: 1px solid #c8c8c8;
   border-radius: 5px;
   margin: 27px (29px / $container * 100%) 16px (29px / $container * 100%);
+  .xs-block {
+    @include breakpoint("min-width: 1026px") {
+      display: none;
+    }
+  }
   &__line {
     padding-top: 36px;
     padding-bottom: 40px;

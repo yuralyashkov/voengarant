@@ -83,16 +83,11 @@
   }
 }
 .object-table {
-  position: relative;
   overflow: hidden;
   margin: 40px 0 67px 0;
   @include breakpoint("max-width: 1025px") {
     margin: 76px 0 140px 0;
   }
-}
-.graphic {
-  position: relative;
-  filter: blur(5px);
 }
 .max-reiting-inscription {
   display: block;
@@ -106,17 +101,22 @@
     width: 100%;
   }
 }
+.reiting {
+  position: relative;
+  .object-table, .graphic {
+    filter: blur(5px);
+  }
+}
 .object-message {
   position: absolute;
-  width: 100%;
-  height: 100%;
   top: 0;
-  //top: 49%;
-  //left: 50%;
-  //margin-left: -203px;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  margin-left: -203px;
   img {
     display: block;
-    margin: 10% auto 0 auto;
+    margin: 0 auto;
   }
   span {
     display: block;
