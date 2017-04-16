@@ -6,15 +6,16 @@
 
       display: none;
     }
-    &__mobile {
-
-      @include breakpoint("max-width: 991px") {
-        display: block;
-
-      }
+  }
+  &__mobile {
+    display: none;
+    @include breakpoint("max-width: 991px") {
+      display: block;
 
     }
+
   }
+
   &__title {
     display: block;
     color: color(default);
