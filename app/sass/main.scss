@@ -1,8 +1,15 @@
 @import "utils/variables";
+
+
+//mixins
+@import "mixins/_mixin.scss";
+
+
 @import "utils/functions";
 @import "utils/_mixins";
 
 @import "components/components";
+
 //bootstrap
 @import "bootstrap";
 
@@ -57,6 +64,10 @@
 @import "layout/object/_map";
 //details
 @import "layout/object/_details";
+//calculator
+@import "layout/object/_calculator";
+//new-calculator
+@import "layout/object/_new-calculator";
 //attraction
 @import "layout/object/_attraction";
 //infrastructure
@@ -67,6 +78,22 @@
 @import "layout/object/_contact";
 //video
 @import "layout/object/_video";
+//other-object
+@import "layout/object/_other-object";
+//reviews
+@import "layout/object/_reviews";
+
+/**
+Novostroiki
+ */
+@import "layout/novostroiki/_novostroiki";
+//title
+@import "layout/novostroiki/_novo-title";
+//slider
+@import "layout/novostroiki/_novo-slide";
+/**
+Builders
+ */
 //tabs builders
 @import "layout/builders/builders-tabs";
 @import "layout/builders/rate-graph-builders";
@@ -78,7 +105,14 @@
 @import "layout/partners";
 //all-builders
 @import "layout/builders/all-builders";
+
 //bank
 @import "layout/bank/_bank-page";
 //bank-programs
 @import "layout/bank/bank-programs";
+
+/**
+Build
+ */
+@import "layout/builders/builder";
+

@@ -1,6 +1,9 @@
 .bank{
   padding-top: 55px;
   padding-bottom: 80px;
+  @include breakpoint("max-width: 1024px"){
+    padding-top: 100px;
+  }
   .block__text,.block__title,.more{
     display: block;
     text-align: center;
@@ -24,7 +27,6 @@
     padding: 0;
     margin: 0 ( -4.90566% / 2);
     overflow: hidden;
-
   }
   li{
     display: inline-block;
@@ -46,12 +48,19 @@
       @include breakpoint("max-width: 1680px"){
         font-size: 16px;
       }
+      @include breakpoint("max-width: 1024px"){
+        font-size: 20px;
+        color: #777777;
+      }
     }
     span:last-child{
       font-size: 14px;
       font-weight: 300;
       @include breakpoint("max-width: 1680px"){
         font-size: 12px;
+      }
+      @include breakpoint("max-width: 1024px"){
+        display: none;
       }
     }
   }
@@ -64,14 +73,11 @@
     }
   }
   img{
-    width: 100%;
+    width: 85%;
     height: 100%;
     @include grayscale;
     @include breakpoint("max-width: 1024px"){
       width: 80%;
     }
   }
-
-
-
 }

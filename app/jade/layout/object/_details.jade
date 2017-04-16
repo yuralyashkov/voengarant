@@ -1,108 +1,24 @@
 .details
     .container
         #tabs
-            ul.row.text-center
-                li.col-md-3.col-sm-3
-                    a(href="#tabs-1")
-                        span Банки
-                li.col-md-3.col-sm-3
-                    a(href="#tabs-2")
-                        span Как добраться
-                li.col-md-3.col-sm-3
-                    a(href="#tabs-3")
-                        span Описание
-                li.col-md-3.col-sm-3
-                    a(href="#tabs-4")
-                        img(src='./images/icons/check.png')
-                        span Общественный контроль
+            ul.list.row.text-center
+                li.item.col-xs-4.col-sm-4.col-md-4.col-lg-3
+                    a(href="#tabs-1").main-link
+                        span.text Банки
+                li.item.col-xs-8.col-sm-8.col-md-8.col-lg-3
+                    a(href="#tabs-2").main-link
+                        span.text Как добраться
+                li.item.col-xs-3.col-sm-3.col-md-3.col-lg-3
+                    a(href="#tabs-3").main-link
+                        span.text Описание
+                li.item.col-xs-9.col-sm-9.col-md-9.col-lg-3
+                    a(href="#tabs-4").main-link
+                        img(src='./images/icons/check.png').image
+                        span.text Общественный контроль
             #tabs-1
-                .row.banks
-                    .col-md-2.text-center
-                        a(href='/')
-                            img(src='./images/icons/vtb-24-logo.png')
-                            span.procent на 10,4%
-                            span.license Лицензия Банка России<br>№ Generalynaya 1000 08<br>iyulya 2015
-                    .col-md-2.text-center
-                        a(href='/')
-                            img(src='./images/icons/bank-zenit-logo.png')
-                            span.procent на 10,4%
-                            span.license Лицензия Банка России<br>№ Generalynaya 1000 08<br>iyulya 2015
-                    .col-md-2.text-center
-                        a(href='/')
-                            img(src='./images/icons/gazprombank-logo.png')
-                            span.procent на 10,4%
-                            span.license Лицензия Банка России<br>№ Generalynaya 1000 08<br>iyulya 2015
-                    .col-md-2.text-center
-                        a(href='/')
-                            img(src='./images/icons/sberbank-logo.png')
-                            span.procent на 10,4%
-                            span.license Лицензия Банка России<br>№ Generalynaya 1000 08<br>iyulya 2015
-                    .col-md-2.text-center
-                        a(href='/')
-                            img(src='./images/icons/rosselhozbank-logo.png')
-                            span.procent на 10,4%
-                            span.license Лицензия Банка России<br>№ Generalynaya 1000 08<br>iyulya 2015
-                    .col-md-2.text-center
-                        a(href='/')
-                            img(src='./images/icons/bank-rossia-logo.png')
-                            span.procent на 10,4%
-                            span.license Лицензия Банка России<br>№ Generalynaya 1000 08<br>iyulya 2015
-                .row.calculator.text-left
-                    .col-md-offset-1.col-md-5
-                        span.title Расчет накоплений участника НИС
-                        span.context.main Калькулятор учитывает доходы от инвестирования средств участников НИС, но при этом погрешность расчета может составлять
-                            span.blue-text  до 2%
-                        form
-                            label.context Возникновение права
-                            select(name="beginning-month[]").month
-                                option(desabled) Месяц
-                                option(value="January") Январь
-                                option(value="February") Февраль
-                                option(value="March") Март
-                                option(value="April") Апрель
-                                option(value="May") Май
-                                option(value="June") Июнь
-                                option(value="July") Июль
-                                option(value="August") Август
-                                option(value="September") Сентябрь
-                                option(value="October") Октябрь
-                                option(value="November") Ноябрь
-                                option(value="December") Декабрь
-                            select(name="beginning-year[]")
-                                option(desabled) Год
-                            label.context.second-label Включение в систему
-                            select(name="inclusion-month[]").month
-                                option(desabled) Месяц
-                                option(value="January") Январь
-                                option(value="February") Февраль
-                                option(value="March") Март
-                                option(value="April") Апрель
-                                option(value="May") Май
-                                option(value="June") Июнь
-                                option(value="July") Июль
-                                option(value="August") Август
-                                option(value="September") Сентябрь
-                                option(value="October") Октябрь
-                                option(value="November") Ноябрь
-                                option(value="December") Декабрь
-                            select(name="inclusion-year[]")
-                                option(desabled) Год
-                            button Рассчитать
-                    .col-md-offset-1.col-md-4
-                        span.title Ипотечный калькулятор
-                        form
-                            label.context Банк
-                            select(name="bank[]")
-                                option(desabled) Выберите банк
-                            label.context Ваш возраст
-                            input(type="text")
-                            label.context Сумма
-                            input(type="text")
-                            button Рассчитать
-                            a(href='/') Все программы банков >
+                include ../home/_bank_block
+                include _new-calculator
+                //include _calculator
             #tabs-2
-                p 4
             #tabs-3
-                p 3
             #tabs-4
-                p 2

@@ -1,6 +1,9 @@
 .block__map {
   background: #fff;
   padding-top: 135px;
+  @include breakpoint("max-width: 1024px"){
+    padding-top: 120px;
+  }
 
   .filter {
     padding-left: 15px;
@@ -109,47 +112,45 @@
       text-align: center;
     }
 
-    .map-context{
-      display: inline-block;
-      width: 95%;
-      height: 100%;
-      position: relative;
-      border:solid 1px #e4e4e4;
-
-      .search,.plus,.menus,.scr,.str{
-        position: absolute;
-        text-align: center;
-        img,span{
-          display: inline-block;
-        }
-        span{
-          width:100%;
-        }
-      }
-      .search{
-        top: -30px;
-        right: 37.5%;
-      }
-      .plus{
-        right: -24px;
-        top: 36%;
-      }
-      .menus{
-        right: -23px;
-        bottom: 31.5%;
-      }
-      .scr{
-        bottom: -85px;
-        right: 40%;
-      }
-
-      .str{
-        left: -63px;
-        top: 46.5%;
-      }
-    }
-
   }
 
+}
+.map-context{
+  display: inline-block;
+  width: 95%;
+  height: 100%;
+  position: relative;
+  border:solid 1px #e4e4e4;
 
+  .search,.plus,.menus,.scr,.str{
+    position: absolute;
+    text-align: center;
+    img,span{
+      display: inline-block;
+    }
+    span{
+      width:100%;
+    }
+  }
+  .search{
+    top: -30px;
+    right: 37.5%;
+  }
+  .plus{
+    right: -24px;
+    top: 36%;
+  }
+  .menus{
+    right: -23px;
+    bottom: 31.5%;
+  }
+  .scr{
+    bottom: -85px;
+    right: 40%;
+  }
+
+  .str{
+    left: -63px;
+    top: 46.5%;
+  }
 }

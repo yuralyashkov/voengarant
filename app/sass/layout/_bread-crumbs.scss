@@ -1,10 +1,7 @@
 .bread-crumbs {
   overflow: hidden;
-  @include breakpoint("max-width: 950px") {
+  @include breakpoint("max-width: 1025px") {
     display: none;
-  }
-  .col-md-5 {
-    padding: 0;
   }
   .bread-crumbs__list {
     list-style: none;

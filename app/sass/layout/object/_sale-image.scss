@@ -27,7 +27,7 @@
         font-family: $titleFontFamily;
         font-size: 36px;
         color: #333333;
-        @include breakpoint("max-width: 950px") {
+        @include breakpoint("max-width: 1025px") {
           font-size: 60px;
         }
       }
@@ -39,7 +39,7 @@
         top: 0;
         background-image: url("../images/icons/add-to-favorites.png");
         background-repeat: no-repeat;
-        @include breakpoint("max-width: 950px") {
+        @include breakpoint("max-width: 1025px") {
           width: 62px;
           height: 58px;
           background-size: contain;
@@ -55,7 +55,7 @@
         display: inline-block;
         vertical-align: middle;
         margin: 0 10px 0 0;
-        @include breakpoint("max-width: 950px") {
+        @include breakpoint("max-width: 1025px") {
           width: 43px;
           height: 45px;
         }
@@ -66,7 +66,7 @@
         color: #333333;
         display: inline-block;
         vertical-align: middle;
-        @include breakpoint("max-width: 950px") {
+        @include breakpoint("max-width: 1025px") {
           font-size: 30px;
         }
       }
@@ -76,107 +76,47 @@
       color: #309bf7;
       font-size: 18px;
       display: block;
-      @include breakpoint("max-width: 950px") {
+      @include breakpoint("max-width: 1025px") {
         font-size: 30px;
       }
     }
   }
 }
-
 .object-table {
+  position: relative;
   overflow: hidden;
   margin: 40px 0 67px 0;
-  .max-reiting-inscription {
+  @include breakpoint("max-width: 1025px") {
+    margin: 76px 0 140px 0;
+  }
+}
+.max-reiting-inscription {
+  display: block;
+  font-family: $mainFontFamily;
+  font-size: 16px;
+  color: #777777;
+  margin: 0 0 48px 0;
+  text-align: left;
+  @include breakpoint("max-width: 1025px") {
+    font-size: 20px;
+    width: 100%;
+  }
+}
+.object-message {
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  margin-left: -203px;
+  img {
     display: block;
-    font-family: $mainFontFamily;
-    font-size: 16px;
-    color: #777777;
-    width: (1142px / $container * 100%);
     margin: 0 auto;
-    text-align: left;
-    @include breakpoint("max-width: 950px") {
-      font-size: 20px;
-      width: 100%;
-    }
   }
-  .object-content {
-    display: table;
-    width: (1142px / $container * 100%);
-    margin: 0 auto;
-    border-collapse: collapse;
-  }
-  .content-top, .content-bottom {
-    display: table-row;
-  }
-  .reiting {
-    display: table-cell;
-    width: (142px / 1140px * 100%);
-    padding: 15px 0 0 0;
-    .blocks {
-      width: (78px / 142px * 100%);
-      height: 14px;
-      margin: 0 auto 2px auto;
-      background: linear-gradient(to bottom left, #5682ed, #9a91f9);
-      position: relative;
-      &:last-child {
-        margin: 0 auto;
-      }
-      &:first-child:before {
-        content: ' ';
-        position: absolute;
-        width: 22px;
-        height: 22px;
-        top: -70%;
-        left: 50%;
-        margin-left: -11px;
-        background: url("../images/icons/reiting-decor.png") center no-repeat;
-      }
-    }
-    &:last-child {
-      .blocks {
-        background: linear-gradient(to bottom right, #c14065, #c14065);
-        &:first-child:before {
-          background: url("../images/icons/reiting-decor-red.png") center no-repeat;
-        }
-      }
-    }
-  }
-  .reiting-content {
-    font-size: 14px;
-    font-family: $mainFontFamily;
-    color: #777777;
+  span {
     display: block;
-    @include breakpoint("max-width: 1330px") {
-      font-size: 13px;
-    }
-  }
-  .reiting-text {
-    font-family: $mainFontFamily;
+    margin: 0 auto;
+    font-family: $titleFontFamily;
     font-size: 18px;
     color: #333333;
-    display: block;
-    @include breakpoint("max-width: 1330px") {
-      font-size: 16px;
-    }
   }
-
-  .content-top {
-    border-bottom: 1px solid #e8e8e8;
-  }
-
-  .object-message {
-    img {
-      display: block;
-      margin: 0 auto;
-    }
-    span {
-      display: block;
-      margin: 0 auto;
-      font-family: $titleFontFamily;
-      font-size: 18px;
-      color: #333333;
-    }
-  }
-
 }
 

@@ -3,6 +3,34 @@ $titleFontFamily: 'Roboto Slab', serif;
 $container: 1325px;
 $color: #303030;
 
+
+@mixin breakpoint($breakpoint) {
+  @media screen and ($breakpoint) {
+    @content;
+  }
+}
+
+@mixin grayscale() {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: url(../images/grayscale.svg);
+  filter: gray;
+  -webkit-filter: grayscale(1);
+}
+
+@mixin ungrayscale() {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+
 *:focus {
   outline: none !important;
 }

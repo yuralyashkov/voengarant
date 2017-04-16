@@ -3,4 +3,8 @@
   height: 842px;
   margin: 0 0 154px 0;
   background-color: #5f5868;
+  @include breakpoint("max-width: 950px") {
+    height: 730px;
+    margin: 0 0 120px 0;
+  }
 }

@@ -1,6 +1,9 @@
 .analitic{
   padding-top: 225px;
   font-size: 18px;
+  @include breakpoint("max-width: 1024px"){
+    padding-top: 130px;
+  }
   @include breakpoint("max-width: 1680px"){
     font-size: 16px;
   }
@@ -9,18 +12,17 @@
       width: 90%;
     }
     @include breakpoint("max-width: 1024px"){
+      width: 100%;
       font-size: 30px;
       color: #333333;
       font-weight: 300;
-      padding: 0;
     }
   }
   .col-md-1{
     @include breakpoint("max-width: 1024px"){
       font-size: 30px;
       font-weight: 300;
-      color: #727272;
-      padding: 0;
+      color: #727272
     }
   }
   .container{

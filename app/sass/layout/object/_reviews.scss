@@ -1,0 +1,32 @@
+.object__reviews {
+  .block__discount {
+    margin: 0;
+  }
+  .link {
+    display: inline-block;
+    text-decoration: none;
+    opacity: .9;
+    @include breakpoint("max-width: 1025px") {
+      margin: 136px 0 0 0;
+    }
+    img {
+      width: 31px;
+      height: 31px;
+      @include breakpoint("max-width: 1025px") {
+        width: 86px;
+        height: 86px;
+      }
+    }
+    span {
+      @include text($mainFontFamily, #309bf7, block, 18px, 20px, 100);
+      padding: 10px 0 0 0;
+      @include breakpoint("max-width: 1025px") {
+        @include text($mainFontFamily, #309bf7, block, 35px, 37px, 100);
+        padding: 20px 0 0 0;
+      }
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

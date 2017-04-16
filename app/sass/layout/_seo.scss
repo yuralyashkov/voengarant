@@ -2,6 +2,9 @@
   padding-top: 230px;
   background: url(../images/special_bg.png) no-repeat;
   background-size: cover;
+  @include breakpoint("max-width: 1024px"){
+    padding-top: 180px;
+  }
   .block__title{
     font-size: 36px;
     font-weight: 300;
@@ -60,7 +63,8 @@
     padding-left: 75px;
     padding-right: 140px;
     @include breakpoint("max-width: 1024px"){
-      padding: 0;
+      padding: 0 15px;
+      width: 100%;
     }
   }
 
