@@ -80,7 +80,7 @@
         color: color(link-more);
 
       }
-      @include breakpoint("max-width:1725px") {
+      @include breakpoint("max-width:1312px") {
         float: left;
       }
       @include breakpoint("max-width: 991px") {
