@@ -1,0 +1,39 @@
+section.bank-page
+    .container
+        .row
+            .col-lg-6.col-md-6.p-l-none
+                .bank-page__logo
+                    img(src="./images/icons/sber-p.png" alt="")
+                .block__title.bank-page__title Военная ипотека от сбербанка
+                .bank-page__description
+                    p.
+                        Сбербанк является основным кредитором российской экономики и занимает
+                        крупнейшую долю на рынке вкладов.
+                .bank-page__level
+                    span После отправки заявки:
+                    ul
+                        li.
+                            нв вашу почту придет анкета от банка, распечатайте ее, заполните
+                                и сделайте скан;
+                        li.
+                            сделайте скан свидетельства участника НИС;
+                        li.
+                            сделайте скан паспорта;
+                        li.
+                            отправти сканы Ваших документов и заполненной анкеты на
+                               электронную  почту специалиста банка, которую Вы найдете в
+                               письме с анкетой;
+
+                        li.
+                            дождитесь звонка специалиста банка или свяжитесь с ним  сами, по
+                                указанному в письме с анкетой телефону
+
+
+            .bank-page__desktop
+                .col-lg-5.col-md-5.col-md-offset-1.col-lg-offset-1
+                    include ../../components/_bank-form
+    .bank-page__mobile
+        .row.row-none
+            .col-sm-12.col-md-12.col-xs-12.p-both-none
+                include ../../components/_bank-form
+

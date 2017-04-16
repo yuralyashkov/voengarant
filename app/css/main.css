@@ -2,6 +2,15 @@
 *:focus {
   outline: none !important; }
 
+/*
+    btnSend - голубая кнопка отправки;
+    myriadL - описание шрифта
+    colorGenerate - генерация цвета для графика
+    breakpoint - медиазапросы
+    grayscale - выцветание
+    ungrayscale - цветность
+
+*/
 /*DOWN ARROW*/
 .down-arrow {
   width: 100%;
@@ -34,6 +43,147 @@
   margin: 95px 0 26px 0; }
 
 /*END LOCATE-LABEL*/
+/*BANK-FORM*/
+.bank-page__mobile {
+  display: none; }
+  @media screen and (max-width: 991px) {
+    .bank-page__mobile {
+      display: block;
+      margin: 67px 0 0 0; } }
+
+@media screen and (max-width: 991px) {
+  .bank-page__desktop {
+    display: none; } }
+
+.bank-page .bank-page__form {
+  padding: 25px 60px;
+  border: 1px solid #dcdcdc; }
+  @media screen and (max-width: 991px) {
+    .bank-page .bank-page__form {
+      border-left: none;
+      border-right: none; } }
+  .bank-page .bank-page__form-title {
+    font-size: 30px;
+    margin-top: 0;
+    color: #000; }
+    @media screen and (max-width: 991px) {
+      .bank-page .bank-page__form-title {
+        font-size: 36px; } }
+  .bank-page .bank-page__form-description {
+    font-size: 14px; }
+    @media screen and (max-width: 991px) {
+      .bank-page .bank-page__form-description {
+        display: none; } }
+
+.bank-page__fields {
+  margin: 20px 0 0 0; }
+  .bank-page__fields input {
+    width: 100%;
+    margin: 0 0 4px 0;
+    border-radius: 5px;
+    border: 1px solid rgba(172, 172, 172, 0.5);
+    padding: 5px 20px;
+    color: #333;
+    -webkit-transition: .2s;
+    transition: .2s; }
+    .bank-page__fields input:focus {
+      -webkit-box-shadow: 0 0 10px rgba(113, 158, 240, 0.51);
+      box-shadow: 0 0 10px rgba(113, 158, 240, 0.51); }
+    @media screen and (max-width: 991px) {
+      .bank-page__fields input {
+        width: 65%; } }
+  .bank-page__fields label {
+    font-size: 14px;
+    font-weight: 300; }
+    @media screen and (max-width: 991px) {
+      .bank-page__fields label {
+        font-size: 24px;
+        width: 100%; } }
+
+.bank-page__send {
+  width: 100%;
+  margin: 12px 0 0 0; }
+  .bank-page__send a {
+    float: right;
+    color: #309bf7;
+    font-size: 14px;
+    margin: 10px 0 0 0;
+    -webkit-transition: .2s;
+    transition: .2s; }
+    .bank-page__send a:hover {
+      color: #309bf7; }
+    @media screen and (max-width: 1725px) {
+      .bank-page__send a {
+        float: left; } }
+    @media screen and (max-width: 991px) {
+      .bank-page__send a {
+        float: right;
+        font-size: 20px; } }
+
+.bank-page button {
+  width: 155px;
+  height: 35px;
+  color: #fff;
+  background: #309bf7;
+  border-radius: 5px;
+  opacity: .9;
+  -webkit-transition: .2s;
+  transition: .2s;
+  float: left; }
+  .bank-page button:hover {
+    opacity: 1; }
+  @media screen and (max-width: 991px) {
+    .bank-page button {
+      width: 215px;
+      height: 54px; } }
+
+/*BANK-FORM*/
+/*CHECKBOX*/
+.custom-check .check {
+  padding: 0 0 0 22px;
+  font-size: 14px;
+  font-family: "myriad-pro", sans-serif;
+  font-weight: 300;
+  color: #777;
+  position: relative; }
+  .custom-check .check:hover {
+    cursor: pointer; }
+  @media screen and (max-width: 991px) {
+    .custom-check .check {
+      font-size: 20px; } }
+
+.custom-check .checker {
+  position: absolute;
+  opacity: 0;
+  left: -9999px; }
+
+.custom-check .checker:not(checked) + label:before {
+  background: transparent;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 1px solid rgba(10, 10, 10, 0.35);
+  content: ' ';
+  left: 0;
+  top: 2px; }
+  @media screen and (max-width: 991px) {
+    .custom-check .checker:not(checked) + label:before {
+      top: 8px; } }
+
+.custom-check .checker:checked + label:after {
+  content: ' ';
+  width: 14px;
+  height: 14px;
+  background: #2891c0;
+  border: 1px solid #2891c0;
+  position: absolute;
+  left: 0;
+  top: 2px; }
+  @media screen and (max-width: 991px) {
+    .custom-check .checker:checked + label:after {
+      top: 8px; } }
+
+/*CHECKBOX*/
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -6033,6 +6183,9 @@ a {
 .p-r-none {
   padding-right: 0; }
 
+.p-both-none {
+  padding: 0; }
+
 .row-none {
   margin: 0; }
 
@@ -10676,6 +10829,121 @@ Builders
       width: 100%; }
 
 /*ALL-BUILDERS*/
+/*BANK*/
+.bank-page {
+  padding: 117px 0 140px 0;
+  font-size: 18px;
+  font-family: "myriad-pro", sans-serif;
+  font-weight: 300;
+  color: #777; }
+  @media screen and (max-width: 991px) {
+    .bank-page {
+      font-size: 30px;
+      padding: 38px 0 140px 0; } }
+  .bank-page__logo {
+    margin: 15px 0 0 0; }
+  .bank-page__title {
+    margin-top: 10px;
+    color: #000; }
+  .bank-page__level {
+    margin: 30px 0 0 0; }
+    .bank-page__level ul {
+      padding: 0 0 0 20px;
+      margin: 15px 0 0 0; }
+    .bank-page__level span {
+      font-weight: 400; }
+    .bank-page__level li {
+      margin: 0 0 30px 0; }
+      .bank-page__level li:last-child {
+        margin: 0; }
+
+/*BANK*/
+/*BANK-PROGRAMS*/
+.bank-programs {
+  padding: 107px 0;
+  background: #379a1e; }
+  @media screen and (max-width: 991px) {
+    .bank-programs__desktop {
+      display: none; } }
+  @media screen and (max-width: 991px) {
+    .bank-programs__desktop__mobile {
+      display: block; } }
+  .bank-programs__title {
+    display: block;
+    color: #777;
+    font-size: 16px;
+    font-family: "myriad-pro", sans-serif;
+    font-weight: 300; }
+    @media screen and (max-width: 991px) {
+      .bank-programs__title {
+        font-size: 20px; } }
+  .bank-programs__name {
+    font-size: 24px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    color: #333; }
+    @media screen and (max-width: 1595px) {
+      .bank-programs__name {
+        font-size: 20px; } }
+    @media screen and (max-width: 991px) {
+      .bank-programs__name {
+        font-size: 30px;
+        margin: 0 0 60px 0;
+        display: block; } }
+  .bank-programs__program {
+    background: #fff;
+    padding: 65px 90px 0 90px;
+    border-radius: 15px;
+    margin: 0 0 34px 0; }
+    .bank-programs__program:last-child {
+      margin: 0; }
+    @media screen and (max-width: 1386px) {
+      .bank-programs__program {
+        padding: 0;
+        position: relative; }
+        .bank-programs__program:before {
+          content: ' ';
+          display: block;
+          width: 100%;
+          height: 1px;
+          position: absolute;
+          background: rgba(147, 147, 147, 0.11);
+          top: 280px; } }
+  .bank-programs__list {
+    list-style: none;
+    padding: 0 0 0 16.66667%;
+    margin: 0;
+    font-weight: 300; }
+    @media screen and (max-width: 1386px) {
+      .bank-programs__list {
+        padding: 0 0 0 10%; } }
+    @media screen and (max-width: 991px) {
+      .bank-programs__list {
+        padding: 0;
+        margin: 72px 0 0 0; } }
+    .bank-programs__list .bank-programs__name {
+      margin: 0; }
+    .bank-programs__list li {
+      float: left;
+      width: 21.2766%;
+      margin: 0 17.85714% 45px 0; }
+      .bank-programs__list li:nth-child(3n) {
+        margin: 0 0 45px 0; }
+      @media screen and (max-width: 991px) {
+        .bank-programs__list li {
+          width: 40%;
+          margin: 0 20% 45px 0; }
+          .bank-programs__list li:nth-child(3n) {
+            margin: 0 20% 45px 0; }
+          .bank-programs__list li:nth-child(2n) {
+            margin: 0 0 45px 0; } }
+
+.bank-programs__inner {
+  padding: 65px 51px 0 51px;
+  border-radius: 15px;
+  background: white; }
+
+/*BANK-PROGRAMS*/
 /**
 Build
  */
