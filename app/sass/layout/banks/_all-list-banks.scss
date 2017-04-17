@@ -1,0 +1,21 @@
+.all-list-banks {
+  .title {
+    @include text($titleFontFamily, #333333, block, 36px, 40px, 300);
+    margin: 0 0 31px 0;
+    @include breakpoint("max-width: 1025px") {
+      @include text($titleFontFamily, #333333, block, 45px, 50px, 300);
+      margin: 0 0 24px 0;
+    }
+  }
+  .context {
+    @include text($mainFontFamily, #777777, block, 18px, 20px, 100);
+    margin: 0 0 86px 0;
+    @include breakpoint("max-width: 1025px") {
+      @include text($mainFontFamily, #777777, block, 30px, 35px, 100);
+      margin: 0 0 78px 0;
+      br {
+        display: none;
+      }
+    }
+  }
+}
