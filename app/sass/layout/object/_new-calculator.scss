@@ -2,9 +2,24 @@
   border: 1px solid #c8c8c8;
   border-radius: 5px;
   margin: 27px (29px / $container * 100%) 16px (29px / $container * 100%);
+  @include breakpoint("max-width: 1025px") {
+    border-top: 1px solid #c8c8c8;
+    border-bottom: 1px solid #c8c8c8;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    margin: 60px auto 152px auto;
+  }
   .xs-block {
     @include breakpoint("min-width: 1026px") {
       display: none;
+    }
+  }
+  .col-lg-3 {
+    .calculator_block__count {
+      @include breakpoint("max-width: 1025px") {
+        display: none;
+      }
     }
   }
   &__line {
@@ -14,10 +29,19 @@
     &:nth-last-child(2) {
       border: none;
     }
+    @include breakpoint("max-width: 1025px") {
+      padding-top: 60px;
+      padding-bottom: 50px;
+    }
   }
   &__nomination {
     @include text($mainFontFamily, #777777, block, 18px, 22px, 100);
     margin: 0 0 16px 0;
+    @include breakpoint("max-width: 1025px") {
+      text-align: left;
+      @include text($mainFontFamily, #777777, block, 30px, 32px, 100);
+      margin: 0;
+    }
   }
   &__count {
     @include text($titleFontFamily, #333333, inline-block, 18px, 22px, normal);
@@ -25,6 +49,12 @@
     border: 1px solid #c8c8c8;
     border-radius: 5px;
     padding: 5px 10px;
+    @include breakpoint("max-width: 1025px") {
+      @include text($titleFontFamily, #333333, inline-block, 30px, 32px, normal);
+      width: 200px;
+      float: right;
+      padding: 12px 30px;
+    }
     &:active, &:focus {
       outline: none;
       box-shadow: 0px 0px 25px 0px rgba(229,236,248,1);
@@ -34,16 +64,31 @@
     @include text($mainFontFamily, #777777, block, 16px, 20px, 100);
     margin: 0 0 21px 0;
     text-align: left;
+    @include breakpoint("max-width: 1025px") {
+      @include text($mainFontFamily, #777777, block, 25px, 27px, 100);
+      margin: 45px 0 40px 0;
+    }
   }
   &__result {
     background-color: #309bf7;
     padding-top: 19px;
     padding-bottom: 25px;
+    @include breakpoint("max-width: 1025px") {
+      padding: 40px 0 7px 0;
+    }
     .name {
       @include text($mainFontFamily, #d0d0d0, block, 18px, 32px, 100);
+      @include breakpoint("max-width: 1025px") {
+        @include text($mainFontFamily, #d0d0d0, block, 25px, 28px, 100);
+        margin: 0 0 25px 0;
+      }
     }
     .result {
       @include text($titleFontFamily, #ffffff, block, 24px, 32px, normal);
+      @include breakpoint("max-width: 1025px") {
+        @include text($titleFontFamily, #ffffff, block, 36px, 28px, normal);
+        margin: 0 0 40px 0;
+      }
     }
   }
 
@@ -147,10 +192,16 @@
 
 
   .layout-slider {
-    //margin-bottom: 60px;
     width: (885px / 989px * 100%);
+    @include breakpoint("max-width: 1025px") {
+      width: 100%;
+      margin: 56px 0 0 0;
+    }
     &__second {
       margin-top: 20px;
+      @include breakpoint("max-width: 1025px") {
+        margin: 60px 0 0 0;
+      }
     }
   }
   .jslider {
@@ -196,6 +247,283 @@
                   left: 0;
                   top: -20px;
                   color: #777777;
+                  @include breakpoint("max-width: 1025px") {
+                    font-size: 25px;
+                    top: -40px;
+                  }
+                }
+              }
+              .space-11 {
+                $list-11: 0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100%;
+                $list-11__mob: 0%, 20%, 40%, 60%, 80%, 100%;
+                &:nth-child(2), &:nth-child(4), &:nth-child(6), &:nth-child(8), &:nth-child(10) {
+                  @include breakpoint("max-width: 1025px") {
+                    display: none;
+                  }
+                }
+                &:nth-child(1) {
+                  left: nth($list-11, 1);
+                  @include breakpoint("max-width: 1025px") {
+                    left: nth($list-11__mob, 1);
+                  }
+                }
+                &:nth-child(2) {
+                  left: nth($list-11, 2);
+                }
+                &:nth-child(3) {
+                  left: nth($list-11, 3);
+                  @include breakpoint("max-width: 1025px") {
+                    left: nth($list-11__mob, 2);
+                  }
+                }
+                &:nth-child(4) {
+                  left: nth($list-11, 4);
+                }
+                &:nth-child(5) {
+                  left: nth($list-11, 5);
+                  @include breakpoint("max-width: 1025px") {
+                    left: nth($list-11__mob, 3);
+                  }
+                }
+                &:nth-child(6) {
+                  left: nth($list-11, 6);
+                }
+                &:nth-child(7) {
+                  left: nth($list-11, 7);
+                  @include breakpoint("max-width: 1025px") {
+                    left: nth($list-11__mob, 4);
+                  }
+                }
+                &:nth-child(8) {
+                  left: nth($list-11, 8);
+                }
+                &:nth-child(9) {
+                  left: nth($list-11, 9);
+                  @include breakpoint("max-width: 1025px") {
+                    left: nth($list-11__mob, 5);
+                  }
+                }
+                &:nth-child(10) {
+                  left: nth($list-11, 10);
+                }
+                &:nth-child(11) {
+                  left: nth($list-11, 11);
+                  @include breakpoint("max-width: 1025px") {
+                    left: nth($list-11__mob, 6);
+                  }
+                }
+              }
+              .space-13 {
+                $list-13: 0% 9.09% 18.18% 27.27% 36.36% 45.45% 54.54% 63.63% 72.72% 81.81% 90.9% 100%;
+                &:nth-child(2), &:nth-child(4), &:nth-child(6), &:nth-child(8), &:nth-child(10), &:nth-child(12) {
+                  @include breakpoint("max-width: 1025px") {
+                    display: none;
+                  }
+                }
+                &:nth-child(1) {
+                  left: nth($list-13, 1);
+                }
+                &:nth-child(2) {
+                  left: nth($list-13, 2);
+                }
+                &:nth-child(3) {
+                  left: nth($list-13, 3);
+                }
+                &:nth-child(4) {
+                  left: nth($list-13, 4);
+                }
+                &:nth-child(5) {
+                  left: nth($list-13, 5);
+                }
+                &:nth-child(6) {
+                  left: nth($list-13, 6);
+                }
+                &:nth-child(7) {
+                  left: nth($list-13, 7);
+                }
+                &:nth-child(8) {
+                  left: nth($list-13, 8);
+                }
+                &:nth-child(9) {
+                  left: nth($list-13, 9);
+                }
+                &:nth-child(10) {
+                  left: nth($list-13, 10);
+                }
+                &:nth-child(11) {
+                  left: nth($list-13, 11);
+                }
+                &:nth-child(12) {
+                  left: nth($list-13, 12);
+                }
+              }
+              .space-21 {
+                $list-21: 0% 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% 100%;
+                &:nth-child(2), &:nth-child(4), &:nth-child(6), &:nth-child(8), &:nth-child(10), &:nth-child(12), &:nth-child(14), &:nth-child(16), &:nth-child(18), &:nth-child(20) {
+                  @include breakpoint("max-width: 1025px") {
+                    display: none;
+                  }
+                }
+                &:nth-child(1) {
+                  left: nth($list-21, 1);
+                }
+                &:nth-child(2) {
+                  left: nth($list-21, 2);
+                }
+                &:nth-child(3) {
+                  left: nth($list-21, 3);
+                }
+                &:nth-child(4) {
+                  left: nth($list-21, 4);
+                }
+                &:nth-child(5) {
+                  left: nth($list-21, 5);
+                }
+                &:nth-child(6) {
+                  left: nth($list-21, 6);
+                }
+                &:nth-child(7) {
+                  left: nth($list-21, 7);
+                }
+                &:nth-child(8) {
+                  left: nth($list-21, 8);
+                }
+                &:nth-child(9) {
+                  left: nth($list-21, 9);
+                }
+                &:nth-child(10) {
+                  left: nth($list-21, 10);
+                }
+                &:nth-child(11) {
+                  left: nth($list-21, 11);
+                }
+                &:nth-child(12) {
+                  left: nth($list-21, 12);
+                }
+                &:nth-child(13) {
+                  left: nth($list-21, 13);
+                }
+                &:nth-child(14) {
+                  left: nth($list-21, 14);
+                }
+                &:nth-child(15) {
+                  left: nth($list-21, 15);
+                }
+                &:nth-child(16) {
+                  left: nth($list-21, 16);
+                }
+                &:nth-child(17) {
+                  left: nth($list-21, 17);
+                }
+                &:nth-child(18) {
+                  left: nth($list-21, 18);
+                }
+                &:nth-child(19) {
+                  left: nth($list-21, 19);
+                }
+                &:nth-child(20) {
+                  left: nth($list-21, 20);
+                }
+                &:nth-child(21) {
+                  left: nth($list-21, 21);
+                }
+              }
+
+              .simple {
+                left: -5px;
+                @include breakpoint("max-width: 1025px") {
+                  left: -7px;
+                }
+              }
+              .simple__too {
+                left: -4px;
+              }
+              .simple-dot {
+                left: -8px;
+                @include breakpoint("max-width: 1025px") {
+                  left: -13px;
+                }
+              }
+              .simple-dot__too {
+                left: -9px;
+                @include breakpoint("max-width: 1025px") {
+                  left: -15px;
+                }
+              }
+              .complex {
+                left: -12px;
+                @include breakpoint("max-width: 1025px") {
+                  left: -20px;
+                }
+              }
+              .complex__too {
+                left: -7px;
+                @include breakpoint("max-width: 1025px") {
+                  left: -15px;
+                }
+              }
+              .year__complex {
+                left: -15px;
+                @include breakpoint("max-width: 1025px") {
+                  left: -25px;
+                }
+              }
+              .year__complex__too {
+                left: -14px;
+                @include breakpoint("max-width: 1025px") {
+                  left: -25px;
+                }
+              }
+              .year__simple-dot {
+                left: -8px;
+                @include breakpoint("max-width: 1025px") {
+                  left: -25px;
+                }
+              }
+              .year__simple-dot__too {
+                left: -9px;
+                @include breakpoint("max-width: 1025px") {
+                  left: -25px;
+                }
+              }
+            }
+            .xs-block {
+              .space-11 {
+                $list-11__mob: 0%, 20%, 40%, 60%, 80%, 100%;
+                &:nth-child(2), &:nth-child(4), &:nth-child(6), &:nth-child(8), &:nth-child(10) {
+                  @include breakpoint("max-width: 1025px") {
+                    display: none;
+                  }
+                }
+                &:nth-child(1) {
+                  @include breakpoint("max-width: 1025px") {
+                    left: nth($list-11__mob, 1);
+                  }
+                }
+                &:nth-child(3) {
+                  @include breakpoint("max-width: 1025px") {
+                    left: nth($list-11__mob, 2);
+                  }
+                }
+                &:nth-child(5) {
+                  @include breakpoint("max-width: 1025px") {
+                    left: nth($list-11__mob, 3);
+                  }
+                }
+                &:nth-child(7) {
+                  @include breakpoint("max-width: 1025px") {
+                    left: nth($list-11__mob, 4);
+                  }
+                }
+                &:nth-child(9) {
+                  @include breakpoint("max-width: 1025px") {
+                    left: nth($list-11__mob, 5);
+                  }
+                }
+                &:nth-child(10) {
+                  @include breakpoint("max-width: 1025px") {
+                    left: nth($list-11__mob, 6);
+                  }
                 }
               }
             }
