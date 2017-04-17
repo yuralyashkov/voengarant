@@ -74,6 +74,7 @@
       width: 91%;
       margin-left: 5px;
       background: #005c9d;
+      border-radius: 5px;
       @include breakpoint("max-width: 1024px"){
         width: 90%;
         margin-left: 0;
