@@ -9,6 +9,7 @@ $( function() {
         min: 1,
         max: 15,
         step: 0.1,
+        animate: true,
         slide: function( event, ui ) {
             $( "#amount" ).val( "руб." + ui.value );
         }
