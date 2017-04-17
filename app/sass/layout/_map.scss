@@ -99,15 +99,14 @@
   }
   .col-md-5{
     padding-top: 25px;
-    @include breakpoint("max-width: 1280px"){
+    @include breakpoint("max-width: 1024px"){
       width: 100%;
     }
   }
   .col-md-7{
-
     height: 700px;
     padding-left: 0 ;
-    @include breakpoint("max-width: 1280px"){
+    @include breakpoint("max-width: 1024px"){
       width: 100%;
       text-align: center;
     }

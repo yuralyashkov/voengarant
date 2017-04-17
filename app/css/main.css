@@ -5972,13 +5972,7 @@ a {
   margin: 0 auto;
   padding-left: 0;
   padding-right: 0;
-  max-width: 88.8%;
-  /* @include breakpoint("max-width: 1480px"){
-    max-width: 80.8%;
-  }
-  @include breakpoint("max-width: 1097px"){
-    max-width: 88.8%;
-  }*/ }
+  max-width: 88.8%; }
   .container__header {
     display: table-cell; }
 
@@ -6241,11 +6235,9 @@ a {
       padding: 0; }
     .block__discount .row .col-md-3 {
       padding-right: -15px; }
-    .block__discount .row .col-md-4 {
-      padding-left: 30px; }
-      @media screen and (max-width: 1024px) {
-        .block__discount .row .col-md-4 {
-          padding-top: 50px; } }
+    @media screen and (max-width: 1024px) {
+      .block__discount .row .col-md-4 {
+        padding-top: 50px; } }
     @media screen and (max-width: 1024px) {
       .block__discount .row .col-md-3, .block__discount .row .col-md-4 {
         width: 100%;
@@ -6839,13 +6831,13 @@ a {
       font-weight: 600; }
   .block__map .col-md-5 {
     padding-top: 25px; }
-    @media screen and (max-width: 1280px) {
+    @media screen and (max-width: 1024px) {
       .block__map .col-md-5 {
         width: 100%; } }
   .block__map .col-md-7 {
     height: 700px;
     padding-left: 0; }
-    @media screen and (max-width: 1280px) {
+    @media screen and (max-width: 1024px) {
       .block__map .col-md-7 {
         width: 100%;
         text-align: center; } }
@@ -10200,41 +10192,21 @@ footer {
 /**
 Novostroiki
  */
-.novostroiki .label_builders {
-  margin-top: 55px; }
-
-.novostroiki .builders-tabs__tabs .tab-content {
-  padding-top: 15px; }
-
-.novostroiki .builders-tabs__title {
-  margin-bottom: 5px; }
-
 .novostroiki .special {
-  padding-top: 130px;
-  height: 550px; }
+  padding-top: 130px; }
 
 .novostroiki .block__discount {
   padding-top: 220px;
   margin-bottom: 0; }
 
-.novostroiki .block__map {
-  padding-top: 100px; }
-
-.novostroiki .object {
-  padding-top: 50px; }
-
-.novostroiki .builders-tabs {
-  margin-bottom: 0; }
-
 .novostroiki .block__developers {
-  margin-top: 160px; }
-
-.novostroiki .seo {
   padding-top: 160px; }
 
+.novostroiki .seo {
+  padding-top: 150px; }
+
 .novostroiki .bank {
-  padding-top: 45px;
-  padding-bottom: 105px; }
+  padding-top: 55px; }
 
 .novotitle {
   padding-top: 40px;
