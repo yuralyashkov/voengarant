@@ -1,34 +1,59 @@
-.builder{
-}
-.build-title{
-  padding-top: 210px;
-  text-align: center;
-  img{
-    display: block;
-    max-width: 195px;
-    margin: 0 auto;
-  }
-  .block__text{
-    width: 58%;
-    margin: 0 auto;
-  }
-  .label_builders{
-    margin-top: 20px;
-    margin-bottom: 15px;
-  }
-  &__status{
-    padding-top: 20px;
-    display: inline-block;
-    img,span{
+.builder {
+
+  .build-title {
+    padding-top: 80px;
+    text-align: center;
+    img {
+      display: block;
+      max-width: 195px;
+      margin: 0 auto;
+    }
+    .block__text {
+      width: 58%;
+      margin: 0 auto;
+    }
+    .label_builders {
+      margin-top: 15px;
+      margin-bottom: 25px;
+    }
+    &__status {
+      padding-top: 20px;
       display: inline-block;
-      float: left;
+      img, span {
+        display: inline-block;
+        float: left;
+      }
+      img {
+        padding-right: 5px;
+        padding-top: 3px;
+      }
+      span{
+        margin-left: -5px;
+      }
     }
-    img{
-      padding-right: 5px;
-      padding-top: 3px;
+    .max-reiting-inscription {
+      display: none;
     }
   }
-  .max-reiting-inscription{
-    display: none;
+  .remote-transaction{
+    padding-top: 80px;
+  }
+  .top-rated-developers{
+    margin: 130px 0 0 0;
+  }
+  .novo-slider{
+    padding-top: 100px;
+  }
+  .object{
+    padding-top: 25px;
+  }
+  .build-credit{
+    text-align: center;
+    padding-top: 140px;
+    .more{
+      display: block;
+      padding-top: 25px;
+      font-size: 18px;
+    }
   }
 }
