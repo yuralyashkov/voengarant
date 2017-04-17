@@ -1,25 +1,25 @@
 .object-main {
   overflow: hidden;
   margin: 3px 0 29px 0;
-  .sale-image {
-    margin: 0 auto;
-    border-radius: 100%;
-    border-left: 1px solid #e3e3e3;
-    border-right: 1px solid #e3e3e3;
-    border-bottom: 1px solid transparent;
-    border-top: 1px solid transparent;
-    width: (545px / $container * 100%);
-    height: 545px;
-    .border {
-      box-sizing: border-box;
-      padding: 0 43px;
-      img {
-        display: none;
-        height: 459px;
-        width: 548px;
-      }
-    }
-  }
+  //.sale-image {
+  //  margin: 0 auto;
+  //  border-radius: 100%;
+  //  border-left: 1px solid #e3e3e3;
+  //  border-right: 1px solid #e3e3e3;
+  //  border-bottom: 1px solid transparent;
+  //  border-top: 1px solid transparent;
+  //  width: (545px / $container * 100%);
+  //  height: 545px;
+  //  .border {
+  //    box-sizing: border-box;
+  //    padding: 0 43px;
+  //    img {
+  //      display: none;
+  //      height: 459px;
+  //      width: 548px;
+  //    }
+  //  }
+  //}
   .sale-information {
     .group-title {
       position: relative;
@@ -83,7 +83,6 @@
   }
 }
 .object-table {
-  position: relative;
   overflow: hidden;
   margin: 40px 0 67px 0;
   @include breakpoint("max-width: 1025px") {
@@ -102,9 +101,17 @@
     width: 100%;
   }
 }
+.reiting {
+  position: relative;
+  .object-table, .graphic {
+    filter: blur(5px);
+  }
+}
 .object-message {
   position: absolute;
-  top: 49%;
+  top: 0;
+  z-index: 2;
+  top: 50%;
   left: 50%;
   margin-left: -203px;
   img {

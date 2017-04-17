@@ -6,6 +6,8 @@
 
 
 @import "utils/functions";
+@import "utils/_mixins";
+
 @import "components/components";
 
 //bootstrap
@@ -103,7 +105,14 @@ Builders
 @import "layout/partners";
 //all-builders
 @import "layout/builders/all-builders";
+
+//bank
+@import "layout/bank/_bank-page";
+//bank-programs
+@import "layout/bank/bank-programs";
+
 /**
 Build
  */
 @import "layout/builders/builder";
+

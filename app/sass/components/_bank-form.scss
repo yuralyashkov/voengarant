@@ -1,0 +1,100 @@
+/*BANK-FORM*/
+
+.bank-page {
+  &__mobile {
+    display: none;
+    @include breakpoint("max-width: 991px") {
+      display: block;
+      margin: 67px 0 0 0;
+
+    }
+  }
+  &__desktop {
+    @include breakpoint("max-width: 991px") {
+      display: none;
+    }
+  }
+  .bank-page {
+    &__form {
+      padding: 25px 60px;
+      border: 1px solid #dcdcdc;
+      @include breakpoint("max-width: 991px") {
+        border-left: none;
+        border-right: none;
+      }
+      &-title {
+        font-size: $s30;
+        margin-top: 0;
+        color: color(black);
+        @include breakpoint("max-width: 991px") {
+          font-size: $s36;
+        }
+      }
+      &-description {
+
+        font-size: $s14;
+        @include breakpoint("max-width: 991px") {
+          display: none;
+        }
+      }
+    }
+  }
+  &__fields {
+    margin: 20px 0 0 0;
+
+    input {
+      width: 100%;
+      margin: 0 0 4px 0;
+      border-radius: 5px;
+      border: 1px solid rgba(172, 172, 172, 0.5);
+      padding: 5px 20px;
+      color: color(input);
+      transition: .2s;
+      &:focus {
+        box-shadow: 0 0 10px color(input-focus);
+      }
+      @include breakpoint("max-width: 991px") {
+
+        width:65%;
+      }
+    }
+    label {
+      font-size: $s14;
+      font-weight: 300;
+      @include breakpoint("max-width: 991px") {
+        font-size: $s24;
+        width:100%;
+      }
+    }
+  }
+  &__send {
+    width: 100%;
+    margin: 12px 0 0 0;
+    a {
+      float: right;
+      color: color(link-more);
+      font-size: $s14;
+      margin: 10px 0 0 0;
+      transition: .2s;
+      &:hover {
+        color: color(link-more);
+
+      }
+      @include breakpoint("max-width:1312px") {
+        float: left;
+      }
+      @include breakpoint("max-width: 991px") {
+        float: right;
+        font-size: $s20;
+      }
+
+    }
+  }
+  button {
+    @include btnSend;
+    float: left;
+  }
+
+}
+
+/*BANK-FORM*/

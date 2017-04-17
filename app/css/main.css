@@ -2,6 +2,15 @@
 *:focus {
   outline: none !important; }
 
+/*
+    btnSend - голубая кнопка отправки;
+    myriadL - описание шрифта
+    colorGenerate - генерация цвета для графика
+    breakpoint - медиазапросы
+    grayscale - выцветание
+    ungrayscale - цветность
+
+*/
 /*DOWN ARROW*/
 .down-arrow {
   width: 100%;
@@ -34,6 +43,147 @@
   margin: 95px 0 26px 0; }
 
 /*END LOCATE-LABEL*/
+/*BANK-FORM*/
+.bank-page__mobile {
+  display: none; }
+  @media screen and (max-width: 991px) {
+    .bank-page__mobile {
+      display: block;
+      margin: 67px 0 0 0; } }
+
+@media screen and (max-width: 991px) {
+  .bank-page__desktop {
+    display: none; } }
+
+.bank-page .bank-page__form {
+  padding: 25px 60px;
+  border: 1px solid #dcdcdc; }
+  @media screen and (max-width: 991px) {
+    .bank-page .bank-page__form {
+      border-left: none;
+      border-right: none; } }
+  .bank-page .bank-page__form-title {
+    font-size: 30px;
+    margin-top: 0;
+    color: #000; }
+    @media screen and (max-width: 991px) {
+      .bank-page .bank-page__form-title {
+        font-size: 36px; } }
+  .bank-page .bank-page__form-description {
+    font-size: 14px; }
+    @media screen and (max-width: 991px) {
+      .bank-page .bank-page__form-description {
+        display: none; } }
+
+.bank-page__fields {
+  margin: 20px 0 0 0; }
+  .bank-page__fields input {
+    width: 100%;
+    margin: 0 0 4px 0;
+    border-radius: 5px;
+    border: 1px solid rgba(172, 172, 172, 0.5);
+    padding: 5px 20px;
+    color: #333;
+    -webkit-transition: .2s;
+    transition: .2s; }
+    .bank-page__fields input:focus {
+      -webkit-box-shadow: 0 0 10px rgba(113, 158, 240, 0.51);
+      box-shadow: 0 0 10px rgba(113, 158, 240, 0.51); }
+    @media screen and (max-width: 991px) {
+      .bank-page__fields input {
+        width: 65%; } }
+  .bank-page__fields label {
+    font-size: 14px;
+    font-weight: 300; }
+    @media screen and (max-width: 991px) {
+      .bank-page__fields label {
+        font-size: 24px;
+        width: 100%; } }
+
+.bank-page__send {
+  width: 100%;
+  margin: 12px 0 0 0; }
+  .bank-page__send a {
+    float: right;
+    color: #309bf7;
+    font-size: 14px;
+    margin: 10px 0 0 0;
+    -webkit-transition: .2s;
+    transition: .2s; }
+    .bank-page__send a:hover {
+      color: #309bf7; }
+    @media screen and (max-width: 1312px) {
+      .bank-page__send a {
+        float: left; } }
+    @media screen and (max-width: 991px) {
+      .bank-page__send a {
+        float: right;
+        font-size: 20px; } }
+
+.bank-page button {
+  width: 155px;
+  height: 35px;
+  color: #fff;
+  background: #309bf7;
+  border-radius: 5px;
+  opacity: .9;
+  -webkit-transition: .2s;
+  transition: .2s;
+  float: left; }
+  .bank-page button:hover {
+    opacity: 1; }
+  @media screen and (max-width: 991px) {
+    .bank-page button {
+      width: 215px;
+      height: 54px; } }
+
+/*BANK-FORM*/
+/*CHECKBOX*/
+.custom-check .check {
+  padding: 0 0 0 22px;
+  font-size: 14px;
+  font-family: "myriad-pro", sans-serif;
+  font-weight: 300;
+  color: #777;
+  position: relative; }
+  .custom-check .check:hover {
+    cursor: pointer; }
+  @media screen and (max-width: 991px) {
+    .custom-check .check {
+      font-size: 20px; } }
+
+.custom-check .checker {
+  position: absolute;
+  opacity: 0;
+  left: -9999px; }
+
+.custom-check .checker:not(checked) + label:before {
+  background: transparent;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 1px solid rgba(10, 10, 10, 0.35);
+  content: ' ';
+  left: 0;
+  top: 2px; }
+  @media screen and (max-width: 991px) {
+    .custom-check .checker:not(checked) + label:before {
+      top: 8px; } }
+
+.custom-check .checker:checked + label:after {
+  content: ' ';
+  width: 14px;
+  height: 14px;
+  background: #2891c0;
+  border: 1px solid #2891c0;
+  position: absolute;
+  left: 0;
+  top: 2px; }
+  @media screen and (max-width: 991px) {
+    .custom-check .checker:checked + label:after {
+      top: 8px; } }
+
+/*CHECKBOX*/
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -5973,6 +6123,9 @@ a {
   padding-left: 0;
   padding-right: 0;
   max-width: 88.8%; }
+  @media screen and (max-width: 1280px) {
+    .container {
+      max-width: 88.8%; } }
   .container__header {
     display: table-cell; }
 
@@ -6032,6 +6185,9 @@ a {
 
 .p-r-none {
   padding-right: 0; }
+
+.p-both-none {
+  padding: 0; }
 
 .row-none {
   margin: 0; }
@@ -8332,23 +8488,6 @@ footer {
 .object-main {
   overflow: hidden;
   margin: 3px 0 29px 0; }
-  .object-main .sale-image {
-    margin: 0 auto;
-    border-radius: 100%;
-    border-left: 1px solid #e3e3e3;
-    border-right: 1px solid #e3e3e3;
-    border-bottom: 1px solid transparent;
-    border-top: 1px solid transparent;
-    width: 41.13208%;
-    height: 545px; }
-    .object-main .sale-image .border {
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      padding: 0 43px; }
-      .object-main .sale-image .border img {
-        display: none;
-        height: 459px;
-        width: 548px; }
   .object-main .sale-information .group-title {
     position: relative; }
     .object-main .sale-information .group-title span {
@@ -8403,7 +8542,6 @@ footer {
         font-size: 30px; } }
 
 .object-table {
-  position: relative;
   overflow: hidden;
   margin: 40px 0 67px 0; }
   @media screen and (max-width: 1025px) {
@@ -8422,9 +8560,17 @@ footer {
       font-size: 20px;
       width: 100%; } }
 
+.reiting {
+  position: relative; }
+  .reiting .object-table, .reiting .graphic {
+    -webkit-filter: blur(5px);
+    filter: blur(5px); }
+
 .object-message {
   position: absolute;
-  top: 49%;
+  top: 0;
+  z-index: 2;
+  top: 50%;
   left: 50%;
   margin-left: -203px; }
   .object-message img {
@@ -9565,6 +9711,10 @@ footer {
     border: 1px solid #c8c8c8;
     border-radius: 5px;
     padding: 5px 10px; }
+    .calculator_block__count:active, .calculator_block__count:focus {
+      outline: none;
+      -webkit-box-shadow: 0px 0px 25px 0px #e5ecf8;
+      box-shadow: 0px 0px 25px 0px #e5ecf8; }
   .calculator_block__remark {
     font-family: "myriad-pro", sans-serif;
     color: #777777;
@@ -9593,7 +9743,8 @@ footer {
       line-height: 32px;
       font-weight: normal; }
   .calculator_block .ui-widget.ui-widget-content {
-    width: 89.48433%;
+    margin-top: 13px;
+    width: 100%;
     border: none;
     position: relative; }
   .calculator_block .ui-corner-all,
@@ -9674,6 +9825,53 @@ footer {
     left: 0; }
   .calculator_block .ui-slider-horizontal .ui-slider-range-max {
     right: 0; }
+  .calculator_block .layout-slider {
+    width: 89.48433%; }
+    .calculator_block .layout-slider__second {
+      margin-top: 20px; }
+  .calculator_block .jslider {
+    display: block;
+    width: 100%;
+    height: 1em;
+    position: relative;
+    top: .6em; }
+    .calculator_block .jslider table {
+      width: 100%;
+      vertical-align: top;
+      border-collapse: collapse;
+      border: 0;
+      border-spacing: 2px; }
+      .calculator_block .jslider table tbody {
+        display: table-row-group;
+        vertical-align: middle;
+        border-color: inherit; }
+        .calculator_block .jslider table tbody tr {
+          width: 100%;
+          vertical-align: top;
+          border-color: inherit; }
+          .calculator_block .jslider table tbody tr td {
+            width: 100%;
+            vertical-align: top;
+            padding: 0;
+            text-align: left;
+            border: 0; }
+            .calculator_block .jslider table tbody tr td .jslider-scale {
+              position: relative;
+              top: 9px; }
+              .calculator_block .jslider table tbody tr td .jslider-scale span {
+                position: absolute;
+                height: 6px;
+                border-left: 1px solid #777777;
+                font-size: 0; }
+                .calculator_block .jslider table tbody tr td .jslider-scale span ins {
+                  font-size: 14px;
+                  font-family: "myriad-pro", sans-serif;
+                  font-weight: 100;
+                  text-decoration: none;
+                  position: absolute;
+                  left: 0;
+                  top: -20px;
+                  color: #777777; }
 
 .attraction {
   margin: 87px 0 111px 0;
@@ -10079,7 +10277,7 @@ footer {
   @media screen and (msx-width: 1025px) {
     .other-object {
       margin: 146px 0 58px 0; } }
-  .other-object .title {
+  .other-object .main-title {
     font-family: "Roboto Slab", serif;
     color: #2f2f2f;
     display: block;
@@ -10088,7 +10286,7 @@ footer {
     font-weight: 300;
     margin: 0 0 23px 0; }
     @media screen and (max-width: 1025px) {
-      .other-object .title {
+      .other-object .main-title {
         font-family: "Roboto Slab", serif;
         color: #2f2f2f;
         display: block;
@@ -10096,7 +10294,7 @@ footer {
         line-height: 50px;
         font-weight: 300;
         margin: 0 0 48px 0; } }
-  .other-object .context {
+  .other-object .main-context {
     font-family: "myriad-pro", sans-serif;
     color: #2f2f2f;
     display: block;
@@ -10105,7 +10303,7 @@ footer {
     font-weight: 300;
     margin: 0 0 28px 0; }
     @media screen and (max-width: 1025px) {
-      .other-object .context {
+      .other-object .main-context {
         font-family: "myriad-pro", sans-serif;
         color: #2f2f2f;
         display: block;
@@ -10509,7 +10707,7 @@ Builders
       top: -5px;
       margin: 0 0 0 -5px;
       border-radius: 50%;
-      z-index: 5; }
+      z-index: 2; }
   .graphic__cell-top_color-b li:first-child:after {
     background: #b9b7ed; }
   .graphic__cell-top_color-y li:first-child:after {
@@ -10522,6 +10720,13 @@ Builders
     width: 5.77778%;
     margin: 0 6.66667% 0 0; }
     .graphic__rate li:last-child {
+      margin: 0; }
+  .graphic__rate .name li, .graphic__rate .value li {
+    display: inline-block;
+    text-align: center;
+    width: 12.25919%;
+    margin: 0 0.27521% 0 0; }
+    .graphic__rate .name li:last-child, .graphic__rate .value li:last-child {
       margin: 0; }
 
 .yellow-cell li {
@@ -10656,6 +10861,111 @@ Builders
       width: 100%; }
 
 /*ALL-BUILDERS*/
+/*BANK*/
+.bank-page {
+  padding: 117px 0 140px 0;
+  font-size: 18px;
+  font-family: "myriad-pro", sans-serif;
+  font-weight: 300;
+  color: #777; }
+  @media screen and (max-width: 991px) {
+    .bank-page {
+      font-size: 30px;
+      padding: 38px 0 140px 0; } }
+  .bank-page__logo {
+    margin: 15px 0 0 0; }
+  .bank-page__title {
+    margin-top: 10px;
+    color: #000; }
+  .bank-page__level {
+    margin: 30px 0 0 0; }
+    .bank-page__level ul {
+      padding: 0 0 0 20px;
+      margin: 15px 0 0 0; }
+    .bank-page__level span {
+      font-weight: 400; }
+    .bank-page__level li {
+      margin: 0 0 30px 0; }
+      .bank-page__level li:last-child {
+        margin: 0; }
+
+/*BANK*/
+/*BANK-PROGRAMS*/
+.bank-programs {
+  padding: 107px 0;
+  background: #379a1e; }
+  @media screen and (max-width: 991px) {
+    .bank-programs__desktop {
+      display: none; } }
+  .bank-programs__mobile {
+    display: none; }
+    @media screen and (max-width: 991px) {
+      .bank-programs__mobile {
+        display: block; } }
+  .bank-programs__title {
+    display: block;
+    color: #777;
+    font-size: 16px;
+    font-family: "myriad-pro", sans-serif;
+    font-weight: 300; }
+    @media screen and (max-width: 991px) {
+      .bank-programs__title {
+        font-size: 20px; } }
+  .bank-programs__name {
+    font-size: 24px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    color: #333; }
+    @media screen and (max-width: 1595px) {
+      .bank-programs__name {
+        font-size: 20px; } }
+    @media screen and (max-width: 991px) {
+      .bank-programs__name {
+        font-size: 30px;
+        margin: 0 0 60px 0;
+        display: block; } }
+  .bank-programs__program {
+    background: #fff;
+    padding: 65px 90px 0 90px;
+    border-radius: 15px;
+    margin: 0 0 34px 0; }
+    .bank-programs__program:last-child {
+      margin: 0; }
+  .bank-programs__list {
+    list-style: none;
+    padding: 0 0 0 16.66667%;
+    margin: 0;
+    font-weight: 300; }
+    @media screen and (max-width: 1386px) {
+      .bank-programs__list {
+        padding: 0 0 0 2.5%; } }
+    @media screen and (max-width: 991px) {
+      .bank-programs__list {
+        padding: 0;
+        margin: 72px 0 0 0; } }
+    .bank-programs__list .bank-programs__name {
+      margin: 0; }
+    .bank-programs__list li {
+      float: left;
+      width: 21.2766%;
+      margin: 0 17.85714% 45px 0; }
+      .bank-programs__list li:nth-child(3n) {
+        margin: 0 0 45px 0; }
+      @media screen and (max-width: 991px) {
+        .bank-programs__list li {
+          width: 40%;
+          margin: 0 20% 45px 0; }
+          .bank-programs__list li:nth-child(3n) {
+            margin: 0 20% 45px 0; }
+          .bank-programs__list li:nth-child(2n) {
+            margin: 0 0 45px 0; } }
+
+.bank-programs__inner {
+  padding: 65px 51px 0 51px;
+  border-radius: 15px;
+  background: white; }
+
+/*BANK-PROGRAMS*/
 /**
 Build
  */

@@ -1,0 +1,99 @@
+/*BANK-PROGRAMS*/
+
+.bank-programs {
+  &__desktop {
+    @include breakpoint("max-width: 991px") {
+
+      display: none;
+    }
+  }
+  &__mobile {
+    display: none;
+    @include breakpoint("max-width: 991px") {
+      display: block;
+
+    }
+
+  }
+
+  &__title {
+    display: block;
+    color: color(default);
+    @include myriadL(16, $mainFontFamily, 300);
+    @include breakpoint("max-width: 991px") {
+      font-size: $s20;
+    }
+  }
+  &__name {
+    @include myriadL(24, $titleFontFamily, 400);
+    color: color(input);
+    @include breakpoint("max-width: 1595px") {
+      font-size: $s20;
+    }
+    @include breakpoint("max-width: 991px") {
+      font-size: $s30;
+      margin: 0 0 60px 0;
+      display: block;
+    }
+
+  }
+  padding: 107px 0;
+  background: color(green-bank);
+  &__program {
+    background: color(white);
+    padding: 65px 90px 0 90px;
+    border-radius: 15px;
+    margin: 0 0 34px 0;
+    &:last-child {
+      margin: 0;
+    }
+
+  }
+  &__list {
+
+    list-style: none;
+    padding: 0 0 0 (100%/6);
+    margin: 0;
+    font-weight: 300;
+    @include breakpoint("max-width: 1386px") {
+      padding: 0 0 0 (100%/40);
+    }
+    @include breakpoint("max-width:991px") {
+      padding: 0;
+      margin: 72px 0 0 0;
+    }
+    .bank-programs__name {
+      margin: 0;
+    }
+    li {
+      float: left;
+      width: (100%/4.7);
+      margin: 0 (50%/2.8) 45px 0;
+      &:nth-child(3n) {
+        margin: 0 0 45px 0;
+      }
+      @include breakpoint("max-width:991px") {
+        width: (80%/2);
+        margin: 0 (40%/2) 45px 0;
+
+        &:nth-child(3n) {
+          margin: 0 (40%/2) 45px 0;
+        }
+        &:nth-child(2n) {
+          margin: 0 0 45px 0;
+
+        }
+      }
+    }
+  }
+
+}
+
+.bank-programs__inner {
+  padding: 65px 51px 0 51px;
+  border-radius: 15px;
+  background: white;
+
+}
+
+/*BANK-PROGRAMS*/
