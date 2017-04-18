@@ -10239,25 +10239,25 @@ footer {
                   .calculator_block .jslider table tbody tr td .jslider-scale .year__simple-dot__too {
                     left: -25px; } }
             @media screen and (max-width: 1025px) {
-              .calculator_block .jslider table tbody tr td .xs-block .space-11:nth-child(2), .calculator_block .jslider table tbody tr td .xs-block .space-11:nth-child(4), .calculator_block .jslider table tbody tr td .xs-block .space-11:nth-child(6), .calculator_block .jslider table tbody tr td .xs-block .space-11:nth-child(8), .calculator_block .jslider table tbody tr td .xs-block .space-11:nth-child(10) {
+              .calculator_block .jslider table tbody tr td .xs-block__jslider-scale .space-11:nth-child(2), .calculator_block .jslider table tbody tr td .xs-block__jslider-scale .space-11:nth-child(4), .calculator_block .jslider table tbody tr td .xs-block__jslider-scale .space-11:nth-child(6), .calculator_block .jslider table tbody tr td .xs-block__jslider-scale .space-11:nth-child(8), .calculator_block .jslider table tbody tr td .xs-block__jslider-scale .space-11:nth-child(10) {
                 display: none; } }
             @media screen and (max-width: 1025px) {
-              .calculator_block .jslider table tbody tr td .xs-block .space-11:nth-child(1) {
+              .calculator_block .jslider table tbody tr td .xs-block__jslider-scale .space-11:nth-child(1) {
                 left: 0%; } }
             @media screen and (max-width: 1025px) {
-              .calculator_block .jslider table tbody tr td .xs-block .space-11:nth-child(3) {
+              .calculator_block .jslider table tbody tr td .xs-block__jslider-scale .space-11:nth-child(3) {
                 left: 20%; } }
             @media screen and (max-width: 1025px) {
-              .calculator_block .jslider table tbody tr td .xs-block .space-11:nth-child(5) {
+              .calculator_block .jslider table tbody tr td .xs-block__jslider-scale .space-11:nth-child(5) {
                 left: 40%; } }
             @media screen and (max-width: 1025px) {
-              .calculator_block .jslider table tbody tr td .xs-block .space-11:nth-child(7) {
+              .calculator_block .jslider table tbody tr td .xs-block__jslider-scale .space-11:nth-child(7) {
                 left: 60%; } }
             @media screen and (max-width: 1025px) {
-              .calculator_block .jslider table tbody tr td .xs-block .space-11:nth-child(9) {
+              .calculator_block .jslider table tbody tr td .xs-block__jslider-scale .space-11:nth-child(9) {
                 left: 80%; } }
             @media screen and (max-width: 1025px) {
-              .calculator_block .jslider table tbody tr td .xs-block .space-11:nth-child(10) {
+              .calculator_block .jslider table tbody tr td .xs-block__jslider-scale .space-11:nth-child(10) {
                 left: 100%; } }
 
 .attraction {
