@@ -13,39 +13,6 @@
     margin: 0 0 50px 0;
   }
 
-  ul {
-    list-style: none;
-    padding: 0;
-
-    text-align: center;
-    span {
-      display: block;
-    }
-    li {
-      width: (100%/8);
-      float: left;
-    }
-  }
-  &__name {
-    color: color(black);
-  }
-  &__rate {
-    color: color(default);
-  }
-  &__discount {
-    color: color(link-more);
-  }
-  &__title {
-    margin-top: 0;
-  }
-  &__logo {
-    width: 66px;
-    margin: 0 auto 10px auto;
-    img {
-      width: 100%;
-    }
-  }
-
 }
 
 /*PARTENERS*/

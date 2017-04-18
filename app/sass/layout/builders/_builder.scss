@@ -3,14 +3,22 @@
   .build-title {
     padding-top: 80px;
     text-align: center;
-    img {
+    .build-title__img {
       display: block;
-      max-width: 195px;
+      width: 195px;
       margin: 0 auto;
+      @include breakpoint("max-width: 1024px"){
+        width: 335px;
+      }
     }
     .block__text {
       width: 58%;
       margin: 0 auto;
+      @include breakpoint("max-width: 1024px"){
+        width: 90%;
+        height: 60px;
+        overflow: hidden
+      }
     }
     .label_builders {
       margin-top: 15px;
@@ -19,6 +27,9 @@
     &__status {
       padding-top: 20px;
       display: inline-block;
+      @include breakpoint("max-width: 1024px"){
+        font-size: 30px;
+      }
       img, span {
         display: inline-block;
         float: left;
@@ -26,9 +37,15 @@
       img {
         padding-right: 5px;
         padding-top: 3px;
+        @include breakpoint("max-width: 1024px"){
+          width: 40px;
+        }
       }
       span{
         margin-left: -5px;
+        @include breakpoint("max-width: 1024px"){
+          margin-left: 5px;
+        }
       }
     }
     .max-reiting-inscription {
@@ -37,12 +54,21 @@
   }
   .remote-transaction{
     padding-top: 80px;
+    @include breakpoint("max-width: 1024px"){
+      padding-top: 90px;
+    }
   }
   .top-rated-developers{
     margin: 130px 0 0 0;
+    @include breakpoint("max-width: 1024px"){
+     margin-top: 65px;
+    }
   }
   .novo-slider{
     padding-top: 100px;
+    @include breakpoint("max-width: 1024px"){
+      padding-top: 150px;
+    }
   }
   .object{
     padding-top: 25px;
@@ -50,10 +76,25 @@
   .build-credit{
     text-align: center;
     padding-top: 140px;
+    @include breakpoint("max-width: 1024px"){
+      padding-top: 100px;
+    }
     .more{
       display: block;
       padding-top: 25px;
       font-size: 18px;
     }
+  }
+  .seo{
+    @include breakpoint("max-width: 1024px"){
+      padding-top: 0;
+    }
+  }
+  .bank-block{
+    padding-top: 35px;
+  }
+  .video{
+    margin-top: 75px;
+    margin-bottom: 80px;
   }
 }
