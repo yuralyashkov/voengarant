@@ -1,0 +1,43 @@
+.build-anather{
+  text-align: center;
+  padding-bottom: 100px;
+  @include breakpoint("max-width: 1024px"){
+    padding-bottom: 175px;
+  }
+
+  .block__title{
+    padding-top: 80px;
+  }
+  .more{
+    display: block;
+    padding-top: 15px;
+  }
+  .partners-ul{
+    padding-top: 43px;
+    margin: 0 -45px;
+    @include breakpoint("max-width: 1024px"){
+      margin: 0;
+    }
+    li{
+      width: (100%/7);
+      @include breakpoint("max-width: 1024px"){
+        width: (100%/4);
+      }
+    }
+    .partners__logo{
+      img{
+        width: 60px;
+      }
+
+    }
+    .partners__name{
+      padding-top: 15px;
+    }
+  }
+  .block_mob{
+    display: none;
+    @include breakpoint("max-width: 1024px"){
+      display: block;
+    }
+  }
+}

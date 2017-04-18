@@ -1,0 +1,19 @@
+section.build-anather
+    .container
+        +button-revies( "Отзывы о затройщике")
+        .block__title Другие застройщики
+        .block__text Десятки тысяч военнослужащих, желающих приобрести жилье!
+        a(href="#").more Все
+        ul.partners-ul.clearfix
+            -for(var i = 0; i < 7; i++)
+                li
+                    .partners__logo
+                        img(src="./images/icons/builder-1.png" alt="")
+                    span.partners__name Бест
+                    span.partners__rate Рейтинг 4.6
+            li.block_mob
+                .partners__logo
+                    img(src="./images/icons/builder-1.png" alt="")
+                span.partners__name Бест
+                span.partners__rate Рейтинг 4.6
+

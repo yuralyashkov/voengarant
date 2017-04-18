@@ -10,6 +10,9 @@
   @include myriadL(18, $mainFontFamily, 400);
   span {
     vertical-align: middle;
+    @include breakpoint("max-width: 1024px"){
+      font-size: 30px;
+    }
   }
 }
 

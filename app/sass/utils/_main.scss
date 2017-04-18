@@ -6,6 +6,7 @@ body {
 
   @include breakpoint("max-width: 1680px") {
     font-size: 14px;
+    padding-top: 75px;
 
   }
 }
@@ -277,5 +278,115 @@ a.politic{
   @include breakpoint("max-width: 1024px"){
     font-size: 18px;
     margin-top: 40px;
+  }
+}
+label.label-form{
+  display: block;
+  color: #777777;
+  font-weight: 300;
+  @include breakpoint("max-width: 1024px"){
+    font-size: 30px;
+  }
+}
+input.input-form,textarea.textarea-form{
+  border-radius: 5px;
+  border: 1px solid #d3d3d3;
+  font-size: 18px;
+  padding: 5px;
+}
+textarea.textarea-form{
+  resize: none;
+  box-sizing: border-box;
+}
+select.select-form{
+  @include text($mainFontFamily, #333333, inline-block, 18px, 20px, normal);
+  width: (250px / 572px * 100%);
+  height: 33px;
+  box-sizing: border-box;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  padding-left: (22px / 572px * 100%);
+  padding-right: (22px / 572px * 100%);
+  background: url("../images/icons/select-blue.png") 97% center  no-repeat, #fdfdfd;
+  appearance: none!important;
+  @include breakpoint("max-width: 1025px") {
+    background: url("../images/icons/select-mob.png") right no-repeat, #fdfdfd;
+    width: 488px;
+    height: 65px;
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 33px;
+    padding-left: 18px;
+    padding-right: 53px;
+    font-weight: 300;
+    color: #777777;
+    display: block;
+  }
+  &:active, &:focus {
+    outline: none;
+    box-shadow: 0px 0px 25px 0px rgba(229,236,248,1);
+  }
+  &::-ms-expand {
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+  }
+}
+.link-reviews {
+  display: inline-block;
+  text-decoration: none;
+  opacity: .9;
+  @include breakpoint("max-width: 1025px") {
+    margin: 136px 0 0 0;
+  }
+  img {
+    width: 31px;
+    height: 31px;
+    @include breakpoint("max-width: 1025px") {
+      width: 86px;
+      height: 86px;
+    }
+  }
+  span {
+    @include text($mainFontFamily, #309bf7, block, 18px, 20px, 100);
+    padding: 10px 0 0 0;
+    @include breakpoint("max-width: 1025px") {
+      @include text($mainFontFamily, #309bf7, block, 35px, 37px, 100);
+      padding: 20px 0 0 0;
+    }
+  }
+  &:hover {
+    opacity: 1;
+  }
+}
+ul.partners-ul{
+  list-style: none;
+  padding: 0;
+
+  text-align: center;
+  span {
+    display: block;
+  }
+  li {
+    width: (100%/8);
+    float: left;
+  }
+  &__name {
+    color: color(black);
+  }
+  &__rate {
+    color: color(default);
+  }
+  &__discount {
+    color: color(link-more);
+  }
+  &__title {
+    margin-top: 0;
+  }
+  &__logo {
+    width: 66px;
+    margin: 0 auto 10px auto;
+    img {
+      width: 100%;
+    }
   }
 }

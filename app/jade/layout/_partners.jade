@@ -6,11 +6,4 @@ section.partners
                 Успешно реализована схема дистанционного ведения сделки (без личного присутствия военнослужащего) на первичном рынке. <br>
                 Таким образом, десятки тысяч военнослужащих, желающих приобрести жилье! Успешно реализована схема дистанционного <br>
                 ведения сделки (без личного присутствия военнослужащего) на первичном рынке.
-        ul.clearfix
-            -for(var i = 0; i < 8; i++)
-                li
-                    .partners__logo
-                        img(src="./images/icons/builder-1.png" alt="")
-                    span.partners__name Бест
-                    span.partners__rate 4.6
-                    span.partners__discount Скидка 3%
+        include _partners-block

@@ -4,17 +4,28 @@
       height: 320px;
       margin: 0 auto;
       color: #ffffff;
+      @include breakpoint("max-width: 1024px"){
+        height: 775px;
+      }
       .swiper-wrapper{
         padding-top: 50px;
         border-radius: 5px;
       }
       img,.swiper-slide__content__element{
         display: inline-block;
+        @include breakpoint("max-width: 1024px"){
+          display: block;
+          width: 100%;
+        }
       }
       .swiper-slide__content__element{
         text-align: left;
         @include breakpoint("max-width: 1280px"){
           width: 50%;
+        }
+        @include breakpoint("max-width: 1024px"){
+          display: block;
+          width: 100%;
         }
       }
       img{
@@ -27,11 +38,13 @@
           width: 35%;
         }
         @include breakpoint("max-width: 1024px"){
-          width: 45%;
+          width: 60%;
           display: inline-block;
           vertical-align: top;
-          margin-top: 65px;
-          padding-right: 50px
+          margin-top: 0;
+          margin-bottom: 40px;
+          padding-right: 50px;
+          float: left;
         }
       }
       &__title{
@@ -43,9 +56,20 @@
           font-size: 25px;
           line-height: 25px;
         }
+        @include breakpoint("max-width: 1024px"){
+          font-size: 45px;
+          line-height: 45px;
+          br{
+            display: none;
+          }
+        }
       }
       &__text{
         font-size: 16px;
+        @include breakpoint("max-width: 1024px"){
+          font-size: 30px;
+          padding-right: 50px;
+        }
       }
       .more{
         display: block;
@@ -57,6 +81,10 @@
           line-height: 25px;
           padding-top: 20px;
         }
+        @include breakpoint("max-width: 1024px"){
+          font-size: 30px;
+          padding-top: 85px;
+        }
       }
       .slider-home__sale{
         position: absolute;
@@ -67,6 +95,9 @@
         text-align: center;
         right: -70px;
         top: 20px;
+        @include breakpoint("max-width: 1024px"){
+          display: none;
+        }
       }
     }
     .swiper-slide__content{
@@ -76,7 +107,8 @@
       background: #005c9d;
       border-radius: 5px;
       @include breakpoint("max-width: 1024px"){
-        width: 90%;
+        width: 100%;
+        padding: 50px 55px;
         margin-left: 0;
       }
     }
@@ -84,7 +116,8 @@
     bottom: 20px;
     width: 95.5%;
     @include breakpoint("max-width: 1280px"){
-      width: 100%;
+      width: 49%;
+      bottom: 45px;
     }
   }
 
