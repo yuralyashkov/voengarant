@@ -8960,7 +8960,6 @@ footer {
   top: 0;
   float: right;
   right: 20%;
-  z-index: 99;
   width: 2.41509%;
   max-height: 32px; }
   @media screen and (max-width: 1025px) {
@@ -11570,6 +11569,36 @@ Builders
     @media screen and (max-width: 1025px) {
       .interplay img {
         height: 543px; } }
+
+.question-lawyer__title {
+  margin: 91px 0 92px 0; }
+  @media screen and (max-width: 1025px) {
+    .question-lawyer__title {
+      margin: 100px 0 89px 0; } }
+  .question-lawyer__title img {
+    width: 35px;
+    height: 41px; }
+    @media screen and (max-width: 1025px) {
+      .question-lawyer__title img {
+        width: 91px;
+        height: 109px; } }
+  .question-lawyer__title .title {
+    font-family: "Roboto Slab", serif;
+    color: #2f2f2f;
+    display: block;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 300;
+    margin: 0 0 0 0; }
+    @media screen and (max-width: 1025px) {
+      .question-lawyer__title .title {
+        font-family: "Roboto Slab", serif;
+        color: #2f2f2f;
+        display: block;
+        font-size: 45px;
+        line-height: 24px;
+        font-weight: 300;
+        margin: 0 0 0 0; } }
 
 /**
 Build
