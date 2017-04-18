@@ -113,7 +113,13 @@ Builders
 
 //banks
 @import "layout/banks/_all-list-banks";
+@import "layout/banks/_banks";
+@import "layout/banks/_banks-graphic";
 
+//vzaimodeistvie
+@import "layout/vzaimodeistvie/_agreement";
+@import "layout/vzaimodeistvie/_letters";
+@import "layout/vzaimodeistvie/_interplay";
 
 /**
 Build

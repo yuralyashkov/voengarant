@@ -1,0 +1,85 @@
+.letters {
+  margin: 0 0 90px 0;
+  @include breakpoint("max-width: 1025px") {
+    margin: 0 0 119px 0;
+  }
+  .subtitle {
+    @include text($titleFontFamily, #333333, block, 24px, 26px, 300);
+    margin: 0 0 11px 0;
+    @include breakpoint("max-width: 1025px") {
+      @include text($titleFontFamily, #303030, block, 36px, 40px, 300);
+      margin: 0 0 14px 0;
+    }
+  }
+  .title {
+    @include text($titleFontFamily, #333333, block, 36px, 40px, 300);
+    margin: 0 0 27px 0;
+    @include breakpoint("max-width: 1025px") {
+      @include text($titleFontFamily, #303030, block, 45px, 50px, 300);
+      margin: 0 0 30px 0;
+    }
+  }
+  .context {
+    @include text($mainFontFamily, #777777, block, 18px, 24px, 100);
+    margin: 0 auto 52px auto;
+    width: ( 865px / $container * 100%);
+    @include breakpoint("max-width: 1300px") {
+      width: (900px / $container * 100%);
+    }
+    @include breakpoint("max-width: 1025px") {
+      @include text($mainFontFamily, #777777, block, 30px, 35px, 100);
+      margin: 0 auto 65px auto;
+      width: 100%;
+    }
+  }
+}
+.letters__main-block {
+  .block {
+    float: left;
+    width: (310px / $container * 100%);
+    margin: 0 (18px / $container * 100%) 61px 0;
+    box-sizing: border-box;
+    opacity: .95;
+    @include breakpoint("max-width: 1025px") {
+      width: (323px / 669px * 100%);
+      margin: 0 (21px / 669px * 100%) 36px 0;
+    }
+    &:nth-child(4n) {
+      margin: 0 0 61px 0;
+      @include breakpoint("max-width: 1025px") {
+        margin: 0 0 36px 0;
+      }
+    }
+    &:nth-child(2n) {
+      @include breakpoint("max-width: 1025px") {
+        margin: 0 0 36px 0;
+      }
+    }
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  img {
+    width: 100%;
+    max-height: 201px;
+  }
+  span {
+    @include text($mainFontFamily, #777777, block, 16px, 18px, 100);
+    margin: 17px 0 0 0;
+    @include breakpoint("max-width: 1025px") {
+      @include text($mainFontFamily, #777777, block, 25px, 27px, 100);
+      margin: 15px 0 0 0;
+    }
+  }
+}
+.vzaimodeistvie {
+  .seo {
+    padding-top: 0;
+  }
+}
