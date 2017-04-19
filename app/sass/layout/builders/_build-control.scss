@@ -38,7 +38,7 @@
     &__context{
       display: inline-block;
       width: 50%;
-      @include breakpoint("max-width: 1280px"){
+      @include breakpoint("max-width: 1680px"){
         width: 48%;
       }
       input,select{

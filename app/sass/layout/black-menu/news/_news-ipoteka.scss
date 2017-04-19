@@ -1,0 +1,30 @@
+.news-ipoteka{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background: #222222;
+  .block__title{
+    margin-top: -5px;
+  }
+  .block__text{
+    width: 50%;
+    margin: 0 auto 15px;
+  }
+  .news-suppot{
+      a:hover{
+       text-decoration: none;
+      }
+  }
+
+
+}
+.suppot{
+  display: inline-block;
+  background: #d2294b;
+  height: 25px;
+  width: 25px;
+  line-height: 23px;
+  color: #1d1d1d;
+  border-radius: 15px;
+  margin-right: 5px;
+}
