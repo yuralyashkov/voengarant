@@ -1,25 +1,29 @@
 .object-main {
   overflow: hidden;
-  margin: 3px 0 29px 0;
-  //.sale-image {
-  //  margin: 0 auto;
-  //  border-radius: 100%;
-  //  border-left: 1px solid #e3e3e3;
-  //  border-right: 1px solid #e3e3e3;
-  //  border-bottom: 1px solid transparent;
-  //  border-top: 1px solid transparent;
-  //  width: (545px / $container * 100%);
-  //  height: 545px;
-  //  .border {
-  //    box-sizing: border-box;
-  //    padding: 0 43px;
-  //    img {
-  //      display: none;
-  //      height: 459px;
-  //      width: 548px;
-  //    }
-  //  }
-  //}
+  margin: 4px 0 67px 0;
+  .round-border {
+    margin: 0 auto 24px auto;
+    width: 550px;
+    height: 459px;
+    background-image: url("../images/object/border.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    @include breakpoint("max-width: 1025px") {
+      display: none;
+    }
+    .round-image {
+      width: 459px;
+      height: 459px;
+      border-radius: 100%;
+      margin: 0 auto;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+      }
+    }
+  }
   .sale-information {
     .group-title {
       position: relative;
@@ -39,10 +43,11 @@
         top: 0;
         background-image: url("../images/icons/add-to-favorites.png");
         background-repeat: no-repeat;
+        background-size: contain;
         @include breakpoint("max-width: 1025px") {
           width: 62px;
           height: 58px;
-          background-size: contain;
+          //background-size: contain;
         }
       }
     }
@@ -101,19 +106,21 @@
     width: 100%;
   }
 }
-.reiting {
+.no-reiting_background {
+  background-image: url("../images/object/no-reiting_background.png");
+  background-repeat: no-repeat;
+  background-position: center;
   position: relative;
-  .object-table, .graphic {
+  .no-reiting {
     filter: blur(5px);
   }
 }
 .object-message {
   position: absolute;
-  top: 0;
-  z-index: 2;
   top: 50%;
   left: 50%;
   margin-left: -203px;
+
   img {
     display: block;
     margin: 0 auto;
