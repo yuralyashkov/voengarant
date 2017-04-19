@@ -12323,5 +12323,14 @@ News
 
 .news-form {
   border: solid 1px #2f2f2f;
-  padding: 60px;
+  padding: 50px 60px;
   margin-top: 125px; }
+  .news-form .block__title, .news-form .block__developers .tab-content .developer__description > span, .block__developers .tab-content .news-form .developer__description > span {
+    margin: 0 0 10px; }
+  .news-form label {
+    padding-top: 10px;
+    margin: 0; }
+  .news-form input, .news-form textarea {
+    width: 100%; }
+  .news-form input:first-child {
+    width: 47%; }
