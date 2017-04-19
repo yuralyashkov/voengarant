@@ -8611,7 +8611,27 @@ footer {
 
 .object-main {
   overflow: hidden;
-  margin: 3px 0 29px 0; }
+  margin: 4px 0 67px 0; }
+  .object-main .round-border {
+    margin: 0 auto 24px auto;
+    width: 550px;
+    height: 459px;
+    background-image: url("../images/object/border.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; }
+    @media screen and (max-width: 1025px) {
+      .object-main .round-border {
+        display: none; } }
+    .object-main .round-border .round-image {
+      width: 459px;
+      height: 459px;
+      border-radius: 100%;
+      margin: 0 auto; }
+      .object-main .round-border .round-image img {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%; }
   .object-main .sale-information .group-title {
     position: relative; }
     .object-main .sale-information .group-title span {
@@ -8628,12 +8648,12 @@ footer {
       position: absolute;
       top: 0;
       background-image: url("../images/icons/add-to-favorites.png");
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      background-size: contain; }
       @media screen and (max-width: 1025px) {
         .object-main .sale-information .group-title a {
           width: 62px;
-          height: 58px;
-          background-size: contain; } }
+          height: 58px; } }
   .object-main .sale-information .group-name {
     display: inline-block;
     vertical-align: middle; }
@@ -8684,16 +8704,17 @@ footer {
       font-size: 20px;
       width: 100%; } }
 
-.reiting {
+.no-reiting_background {
+  background-image: url("../images/object/no-reiting_background.png");
+  background-repeat: no-repeat;
+  background-position: center;
   position: relative; }
-  .reiting .object-table, .reiting .graphic {
+  .no-reiting_background .no-reiting {
     -webkit-filter: blur(5px);
     filter: blur(5px); }
 
 .object-message {
   position: absolute;
-  top: 0;
-  z-index: 2;
   top: 50%;
   left: 50%;
   margin-left: -203px; }
@@ -9377,7 +9398,7 @@ footer {
 
 .details .list {
   list-style: none;
-  margin: 0 !important;
+  margin: 0 0 59px 0 !important;
   padding: 0 !important;
   border-bottom: 1px solid #919191; }
   @media screen and (max-width: 1025px) {
@@ -9462,7 +9483,7 @@ footer {
 
 .details #tabs-1 ul {
   padding: 0;
-  margin: 59px -2.45283% 0 -2.45283%;
+  margin: 0 -2.45283% 0 -2.45283%;
   overflow: hidden; }
 
 .details #tabs-1 li {
