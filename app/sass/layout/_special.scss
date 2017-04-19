@@ -39,6 +39,12 @@
       margin-right: 45px;
       @include breakpoint("max-width: 1024px"){
         margin-right: 9.09%;
+        float: left;
+      }
+    }
+    > a:last-child {
+      @include breakpoint("max-width: 1024px"){
+        float: right;
       }
     }
 

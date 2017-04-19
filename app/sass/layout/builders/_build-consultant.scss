@@ -1,11 +1,31 @@
 .build-consultant{
   padding-top: 100px;
+  @include breakpoint("max-width: 1024px"){
+    padding-top: 160px;
+  }
   .row{
     display: flex;
+    @include breakpoint("max-width: 1024px"){
+      display: block;
+      .map-context,.build-consultant__context{
+        width: 100%;
+        margin: 0;
+      }
+    }
   }
   .map-context{
       width: 56.849%;
       height: 510px;
+      @include breakpoint("max-width: 1280px"){
+        height: 460px;
+      }
+      @include breakpoint("max-width: 1024px"){
+        border: none;
+        border-top: 1px solid #dcdcdc;
+        .plus,.menus{
+          display: none;
+        }
+      }
       .plus{
         right: -20px;
         top: 16%
@@ -20,6 +40,10 @@
       .scr{
         right: -25px;
         bottom: 60px;
+        @include breakpoint("max-width: 1024px"){
+          right: 47%;
+          bottom: -30px;
+        }
         span{
           display: none;
         }
@@ -31,39 +55,76 @@
     border: 1px solid #dcdcdc;
     padding: 30px 35px;
     margin-left: 65px;
+    @include breakpoint("max-width: 1024px"){
+      padding: 30px 45px 150px;
+      border:none;
+      border-top: 1px solid #dcdcdc;
+    }
     .block__title{
       font-size: 30px;
       margin-top: 0;
+      @include breakpoint("max-width: 1280px"){
+        font-size: 22px;
+      }
+      @include breakpoint("max-width: 1024px"){
+        font-size: 45px;
+        text-align: center;
+      }
     }
     .block__text{
       font-size: 14px;
       line-height: 18px;
       margin-bottom: 20px;
+      color: #777777;
+      @include breakpoint("max-width: 1280px"){
+        font-size: 12px;
+        line-height: 14px;
+      }
+      @include breakpoint("max-width: 1024px"){
+        font-size: 20px;
+        text-align: center;
+      }
       span{
         display: inline-block;
         color: #309bf9;
       }
     }
-    label{
-      display: block;
-      color: #777777;
-      font-weight: 300;
-    }
     input,textarea{
       width: 100%;
-      font-size: 18px;
-      padding: 5px;
       margin-bottom: 5px;
-      border-radius: 5px;
-      border: 1px solid #d3d3d3;
+      @include breakpoint("max-width: 1024px"){
+        width: 73.6%;
+        text-align: center;
+      }
     }
     textarea{
       height: 85px;
-      resize: none;
-      box-sizing: border-box;
     }
-    button{
-
+    label,input,textarea{
+      @include breakpoint("max-width: 1280px"){
+        font-size: 12px;
+      }
+      @include breakpoint("max-width: 1024px"){
+        margin-left: 13.5%;
+      }
+    }
+    input,textarea{
+      @include breakpoint("max-width: 1024px"){
+        height: 70px;
+      }
+    }
+    .politic{
+      @include breakpoint("max-width: 1280px"){
+        font-size: 10px;
+      }
+      @include breakpoint("max-width: 1024px"){
+        display: none;
+      }
+    }
+    .send{
+      @include breakpoint("max-width: 1024px"){
+        margin-left: 28.5%;
+      }
     }
   }
 }
