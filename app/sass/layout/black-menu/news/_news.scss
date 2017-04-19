@@ -1,0 +1,56 @@
+.black-news{
+  background: url("../images/background-black.png");
+  background-size: cover;
+  padding-top: 200px;
+  color: #ffffff;
+  .block__text{
+    color: #777777;
+  }
+  .news-left{
+    padding-right: 0;
+    padding-left: 0;
+    ul{
+      list-style: none;
+      padding: 0;
+    }
+    li:hover{
+      display: block;
+      background: #303030;
+      margin-right: 15px;
+    }
+    a{
+      color: #777777;
+      line-height: 38px;
+      padding-left: 10px;
+    }
+    &__banner{
+      margin-top: 50px;
+      padding: 40px 15px 40px 25px;
+      background: url("../images/black-menu/macbook.png") ;
+      background-size: cover;
+      color: #ffffff;
+      height: 400px;
+      border-radius: 5px;
+      .block__title{
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+      .block__text{
+        font-size: 14px;
+        font-family: "Roboto Slab", serif;
+      }
+      button{
+        margin-top: 22px;
+        font-size: 14px;
+        width: 150px;
+      }
+    }
+  }
+  .news-right{
+    padding-right: 30px;
+  }
+  .down-arrow{
+    margin-top: 65px;
+  }
+}
