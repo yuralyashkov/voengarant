@@ -1,4 +1,5 @@
 //map of colors
+
 @function color($key) {
 
   @if map-has-key($colors, $key) {
