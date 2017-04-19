@@ -1,0 +1,50 @@
+/*BUILDER-PRESENT*/
+
+.builder-present {
+  @include breakpoint('max-width: 1920px') {
+    .p-l-media {
+      padding-left: 5%;
+
+    }
+  }
+  &__logo {
+    background: color(dark-blue);
+    text-align: center;
+    border-radius: 10px;
+    max-width: 270px;
+    height: 195px;
+    line-height: 195px;
+
+  }
+  &__title {
+
+    margin: 0 0 20px 0;
+    @include breakpoint('max-width: 1680px') {
+      margin: 0 0 5px 0;
+    }
+    @include breakpoint('max-width: 1366px') {
+      margin: 0 0 5px 0;
+    }
+    line-height: 1;
+
+  }
+  &__description {
+    @include myriadL(18, $mainFontFamily, 300);
+    color: color(build-default);
+    margin: 0 0 10px 0;
+    p {
+      margin: 0;
+    }
+    @include breakpoint('max-width: 1680px'){
+    margin: 0 0 5px 0;}
+    @include breakpoint('max-width: 1366px'){
+    margin: 0 0 1px 0;}
+  }
+  &__more {
+    margin: 0;
+    @include myriadL(18, $mainFontFamily, 300);
+  }
+
+}
+
+/*BUILDER-PRESENT*/

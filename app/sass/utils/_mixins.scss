@@ -1,0 +1,100 @@
+/*
+    btnSend - голубая кнопка отправки;
+    myriadL - описание шрифта
+    colorGenerate - генерация цвета для графика
+    breakpoint - медиазапросы
+    grayscale - выцветание
+    ungrayscale - цветность
+    light-input - стилизация поля ввода (светлый фон)
+
+*/
+
+$percent: '%';
+@mixin myriadL($size,$font,$weight) {
+
+  font-size: $size + px;
+  font-family: $font;
+  font-weight: $weight;
+
+}
+
+@mixin colorGenerate() {
+
+  @each $key, $value in $color-blue-cell {
+
+    .blue-cell-#{$key} {
+      background: $value;
+
+    }
+
+  }
+
+}
+
+@mixin light-input() {
+  width: 100%;
+  margin: 0 0 4px 0;
+  border-radius: 5px;
+  border: 1px solid rgba(172, 172, 172, 0.5);
+  padding: 5px 20px;
+  color: color(input);
+  transition: .2s;
+  font-size: $s18;
+  &:focus {
+    box-shadow: 0 0 10px color(input-focus);
+  }
+}
+
+@mixin btnSend() {
+
+  width: 155px;
+  height: 35px;
+  color: color(white);
+  background: color(blue-btn);
+  border-radius: 5px;
+  opacity: .9;
+  transition: .2s;
+  @include myriadL(18, $mainFontFamily, 300);
+  &:hover {
+    opacity: 1;
+  }
+  @include breakpoint("max-width: 991px") {
+    width: 215px;
+    height: 54px;
+  }
+
+}
+
+@mixin breakpoint($breakpoint) {
+  @media screen and ($breakpoint) {
+    @content;
+  }
+}
+
+@mixin breakpointFull($breakpoint1,$breakpoint2) {
+  @media screen and ($breakpoint1) and ($breakpoint2) {
+    @content;
+  }
+}
+
+@mixin grayscale() {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: url(../images/grayscale.svg);
+  filter: gray;
+  -webkit-filter: grayscale(1);
+}
+
+@mixin ungrayscale() {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+
