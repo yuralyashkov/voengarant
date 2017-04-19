@@ -1,0 +1,99 @@
+/*CONTROL-FORM*/
+
+
+
+.control-form {
+  padding: 50px 40px 65px 40px;
+  border: 1px solid #dcdcdc;
+  .control-form {
+    &__title {
+      margin-top: 0;
+    }
+  }
+  &__description {
+    @include myriadL(18, $mainFontFamily, 300);
+    color: color(default);
+  }
+  &__enter-control {
+    ul {
+      list-style: none;
+      padding: 0;
+      input {
+        @include light-input;
+      }
+      li {
+        width: (95%/2);
+        float: left;
+        height: 50px;
+        margin: 0 5% 0 0;
+        &:nth-child(2n) {
+          margin: 0 0 20px 0;
+        }
+      }
+    }
+
+    label {
+      font-size: $s14;
+      color: color(default);
+      font-weight: 300;
+    }
+    select {
+      @include light-input;
+      color: color(link-more);
+      option {
+        color: #333;
+      }
+    }
+
+  }
+  &__send {
+    margin: 20px 0 0 0;
+    button {
+      @include btnSend;
+    }
+    a {
+      float: right;
+      color: color(link-more);
+      &:hover {
+        color: color(link-more);
+      }
+    }
+  }
+  &__message {
+    position: relative;
+    .hidden-input {
+      width: 30px;
+      height: 38px;
+      top: 26px;
+      left: 10px;
+      opacity: 0;
+      position: absolute;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+}
+
+.mask-input {
+  position: relative;
+
+  input {
+    @include light-input;
+    padding-left: 50px;
+  }
+  &__explore {
+    position: absolute;
+    left: 11px;
+    top: 6px;
+    background: url(../images/icons/icon-clip.png) no-repeat center center;
+    width: 24px;
+    height: 24px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+/*CONTROL-FORM*/

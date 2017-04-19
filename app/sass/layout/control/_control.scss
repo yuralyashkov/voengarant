@@ -1,0 +1,53 @@
+/*CONTROL*/
+
+.control {
+  padding: 115px 0 0 0;
+  &__title {
+    margin-top: 0;
+  }
+  &__description {
+    font-size: $s18;
+  }
+
+  @include myriadL(16, $mainFontFamily, 300);
+
+}
+
+.warning {
+
+  margin: 100px 0 0 0;
+  &_m-bottom {
+    margin: 0;
+  }
+  &__s-title {
+    margin-top: 0;
+    font-size: $s18;
+    font-weight: 400;
+
+  }
+  &__pic {
+    margin: 0 0 18px 0;
+  }
+  &__under-title {
+    font-size: $s18;
+    margin: 0 0 15px 0;
+    display: block;
+  }
+  ol {
+    margin: 29px 0 0 0;
+    padding: 0 0 0 15px;
+    font-size: $s18;
+    li {
+      margin: 0 0 18px 0;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+  &__description {
+    color: color(default);
+  }
+
+}
+
+/*CONTROL*/
