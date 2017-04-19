@@ -14,11 +14,22 @@
     }
     .title {
       @include text($titleFontFamily, #2f2f2f, block, 36px, 48px, 300);
-      margin: 0 0 0 0;
+      margin: 0 0 9px 0;
       @include breakpoint("max-width: 1025px") {
-        @include text($titleFontFamily, #2f2f2f, block, 45px, 24px, 300);
-        margin: 0 0 0 0;
+        @include text($titleFontFamily, #2f2f2f, block, 45px, 50px, 300);
+        margin: 0 0 24px 0;
       }
     }
+    .context {
+      @include text($mainFontFamily, #777777, block, 18px, 30px, 100);
+      margin: 0;
+      @include breakpoint("max-width: 1025px") {
+        @include text($mainFontFamily, #777777, block, 30px, 30px, 100);
+        margin: 0;
+      }
+    }
+  }
+  .ceo {
+    padding-top: 0;
   }
 }
