@@ -1,0 +1,54 @@
+.calculator.row.text-left
+    .calculation.col-xs-12.col-sm-12.col-md-12.col-lg-offset-1.col-lg-5
+        span.title Расчет накоплений участника НИС
+        span.context.main Калькулятор учитывает доходы от инвестирования средств участников НИС, но при этом погрешность расчета может составлять
+            span.decor-text  до 2%
+        form
+            label.context Возникновение права
+            select(name="beginning-month[]").month.select-form
+                option(desabled) Месяц
+                option(value="January") Январь
+                option(value="February") Февраль
+                option(value="March") Март
+                option(value="April") Апрель
+                option(value="May") Май
+                option(value="June") Июнь
+                option(value="July") Июль
+                option(value="August") Август
+                option(value="September") Сентябрь
+                option(value="October") Октябрь
+                option(value="November") Ноябрь
+                option(value="December") Декабрь
+            select(name="beginning-year[]")
+                option(desabled) Год
+            label.context.second-label Включение в систему
+            select(name="inclusion-month[]").month.select-form
+                option(desabled) Месяц
+                option(value="January") Январь
+                option(value="February") Февраль
+                option(value="March") Март
+                option(value="April") Апрель
+                option(value="May") Май
+                option(value="June") Июнь
+                option(value="July") Июль
+                option(value="August") Август
+                option(value="September") Сентябрь
+                option(value="October") Октябрь
+                option(value="November") Ноябрь
+                option(value="December") Декабрь
+            select(name="inclusion-year[]")
+                option(desabled) Год
+            button Рассчитать
+    .mortgage.col-xs-12.col-sm-12.col-md-12.col-lg-offset-1.col-lg-4
+        span.title Ипотечный калькулятор
+        a(href='/').xs-link Все программы банков
+        form
+            label.context Банк
+            select(name="bank[]")
+                option(desabled) Выберите банк
+            label.context Ваш возраст
+            input(type="text")
+            label.context Сумма
+            input(type="text")
+            button Рассчитать
+            a(href='/').link Все программы банков

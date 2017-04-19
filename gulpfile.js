@@ -13,8 +13,7 @@ gulp.task('templates', function () {
 
     gulp.src('./app/jade/*.jade')
         .pipe(jade({
-            locals: YOUR_LOCALS,
-            pretty: true
+            locals: YOUR_LOCALS
         }))
         .pipe(gulp.dest('./app'))
         .pipe(wiredep({
@@ -56,9 +55,6 @@ gulp.task('default', ['browser-sync', 'sass', 'templates'], function () {
     gulp.watch('./app/sass/layout/object/*.scss', ['sass']);
     gulp.watch('./app/jade/layout/object/*.jade', ['templates']);
 
-    gulp.watch('./app/sass/layout/control/*.scss', ['sass']);
-    gulp.watch('./app/jade/layout/control/*.jade', ['templates']);
-
 
     gulp.watch('./app/sass/layout/novostroiki/*.scss', ['sass']);
     gulp.watch('./app/jade/layout/novostroiki.jade', ['templates']);
@@ -69,6 +65,14 @@ gulp.task('default', ['browser-sync', 'sass', 'templates'], function () {
 
     gulp.watch('./app/jade/layout/builders/*.jade', ['templates']);
 
+    gulp.watch('./app/sass/layout/banks/*.scss', ['sass']);
+    gulp.watch('./app/jade/layout/banks/*.jade', ['templates']);
+
+    gulp.watch('./app/sass/layout/vzaimodeistvie/*.scss', ['sass']);
+    gulp.watch('./app/jade/layout/vzaimodeistvie/*.jade', ['templates']);
+
+    gulp.watch('./app/sass/layout/question-lawyer/*.scss', ['sass']);
+    gulp.watch('./app/sass/layout/question-lawyer/*.jade', ['jade']);
 
     gulp.watch('./app/sass/components/*.scss', ['sass']);
     gulp.watch('./app/sass/utils/*.scss', ['sass']);

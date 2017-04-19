@@ -1,0 +1,17 @@
+include layout/_headerU
+body
+    include layout/_header
+    +locate-label("label_builders","Москва")
+    include layout/buildres/_builders-tabs
+    +short-prod-desc('builder-present-1','Пик')
+    include layout/buildres/_builders-object
+    +short-prod-desc('builder-present-1','Самолет девелопмент')
+    include layout/buildres/_builders-double-obj
+    +short-prod-desc('builder-present-1','Самолет девелопмент')
+    include layout/buildres/_builders-double-obj
+    include layout/_partners
+    include layout/buildres/_all-builders
+    include layout/_seo
+    include layout/home/_bank
+    include layout/_footer
+include layout/_footerU

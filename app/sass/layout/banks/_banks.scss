@@ -1,0 +1,62 @@
+.banks {
+  .bank {
+    padding: 114px 0 52px 0;
+    @include breakpoint("max-width: 1025px") {
+      padding: 0 0 10px 0;
+    }
+    .block__title {
+      padding: 0 0 31px 0;
+      @include breakpoint("max-width: 1025px") {
+        line-height: 47px;
+        padding: 0 0 36px 0;
+      }
+    }
+    .block__text {
+      padding: 0 0 65px 0;
+      @include breakpoint("max-width: 1025px") {
+        padding: 0 0 84px 0;
+        font-size: 30px;
+        br {
+          display: none;
+        }
+      }
+    }
+    .more {
+      display: none;
+    }
+  }
+  .calculator_block {
+    margin: 0 (29px / $container * 100%) 130px (29px / $container * 100%);
+    @include breakpoint("max-width: 1025px") {
+      margin: 0 0 150px 0;
+    }
+  }
+  .special {
+    @include breakpoint("max-width: 1025px") {
+      height: 577px;
+    }
+    .special__title {
+      @include breakpoint("max-width: 1025px") {
+        font-weight: 300;
+        line-height: 50px;
+      }
+    }
+    .special__text {
+      @include breakpoint("max-width: 1025px") {
+        margin: 49px 0 51px 0;
+      }
+    }
+  }
+  .block__discount {
+    margin: 0 0 130px 0;
+    @include breakpoint("max-width: 1025px") {
+      margin: 0 0 150px 0;
+    }
+  }
+  .seo {
+    padding: 130px 0 0 0;
+    @include breakpoint("max-width: 1025px") {
+      padding: 144px 0 0 0;
+    }
+  }
+}

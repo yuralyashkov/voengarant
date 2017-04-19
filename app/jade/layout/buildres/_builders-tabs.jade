@@ -1,0 +1,32 @@
+section.builders-tabs
+    .container
+        span.builders-tabs__title.block__title.text-center Рейтинг застройщкиов
+        span.builders-tabs__max-reiting-inscription.max-reiting-inscription.text-center Максимальный рейтинг
+            span.max-reiting 100%
+        .builders-tabs__description.text-center
+            p.
+                Успешно реализована схема дистанционного ведения сделки (без личного присутствия военнослужщего)<br> на первичном рынке. Таким образом, десятки тысяч военнослужащих, желающих приобрести жилье!
+        .builders-tabs__tabs#builder-tabs
+            ul(class="nav nav-tabs" role="tablist")
+                li( role="presentation" class="active")
+                    a( href="#tab-build-1" aria-controls="tab-build-1" role="tab" data-toggle="tab") Отзывы военных
+                li( role="presentation")
+                    a( href="#tab-build-2" aria-controls="tab-build-2" role="tab" data-toggle="tab") Сервис
+                li( role="presentation")
+                    a( href="#tab-build-3" aria-controls="tab-build-" role="tab" data-toggle="tab") Скорость строительства
+                li( role="presentation")
+                    a( href="#tab-build-4" aria-controls="tab-build-4" role="tab" data-toggle="tab") Качество
+
+
+                li( role="presentation")
+                    a( href="#tab-build-4" aria-controls="tab-build-4" role="tab" data-toggle="tab") Надежность
+                    
+
+
+            div(class="tab-content")
+                div(role="tabpanel" class="tab-pane active" id="tab-build-1")
+                    include _rate-graph-builders
+                div(role="tabpanel" class="tab-pane" id="tab-build-2") 123123123
+                div(role="tabpanel" class="tab-pane" id="tab-build-3")
+                    include _rate-graph-builders
+                div(role="tabpanel" class="tab-pane" id="tab-build-4") 123123123

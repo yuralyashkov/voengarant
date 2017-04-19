@@ -1,0 +1,24 @@
+.question-lawyer {
+  &__title {
+    margin: 91px 0 92px 0;
+    @include breakpoint("max-width: 1025px") {
+      margin: 100px 0 89px 0;
+    }
+    img {
+      width: 35px;
+      height: 41px;
+      @include breakpoint("max-width: 1025px") {
+        width: 91px;
+        height: 109px;
+      }
+    }
+    .title {
+      @include text($titleFontFamily, #2f2f2f, block, 36px, 48px, 300);
+      margin: 0 0 0 0;
+      @include breakpoint("max-width: 1025px") {
+        @include text($titleFontFamily, #2f2f2f, block, 45px, 24px, 300);
+        margin: 0 0 0 0;
+      }
+    }
+  }
+}

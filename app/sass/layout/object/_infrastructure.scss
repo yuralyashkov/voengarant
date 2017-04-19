@@ -1,19 +1,25 @@
 .infrastructure {
   .title {
-    font-family: $titleFontFamily;
-    font-size: 36px;
-    color: #333333;
-    display: block;
+    @include text($titleFontFamily, #333333, block, 36px, 42px, 300);
+    margin: 0 0 5px 0;
+    @include breakpoint("max-width: 1025px") {
+      @include text($titleFontFamily, #333333, block, 45px, 50px, 300);
+      margin: 0 0 23px 0;
+    }
   }
   .context {
-    font-family: $mainFontFamily;
-    font-size: 18px;
-    color: #777777;
-    display: block;
+    @include text($mainFontFamily, #777777, block, 18px, 20px, 100);
     margin: 0 0 68px 0;
+    @include breakpoint("max-width: 1025px") {
+      @include text($mainFontFamily, #333333, block, 30px, 35px, 100);
+      margin: 0 0 73px 0;
+    }
   }
-  .row {
-    .col-md-8 {
+  .l-block {
+    @include breakpoint("max-width: 1025px") {
+      display: none;
+    }
+    .col-lg-8 {
       .row {
         margin: 0 0 107px 0;
         .first {
@@ -21,14 +27,14 @@
         }
         .second {
           padding-left: 60px;
-          @include breakpoint("max-width: 1450px"){
+          @include breakpoint("max-width: 1450px") {
             padding-left: 30px;
           }
-          @include breakpoint("max-width: 1330px"){
+          @include breakpoint("max-width: 1330px") {
             padding-left: 15px;
           }
         }
-        .col-md-6 {
+        .col-lg-6 {
           .line {
             display: table;
             img {
@@ -37,26 +43,23 @@
               display: table-cell;
             }
             span {
+              @include text($mainFontFamily, #333333, table-cell, 18px, 20px, 100);
               vertical-align: middle;
-              display: table-cell;
               padding-left: 12px;
-              font-family: $mainFontFamily;
-              font-size: 18px;
-              color: #333333;
               padding-bottom: 25px;
-              @include breakpoint("max-width: 1450px"){
+              @include breakpoint("max-width: 1450px") {
                 font-size: 15px;
               }
-              @include breakpoint("max-width: 1330px"){
+              @include breakpoint("max-width: 1330px") {
                 font-size: 13px;
               }
-              @include breakpoint("max-width: 1200px"){
+              @include breakpoint("max-width: 1200px") {
                 font-size: 12px;
               }
-              @include breakpoint("max-width: 1150px"){
+              @include breakpoint("max-width: 1150px") {
                 font-size: 11px;
               }
-              @include breakpoint("max-width: 1050px"){
+              @include breakpoint("max-width: 1050px") {
                 font-size: 10px;
               }
             }
@@ -65,6 +68,30 @@
             }
           }
         }
+      }
+    }
+  }
+  .xs-block {
+    margin: 0 0 190px 0;
+    @include breakpoint("min-width: 1026px") {
+      display: none;
+    }
+    .row {
+      margin-bottom: 46px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .col-xs-2, .col-sm-2, .col-md-2 {
+      text-align: center;
+      img {
+        width: 67px;
+        height: 65px;
+      }
+    }
+    .col-xs-10, .col-sm-10, .col-md-10 {
+      span {
+        @include text($mainFontFamily, #333333, block, 30px, 33px, 100);
       }
     }
   }

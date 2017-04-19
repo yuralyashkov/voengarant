@@ -8,26 +8,42 @@
   }
   .middle-text{
     display: block;
-    font-family: "Roboto Slab";
+    font-family: "Roboto Slab", serif;
     font-weight: 100;
     font-size: 36px;
     color: #777777;
     text-align: center;
     margin-top: 25px;
     line-height: 46px;
+    @include breakpoint("max-width: 1680px"){
+      font-size: 25px;
+      line-height: 30px;
+    }
+    @include breakpoint("max-width: 1024px"){
+      font-size: 30px;
+    }
   }
   .block__text{
     display: block;
     margin-top: 17px;
+    @include breakpoint("max-width: 1024px"){
+      color: #333333;
+      font-size: 20px;
+    }
   }
   .social__img{
     margin: 0 auto;
-    padding-top: 30px;
+    padding-top: 25px;
     a{
       display: inline-block;
       padding-right: 10px;
     }
-    img:last-child{
+    img{
+      @include breakpoint("max-width: 1024px"){
+        width: 45px;
+      }
+    }
+    a:last-child{
       padding-right: 0;
     }
   }

@@ -1,0 +1,111 @@
+.build-control{
+  padding-top: 90px;
+  .container{
+    display: flex;
+  }
+  @include breakpoint("max-width: 1024px"){
+    padding-top: 200px;
+  }
+  .build-control__form,.build-control__text{
+    display: inline-block;
+    float: left;
+    @include breakpoint("max-width: 1024px"){
+      width: 100%;
+    }
+  }
+  &__form{
+    @include breakpoint("max-width: 1024px"){
+      display: none !important;
+    }
+    width: 71.45%;
+    padding: 70px 30px;
+    margin-right: 80px;
+    border: 1px solid #dcdcdc;
+    @include breakpoint("max-width: 1680px"){
+      margin-right: 60px;
+    }
+    @include breakpoint("max-width: 1280px"){
+      width: 64.45%;
+    }
+    .block__text{
+      padding-bottom: 15px;
+
+    }
+    button{
+      margin: 16px 0 0;
+    }
+
+    &__context{
+      display: inline-block;
+      width: 50%;
+      @include breakpoint("max-width: 1280px"){
+        width: 48%;
+      }
+      input,select{
+        width: 94%;
+        margin-bottom: 5px;
+      }
+      select{
+        color: #309bf7;
+        height: 38px;
+      }
+    }
+
+    &__context:nth-child(even){
+      width: 47.45%;
+      margin-left: 20px;
+      input,select{
+        width: 100%;
+        padding-bottom: 5px;
+      }
+    }
+    textarea{
+      width: 100%;
+      background: url("../images/icons/textarea.png") 10px center no-repeat;
+    }
+  }
+  &__text{
+    width: 22.5%;
+    .build-control__img{
+      @include breakpoint("max-width: 1024px"){
+        display: none;
+      }
+    }
+    .block__title{
+      margin-top: 10px;
+      @include breakpoint("max-width: 1024px"){
+        line-height: 50px;
+      }
+    }
+    .block__text{
+      font-size: 16px;
+      line-height: 20px;
+      @include breakpoint("max-width: 1680px"){
+        font-size: 14px;
+      }
+      @include breakpoint("max-width: 1280px"){
+        font-size: 12px;
+      }
+      @include breakpoint("max-width: 1024px"){
+        font-size: 20px;
+        line-height: 25px;
+      }
+    }
+  }
+  .block_mob{
+    display: none;
+    @include breakpoint("max-width: 1024px"){
+      display: block;
+    }
+    img{
+      width: 50px;
+      vertical-align: bottom;
+    }
+    .send{
+      width: 475px;
+      height: 70px;
+      margin-left: 25px;
+      vertical-align: sub;
+    }
+  }
+}

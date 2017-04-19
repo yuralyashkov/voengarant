@@ -1,126 +1,202 @@
-.remote-transaction {
-  overflow: hidden;
-  .background {
-    background-color: #efefef;
-    display: flex;
-    .left-part {
-      background: url("../images/remote-transaction.png") no-repeat center;
-      float: left;
-      background-size: 90%;
-      width: 33.96%;
-      @include breakpoint("max-width: 950px") {
-        display: none;
-      }
-    }
-    .right-part {
-      width: 66.04%;
-      padding: 80px 0 88px 0;
-      @include breakpoint("max-width: 1200px"){
-        padding: 60px 0 68px 0;
-      }
-      @include breakpoint("max-width: 950px") {
-        display: none;
-      }
-      float: right;
-      .title {
-        font-family: $titleFontFamily;
-        font-size: 24px;
-        color: #333333;
-        display: block;
-        @include breakpoint("max-width: 1300px"){
-          font-size: 22px;
-        }
-        @include breakpoint("max-width: 1200px"){
-          font-size: 20px;
-        }
-        @include breakpoint("max-width: 1100px"){
-          font-size: 18px;
-        }
-      }
-      .list {
-        font-family: $titleFontFamily;
-        font-size: 18px;
-        color: #333333;
-        margin: 0 0 4px 0;
-        display: block;
-        @include breakpoint("max-width: 1100px"){
-          font-size: 17px;
-        }
-      }
-      .list-content {
-        font-family: $mainFontFamily;
-        font-size: 16px;
-        color: #777777;
-        margin: 0 0 27px 0;
-        display: block;
-        @include breakpoint("max-width: 1100px"){
-          font-size: 15px;
-          margin: 0 0 20px 0;
-        }
-      }
-      .links {
-        margin: (38px / 1358px * 100%) 0 (29px / 1358px * 100%) 0;
-        display: inline-block;
-        a {
-          display: inline-block;
-          margin: 0 15px 0 0;
-          &:last-child {
-            margin: 0;
-          }
-          img {
-            width: 25px;
-            height: 25px;
-            @include grayscale;
-            opacity: .85;
-          }
-          &:hover {
-            img {
-              @include ungrayscale;
-              opacity: 1;
-            }
-          }
-        }
-      }
-      .butttons {
-        .button {
-          display: inline-block;
-          font-family: $mainFontFamily;
-          font-size: 16px;
-          color: #ffffff;
-          border-radius: 5px;
-          padding-left: (25px / 1358px * 100%);
-          padding-right: (25px / 1358px * 100%);
-          line-height: 30px;
-          vertical-align: middle;
-          height: 35px;
-          margin: 0 (50px / 1358px * 100%) 0 0;
-          opacity: .9;
-          &_red {
-            background-color: #d2294b;
-          }
-          &_blue {
-            background-color: #309bf7;
-          }
-          &_black {
-            background-color: #303030;
-          }
-          &:last-child {
-            margin: 0;
-          }
-          &:hover {
-            opacity: 1;
-            text-decoration: none;
-          }
-          img {
-            display: inline-block;
-            vertical-align: middle;
-            width: 16px;
-            height: 16px;
-            margin: 0 8px 0 0;
-
-          }
-        }
-      }
+.remote-transaction .background {
+  background-color: #efefef;
+  display: flex;
+  padding-top: 82px;
+  @include breakpoint("max-width: 1200px") {
+    padding-top: 62px;
+  }
+  @include breakpoint("max-width: 1025px") {
+    padding-top: 74px;
+    display: block;
+  }
+}
+.remote-transaction .left-part {
+  @include breakpoint("max-width: 1025px") {
+    display: none;
+  }
+  background: url("../images/remote-transaction.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  float: left;
+  width: (653px / $container * 100%);
+  @include breakpoint("max-width: 1800px") {
+    background-size: 90%;
+  }
+  //@include breakpoint("max-width: 1800px") {
+  //  background-position: center;
+  //}
+}
+.remote-transaction .right-part {
+  padding: 0 0 88px 0;
+  float: right;
+  width: (($container - 653px) / $container * 100%);
+  @include breakpoint("max-width: 1400px") {
+    padding: 0 20px 88px 0;
+    br {
+      display: none;
     }
   }
+  @include breakpoint("max-width: 1200px") {
+    padding: 0 0 68px 0;
+  }
+  @include breakpoint("max-width: 1025px") {
+    float: none;
+    margin: 0;
+    padding: 0 55px 0 15px;
+    width: 100%;
+  }
+}
+.remote-transaction .title {
+  @include text($titleFontFamily, #333333, block, 24px, 27px, 400);
+  @include breakpoint("max-width: 1025px") {
+    @include text($titleFontFamily, #333333, block, 30px, 30px, 400);
+    margin: 0 0 41px 0;
+  }
+}
+.remote-transaction .links {
+  margin: (38px / 1358px * 100%) 0 (29px / 1358px * 100%) 0;
+  @include breakpoint("max-width: 1025px") {
+    margin: 0 0 42px 0;
+  }
+  a {
+    display: inline-block;
+    margin: 0 15px 0 0;
+    @include breakpoint("max-width: 1025px") {
+      margin: 0 25px 0 0;
+    }
+    &:last-child {
+      margin: 0;
+    }
+    img {
+      @include grayscale;
+      opacity: .9;
+      width: 25px;
+      height: 25px;
+      @include breakpoint("max-width: 1025px") {
+        width: 48px;
+        height: 48px;
+      }
+    }
+    &:hover img {
+      @include ungrayscale;
+      opacity: 1;
+    }
+  }
+}
+.remote-transaction .list {
+  @include text($titleFontFamily, #333333, block, 18px, 20px, 400);
+  margin: 0 0 4px 0;
+  @include breakpoint("max-width: 1100px") {
+    @include text($titleFontFamily, #333333, block, 17px, 19px, 400);
+  }
+  @include breakpoint("max-width: 1025px") {
+    @include text($titleFontFamily, #333333, block, 30px, 30px, 300);
+    margin: 0 0 5px 0;
+  }
+}
+.remote-transaction .list-content {
+  @include text($mainFontFamily, #777777, block, 16px, 18px, 100);
+  margin: 0 0 27px 0;
+  @include breakpoint("max-width: 1100px") {
+    @include text($mainFontFamily, #777777, block, 15px, 18px, 100);
+    margin: 0 0 20px 0;
+  }
+  @include breakpoint("max-width: 1025px") {
+    @include text($mainFontFamily, #777777, block, 20px, 23px, 300);
+    margin: 0 0 35px 0;
+  }
+}
+.remote-transaction .buttons {
+  @include breakpoint("max-width: 1025px") {
+    display: none;
+  }
+}
+.remote-transaction .button {
+  @include button($mainFontFamily, 16px, #ffffff, 100, none, 5px, 35px, 35px, .9);
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 50px 0 0;
+  @include breakpoint("max-width: 1700px") {
+    margin: 0 20px 0 0;
+  }
+  @include breakpoint("max-width: 1400px") {
+    @include button($mainFontFamily, 14px, #ffffff, 100, none, 5px, 35px, 35px, .9);
+  }
+  @include breakpoint("max-width: 1700px") {
+    margin: 0 15px 0 0;
+  }
+  @include breakpoint("max-width: 1295px") {
+    margin: 0 10px 0 0;
+  }
+  @include breakpoint("max-width: 1205px") {
+    @include button($mainFontFamily, 11px, #ffffff, 100, none, 5px, 35px, 35px, .9);
+  }
+  @include breakpoint("max-width: 1025px") {
+    @include button($mainFontFamily, 20px, #ffffff, 300, none, 5px, 47px, 47px, .9);
+    margin: 0 10px 0 0;
+  }
+  @include breakpoint("max-width: 950px") {
+    @include button($mainFontFamily, 17px, #ffffff, 400, none, 5px, 47px, 47px, .9);
+    margin: 0 10px 0 0;
+  }
+  span {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    margin: 0 8px 0 15px;
+    @include breakpoint("max-width: 1025px") {
+      width: 23px;
+      height: 24px;
+      margin: 0 16px 0 15px;
+    }
+  }
+  &_red {
+    background-color: #d2294b;
+  }
+  &_blue {
+    background-color: #309bf7;
+    span {
+      padding-left: 0 !important;
+    }
+  }
+  &_black {
+    background-color: #303030;
+  }
+  &:last-child {
+    margin: 0 !important;
+  }
+  &:hover {
+    opacity: 1;
+    text-decoration: none;
+  }
+}
+.remote-transaction .xs-buttons {
+  @include breakpoint("min-width: 1026px") {
+    display: none;
+  }
+  display: block;
+  margin: 0 9px 48px 9px;
+  .button {
+    margin: 0 26px 0 0;
+  }
+}
+.remote-transaction .xs-block {
+  @include breakpoint("min-width: 1026px") {
+    display: none;
+  }
+  width: 100%;
+  height: 448px;
+}
+.remote-transaction .background-image {
+  background: url("../images/remote-transaction.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  //background-size: 90%;
+  width: 100%;
+  height: 100%;
 }

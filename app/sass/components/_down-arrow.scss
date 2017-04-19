@@ -1,0 +1,21 @@
+/*DOWN ARROW*/
+
+.down-arrow {
+  width: 100%;
+  img {
+    margin: 0 0 7px 0;
+  }
+  a{
+    display: inline-block;
+    color: color(default);
+
+  }
+  font-size: $s12;
+  text-align: center;
+  span{
+    display: block;
+  }
+
+}
+
+/*END DOWN ARROW*/

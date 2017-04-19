@@ -34,3 +34,10 @@ $(function () {
     ], $('body'));
 
 });
+//   ./bank
+var bsnkSlider = new Swiper('#bank-programs', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    // autoplay: true,
+    speed: 3000
+});

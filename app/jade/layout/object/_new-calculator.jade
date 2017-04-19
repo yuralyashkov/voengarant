@@ -1,0 +1,362 @@
+.lg-block.container
+    .calculator_block
+        .calculator_block__line
+            .row
+                .col-lg-3.text-center
+                    label.calculator_block__nomination(for="amount") Стоимость квартиры:
+                    input(type="text" readonly).calculator_block__count#amount
+                .col-lg-9
+                    .layout-slider
+                        span.jslider
+                            table
+                                tbody
+                                    tr
+                                        td
+                                            .jslider-scale
+                                                span.space-11
+                                                    ins.simple 1
+                                                span.space-11
+                                                    ins.simple-dot 2.4
+                                                span.space-11
+                                                    ins.simple-dot 3.8
+                                                span.space-11
+                                                    ins.simple-dot__too 5.2
+                                                span.space-11
+                                                    ins.simple-dot__too 6.6
+                                                span.space-11
+                                                    ins.simple__too 8
+                                                span.space-11
+                                                    ins.simple-dot__too 9.4
+                                                span.space-11
+                                                    ins.complex 10.8
+                                                span.space-11
+                                                    ins.complex 12.6
+                                                span.space-11
+                                                    ins.complex 13.6
+                                                span.space-11
+                                                    ins.simple-dot 15
+                        #apartmen-cost
+        .calculator_block__line
+            .row
+                .col-lg-3.text-center
+                    label.calculator_block__nomination Размер ваших накоплений
+                    input(type="text").calculator_block__count
+                .col-lg-9
+                    span.calculator_block__remark Укажите Год и месяц вступления в программу Военная ипотека
+                    .layout-slider
+                        span.jslider
+                            table
+                                tbody
+                                    tr
+                                        td
+                                            .jslider-scale.xs-block__jslider-scale
+                                                span.space-11
+                                                    ins.year__complex 2005
+                                                span.space-11
+                                                    ins.year__complex__too 2006
+                                                span.space-11
+                                                    ins.year__simple-dot 2007
+                                                span.space-11
+                                                    ins.year__complex 2008
+                                                span.space-11
+                                                    ins.year__simple-dot__too 2009
+                                                span.space-11
+                                                    ins.year__complex 2010
+                                                span.space-11
+                                                    ins.year__complex 2011
+                                                span.space-11
+                                                    ins.year__complex 2012
+                                                span.space-11
+                                                    ins.year__complex 2013
+                                                span.space-11
+                                                    ins.year__complex 2014
+                                                span.space-11
+                                                    ins.year__complex 2015
+                        #year
+                    .layout-slider.layout-slider__second
+                        span.jslider
+                            table
+                                tbody
+                                    tr
+                                        td
+                                            .jslider-scale
+                                                span.space-13
+                                                    ins.simple 1
+                                                span.space-13
+                                                    ins.simple 2
+                                                span.space-13
+                                                    ins.simple 3
+                                                span.space-13
+                                                    ins.simple 4
+                                                span.space-13
+                                                    ins.simple 5
+                                                span.space-13
+                                                    ins.simple 6
+                                                span.space-13
+                                                    ins.simple 7
+                                                span.space-13
+                                                    ins.simple 8
+                                                span.space-13
+                                                    ins.simple 9
+                                                span.space-13
+                                                    ins.complex__too 10
+                                                span.space-13
+                                                    ins.complex__too 11
+                                                span.space-13
+                                                    ins.complex__too 12
+                        #month
+        .calculator_block__line
+            .row
+                .col-lg-3.text-center
+                    label.calculator_block__nomination Размер кредита
+                    input(type="text").calculator_block__count
+                .col-lg-9
+                    span.calculator_block__remark Укажите свой возраст
+                    .layout-slider
+                        span.jslider
+                            table
+                                tbody
+                                    tr
+                                        td
+                                            .jslider-scale
+                                                span.space-21
+                                                    ins.complex__too 25
+                                                span.space-21
+                                                    ins.complex__too 26
+                                                span.space-21
+                                                    ins.complex__too 27
+                                                span.space-21
+                                                    ins.complex__too 28
+                                                span.space-21
+                                                    ins.complex__too 29
+                                                span.space-21
+                                                    ins.complex__too 30
+                                                span.space-21
+                                                    ins.complex__too 31
+                                                span.space-21
+                                                    ins.complex__too 32
+                                                span.space-21
+                                                    ins.complex__too 33
+                                                span.space-21
+                                                    ins.complex__too 34
+                                                span.space-21
+                                                    ins.complex__too 35
+                                                span.space-21
+                                                    ins.complex__too 36
+                                                span.space-21
+                                                    ins.complex__too 37
+                                                span.space-21
+                                                    ins.complex__too 38
+                                                span.space-21
+                                                    ins.complex__too 39
+                                                span.space-21
+                                                    ins.complex__too 40
+                                                span.space-21
+                                                    ins.complex__too 41
+                                                span.space-21
+                                                    ins.complex__too 42
+                                                span.space-21
+                                                    ins.complex__too 43
+                                                span.space-21
+                                                    ins.complex__too 44
+                                                span.space-21
+                                                    ins.complex__too 45
+                        #age
+        .calculator_block__result
+            .row
+                .col-lg-3.text-center
+                    span.name Собственные средства
+                    span.result 406 066 руб.
+                .col-lg-3.text-center
+                    span.name Процентная ставка
+                    span.result 11.75 / 11.75
+                .col-lg-3.text-center
+                    span.name Срок кредита
+                    span.result 176 мес.
+                .col-lg-3.text-center
+                    span.name Переплата по кредиту
+                    span.result 2 627 500 руб.
+//.xs-block.calculator_block
+    .calculator_block__line
+        .container
+            .row
+                .col-xs-8.col-sm-8.col-md-8.text-left
+                    label.calculator_block__nomination(for="amount") Стоимость квартиры:
+                .col-xs-4.col-sm-4.col-md-4
+                    input(type="text" readonly).calculator_block__count#amount
+                .col-xs-12.col-sm-12.col-md-12
+                    .layout-slider
+                        span.jslider
+                            table
+                                tbody
+                                    tr
+                                        td
+                                            .jslider-scale
+                                                span.space-11
+                                                    ins.simple 1
+                                                span.space-11
+                                                    ins.simple-dot 2.4
+                                                span.space-11
+                                                    ins.simple-dot 3.8
+                                                span.space-11
+                                                    ins.simple-dot__too 5.2
+                                                span.space-11
+                                                    ins.simple-dot__too 6.6
+                                                span.space-11
+                                                    ins.simple__too 8
+                                                span.space-11
+                                                    ins.simple-dot__too 9.4
+                                                span.space-11
+                                                    ins.complex 10.8
+                                                span.space-11
+                                                    ins.complex 12.6
+                                                span.space-11
+                                                    ins.complex 13.6
+                                                span.space-11
+                                                    ins.simple-dot 15
+                        #apartmen-cost
+    .calculator_block__line
+        .container
+            .row
+                .col-xs-8.col-sm-8.col-md-8.text-left
+                    label.calculator_block__nomination Размер ваших накоплений
+                .col-xs-4.col-sm-4.col-md-4
+                    input(type="text").calculator_block__count
+                .col-xs-12.col-sm-12.col-md-12.col-lg-9
+                    span.calculator_block__remark Укажите Год и месяц вступления в программу Военная ипотека
+                    .layout-slider
+                        span.jslider
+                            table
+                                tbody
+                                    tr
+                                        td
+                                            .jslider-scale.xs-block__jslider-scale
+                                                span.space-11
+                                                    ins.year__complex 2005
+                                                span.space-11
+                                                    ins.year__complex__too 2006
+                                                span.space-11
+                                                    ins.year__simple-dot 2007
+                                                span.space-11
+                                                    ins.year__complex 2008
+                                                span.space-11
+                                                    ins.year__simple-dot__too 2009
+                                                span.space-11
+                                                    ins.year__complex 2010
+                                                span.space-11
+                                                    ins.year__complex 2011
+                                                span.space-11
+                                                    ins.year__complex 2012
+                                                span.space-11
+                                                    ins.year__complex 2013
+                                                span.space-11
+                                                    ins.year__complex 2014
+                                                span.space-11
+                                                    ins.year__complex 2015
+                        #year
+                    .layout-slider.layout-slider__second
+                        span.jslider
+                            table
+                                tbody
+                                    tr
+                                        td
+                                            .jslider-scale
+                                                span.space-13
+                                                    ins.simple 1
+                                                span.space-13
+                                                    ins.simple 2
+                                                span.space-13
+                                                    ins.simple 3
+                                                span.space-13
+                                                    ins.simple 4
+                                                span.space-13
+                                                    ins.simple 5
+                                                span.space-13
+                                                    ins.simple 6
+                                                span.space-13
+                                                    ins.simple 7
+                                                span.space-13
+                                                    ins.simple 8
+                                                span.space-13
+                                                    ins.simple 9
+                                                span.space-13
+                                                    ins.complex__too 10
+                                                span.space-13
+                                                    ins.complex__too 11
+                                                span.space-13
+                                                    ins.complex__too 12
+                        #month
+    .calculator_block__line
+        .container
+            .row
+                .col-xs-8.col-sm-8.col-md-8.text-left
+                    label.calculator_block__nomination Размер кредита
+                .col-xs-4.col-sm-4.col-md-4
+                    input(type="text").calculator_block__count
+                .col-xs-12.col-sm-12.col-md-12
+                    span.calculator_block__remark Укажите свой возраст
+                    .layout-slider
+                        span.jslider
+                            table
+                                tbody
+                                    tr
+                                        td
+                                            .jslider-scale
+                                                span.space-21
+                                                    ins.complex__too 25
+                                                span.space-21
+                                                    ins.complex__too 26
+                                                span.space-21
+                                                    ins.complex__too 27
+                                                span.space-21
+                                                    ins.complex__too 28
+                                                span.space-21
+                                                    ins.complex__too 29
+                                                span.space-21
+                                                    ins.complex__too 30
+                                                span.space-21
+                                                    ins.complex__too 31
+                                                span.space-21
+                                                    ins.complex__too 32
+                                                span.space-21
+                                                    ins.complex__too 33
+                                                span.space-21
+                                                    ins.complex__too 34
+                                                span.space-21
+                                                    ins.complex__too 35
+                                                span.space-21
+                                                    ins.complex__too 36
+                                                span.space-21
+                                                    ins.complex__too 37
+                                                span.space-21
+                                                    ins.complex__too 38
+                                                span.space-21
+                                                    ins.complex__too 39
+                                                span.space-21
+                                                    ins.complex__too 40
+                                                span.space-21
+                                                    ins.complex__too 41
+                                                span.space-21
+                                                    ins.complex__too 42
+                                                span.space-21
+                                                    ins.complex__too 43
+                                                span.space-21
+                                                    ins.complex__too 44
+                                                span.space-21
+                                                    ins.complex__too 45
+                        #age
+    .calculator_block__result
+        .container
+            .row
+                .col-xs-6.col-sm-6.col-md-6.text-left
+                    span.name Собственные средства
+                    span.result 406 066 руб.
+                .col-xs-6.col-sm-6.col-md-6.text-left
+                    span.name Процентная ставка
+                    span.result 11.75 / 11.75
+                .col-xs-6.col-sm-6.col-md-6.text-left
+                    span.name Срок кредита
+                    span.result 176 мес.
+                .col-xs-6.col-sm-6.col-md-6.text-left
+                    span.name Переплата по кредиту
+                    span.result 2 627 500 руб.

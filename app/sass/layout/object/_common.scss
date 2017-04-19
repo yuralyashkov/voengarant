@@ -1,20 +1,30 @@
-.red-line {
-  background-color: #a3344b;
-
-  .col-md-5 {
-    padding: 0;
-    span {
-      color: #f5f5f5;
-      font-size: 16px;
-      font-family: $mainFontFamily;
-      font-weight: 300;
-      line-height: 26px;
-      @include breakpoint("max-width: 1060px"){
-        font-size: 14px;
-      }
-      @include breakpoint("max-width: 390px"){
-        font-size: 12px;
-      }
-    }
+.line {
+  opacity: .9;
+  &__red {
+    background-color: #a3344b;
+  }
+  &__blue {
+    background-color: #3e92d9;
+  }
+  span {
+    color: #f5f5f5;
+    font-size: 16px;
+    font-family: $mainFontFamily;
+    font-weight: 300;
+    line-height: 26px;
+  }
+  a {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+  }
+  .text {
+    float: left;
+  }
+  .decor {
+    float: right;
+  }
+  &:hover {
+    opacity: 1;
   }
 }
