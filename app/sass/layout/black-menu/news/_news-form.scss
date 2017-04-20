@@ -5,17 +5,57 @@
 
   padding: 50px 60px;
   margin-top: 125px;
+  @include breakpoint("max-width: 1680px") {
+    padding: 30px 30px;
+  }
   .block__title{
     margin: 0 0 10px;
+  }
+  .block__text{
+    width: 90%;
   }
   label{
     padding-top: 10px;
     margin: 0;
+    @include breakpoint("max-width: 1680px") {
+      font-size: 12px;
+    }
   }
   input,textarea{
     width: 100%;
+    background: #2e2e2e;
+    border:none;
   }
-  input:first-child{
-    width: 47%;
+  .input-form_short{
+    width: 43%;
+  }
+  textarea{
+    height: 90px;
+    margin-bottom: 15px;
+  }
+  .tab{
+    margin-bottom: 15px;
+    button{
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      border: none ;
+      background: url("../images/icons/textarea.png");
+      background-size: cover;
+      vertical-align: middle;
+    }
+    span{
+      display: inline-block;
+      font-size: 18px;
+      margin-left: 10px;
+      color: #777777;
+      @include breakpoint("max-width: 1680px") {
+        font-size: 14px;
+      }
+      @include breakpoint("max-width: 1280px") {
+        font-size: 12px;
+      }
+    }
+
   }
 }
