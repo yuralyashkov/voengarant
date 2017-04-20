@@ -10,7 +10,7 @@
   }
   &__title {
     margin: 0 0 13px 0;
-    @include breakpoint("max-width: 1024px"){
+    @include breakpoint("max-width: 1024px") {
       color: #2f2f2f;
       font-weight: 100;
     }
@@ -19,7 +19,7 @@
     display: block;
     color: color(default);
     text-align: center;
-    @include breakpoint("max-width: 1024px"){
+    @include breakpoint("max-width: 1024px") {
       margin-bottom: 10px;
     }
 
@@ -30,9 +30,10 @@
   &__description {
     font-size: $s18;
     color: color(build-default);
-    @include breakpoint("max-width: 1024px"){
+    @include breakpoint("max-width: 1024px") {
       font-size: 30px;
       line-height: 36px;
+      margin: 0 0 50px 0;
     }
     p {
       margin: 0;
