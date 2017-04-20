@@ -1,6 +1,18 @@
 section.news-right.col-md-10
+    nav.news-right__mob-menu
+        ul
+            - var TopList = ['Все', 'ПИК', 'Акции', 'ВоенГарант ', 'Банки']
+            for item in TopList
+                li
+                    a(href='#')= item
+            - var TopList = ['Законодательство', 'Политика','Общие']
+        ul
+            for item in TopList
+                li
+                    a(href='#')= item
     include _news-ipoteka
     include _news-context
     include _news-context
+    include _news-banner
     +arrowDown("Показать ещё")
     include _news-form

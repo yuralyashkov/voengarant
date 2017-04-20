@@ -6,8 +6,9 @@ body {
 
   @include breakpoint("max-width: 1680px") {
     font-size: 14px;
+  }
+  @include breakpoint("max-width: 1024px"){
     padding-top: 75px;
-
   }
 }
 
@@ -141,6 +142,10 @@ a {
 .container_black{
   width: 1450px;
   padding-left: 60px;
+  @include breakpoint("max-width: 1280px") {
+    padding: 0;
+    margin: 0 auto;
+  }
 }
 
 .top-line {
@@ -250,6 +255,7 @@ button.send {
   }
   @include breakpoint("max-width: 1680px"){
     font-size: 14px;
+    width: 130px;
   }
   @include breakpoint("max-width: 1280px"){
     font-size: 12px;
