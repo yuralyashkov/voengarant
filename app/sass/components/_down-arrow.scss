@@ -5,15 +5,19 @@
   img {
     margin: 0 0 7px 0;
   }
-  a{
+  a {
     display: inline-block;
     color: color(default);
 
   }
   font-size: $s12;
   text-align: center;
-  span{
+  font-weight: 300;
+  span {
     display: block;
+  }
+  @include breakpoint("max-width:1024px") {
+    font-size: $s35;
   }
 
 }
