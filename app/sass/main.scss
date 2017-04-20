@@ -130,9 +130,6 @@ Builders
 
 //question-lawyer
 @import "layout/question-lawyer/_title";
-@import "layout/question-lawyer/_consultations";
-@import "layout/question-lawyer/_forma";
-@import "layout/question-lawyer/_directions";
 
 //ipoteka-povtorno
 @import "layout/ipoteka-povtorno/_main-block";
@@ -144,8 +141,13 @@ Build
 @import "layout/builders/build-consultant";
 @import "layout/builders/build-control";
 @import "layout/builders/build-anather";
-
-//control
-@import "layout/control/control";
-@import "layout/control/control-stage";
-@import "layout/control/control-remarks";
+/**
+Black-menu
+ */
+/**
+News
+ */
+@import "layout/black-menu/news/news";
+@import "layout/black-menu/news/news-ipoteka";
+@import "layout/black-menu/news/news-context";
+@import "layout/black-menu/news/news-form";

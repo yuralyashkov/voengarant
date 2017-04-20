@@ -1,31 +1,60 @@
+$column-w: (180px*100%)/1350px;
+$column-dist: ((360px/3)*100%)/1350px;
 .object {
   padding-top: 35px;
 
-
-  .col-md-6{
-    @include breakpoint("max-width: 1024px"){
+  &-graph_desktop {
+    @include breakpoint("max-width: 1024px") {
+      display: none;
+    }
+  }
+  &-graph_mobile {
+    display: none;
+    @include breakpoint("max-width:1024px") {
+      display: block;
+      .graphic__column {
+        width: $column-w;
+        margin: 0 $column-dist 0 0;
+        &:nth-child(4n) {
+          margin: 0;
+        }
+      }
+      .graphic__list {
+        margin: 55px 0 0 0;
+      }
+      .graphic__rate {
+        ul {
+          li {
+            width: $column-w;
+            margin: 0 $column-dist 0 0;
+          }
+        }
+      }
+    }
+  }
+  .col-md-6 {
+    @include breakpoint("max-width: 1024px") {
       width: 100%;
       padding-bottom: 5px;
     }
   }
-  .block__text{
-    @include breakpoint("max-width: 1024px"){
+  .block__text {
+    @include breakpoint("max-width: 1024px") {
       display: none;
     }
   }
   &__context {
     padding-top: 15px;
 
-
-    .col-md-6:first-child{
+    .col-md-6:first-child {
       padding: 0 10px 0 13px;
-      @include breakpoint("max-width: 1024px"){
+      @include breakpoint("max-width: 1024px") {
         padding: 0 15px 5px 15px;
       }
     }
-    .col-md-6:nth-child(2){
-      .object__context__block__info{
-        bottom:25px;
+    .col-md-6:nth-child(2) {
+      .object__context__block__info {
+        bottom: 25px;
       }
 
     }
@@ -35,20 +64,20 @@
       color: #ffffff;
       position: relative;
       overflow: hidden;
-      background-size:  cover !important;
-      background-repeat:  no-repeat !important;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
       background-position: 100% !important;
-      @include breakpoint("max-width: 1024px"){
+      @include breakpoint("max-width: 1024px") {
         height: 240px;
       }
       &__info {
         position: absolute;
         bottom: 70px;
         left: 50px;
-        @include breakpoint("max-width: 1024px"){
+        @include breakpoint("max-width: 1024px") {
           bottom: 0;
           left: 20px;
-          top:25px;
+          top: 25px;
           font-size: 25px;
         }
 
@@ -61,10 +90,10 @@
           font-size: 36px;
           font-weight: 300;
           text-transform: uppercase;
-          @include breakpoint("max-width: 1680px"){
+          @include breakpoint("max-width: 1680px") {
             font-size: 25px;
           }
-          @include breakpoint("max-width: 1024px"){
+          @include breakpoint("max-width: 1024px") {
             font-size: 30px;
             padding-bottom: 10px;
           }
@@ -75,11 +104,11 @@
             float: left;
             margin-right: 50px;
 
-            @include breakpoint("max-width: 1680px"){
+            @include breakpoint("max-width: 1680px") {
               font-size: 14px;
               margin-right: 20px;
             }
-            .img,span{
+            .img, span {
 
               display: inline-block;
               height: 40px;
@@ -103,18 +132,17 @@
         border-radius: 5px;
         font-size: 14px;
 
-        @include breakpoint("max-width: 1920px"){
+        @include breakpoint("max-width: 1920px") {
           bottom: 40px;
         }
-        @include breakpoint("max-width: 1680px"){
+        @include breakpoint("max-width: 1680px") {
           font-size: 12px;
           bottom: 30px;
         }
-        @include breakpoint("max-width: 1024px"){
+        @include breakpoint("max-width: 1024px") {
           bottom: inherit;
-          top:25px;
+          top: 25px;
           font-size: 25px;
-
 
         }
       }
@@ -133,13 +161,13 @@
   ._smal {
     height: 480px;
 
-    @include breakpoint("max-width: 1024px"){
+    @include breakpoint("max-width: 1024px") {
       height: 240px;
     }
   }
-  ._indent{
+  ._indent {
     padding-left: 5px;
-    @include breakpoint("max-width: 1024px"){
+    @include breakpoint("max-width: 1024px") {
       padding-left: 15px;
     }
 
@@ -148,46 +176,45 @@
     padding-bottom: 15px;
     margin: 0;
 
-    @include breakpoint("max-width: 1024px"){
+    @include breakpoint("max-width: 1024px") {
 
       padding-bottom: 0;
       margin: 0 -15px;
       padding-bottom: 5px;
     }
-    .col-md-6:nth-child(1){
-        padding: 0 10px 0 13px;
-      @include breakpoint("max-width: 1024px"){
+    .col-md-6:nth-child(1) {
+      padding: 0 10px 0 13px;
+      @include breakpoint("max-width: 1024px") {
         padding: 0 15px 5px 15px;
       }
     }
   }
-
   ._in-row{
     padding-top: 15px;
     height: 235px;
-    @include breakpoint("max-width: 1024px"){
+    @include breakpoint("max-width: 1024px") {
       height: 240px;
       padding-top: 0;
     }
   }
-  .object__next{
+  .object__next {
     padding-top: 35px;
     text-align: center;
-    a{
+    a {
       display: inline-block;
       margin-right: 15px;
 
-      img,span{
+      img, span {
         display: block;
         margin: 0 auto;
         padding-left: 12px;
         line-height: 22px;
-        @include breakpoint("max-width: 1024px"){
+        @include breakpoint("max-width: 1024px") {
           font-size: 35px;
           font-weight: 300;
         }
       }
-      span{
+      span {
         text-decoration: none;
         color: #727272;
       }

@@ -1,4 +1,35 @@
 /*RATE-GRAPH-BUILDERS*/
+$column-w: (180px*100%)/1350px;
+$column-dist: ((360px/3)*100%)/1350px;
+.graphic-builders {
+  &_desktop {
+    @include breakpoint("max-width:1024px") {
+      display: none;
+    }
+  }
+  &_mobile {
+    display: none;
+    @include breakpoint("max-width: 1024px") {
+      display: block;
+      .graphic__column {
+        width: $column-w;
+        margin: 0 $column-dist 0 0;
+        &:nth-child(4n) {
+          margin: 0;
+        }
+      }
+      .graphic__list {
+        margin: 120px 0 0 0;
+      }
+      .graphic__rate{
+        li{
+          width: $column-w;
+          margin: 0 $column-dist 0 0;
+        }
+      }
+    }
+  }
+}
 
 .graphic.graphic-builders {
 

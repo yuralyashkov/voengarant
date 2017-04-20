@@ -1,0 +1,55 @@
+.news-ipoteka{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background: #222222;
+  .block__title{
+    margin-top: -5px;
+    @include breakpoint("max-width: 1024px") {
+      width: 70%;
+      margin: 0 auto;
+      line-height: 45px;
+    }
+  }
+  .block__text{
+    width: 50%;
+    margin: 0 auto 15px;
+    @include breakpoint("max-width: 1680px") {
+      line-height: 16px;
+    }
+    @include breakpoint("max-width: 1024px") {
+      width: 75%;
+      font-size: 30px;
+      line-height: 30px;
+      font-weight: 300;
+      padding-top: 35px;
+      margin-bottom: 50px;
+    }
+  }
+  .news-suppot{
+      a:hover{
+       text-decoration: none;
+      }
+    span{
+      @include breakpoint("max-width: 1024px") {
+        font-size: 25px;
+        font-weight: 300;
+      }
+    }
+  }
+}
+.suppot{
+  display: inline-block;
+  background: #d2294b;
+  height: 25px;
+  width: 25px;
+  line-height: 23px;
+  color: #1d1d1d;
+  border-radius: 15px;
+  margin-right: 5px;
+  @include breakpoint("max-width: 1024px") {
+    height: 30px;
+    width: 30px;
+    vertical-align: bottom;
+  }
+}
