@@ -4,10 +4,9 @@ body {
   padding-top: 151px;
   background: #fafafa;
 
-  @include breakpoint("max-width: 1680px") {
+  @include breakpoint("max-width: 1050px") {
     font-size: 14px;
     padding-top: 75px;
-
   }
 }
 
