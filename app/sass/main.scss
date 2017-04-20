@@ -53,6 +53,8 @@
 
 //object
 @import "layout/object/_common";
+//object-main-slider
+@import "layout/object/_object-main-slider";
 //bread-crumbs
 @import "layout/_bread-crumbs";
 //sale-image
@@ -63,6 +65,8 @@
 @import "layout/object/_top-rated-developers";
 //layouts-and-prices
 @import "layout/object/_layouts-and-prices";
+//object-photo
+@import "layout/object/_object-photo";
 //map
 @import "layout/object/_map";
 //details
@@ -126,6 +130,9 @@ Builders
 
 //question-lawyer
 @import "layout/question-lawyer/_title";
+
+//ipoteka-povtorno
+@import "layout/ipoteka-povtorno/_main-block";
 
 /**
 Build
