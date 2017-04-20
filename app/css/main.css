@@ -6673,6 +6673,53 @@ ul.partners-ul {
   .header__navigation .container-side a span, .header__navigation .container-right a span, .header__navigation .container-left a span {
     vertical-align: middle; }
 
+.navigation {
+  float: left;
+  position: fixed;
+  top: 25%;
+  left: 27px;
+  z-index: 999; }
+  .navigation__title {
+    font-family: "Roboto Slab", serif;
+    color: #333333;
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+    margin: 0 0 38px 0; }
+  .navigation__list {
+    list-style: none;
+    border-left: 1px solid #dcdcdc;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0; }
+    .navigation__list li {
+      padding-left: 11px;
+      margin-bottom: 15px;
+      position: relative; }
+      .navigation__list li:last-child {
+        margin-bottom: 0; }
+      .navigation__list li a {
+        font-family: "myriad-pro", sans-serif;
+        color: #777777;
+        display: inline-block;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 300;
+        text-decoration: none; }
+        .navigation__list li a:hover, .navigation__list li a:active {
+          color: #333333;
+          text-decoration: none;
+          font-weight: 300; }
+          .navigation__list li a:hover::after, .navigation__list li a:active::after {
+            content: ' ';
+            width: 7px;
+            height: 7px;
+            position: absolute;
+            background-color: #333333;
+            border-radius: 50%;
+            top: 6px;
+            left: -4px; }
+
 .block__discount {
   margin-bottom: 155px; }
   @media screen and (max-width: 1024px) {
