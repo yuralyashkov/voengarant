@@ -189,7 +189,7 @@ $column-dist: ((360px/3)*100%)/1350px;
       }
     }
   }
-  ._in-row {
+  ._in-row{
     padding-top: 15px;
     height: 235px;
     @include breakpoint("max-width: 1024px") {

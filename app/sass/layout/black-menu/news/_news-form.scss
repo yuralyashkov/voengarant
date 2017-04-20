@@ -3,4 +3,19 @@
   padding:60px;
   margin-top: 125px;
 
+  padding: 50px 60px;
+  margin-top: 125px;
+  .block__title{
+    margin: 0 0 10px;
+  }
+  label{
+    padding-top: 10px;
+    margin: 0;
+  }
+  input,textarea{
+    width: 100%;
+  }
+  input:first-child{
+    width: 47%;
+  }
 }
