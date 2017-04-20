@@ -1,7 +1,7 @@
 /*PARTENERS*/
 
 .partners {
-  margin: 0 0 205px 0;
+  margin: 150px 0 140px 0;
   @include myriadL(18, $mainFontFamily, 300);
 
   &__description {
@@ -11,6 +11,21 @@
       margin: 0;
     }
     margin: 0 0 50px 0;
+    @include breakpoint("max-width:1024px") {
+      font-size: $s30;
+    }
+  }
+  &__discount {
+    color: color(link-more);
+  }
+  ul {
+    li {
+      @include breakpoint("max-width:1024px") {
+        width: (100%/4);
+        margin: 0 0 60px 0;
+        font-size: $s25;
+      }
+    }
   }
 
 }

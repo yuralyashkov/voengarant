@@ -1,0 +1,9 @@
+section.news-left.col-md-2
+    nav
+        ul
+            - var TopList = ['Все', 'ПИК', 'Акции', 'ВоенГарант ', 'Банки', 'Законодательство', 'Политика','Общие']
+                for item in TopList
+                    li
+                        a(href='#')= item
+    include _news-banner
+

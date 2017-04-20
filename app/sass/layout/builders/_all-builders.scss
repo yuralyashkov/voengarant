@@ -44,6 +44,9 @@
       margin: 0;
     }
     color: color(build-default);
+    @include breakpoint("max-width: 1024px") {
+      font-size: $s30;
+    }
   }
   &__logo {
     img {
@@ -51,6 +54,14 @@
     }
     width: 66px;
     margin: 0 auto 10px auto;
+  }
+  ul {
+    li {
+      @include breakpoint("max-width:1024px") {
+        width: (100%/4);
+        font-size: $s25;
+      }
+    }
   }
 
 }
