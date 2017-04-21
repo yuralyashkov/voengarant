@@ -5,11 +5,19 @@
   @include breakpoint("max-width: 1680px") {
     padding: 30px 30px;
   }
+  @include breakpoint("max-width: 1024px") {
+    border: none;
+    border-top:solid 1px #2f2f2f;
+    margin-top: 145px;
+  }
   .block__title{
     margin: 0 0 10px;
   }
   .block__text{
     width: 90%;
+    @include breakpoint("max-width: 1024px") {
+      font-size: 20px;
+    }
   }
   label{
     padding-top: 10px;
@@ -17,11 +25,19 @@
     @include breakpoint("max-width: 1680px") {
       font-size: 12px;
     }
+    @include breakpoint("max-width: 1024px") {
+      font-size: 20px;
+    }
   }
   input,textarea{
     width: 100%;
     background: #2e2e2e;
     border:none;
+  }
+  input{
+    @include breakpoint("max-width: 1024px") {
+      width: 43%;
+    }
   }
   .input-form_short{
     width: 43%;
@@ -51,6 +67,10 @@
       }
       @include breakpoint("max-width: 1280px") {
         font-size: 12px;
+      }
+      @include breakpoint("max-width: 1024px") {
+        font-size: 20px;
+        vertical-align: top;
       }
     }
 

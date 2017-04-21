@@ -11,6 +11,18 @@ body {
     padding-top: 75px;
   }
 }
+.body_black{
+  background: url("../images/background-black.png");
+  background-size: cover;
+  padding-top: 200px;
+  color: #f5f5f5;
+  @include breakpoint("max-width: 1024px") {
+    padding-top: 75px;
+  }
+  .block__text{
+    color: #777777;
+  }
+}
 
 ul {
   margin: 0;
@@ -307,6 +319,8 @@ input.input-form,textarea.textarea-form{
 textarea.textarea-form{
   resize: none;
   box-sizing: border-box;
+  overflow: hidden;
+  row-span: 5;
 }
 select.select-form{
   @include text($mainFontFamily, #333333, inline-block, 18px, 20px, normal);
