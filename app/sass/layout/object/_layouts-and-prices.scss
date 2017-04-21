@@ -125,7 +125,7 @@
       }
     }
   }
-  .open-layouts__name {
+  &__name {
     @include text($mainFontFamily, #333333, block, 18px, 22px, normal);
     margin: 0 0 13px 0;
     @include breakpoint("max-width: 1025px") {
