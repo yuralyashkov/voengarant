@@ -1,11 +1,4 @@
 .black-news{
-  background: url("../images/background-black.png");
-  background-size: cover;
-  padding-top: 200px;
-  color: #f5f5f5;
-  @include breakpoint("max-width: 1024px") {
-    padding-top: 75px;
-  }
   .block__text{
     color: #777777;
     @include breakpoint("max-width: 1280px") {
@@ -35,57 +28,6 @@
     a:hover{
       text-decoration: none;
     }
-    &__banner{
-      margin-top: 50px;
-      padding: 40px 15px 40px 25px;
-      background: url("../images/black-menu/macbook.png") ;
-      background-size: cover;
-      color: #ffffff;
-      height: 400px;
-      border-radius: 5px;
-      @include breakpoint("max-width: 1680px") {
-        height: 360px;
-        padding: 30px 15px 40px 15px;
-      }
-      @include breakpoint("max-width: 1280px") {
-        height: 290px;
-
-      }
-      .block__title{
-        font-size: 16px;
-        margin-top: 0;
-        margin-bottom: 10px;
-        @include breakpoint("max-width: 1680px") {
-          font-size: 14px;
-        }
-        @include breakpoint("max-width: 1280px") {
-          font-size: 12px;
-        }
-      }
-      .block__text{
-        font-size: 14px;
-        font-family: "Roboto Slab", serif;
-        @include breakpoint("max-width: 1680px") {
-          font-size: 12px;
-        }
-        @include breakpoint("max-width: 1280px") {
-          font-size: 10px;
-          line-height: 14px;
-        }
-      }
-      button{
-        margin-top: 22px;
-        font-size: 14px;
-        width: 150px;
-        @include breakpoint("max-width: 1680px") {
-          font-size: 12px;
-        }
-        @include breakpoint("max-width: 1280px") {
-          font-size: 10px;
-          width: 110px;
-        }
-      }
-    }
   }
   .news-right{
     @include breakpoint("max-width: 1024px") {
@@ -104,7 +46,7 @@
       }
       li{
         display: inline-block;
-        padding-right: 85px;
+        padding-right: 12.8%;
         a{
           font-size: 25px;
           font-weight: 300;
@@ -120,7 +62,7 @@
       }
 
     }
-    .news__banner{
+    .news-left__banner{
       display: none;
       @include breakpoint("max-width: 1024px"){
         display: block;
@@ -129,16 +71,21 @@
   }
   .down-arrow{
     margin-top: 65px;
+    @include breakpoint("max-width: 1024px"){
+      font-size: 30px;
+    }
   }
   .seo{
     padding-top: 150px;
+    @include breakpoint("max-width: 1024px") {
+      padding-top: 200px;
+    }
     background: url("../images/background-black.png");
     border-bottom: solid 1px #2a2a29;
     .but {
       margin: 30px auto 50px;
     }
   }
-
   footer{
     border-top: solid 1px #2a2a29;
     ul,a{

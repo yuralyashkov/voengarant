@@ -36,7 +36,7 @@
     text-align: center;
     margin-bottom: 20px;
     @include breakpoint("max-width: 1024px"){
-      width: ($container / 3/ $container * 100%);
+      width: 33%;
     }
     @include breakpoint("max-width: 1024px"){
       margin-bottom: 50px;
