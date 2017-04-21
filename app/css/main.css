@@ -8931,7 +8931,8 @@ footer {
       @media screen and (max-width: 1025px) {
         .object-main .sale-information .group-title a {
           width: 62px;
-          height: 58px; } }
+          height: 58px;
+          float: right; } }
   .object-main .sale-information .group-name {
     display: inline-block;
     vertical-align: middle; }
@@ -9583,6 +9584,68 @@ footer {
           line-height: 35px;
           font-weight: 100; } }
 
+.open-layouts {
+  overflow: hidden; }
+  .open-layouts__block {
+    position: relative; }
+  .open-layouts__line {
+    margin: 0 0 50px 0; }
+    .open-layouts__line:last-child {
+      margin: 0; }
+      @media screen and (max-width: 1025px) {
+        .open-layouts__line:last-child {
+          margin: 0 0 50px 0; } }
+  .open-layouts .open-layouts__name {
+    font-family: "myriad-pro", sans-serif;
+    color: #333333;
+    display: block;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: normal;
+    margin: 0 0 13px 0; }
+    @media screen and (max-width: 1025px) {
+      .open-layouts .open-layouts__name {
+        font-family: "myriad-pro", sans-serif;
+        color: #333333;
+        display: block;
+        font-size: 35px;
+        line-height: 30px;
+        font-weight: normal;
+        margin: 0 0 20px 0; } }
+  .open-layouts .swiper-button-prev {
+    background-image: url("../images/object/button-prev.png");
+    background-position: left center;
+    width: 8.30189%;
+    height: 100%;
+    background-size: contain;
+    top: 0;
+    margin: 0 !important; }
+    @media screen and (max-width: 1025px) {
+      .open-layouts .swiper-button-prev {
+        display: none; } }
+  .open-layouts .swiper-button-next {
+    background-image: url("../images/object/button-next.png");
+    background-position: right center;
+    width: 8.30189%;
+    height: 100%;
+    background-size: contain;
+    top: 0;
+    margin: 0 !important; }
+    @media screen and (max-width: 1025px) {
+      .open-layouts .swiper-button-next {
+        display: none; } }
+  .open-layouts .swiper-slide {
+    width: 25% !important;
+    height: 180px; }
+    .open-layouts .swiper-slide img {
+      width: 100%;
+      height: 100%; }
+  .open-layouts .swiper-container {
+    width: 86.03774%; }
+    @media screen and (max-width: 1025px) {
+      .open-layouts .swiper-container {
+        width: 100%; } }
+
 .object-photo {
   margin: 0 0 79px 0; }
   @media screen and (max-width: 1025px) {
@@ -9885,7 +9948,7 @@ footer {
 .details #tabs-1 li {
   display: inline-block;
   padding: 0 1.32075%;
-  width: 16.66667%;
+  width: 16%;
   text-align: center; }
   @media screen and (max-width: 1024px) {
     .details #tabs-1 li {
@@ -12204,18 +12267,18 @@ Builders
 .question-lawyer .ceo {
   padding-top: 0; }
 
-.hypotec {
+.hypothec {
   margin: 111px 0 162px 0; }
-  .hypotec__logo {
+  .hypothec__logo {
     width: 125px;
     height: 108px;
     margin: 0 0 22px 0; }
     @media screen and (max-width: 1025px) {
-      .hypotec__logo {
+      .hypothec__logo {
         width: 339px;
         height: 292px;
         margin: 0 0 64px 0; } }
-  .hypotec .subtitle {
+  .hypothec .subtitle {
     font-family: "Roboto Slab", serif;
     color: #2f2f2f;
     display: block;
@@ -12224,7 +12287,7 @@ Builders
     font-weight: 300;
     margin: 0 0 12px 0; }
     @media screen and (max-width: 1025px) {
-      .hypotec .subtitle {
+      .hypothec .subtitle {
         font-family: "Roboto Slab", serif;
         color: #2f2f2f;
         display: block;
@@ -12232,7 +12295,7 @@ Builders
         line-height: 40px;
         font-weight: 300;
         margin: 0 0 14px 0; } }
-  .hypotec .title {
+  .hypothec .title {
     font-family: "Roboto Slab", serif;
     color: #2f2f2f;
     display: block;
@@ -12241,7 +12304,7 @@ Builders
     font-weight: 300;
     margin: 0 0 22px 0; }
     @media screen and (max-width: 1025px) {
-      .hypotec .title {
+      .hypothec .title {
         font-family: "Roboto Slab", serif;
         color: #2f2f2f;
         display: block;
@@ -12249,7 +12312,7 @@ Builders
         line-height: 50px;
         font-weight: 300;
         margin: 0 0 28px 0; } }
-  .hypotec .context {
+  .hypothec .context {
     font-family: "myriad-pro", sans-serif;
     color: #777777;
     display: block;
@@ -12258,7 +12321,7 @@ Builders
     font-weight: 100;
     margin: 0 0 64px 0; }
     @media screen and (max-width: 1025px) {
-      .hypotec .context {
+      .hypothec .context {
         font-family: "myriad-pro", sans-serif;
         color: #777777;
         display: block;
@@ -12266,21 +12329,21 @@ Builders
         line-height: 35px;
         font-weight: 100;
         margin: 0 0 103px 0; } }
-  .hypotec .list__title {
+  .hypothec .list__title {
     font-family: "Roboto Slab", serif;
     color: #2f2f2f;
     display: block;
     font-size: 18px;
-    line-height: 20px;
+    line-height: 22px;
     font-weight: normal;
     margin: 48px 0 64px 0; }
-    .hypotec .list__title:first-child {
+    .hypothec .list__title:first-child {
       margin: 0 0 64px 0; }
       @media screen and (max-width: 1025px) {
-        .hypotec .list__title:first-child {
+        .hypothec .list__title:first-child {
           margin: 0 0 64px 0; } }
     @media screen and (max-width: 1025px) {
-      .hypotec .list__title {
+      .hypothec .list__title {
         font-family: "Roboto Slab", serif;
         color: #2f2f2f;
         display: block;
@@ -12288,27 +12351,32 @@ Builders
         line-height: 35px;
         font-weight: normal;
         margin: 67px 0 31px 0; } }
-  .hypotec ul {
-    padding: 0;
+  .hypothec ul {
+    padding: 0 24.92669% 0 0;
     margin: 0;
     list-style: none; }
-    .hypotec ul li {
-      display: table-row;
-      margin: 0 0 26px 0; }
-      .hypotec ul li .number {
+    .hypothec ul li {
+      display: table;
+      padding: 0 0 26px 0; }
+      .hypothec ul li .number {
         font-family: "myriad-pro", sans-serif;
         color: #d2d2d2;
         display: table-cell;
         font-size: 55px;
-        line-height: 50px;
-        font-weight: bold; }
-      .hypotec ul li .text {
+        line-height: 60px;
+        font-weight: bold;
+        vertical-align: middle;
+        padding: 0 15px 0 0; }
+      .hypothec ul li .text {
         font-family: "myriad-pro", sans-serif;
-        color: #d2d2d2;
+        color: #2f2f2f;
         display: table-cell;
         font-size: 18px;
-        line-height: 5px;
-        font-weight: 100; }
+        line-height: 22px;
+        font-weight: 100;
+        vertical-align: middle; }
+  .hypothec .col-lg-6 {
+    padding: 0 6.03774% 0 4.22642%; }
 
 /**
 Build

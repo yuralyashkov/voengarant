@@ -1,4 +1,4 @@
-.hypotec {
+.hypothec {
   margin: 111px 0 162px 0;
   &__logo {
     width: 125px;
@@ -35,7 +35,7 @@
     }
   }
   .list__title {
-    @include text($titleFontFamily, #2f2f2f, block, 18px, 20px, normal);
+    @include text($titleFontFamily, #2f2f2f, block, 18px, 22px, normal);
     margin: 48px 0 64px 0;
     &:first-child {
       margin: 0 0 64px 0;
@@ -49,18 +49,24 @@
     }
   }
   ul {
-    padding: 0;
+    padding: 0 (170px / 682px * 100%) 0 0;
     margin: 0;
     list-style: none;
     li {
-      display: table-row;
-      margin: 0 0 26px 0;
+      display: table;
+      padding: 0 0 26px 0;
       .number {
-        @include text($mainFontFamily, #d2d2d2, table-cell, 55px, 50px, bold);
+        @include text($mainFontFamily, #d2d2d2, table-cell, 55px, 60px, bold);
+        vertical-align: middle;
+        padding: 0 15px 0 0;
       }
       .text {
-        @include text($mainFontFamily, #d2d2d2, table-cell, 18px, 5px, 100);
+        @include text($mainFontFamily, #2f2f2f, table-cell, 18px, 22px, 100);
+        vertical-align: middle;
       }
     }
+  }
+  .col-lg-6 {
+    padding: 0 (80px / $container * 100%) 0 (56px / $container * 100%);
   }
 }
