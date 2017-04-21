@@ -1,0 +1,44 @@
+.navigation {
+  float: left;
+  position: fixed;
+  top: 25%;
+  left: 27px;
+  z-index: 999;
+  &__title {
+    @include text($titleFontFamily, #333333, block, 14px, 16px, normal);
+    margin: 0 0 38px 0;
+  }
+  &__list {
+    list-style: none;
+    border-left: 1px solid #dcdcdc;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    li {
+      padding-left: 11px;
+      margin-bottom: 15px;
+      position: relative;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      a {
+        @include text($mainFontFamily, #777777, inline-block, 14px, 16px, 300);
+        text-decoration: none;
+        &:hover, &:active {
+          color: #333333;
+          text-decoration: none;
+          font-weight: 300;
+          &::after {
+            content: ' ';
+            width: 7px;
+            height: 7px;
+            position: absolute;
+            background-color: #333333;
+            border-radius: 50%;
+            top: 6px;
+            left: -4px;
+          }
+        }
+      }
+    }
+  }
+}

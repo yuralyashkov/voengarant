@@ -3,8 +3,10 @@
  */
 
 $( function() {
+    $("#main-tab").tabs();
     $( "#tabs" ).tabs();
     $( "#pic" ).tabs();
     $( "#maps" ).tabs();
+    $("#photo").tabs();
     $( "#builders-tabs" ).tab();
 } );

@@ -1,0 +1,72 @@
+.hypothec {
+  margin: 111px 0 162px 0;
+  &__logo {
+    width: 125px;
+    height: 108px;
+    margin: 0 0 22px 0;
+    @include breakpoint("max-width: 1025px") {
+      width: 339px;
+      height: 292px;
+      margin: 0 0 64px 0;
+    }
+  }
+  .subtitle {
+    @include text($titleFontFamily, #2f2f2f, block, 24px, 26px, 300);
+    margin: 0 0 12px 0;
+    @include breakpoint("max-width: 1025px") {
+      @include text($titleFontFamily, #2f2f2f, block, 36px, 40px, 300);
+      margin: 0 0 14px 0;
+    }
+  }
+  .title {
+    @include text($titleFontFamily, #2f2f2f, block, 36px, 40px, 300);
+    margin: 0 0 22px 0;
+    @include breakpoint("max-width: 1025px") {
+      @include text($titleFontFamily, #2f2f2f, block, 45px, 50px, 300);
+      margin: 0 0 28px 0;
+    }
+  }
+  .context {
+    @include text($mainFontFamily, #777777, block, 18px, 20px, 100);
+    margin: 0 0 64px 0;
+    @include breakpoint("max-width: 1025px") {
+      @include text($mainFontFamily, #777777, block, 30px, 35px, 100);
+      margin: 0 0 103px 0;
+    }
+  }
+  .list__title {
+    @include text($titleFontFamily, #2f2f2f, block, 18px, 22px, normal);
+    margin: 48px 0 64px 0;
+    &:first-child {
+      margin: 0 0 64px 0;
+      @include breakpoint("max-width: 1025px") {
+        margin: 0 0 64px 0;
+      }
+    }
+    @include breakpoint("max-width: 1025px") {
+      @include text($titleFontFamily, #2f2f2f, block, 30px, 35px, normal);
+      margin: 67px 0 31px 0;
+    }
+  }
+  ul {
+    padding: 0 (170px / 682px * 100%) 0 0;
+    margin: 0;
+    list-style: none;
+    li {
+      display: table;
+      padding: 0 0 26px 0;
+      .number {
+        @include text($mainFontFamily, #d2d2d2, table-cell, 55px, 60px, bold);
+        vertical-align: middle;
+        padding: 0 15px 0 0;
+      }
+      .text {
+        @include text($mainFontFamily, #2f2f2f, table-cell, 18px, 22px, 100);
+        vertical-align: middle;
+      }
+    }
+  }
+  .col-lg-6 {
+    padding: 0 (80px / $container * 100%) 0 (56px / $container * 100%);
+  }
+}
