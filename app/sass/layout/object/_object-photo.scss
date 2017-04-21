@@ -1,11 +1,23 @@
-.details {
+.object-photo {
+  margin: 0 0 79px 0;
+  .lg-block {
+    @include breakpoint("max-width: 1025px") {
+      display: none;
+    }
+  }
+  .xs-block {
+    @include breakpoint("min-width: 1026px") {
+      display: none;
+    }
+  }
   .list {
     list-style: none;
-    margin: 0 0 59px 0 !important;
+    margin: 0 0 14px 0;
     padding: 0 !important;
     border-bottom: 1px solid #919191;
     @include breakpoint("max-width: 1025px") {
       border-bottom: none;
+      margin: 0 auto 36px auto;
     }
     .item {
       box-sizing: border-box;
@@ -33,7 +45,7 @@
       }
       .main-link {
         text-decoration: none;
-        padding: 0 0 24px 0;
+        padding: 37px 0 24px 0;
         box-sizing: border-box;
         @include text($mainFontFamily, #777777, block, 18px, 18px, 100);
         @include breakpoint("max-width: 1500px") {
@@ -49,6 +61,7 @@
           font-size: 35px;
           font-weight: 300;
           padding: 0 0 15px 0;
+          line-height: 40px;
         }
         &:hover {
           text-decoration: none;
@@ -65,7 +78,7 @@
     .ui-tabs-active {
       box-sizing: border-box;
       border-bottom: 4px solid #191919;
-      @include breakpoint("max-width: 1025px"){
+      @include breakpoint("max-width: 1025px") {
         border-bottom: 1px solid #919191;
       }
       .main-link, .main-link:focus, .main-link:active, .main-link:hover {
@@ -85,69 +98,36 @@
         }
         @include breakpoint("max-width: 1025px") {
           font-size: 35px;
-          //line-height: 40px;
-          //border-bottom: 4px solid #191919;
+          line-height: 37px;
+          border-bottom: 4px solid #191919;
+        }
+        @include breakpoint("max-width: 850px") {
+          line-height: 35px;
         }
       }
     }
   }
-  #tabs-1 {
-    ul{
-      padding: 0;
-      margin: 0 ( -4.90566% / 2) 0 ( -4.90566% / 2);
-      overflow: hidden;
+  .image {
+    display: inline-block;
+    height: 142px;
+    width: (215px / $container * 100%);
+    margin: 0 1px 2px 0;
+    @include breakpoint("max-width: 1025px") {
+      width: (249px/750px *100%);
+      height: 131px;
+      margin: 0 1px 2px 0;
     }
-    li{
-      display: inline-block;
-      padding: 0 (2.641509% / 2);
-      width: 16%;
-      text-align: center;
-      @include breakpoint("max-width: 1024px"){
-        width: ($container / 3/ $container * 100%);
-      }
-      @include breakpoint("max-width: 1024px"){
-        margin-bottom: 50px;
-      }
-      span{
-        display: inline-block;
-        width: 100%;
-        font-size: 18px;
-        font-weight: 600;
-        padding-top: 15px;
-        @include breakpoint("max-width: 1680px"){
-          font-size: 16px;
-        }
-        @include breakpoint("max-width: 1024px"){
-          font-size: 20px;
-          color: #777777;
-        }
-      }
-      span:last-child{
-        font-size: 14px;
-        font-weight: 300;
-        @include breakpoint("max-width: 1680px"){
-          font-size: 12px;
-        }
-        @include breakpoint("max-width: 1024px"){
-          display: none;
-        }
+    &:nth-child(3n) {
+      @include breakpoint("max-width: 1025px") {
+        margin: 0 0 2px 0;
       }
     }
-    li:hover, li:focus{
-      img{
-        @include ungrayscale;
-      }
-      span:nth-child(2){
-        color: #0e386f;
-      }
+    &:nth-child(6n) {
+      margin: 0 0 2px 0;
     }
-    img{
-      width: 85%;
+    img {
+      width: 100%;
       height: 100%;
-      @include grayscale;
-      @include breakpoint("max-width: 1024px"){
-        width: 80%;
-      }
     }
   }
 }
