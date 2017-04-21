@@ -7980,7 +7980,7 @@ ul.partners-ul {
         max-width: 185px; } }
     @media screen and (max-width: 1280px) {
       .dependents__context__element img {
-        width: 140px; } }
+        width: 132px; } }
     @media screen and (max-width: 1024px) {
       .dependents__context__element img {
         width: 180px; } }
@@ -8520,7 +8520,7 @@ ul.partners-ul {
     margin-bottom: 20px; }
     @media screen and (max-width: 1024px) {
       .bank-block li {
-        width: 33.33333%; } }
+        width: 33%; } }
     @media screen and (max-width: 1024px) {
       .bank-block li {
         margin-bottom: 50px; } }
@@ -12558,7 +12558,8 @@ Build
       @media screen and (max-width: 1024px) {
         .build-consultant .build-consultant__context .block__text {
           font-size: 20px;
-          text-align: center; } }
+          text-align: center;
+          line-height: 22px; } }
       .build-consultant .build-consultant__context .block__text span {
         display: inline-block;
         color: #309bf9; }
