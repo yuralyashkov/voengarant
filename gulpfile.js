@@ -74,6 +74,9 @@ gulp.task('default', ['browser-sync', 'sass', 'templates'], function () {
     gulp.watch('./app/sass/layout/question-lawyer/*.scss', ['sass']);
     gulp.watch('./app/sass/layout/question-lawyer/*.jade', ['jade']);
 
+    gulp.watch('./app/sass/layout/ipoteka-povtorno/*.scss', ['sass']);
+    gulp.watch('./app/sass/layout/ipoteka-povtorno/*.jade', ['jade']);
+
     gulp.watch('./app/sass/components/*.scss', ['sass']);
     gulp.watch('./app/sass/utils/*.scss', ['sass']);
     gulp.watch('./app/sass/*.scss', ['sass']);

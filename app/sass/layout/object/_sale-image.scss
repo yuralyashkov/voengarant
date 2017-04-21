@@ -47,6 +47,7 @@
         @include breakpoint("max-width: 1025px") {
           width: 62px;
           height: 58px;
+          float: right;
           //background-size: contain;
         }
       }

@@ -100,7 +100,7 @@
     li{
       display: inline-block;
       padding: 0 (2.641509% / 2);
-      width: ($container / 6 / $container * 100%);
+      width: 16%;
       text-align: center;
       @include breakpoint("max-width: 1024px"){
         width: ($container / 3/ $container * 100%);
