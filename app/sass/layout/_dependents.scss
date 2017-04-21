@@ -124,7 +124,7 @@
       }
       img{
         @include breakpoint("max-width: 1280px"){
-          width: 140px;
+          width: 132px;
         }
         @include breakpoint("max-width: 1024px"){
           width: 180px;

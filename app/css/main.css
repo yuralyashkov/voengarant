@@ -6153,6 +6153,17 @@ body {
     body {
       padding-top: 75px; } }
 
+.body_black {
+  background: url("../images/background-black.png");
+  background-size: cover;
+  padding-top: 200px;
+  color: #f5f5f5; }
+  @media screen and (max-width: 1024px) {
+    .body_black {
+      padding-top: 75px; } }
+  .body_black .block__text {
+    color: #777777; }
+
 ul {
   margin: 0; }
 
@@ -6386,7 +6397,9 @@ input.input-form, textarea.textarea-form {
 textarea.textarea-form {
   resize: none;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow: hidden;
+  row-span: 5; }
 
 select.select-form {
   font-family: "myriad-pro", sans-serif;
@@ -12707,128 +12720,85 @@ Black-menu
 /**
 News
  */
-.black-news {
-  background: url("../images/background-black.png");
-  background-size: cover;
-  padding-top: 200px;
-  color: #f5f5f5; }
+.black-news .block__text {
+  color: #777777; }
+  @media screen and (max-width: 1280px) {
+    .black-news .block__text {
+      line-height: 18px; } }
+
+.black-news .news-left {
+  padding-right: 0;
+  padding-left: 0; }
   @media screen and (max-width: 1024px) {
-    .black-news {
-      padding-top: 75px; } }
-  .black-news .block__text {
-    color: #777777; }
-    @media screen and (max-width: 1280px) {
-      .black-news .block__text {
-        line-height: 18px; } }
-  .black-news .news-left {
-    padding-right: 0;
-    padding-left: 0; }
+    .black-news .news-left {
+      display: none; } }
+  .black-news .news-left ul {
+    list-style: none;
+    padding: 0; }
+  .black-news .news-left li:hover {
+    display: block;
+    background: #303030;
+    margin-right: 15px; }
+  .black-news .news-left a {
+    color: #777777;
+    line-height: 38px;
+    padding-left: 10px; }
+  .black-news .news-left a:hover {
+    text-decoration: none; }
+
+.black-news .news-right {
+  padding-right: 30px; }
+  @media screen and (max-width: 1024px) {
+    .black-news .news-right {
+      width: 100%;
+      padding: 0; } }
+  .black-news .news-right__mob-menu {
+    display: none;
+    padding: 40px 0; }
     @media screen and (max-width: 1024px) {
-      .black-news .news-left {
-        display: none; } }
-    .black-news .news-left ul {
-      list-style: none;
+      .black-news .news-right__mob-menu {
+        display: block; } }
+    .black-news .news-right__mob-menu ul {
       padding: 0; }
-    .black-news .news-left li:hover {
-      display: block;
-      background: #303030;
-      margin-right: 15px; }
-    .black-news .news-left a {
-      color: #777777;
-      line-height: 38px;
-      padding-left: 10px; }
-    .black-news .news-left a:hover {
-      text-decoration: none; }
-    .black-news .news-left__banner {
-      margin-top: 50px;
-      padding: 40px 15px 40px 25px;
-      background: url("../images/black-menu/macbook.png");
-      background-size: cover;
-      color: #ffffff;
-      height: 400px;
-      border-radius: 5px; }
-      @media screen and (max-width: 1680px) {
-        .black-news .news-left__banner {
-          height: 360px;
-          padding: 30px 15px 40px 15px; } }
-      @media screen and (max-width: 1280px) {
-        .black-news .news-left__banner {
-          height: 290px; } }
-      .black-news .news-left__banner .block__title, .black-news .news-left__banner .block__developers .tab-content .developer__description > span, .block__developers .tab-content .black-news .news-left__banner .developer__description > span {
-        font-size: 16px;
-        margin-top: 0;
-        margin-bottom: 10px; }
-        @media screen and (max-width: 1680px) {
-          .black-news .news-left__banner .block__title, .black-news .news-left__banner .block__developers .tab-content .developer__description > span, .block__developers .tab-content .black-news .news-left__banner .developer__description > span {
-            font-size: 14px; } }
-        @media screen and (max-width: 1280px) {
-          .black-news .news-left__banner .block__title, .black-news .news-left__banner .block__developers .tab-content .developer__description > span, .block__developers .tab-content .black-news .news-left__banner .developer__description > span {
-            font-size: 12px; } }
-      .black-news .news-left__banner .block__text {
-        font-size: 14px;
-        font-family: "Roboto Slab", serif; }
-        @media screen and (max-width: 1680px) {
-          .black-news .news-left__banner .block__text {
-            font-size: 12px; } }
-        @media screen and (max-width: 1280px) {
-          .black-news .news-left__banner .block__text {
-            font-size: 10px;
-            line-height: 14px; } }
-      .black-news .news-left__banner button {
-        margin-top: 22px;
-        font-size: 14px;
-        width: 150px; }
-        @media screen and (max-width: 1680px) {
-          .black-news .news-left__banner button {
-            font-size: 12px; } }
-        @media screen and (max-width: 1280px) {
-          .black-news .news-left__banner button {
-            font-size: 10px;
-            width: 110px; } }
-  .black-news .news-right {
-    padding-right: 30px; }
+    .black-news .news-right__mob-menu li {
+      display: inline-block;
+      padding-right: 12.8%; }
+      .black-news .news-right__mob-menu li a {
+        font-size: 25px;
+        font-weight: 300;
+        color: #777777; }
+      .black-news .news-right__mob-menu li a:hover {
+        text-decoration: none;
+        color: #ffffff; }
+    .black-news .news-right__mob-menu li:last-child {
+      padding: 0; }
+  .black-news .news-right .news-left__banner {
+    display: none; }
     @media screen and (max-width: 1024px) {
-      .black-news .news-right {
-        width: 100%;
-        padding: 0; } }
-    .black-news .news-right__mob-menu {
-      display: none;
-      padding: 40px 0; }
-      @media screen and (max-width: 1024px) {
-        .black-news .news-right__mob-menu {
-          display: block; } }
-      .black-news .news-right__mob-menu ul {
-        padding: 0; }
-      .black-news .news-right__mob-menu li {
-        display: inline-block;
-        padding-right: 85px; }
-        .black-news .news-right__mob-menu li a {
-          font-size: 25px;
-          font-weight: 300;
-          color: #777777; }
-        .black-news .news-right__mob-menu li a:hover {
-          text-decoration: none;
-          color: #ffffff; }
-      .black-news .news-right__mob-menu li:last-child {
-        padding: 0; }
-    .black-news .news-right .news__banner {
-      display: none; }
-      @media screen and (max-width: 1024px) {
-        .black-news .news-right .news__banner {
-          display: block; } }
-  .black-news .down-arrow {
-    margin-top: 65px; }
-  .black-news .seo {
-    padding-top: 150px;
-    background: url("../images/background-black.png");
-    border-bottom: solid 1px #2a2a29; }
-    .black-news .seo .but {
-      margin: 30px auto 50px; }
-  .black-news footer {
-    border-top: solid 1px #2a2a29; }
-    .black-news footer ul, .black-news footer a {
-      color: #777777;
-      font-size: 18px; }
+      .black-news .news-right .news-left__banner {
+        display: block; } }
+
+.black-news .down-arrow {
+  margin-top: 65px; }
+  @media screen and (max-width: 1024px) {
+    .black-news .down-arrow {
+      font-size: 30px; } }
+
+.black-news .seo {
+  padding-top: 150px;
+  background: url("../images/background-black.png");
+  border-bottom: solid 1px #2a2a29; }
+  @media screen and (max-width: 1024px) {
+    .black-news .seo {
+      padding-top: 200px; } }
+  .black-news .seo .but {
+    margin: 30px auto 50px; }
+
+.black-news footer {
+  border-top: solid 1px #2a2a29; }
+  .black-news footer ul, .black-news footer a {
+    color: #777777;
+    font-size: 18px; }
 
 .news-ipoteka {
   text-align: center;
@@ -12887,7 +12857,8 @@ News
   display: flex; }
   @media screen and (max-width: 1024px) {
     .news-context {
-      display: block; } }
+      display: block;
+      margin-top: 40px; } }
   .news-context__image, .news-context__block {
     display: inline-block; }
     @media screen and (max-width: 1024px) {
@@ -13004,20 +12975,34 @@ News
   @media screen and (max-width: 1680px) {
     .news-form {
       padding: 30px 30px; } }
+  @media screen and (max-width: 1024px) {
+    .news-form {
+      border: none;
+      border-top: solid 1px #2f2f2f;
+      margin-top: 145px; } }
   .news-form .block__title, .news-form .block__developers .tab-content .developer__description > span, .block__developers .tab-content .news-form .developer__description > span {
     margin: 0 0 10px; }
   .news-form .block__text {
     width: 90%; }
+    @media screen and (max-width: 1024px) {
+      .news-form .block__text {
+        font-size: 20px; } }
   .news-form label {
     padding-top: 10px;
     margin: 0; }
     @media screen and (max-width: 1680px) {
       .news-form label {
         font-size: 12px; } }
+    @media screen and (max-width: 1024px) {
+      .news-form label {
+        font-size: 20px; } }
   .news-form input, .news-form textarea {
     width: 100%;
     background: #2e2e2e;
     border: none; }
+  @media screen and (max-width: 1024px) {
+    .news-form input {
+      width: 43%; } }
   .news-form .input-form_short {
     width: 43%; }
   .news-form textarea {
@@ -13044,3 +13029,94 @@ News
       @media screen and (max-width: 1280px) {
         .news-form .tab span {
           font-size: 12px; } }
+      @media screen and (max-width: 1024px) {
+        .news-form .tab span {
+          font-size: 20px;
+          vertical-align: top; } }
+
+.news-left__banner {
+  margin-top: 50px;
+  padding: 40px 20px 40px 20px;
+  background: url("../images/black-menu/macbook.png");
+  background-size: cover;
+  color: #ffffff;
+  height: 400px;
+  border-radius: 5px;
+  text-align: center; }
+  @media screen and (max-width: 1680px) {
+    .news-left__banner {
+      height: 360px;
+      padding: 30px 15px 40px 15px; } }
+  @media screen and (max-width: 1280px) {
+    .news-left__banner {
+      height: 290px; } }
+  @media screen and (max-width: 1024px) {
+    .news-left__banner {
+      height: 875px;
+      padding: 70px 65px;
+      margin-top: 140px;
+      background: url(../images/black-menu/macbook-mob.png) 100% 100% no-repeat;
+      background-size: cover; } }
+  .news-left__banner .block__title, .news-left__banner .block__developers .tab-content .developer__description > span, .block__developers .tab-content .news-left__banner .developer__description > span {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 10px; }
+    @media screen and (max-width: 1680px) {
+      .news-left__banner .block__title, .news-left__banner .block__developers .tab-content .developer__description > span, .block__developers .tab-content .news-left__banner .developer__description > span {
+        font-size: 14px; } }
+    @media screen and (max-width: 1280px) {
+      .news-left__banner .block__title, .news-left__banner .block__developers .tab-content .developer__description > span, .block__developers .tab-content .news-left__banner .developer__description > span {
+        font-size: 12px; } }
+    @media screen and (max-width: 1024px) {
+      .news-left__banner .block__title, .news-left__banner .block__developers .tab-content .developer__description > span, .block__developers .tab-content .news-left__banner .developer__description > span {
+        font-size: 45px; } }
+  .news-left__banner .block__text {
+    font-size: 14px;
+    font-family: "Roboto Slab", serif; }
+    @media screen and (max-width: 1680px) {
+      .news-left__banner .block__text {
+        font-size: 12px; } }
+    @media screen and (max-width: 1280px) {
+      .news-left__banner .block__text {
+        font-size: 10px;
+        line-height: 14px; } }
+    @media screen and (max-width: 1024px) {
+      .news-left__banner .block__text {
+        font-size: 30px;
+        line-height: 30px;
+        padding-top: 35px;
+        padding-bottom: 50px;
+        width: 65%;
+        margin: 0 auto; } }
+  .news-left__banner button {
+    margin-top: 22px;
+    font-size: 14px;
+    width: 150px; }
+    @media screen and (max-width: 1680px) {
+      .news-left__banner button {
+        font-size: 12px; } }
+    @media screen and (max-width: 1280px) {
+      .news-left__banner button {
+        font-size: 10px;
+        width: 110px; } }
+    @media screen and (max-width: 1024px) {
+      .news-left__banner button {
+        font-size: 30px;
+        width: 320px;
+        margin-top: 0; } }
+
+/**
+Initiatives
+ */
+.initiatives .initiatives-left {
+  padding: 0; }
+
+.initiatives-banner {
+  background: #282828;
+  padding-top: 30px;
+  height: 340px;
+  margin-bottom: -25px; }
+  .initiatives-banner img {
+    padding-bottom: 30px; }
+  .initiatives-banner .btn {
+    background: #2f97f0; }

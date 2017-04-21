@@ -4,6 +4,7 @@
   display: flex;
   @include breakpoint("max-width: 1024px") {
     display: block;
+    margin-top: 40px;
   }
   &__image,&__block{
     display: inline-block;
