@@ -83,6 +83,7 @@
       @include breakpoint("max-width: 1024px"){
         font-size: 20px;
         text-align: center;
+        line-height: 22px;
       }
       span{
         display: inline-block;
