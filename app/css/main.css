@@ -8767,7 +8767,7 @@ footer {
       position: relative;
       margin: 0;
       padding: 0; }
-      @media screen and (max-width: 1025px) {
+      @media screen and (max-width: 1125px) {
         .object-main-slider #main-tab ul {
           display: none; } }
       .object-main-slider #main-tab ul li {
@@ -8786,6 +8786,9 @@ footer {
             font-size: 16px;
             color: #f5f5f5;
             font-weight: 100; }
+            @media screen and (max-width: 1275px) {
+              .object-main-slider #main-tab ul li a span {
+                font-size: 14px; } }
     .object-main-slider #main-tab .ui-tabs-active {
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
@@ -8823,6 +8826,9 @@ footer {
     border-bottom: 1px solid #7f7c73;
     width: 100%;
     bottom: 45px; }
+    @media screen and (min-width: 1126px) {
+      .object-main-slider .table-border {
+        display: none; } }
     .object-main-slider .table-border span {
       padding: 0 9.33333% 15px 9.33333%;
       border-bottom: 2px solid #ffffff;
