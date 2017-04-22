@@ -1,21 +1,40 @@
 /*CONTROL*/
 
 .control {
+  &_mobile {
+    display: none;
+    @include breakpoint("max-width:1024px") {
+      display: block;
+    }
+  }
+  &_desktop {
+    @include breakpoint("max-width:1024px") {
+      display: none;
+    }
+  }
   padding: 115px 0 0 0;
   &__title {
     margin-top: 0;
+    margin-bottom: 30px;
   }
   &__description {
     font-size: $s18;
+    @include breakpoint("max-width:1024px") {
+      font-size: $s30;
+    }
   }
 
   @include myriadL(16, $mainFontFamily, 300);
 
 }
 
+.p-l-50 {
+  padding-left: 50px;
+}
+
 .warning {
 
-  margin: 100px 0 0 0;
+  margin: 90px 0 0 0;
   &_m-bottom {
     margin: 0;
   }
@@ -23,7 +42,9 @@
     margin-top: 0;
     font-size: $s18;
     font-weight: 400;
-
+    @include breakpoint("max-width:1024px") {
+      font-size: $s30;
+    }
   }
   &__pic {
     margin: 0 0 18px 0;
@@ -32,11 +53,17 @@
     font-size: $s18;
     margin: 0 0 15px 0;
     display: block;
+    @include breakpoint("max-width:1024px") {
+      font-size: $s30;
+    }
   }
   ol {
     margin: 29px 0 0 0;
     padding: 0 0 0 15px;
     font-size: $s18;
+    @include breakpoint("max-width:1024px") {
+      font-size: $s30;
+    }
     li {
       margin: 0 0 18px 0;
       &:last-child {
@@ -46,6 +73,10 @@
   }
   &__description {
     color: color(default);
+    @include breakpoint("max-width:1024px") {
+      font-size: $s30;
+      padding: 0 0 80px 0;
+    }
   }
 
 }
