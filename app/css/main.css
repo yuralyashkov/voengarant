@@ -6411,6 +6411,10 @@ textarea.textarea-form {
   overflow: hidden;
   row-span: 5; }
 
+textarea:focus, textarea:active, input:focus, input:active {
+  -webkit-box-shadow: 0px 0px 25px 0px #e5ecf8;
+  box-shadow: 0px 0px 25px 0px #e5ecf8; }
+
 select.select-form {
   font-family: "myriad-pro", sans-serif;
   color: #333333;
