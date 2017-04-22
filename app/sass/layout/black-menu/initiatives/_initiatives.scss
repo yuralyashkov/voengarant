@@ -1,8 +1,24 @@
 .initiatives{
   .mobile{
     display: none;
+    @include breakpoint("max-width: 1024px") {
+      display: block;
+      .news-left__banner{
+        margin-top: 40px;
+      }
+      .initiatives-banner{
+        height: 640px;
+        padding: 55px 65px;
+        margin-top: 150px;
+        margin-bottom: 0;
+      }
+    }
   }
-
+  .desctop{
+    @include breakpoint("max-width: 1024px") {
+      display: none;
+    }
+  }
   .initiatives-left{
     padding: 0;
     @include breakpoint("max-width: 1024px") {
