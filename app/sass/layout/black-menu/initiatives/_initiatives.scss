@@ -1,10 +1,153 @@
 .initiatives{
+  .mobile{
+    display: none;
+  }
+
   .initiatives-left{
     padding: 0;
+    @include breakpoint("max-width: 1024px") {
+      display: none;
+    }
   }
   .initiatives-right{
+    padding-right: 35px;
+    font-size: 18px;
+    @include breakpoint("max-width: 1680px") {
+      font-size: 16px;
+    }
+    @include breakpoint("max-width: 1280px") {
+      font-size: 14px;
+    }
+    @include breakpoint("max-width: 1024px") {
+      font-size: 30px;
+      padding: 0;
+    }
     .initiatives-context{
-
+      padding: 60px 110px;
+      background: #303030;
+      margin-bottom: 115px;
+      position: relative;
+      @include breakpoint("max-width: 1024px") {
+        padding: 30px 20px;
+        margin-top: 125px;
+      }
+      .block__title{
+        text-align: center;
+        @include breakpoint("max-width: 1280px") {
+          line-height: 45px;
+          margin-top: 0;
+        }
+      }
+      &__like{
+        display: block;
+        width: 100%;
+        color: #777777;
+        font-weight: 300;
+        text-align: center;
+        text-decoration: none;
+        margin-bottom: 50px;
+        @include breakpoint("max-width: 1280px") {
+          margin-bottom: 30px;
+          margin-top: 20px;
+        }
+        img,span{
+          display: inline-block;
+          padding-right: 5px;
+          vertical-align: sub;
+        }
+        img{
+          @include grayscale;
+          @include breakpoint("max-width: 1024px") {
+            height: 30px;
+          }
+        }
+        img:hover{
+          @include ungrayscale;
+        }
+      }
+      p{
+        color: #777777;
+        font-weight: 300;
+        line-height: 25px;
+        @include breakpoint("max-width: 1280px") {
+          line-height: 18px;
+        }
+        @include breakpoint("max-width: 1024px") {
+          line-height: 36px;
+        }
+        span{
+          display: inline-block;
+          color: #777777;
+          font-family: "Roboto Slab";
+          font-weight: 400;
+        }
+      }
+      span{
+        color: #777777;
+        font-family: "Roboto Slab";
+        font-weight: 400;
+      }
+      .more{
+        margin-left: 18px;
+        margin-top: 45px;
+        display: block;
+      }
+      .more:after{
+        content: '<';
+        margin-left: -60px;
+        @include breakpoint("max-width: 1024px") {
+          margin-left: -95px;
+        }
+      }
+      .people-like{
+        display: none;
+        position: absolute;
+        background: url(../images/black-menu/people-like.png) no-repeat;
+        background-size: cover;
+        padding: 30px;
+        overflow-y: scroll;
+        top: 9.5%;
+        left: 53%;
+        height: 380px;
+        width: 225px;
+        font-size: 14px;
+        color: #777777;
+        @include breakpoint("max-width: 1680px") {
+          top: 7.5%;
+        }
+        @include breakpoint("max-width: 1480px") {
+          top: 7%;
+          left: 54%;
+        }
+        @include breakpoint("max-width: 1280px") {
+          top: 7.5%;
+          left: 54%;
+        }
+        @include breakpoint("max-width: 1024px") {
+          font-size: 20px;
+          top: 5%;
+          left: 59%;
+        }
+        &::-webkit-scrollbar{
+          background: transparent;
+          width: 5px;
+        }
+        &::-webkit-scrollbar-thumb{
+          background: #777777;
+          border-radius: 3px;
+          padding-right: 5px;
+        }
+        ul{
+          padding: 0;
+          display: block;
+        }
+        li{
+          list-style: none;
+        }
+      }
+    }
+    .initiatives-forma{
+      display: none;
     }
   }
 }
