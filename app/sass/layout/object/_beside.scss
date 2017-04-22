@@ -1,12 +1,12 @@
 .beside {
   margin: 0 0 81px 0;
-  @include breakpoint("max-width: 1025px") {
+  @include breakpoint("max-width: 1024px") {
     margin: 0 0 123px 0;
   }
   .title {
     @include text($titleFontFamily, #333333, block, 36px, 40px, 300);
     margin: 0 0 23px 0;
-    @include breakpoint("max-width: 1025px") {
+    @include breakpoint("max-width: 1024px") {
       @include text($titleFontFamily, #333333, block, 45px, 50px, 300);
       margin: 0 0 59px 0;
     }
@@ -21,24 +21,24 @@
       position: relative;
       margin: 0;
       padding: 0;
-      @include breakpoint("max-width: 1025px") {
+      @include breakpoint("max-width: 1024px") {
         border: none;
         margin: 0 0 10px 0;
       }
       li {
         display: inline-block;
         padding: 0 3.333%;
-        @include breakpoint("max-width: 1025px") {
+        @include breakpoint("max-width: 1024px") {
           padding: 0;
           width: 100%;
         }
         &:first-child a {
-          @include breakpoint("max-width: 1025px") {
+          @include breakpoint("max-width: 1024px") {
             padding-top: 0;
           }
         }
         &:first-child a span {
-          @include breakpoint("max-width: 1025px") {
+          @include breakpoint("max-width: 1024px") {
             padding-top: 0;
           }
         }
@@ -47,7 +47,7 @@
           text-decoration: none;
           padding-top: 18px;
           padding-bottom: 18px;
-          @include breakpoint("max-width: 1025px") {
+          @include breakpoint("max-width: 1024px") {
             padding-top: 30px;
             padding-bottom: 15px;
           }
@@ -59,7 +59,7 @@
             @include breakpoint("max-width: 1135px") {
               font-size: 14px;
             }
-            @include breakpoint("max-width: 1025px") {
+            @include breakpoint("max-width: 1024px") {
               font-size: 30px;
               font-weight: 100;
             }
@@ -70,18 +70,18 @@
     .ui-tabs-active {
       box-sizing: border-box;
       border-bottom: 2px solid #777777;
-      @include breakpoint("max-width: 1025px") {
+      @include breakpoint("max-width: 1024px") {
         border: none;
       }
       a {
         text-decoration: none;
-        @include breakpoint("max-width: 1025px") {
+        @include breakpoint("max-width: 1024px") {
           border-bottom: 1px solid #c6c6c6;
         }
         span {
           color: #777777;
           font-weight: 500;
-          @include breakpoint("max-width: 1025px") {
+          @include breakpoint("max-width: 1024px") {
             border-bottom: 2px solid #777777;
             color: #333333;
             padding: 30px 25px 15px 25px;
@@ -94,7 +94,7 @@
       width: 100%;
       height: 457px;
       background-color: #2b542c;
-      @include breakpoint("max-width: 1025px") {
+      @include breakpoint("max-width: 1024px") {
         margin: 0;
       }
     }

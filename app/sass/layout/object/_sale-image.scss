@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    @include breakpoint("max-width: 1025px") {
+    @include breakpoint("max-width: 1024px") {
       display: none;
     }
     .round-image {
@@ -31,7 +31,7 @@
         font-family: $titleFontFamily;
         font-size: 36px;
         color: #333333;
-        @include breakpoint("max-width: 1025px") {
+        @include breakpoint("max-width: 1024px") {
           font-size: 60px;
         }
       }
@@ -44,7 +44,7 @@
         background-image: url("../images/icons/add-to-favorites.png");
         background-repeat: no-repeat;
         background-size: contain;
-        @include breakpoint("max-width: 1025px") {
+        @include breakpoint("max-width: 1024px") {
           width: 62px;
           height: 58px;
           float: right;
@@ -61,7 +61,7 @@
         display: inline-block;
         vertical-align: middle;
         margin: 0 10px 0 0;
-        @include breakpoint("max-width: 1025px") {
+        @include breakpoint("max-width: 1024px") {
           width: 43px;
           height: 45px;
         }
@@ -72,7 +72,7 @@
         color: #333333;
         display: inline-block;
         vertical-align: middle;
-        @include breakpoint("max-width: 1025px") {
+        @include breakpoint("max-width: 1024px") {
           font-size: 30px;
         }
       }
@@ -82,7 +82,7 @@
       color: #309bf7;
       font-size: 18px;
       display: block;
-      @include breakpoint("max-width: 1025px") {
+      @include breakpoint("max-width: 1024px") {
         font-size: 30px;
       }
     }
@@ -91,7 +91,7 @@
 .object-table {
   overflow: hidden;
   margin: 40px 0 67px 0;
-  @include breakpoint("max-width: 1025px") {
+  @include breakpoint("max-width: 1024px") {
     margin: 76px 0 140px 0;
   }
 }
@@ -102,7 +102,7 @@
   color: #777777;
   margin: 0 0 48px 0;
   text-align: left;
-  @include breakpoint("max-width: 1025px") {
+  @include breakpoint("max-width: 1024px") {
     font-size: 20px;
     width: 100%;
   }
