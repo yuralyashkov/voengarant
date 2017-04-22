@@ -84,6 +84,7 @@
         font-size: 20px;
         text-align: center;
         line-height: 22px;
+        padding-bottom: 40px;
       }
       span{
         display: inline-block;
@@ -107,11 +108,12 @@
       }
       @include breakpoint("max-width: 1024px"){
         margin-left: 13.5%;
+        font-size: 30px;
       }
     }
     input,textarea{
       @include breakpoint("max-width: 1024px"){
-        height: 70px;
+        height: 65px;
       }
     }
     .politic{
@@ -125,6 +127,7 @@
     .send{
       @include breakpoint("max-width: 1024px"){
         margin-left: 28.5%;
+        margin-top: 40px;
       }
     }
   }

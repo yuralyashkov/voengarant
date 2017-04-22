@@ -38,6 +38,22 @@ $column-dist: ((360px/3)*100%)/1350px;
       padding-bottom: 5px;
     }
   }
+
+  .object__context__block:after {
+    content: ' ';
+    background-color: #000;
+    height: 100%;
+    left: 0;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    -ms-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    width: 100%;
+  }
   .block__text {
     @include breakpoint("max-width: 1024px") {
       display: none;

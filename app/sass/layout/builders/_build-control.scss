@@ -37,7 +37,7 @@
 
     &__context{
       display: inline-block;
-      width: 50%;
+      width: 48%;
       @include breakpoint("max-width: 1680px"){
         width: 48%;
       }
@@ -60,8 +60,11 @@
       }
     }
     textarea{
-      width: 100%;
+      width: 98%;
       background: url("../images/icons/textarea.png") 10px center no-repeat;
+      @include breakpoint("max-width: 1280px"){
+        width: 99%;
+      }
     }
   }
   &__text{
