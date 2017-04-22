@@ -107,7 +107,14 @@ $(function () {
         $(this).closest(".seo-context").slideToggle();
         return false;
     });
+    /**
+     * Like
+     */
+    $("a.initiatives-context__like").click(function () {
 
+        $(this).closest(".initiatives-context").find(".people-like").slideToggle();
+        return false;
+    });
 
 
 });

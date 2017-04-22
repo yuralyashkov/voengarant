@@ -22,6 +22,12 @@ body {
   .block__text{
     color: #777777;
   }
+  .footer-right{
+    background: #232323;
+  }
+  footer{
+    border-top: 1px solid #777777;
+  }
 }
 
 ul {
@@ -306,8 +312,14 @@ label.label-form{
   display: block;
   color: #777777;
   font-weight: 300;
+  @include breakpoint("max-width: 1680px") {
+    font-size: 14px;
+  }
+  @include breakpoint("max-width: 1280px"){
+    font-size: 12px;
+  }
   @include breakpoint("max-width: 1024px"){
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 input.input-form,textarea.textarea-form{
@@ -315,6 +327,7 @@ input.input-form,textarea.textarea-form{
   border: 1px solid #d3d3d3;
   font-size: 18px;
   padding: 5px;
+
 }
 textarea.textarea-form{
   resize: none;

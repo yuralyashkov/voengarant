@@ -1,0 +1,62 @@
+.initiatives-comments{
+  .block__title,.block__title{
+    text-align: center;
+  }
+  .block__title{
+    font-size: 24px;
+    @include breakpoint("max-width: 1280px") {
+      font-size: 20px;
+    }
+    @include breakpoint("max-width: 1024px") {
+      font-size: 36px;
+    }
+  }
+  .block__text{
+    color: #777777;
+    width: 36%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    @include breakpoint("max-width: 1024px") {
+      width: 100%;
+    }
+  }
+  &__block{
+    margin-bottom: 15px;
+    background: #303030;
+    padding: 35px 50px 35px 100px;
+    color: #777777;
+    @include breakpoint("max-width: 1024px") {
+      padding: 25px;
+    }
+    .name{
+      font-family: "Roboto Slab", serif;
+      color: #ffffff;
+    }
+    .date,.text{
+      font-size: 16px;
+      padding-bottom: 15px;
+      @include breakpoint("max-width: 1680px") {
+        font-size: 14px;
+      }
+      @include breakpoint("max-width: 1280px") {
+        font-size: 12px;
+      }
+      @include breakpoint("max-width: 1024px") {
+        font-size: 25px;
+      }
+    }
+    .text{
+      width: 82%;
+      line-height: 23px;
+      @include breakpoint("max-width: 1280px") {
+        width: 90%;
+        line-height: 16px;
+      }
+      @include breakpoint("max-width: 1024px") {
+        width: 100%;
+        line-height: 30px;
+      }
+    }
+  }
+}

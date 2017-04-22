@@ -3,6 +3,10 @@
   padding-top: 30px;
   height: 340px;
   margin-bottom: -25px;
+  margin-top: 0;
+  @include breakpoint("max-width: 1280px") {
+    height: 300px;
+  }
   img{
     padding-bottom: 30px;
   }
