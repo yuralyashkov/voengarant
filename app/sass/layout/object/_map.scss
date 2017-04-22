@@ -6,7 +6,7 @@
     @include breakpoint("max-width: 1366px") {
       @include text($mainFontFamily, #727272, block, 17px, 20px, 100);
     }
-    @include breakpoint("max-width: 1025px") {
+    @include breakpoint("max-width: 1024px") {
       @include text($mainFontFamily, #727272, block, 35px, 38px, 300);
       margin: 0 0 11px 0;
     }
@@ -17,19 +17,19 @@
     @include breakpoint("max-width: 1366px") {
       @include text($mainFontFamily, #333333, inline, 16px, 20px, normal);
     }
-    @include breakpoint("max-width: 1025px") {
+    @include breakpoint("max-width: 1024px") {
       @include text($mainFontFamily, #333333, inline, 35px, 38px, 300);
       padding-left: 11px;
     }
   }
   .deleloper, .sale, .distance, .ending, .class {
     margin: 0 0 26px 0;
-    @include breakpoint("max-width: 1025px") {
+    @include breakpoint("max-width: 1024px") {
       margin: 0 0 53px 0;
     }
   }
   .price-name, .value-name {
-    @include breakpoint("max-width: 1025px") {
+    @include breakpoint("max-width: 1024px") {
       font-weight: 400;
     }
   }
@@ -39,11 +39,11 @@
   a {
     display: inline-block;
     img {
-      @include breakpoint("min-width: 1026px") {
+      @include breakpoint("min-width: 1025px") {
         max-width: 25px;
         max-height: 26px;
       }
-      @include breakpoint("max-width: 1025px") {
+      @include breakpoint("max-width: 1024px") {
         width: 53px;
         max-height: 55px;
       }
@@ -52,7 +52,7 @@
       @include text($mainFontFamily, #777777, inline-block, 18px, 18px, 100);
       vertical-align: middle;
       padding-left: 8px;
-      @include breakpoint("max-width: 1025px") {
+      @include breakpoint("max-width: 1024px") {
         @include text($mainFontFamily, #777777, inline-block, 38px, 38px, 300);
         padding-left: 17px;
       }

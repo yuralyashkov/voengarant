@@ -8783,7 +8783,7 @@ footer {
       .object-main-slider #main-tab ul li {
         display: inline-block;
         padding: 0 2.45%; }
-        @media screen and (max-width: 1025px) {
+        @media screen and (max-width: 1024px) {
           .object-main-slider #main-tab ul li {
             padding: 0 1.115%; } }
         .object-main-slider #main-tab ul li a {
@@ -8811,7 +8811,7 @@ footer {
     width: 100%;
     height: 100%;
     z-index: 0; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .object-main-slider img {
         position: relative; } }
   .object-main-slider .swiper-container {
@@ -8927,7 +8927,7 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .object-main .round-border {
         display: none; } }
     .object-main .round-border .round-image {
@@ -8945,7 +8945,7 @@ footer {
       font-family: "Roboto Slab", serif;
       font-size: 36px;
       color: #333333; }
-      @media screen and (max-width: 1025px) {
+      @media screen and (max-width: 1024px) {
         .object-main .sale-information .group-title span {
           font-size: 60px; } }
     .object-main .sale-information .group-title a {
@@ -8957,7 +8957,7 @@ footer {
       background-image: url("../images/icons/add-to-favorites.png");
       background-repeat: no-repeat;
       background-size: contain; }
-      @media screen and (max-width: 1025px) {
+      @media screen and (max-width: 1024px) {
         .object-main .sale-information .group-title a {
           width: 62px;
           height: 58px;
@@ -8971,7 +8971,7 @@ footer {
       display: inline-block;
       vertical-align: middle;
       margin: 0 10px 0 0; }
-      @media screen and (max-width: 1025px) {
+      @media screen and (max-width: 1024px) {
         .object-main .sale-information .group-name img {
           width: 43px;
           height: 45px; } }
@@ -8981,7 +8981,7 @@ footer {
       color: #333333;
       display: inline-block;
       vertical-align: middle; }
-      @media screen and (max-width: 1025px) {
+      @media screen and (max-width: 1024px) {
         .object-main .sale-information .group-name span {
           font-size: 30px; } }
   .object-main .sale-information .group-price {
@@ -8989,14 +8989,14 @@ footer {
     color: #309bf7;
     font-size: 18px;
     display: block; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .object-main .sale-information .group-price {
         font-size: 30px; } }
 
 .object-table {
   overflow: hidden;
   margin: 40px 0 67px 0; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .object-table {
       margin: 76px 0 140px 0; } }
 
@@ -9007,7 +9007,7 @@ footer {
   color: #777777;
   margin: 0 0 48px 0;
   text-align: left; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .max-reiting-inscription {
       font-size: 20px;
       width: 100%; } }
@@ -9046,7 +9046,7 @@ footer {
   @media screen and (max-width: 1200px) {
     .remote-transaction .background {
       padding-top: 62px; } }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .remote-transaction .background {
       padding-top: 74px;
       display: block; } }
@@ -9057,7 +9057,7 @@ footer {
   background-position: top center;
   float: left;
   width: 49.28302%; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .remote-transaction .left-part {
       display: none; } }
   @media screen and (max-width: 1800px) {
@@ -9076,7 +9076,7 @@ footer {
   @media screen and (max-width: 1200px) {
     .remote-transaction .right-part {
       padding: 0 0 68px 0; } }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .remote-transaction .right-part {
       float: none;
       margin: 0;
@@ -9090,7 +9090,7 @@ footer {
   font-size: 24px;
   line-height: 27px;
   font-weight: 400; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .remote-transaction .title {
       font-family: "Roboto Slab", serif;
       color: #333333;
@@ -9102,13 +9102,13 @@ footer {
 
 .remote-transaction .links {
   margin: 2.79823% 0 2.13549% 0; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .remote-transaction .links {
       margin: 0 0 42px 0; } }
   .remote-transaction .links a {
     display: inline-block;
     margin: 0 15px 0 0; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .remote-transaction .links a {
         margin: 0 25px 0 0; } }
     .remote-transaction .links a:last-child {
@@ -9126,7 +9126,7 @@ footer {
       opacity: .9;
       width: 25px;
       height: 25px; }
-      @media screen and (max-width: 1025px) {
+      @media screen and (max-width: 1024px) {
         .remote-transaction .links a img {
           width: 48px;
           height: 48px; } }
@@ -9155,7 +9155,7 @@ footer {
       font-size: 17px;
       line-height: 19px;
       font-weight: 400; } }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .remote-transaction .list {
       font-family: "Roboto Slab", serif;
       color: #333333;
@@ -9182,7 +9182,7 @@ footer {
       line-height: 18px;
       font-weight: 100;
       margin: 0 0 20px 0; } }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .remote-transaction .list-content {
       font-family: "myriad-pro", sans-serif;
       color: #777777;
@@ -9192,7 +9192,7 @@ footer {
       font-weight: 300;
       margin: 0 0 35px 0; } }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1024px) {
   .remote-transaction .buttons {
     display: none; } }
 
@@ -9240,7 +9240,7 @@ footer {
       height: 35px;
       line-height: 35px;
       opacity: 0.9; } }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .remote-transaction .button {
       font-family: "myriad-pro", sans-serif;
       font-size: 20px;
@@ -9273,7 +9273,7 @@ footer {
     width: 16px;
     height: 16px;
     margin: 0 8px 0 15px; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .remote-transaction .button img {
         width: 23px;
         height: 24px;
@@ -9295,7 +9295,7 @@ footer {
 .remote-transaction .xs-buttons {
   display: block;
   margin: 0 9px 48px 9px; }
-  @media screen and (min-width: 1026px) {
+  @media screen and (min-width: 1025px) {
     .remote-transaction .xs-buttons {
       display: none; } }
   .remote-transaction .xs-buttons .button {
@@ -9304,7 +9304,7 @@ footer {
 .remote-transaction .xs-block {
   width: 100%;
   height: 448px; }
-  @media screen and (min-width: 1026px) {
+  @media screen and (min-width: 1025px) {
     .remote-transaction .xs-block {
       display: none; } }
 
@@ -9345,7 +9345,7 @@ footer {
       font-size: 15px;
       line-height: 21px;
       font-weight: normal; } }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .top-rated-developers .title {
       font-family: "Roboto Slab", serif;
       color: #333333;
@@ -9378,7 +9378,7 @@ footer {
       font-size: 12px;
       line-height: 15px;
       font-weight: normal; } }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .top-rated-developers .context {
       font-family: "myriad-pro", sans-serif;
       color: #777777;
@@ -9392,7 +9392,7 @@ footer {
   overflow: hidden; }
 
 .top-rated-developers .button {
-  width: 24.145%;
+  width: 24%;
   margin: 0 0.475% 0 0;
   float: left; }
   .top-rated-developers .button:first-child {
@@ -9415,7 +9415,7 @@ footer {
   right: 20%;
   width: 2.41509%;
   max-height: 32px; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .top-rated-developers .close {
       display: none; } }
   .top-rated-developers .close a {
@@ -9426,7 +9426,7 @@ footer {
 
 .top-rated-developers .xs-close {
   margin: 67px 0 20px 0; }
-  @media screen and (min-width: 1026px) {
+  @media screen and (min-width: 1025px) {
     .top-rated-developers .xs-close {
       display: none; } }
   .top-rated-developers .xs-close a {
@@ -9442,7 +9442,7 @@ footer {
 
 .layouts-and-prices {
   margin: 84px 0 0 0; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .layouts-and-prices {
       margin: 140px 0 0 0; }
       .layouts-and-prices br {
@@ -9456,7 +9456,7 @@ footer {
   line-height: 42px;
   font-weight: 300;
   margin: 0 0 22px 0; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .layouts-and-prices .title {
       font-family: "Roboto Slab", serif;
       color: #333333;
@@ -9473,7 +9473,7 @@ footer {
   line-height: 20px;
   font-weight: 100;
   margin: 0 0 52px 0; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .layouts-and-prices .context {
       font-family: "myriad-pro", sans-serif;
       color: #777777;
@@ -9487,7 +9487,7 @@ footer {
   width: 86.03774%;
   border-collapse: collapse;
   margin: 0 auto 42px auto; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .layouts-and-prices .table {
       display: none; } }
 
@@ -9502,7 +9502,7 @@ footer {
   font-size: 18px;
   line-height: 18px;
   font-weight: 600; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .layouts-and-prices .kind-name {
       font-family: "myriad-pro", sans-serif;
       color: #333333;
@@ -9522,7 +9522,7 @@ footer {
   font-weight: 600; }
   .layouts-and-prices .column:last-child {
     border-right: none; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .layouts-and-prices .column {
       font-family: "myriad-pro", sans-serif;
       color: #333333;
@@ -9548,7 +9548,7 @@ footer {
       font-size: 16px;
       line-height: 17px;
       font-weight: 100; } }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .layouts-and-prices .layouts, .layouts-and-prices .price {
       font-family: "myriad-pro", sans-serif;
       color: #333333;
@@ -9559,7 +9559,7 @@ footer {
 
 .layouts-and-prices .xs-table {
   margin: 0 0 66px 0; }
-  @media screen and (min-width: 1026px) {
+  @media screen and (min-width: 1025px) {
     .layouts-and-prices .xs-table {
       display: none; } }
   .layouts-and-prices .xs-table .layouts {
@@ -9580,10 +9580,10 @@ footer {
     opacity: .9; }
     .layouts-and-prices .apartment-layouts a:hover {
       opacity: 1; }
-    @media screen and (min-width: 1026px) {
+    @media screen and (min-width: 1025px) {
       .layouts-and-prices .apartment-layouts a img {
         max-height: 31px; } }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .layouts-and-prices .apartment-layouts a img {
         width: 73px;
         height: 73px !important;
@@ -9604,7 +9604,7 @@ footer {
           font-size: 16px;
           line-height: 28px;
           font-weight: 100; } }
-      @media screen and (max-width: 1025px) {
+      @media screen and (max-width: 1024px) {
         .layouts-and-prices .apartment-layouts a span {
           font-family: "myriad-pro", sans-serif;
           color: #309bf7;
@@ -9621,10 +9621,10 @@ footer {
     margin: 0 0 50px 0; }
     .open-layouts__line:last-child {
       margin: 0; }
-      @media screen and (max-width: 1025px) {
+      @media screen and (max-width: 1024px) {
         .open-layouts__line:last-child {
           margin: 0 0 50px 0; } }
-  .open-layouts .open-layouts__name {
+  .open-layouts__name {
     font-family: "myriad-pro", sans-serif;
     color: #333333;
     display: block;
@@ -9632,8 +9632,8 @@ footer {
     line-height: 22px;
     font-weight: normal;
     margin: 0 0 13px 0; }
-    @media screen and (max-width: 1025px) {
-      .open-layouts .open-layouts__name {
+    @media screen and (max-width: 1024px) {
+      .open-layouts__name {
         font-family: "myriad-pro", sans-serif;
         color: #333333;
         display: block;
@@ -9649,7 +9649,7 @@ footer {
     background-size: contain;
     top: 0;
     margin: 0 !important; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .open-layouts .swiper-button-prev {
         display: none; } }
   .open-layouts .swiper-button-next {
@@ -9660,7 +9660,7 @@ footer {
     background-size: contain;
     top: 0;
     margin: 0 !important; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .open-layouts .swiper-button-next {
         display: none; } }
   .open-layouts .swiper-slide {
@@ -9671,42 +9671,42 @@ footer {
       height: 100%; }
   .open-layouts .swiper-container {
     width: 86.03774%; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .open-layouts .swiper-container {
         width: 100%; } }
 
 .object-photo {
   margin: 0 0 79px 0; }
-  @media screen and (max-width: 1025px) {
-    .object-photo .lg-block {
+  @media screen and (min-width: 1025px) {
+    .object-photo .md-block {
       display: none; } }
-  @media screen and (min-width: 1026px) {
-    .object-photo .xs-block {
+  @media screen and (max-width: 1024px) {
+    .object-photo .lg-block {
       display: none; } }
   .object-photo .list {
     list-style: none;
     margin: 0 0 14px 0;
     padding: 0 !important;
     border-bottom: 1px solid #919191; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .object-photo .list {
         border-bottom: none;
         margin: 0 auto 36px auto; } }
     .object-photo .list .item {
       -webkit-box-sizing: border-box;
       box-sizing: border-box; }
-      @media screen and (max-width: 1025px) {
+      @media screen and (max-width: 1024px) {
         .object-photo .list .item {
           border-bottom: 1px solid #919191; } }
-      @media screen and (max-width: 1025px) {
+      @media screen and (max-width: 1024px) {
         .object-photo .list .item:first-child, .object-photo .list .item:nth-child(3) {
           padding-left: 0;
           text-align: left; } }
-      @media screen and (max-width: 1025px) {
+      @media screen and (max-width: 1024px) {
         .object-photo .list .item:nth-child(2n) {
           padding-right: 0;
           text-align: right; } }
-      @media screen and (max-width: 1025px) {
+      @media screen and (max-width: 1024px) {
         .object-photo .list .item:nth-child(3) .main-link, .object-photo .list .item:nth-child(4) .main-link {
           padding-top: 58px; } }
       .object-photo .list .item .main-link {
@@ -9720,16 +9720,7 @@ footer {
         font-size: 18px;
         line-height: 18px;
         font-weight: 100; }
-        @media screen and (max-width: 1500px) {
-          .object-photo .list .item .main-link {
-            font-size: 16px; } }
-        @media screen and (max-width: 1200px) {
-          .object-photo .list .item .main-link {
-            font-size: 14px; } }
-        @media screen and (max-width: 1080px) {
-          .object-photo .list .item .main-link {
-            font-size: 13px; } }
-        @media screen and (max-width: 1025px) {
+        @media screen and (max-width: 1024px) {
           .object-photo .list .item .main-link {
             font-size: 35px;
             font-weight: 300;
@@ -9739,7 +9730,7 @@ footer {
           text-decoration: none; }
         .object-photo .list .item .main-link .image {
           padding: 0 0.60377% 0 0; }
-          @media screen and (max-width: 1025px) {
+          @media screen and (max-width: 1024px) {
             .object-photo .list .item .main-link .image {
               display: none;
               padding: 0; } }
@@ -9747,7 +9738,7 @@ footer {
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
       border-bottom: 4px solid #191919; }
-      @media screen and (max-width: 1025px) {
+      @media screen and (max-width: 1024px) {
         .object-photo .list .ui-tabs-active {
           border-bottom: 1px solid #919191; } }
       .object-photo .list .ui-tabs-active .main-link, .object-photo .list .ui-tabs-active .main-link:focus, .object-photo .list .ui-tabs-active .main-link:active, .object-photo .list .ui-tabs-active .main-link:hover {
@@ -9757,16 +9748,7 @@ footer {
         text-decoration: none;
         -webkit-box-sizing: border-box;
         box-sizing: border-box; }
-        @media screen and (max-width: 1330px) {
-          .object-photo .list .ui-tabs-active .main-link, .object-photo .list .ui-tabs-active .main-link:focus, .object-photo .list .ui-tabs-active .main-link:active, .object-photo .list .ui-tabs-active .main-link:hover {
-            font-size: 16px; } }
-        @media screen and (max-width: 1200px) {
-          .object-photo .list .ui-tabs-active .main-link, .object-photo .list .ui-tabs-active .main-link:focus, .object-photo .list .ui-tabs-active .main-link:active, .object-photo .list .ui-tabs-active .main-link:hover {
-            font-size: 14px; } }
-        @media screen and (max-width: 1080px) {
-          .object-photo .list .ui-tabs-active .main-link, .object-photo .list .ui-tabs-active .main-link:focus, .object-photo .list .ui-tabs-active .main-link:active, .object-photo .list .ui-tabs-active .main-link:hover {
-            font-size: 13px; } }
-        @media screen and (max-width: 1025px) {
+        @media screen and (max-width: 1024px) {
           .object-photo .list .ui-tabs-active .main-link, .object-photo .list .ui-tabs-active .main-link:focus, .object-photo .list .ui-tabs-active .main-link:active, .object-photo .list .ui-tabs-active .main-link:hover {
             font-size: 35px;
             line-height: 37px;
@@ -9777,14 +9759,14 @@ footer {
   .object-photo .image {
     display: inline-block;
     height: 142px;
-    width: 16.22642%;
+    width: 16.54088%;
     margin: 0 1px 2px 0; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .object-photo .image {
         width: 33.2%;
         height: 131px;
         margin: 0 1px 2px 0; } }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .object-photo .image:nth-child(3n) {
         margin: 0 0 2px 0; } }
     .object-photo .image:nth-child(6n) {
@@ -9811,7 +9793,7 @@ footer {
         font-size: 17px;
         line-height: 20px;
         font-weight: 100; } }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .object-map .deleloper, .object-map .price, .object-map .value, .object-map .sale, .object-map .address, .object-map .distance, .object-map .form, .object-map .ending, .object-map .type, .object-map .project, .object-map .class {
         font-family: "myriad-pro", sans-serif;
         color: #727272;
@@ -9836,7 +9818,7 @@ footer {
         font-size: 16px;
         line-height: 20px;
         font-weight: normal; } }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .object-map .deleloper-name, .object-map .price-name, .object-map .value-name, .object-map .sale-name, .object-map .address-name, .object-map .distance-name, .object-map .form-name, .object-map .ending-name, .object-map .type-name, .object-map .project-name, .object-map .class-name {
         font-family: "myriad-pro", sans-serif;
         color: #333333;
@@ -9847,21 +9829,21 @@ footer {
         padding-left: 11px; } }
   .object-map .deleloper, .object-map .sale, .object-map .distance, .object-map .ending, .object-map .class {
     margin: 0 0 26px 0; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .object-map .deleloper, .object-map .sale, .object-map .distance, .object-map .ending, .object-map .class {
         margin: 0 0 53px 0; } }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .object-map .price-name, .object-map .value-name {
       font-weight: 400; } }
   .object-map .sale-name {
     color: #309bf7; }
   .object-map a {
     display: inline-block; }
-    @media screen and (min-width: 1026px) {
+    @media screen and (min-width: 1025px) {
       .object-map a img {
         max-width: 25px;
         max-height: 26px; } }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .object-map a img {
         width: 53px;
         max-height: 55px; } }
@@ -9874,7 +9856,7 @@ footer {
       font-weight: 100;
       vertical-align: middle;
       padding-left: 8px; }
-      @media screen and (max-width: 1025px) {
+      @media screen and (max-width: 1024px) {
         .object-map a span {
           font-family: "myriad-pro", sans-serif;
           color: #777777;
@@ -9886,27 +9868,52 @@ footer {
 
 .details .list {
   list-style: none;
-  margin: 0 0 59px 0 !important;
+  margin: 0 auto 59px auto;
   padding: 0 !important;
   border-bottom: 1px solid #919191; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .details .list {
-      border-bottom: none; } }
+      border-bottom: none;
+      margin: 0 auto 59px auto; } }
+  @media screen and (max-width: 1200px) {
+    .details .list .col-md-4 {
+      width: 25%; } }
+  @media screen and (max-width: 1024px) {
+    .details .list .col-md-4 {
+      width: 33.333%; } }
+  @media screen and (max-width: 1200px) {
+    .details .list .col-md-8 {
+      width: 25%; } }
+  @media screen and (max-width: 1024px) {
+    .details .list .col-md-8 {
+      width: 66.6667%; } }
+  @media screen and (max-width: 1200px) {
+    .details .list .col-md-3 {
+      width: 25%; } }
+  @media screen and (max-width: 1024px) {
+    .details .list .col-md-3 {
+      width: 25%; } }
+  @media screen and (max-width: 1200px) {
+    .details .list .col-md-9 {
+      width: 25%; } }
+  @media screen and (max-width: 1024px) {
+    .details .list .col-md-9 {
+      width: 75%; } }
   .details .list .item {
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .details .list .item {
         border-bottom: 1px solid #919191; } }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .details .list .item:first-child, .details .list .item:nth-child(3) {
         padding-left: 0;
         text-align: left; } }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .details .list .item:nth-child(2n) {
         padding-right: 0;
         text-align: right; } }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .details .list .item:nth-child(3) .main-link, .details .list .item:nth-child(4) .main-link {
         padding-top: 58px; } }
     .details .list .item .main-link {
@@ -9929,16 +9936,17 @@ footer {
       @media screen and (max-width: 1080px) {
         .details .list .item .main-link {
           font-size: 13px; } }
-      @media screen and (max-width: 1025px) {
+      @media screen and (max-width: 1024px) {
         .details .list .item .main-link {
           font-size: 35px;
           font-weight: 300;
-          padding: 0 0 15px 0; } }
+          padding: 0 0 15px 0;
+          line-height: 41px; } }
       .details .list .item .main-link:hover {
         text-decoration: none; }
       .details .list .item .main-link .image {
         padding: 0 0.60377% 0 0; }
-        @media screen and (max-width: 1025px) {
+        @media screen and (max-width: 1024px) {
           .details .list .item .main-link .image {
             display: none;
             padding: 0; } }
@@ -9956,18 +9964,14 @@ footer {
       text-decoration: none;
       -webkit-box-sizing: border-box;
       box-sizing: border-box; }
-      @media screen and (max-width: 1330px) {
-        .details .list .ui-tabs-active .main-link, .details .list .ui-tabs-active .main-link:focus, .details .list .ui-tabs-active .main-link:active, .details .list .ui-tabs-active .main-link:hover {
-          font-size: 16px; } }
-      @media screen and (max-width: 1200px) {
-        .details .list .ui-tabs-active .main-link, .details .list .ui-tabs-active .main-link:focus, .details .list .ui-tabs-active .main-link:active, .details .list .ui-tabs-active .main-link:hover {
-          font-size: 14px; } }
-      @media screen and (max-width: 1080px) {
-        .details .list .ui-tabs-active .main-link, .details .list .ui-tabs-active .main-link:focus, .details .list .ui-tabs-active .main-link:active, .details .list .ui-tabs-active .main-link:hover {
-          font-size: 13px; } }
       @media screen and (max-width: 1025px) {
         .details .list .ui-tabs-active .main-link, .details .list .ui-tabs-active .main-link:focus, .details .list .ui-tabs-active .main-link:active, .details .list .ui-tabs-active .main-link:hover {
-          font-size: 35px; } }
+          font-size: 35px;
+          line-height: 37px;
+          border-bottom: 4px solid #191919; } }
+      @media screen and (max-width: 850px) {
+        .details .list .ui-tabs-active .main-link, .details .list .ui-tabs-active .main-link:focus, .details .list .ui-tabs-active .main-link:active, .details .list .ui-tabs-active .main-link:hover {
+          line-height: 37px; } }
 
 .details #tabs-1 ul {
   padding: 0;
@@ -10043,7 +10047,7 @@ footer {
   padding-top: 50px;
   padding-bottom: 50px;
   margin: 52px 0 0 0; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .calculator {
       border: none;
       border-radius: 0;
@@ -10057,7 +10061,7 @@ footer {
     line-height: 30px;
     font-weight: 300;
     margin: 0 0 17px 0; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .calculator .title {
         font-family: "Roboto Slab", serif;
         color: #1f1f1f;
@@ -10074,7 +10078,7 @@ footer {
     font-size: 14px;
     line-height: 14px;
     font-weight: 100; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .calculator .context {
         font-family: "myriad-pro", sans-serif;
         color: #777777;
@@ -10085,7 +10089,7 @@ footer {
         text-align: center; } }
     .calculator .context .decor-text {
       color: #309bf7; }
-      @media screen and (max-width: 1025px) {
+      @media screen and (max-width: 1024px) {
         .calculator .context .decor-text {
           color: #777777;
           font-weight: 400; } }
@@ -10093,7 +10097,7 @@ footer {
     margin: 0 0 42px 0; }
   .calculator form {
     text-align: left; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .calculator .calculation form {
       text-align: center; } }
   .calculator label {
@@ -10101,7 +10105,7 @@ footer {
     font-weight: 100; }
     .calculator label:first-child {
       margin: 0 0 4px 0; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .calculator .calculation label {
       font-family: "myriad-pro", sans-serif;
       color: #333333;
@@ -10110,10 +10114,10 @@ footer {
       line-height: 35px;
       font-weight: 300;
       margin: 29px 0 25px 0; } }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .calculator .calculation label:first-child {
       margin: 0 0 25px 0; } }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .calculator .mortgage label {
       margin: 50px 0 8px 0; } }
   @media screen and (max-width: 950px) {
@@ -10122,7 +10126,7 @@ footer {
       margin: 50px 0 8px 106px; } }
   .calculator .second-label {
     margin-top: 18px; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .calculator .second-label {
         margin: 30px 0 24px 0; } }
   .calculator select {
@@ -10177,7 +10181,7 @@ footer {
     background-color: #fdfdfd; }
   .calculator .month {
     margin-right: 3.4965%; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .calculator .month {
         margin: 0 auto 39px auto; } }
   .calculator button {
@@ -10216,7 +10220,7 @@ footer {
         line-height: 14px;
         opacity: 0.9;
         padding: 8px 15px; } }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .calculator button {
         font-family: "myriad-pro", sans-serif;
         font-size: 30px;
@@ -10231,10 +10235,10 @@ footer {
         margin: 35px 0 0 0; } }
     .calculator button:hover, .calculator button:active {
       opacity: 1; }
-  @media screen and (min-width: 1026px) {
+  @media screen and (min-width: 1025px) {
     .calculator .mortgage .xs-link {
       display: none; } }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .calculator .mortgage .link {
       display: none; } }
   .calculator a {
@@ -10247,7 +10251,7 @@ footer {
     float: right;
     margin: 33px 0 0 0;
     text-decoration: none; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .calculator a {
         float: none;
         font-family: "myriad-pro", sans-serif;
@@ -10273,7 +10277,7 @@ footer {
     @media screen and (max-width: 1200px) {
       .calculator input {
         font-size: 16px; } }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .calculator input {
         display: block;
         margin: 0 auto;
@@ -10284,14 +10288,14 @@ footer {
         padding-right: 22px;
         width: 488px;
         line-height: 28px; } }
-  @media screen and (min-width: 1026px) {
+  @media screen and (min-width: 1025px) {
     .calculator .mortgage select {
       width: 100%; } }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .calculator .mortgage button {
       display: block;
       margin: 35px auto 0 auto; } }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .calculator .mortgage .title {
       margin: 119px 0 18px 0;
       font-size: 44px; } }
@@ -10314,11 +10318,11 @@ footer {
     font-weight: 100;
     padding-left: 18px; }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1024px) {
   .lg-block {
     display: none; } }
 
-@media screen and (min-width: 1026px) {
+@media screen and (min-width: 1025px) {
   .xs-block {
     display: none; } }
 
@@ -10726,7 +10730,7 @@ footer {
 .attraction {
   margin: 87px 0 111px 0;
   overflow: hidden; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .attraction {
       margin: 230px 0 222px 0; } }
   .attraction .title {
@@ -10737,7 +10741,7 @@ footer {
     line-height: 40px;
     font-weight: 300;
     margin: 0 0 17px 0; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .attraction .title {
         font-family: "Roboto Slab", serif;
         color: #333333;
@@ -10754,7 +10758,7 @@ footer {
     line-height: 20px;
     font-weight: 100;
     margin: 0 0 26px 0; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .attraction .context {
         font-family: "myriad-pro", sans-serif;
         color: #777777;
@@ -10821,7 +10825,7 @@ footer {
   line-height: 42px;
   font-weight: 300;
   margin: 0 0 5px 0; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .infrastructure .title {
       font-family: "Roboto Slab", serif;
       color: #333333;
@@ -10839,7 +10843,7 @@ footer {
   line-height: 20px;
   font-weight: 100;
   margin: 0 0 68px 0; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .infrastructure .context {
       font-family: "myriad-pro", sans-serif;
       color: #333333;
@@ -10849,7 +10853,7 @@ footer {
       font-weight: 100;
       margin: 0 0 73px 0; } }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1024px) {
   .infrastructure .l-block {
     display: none; } }
 
@@ -10901,7 +10905,7 @@ footer {
 
 .infrastructure .xs-block {
   margin: 0 0 190px 0; }
-  @media screen and (min-width: 1026px) {
+  @media screen and (min-width: 1025px) {
     .infrastructure .xs-block {
       display: none; } }
   .infrastructure .xs-block .row {
@@ -10923,7 +10927,7 @@ footer {
 
 .beside {
   margin: 0 0 81px 0; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .beside {
       margin: 0 0 123px 0; } }
   .beside .title {
@@ -10934,7 +10938,7 @@ footer {
     line-height: 40px;
     font-weight: 300;
     margin: 0 0 23px 0; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .beside .title {
         font-family: "Roboto Slab", serif;
         color: #333333;
@@ -10953,21 +10957,21 @@ footer {
       position: relative;
       margin: 0;
       padding: 0; }
-      @media screen and (max-width: 1025px) {
+      @media screen and (max-width: 1024px) {
         .beside #maps ul {
           border: none;
           margin: 0 0 10px 0; } }
       .beside #maps ul li {
         display: inline-block;
         padding: 0 3.333%; }
-        @media screen and (max-width: 1025px) {
+        @media screen and (max-width: 1024px) {
           .beside #maps ul li {
             padding: 0;
             width: 100%; } }
-        @media screen and (max-width: 1025px) {
+        @media screen and (max-width: 1024px) {
           .beside #maps ul li:first-child a {
             padding-top: 0; } }
-        @media screen and (max-width: 1025px) {
+        @media screen and (max-width: 1024px) {
           .beside #maps ul li:first-child a span {
             padding-top: 0; } }
         .beside #maps ul li a {
@@ -10975,7 +10979,7 @@ footer {
           text-decoration: none;
           padding-top: 18px;
           padding-bottom: 18px; }
-          @media screen and (max-width: 1025px) {
+          @media screen and (max-width: 1024px) {
             .beside #maps ul li a {
               padding-top: 30px;
               padding-bottom: 15px; } }
@@ -10987,7 +10991,7 @@ footer {
             @media screen and (max-width: 1135px) {
               .beside #maps ul li a span {
                 font-size: 14px; } }
-            @media screen and (max-width: 1025px) {
+            @media screen and (max-width: 1024px) {
               .beside #maps ul li a span {
                 font-size: 30px;
                 font-weight: 100; } }
@@ -10995,18 +10999,18 @@ footer {
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
       border-bottom: 2px solid #777777; }
-      @media screen and (max-width: 1025px) {
+      @media screen and (max-width: 1024px) {
         .beside #maps .ui-tabs-active {
           border: none; } }
       .beside #maps .ui-tabs-active a {
         text-decoration: none; }
-        @media screen and (max-width: 1025px) {
+        @media screen and (max-width: 1024px) {
           .beside #maps .ui-tabs-active a {
             border-bottom: 1px solid #c6c6c6; } }
         .beside #maps .ui-tabs-active a span {
           color: #777777;
           font-weight: 500; }
-          @media screen and (max-width: 1025px) {
+          @media screen and (max-width: 1024px) {
             .beside #maps .ui-tabs-active a span {
               border-bottom: 2px solid #777777;
               color: #333333;
@@ -11016,13 +11020,13 @@ footer {
       width: 100%;
       height: 457px;
       background-color: #2b542c; }
-      @media screen and (max-width: 1025px) {
+      @media screen and (max-width: 1024px) {
         .beside #maps .beside-map {
           margin: 0; } }
 
 .contact {
   margin: 0 0 72px 0; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .contact {
       margin: 0 0 51px 0; } }
   .contact .place-name {
@@ -11033,7 +11037,7 @@ footer {
     line-height: 40px;
     font-weight: 300;
     margin: 0 0 14px 0; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .contact .place-name {
         font-family: "Roboto Slab", serif;
         color: #333333;
@@ -11051,7 +11055,7 @@ footer {
     line-height: 16px;
     font-weight: normal;
     margin: 0; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .contact .place-telephone {
         font-family: "myriad-pro", sans-serif;
         color: #2f97f0;
@@ -11067,7 +11071,7 @@ footer {
     line-height: 16px;
     font-weight: normal;
     margin: 7px 0 18px 0; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .contact .place-address {
         font-family: "myriad-pro", sans-serif;
         color: #777777;
@@ -11081,7 +11085,7 @@ footer {
     .contact .links a {
       display: inline-block;
       margin: 0 0.98113% 0 0; }
-      @media screen and (max-width: 1025px) {
+      @media screen and (max-width: 1024px) {
         .contact .links a {
           margin: 0 24px 0 0; } }
       .contact .links a:last-child {
@@ -11099,7 +11103,7 @@ footer {
         filter: gray;
         -webkit-filter: grayscale(1);
         opacity: .85; }
-        @media screen and (max-width: 1025px) {
+        @media screen and (max-width: 1024px) {
           .contact .links a img {
             width: 44px;
             height: 44px; } }
@@ -11121,13 +11125,10 @@ footer {
     .video {
       height: 730px;
       margin: 0 0 120px 0; } }
-  .video video[poster] {
-    height: 100%;
-    width: 100%; }
 
 .other-object {
   margin: 92px 0 37px 0; }
-  @media screen and (msx-width: 1025px) {
+  @media screen and (msx-width: 1024px) {
     .other-object {
       margin: 146px 0 58px 0; } }
   .other-object .main-title {
@@ -11138,7 +11139,7 @@ footer {
     line-height: 42px;
     font-weight: 300;
     margin: 0 0 23px 0; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .other-object .main-title {
         font-family: "Roboto Slab", serif;
         color: #2f2f2f;
@@ -11155,7 +11156,7 @@ footer {
     line-height: 20px;
     font-weight: 300;
     margin: 0 0 28px 0; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .other-object .main-context {
         font-family: "myriad-pro", sans-serif;
         color: #2f2f2f;
@@ -11172,7 +11173,7 @@ footer {
     line-height: 20px;
     font-weight: 300;
     margin: 0; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .other-object .link {
         font-family: "myriad-pro", sans-serif;
         color: #309bf7;
@@ -11190,7 +11191,7 @@ footer {
       font-size: 18px;
       line-height: 20px;
       font-weight: 300; }
-      @media screen and (max-width: 1025px) {
+      @media screen and (max-width: 1024px) {
         .other-object .link:after {
           font-family: "myriad-pro", sans-serif;
           color: #309bf7;
@@ -11862,7 +11863,7 @@ Builders
 /*BANK-PROGRAMS*/
 .all-list-banks {
   margin: 120px 0 185px 0; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .all-list-banks {
       margin: 133px 0 150px 0; } }
   .all-list-banks .title {
@@ -11873,7 +11874,7 @@ Builders
     line-height: 30px;
     font-weight: 300;
     margin: 0 0 31px 0; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .all-list-banks .title {
         font-family: "Roboto Slab", serif;
         color: #333333;
@@ -11890,7 +11891,7 @@ Builders
     line-height: 20px;
     font-weight: 100;
     margin: 0 0 86px 0; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .all-list-banks .context {
         font-family: "myriad-pro", sans-serif;
         color: #777777;
@@ -11901,16 +11902,16 @@ Builders
         margin: 0 0 85px 0; } }
   .all-list-banks .bank-block {
     margin: 0 0 80px 0; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .all-list-banks .bank-block {
         margin: 0; } }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .all-list-banks .bank-block li span:last-child {
         display: block;
         font-size: 20px; } }
   .all-list-banks .object__next {
     margin: 12px 0 0 0; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .all-list-banks .down-arrow {
       font-size: 35px;
       font-weight: 100; }
@@ -11921,18 +11922,18 @@ Builders
 
 .banks .bank {
   padding: 114px 0 52px 0; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .banks .bank {
       padding: 0 0 10px 0; } }
   .banks .bank .block__title, .banks .bank .block__developers .tab-content .developer__description > span, .block__developers .tab-content .banks .bank .developer__description > span {
     padding: 0 0 31px 0; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .banks .bank .block__title, .banks .bank .block__developers .tab-content .developer__description > span, .block__developers .tab-content .banks .bank .developer__description > span {
         line-height: 47px;
-        padding: 0 0 36px 0; } }
+        padding: 80px 0 36px 0; } }
   .banks .bank .block__text {
     padding: 0 0 65px 0; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .banks .bank .block__text {
         padding: 0 0 84px 0;
         font-size: 30px; }
@@ -11943,32 +11944,32 @@ Builders
 
 .banks .calculator_block {
   margin: 0 2.18868% 130px 2.18868%; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .banks .calculator_block {
       margin: 0 0 150px 0; } }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1024px) {
   .banks .special {
     height: 577px; } }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1024px) {
   .banks .special .special__title {
     font-weight: 300;
     line-height: 50px; } }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1024px) {
   .banks .special .special__text {
     margin: 49px 0 51px 0; } }
 
 .banks .block__discount {
   margin: 0 0 130px 0; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .banks .block__discount {
       margin: 0 0 150px 0; } }
 
 .banks .seo {
   padding: 130px 0 0 0; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .banks .seo {
       padding: 144px 0 0 0; } }
 
@@ -11980,7 +11981,7 @@ Builders
   line-height: 30px;
   font-weight: 300;
   margin: 0 0 30px 0; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .banks-graphic .title {
       font-family: "Roboto Slab", serif;
       color: #333333;
@@ -11998,7 +11999,7 @@ Builders
   line-height: 20px;
   font-weight: 100;
   margin: 0 0 33px 0; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .banks-graphic .context {
       font-family: "myriad-pro", sans-serif;
       color: #777777;
@@ -12012,7 +12013,7 @@ Builders
   width: 78.86792%;
   height: 709px;
   margin: 0 auto; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .banks-graphic .color-graphic {
       width: 100%;
       height: 1457px; } }
@@ -12021,14 +12022,14 @@ Builders
 
 .agreement {
   margin: 156px 0 217px 0; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .agreement {
       margin: 178px 0 240px 0; } }
   .agreement img {
     width: 18.11321%;
     height: 228px;
     margin: 0 0 19px 0; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .agreement img {
         width: 351px;
         height: 333px;
@@ -12045,7 +12046,7 @@ Builders
     @media screen and (max-width: 1300px) {
       .agreement .title {
         width: 69.43396%; } }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .agreement .title {
         font-family: "Roboto Slab", serif;
         color: #303030;
@@ -12067,7 +12068,7 @@ Builders
     @media screen and (max-width: 1400px) {
       .agreement .context {
         width: 67.92453%; } }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .agreement .context {
         font-family: "myriad-pro", sans-serif;
         color: #303030;
@@ -12079,7 +12080,7 @@ Builders
 
 .letters {
   margin: 0 0 90px 0; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .letters {
       margin: 0 0 119px 0; } }
   .letters .subtitle {
@@ -12090,7 +12091,7 @@ Builders
     line-height: 26px;
     font-weight: 300;
     margin: 0 0 11px 0; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .letters .subtitle {
         font-family: "Roboto Slab", serif;
         color: #303030;
@@ -12107,7 +12108,7 @@ Builders
     line-height: 40px;
     font-weight: 300;
     margin: 0 0 27px 0; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .letters .title {
         font-family: "Roboto Slab", serif;
         color: #303030;
@@ -12128,7 +12129,7 @@ Builders
     @media screen and (max-width: 1300px) {
       .letters .context {
         width: 67.92453%; } }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .letters .context {
         font-family: "myriad-pro", sans-serif;
         color: #777777;
@@ -12146,16 +12147,16 @@ Builders
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   opacity: .95; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .letters__main-block .block {
       width: 48.28102%;
       margin: 0 3.13901% 36px 0; } }
   .letters__main-block .block:nth-child(4n) {
     margin: 0 0 61px 0; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .letters__main-block .block:nth-child(4n) {
         margin: 0 0 36px 0; } }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .letters__main-block .block:nth-child(2n) {
       margin: 0 0 36px 0; } }
   .letters__main-block .block:hover {
@@ -12179,7 +12180,7 @@ Builders
   line-height: 18px;
   font-weight: 100;
   margin: 17px 0 0 0; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .letters__main-block span {
       font-family: "myriad-pro", sans-serif;
       color: #777777;
@@ -12202,7 +12203,7 @@ Builders
     line-height: 24px;
     font-weight: 300;
     margin: 0 0 29px 0; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .interplay .title {
         font-family: "Roboto Slab", serif;
         color: #303030;
@@ -12223,7 +12224,7 @@ Builders
     @media screen and (max-width: 1300px) {
       .interplay .context {
         width: 67.92453%; } }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .interplay .context {
         font-family: "myriad-pro", sans-serif;
         color: #777777;
@@ -12233,28 +12234,28 @@ Builders
         font-weight: 100;
         margin: 0 auto 68px auto;
         width: 100%; } }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .interplay .lg-block {
       display: none; } }
-  @media screen and (min-width: 1026px) {
+  @media screen and (min-width: 1025px) {
     .interplay .xs-block {
       display: none; } }
   .interplay img {
     width: 100%;
     height: 853px; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .interplay img {
         height: 543px; } }
 
 .question-lawyer__title {
   margin: 91px 0 92px 0; }
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1024px) {
     .question-lawyer__title {
       margin: 100px 0 89px 0; } }
   .question-lawyer__title img {
     width: 35px;
     height: 41px; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .question-lawyer__title img {
         width: 91px;
         height: 109px; } }
@@ -12266,7 +12267,7 @@ Builders
     line-height: 48px;
     font-weight: 300;
     margin: 0 0 9px 0; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .question-lawyer__title .title {
         font-family: "Roboto Slab", serif;
         color: #2f2f2f;
@@ -12283,7 +12284,7 @@ Builders
     line-height: 30px;
     font-weight: 100;
     margin: 0; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .question-lawyer__title .context {
         font-family: "myriad-pro", sans-serif;
         color: #777777;
@@ -12296,13 +12297,319 @@ Builders
 .question-lawyer .ceo {
   padding-top: 0; }
 
+@media screen and (max-width: 1024px) {
+  .consultations .col-md-6 {
+    width: 100% !important; } }
+
+.consultations .context__title {
+  font-family: "Roboto Slab", serif;
+  color: #2f2f2f;
+  display: block;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: normal;
+  margin: 29px 0 26px 0; }
+  @media screen and (max-width: 1024px) {
+    .consultations .context__title {
+      font-family: "Roboto Slab", serif;
+      color: #2f2f2f;
+      display: block;
+      font-size: 30px;
+      line-height: 35px;
+      font-weight: normal;
+      margin: 0 0 31px 0; } }
+
+.consultations p {
+  font-family: "myriad-pro", sans-serif;
+  color: #2f2f2f;
+  display: block;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 100;
+  margin: 0 0 26px 0; }
+  .consultations p:last-child {
+    margin: 0; }
+    @media screen and (max-width: 1024px) {
+      .consultations p:last-child {
+        display: none; } }
+  @media screen and (max-width: 1024px) {
+    .consultations p {
+      font-family: "myriad-pro", sans-serif;
+      color: #2f2f2f;
+      display: inline;
+      font-size: 30px;
+      line-height: 35px;
+      font-weight: 100; } }
+
+.consultations .readmore {
+  font-family: "myriad-pro", sans-serif;
+  color: #1593ff;
+  display: block;
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: 100;
+  margin: 45px 0 97px 0; }
+  @media screen and (min-width: 1025px) {
+    .consultations .readmore {
+      display: none; } }
+  .consultations .readmore:after {
+    content: '>';
+    color: #1593ff;
+    padding: 0 0 0 10px; }
+
+.directions {
+  margin: 120px 0 138px 0; }
+  @media screen and (max-width: 1024px) {
+    .directions {
+      margin: 131px 0 0 0; } }
+  .directions img {
+    width: 185px;
+    height: 160px; }
+    @media screen and (max-width: 1024px) {
+      .directions img {
+        width: 312px;
+        height: 269px;
+        margin-left: 3px; } }
+  .directions p {
+    font-family: "myriad-pro", sans-serif;
+    color: #333333;
+    display: block;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 100;
+    margin: 0; }
+    @media screen and (max-width: 1024px) {
+      .directions p {
+        font-family: "myriad-pro", sans-serif;
+        color: #333333;
+        display: block;
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 100; } }
+  .directions .block__left {
+    padding-left: 9px; }
+    @media screen and (max-width: 1024px) {
+      .directions .block__left {
+        padding-left: 0;
+        margin: 0 0 83px 0; } }
+    .directions .block__left span {
+      font-family: "myriad-pro", sans-serif;
+      color: #333333;
+      display: block;
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: normal;
+      margin: 34px 0 26px 0; }
+      @media screen and (max-width: 1024px) {
+        .directions .block__left span {
+          font-family: "myriad-pro", sans-serif;
+          color: #333333;
+          display: block;
+          font-size: 30px;
+          line-height: 32px;
+          font-weight: normal;
+          margin: 47px 0 35px 0; } }
+  .directions .block__right span {
+    font-family: "Roboto Slab", serif;
+    color: #333333;
+    display: block;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 300;
+    margin: 0 0 45px 0; }
+    @media screen and (max-width: 1024px) {
+      .directions .block__right span {
+        font-family: "Roboto Slab", serif;
+        color: #333333;
+        display: block;
+        font-size: 45px;
+        line-height: 50px;
+        font-weight: 300;
+        margin: 0 0 42px 0; } }
+  .directions ol {
+    margin: 0;
+    padding: 0 0 0 16px; }
+    @media screen and (max-width: 1024px) {
+      .directions ol {
+        margin: 0;
+        padding: 0 0 0 25px; } }
+    .directions ol li {
+      font-family: "myriad-pro", sans-serif;
+      color: #2f2f2f;
+      display: list-item;
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 100;
+      margin: 0 0 26px 0;
+      padding: 0 0 0 22px; }
+      @media screen and (max-width: 1024px) {
+        .directions ol li {
+          font-family: "myriad-pro", sans-serif;
+          color: #2f2f2f;
+          display: list-item;
+          font-size: 30px;
+          line-height: 34px;
+          font-weight: 100;
+          margin: 0 0 45px 0;
+          padding: 0 0 0 11px; } }
+      .directions ol li:last-child {
+        margin: 0; }
+  @media screen and (max-width: 1024px) {
+    .directions .col-md-offset-2 {
+      margin-left: 0% !important; } }
+  @media screen and (max-width: 1024px) {
+    .directions .col-md-3, .directions .col-md-7 {
+      width: 100% !important; } }
+
+.consultations-forma .lg-block {
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 39px 6.25%;
+  width: 89.28571%;
+  float: right; }
+  @media screen and (max-width: 1024px) {
+    .consultations-forma .lg-block {
+      display: none; } }
+
+@media screen and (min-width: 1025px) {
+  .consultations-forma .xs-block {
+    display: none; } }
+
+.consultations-forma .xs-block__border {
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  padding: 57px 0;
+  width: 100%; }
+
+.consultations-forma .title {
+  font-family: "myriad-pro", sans-serif;
+  color: #1f1f1f;
+  display: block;
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: normal;
+  margin: 0 0 22px 0; }
+  @media screen and (max-width: 1024px) {
+    .consultations-forma .title {
+      font-family: "myriad-pro", sans-serif;
+      color: #1f1f1f;
+      display: block;
+      font-size: 36px;
+      line-height: 40px;
+      font-weight: normal;
+      margin: 0 0 26px 0; } }
+
+.consultations-forma .context {
+  font-family: "myriad-pro", sans-serif;
+  color: #777777;
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 100;
+  margin: 0 0 11px 0; }
+  @media screen and (max-width: 1024px) {
+    .consultations-forma .context {
+      font-family: "myriad-pro", sans-serif;
+      color: #777777;
+      display: block;
+      font-size: 20px;
+      line-height: 25px;
+      font-weight: 100;
+      margin: 0 0 16px 0; } }
+  .consultations-forma .context__blue {
+    color: #309bf7;
+    display: inline; }
+
+.consultations-forma label {
+  margin: 20px 0 5px 0 !important; }
+  @media screen and (max-width: 1024px) {
+    .consultations-forma label {
+      margin: 22px 0 10px 0 !important; } }
+
+.consultations-forma input, .consultations-forma textarea {
+  width: 100%;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: 100;
+  font-size: 18px;
+  font-family: "myriad-pro", sans-serif;
+  color: #333333; }
+  @media screen and (max-width: 1024px) {
+    .consultations-forma input, .consultations-forma textarea {
+      padding: 15px 20px;
+      font-size: 30px; } }
+  .consultations-forma input:active, .consultations-forma input:focus, .consultations-forma textarea:active, .consultations-forma textarea:focus {
+    outline: none;
+    -webkit-box-shadow: 0px 0px 25px 0px #e5ecf8;
+    box-shadow: 0px 0px 25px 0px #e5ecf8; }
+
+.consultations-forma textarea {
+  resize: none;
+  overflow: auto; }
+
+.consultations-forma button {
+  font-family: "myriad-pro", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 100;
+  border: none;
+  border-radius: 5px;
+  height: 35px;
+  line-height: 30px;
+  opacity: 0.9;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+  background-color: #309bf7;
+  float: left;
+  margin: 22px 0 0 0; }
+  @media screen and (max-width: 1024px) {
+    .consultations-forma button {
+      margin: 30px 0 0 0;
+      font-family: "myriad-pro", sans-serif;
+      font-size: 30px;
+      color: #ffffff;
+      font-weight: 100;
+      border: none;
+      border-radius: 5px;
+      height: 54px;
+      line-height: 50px;
+      opacity: 0.9;
+      padding-left: 35px;
+      padding-right: 35px; } }
+
+.consultations-forma form a {
+  float: right;
+  font-family: "myriad-pro", sans-serif;
+  color: #309bf7;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 100;
+  margin: 34px 0 0 0; }
+  @media screen and (max-width: 1060px) {
+    .consultations-forma form a {
+      float: left; } }
+  @media screen and (max-width: 1024px) {
+    .consultations-forma form a {
+      font-family: "myriad-pro", sans-serif;
+      color: #309bf7;
+      display: inline-block;
+      font-size: 20px;
+      line-height: 22px;
+      font-weight: 100;
+      margin: 53px 0 0 0;
+      float: right; } }
+
 .hypothec {
   margin: 111px 0 162px 0; }
   .hypothec__logo {
     width: 125px;
     height: 108px;
     margin: 0 0 22px 0; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .hypothec__logo {
         width: 339px;
         height: 292px;
@@ -12315,7 +12622,7 @@ Builders
     line-height: 26px;
     font-weight: 300;
     margin: 0 0 12px 0; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .hypothec .subtitle {
         font-family: "Roboto Slab", serif;
         color: #2f2f2f;
@@ -12332,7 +12639,7 @@ Builders
     line-height: 40px;
     font-weight: 300;
     margin: 0 0 22px 0; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .hypothec .title {
         font-family: "Roboto Slab", serif;
         color: #2f2f2f;
@@ -12349,7 +12656,7 @@ Builders
     line-height: 20px;
     font-weight: 100;
     margin: 0 0 64px 0; }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .hypothec .context {
         font-family: "myriad-pro", sans-serif;
         color: #777777;
@@ -12368,10 +12675,10 @@ Builders
     margin: 48px 0 64px 0; }
     .hypothec .list__title:first-child {
       margin: 0 0 64px 0; }
-      @media screen and (max-width: 1025px) {
+      @media screen and (max-width: 1024px) {
         .hypothec .list__title:first-child {
           margin: 0 0 64px 0; } }
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1024px) {
       .hypothec .list__title {
         font-family: "Roboto Slab", serif;
         color: #2f2f2f;
@@ -12542,70 +12849,12 @@ Build
           bottom: -30px; } }
       .build-consultant .map-context .scr span {
         display: none; }
-  .build-consultant .build-consultant__context {
-    width: 36.98%;
-    border: 1px solid #dcdcdc;
-    padding: 30px 35px;
-    margin-left: 65px; }
-    @media screen and (max-width: 1024px) {
-      .build-consultant .build-consultant__context {
-        padding: 30px 45px 150px;
-        border: none;
-        border-top: 1px solid #dcdcdc; } }
-    .build-consultant .build-consultant__context .block__title, .build-consultant .build-consultant__context .block__developers .tab-content .developer__description > span, .block__developers .tab-content .build-consultant .build-consultant__context .developer__description > span {
-      font-size: 30px;
-      margin-top: 0; }
-      @media screen and (max-width: 1280px) {
-        .build-consultant .build-consultant__context .block__title, .build-consultant .build-consultant__context .block__developers .tab-content .developer__description > span, .block__developers .tab-content .build-consultant .build-consultant__context .developer__description > span {
-          font-size: 22px; } }
-      @media screen and (max-width: 1024px) {
-        .build-consultant .build-consultant__context .block__title, .build-consultant .build-consultant__context .block__developers .tab-content .developer__description > span, .block__developers .tab-content .build-consultant .build-consultant__context .developer__description > span {
-          font-size: 45px;
-          text-align: center; } }
-    .build-consultant .build-consultant__context .block__text {
-      font-size: 14px;
-      line-height: 18px;
-      margin-bottom: 20px;
-      color: #777777; }
-      @media screen and (max-width: 1280px) {
-        .build-consultant .build-consultant__context .block__text {
-          font-size: 12px;
-          line-height: 14px; } }
-      @media screen and (max-width: 1024px) {
-        .build-consultant .build-consultant__context .block__text {
-          font-size: 20px;
-          text-align: center;
-          line-height: 22px; } }
-      .build-consultant .build-consultant__context .block__text span {
-        display: inline-block;
-        color: #309bf9; }
-    .build-consultant .build-consultant__context input, .build-consultant .build-consultant__context textarea {
-      width: 100%;
-      margin-bottom: 5px; }
-      @media screen and (max-width: 1024px) {
-        .build-consultant .build-consultant__context input, .build-consultant .build-consultant__context textarea {
-          width: 73.6%;
-          text-align: center; } }
-    .build-consultant .build-consultant__context textarea {
-      height: 85px; }
-    @media screen and (max-width: 1280px) {
-      .build-consultant .build-consultant__context label, .build-consultant .build-consultant__context input, .build-consultant .build-consultant__context textarea {
-        font-size: 12px; } }
-    @media screen and (max-width: 1024px) {
-      .build-consultant .build-consultant__context label, .build-consultant .build-consultant__context input, .build-consultant .build-consultant__context textarea {
-        margin-left: 13.5%; } }
-    @media screen and (max-width: 1024px) {
-      .build-consultant .build-consultant__context input, .build-consultant .build-consultant__context textarea {
-        height: 70px; } }
-    @media screen and (max-width: 1280px) {
-      .build-consultant .build-consultant__context .politic {
-        font-size: 10px; } }
-    @media screen and (max-width: 1024px) {
-      .build-consultant .build-consultant__context .politic {
-        display: none; } }
-    @media screen and (max-width: 1024px) {
-      .build-consultant .build-consultant__context .send {
-        margin-left: 28.5%; } }
+  @media screen and (min-width: 1025px) {
+    .build-consultant .xs-block {
+      display: none; } }
+  @media screen and (max-width: 1024px) {
+    .build-consultant .lg-block {
+      display: none; } }
 
 .build-control {
   padding-top: 90px; }
