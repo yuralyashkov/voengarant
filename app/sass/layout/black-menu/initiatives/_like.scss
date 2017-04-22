@@ -1,0 +1,27 @@
+.like{
+  display: block;
+  width: 100%;
+  color: #777777;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 50px;
+  @include breakpoint("max-width: 1280px") {
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  img,span{
+    display: inline-block;
+    padding-right: 5px;
+    vertical-align: sub;
+  }
+  img{
+    @include grayscale;
+    @include breakpoint("max-width: 1024px") {
+      height: 30px;
+    }
+  }
+  img:hover{
+    @include ungrayscale;
+  }
+}
