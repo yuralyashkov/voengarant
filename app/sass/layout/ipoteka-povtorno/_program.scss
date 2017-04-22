@@ -1,0 +1,86 @@
+.program {
+  margin: 0 0 179px 0;
+  @include breakpoint("max-width: 1024px") {
+    margin: 0 0 152px 0;
+  }
+  .title {
+    @include text($titleFontFamily, #2f2f2f, block, 36px, 40px, 300);
+    margin: 0 0 22px 0;
+    @include breakpoint("max-width: 1024px") {
+      @include text($titleFontFamily, #2f2f2f, block, 45px, 50px, 300);
+      margin: 0 0 27px 0;
+    }
+  }
+  .context {
+    @include text($mainFontFamily, #777777, block, 18px, 22px, 100);
+    margin: 0 0 76px 0;
+    @include breakpoint("max-width: 1024px") {
+      @include text($mainFontFamily, #777777, block, 30px, 35px, 100);
+      margin: 0 0 75px 0;
+    }
+  }
+  .what-do-block {
+    overflow: hidden;
+    width: 100%;
+    .block {
+      background-color: #f0f0f0;
+      border-radius: 3px;
+      border: none;
+      width: (405px / $container * 100%);
+      margin-right: (20px / $container * 100%);
+      height: 510px;
+      box-sizing: border-box;
+      background-repeat: no-repeat;
+      float: left;
+      @include breakpoint("max-width: 1024px") {
+        float: none;
+        width: 99%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+        height: 716px;
+      }
+    }
+    .text-up {
+      background-image: url("../images/ipoteka-povtorno__block-text-up.png");
+      background-position: top;
+      padding-top: 73px;
+      padding-right: (45px / $container * 100%);
+      padding-left: (45px / $container * 100%);
+      @include breakpoint("max-width: 1024px") {
+        background-image: url("../images/ipoteka-povtorno__block-text-up__mob.png");
+        padding-top: 78px;
+        padding-right: (93px / $container * 100%);
+        padding-left: (93px / $container * 100%);
+      }
+    }
+    .text-down {
+      background-image: url("../images/ipoteka-povtorno__block-text-down.png");
+      background-position: bottom;
+      padding-top: 309px;
+      padding-right: (32px / $container * 100%);
+      padding-left: (13px / $container * 100%);
+      @include breakpoint("max-width: 1024px") {
+        background-image: url("../images/ipoteka-povtorno__block-text-down__mob.png");
+        padding-top: 423px;
+        padding-right: (88px / $container * 100%);
+        padding-left: (88px / $container * 100%);
+      }
+    }
+    .block-title {
+      @include text($titleFontFamily, #333333, block, 18px, 22px, normal);
+      margin: 0 0 26px 0;
+      @include breakpoint("max-width: 1024px") {
+        @include text($titleFontFamily, #333333, block, 30px, 35px, normal);
+        margin: 0 0 44px 0;
+      }
+    }
+    .block-context {
+      @include text($mainFontFamily, #333333, block, 18px, 22px, 100);
+      margin: 0;
+      @include breakpoint("max-width: 1024px") {
+        @include text($titleFontFamily, #333333, block, 30px, 35px, 100);
+      }
+    }
+  }
+}
