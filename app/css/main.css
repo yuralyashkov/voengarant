@@ -12594,7 +12594,14 @@ Builders
       float: right; } }
 
 .hypothec {
-  margin: 111px 0 162px 0; }
+  margin: 111px 0 162px 0;
+  background-image: url("../images/ipoteka-povtorno_background.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  position: relative; }
+  @media screen and (max-width: 1024px) {
+    .hypothec .col-md-6, .hypothec .col-md-5 {
+      width: 100% !important; } }
   .hypothec__logo {
     width: 125px;
     height: 108px;
@@ -12667,7 +12674,7 @@ Builders
       margin: 0 0 64px 0; }
       @media screen and (max-width: 1024px) {
         .hypothec .list__title:first-child {
-          margin: 0 0 64px 0; } }
+          margin: 0 0 45px 0; } }
     @media screen and (max-width: 1024px) {
       .hypothec .list__title {
         font-family: "Roboto Slab", serif;
@@ -12676,14 +12683,20 @@ Builders
         font-size: 30px;
         line-height: 35px;
         font-weight: normal;
-        margin: 67px 0 31px 0; } }
+        margin: 0 0 45px 0; } }
   .hypothec ul {
     padding: 0 24.92669% 0 0;
     margin: 0;
     list-style: none; }
+    @media screen and (max-width: 1024px) {
+      .hypothec ul {
+        padding: 0; } }
     .hypothec ul li {
       display: table;
       padding: 0 0 26px 0; }
+      @media screen and (max-width: 1024px) {
+        .hypothec ul li {
+          padding: 0 0 45px 0; } }
       .hypothec ul li .number {
         font-family: "myriad-pro", sans-serif;
         color: #d2d2d2;
@@ -12693,6 +12706,14 @@ Builders
         font-weight: bold;
         vertical-align: middle;
         padding: 0 15px 0 0; }
+        @media screen and (max-width: 1024px) {
+          .hypothec ul li .number {
+            font-family: "myriad-pro", sans-serif;
+            color: #d2d2d2;
+            display: table-cell;
+            font-size: 90px;
+            line-height: 95px;
+            font-weight: bold; } }
       .hypothec ul li .text {
         font-family: "myriad-pro", sans-serif;
         color: #2f2f2f;
@@ -12701,8 +12722,393 @@ Builders
         line-height: 22px;
         font-weight: 100;
         vertical-align: middle; }
+        @media screen and (max-width: 1024px) {
+          .hypothec ul li .text {
+            font-family: "myriad-pro", sans-serif;
+            color: #2f2f2f;
+            display: table-cell;
+            font-size: 30px;
+            line-height: 35px;
+            font-weight: 100; } }
   .hypothec .col-lg-6 {
     padding: 0 6.03774% 0 4.22642%; }
+    @media screen and (max-width: 1024px) {
+      .hypothec .col-lg-6 {
+        padding: 0; } }
+  .hypothec .red-block {
+    background-color: #cb475e;
+    padding: 37px 2.86792% 35px 4.83019%;
+    margin: 0 4.83019% 85px 0; }
+    @media screen and (max-width: 1024px) {
+      .hypothec .red-block {
+        padding: 29px 2.71698% 65px 0.90566%;
+        margin: 0 5.58491% 91px 0; } }
+    .hypothec .red-block .attention {
+      margin: 0 0 21px 0; }
+      @media screen and (max-width: 1024px) {
+        .hypothec .red-block .attention {
+          margin: 0 0 38px 0; } }
+      .hypothec .red-block .attention img {
+        width: 34px;
+        height: 34px; }
+        @media screen and (max-width: 1024px) {
+          .hypothec .red-block .attention img {
+            width: 46px;
+            height: 46px; } }
+      .hypothec .red-block .attention span {
+        font-family: "Roboto Slab", serif;
+        color: #fafafa;
+        display: inline-block;
+        font-size: 24px;
+        line-height: 34px;
+        font-weight: 400;
+        vertical-align: middle;
+        padding: 0 0 0 10px; }
+        @media screen and (max-width: 1024px) {
+          .hypothec .red-block .attention span {
+            padding: 0 0 0 12px;
+            font-family: "Roboto Slab", serif;
+            color: #fafafa;
+            display: inline-block;
+            font-size: 30px;
+            line-height: 46px;
+            font-weight: 400; } }
+    .hypothec .red-block span {
+      font-family: "myriad-pro", sans-serif;
+      color: #fafafa;
+      display: block;
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 400; }
+      @media screen and (max-width: 1024px) {
+        .hypothec .red-block span {
+          font-family: "myriad-pro", sans-serif;
+          color: #fafafa;
+          display: block;
+          font-size: 30px;
+          line-height: 35px;
+          font-weight: 400; } }
+  .hypothec:after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: 85px;
+    background-color: #cb475e;
+    height: 251px;
+    width: 293px; }
+    @media screen and (min-width: 2501px) {
+      .hypothec:after {
+        display: none; } }
+    @media screen and (max-width: 2500px) {
+      .hypothec:after {
+        width: 17.8%;
+        height: 233px; } }
+    @media screen and (max-width: 2000px) {
+      .hypothec:after {
+        width: 13.8%;
+        height: 234px; } }
+    @media screen and (max-width: 1800px) {
+      .hypothec:after {
+        width: 10.8%;
+        height: 233px; } }
+    @media screen and (max-width: 1600px) {
+      .hypothec:after {
+        width: 5.8%;
+        height: 233px; } }
+    @media screen and (max-width: 1366px) {
+      .hypothec:after {
+        width: 5.6%;
+        height: 237px; } }
+    @media screen and (max-width: 1303px) {
+      .hypothec:after {
+        height: 259px; } }
+    @media screen and (max-width: 1078px) {
+      .hypothec:after {
+        height: 281px; } }
+    @media screen and (max-width: 1034px) {
+      .hypothec:after {
+        height: 303px; } }
+    @media screen and (max-width: 1024px) {
+      .hypothec:after {
+        bottom: 91px;
+        height: 318px; } }
+    @media screen and (max-width: 1008px) {
+      .hypothec:after {
+        width: 5.8%;
+        height: 353px; } }
+    @media screen and (max-width: 845px) {
+      .hypothec:after {
+        height: 388px; } }
+    @media screen and (max-width: 695px) {
+      .hypothec:after {
+        height: 423px; } }
+    @media screen and (max-width: 666px) {
+      .hypothec:after {
+        height: 458px; } }
+
+.program {
+  margin: 0 0 179px 0; }
+  @media screen and (max-width: 1024px) {
+    .program {
+      margin: 0 0 152px 0; } }
+  .program .title {
+    font-family: "Roboto Slab", serif;
+    color: #2f2f2f;
+    display: block;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 300;
+    margin: 0 0 22px 0; }
+    @media screen and (max-width: 1024px) {
+      .program .title {
+        font-family: "Roboto Slab", serif;
+        color: #2f2f2f;
+        display: block;
+        font-size: 45px;
+        line-height: 50px;
+        font-weight: 300;
+        margin: 0 0 27px 0; } }
+  .program .context {
+    font-family: "myriad-pro", sans-serif;
+    color: #777777;
+    display: block;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 100;
+    margin: 0 0 76px 0; }
+    @media screen and (max-width: 1024px) {
+      .program .context {
+        font-family: "myriad-pro", sans-serif;
+        color: #777777;
+        display: block;
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 100;
+        margin: 0 0 75px 0; } }
+  .program .what-do-block {
+    overflow: hidden;
+    width: 100%; }
+    .program .what-do-block .block {
+      background-color: #f0f0f0;
+      border-radius: 3px;
+      border: none;
+      width: 30.56604%;
+      margin-right: 1.50943%;
+      height: 510px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      background-repeat: no-repeat;
+      float: left; }
+      @media screen and (max-width: 1024px) {
+        .program .what-do-block .block {
+          float: none;
+          width: 99%;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 40px;
+          height: 716px; } }
+    .program .what-do-block .text-up {
+      background-image: url("../images/ipoteka-povtorno__block-text-up.png");
+      background-position: top;
+      padding-top: 73px;
+      padding-right: 3.39623%;
+      padding-left: 3.39623%; }
+      @media screen and (max-width: 1024px) {
+        .program .what-do-block .text-up {
+          background-image: url("../images/ipoteka-povtorno__block-text-up__mob.png");
+          padding-top: 78px;
+          padding-right: 7.01887%;
+          padding-left: 7.01887%; } }
+    .program .what-do-block .text-down {
+      background-image: url("../images/ipoteka-povtorno__block-text-down.png");
+      background-position: bottom;
+      padding-top: 309px;
+      padding-right: 2.41509%;
+      padding-left: 0.98113%; }
+      @media screen and (max-width: 1024px) {
+        .program .what-do-block .text-down {
+          background-image: url("../images/ipoteka-povtorno__block-text-down__mob.png");
+          padding-top: 423px;
+          padding-right: 6.64151%;
+          padding-left: 6.64151%; } }
+    .program .what-do-block .block-title {
+      font-family: "Roboto Slab", serif;
+      color: #333333;
+      display: block;
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: normal;
+      margin: 0 0 26px 0; }
+      @media screen and (max-width: 1024px) {
+        .program .what-do-block .block-title {
+          font-family: "Roboto Slab", serif;
+          color: #333333;
+          display: block;
+          font-size: 30px;
+          line-height: 35px;
+          font-weight: normal;
+          margin: 0 0 44px 0; } }
+    .program .what-do-block .block-context {
+      font-family: "myriad-pro", sans-serif;
+      color: #333333;
+      display: block;
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 100;
+      margin: 0; }
+      @media screen and (max-width: 1024px) {
+        .program .what-do-block .block-context {
+          font-family: "Roboto Slab", serif;
+          color: #333333;
+          display: block;
+          font-size: 30px;
+          line-height: 35px;
+          font-weight: 100; } }
+
+.application-forma .lg-block {
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 39px 2.64151%;
+  width: 35.84906%;
+  float: right; }
+  @media screen and (max-width: 1024px) {
+    .application-forma .lg-block {
+      display: none; } }
+
+@media screen and (min-width: 1025px) {
+  .application-forma .xs-block {
+    display: none; } }
+
+.application-forma .xs-block__border {
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  padding: 57px 0;
+  width: 100%; }
+
+.application-forma .forma-title {
+  font-family: "myriad-pro", sans-serif;
+  color: #1f1f1f;
+  display: block;
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: normal;
+  margin: 0 0 22px 0; }
+  @media screen and (max-width: 1024px) {
+    .application-forma .forma-title {
+      font-family: "myriad-pro", sans-serif;
+      color: #1f1f1f;
+      display: block;
+      font-size: 36px;
+      line-height: 40px;
+      font-weight: normal;
+      margin: 0 0 26px 0; } }
+
+.application-forma .forma-context {
+  font-family: "myriad-pro", sans-serif;
+  color: #777777;
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 100;
+  margin: 0 0 11px 0; }
+  @media screen and (max-width: 1024px) {
+    .application-forma .forma-context {
+      font-family: "myriad-pro", sans-serif;
+      color: #777777;
+      display: block;
+      font-size: 20px;
+      line-height: 25px;
+      font-weight: 100;
+      margin: 0 0 16px 0; } }
+  .application-forma .forma-context__blue {
+    color: #309bf7;
+    display: inline; }
+
+.application-forma label {
+  margin: 20px 0 5px 0 !important; }
+  @media screen and (max-width: 1024px) {
+    .application-forma label {
+      margin: 22px 0 10px 0 !important; } }
+
+.application-forma input, .application-forma textarea {
+  width: 100%;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: 100;
+  font-size: 18px;
+  font-family: "myriad-pro", sans-serif;
+  color: #333333; }
+  @media screen and (max-width: 1024px) {
+    .application-forma input, .application-forma textarea {
+      padding: 15px 20px;
+      font-size: 30px; } }
+  .application-forma input:active, .application-forma input:focus, .application-forma textarea:active, .application-forma textarea:focus {
+    outline: none;
+    -webkit-box-shadow: 0px 0px 25px 0px #e5ecf8;
+    box-shadow: 0px 0px 25px 0px #e5ecf8; }
+
+.application-forma textarea {
+  resize: none;
+  overflow: auto; }
+
+.application-forma button {
+  font-family: "myriad-pro", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 100;
+  border: none;
+  border-radius: 5px;
+  height: 35px;
+  line-height: 30px;
+  opacity: 0.9;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+  background-color: #309bf7;
+  float: left;
+  margin: 22px 0 0 0; }
+  @media screen and (max-width: 1024px) {
+    .application-forma button {
+      margin: 30px 0 0 0;
+      font-family: "myriad-pro", sans-serif;
+      font-size: 30px;
+      color: #ffffff;
+      font-weight: 100;
+      border: none;
+      border-radius: 5px;
+      height: 54px;
+      line-height: 50px;
+      opacity: 0.9;
+      padding-left: 35px;
+      padding-right: 35px; } }
+
+.application-forma form a {
+  float: right;
+  font-family: "myriad-pro", sans-serif;
+  color: #309bf7;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 100;
+  margin: 34px 0 0 0; }
+  @media screen and (max-width: 1060px) {
+    .application-forma form a {
+      float: left; } }
+  @media screen and (max-width: 1024px) {
+    .application-forma form a {
+      font-family: "myriad-pro", sans-serif;
+      color: #309bf7;
+      display: inline-block;
+      font-size: 20px;
+      line-height: 22px;
+      font-weight: 100;
+      margin: 53px 0 0 0;
+      float: right; } }
+
+.ipoteka-povtorno .ceo {
+  padding-top: 0; }
 
 /**
 Build
