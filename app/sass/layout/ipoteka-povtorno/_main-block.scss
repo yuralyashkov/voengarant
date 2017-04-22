@@ -1,10 +1,19 @@
 .hypothec {
   margin: 111px 0 162px 0;
+  background-image: url("../images/ipoteka-povtorno_background.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  position: relative;
+  .col-md-6, .col-md-5 {
+    @include breakpoint("max-width: 1024px") {
+      width: 100% !important;
+    }
+  }
   &__logo {
     width: 125px;
     height: 108px;
     margin: 0 0 22px 0;
-    @include breakpoint("max-width: 1025px") {
+    @include breakpoint("max-width: 1024px") {
       width: 339px;
       height: 292px;
       margin: 0 0 64px 0;
@@ -13,7 +22,7 @@
   .subtitle {
     @include text($titleFontFamily, #2f2f2f, block, 24px, 26px, 300);
     margin: 0 0 12px 0;
-    @include breakpoint("max-width: 1025px") {
+    @include breakpoint("max-width: 1024px") {
       @include text($titleFontFamily, #2f2f2f, block, 36px, 40px, 300);
       margin: 0 0 14px 0;
     }
@@ -21,7 +30,7 @@
   .title {
     @include text($titleFontFamily, #2f2f2f, block, 36px, 40px, 300);
     margin: 0 0 22px 0;
-    @include breakpoint("max-width: 1025px") {
+    @include breakpoint("max-width: 1024px") {
       @include text($titleFontFamily, #2f2f2f, block, 45px, 50px, 300);
       margin: 0 0 28px 0;
     }
@@ -29,7 +38,7 @@
   .context {
     @include text($mainFontFamily, #777777, block, 18px, 20px, 100);
     margin: 0 0 64px 0;
-    @include breakpoint("max-width: 1025px") {
+    @include breakpoint("max-width: 1024px") {
       @include text($mainFontFamily, #777777, block, 30px, 35px, 100);
       margin: 0 0 103px 0;
     }
@@ -39,34 +48,145 @@
     margin: 48px 0 64px 0;
     &:first-child {
       margin: 0 0 64px 0;
-      @include breakpoint("max-width: 1025px") {
-        margin: 0 0 64px 0;
+      @include breakpoint("max-width: 1024px") {
+        margin: 0 0 45px 0;
       }
     }
-    @include breakpoint("max-width: 1025px") {
+    @include breakpoint("max-width: 1024px") {
       @include text($titleFontFamily, #2f2f2f, block, 30px, 35px, normal);
-      margin: 67px 0 31px 0;
+      margin: 0 0 45px 0;
     }
   }
   ul {
     padding: 0 (170px / 682px * 100%) 0 0;
     margin: 0;
     list-style: none;
+    @include breakpoint("max-width: 1024px") {
+      padding: 0;
+    }
     li {
       display: table;
       padding: 0 0 26px 0;
+      @include breakpoint("max-width: 1024px") {
+        padding: 0 0 45px 0;
+      }
       .number {
         @include text($mainFontFamily, #d2d2d2, table-cell, 55px, 60px, bold);
         vertical-align: middle;
         padding: 0 15px 0 0;
+        @include breakpoint("max-width: 1024px") {
+          @include text($mainFontFamily, #d2d2d2, table-cell, 90px, 95px, bold);
+        }
       }
       .text {
         @include text($mainFontFamily, #2f2f2f, table-cell, 18px, 22px, 100);
         vertical-align: middle;
+        @include breakpoint("max-width: 1024px") {
+          @include text($mainFontFamily, #2f2f2f, table-cell, 30px, 35px, 100);
+        }
       }
     }
   }
   .col-lg-6 {
     padding: 0 (80px / $container * 100%) 0 (56px / $container * 100%);
+    @include breakpoint("max-width: 1024px") {
+      padding: 0;
+    }
+  }
+  .red-block {
+    background-color: #cb475e;
+    padding: 37px (38px / $container * 100%) 35px (64px / $container * 100%);
+    margin: 0 (64px / $container * 100%) 85px 0;
+    @include breakpoint("max-width: 1024px") {
+      padding: 29px (36px / $container * 100%) 65px (12px / $container * 100%);
+      margin: 0 (74px / $container * 100%) 91px 0;
+    }
+    .attention {
+      margin: 0 0 21px 0;
+      @include breakpoint("max-width: 1024px") {
+        margin: 0 0 38px 0;
+      }
+      img {
+        width: 34px;
+        height: 34px;
+        @include breakpoint("max-width: 1024px") {
+          width: 46px;
+          height: 46px;
+        }
+      }
+      span {
+        @include text($titleFontFamily, #fafafa, inline-block, 24px, 34px, 400);
+        vertical-align: middle;
+        padding: 0 0 0 10px;
+        @include breakpoint("max-width: 1024px") {
+          padding: 0 0 0 12px;
+          @include text($titleFontFamily, #fafafa, inline-block, 30px, 46px, 400);
+        }
+      }
+    }
+    span {
+      @include text($mainFontFamily, #fafafa, block, 18px, 22px, 400);
+      @include breakpoint("max-width: 1024px") {
+        @include text($mainFontFamily, #fafafa, block, 30px, 35px, 400);
+      }
+    }
+  }
+  &:after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: 85px;
+    background-color: #cb475e;
+    height: 251px;
+    width: 293px;
+    @include breakpoint("min-width: 2501px") {
+      display: none;
+    }
+    @include breakpoint("max-width: 2500px") {
+      width: 17.8%;
+      height: 233px;
+    }
+    @include breakpoint("max-width: 2000px") {
+      width: 13.8%;
+      height: 234px;
+    }
+    @include breakpoint("max-width: 1800px") {
+      width: 10.8%;
+      height: 233px;
+    }
+    @include breakpoint("max-width: 1600px") {
+      width: 5.8%;
+      height: 233px;
+    }
+    @include breakpoint("max-width: 1366px") {
+      width: 5.6%;
+      height: 237px;
+    }
+    @include breakpoint("max-width: 1303px") {
+      height: 259px;
+    }
+    @include breakpoint("max-width: 1078px") {
+      height: 281px;
+    }
+    @include breakpoint("max-width: 1034px") {
+      height: 303px;
+    }
+    @include breakpoint("max-width: 1024px") {
+      bottom: 91px;
+      height: 318px;
+    }
+    @include breakpoint("max-width: 1008px") {
+      width: 5.8%;
+      height: 353px;
+    }
+    @include breakpoint("max-width: 845px") {
+      height: 388px;
+    }
+    @include breakpoint("max-width: 695px") {
+      height: 423px;
+    }
+    @include breakpoint("max-width: 666px") {
+      height: 458px;
+    }
   }
 }

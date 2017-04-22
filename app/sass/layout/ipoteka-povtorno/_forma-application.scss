@@ -1,10 +1,10 @@
-.consultations-forma {
+.application-forma {
   .lg-block {
     border: 1px solid #dcdcdc;
     border-radius: 5px;
     box-sizing: border-box;
-    padding: 39px (35px / 560px * 100%);
-    width: (500px / 560px * 100%);
+    padding: 39px (35px / $container * 100%);
+    width: (475px / $container * 100%);
     float: right;
     @include breakpoint("max-width: 1024px") {
       display: none;
@@ -21,7 +21,7 @@
       width: 100%;
     }
   }
-  .title {
+  .forma-title {
     @include text($mainFontFamily, #1f1f1f, block, 30px, 32px, normal);
     margin: 0 0 22px 0;
     @include breakpoint("max-width: 1024px") {
@@ -29,7 +29,7 @@
       margin: 0 0 26px 0;
     }
   }
-  .context {
+  .forma-context {
     @include text($mainFontFamily, #777777, block, 14px, 16px, 100);
     margin: 0 0 11px 0;
     @include breakpoint("max-width: 1024px") {
@@ -98,4 +98,7 @@
       }
     }
   }
+}
+.ipoteka-povtorno .ceo {
+  padding-top: 0;
 }
