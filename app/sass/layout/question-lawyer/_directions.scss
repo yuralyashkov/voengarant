@@ -1,12 +1,12 @@
 .directions {
   margin: 120px 0 138px 0;
-  @include breakpoint("max-width: 1025px") {
+  @include breakpoint("max-width: 1024px") {
     margin: 131px 0 0 0;
   }
   img {
     width: 185px;
     height: 160px;
-    @include breakpoint("max-width: 1025px") {
+    @include breakpoint("max-width: 1024px") {
       width: 312px;
       height: 269px;
       margin-left: 3px;
@@ -15,20 +15,20 @@
   p {
     @include text($mainFontFamily, #333333, block, 18px, 22px, 100);
     margin: 0;
-    @include breakpoint("max-width: 1025px") {
+    @include breakpoint("max-width: 1024px") {
       @include text($mainFontFamily, #333333, block, 30px, 35px, 100);
     }
   }
   .block__left {
     padding-left: 9px;
-    @include breakpoint("max-width: 1025px") {
+    @include breakpoint("max-width: 1024px") {
       padding-left: 0;
       margin: 0 0 83px 0;
     }
     span {
       @include text($mainFontFamily, #333333, block, 18px, 20px, normal);
       margin: 34px 0 26px 0;
-      @include breakpoint("max-width: 1025px") {
+      @include breakpoint("max-width: 1024px") {
         @include text($mainFontFamily, #333333, block, 30px, 32px, normal);
         margin: 47px 0 35px 0;
       }
@@ -38,7 +38,7 @@
     span {
       @include text($titleFontFamily, #333333, block, 36px, 42px, 300);
       margin: 0 0 45px 0;
-      @include breakpoint("max-width: 1025px") {
+      @include breakpoint("max-width: 1024px") {
         @include text($titleFontFamily, #333333, block, 45px, 50px, 300);
         margin: 0 0 42px 0;
       }
@@ -47,7 +47,7 @@
   ol {
     margin: 0;
     padding: 0 0 0 16px;
-    @include breakpoint("max-width: 1025px") {
+    @include breakpoint("max-width: 1024px") {
       margin: 0;
       padding: 0 0 0 25px;
     }
@@ -55,7 +55,7 @@
       @include text($mainFontFamily, #2f2f2f, list-item, 18px, 20px, 100);
       margin: 0 0 26px 0;
       padding: 0 0 0 22px;
-      @include breakpoint("max-width: 1025px") {
+      @include breakpoint("max-width: 1024px") {
         @include text($mainFontFamily, #2f2f2f, list-item, 30px, 34px, 100);
         margin: 0 0 45px 0;
         padding: 0 0 0 11px;
@@ -63,6 +63,16 @@
       &:last-child {
         margin: 0;
       }
+    }
+  }
+  .col-md-offset-2 {
+    @include breakpoint("max-width: 1024px") {
+      margin-left: 0% !important;
+    }
+  }
+  .col-md-3, .col-md-7 {
+    @include breakpoint("max-width: 1024px") {
+      width: 100% !important;
     }
   }
 }

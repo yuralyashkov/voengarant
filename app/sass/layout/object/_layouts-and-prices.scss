@@ -1,6 +1,6 @@
 .layouts-and-prices {
   margin: 84px 0 0 0;
-  @include breakpoint("max-width: 1025px") {
+  @include breakpoint("max-width: 1024px") {
     margin: 140px 0 0 0;
     br {
      display: none;
@@ -10,14 +10,14 @@
 .layouts-and-prices .title {
   @include text($titleFontFamily, #333333, block, 36px, 42px, 300);
   margin: 0 0 22px 0;
-  @include breakpoint("max-width: 1025px") {
+  @include breakpoint("max-width: 1024px") {
     @include text($titleFontFamily, #333333, block, 45px, 50px, 400);
   }
 }
 .layouts-and-prices .context {
   @include text($mainFontFamily, #777777, block, 18px, 20px, 100);
   margin: 0 0 52px 0;
-  @include breakpoint("max-width: 1025px") {
+  @include breakpoint("max-width: 1024px") {
     @include text($mainFontFamily, #777777, block, 25px, 30px, 100);
   }
 }
@@ -26,7 +26,7 @@
   width: (1140px / $container * 100%);
   border-collapse: collapse;
   margin: 0 auto 42px auto;
-  @include breakpoint("max-width: 1025px") {
+  @include breakpoint("max-width: 1024px") {
     display: none;
   }
 }
@@ -36,7 +36,7 @@
 .layouts-and-prices .kind-name {
   padding: 0 0 8px 0;
   @include text($mainFontFamily, #333333, table-cell, 18px, 18px, 600);
-  @include breakpoint("max-width: 1025px") {
+  @include breakpoint("max-width: 1024px") {
     @include text($mainFontFamily, #333333, block, 35px, 38px, 600);
   }
 }
@@ -47,7 +47,7 @@
     border-right: none;
   }
   @include text($mainFontFamily, #333333, table-cell, 18px, 18px, 600);
-  @include breakpoint("max-width: 1025px") {
+  @include breakpoint("max-width: 1024px") {
     @include text($mainFontFamily, #333333, block, 35px, 38px, 400);
     padding: 0;
     margin: 0 0 12px 0;
@@ -58,13 +58,13 @@
   @include breakpoint("max-width: 1150px") {
     @include text($mainFontFamily, #333333, block, 16px, 17px, 100);
   }
-  @include breakpoint("max-width: 1025px") {
+  @include breakpoint("max-width: 1024px") {
     @include text($mainFontFamily, #333333, block, 35px, 27px, 100);
   }
 }
 .layouts-and-prices .xs-table {
   margin: 0 0 66px 0;
-  @include breakpoint("min-width: 1026px") {
+  @include breakpoint("min-width: 1025px") {
     display: none;
   }
   .layouts {
@@ -90,10 +90,10 @@
       opacity: 1;
     }
     img {
-      @include breakpoint("min-width: 1026px") {
+      @include breakpoint("min-width: 1025px") {
         max-height: 31px;
       }
-      @include breakpoint("max-width: 1025px") {
+      @include breakpoint("max-width: 1024px") {
         width: 73px;
         height: 73px !important;
         margin: 0 0 20px 0;
@@ -105,7 +105,7 @@
       @include breakpoint("max-width: 1150px") {
         @include text($mainFontFamily, #309bf7, block, 16px, 28px, 100);
       }
-      @include breakpoint("max-width: 1025px") {
+      @include breakpoint("max-width: 1024px") {
         @include text($mainFontFamily, #309bf7, block, 35px, 35px, 100);
       }
     }
@@ -120,7 +120,7 @@
     margin: 0 0 50px 0;
     &:last-child {
       margin: 0;
-      @include breakpoint("max-width: 1025px") {
+      @include breakpoint("max-width: 1024px") {
         margin: 0 0 50px 0;
       }
     }
@@ -128,7 +128,7 @@
   &__name {
     @include text($mainFontFamily, #333333, block, 18px, 22px, normal);
     margin: 0 0 13px 0;
-    @include breakpoint("max-width: 1025px") {
+    @include breakpoint("max-width: 1024px") {
       @include text($mainFontFamily, #333333, block, 35px, 30px, normal);
       margin: 0 0 20px 0;
     }
@@ -141,7 +141,7 @@
     background-size: contain;
     top: 0;
     margin: 0 !important;
-    @include breakpoint("max-width: 1025px") {
+    @include breakpoint("max-width: 1024px") {
       display: none;
     }
   }
@@ -153,7 +153,7 @@
     background-size: contain;
     top: 0;
     margin: 0 !important;
-    @include breakpoint("max-width: 1025px") {
+    @include breakpoint("max-width: 1024px") {
       display: none;
     }
   }
@@ -167,7 +167,7 @@
   }
   .swiper-container {
     width: (1140px / $container * 100%);
-    @include breakpoint("max-width: 1025px") {
+    @include breakpoint("max-width: 1024px") {
       width: 100%;
     }
   }

@@ -1,10 +1,10 @@
 .lg-block {
-  @include breakpoint("max-width: 1025px") {
+  @include breakpoint("max-width: 1024px") {
     display: none;
   }
 }
 .xs-block {
-  @include breakpoint("min-width: 1026px") {
+  @include breakpoint("min-width: 1025px") {
     display: none;
   }
 }

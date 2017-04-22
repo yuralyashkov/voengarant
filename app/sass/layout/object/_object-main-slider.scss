@@ -16,7 +16,7 @@
       li {
         display: inline-block;
         padding: 0 2.45%;
-        @include breakpoint("max-width: 1025px") {
+        @include breakpoint("max-width: 1024px") {
           padding: 0 1.115%;
         }
         a {
@@ -51,7 +51,7 @@
     width: 100%;
     height: 100%;
     z-index: 0;
-    @include breakpoint("max-width: 1025px") {
+    @include breakpoint("max-width: 1024px") {
       position: relative;
     }
   }
