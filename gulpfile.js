@@ -57,7 +57,12 @@ gulp.task('default', ['browser-sync', 'sass', 'templates'], function () {
 
 
     gulp.watch('./app/sass/layout/novostroiki/*.scss', ['sass']);
-    gulp.watch('./app/jade/layout/novostroiki.jade', ['templates']);
+    gulp.watch('./app/jade/layout/novostroiki/*.jade', ['templates']);
+
+
+    gulp.watch('./app/sass/layout/control/*.scss', ['sass']);
+    gulp.watch('./app/jade/layout/control/.jade', ['templates']);
+
 
     gulp.watch('./app/sass/layout/builders/*.scss', ['sass']);
 

@@ -1,0 +1,38 @@
+section.advantage-slider
+    .advantage-slider_desktop
+        .container
+            .swiper-container#advant-slide
+                .swiper-wrapper
+                    -for(var i = 0; i < 8; i++)
+                        .swiper-slide
+                            .row
+                                .col-lg-7.col-md-7
+                                    .advantage-slider__pic(style="background:url(./images/advant-mob.png)no-repeat center 100%")
+                                .col-lg-5.col-md-5
+                                    .advantage-slider__content
+                                        span.block__title.advantage-slider__title Большие приемущества!
+                                        span.block__title.advantage-slider__under-title.
+                                            Сотрудничай с ВоенГрантом<br> и получай<br>
+                                            специальные условия!
+                                        span.advantage-slider__info.
+                                            Регистрация в личном кабинетем участника<br>
+                                            объединения
+                                        button.btn.btn-primary Зарегистрироваться
+                .swiper-pagination#advant-pag
+    .advantage-slider_mobile
+        .container
+            .swiper-container#advant-slide-m
+                .swiper-wrapper
+                    -for(var i = 0; i < 8; i++)
+                        .swiper-slide(style="background:url(./images/advant-mob.png)no-repeat")
+                            .advantage-slider__content
+                                span.block__title.advantage-slider__title Большие приемущества!
+                                span.block__title.advantage-slider__under-title.
+                                    Сотрудничай с ВоенГрантом<br> и получай<br>
+                                    специальные условия!
+                                span.advantage-slider__info.
+                                    Регистрация в личном кабинетем участника<br>
+                                    объединения
+                                button.btn.btn-primary Зарегистрироваться
+
+                .swiper-pagination#advant-pag-m

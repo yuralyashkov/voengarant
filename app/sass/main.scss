@@ -112,11 +112,21 @@ Builders
 @import "layout/partners";
 //all-builders
 @import "layout/builders/all-builders";
+//advantage slide
+@import "layout/_advantage-slider";
+
 
 //bank
 @import "layout/bank/_bank-page";
 //bank-programs
 @import "layout/bank/bank-programs";
+
+//control
+@import "layout/control/control";
+@import "layout/control/control-stage";
+@import "layout/control/control-remarks";
+@import "layout/control/control-graph";
+
 
 //banks
 @import "layout/banks/_all-list-banks";
@@ -136,7 +146,8 @@ Builders
 
 //ipoteka-povtorno
 @import "layout/ipoteka-povtorno/_main-block";
-
+@import "layout/ipoteka-povtorno/_program";
+@import "layout/ipoteka-povtorno/_forma-application";
 /**
 Build
  */
