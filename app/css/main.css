@@ -14645,7 +14645,8 @@ Contact
       margin-bottom: 140px; }
       @media screen and (max-width: 1024px) {
         .contact__block__context {
-          display: block; } }
+          display: block;
+          margin-bottom: 70px; } }
       .contact__block__context .span-block {
         display: block; }
       .contact__block__context .color, .contact__block__context label {
@@ -14669,12 +14670,20 @@ Contact
         @media screen and (max-width: 1024px) {
           .contact__block__context__map {
             margin-bottom: 150px;
-            width: 100%; } }
+            width: 100%;
+            border-radius: 0;
+            height: 420px; } }
       .contact__block__context__form {
         border: 1px solid #777777;
         padding: 40px 30px;
         border-radius: 5px;
         width: 490px; }
+        @media screen and (max-width: 1024px) {
+          .contact__block__context__form {
+            margin-bottom: 150px;
+            width: 100%;
+            border-radius: 0;
+            padding: 50px 15px; } }
         .contact__block__context__form .block__title, .contact__block__context__form .block__developers .tab-content .developer__description > span, .block__developers .tab-content .contact__block__context__form .developer__description > span {
           text-align: left; }
         .contact__block__context__form .number {
@@ -14687,7 +14696,25 @@ Contact
           @media screen and (max-width: 1280px) {
             .contact__block__context__form span, .contact__block__context__form label {
               font-size: 12px; } }
+          @media screen and (max-width: 1024px) {
+            .contact__block__context__form span, .contact__block__context__form label {
+              font-size: 20px;
+              color: #777777;
+              width: 100%; } }
+        .contact__block__context__form textarea {
+          height: 85px; }
+          @media screen and (max-width: 1024px) {
+            .contact__block__context__form textarea {
+              height: 170px; } }
         .contact__block__context__form .input-form, .contact__block__context__form textarea {
           width: 100%;
           background: #2f2f2f;
           border: none; }
+  @media screen and (max-width: 1024px) {
+    .contact .desctop {
+      display: none; } }
+  .contact .mobile {
+    display: none; }
+    @media screen and (max-width: 1024px) {
+      .contact .mobile {
+        display: block; } }
