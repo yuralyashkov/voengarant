@@ -25,6 +25,9 @@ body {
   .footer-right{
     background: #232323;
   }
+  .seo{
+    background: #1d1d1d;
+  }
   footer{
     border-top: 1px solid #777777;
     .footer__context ul,.footer__context a{
@@ -344,7 +347,7 @@ textarea.textarea-form{
   row-span: 5;
 }
 textarea:focus,textarea:active,input:focus,input:active{
-  box-shadow: 0px 0px 25px 0px #e5ecf8;
+  box-shadow: 0px 0px 15px 0px #309bf7;
 }
 select.select-form{
   @include text($mainFontFamily, #333333, inline-block, 18px, 20px, normal);

@@ -4,11 +4,21 @@
   height: 340px;
   margin-bottom: -25px;
   margin-top: 0;
+
   @include breakpoint("max-width: 1280px") {
     height: 300px;
   }
+  @include breakpoint("max-width: 1024px") {
+    height: 640px;
+    padding: 55px 65px;
+    margin-top: 150px;
+    margin-bottom: 0;
+  }
   img{
     padding-bottom: 30px;
+    @include breakpoint("max-width: 1024px") {
+      width: 100px;
+    }
   }
   .btn{
     background: #2f97f0;
