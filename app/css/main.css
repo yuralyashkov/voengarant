@@ -6351,6 +6351,8 @@ body {
     color: #777777; }
   .body_black .footer-right {
     background: #232323; }
+  .body_black .seo {
+    background: #1d1d1d; }
   .body_black footer {
     border-top: 1px solid #777777; }
 
@@ -6601,8 +6603,8 @@ textarea.textarea-form {
   row-span: 5; }
 
 textarea:focus, textarea:active, input:focus, input:active {
-  -webkit-box-shadow: 0px 0px 25px 0px #e5ecf8;
-  box-shadow: 0px 0px 25px 0px #e5ecf8; }
+  -webkit-box-shadow: 0px 0px 15px 0px #309bf7;
+  box-shadow: 0px 0px 15px 0px #309bf7; }
 
 select.select-form {
   font-family: "myriad-pro", sans-serif;
@@ -6700,13 +6702,6 @@ ul.partners-ul {
     margin: 0 auto 10px auto; }
     ul.partners-ul__logo img {
       width: 100%; }
-
-.seo_mobile {
-  margin: 0 0 100px 0;
-  display: none; }
-  @media screen and (max-width: 1024px) {
-    .seo_mobile {
-      display: block; } }
 
 @media screen and (max-width: 1024px) {
   .header .container__header {
@@ -14339,12 +14334,7 @@ Initiatives
     .initiatives .mobile {
       display: block; }
       .initiatives .mobile .news-left__banner {
-        margin-top: 40px; }
-      .initiatives .mobile .initiatives-banner {
-        height: 640px;
-        padding: 55px 65px;
-        margin-top: 150px;
-        margin-bottom: 0; } }
+        margin-top: 40px; } }
 
 @media screen and (max-width: 1024px) {
   .initiatives .desctop {
@@ -14490,8 +14480,6 @@ Initiatives
         display: block; }
       .initiatives .initiatives-right .initiatives-context .people-like li {
         list-style: none; }
-  .initiatives .initiatives-right .initiatives-forma {
-    display: none; }
 
 .initiatives-banner {
   background: #282828;
@@ -14502,8 +14490,17 @@ Initiatives
   @media screen and (max-width: 1280px) {
     .initiatives-banner {
       height: 300px; } }
+  @media screen and (max-width: 1024px) {
+    .initiatives-banner {
+      height: 640px;
+      padding: 55px 65px;
+      margin-top: 150px;
+      margin-bottom: 0; } }
   .initiatives-banner img {
     padding-bottom: 30px; }
+    @media screen and (max-width: 1024px) {
+      .initiatives-banner img {
+        width: 100px; } }
   .initiatives-banner .btn {
     background: #2f97f0; }
 
@@ -14619,6 +14616,16 @@ Initiatives
     @media screen and (max-width: 1024px) {
       .initiatives-forma .block__text {
         font-size: 20px; } }
+
+.initiative {
+  background: url("../images/black-menu/initiative.png") 100% top no-repeat;
+  background-size: cover; }
+  @media screen and (max-width: 1024px) {
+    .initiative {
+      background: #1d1d1d; } }
+  .initiative .seo {
+    padding-top: 0;
+    margin-top: 200px; }
 
 .page-reviews__main-image {
   width: 287px;
@@ -15110,6 +15117,7 @@ Initiatives
 .initiative-image {
   background: url("../images/black-menu/initiative.png"); }
 
+
 .initiative__block {
   margin-top: 50px; }
   .initiative__block .block__title, .initiative__block .block__developers .tab-content .developer__description > span, .block__developers .tab-content .initiative__block .developer__description > span {
@@ -15247,6 +15255,94 @@ Initiatives
     -o-filter: grayscale(0%);
     filter: none;
     -webkit-filter: grayscale(0); }
+
+/**
+Contact
+ */
+.contact {
+  margin-top: 60px; }
+  .contact__block {
+    font-size: 18px; }
+    @media screen and (max-width: 1280px) {
+      .contact__block {
+        font-size: 16px; } }
+    @media screen and (max-width: 1024px) {
+      .contact__block {
+        font-size: 30px; } }
+    .contact__block__title {
+      font-size: 24px;
+      font-family: "Roboto Slab", serif;
+      margin: 0 auto 15px;
+      text-align: center; }
+      @media screen and (max-width: 1280px) {
+        .contact__block__title {
+          font-size: 20px; } }
+      @media screen and (max-width: 1024px) {
+        .contact__block__title {
+          font-size: 36px; } }
+    .contact__block .block__title, .contact__block .block__developers .tab-content .developer__description > span, .block__developers .tab-content .contact__block .developer__description > span, .contact__block .block__text {
+      text-align: center; }
+    .contact__block .block__text {
+      width: 54%;
+      margin: 0 auto 90px; }
+      @media screen and (max-width: 1024px) {
+        .contact__block .block__text {
+          width: 100%; } }
+    .contact__block__context {
+      font-weight: 300;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 140px; }
+      @media screen and (max-width: 1024px) {
+        .contact__block__context {
+          display: block; } }
+      .contact__block__context .span-block {
+        display: block; }
+      .contact__block__context .color, .contact__block__context label {
+        color: #777777;
+        padding-right: 5px; }
+      .contact__block__context label {
+        display: block;
+        padding-top: 20px;
+        font-weight: 300; }
+      .contact__block__context__social img {
+        display: inline-block;
+        padding: 15px 10px 15px 0; }
+        @media screen and (max-width: 1024px) {
+          .contact__block__context__social img {
+            width: 60px; } }
+      .contact__block__context__map {
+        height: 150px;
+        width: 460px;
+        background: #00b3ee;
+        border-radius: 5px; }
+        @media screen and (max-width: 1024px) {
+          .contact__block__context__map {
+            margin-bottom: 150px;
+            width: 100%; } }
+      .contact__block__context__form {
+        border: 1px solid #777777;
+        padding: 40px 30px;
+        border-radius: 5px;
+        width: 490px; }
+        .contact__block__context__form .block__title, .contact__block__context__form .block__developers .tab-content .developer__description > span, .block__developers .tab-content .contact__block__context__form .developer__description > span {
+          text-align: left; }
+        .contact__block__context__form .number {
+          color: #309bf7;
+          width: 26%; }
+        .contact__block__context__form span, .contact__block__context__form label {
+          font-size: 14px;
+          width: 87%;
+          display: inline-block; }
+          @media screen and (max-width: 1280px) {
+            .contact__block__context__form span, .contact__block__context__form label {
+              font-size: 12px; } }
+        .contact__block__context__form .input-form, .contact__block__context__form textarea {
+          width: 100%;
+          background: #2f2f2f;
+          border: none; }
 
 /*analitic*/
 /*ANALITIC*/

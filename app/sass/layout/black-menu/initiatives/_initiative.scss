@@ -1,5 +1,12 @@
 .initiative{
-  &-image{
-    background: url("../images/black-menu/initiative.png");
+  background: url("../images/black-menu/initiative.png") 100% top  no-repeat;
+  background-size: cover;
+  @include breakpoint("max-width: 1024px") {
+    background: #1d1d1d;
+  }
+
+  .seo{
+    padding-top: 0;
+    margin-top: 200px;
   }
 }

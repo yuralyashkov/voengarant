@@ -19,4 +19,12 @@
 <li>
 
 <a href="/app/vzaimodeistvie.html">Взаимодействие</a></li>
+<li>
+<a href="/app/initiatives.html">Инициативы</a></li>
+<li>
+<a href="/app/initiative.html">Инициатива</a></li>
+<li>
+<a href="/app/news.html">Новости</a></li>
+<li>
+<a href="/app/contact.html">Контакты</a></li>
 </ul>

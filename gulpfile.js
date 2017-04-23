@@ -86,6 +86,10 @@ gulp.task('default', ['browser-sync', 'sass', 'templates'], function () {
     gulp.watch('./app/sass/layout/black-menu/initiatives/*.scss', ['sass']);
     gulp.watch('./app/sass/layout/black-menu/initiatives/*.jade', ['jade']);
 
+
+    gulp.watch('./app/sass/layout/black-menu/contact/*.scss', ['sass']);
+    gulp.watch('./app/sass/layout/black-menu/contact/*.jade', ['jade']);
+
     gulp.watch('./app/sass/layout/reviews/*.scss', ['sass']);
     gulp.watch('./app/sass/layout/reviews/*.jade', ['jade']);
 
