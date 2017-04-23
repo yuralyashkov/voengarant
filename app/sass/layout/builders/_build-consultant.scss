@@ -1,226 +1,223 @@
-.build-consultant {
+.build-consultant{
   padding-top: 100px;
-  @include breakpoint("max-width: 1024px") {
+  @include breakpoint("max-width: 1024px"){
     padding-top: 160px;
   }
-  .row {
+  .row{
     display: flex;
-    @include breakpoint("max-width: 1024px") {
+    @include breakpoint("max-width: 1024px"){
       display: block;
-      .map-context, .build-consultant__context {
+      .map-context,.build-consultant__context{
         width: 100%;
         margin: 0;
       }
     }
   }
-  .map-context {
-    width: 56.849%;
-    height: 510px;
-    @include breakpoint("max-width: 1280px") {
-      height: 460px;
-    }
-    @include breakpoint("max-width: 1024px") {
-      border: none;
-      border-top: 1px solid #dcdcdc;
-      .plus, .menus {
+  .map-context{
+      width: 56.849%;
+      height: 510px;
+      @include breakpoint("max-width: 1280px"){
+        height: 460px;
+      }
+      @include breakpoint("max-width: 1024px"){
+        border: none;
+        border-top: 1px solid #dcdcdc;
+        .plus,.menus{
+          display: none;
+        }
+      }
+      .plus{
+        right: -20px;
+        top: 16%
+      }
+      .menus{
+        right: -20px;
+        bottom: 38.5%;
+      }
+      .search,.str{
         display: none;
       }
-    }
-    .plus {
-      right: -20px;
-      top: 16%
-    }
-    .menus {
-      right: -20px;
-      bottom: 38.5%;
-    }
-    .search, .str {
-      display: none;
-    }
-    .scr {
-      right: -25px;
-      bottom: 60px;
-      @include breakpoint("max-width: 1024px") {
-        right: 47%;
-        bottom: -30px;
-      }
-      span {
-        display: none;
-      }
+      .scr{
+        right: -25px;
+        bottom: 60px;
+        @include breakpoint("max-width: 1024px"){
+          right: 47%;
+          bottom: -30px;
+        }
+        span{
+          display: none;
+        }
     }
 
-  }
-  .build-consultant__context {
+    }
+  .build-consultant__context{
     width: 36.98%;
     border: 1px solid #dcdcdc;
     padding: 30px 35px;
     margin-left: 65px;
-    @include breakpoint("max-width: 1024px") {
+    @include breakpoint("max-width: 1024px"){
       padding: 30px 45px 150px;
-      border: none;
+      border:none;
       border-top: 1px solid #dcdcdc;
     }
-    .block__title {
+    .block__title{
       font-size: 30px;
       margin-top: 0;
-      @include breakpoint("max-width: 1280px") {
+      @include breakpoint("max-width: 1280px"){
         font-size: 22px;
       }
-      @include breakpoint("max-width: 1024px") {
+      @include breakpoint("max-width: 1024px"){
         font-size: 45px;
         text-align: center;
       }
     }
-    .block__text {
+    .block__text{
       font-size: 14px;
       line-height: 18px;
       margin-bottom: 20px;
       color: #777777;
-      @include breakpoint("max-width: 1280px") {
+      @include breakpoint("max-width: 1280px"){
         font-size: 12px;
         line-height: 14px;
       }
-      @include breakpoint("max-width: 1024px") {
+      @include breakpoint("max-width: 1024px"){
         font-size: 20px;
         text-align: center;
         line-height: 22px;
         padding-bottom: 40px;
       }
-      span {
+      span{
         display: inline-block;
         color: #309bf9;
       }
     }
-    input, textarea {
+    input,textarea{
       width: 100%;
       margin-bottom: 5px;
-      @include breakpoint("max-width: 1024px") {
+      @include breakpoint("max-width: 1024px"){
         width: 73.6%;
         text-align: center;
       }
     }
-    textarea {
+    textarea{
       height: 85px;
     }
-    label, input, textarea {
-      @include breakpoint("max-width: 1280px") {
+    label,input,textarea{
+      @include breakpoint("max-width: 1280px"){
         font-size: 12px;
       }
-      @include breakpoint("max-width: 1024px") {
+      @include breakpoint("max-width: 1024px"){
         margin-left: 13.5%;
         font-size: 30px;
       }
     }
-    input, textarea {
-      @include breakpoint("max-width: 1024px") {
+    input,textarea{
+      @include breakpoint("max-width: 1024px"){
         height: 65px;
       }
     }
-    .politic {
-      @include breakpoint("max-width: 1280px") {
+    .politic{
+      @include breakpoint("max-width: 1280px"){
         font-size: 10px;
       }
-      @include breakpoint("max-width: 1024px") {
+      @include breakpoint("max-width: 1024px"){
         display: none;
       }
+  }
+  .xs-block {
+    @include breakpoint("min-width: 1025px") {
+      display: none;
     }
-    .xs-block {
-      @include breakpoint("min-width: 1025px") {
-        display: none;
+
+    .send{
+      @include breakpoint("max-width: 1024px"){
+        margin-left: 28.5%;
+        margin-top: 40px;
       }
 
-      .send {
-        @include breakpoint("max-width: 1024px") {
-          margin-left: 28.5%;
-          margin-top: 40px;
-        }
+  }
+  .lg-block {
+    @include breakpoint("max-width: 1024px") {
+      display: none;
 
-      }
-      .lg-block {
-        @include breakpoint("max-width: 1024px") {
-          display: none;
-
-        }
-      }
     }
   }
+  //.build-consultant__context{
+  //  width: 36.98%;
+  //  border: 1px solid #dcdcdc;
+  //  padding: 30px 35px;
+  //  margin-left: 65px;
+  //  @include breakpoint("max-width: 1024px"){
+  //    padding: 30px 45px 150px;
+  //    border:none;
+  //    border-top: 1px solid #dcdcdc;
+  //  }
+  //  .block__title{
+  //    font-size: 30px;
+  //    margin-top: 0;
+  //    @include breakpoint("max-width: 1280px"){
+  //      font-size: 22px;
+  //    }
+  //    @include breakpoint("max-width: 1024px"){
+  //      font-size: 45px;
+  //      text-align: center;
+  //    }
+  //  }
+  //  .block__text{
+  //    font-size: 14px;
+  //    line-height: 18px;
+  //    margin-bottom: 20px;
+  //    color: #777777;
+  //    @include breakpoint("max-width: 1280px"){
+  //      font-size: 12px;
+  //      line-height: 14px;
+  //    }
+  //    @include breakpoint("max-width: 1024px"){
+  //      font-size: 20px;
+  //      text-align: center;
+  //      line-height: 22px;
+  //    }
+  //    span{
+  //      display: inline-block;
+  //      color: #309bf9;
+  //    }
+  //  }
+  //  input,textarea{
+  //    width: 100%;
+  //    margin-bottom: 5px;
+  //    @include breakpoint("max-width: 1024px"){
+  //      width: 73.6%;
+  //      text-align: center;
+  //    }
+  //  }
+  //  textarea{
+  //    height: 85px;
+  //  }
+  //  label,input,textarea{
+  //    @include breakpoint("max-width: 1280px"){
+  //      font-size: 12px;
+  //    }
+  //    @include breakpoint("max-width: 1024px"){
+  //      margin-left: 13.5%;
+  //    }
+  //  }
+  //  input,textarea{
+  //    @include breakpoint("max-width: 1024px"){
+  //      height: 70px;
+  //    }
+  //  }
+  //  .politic{
+  //    @include breakpoint("max-width: 1280px"){
+  //      font-size: 10px;
+  //    }
+  //    @include breakpoint("max-width: 1024px"){
+  //      display: none;
+  //    }
+  //  }
+  //  .send{
+  //    @include breakpoint("max-width: 1024px"){
+  //      margin-left: 28.5%;
+  //    }
+  //  }
+  //}
 }
-
-//.build-consultant__context{
-//  width: 36.98%;
-//  border: 1px solid #dcdcdc;
-//  padding: 30px 35px;
-//  margin-left: 65px;
-//  @include breakpoint("max-width: 1024px"){
-//    padding: 30px 45px 150px;
-//    border:none;
-//    border-top: 1px solid #dcdcdc;
-//  }
-//  .block__title{
-//    font-size: 30px;
-//    margin-top: 0;
-//    @include breakpoint("max-width: 1280px"){
-//      font-size: 22px;
-//    }
-//    @include breakpoint("max-width: 1024px"){
-//      font-size: 45px;
-//      text-align: center;
-//    }
-//  }
-//  .block__text{
-//    font-size: 14px;
-//    line-height: 18px;
-//    margin-bottom: 20px;
-//    color: #777777;
-//    @include breakpoint("max-width: 1280px"){
-//      font-size: 12px;
-//      line-height: 14px;
-//    }
-//    @include breakpoint("max-width: 1024px"){
-//      font-size: 20px;
-//      text-align: center;
-//      line-height: 22px;
-//    }
-//    span{
-//      display: inline-block;
-//      color: #309bf9;
-//    }
-//  }
-//  input,textarea{
-//    width: 100%;
-//    margin-bottom: 5px;
-//    @include breakpoint("max-width: 1024px"){
-//      width: 73.6%;
-//      text-align: center;
-//    }
-//  }
-//  textarea{
-//    height: 85px;
-//  }
-//  label,input,textarea{
-//    @include breakpoint("max-width: 1280px"){
-//      font-size: 12px;
-//    }
-//    @include breakpoint("max-width: 1024px"){
-//      margin-left: 13.5%;
-//    }
-//  }
-//  input,textarea{
-//    @include breakpoint("max-width: 1024px"){
-//      height: 70px;
-//    }
-//  }
-//  .politic{
-//    @include breakpoint("max-width: 1280px"){
-//      font-size: 10px;
-//    }
-//    @include breakpoint("max-width: 1024px"){
-//      display: none;
-//    }
-//  }
-//  .send{
-//    @include breakpoint("max-width: 1024px"){
-//      margin-left: 28.5%;
-//    }
-//  }
-//}

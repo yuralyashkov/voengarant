@@ -80,17 +80,8 @@
     @include breakpoint("max-width: 1024px") {
       padding-top: 200px;
     }
-    background: url("../images/background-black.png");
-    border-bottom: solid 1px #2a2a29;
     .but {
       margin: 30px auto 50px;
-    }
-  }
-  footer{
-    border-top: solid 1px #2a2a29;
-    ul,a{
-      color: #777777;
-      font-size: 18px;
     }
   }
 }

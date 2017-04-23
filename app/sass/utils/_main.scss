@@ -33,6 +33,10 @@ body {
   }
   footer {
     border-top: 1px solid #777777;
+    .footer__context ul,.footer__context a{
+      color: #777777;
+      font-size: 18px;
+    }
   }
 }
 
@@ -169,6 +173,10 @@ a {
   @include breakpoint("max-width: 1280px") {
     padding: 0;
     margin: 0 auto;
+  }
+  .seo{
+    background: url("../images/background-black.png");
+    border-bottom: solid 1px #2a2a29;
   }
 }
 
