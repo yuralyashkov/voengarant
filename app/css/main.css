@@ -6343,7 +6343,6 @@ body {
 .body_black {
   background: url("../images/background-black.png");
   background-size: cover;
-  padding-top: 200px;
   color: #f5f5f5; }
   @media screen and (max-width: 1024px) {
     .body_black {
@@ -13293,9 +13292,6 @@ Builders
     background-color: #cb475e;
     height: 251px;
     width: 293px; }
-    @media screen and (min-width: 2501px) {
-      .hypothec:after {
-        display: none; } }
     @media screen and (max-width: 2500px) {
       .hypothec:after {
         width: 17.8%;
@@ -13391,11 +13387,17 @@ Builders
       border: none;
       width: 30.56604%;
       margin-right: 1.50943%;
-      height: 510px;
+      height: 555px;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
       background-repeat: no-repeat;
       float: left; }
+      @media screen and (max-width: 1400px) {
+        .program .what-do-block .block {
+          height: 574px; } }
+      @media screen and (max-width: 1084px) {
+        .program .what-do-block .block {
+          height: 590px; } }
       @media screen and (max-width: 1024px) {
         .program .what-do-block .block {
           float: none;
@@ -13405,26 +13407,22 @@ Builders
           margin-bottom: 40px;
           height: 716px; } }
     .program .what-do-block .text-up {
-      background-image: url("../images/ipoteka-povtorno__block-text-up.png");
       background-position: top;
       padding-top: 73px;
       padding-right: 3.39623%;
       padding-left: 3.39623%; }
       @media screen and (max-width: 1024px) {
         .program .what-do-block .text-up {
-          background-image: url("../images/ipoteka-povtorno__block-text-up__mob.png");
           padding-top: 78px;
           padding-right: 7.01887%;
           padding-left: 7.01887%; } }
     .program .what-do-block .text-down {
-      background-image: url("../images/ipoteka-povtorno__block-text-down.png");
       background-position: bottom;
       padding-top: 309px;
       padding-right: 2.41509%;
       padding-left: 0.98113%; }
       @media screen and (max-width: 1024px) {
         .program .what-do-block .text-down {
-          background-image: url("../images/ipoteka-povtorno__block-text-down__mob.png");
           padding-top: 423px;
           padding-right: 6.64151%;
           padding-left: 6.64151%; } }
@@ -14621,6 +14619,493 @@ Initiatives
     @media screen and (max-width: 1024px) {
       .initiatives-forma .block__text {
         font-size: 20px; } }
+
+.page-reviews__main-image {
+  width: 287px;
+  height: 287px;
+  margin: 0 auto;
+  display: block; }
+  @media screen and (max-width: 1024px) {
+    .page-reviews__main-image {
+      width: 348px;
+      height: 348px; } }
+
+.page-reviews__main-block .title {
+  font-family: "Roboto Slab", serif;
+  color: #ffffff;
+  display: block;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 300;
+  margin: -66px 0 35px 0; }
+  @media screen and (max-width: 1024px) {
+    .page-reviews__main-block .title {
+      font-family: "Roboto Slab", serif;
+      color: #ffffff;
+      display: block;
+      font-size: 45px;
+      line-height: 50px;
+      font-weight: 300;
+      margin: -89px 0 39px 0; } }
+
+.page-reviews__main-block .context {
+  font-family: "myriad-pro", sans-serif;
+  color: #777777;
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 100;
+  margin: 0 0 19px 0; }
+  @media screen and (max-width: 1024px) {
+    .page-reviews__main-block .context {
+      font-family: "myriad-pro", sans-serif;
+      color: #777777;
+      display: block;
+      font-size: 30px;
+      line-height: 35px;
+      font-weight: 100;
+      margin: 0 0 35px 0; } }
+  @media screen and (max-width: 779px) {
+    .page-reviews__main-block .context br {
+      display: none; } }
+
+.page-reviews__main-block .link-add {
+  display: inline-block;
+  margin: 0 0 64px 0;
+  opacity: .9; }
+  .page-reviews__main-block .link-add:hover, .page-reviews__main-block .link-add:active {
+    opacity: 1; }
+  @media screen and (max-width: 1024px) {
+    .page-reviews__main-block .link-add {
+      margin: 0 0 95px 0; } }
+  .page-reviews__main-block .link-add img {
+    height: 26px;
+    padding-right: 7px; }
+    @media screen and (max-width: 1024px) {
+      .page-reviews__main-block .link-add img {
+        height: 44px;
+        padding-right: 16px; } }
+  .page-reviews__main-block .link-add span {
+    font-family: "myriad-pro", sans-serif;
+    color: #f0f0f0;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 100;
+    vertical-align: middle; }
+    @media screen and (max-width: 1024px) {
+      .page-reviews__main-block .link-add span {
+        font-family: "myriad-pro", sans-serif;
+        color: #f0f0f0;
+        display: inline-block;
+        font-size: 30px;
+        line-height: 44px;
+        font-weight: 100; } }
+
+.page-reviews__main-block .buttons {
+  margin: 0 0 32px 0; }
+  @media screen and (max-width: 1024px) {
+    .page-reviews__main-block .buttons {
+      margin: 0 0 71px 0; } }
+  .page-reviews__main-block .buttons a {
+    display: inline-block;
+    border: 1px solid #777777;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none; }
+    .page-reviews__main-block .buttons a:hover {
+      border: 1px solid #2891c0;
+      text-decoration: none; }
+      .page-reviews__main-block .buttons a:hover span {
+        color: #2891c0; }
+    .page-reviews__main-block .buttons a span {
+      font-family: "myriad-pro", sans-serif;
+      color: #777777;
+      display: block;
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 100;
+      padding: 10px 33px; }
+      @media screen and (max-width: 1024px) {
+        .page-reviews__main-block .buttons a span {
+          font-family: "myriad-pro", sans-serif;
+          color: #777777;
+          display: block;
+          font-size: 30px;
+          line-height: 35px;
+          font-weight: 100;
+          padding: 18px 22px; } }
+    .page-reviews__main-block .buttons a:first-child {
+      margin-right: 33px; }
+
+.page-reviews .reviews {
+  padding: 0;
+  margin: 0 0 130px 0; }
+  @media screen and (max-width: 1024px) {
+    .page-reviews .reviews {
+      margin: 0 0 143px 0; } }
+  .page-reviews .reviews__info {
+    color: #646464; }
+
+.black-page__bread-crumbs {
+  margin: 133px 0 59px 0; }
+  @media screen and (max-width: 1024px) {
+    .black-page__bread-crumbs {
+      margin: 73px 0 94px 0; } }
+  .black-page__bread-crumbs ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left; }
+    .black-page__bread-crumbs ul li {
+      display: inline-block;
+      float: left; }
+      .black-page__bread-crumbs ul li a {
+        font-family: "myriad-pro", sans-serif;
+        color: #777777;
+        display: inline;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 100; }
+        @media screen and (max-width: 1024px) {
+          .black-page__bread-crumbs ul li a {
+            font-family: "myriad-pro", sans-serif;
+            color: #777777;
+            display: inline;
+            font-size: 20px;
+            line-height: 22px;
+            font-weight: 100; } }
+      .black-page__bread-crumbs ul li:after {
+        content: '/';
+        font-family: "myriad-pro", sans-serif;
+        color: #777777;
+        font-size: 18px;
+        font-weight: 100;
+        line-height: 24px;
+        padding: 0 5px; }
+        @media screen and (max-width: 1024px) {
+          .black-page__bread-crumbs ul li:after {
+            font-family: "myriad-pro", sans-serif;
+            color: #777777;
+            display: inline;
+            font-size: 20px;
+            line-height: 22px;
+            font-weight: 100; } }
+      .black-page__bread-crumbs ul li:last-child {
+        color: #ffffff;
+        font-weight: 100;
+        font-size: 18px;
+        line-height: 24px; }
+        @media screen and (max-width: 1024px) {
+          .black-page__bread-crumbs ul li:last-child {
+            font-size: 20px;
+            line-height: 22px; } }
+        .black-page__bread-crumbs ul li:last-child:after {
+          content: '';
+          padding: 0; }
+
+.review-block {
+  margin: 0 0 125px 0; }
+  @media screen and (max-width: 1024px) {
+    .review-block {
+      margin: 0 0 141px 0; } }
+  .review-block .review-block__date {
+    font-family: "myriad-pro", sans-serif;
+    color: #777777;
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 100;
+    margin: 0 0 28px 3px; }
+    @media screen and (max-width: 1024px) {
+      .review-block .review-block__date {
+        font-family: "myriad-pro", sans-serif;
+        color: #777777;
+        display: block;
+        font-size: 25px;
+        line-height: 24px;
+        font-weight: 100;
+        margin: 0 0 42px 0;
+        text-align: center; } }
+  .review-block .name {
+    margin: 0 0 48px 0; }
+    @media screen and (max-width: 1024px) {
+      .review-block .name {
+        margin: 0 0 43px 0; } }
+    .review-block .name .social-icon {
+      width: 37px;
+      height: 37px;
+      margin-left: 3px;
+      margin-right: 26px; }
+      @media screen and (max-width: 1024px) {
+        .review-block .name .social-icon {
+          display: none;
+          margin: 0; } }
+    .review-block .name span {
+      font-family: "Roboto Slab", serif;
+      color: #ffffff;
+      display: inline-block;
+      font-size: 36px;
+      line-height: 37px;
+      font-weight: 300;
+      text-align: left;
+      vertical-align: middle; }
+      @media screen and (max-width: 1024px) {
+        .review-block .name span {
+          font-family: "Roboto Slab", serif;
+          color: #ffffff;
+          display: block;
+          font-size: 45px;
+          line-height: 50px;
+          font-weight: 300;
+          text-align: center; } }
+  .review-block .review-block__content {
+    margin: 0 0 56px 0; }
+    @media screen and (max-width: 1024px) {
+      .review-block .review-block__content {
+        margin: 0 0 53px 0; } }
+    .review-block .review-block__content img {
+      float: right;
+      width: 48px;
+      height: 42px; }
+      @media screen and (max-width: 1024px) {
+        .review-block .review-block__content img {
+          width: 78px;
+          height: 68px;
+          display: block;
+          margin: 0 auto 45px auto;
+          float: none; } }
+    @media screen and (max-width: 1024px) {
+      .review-block .review-block__content .col-md-1, .review-block .review-block__content .col-md-10 {
+        width: 100%; } }
+    .review-block .review-block__content p {
+      margin: 0;
+      padding: 0;
+      font-family: "myriad-pro", sans-serif;
+      color: #777777;
+      display: block;
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 100;
+      text-align: left; }
+      @media screen and (max-width: 1024px) {
+        .review-block .review-block__content p {
+          font-family: "myriad-pro", sans-serif;
+          color: #777777;
+          display: block;
+          font-size: 30px;
+          line-height: 35px;
+          font-weight: 100;
+          text-align: center; } }
+  .review-block a {
+    font-family: "myriad-pro", sans-serif;
+    color: #2891c0;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 100; }
+    @media screen and (max-width: 1024px) {
+      .review-block a {
+        display: none; } }
+    .review-block a:before {
+      content: '<';
+      color: #2891c0;
+      padding: 0 5px; }
+  .review-block .social-icon-mob {
+    width: 61px;
+    height: 61px;
+    display: block;
+    margin: 0 auto; }
+    @media screen and (min-width: 1025px) {
+      .review-block .social-icon-mob {
+        display: none; } }
+
+.review-slider {
+  margin: 0 0 124px 0; }
+  @media screen and (max-width: 1024px) {
+    .review-slider {
+      display: none; } }
+  .review-slider .review-slider__slide {
+    background-color: #262626;
+    width: 100%;
+    border-radius: 5px;
+    height: 595px; }
+  .review-slider .row {
+    height: 100%; }
+  .review-slider .slide__background-img {
+    background-image: url("../images/review-slider-img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 595px; }
+  .review-slider .slide_content {
+    margin: 163px auto 0 auto; }
+  .review-slider .slide__title {
+    font-family: "Roboto Slab", serif;
+    color: #ffffff;
+    display: block;
+    font-size: 36px;
+    line-height: 38px;
+    font-weight: 300;
+    margin: 0 0 22px 0; }
+  .review-slider .slide__subtitle {
+    font-family: "Roboto Slab", serif;
+    color: #ededed;
+    display: block;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 300;
+    margin: 0 0 26px 0; }
+  .review-slider .slide__context {
+    font-family: "myriad-pro", sans-serif;
+    color: #777777;
+    display: block;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 100;
+    margin: 0 0 29px 0; }
+  .review-slider .swiper-pagination-bullet {
+    background: #ffffff;
+    opacity: .9; }
+  .review-slider .swiper-pagination-bullet-active {
+    background: #cb3541;
+    opacity: 1; }
+  .review-slider .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 9px; }
+  .review-slider .swiper-pagination {
+    text-align: right;
+    bottom: 64px;
+    right: 17.20588%;
+    width: auto; }
+
+.review-banner {
+  margin: 0 0 141px 0; }
+  @media screen and (min-width: 1025px) {
+    .review-banner {
+      display: none; } }
+  .review-banner__main-block {
+    height: 874px;
+    background-color: #282828;
+    border-radius: 5px;
+    width: 100%; }
+  .review-banner__content-up {
+    width: 100%;
+    padding-top: 68px;
+    padding-bottom: 74px; }
+  .review-banner__title {
+    font-family: "Roboto Slab", serif;
+    color: #f5f5f5;
+    display: block;
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: 300;
+    margin: 0 0 42px 0; }
+  .review-banner__context {
+    font-family: "myriad-pro", sans-serif;
+    color: #777777;
+    display: block;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 100;
+    margin: 0 0 57px 0; }
+  .review-banner .review-banner__content-down {
+    background-image: url("../images/review-banner__content-down.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    height: 433px; }
+
+.calculator-page__main-block .title {
+  font-family: "Roboto Slab", serif;
+  color: #ffffff;
+  display: block;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 300;
+  margin: 114px 0 35px 0; }
+  @media screen and (max-width: 1024px) {
+    .calculator-page__main-block .title {
+      font-family: "Roboto Slab", serif;
+      color: #ffffff;
+      display: block;
+      font-size: 45px;
+      line-height: 50px;
+      font-weight: 300;
+      margin: 109px 0 36px 0; } }
+
+.calculator-page__main-block .context {
+  font-family: "myriad-pro", sans-serif;
+  color: #777777;
+  display: block;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 100;
+  margin: 0 0 88px 0; }
+  @media screen and (max-width: 1024px) {
+    .calculator-page__main-block .context {
+      font-family: "myriad-pro", sans-serif;
+      color: #777777;
+      display: block;
+      font-size: 30px;
+      line-height: 35px;
+      font-weight: 100;
+      margin: 0 0 94px 0; } }
+
+@media screen and (max-width: 1024px) {
+  .calculator-page__main-block .calculator-page__calculator {
+    background-color: #232323;
+    border-bottom: 1px solid #393939; } }
+
+.calculator-page__main-block .bank-block {
+  background-color: #232323;
+  border-bottom: 1px solid #393939;
+  margin: 0 2.18868% 0 2.18868%;
+  padding: 44px 3.77358% 37px 3.01887%; }
+  @media screen and (max-width: 1024px) {
+    .calculator-page__main-block .bank-block {
+      border: none;
+      margin: 0;
+      padding: 51px 0 59px 0; } }
+  .calculator-page__main-block .bank-block li a {
+    display: block; }
+  .calculator-page__main-block .bank-block li span {
+    display: none; }
+
+.calculator-page__main-block .lg-block {
+  margin: 0 auto 138px auto; }
+
+.calculator-page__main-block .calculator_block {
+  margin: 0 2.18868% 0 2.18868%;
+  border-radius: 0;
+  border: none;
+  background-color: #232323; }
+  @media screen and (max-width: 1024px) {
+    .calculator-page__main-block .calculator_block {
+      margin: 0 0 152px 0; } }
+
+.calculator-page__main-block .calculator_block__line {
+  border-bottom: 1px solid #393939; }
+
+.calculator-page__main-block .calculator_block__nomination {
+  color: #d0d0d0; }
+
+.calculator-page__main-block .calculator_block__count {
+  background-color: #323232;
+  border: 1px solid #3a3a3a;
+  color: #f5f5f5; }
+  .calculator-page__main-block .calculator_block__count:active, .calculator-page__main-block .calculator_block__count:focus {
+    -webkit-box-shadow: 0px 0px 25px 5px #233050;
+    box-shadow: 0px 0px 25px 5px #233050; }
+
+.calculator-page__main-block .ui-widget-content {
+  background-color: #777777; }
+
+.calculator-page__main-block .calculator_block__result {
+  background-color: #19537b; }
+
+.calculator-page .bank .bank-block span {
+  color: #333333; }
 
 .initiative-image {
   background: url("../images/black-menu/initiative.png"); }

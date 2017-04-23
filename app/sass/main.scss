@@ -173,6 +173,18 @@ Initiatives
 @import "layout/black-menu/initiatives/initiatives-banner";
 @import "layout/black-menu/initiatives/initiatives-comments";
 @import "layout/black-menu/initiatives/initiatives-forma";
+
+//REVIEWS
+@import "layout/reviews/_page-reviews";
+//REVIEW
+@import "layout/review/_black-page__bread-crumbs";
+@import "layout/review/_review-block";
+@import "layout/review/_review-slider";
+@import "layout/review/_review-banner";
+//CALCULATOR PAGE
+@import "layout/calculator-page/_calculator-main-block";
+@import "layout/calculator-page/_calculator-banner";
+
 @import "layout/black-menu/initiatives/initiative";
 @import "layout/black-menu/initiatives/initiative-block";
 @import "layout/black-menu/initiatives/like";
