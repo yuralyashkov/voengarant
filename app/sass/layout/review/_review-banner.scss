@@ -1,0 +1,32 @@
+.review-banner {
+  @include breakpoint("min-width: 1025px") {
+    display: none;
+  }
+  margin: 0 0 141px 0;
+  &__main-block {
+    height: 874px;
+    background-color: #282828;
+    border-radius: 5px;
+    width: 100%;
+  }
+  &__content-up {
+    width: 100%;
+    padding-top: 68px;
+    padding-bottom: 74px;
+  }
+  &__title {
+    @include text($titleFontFamily, #f5f5f5, block, 45px, 50px, 300);
+    margin: 0 0 42px 0;
+  }
+  &__context {
+    @include text($mainFontFamily, #777777, block, 30px, 35px, 100);
+    margin: 0 0 57px 0;
+  }
+  .review-banner__content-down {
+    background-image: url("../images/review-banner__content-down.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    height: 433px;
+  }
+}

@@ -28,10 +28,17 @@
       border: none;
       width: (405px / $container * 100%);
       margin-right: (20px / $container * 100%);
-      height: 510px;
+      //height: 510px;
+      height: 555px;
       box-sizing: border-box;
       background-repeat: no-repeat;
       float: left;
+      @include breakpoint("max-width: 1400px") {
+        height: 574px;
+      }
+      @include breakpoint("max-width: 1084px") {
+        height: 590px;
+      }
       @include breakpoint("max-width: 1024px") {
         float: none;
         width: 99%;
@@ -42,26 +49,26 @@
       }
     }
     .text-up {
-      background-image: url("../images/ipoteka-povtorno__block-text-up.png");
+      //background-image: url("../images/ipoteka-povtorno__block-text-up.png");
       background-position: top;
       padding-top: 73px;
       padding-right: (45px / $container * 100%);
       padding-left: (45px / $container * 100%);
       @include breakpoint("max-width: 1024px") {
-        background-image: url("../images/ipoteka-povtorno__block-text-up__mob.png");
+        //background-image: url("../images/ipoteka-povtorno__block-text-up__mob.png");
         padding-top: 78px;
         padding-right: (93px / $container * 100%);
         padding-left: (93px / $container * 100%);
       }
     }
     .text-down {
-      background-image: url("../images/ipoteka-povtorno__block-text-down.png");
+      //background-image: url("../images/ipoteka-povtorno__block-text-down.png");
       background-position: bottom;
       padding-top: 309px;
       padding-right: (32px / $container * 100%);
       padding-left: (13px / $container * 100%);
       @include breakpoint("max-width: 1024px") {
-        background-image: url("../images/ipoteka-povtorno__block-text-down__mob.png");
+        //background-image: url("../images/ipoteka-povtorno__block-text-down__mob.png");
         padding-top: 423px;
         padding-right: (88px / $container * 100%);
         padding-left: (88px / $container * 100%);

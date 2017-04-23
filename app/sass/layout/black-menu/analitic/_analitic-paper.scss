@@ -1,0 +1,51 @@
+/*ANALITIC-PAPER*/
+
+.analitic-paper {
+
+  margin: 0 0 110px 0;
+  &__title {
+    margin: 0 0 56px 0;
+    text-align: center;
+    font-size: $s24;
+    @include breakpoint("max-width:1024px") {
+      font-size: $s36;
+      text-align: left;
+    }
+  }
+  ul {
+    width: 90%;
+    margin: 0 auto;
+    @include myriadL(18, $mainFontFamily, 300);
+    padding: 0;
+    list-style: none;
+    @include breakpoint("max-width:1024px") {
+      width: 100%;
+    }
+    li {
+      margin: 0 0 25px 0;
+      &:last-child {
+        margin: 0;
+      }
+    }
+    span {
+      color: color(default);
+      display: inline-block;
+      float: left;
+      @include breakpoint("max-width:1024px") {
+        float: none;
+      }
+    }
+    a {
+      width: 90%;
+      color: color(white);
+      display: inline-block;
+      float: right;
+      @include breakpoint("max-width:1024px") {
+        float: none;
+      }
+    }
+  }
+
+}
+
+/*ANALITIC-PAPER*/
