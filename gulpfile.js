@@ -80,6 +80,15 @@ gulp.task('default', ['browser-sync', 'sass', 'templates'], function () {
     gulp.watch('./app/sass/layout/black-menu/initiatives/*.scss', ['sass']);
     gulp.watch('./app/sass/layout/black-menu/initiatives/*.jade', ['jade']);
 
+    gulp.watch('./app/sass/layout/reviews/*.scss', ['sass']);
+    gulp.watch('./app/sass/layout/reviews/*.jade', ['jade']);
+
+    gulp.watch('./app/sass/layout/review/*.scss', ['sass']);
+    gulp.watch('./app/sass/layout/review/*.jade', ['jade']);
+
+    gulp.watch('./app/sass/layout/calculator-page/*.scss', ['sass']);
+    gulp.watch('./app/sass/layout/calculator-page/*.jade', ['jade']);
+
     gulp.watch('./app/sass/components/*.scss', ['sass']);
     gulp.watch('./app/sass/utils/*.scss', ['sass']);
     gulp.watch('./app/sass/*.scss', ['sass']);

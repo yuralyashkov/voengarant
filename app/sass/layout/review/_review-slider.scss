@@ -1,0 +1,54 @@
+.review-slider {
+  margin: 0 0 124px 0;
+  @include breakpoint("max-width: 1024px") {
+   display: none;
+  }
+  .review-slider__slide {
+    background-color: #262626;
+    width: 100%;
+    border-radius: 5px;
+    height: 595px;
+  }
+  .row {
+    height: 100%;
+  }
+  .slide__background-img {
+    background-image: url("../images/review-slider-img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 595px;
+  }
+  .slide_content {
+    margin: 163px auto 0 auto;
+  }
+  .slide__title {
+    @include text($titleFontFamily, #ffffff, block, 36px, 38px, 300);
+    margin: 0 0 22px 0;
+  }
+  .slide__subtitle {
+    @include text($titleFontFamily, #ededed, block, 18px, 22px, 300);
+    margin: 0 0 26px 0;
+  }
+  .slide__context {
+    @include text($mainFontFamily, #777777, block, 16px, 18px, 100);
+    margin: 0 0 29px 0;
+  }
+  .swiper-pagination-bullet {
+    background: #ffffff;
+    opacity: .9;
+  }
+  .swiper-pagination-bullet-active {
+    background: #cb3541;
+    opacity: 1;
+  }
+  .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 9px;
+  }
+  .swiper-pagination {
+    text-align: right;
+    bottom: 64px;
+    right: (234px / 1360px * 100%);
+    width: auto;
+  }
+}
