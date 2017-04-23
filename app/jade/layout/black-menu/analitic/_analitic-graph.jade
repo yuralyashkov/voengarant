@@ -1,0 +1,151 @@
+section.analitic-graph
+    .analitic-tabs_desktop
+
+        .container
+            span.block__title.analitic-graph__title Рейтинг по Московскому региону
+            .analitic-tabs
+                .analitic-tabs__filter
+                    ul.clearfix
+                        -var filter = {'analitic-1':'Города и районы','analitic-2':'Застройщики','analitic-3':'Объекты'}
+                        each value,key in filter
+                            li
+                                a(href="javascript:void(0)" data-id="##{key}")=value
+
+                .analitic-tabs__content.horizont-graph
+                    .tab-content.active#analitic-1
+                        table
+                            tr
+                                -var thead = ["Город","Безопасность","Транспорт","Администрация","Инфраструктура","Экология"]
+                                each item in thead
+                                    th
+                                        a(href="#")
+                                            span=item
+                                            img(src="./images/icons/icon-h-l.png" alt="")
+                            -for(var i = 0; i < 5; i++)
+                                tr
+                                    td
+                                        span Москва
+                                    td
+                                        span 30%
+                                        include ../../../components/_red-column
+
+                                    td
+                                        span.active-sort 60%
+                                        include ../../../components/_yellow-column
+
+                                    td
+                                        span 70%
+                                        include ../../../components/_yellow-column
+
+                                    td
+                                        span 20%
+                                        include ../../../components/_red-column
+
+                                    td
+                                        span 100%
+                                        include ../../../components/_blue-column
+
+
+
+
+    .analitic-tabs_mobile
+        span.block__title.analitic-graph__title Рейтинг по Московскому региону
+            .analitic-tabs
+                .analitic-tabs__filter
+                    ul.clearfix
+                        -var filter = {'analitic-1':'Города и районы','analitic-2':'Застройщики','analitic-3':'Объекты'}
+                        each value,key in filter
+                            li
+                                a(href="javascript:void(0)" data-id="##{key}")=value
+
+                .analitic-tabs__content.horizont-graph
+                    .tab-content.active#analitic-1
+                        .swiper-container#analitic-slider
+                            .swiper-wrapper
+                                .swiper-slide
+                                    table
+                                        tr
+                                            -var thead = ["Город","Безопасность","Транспорт"]
+                                            each item in thead
+                                                th
+                                                    a(href="#")
+                                                        span=item
+                                                        img(src="./images/icons/icon-h-l.png" alt="")
+                                        -for(var i = 0; i < 5; i++)
+                                            tr
+                                                td
+                                                    span Москва
+                                                td
+                                                    span 30%
+                                                    include ../../../components/_red-column
+
+                                                td
+                                                    span 60%
+                                                    include ../../../components/_yellow-column
+
+                                    .analitic-graph__slide-content
+                                        table
+                                            -for(var i = 0; i < 5; i++)
+                                                tr
+                                                    td
+                                                        span Москва
+                                                    td
+                                                        span 30%
+                                                        include ../../../components/_red-column
+
+                                                    td
+                                                        span 60%
+                                                        include ../../../components/_yellow-column
+
+
+
+
+
+                                .swiper-slide
+                                    table
+                                        tr
+                                            -var thead = ["Администрация","Инфраструктура","Экология"]
+                                            each item in thead
+                                                th
+                                                    a(href="#")
+                                                        span=item
+                                                        img(src="./images/icons/icon-h-l.png" alt="")
+                                        -for(var i = 0; i < 5; i++)
+                                            tr
+
+
+                                                td
+                                                    span 70%
+                                                    include ../../../components/_yellow-column
+
+                                                td
+                                                    span 20%
+                                                    include ../../../components/_red-column
+
+                                                td
+                                                    span 100%
+                                                    include ../../../components/_blue-column
+                                    .analitic-graph__slide-content
+                                        table
+                                            -for(var i = 0; i < 5; i++)
+                                                tr
+
+
+                                                    td
+                                                        span 70%
+                                                        include ../../../components/_yellow-column
+
+                                                    td
+                                                        span 20%
+                                                        include ../../../components/_red-column
+
+                                                    td
+                                                        span 100%
+                                                        include ../../../components/_blue-column
+        +btnSlide("analitic__slide-btn")
+
+
+
+
+
+

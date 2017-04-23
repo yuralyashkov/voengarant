@@ -13,7 +13,8 @@ gulp.task('templates', function () {
 
     gulp.src('./app/jade/*.jade')
         .pipe(jade({
-            locals: YOUR_LOCALS
+            locals: YOUR_LOCALS,
+            pretty: true
         }))
         .pipe(gulp.dest('./app'))
         .pipe(wiredep({
@@ -84,6 +85,13 @@ gulp.task('default', ['browser-sync', 'sass', 'templates'], function () {
 
     gulp.watch('./app/sass/layout/black-menu/initiatives/*.scss', ['sass']);
     gulp.watch('./app/sass/layout/black-menu/initiatives/*.jade', ['jade']);
+
+
+    gulp.watch('./app/sass/layout/black-menu/analitic/*.scss', ['sass']);
+    gulp.watch('./app/sass/layout/black-menu/analitic/*.jade', ['jade']);
+
+    gulp.watch('./app/sass/layout/black-menu/union/*.scss', ['sass']);
+    gulp.watch('./app/sass/layout/black-menu/union/*.jade', ['jade']);
 
     gulp.watch('./app/sass/components/*.scss', ['sass']);
     gulp.watch('./app/sass/utils/*.scss', ['sass']);

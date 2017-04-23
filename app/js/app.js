@@ -60,3 +60,24 @@ var controlSliderM = new Swiper('#advant-slide-m', {
     pagination: '#advant-pag-m',
     loop: false
 });
+// ./analitic
+var analiticSlider = new Swiper('#analitic-slider', {
+    scrollbarHide: true,
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    spaceBetween: 2
+});
+$(function () {
+
+
+$('.analitic__slide-btn').click(function () {
+
+
+    $('.analitic-graph__slide-content').slideToggle();
+
+
+});
+
+
+
+});

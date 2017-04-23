@@ -1,0 +1,23 @@
+/*SLIDE-BTN*/
+
+.btn-slide {
+
+  display: block;
+  width: 57px;
+  height: 57px;
+  background: color(filter-tab);
+  border-radius: 50%;
+  text-align: center;
+  opacity: .9;
+  transition: .2s;
+  line-height: 55px;
+  span {
+    font-size: 27px !important;
+  }
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+}
+
+/*SLIDE-BTN*/

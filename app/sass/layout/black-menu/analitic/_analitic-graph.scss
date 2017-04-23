@@ -1,0 +1,134 @@
+/*ANALITIC-GRAPH*/
+.active-sort {
+  color: color(white) !important;
+}
+
+.analitic-graph {
+
+  &__title {
+    text-align: center;
+    margin: 0 0 46px 0;
+    font-size: $s24;
+    @include breakpoint("max-width:1024px") {
+      font-size: $s36;
+    }
+  }
+  margin: 0 0 110px 0;
+  @include myriadL(18, $mainFontFamily, 300);
+  .btn-slide {
+    margin: 61px auto 0 auto;
+  }
+  &__slide-content {
+    display: none;
+  }
+}
+
+.analitic-tabs {
+
+  &_desktop {
+    @include breakpoint("max-width:1024px") {
+      display: none;
+    }
+  }
+  &_mobile {
+    display: none;
+    @include breakpoint("max-width:1024px") {
+      display: block;
+    }
+  }
+  .swiper-wrapper {
+    @include breakpoint("max-width:1024px") {
+      margin-left: 30px;
+    }
+  }
+  &__filter {
+    text-align: center;
+    margin: 0 0 35px 0;
+    ul {
+      padding: 0;
+    }
+    li {
+      display: inline-block;
+      margin: 0 34px 0 0;
+      padding: 10px 0;
+      &:last-child {
+        margin: 0;
+      }
+      @include breakpoint("max-width:1024px") {
+        margin: 0 15px 0 0;
+      }
+      a {
+        color: color(default);
+        border: 1px solid color(default);
+        @include myriadL(18, $mainFontFamily, 400);
+        background: transparent;
+        border-radius: 5px;
+        padding: 10px 36px;
+        transition: .2s;
+        @include breakpoint("max-width:1024px") {
+          padding: 10px 12px;
+
+        }
+        &:hover {
+          text-decoration: none;
+          color: color(filter-tab);
+          border: 1px solid color(filter-tab);
+        }
+        @include breakpoint("max-width:1024px") {
+          font-size: $s30;
+        }
+      }
+    }
+
+  }
+  &__content {
+    text-align: left;
+    span {
+      @include myriadL(18, $mainFontFamily, 300);
+    }
+    table {
+      width: 100%;
+
+    }
+    th {
+      background: color(thead);
+      //background: #b8b8b8;
+      border: 1px solid color(black-site);
+      width: (100%/6);
+      @include breakpoint("max-width:1024px") {
+        width: (100%)/3;
+      }
+      img {
+        float: right;
+      }
+      a {
+        display: block;
+        padding: 15px 7px 15px 18px;
+
+        color: color(white);
+        transition: .2s;
+        &:hover {
+          text-decoration: none;
+          color: color(filter-tab);
+        }
+      }
+    }
+    td {
+      border: 1px solid color(black-site);
+      padding: 15px 7px 15px 18px;
+      background: color(tdBg);
+      width: (100%/6);
+      @include breakpoint("max-width:1024px") {
+        width: (100%)/3;
+      }
+      span {
+        color: color(default)
+      }
+
+    }
+
+  }
+
+}
+
+/*ANALITIC-GRAPH*/
