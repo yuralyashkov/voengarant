@@ -140,7 +140,7 @@
     height: 251px;
     width: 293px;
     @include breakpoint("min-width: 2501px") {
-      display: none;
+      //display: none;
     }
     @include breakpoint("max-width: 2500px") {
       width: 17.8%;

@@ -1,0 +1,48 @@
+.black-page__bread-crumbs {
+  margin: 133px 0 59px 0;
+  @include breakpoint("max-width: 1024px") {
+    margin: 73px 0 94px 0;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    li {
+      display: inline-block;
+      float: left;
+      a {
+        @include text($mainFontFamily, #777777, inline, 18px, 24px, 100);
+        @include breakpoint("max-width: 1024px") {
+          @include text($mainFontFamily, #777777, inline, 20px, 22px, 100);
+        }
+      }
+      &:after {
+        content: '/';
+        font-family: $mainFontFamily;
+        color: #777777;
+        font-size: 18px;
+        font-weight: 100;
+        line-height: 24px;
+        padding: 0 5px;
+        @include breakpoint("max-width: 1024px") {
+          @include text($mainFontFamily, #777777, inline, 20px, 22px, 100);
+        }
+      }
+      &:last-child {
+        color: #ffffff;
+        font-weight: 100;
+        font-size: 18px;
+        line-height: 24px;
+        @include breakpoint("max-width: 1024px") {
+          font-size: 20px;
+          line-height: 22px;
+        }
+        &:after {
+          content: '';
+          padding: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.calculator-page {
+  &__main-block {
+    .title {
+      @include text($titleFontFamily, #ffffff, block, 36px, 40px, 300);
+      margin: 114px 0 35px 0;
+      @include breakpoint("max-width: 1024px") {
+        @include text($titleFontFamily, #ffffff, block, 45px, 50px, 300);
+        margin: 109px 0 36px 0;
+      }
+    }
+    .context {
+      @include text($mainFontFamily, #777777, block, 18px, 22px, 100);
+      margin: 0 0 88px 0;
+      @include breakpoint("max-width: 1024px") {
+        @include text($mainFontFamily, #777777, block, 30px, 35px, 100);
+        margin: 0 0 94px 0;
+      }
+    }
+    .calculator-page__calculator {
+      @include breakpoint("max-width: 1024px") {
+        background-color: #232323;
+        border-bottom: 1px solid #393939;
+      }
+    }
+    .bank-block {
+      background-color: #232323;
+      border-bottom: 1px solid #393939;
+      margin: 0 (29px / $container * 100%) 0 (29px / $container * 100%);
+      padding: 44px (50px / $container * 100%) 37px (40px / $container * 100%);
+      @include breakpoint("max-width: 1024px") {
+        border: none;
+        margin: 0;
+        padding: 51px 0 59px 0;
+      }
+      li {
+        a {
+          display: block;
+        }
+        span {
+          display: none;
+        }
+      }
+    }
+    .lg-block {
+      margin: 0 auto 138px auto;
+    }
+    .calculator_block {
+      margin: 0 (29px / $container * 100%) 0 (29px / $container * 100%);
+      border-radius: 0;
+      border: none;
+      background-color: #232323;
+      @include breakpoint("max-width: 1024px") {
+        margin: 0 0 152px 0;
+      }
+    }
+    .calculator_block__line {
+      border-bottom: 1px solid #393939;
+    }
+    .calculator_block__nomination {
+      color: #d0d0d0;
+    }
+    .calculator_block__count {
+      background-color: #323232;
+      border: 1px solid #3a3a3a;
+      color: #f5f5f5;
+      &:active, &:focus {
+        box-shadow: 0px 0px 25px 5px rgba(35,48,80,1);
+      }
+    }
+    .ui-widget-content {
+      background-color: #777777;
+    }
+    .calculator_block__result {
+      background-color: #19537b;
+    }
+  }
+  &__calculator {
+    //margin: 0 0 138px 0;
+    //@include breakpoint("max-width: 1024px") {
+    //  margin: 0 0 152px 0;
+    //}
+
+  }
+  .bank {
+    .bank-block {
+      span {
+        color: #333333;
+      }
+    }
+  }
+}
