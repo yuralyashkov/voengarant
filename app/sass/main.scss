@@ -112,11 +112,21 @@ Builders
 @import "layout/partners";
 //all-builders
 @import "layout/builders/all-builders";
+//advantage slide
+@import "layout/_advantage-slider";
+
 
 //bank
 @import "layout/bank/_bank-page";
 //bank-programs
 @import "layout/bank/bank-programs";
+
+//control
+@import "layout/control/control";
+@import "layout/control/control-stage";
+@import "layout/control/control-remarks";
+@import "layout/control/control-graph";
+
 
 //banks
 @import "layout/banks/_all-list-banks";
@@ -163,6 +173,7 @@ Initiatives
 @import "layout/black-menu/initiatives/initiatives-banner";
 @import "layout/black-menu/initiatives/initiatives-comments";
 @import "layout/black-menu/initiatives/initiatives-forma";
+
 //REVIEWS
 @import "layout/reviews/_page-reviews";
 //REVIEW
@@ -173,3 +184,14 @@ Initiatives
 //CALCULATOR PAGE
 @import "layout/calculator-page/_calculator-main-block";
 @import "layout/calculator-page/_calculator-banner";
+
+@import "layout/black-menu/initiatives/initiative";
+@import "layout/black-menu/initiatives/initiative-block";
+@import "layout/black-menu/initiatives/like";
+/*analitic*/
+@import "layout/black-menu/analitic/analitic";
+@import "layout/black-menu/analitic/analitic-graph";
+@import "layout/black-menu/analitic/_analitic-paper";
+@import "layout/black-menu/analitic/_analitic-list";
+/*union*/
+@import "layout/black-menu/union/union";

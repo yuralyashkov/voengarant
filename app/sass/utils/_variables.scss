@@ -1,8 +1,8 @@
 $mainFontFamily: "myriad-pro", sans-serif;
 $titleFontFamily: 'Roboto Slab', serif;
+$OS: 'OpenSansLight', sans-serif;
 $container: 1325px;
 $color: #303030;
-
 
 @mixin breakpoint($breakpoint) {
   @media screen and ($breakpoint) {
@@ -30,7 +30,6 @@ $color: #303030;
   -webkit-filter: grayscale(0);
 }
 
-
 *:focus {
   outline: none !important;
 }
@@ -51,6 +50,7 @@ $s35: 35px;
 //COLORS
 
 $colors: (
+        black-site: #1d1d1d,
         default: #777,
         white: #fff,
         black: #000,
@@ -68,7 +68,11 @@ $colors: (
         input: #333,
         input-focus: rgba(113, 158, 240, 0.51),
         green-bank: #379a1e,
-);
+        filter-tab: #2891c0,
+        thead: #1c1c1c,
+        tdBg: #222,
+)
+;
 $color-blue-cell: (
         1: #9a91f8,
         2: #968df8,

@@ -35,9 +35,49 @@ $(function () {
 
 });
 //   ./bank
-var bsnkSlider = new Swiper('#bank-programs', {
+var bankSlider = new Swiper('#bank-programs', {
     slidesPerView: 'auto',
     spaceBetween: 20,
     // autoplay: true,
     speed: 3000
+});
+//  ./control
+var controlSlider = new Swiper('#advant-slide', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    paginationClickable: true,
+    // autoplay: true,
+    speed: 2000,
+    pagination: '#advant-pag',
+    loop: false
+});
+var controlSliderM = new Swiper('#advant-slide-m', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    paginationClickable: true,
+    // autoplay: true,
+    speed: 2000,
+    pagination: '#advant-pag-m',
+    loop: false
+});
+// ./analitic
+var analiticSlider = new Swiper('#analitic-slider', {
+    scrollbarHide: true,
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    spaceBetween: 2
+});
+$(function () {
+
+
+$('.analitic__slide-btn').click(function () {
+
+
+    $('.analitic-graph__slide-content').slideToggle();
+
+
+});
+
+
+
 });

@@ -1,0 +1,21 @@
+/*ANALITIC*/
+
+.analitic {
+  text-align: center;
+  margin: 0 0 64px 0;
+  &__pic {
+    margin: 0 0 30px 0;
+  }
+  &__title {
+    margin-top: 0;
+  }
+  @include myriadL(18, $mainFontFamily, 300);
+  &__description {
+    color: color(default);
+    @include breakpoint("max-width:1024px") {
+      font-size: $s30;
+    }
+  }
+}
+
+/*ANALITIC*/

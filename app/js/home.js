@@ -7,7 +7,7 @@ var HomeSlider = new Swiper ('.slider-home', {
     loop: false,
 
     // If we need pagination
-    pagination: '.swiper-pagination',
+    // pagination: '.swiper-pagination',
     paginationClickable: true
 });
 

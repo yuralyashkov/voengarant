@@ -1,9 +1,7 @@
 section.initiatives-right.col-md-10
     section.initiatives-context
         .block__title Увеличение скидок по военной ипотеке
-        a(href='#').initiatives-context__like
-            img(src="../images/black-menu/heart.png")
-            span 1566
+        +like("../images/black-menu/heart.png","1566")
         .initiatives-context__text
             p Работы, выполняются сотрудниками необходимой квалификации, проходят проверку в отделе контроля качества и в системе Антиплагиат тандартный уровень оригинального текста составляет 50% для контрольных и рефератов, 60% для курсовыхработ, 70% для дипломных работ. В случае, если по требованиям Вашего ВУЗа работа должна содержать больший процент оригинального текста, информация об этом должна быть отражена Вами при оформлении заказа для того, чтобы Ваш менеджер мог учесть эти требования при оценке стоимости работы.
             span Почему это будет правильным решением?
@@ -33,4 +31,5 @@ section.initiatives-comments
         .block__text Оставьте свой комментарий по выбранной теме, или узнайте, что думают другие
         include _initiatives-comments
         include _initiatives-comments
+.desctop
     include _initiatives-forma

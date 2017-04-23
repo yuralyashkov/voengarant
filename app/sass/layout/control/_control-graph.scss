@@ -1,0 +1,26 @@
+/*CONTROL-GRAPH*/
+
+.control-graph {
+  margin: 0 0 170px 0;
+  &__title {
+    margin-top: 0;
+  }
+  text-align: center;
+  @include myriadL(18, $mainFontFamily, 300);
+  &__rate {
+    margin: 100px 0 0 0;
+  }
+  &__max-rate {
+    color: color(default);
+  }
+  @include breakpoint("max-width:1024px") {
+    margin: 130px 0 0 0;
+  }
+  &__description {
+    @include breakpoint("max-width:1024px") {
+      font-size: $s30;
+    }
+  }
+}
+
+/*CONTROL-GRAPH*/
