@@ -8,6 +8,7 @@
     font-size: 16px;
   }
   .col-md-7{
+    text-align: left;
     @include breakpoint("max-width: 1680px"){
       width: 90%;
     }
