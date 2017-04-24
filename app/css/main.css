@@ -6340,6 +6340,10 @@ body {
     body {
       padding-top: 75px; } }
 
+.dark-version {
+  background: #1d1d1d;
+  color: #fff; }
+
 .body_black {
   background: url("../images/background-black.png");
   background-size: cover;
@@ -6355,6 +6359,9 @@ body {
     background: #1d1d1d; }
   .body_black footer {
     border-top: 1px solid #777777; }
+    .body_black footer .footer__context ul, .body_black footer .footer__context a {
+      color: #777777;
+      font-size: 18px; }
 
 ul {
   margin: 0; }
@@ -13798,16 +13805,16 @@ Build
     @media screen and (max-width: 1024px) {
       .build-consultant .build-consultant__context .politic {
         display: none; } }
-  @media screen and (min-width: 1025px) {
-    .build-consultant .xs-block {
-      display: none; } }
-  @media screen and (max-width: 1024px) {
-    .build-consultant .xs-block .send {
-      margin-left: 28.5%;
-      margin-top: 40px; } }
-  @media screen and (max-width: 1024px) {
-    .build-consultant .xs-block .lg-block {
-      display: none; } }
+    @media screen and (min-width: 1025px) {
+      .build-consultant .build-consultant__context .xs-block {
+        display: none; } }
+    @media screen and (max-width: 1024px) {
+      .build-consultant .build-consultant__context .xs-block .send {
+        margin-left: 28.5%;
+        margin-top: 40px; } }
+    @media screen and (max-width: 1024px) {
+      .build-consultant .build-consultant__context .xs-block .lg-block {
+        display: none; } }
 
 .build-control {
   padding-top: 90px; }
@@ -14013,12 +14020,6 @@ News
       padding-top: 200px; } }
   .black-news .seo .but {
     margin: 30px auto 50px; }
-
-.black-news footer {
-  border-top: solid 1px #2a2a29; }
-  .black-news footer ul, .black-news footer a {
-    color: #777777;
-    font-size: 18px; }
 
 .news-ipoteka {
   text-align: center;
@@ -14374,42 +14375,6 @@ Initiatives
         .initiatives .initiatives-right .initiatives-context .block__title, .initiatives .initiatives-right .initiatives-context .block__developers .tab-content .developer__description > span, .block__developers .tab-content .initiatives .initiatives-right .initiatives-context .developer__description > span {
           line-height: 45px;
           margin-top: 0; } }
-    .initiatives .initiatives-right .initiatives-context__like {
-      display: block;
-      width: 100%;
-      color: #777777;
-      font-weight: 300;
-      text-align: center;
-      text-decoration: none;
-      margin-bottom: 50px; }
-      @media screen and (max-width: 1280px) {
-        .initiatives .initiatives-right .initiatives-context__like {
-          margin-bottom: 30px;
-          margin-top: 20px; } }
-      .initiatives .initiatives-right .initiatives-context__like img, .initiatives .initiatives-right .initiatives-context__like span {
-        display: inline-block;
-        padding-right: 5px;
-        vertical-align: sub; }
-      .initiatives .initiatives-right .initiatives-context__like img {
-        -webkit-filter: grayscale(100%);
-        -moz-filter: grayscale(100%);
-        -ms-filter: grayscale(100%);
-        -o-filter: grayscale(100%);
-        filter: grayscale(100%);
-        -webkit-filter: url(../images/grayscale.svg);
-        filter: url(../images/grayscale.svg);
-        filter: gray;
-        -webkit-filter: grayscale(1); }
-        @media screen and (max-width: 1024px) {
-          .initiatives .initiatives-right .initiatives-context__like img {
-            height: 30px; } }
-      .initiatives .initiatives-right .initiatives-context__like img:hover {
-        -webkit-filter: grayscale(0%);
-        -moz-filter: grayscale(0%);
-        -ms-filter: grayscale(0%);
-        -o-filter: grayscale(0%);
-        filter: none;
-        -webkit-filter: grayscale(0); }
     .initiatives .initiatives-right .initiatives-context p {
       color: #777777;
       font-weight: 300;
@@ -14616,16 +14581,6 @@ Initiatives
     @media screen and (max-width: 1024px) {
       .initiatives-forma .block__text {
         font-size: 20px; } }
-
-.initiative {
-  background: url("../images/black-menu/initiative.png") 100% top no-repeat;
-  background-size: cover; }
-  @media screen and (max-width: 1024px) {
-    .initiative {
-      background: #1d1d1d; } }
-  .initiative .seo {
-    padding-top: 0;
-    margin-top: 200px; }
 
 .page-reviews__main-image {
   width: 287px;
@@ -15114,9 +15069,15 @@ Initiatives
 .calculator-page .bank .bank-block span {
   color: #333333; }
 
-.initiative-image {
-  background: url("../images/black-menu/initiative.png"); }
-
+.initiative {
+  background: url("../images/black-menu/initiative.png") 100% top no-repeat;
+  background-size: cover; }
+  @media screen and (max-width: 1024px) {
+    .initiative {
+      background: #1d1d1d; } }
+  .initiative .seo {
+    padding-top: 0;
+    margin-top: 200px; }
 
 .initiative__block {
   margin-top: 50px; }
@@ -15297,7 +15258,8 @@ Contact
       margin-bottom: 140px; }
       @media screen and (max-width: 1024px) {
         .contact__block__context {
-          display: block; } }
+          display: block;
+          margin-bottom: 70px; } }
       .contact__block__context .span-block {
         display: block; }
       .contact__block__context .color, .contact__block__context label {
@@ -15321,12 +15283,20 @@ Contact
         @media screen and (max-width: 1024px) {
           .contact__block__context__map {
             margin-bottom: 150px;
-            width: 100%; } }
+            width: 100%;
+            border-radius: 0;
+            height: 420px; } }
       .contact__block__context__form {
         border: 1px solid #777777;
         padding: 40px 30px;
         border-radius: 5px;
         width: 490px; }
+        @media screen and (max-width: 1024px) {
+          .contact__block__context__form {
+            margin-bottom: 150px;
+            width: 100%;
+            border-radius: 0;
+            padding: 50px 15px; } }
         .contact__block__context__form .block__title, .contact__block__context__form .block__developers .tab-content .developer__description > span, .block__developers .tab-content .contact__block__context__form .developer__description > span {
           text-align: left; }
         .contact__block__context__form .number {
@@ -15339,10 +15309,28 @@ Contact
           @media screen and (max-width: 1280px) {
             .contact__block__context__form span, .contact__block__context__form label {
               font-size: 12px; } }
+          @media screen and (max-width: 1024px) {
+            .contact__block__context__form span, .contact__block__context__form label {
+              font-size: 20px;
+              color: #777777;
+              width: 100%; } }
+        .contact__block__context__form textarea {
+          height: 85px; }
+          @media screen and (max-width: 1024px) {
+            .contact__block__context__form textarea {
+              height: 170px; } }
         .contact__block__context__form .input-form, .contact__block__context__form textarea {
           width: 100%;
           background: #2f2f2f;
           border: none; }
+  @media screen and (max-width: 1024px) {
+    .contact .desctop {
+      display: none; } }
+  .contact .mobile {
+    display: none; }
+    @media screen and (max-width: 1024px) {
+      .contact .mobile {
+        display: block; } }
 
 /*analitic*/
 /*ANALITIC*/
