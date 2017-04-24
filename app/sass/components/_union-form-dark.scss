@@ -1,0 +1,98 @@
+/*UNION FORM DARK*/
+
+.union-form {
+  text-align: left;
+  padding: 65px 61px;
+  border: 1px solid rgba(209, 209, 209, 0.11);
+  @include breakpoint("max-width: 1024px") {
+    margin: 0 0 150px 0;
+  }
+  &_desktop {
+    @include breakpoint("max-width: 1024px") {
+      display: none;
+    }
+  }
+  &_mobile {
+    display: none;
+    @include breakpoint("max-width: 1024px") {
+      display: block;
+    }
+  }
+  .block__title {
+    margin-top: 0;
+    text-align: left;
+    @include breakpoint("max-width: 1024px") {
+      font-size: $s36;
+    }
+
+  }
+
+  &__description {
+    color: color(default);
+    @include myriadL(18, $mainFontFamily, 300);
+    margin: 0 0 20px 0;
+    @include breakpoint("max-width: 1024px") {
+      font-size: $s20;
+    }
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  &__send-btn {
+    @include btnSend;
+    font-size: $s18;
+    @include breakpoint("max-width:1024px") {
+      float: left;
+    }
+  }
+  &__send {
+    margin: 20px 0 0 0;
+    line-height: 34px;
+    overflow: hidden;
+    @include breakpoint("max-width: 1024px") {
+      line-height: 54px;
+    }
+    a {
+      color: color(link-more);
+      transition: .2s;
+      float: right;
+      @include breakpoint("max-width:1268px") {
+        float: left;
+      }
+      @include breakpoint("max-width: 1024px") {
+        font-size: $s20;
+        float: right;
+
+      }
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  form {
+    input {
+      font-size: $s18;
+      @include dark-input;
+    }
+    label {
+      color: color(default);
+      font-size: $s14;
+      font-weight: 300;
+      @include breakpoint("max-width: 1024px") {
+        font-size: $s20;
+      }
+    }
+    textarea {
+      height: 80px;
+      @include dark-input;
+      resize: none;
+      @include breakpoint("max-width: 1024px") {
+        height: 180px;
+      }
+    }
+  }
+
+}
+
+/*UNION FORM DARK*/
