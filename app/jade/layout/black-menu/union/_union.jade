@@ -11,15 +11,138 @@ section.union
             .union-present__field
                 .union-present__pic
                     img(src="./images/icons/icon-shield.png" alt="")
-                ul.union-present__list
-                    li - Скидки по военной ипотеке
-                    li - Помощь в выборе застройщиков и объектов
-                    li - Юридические консультации
-                    li - Помощь в сложных ситуациях
+                .union-present__list
+                    span.union-present__title.block__title Что ВоенГарант делает для военнослужащих:
+                    ul
+                        li - Скидки по военной ипотеке
+                        li - Помощь в выборе застройщиков и объектов
+                        li - Юридические консультации
+                        li - Помощь в сложных ситуациях
             .union-present__field
                 .union-present__pic
                     img(src="./images/icons/icon-medal.png" alt="")
-                ul.union-present__list
-                    li - Более 40 000 участников объединения
-                    li - Сэкономлено 1 000 000 000 рублей гос средств
-                    li - Более 10 000 военнослужащих приобрели квартиры
+                .union-present__list
+                    span.union-present__title.block__title Достижения
+                    ul
+                        li - Более 40 000 участников объединения
+                        li - Сэкономлено 1 000 000 000 рублей гос средств
+                        li - Более 10 000 военнослужащих приобрели квартиры
+        .union-diagram
+            .row
+                .col-md-6.col-lg-6
+                    .union-diagram__pic
+                        img(src="./images/union-graph.png" alt="")
+                .col-md-6.col-lg-6
+                    .union-diagram__content
+                        .union-diagram__graph
+                            img(src="./images/icons/icon-graph.png" alt="")
+                        .union-diagram__description
+                            p.
+                                Мы оцениваем и выбираем лучшие <br>
+                                объекты и лучших застройщиков <br>
+                                для военносолужащих.
+                        button.union-diagram__btn Смотреть рейтинги
+        .union-support
+            .row
+                .col-md-6.col-lg-6.col-sm-12.col-xs-12
+                    .block__title.union-support__title Поддержка по всей России
+                    .union-support__description
+                        p.
+                            Несколько тысяч семей с помощью ВоенГаранта выбрали из продажи готовых квартир для военнослужащих своё жильё. Часто сделки проводились с недвижимостью в других регионах, о которых будущий владелец имел мало информации. Мы восполняли пробелы, предоставляя исчерпывающие сведения о городе и подходящих вариантах.
+                        p.
+                            Портал ВоенГарант построен таким образом, чтобы непосвящённый человек за короткое время смог самостоятельно получить представление о приобретении квартиры в ипотеку военным.
+                        p.
+                            При возникновении вопросов обратитесь в Федеральный Call-центр или обучающий центр по ипотечным вопросам для военнослужащих – начните путь к собственной квартире уже сегодня. Несколько тысяч семей с помощью ВоенГаранта выбрали из продажи готовых квартир для военнослужащих своё жильё. Часто сделки проводились с недвижимостью в других регионах, о которых будущий владелец имел мало информации.
+                .col-md-6.col-lg-6.p-r-none.union-p-70
+                    .union-form_desktop
+                        include ../../../components/_union-form-dark
+    .union-form_mobile
+        include ../../../components/_union-form-dark
+    .container
+        .union-teammate
+            .union-teammate__pic
+                img(src="./images/active-team.png" alt="")
+            span.union-teammate__title.block__title.
+                Мы создали современный личный кабинет для активных<br>
+                участиков объединения
+            .union-teammate__list
+                .row
+                    .col-md-3.col-lg-3
+                        .union-teammate__item
+                            p.
+                                Выдвижение общественных инициатив военнослужащими и членами их семей
+                            a(href="#")
+                                .union-teammate__icon
+                                    img(src="./images/icons/icon-eye.png" alt="")
+                                span Перейти к инициативам
+                    .col-md-3.col-lg-3
+                        .union-teammate__item
+                            p.
+                                Работа с ВоенГарантом - дополнительные возможности семьям военнослужащих
+                            a(href="#")
+                                .union-teammate__icon
+                                    img(src="./images/icons/icon-arrow.png" alt="")
+                                span Условия сотрудничества
+                    .col-md-3.col-lg-3
+                        .union-teammate__item
+                            p.
+                                Переписка с профессиональным юристом по любым правовым вопросам военнослужащих
+                            a(href="#")
+                                .union-teammate__icon
+                                    img(src="./images/icons/icon-quest.png" alt="")
+                                span Задать вопрос
+                    .col-md-3.col-lg-3
+                        .union-teammate__item
+                            p.
+                                Развитие информационного портала военнослежащих участниками объединения
+                            a(href="#")
+                                .union-teammate__icon
+                                    img(src="./images/icons/icon-lock.png" alt="")
+                                span Зарегистрироваться
+        .union-cooperation
+            span.block__title.union-cooperation__title.
+                С какими организациями сотрудничает<br> военгарант
+            .union-cooperation__description
+                p.
+                    Несколько тысяч семей с помощью ВоенГаранта выбрали из продажи готовых квартир для военнослужащих своё жильё. Часто сделки проводились с недвижимостью в других регионах, о которых будущий владелец имел мало информации. Мы восполняли пробелы, предоставляя исчерпывающие сведения о городе и подходящих вариантах.
+                p.
+                    Портал ВоенГарант построен таким образом, чтобы непосвящённый человек за короткое время смог самостоятельно получить представление о приобретении квартиры в ипотеку военным.
+        .union-agreement
+            .union-agreement__pic
+                img(src="./images/icons/ros-guard.png" alt="")
+            span.union-agreement__title.block__title.
+                Подписано соглашение <br>
+                о взаимодействии с Росгрвардией
+            .union-agreement__description
+                p.
+                    Если военнослужащий ВВ МВД России станет военнослужащим Росгвардии,<br> военная ипотека для него сохранится, выплаты и накопления продолжатся.
+                a.more(href="#") Подробнее
+            .union-agreement__list
+                .row
+                    .col-lg-4.col-md-4
+                        .union-agreement__item
+                            .union-agreement__item-pic
+                                img(src="./images/icons/agreement-1.png" alt="")
+                            p.
+                                Взаимодействие с государственными структурами
+                            a.more(href="#") Подробнее
+                    .col-lg-4.col-md-4
+                        .union-agreement__item
+                            .union-agreement__item-pic
+                                img(src="./images/icons/agreement-2.png" alt="")
+                            p.
+                                Партнёрство
+                                с лучшими застройщикам
+                            a.more(href="#") Подробнее
+                    .col-lg-4.col-md-4
+                        .union-agreement__item
+                            .union-agreement__item-pic
+                                img(src="./images/icons/agreement-3.png" alt="")
+                            p.
+                                Общественный контроль
+                                при сотрудничестве с МОО УНИС
+
+                            a.more(href="#") Подробнее
+
+
+

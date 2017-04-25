@@ -7,12 +7,20 @@ var HomeSlider = new Swiper ('.slider-home', {
     loop: false,
 
     // If we need pagination
-    // pagination: '.swiper-pagination',
+    //pagination: '.swiper-pagination',
     paginationClickable: true
 });
 
 $(function () {
+    var HomeSlider = new Swiper ('#partners', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: false,
 
+        // If we need pagination
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
     $('.developer-tab a').click(function () {
         var id = $(this).data('id');
         $('.developer-tab a').removeClass('active');
