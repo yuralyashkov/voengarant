@@ -168,6 +168,11 @@ News
 @import "layout/black-menu/news/news-form";
 @import "layout/black-menu/news/news-banner";
 /**
+New
+ */
+@import "layout/black-menu/news/new";
+@import "layout/black-menu/news/_new-forms";
+/**
 Initiatives
  */
 @import "layout/black-menu/initiatives/initiatives";
@@ -218,4 +223,12 @@ Partners
  */
 @import "layout/black-menu/partners/partners";
 @import "layout/black-menu/partners/partners-slider";
+
+/**
+Vtorichka
+ */
+@import "layout/vtorichka/vtorichka";
+@import "layout/vtorichka/vtorichka-title";
+@import "layout/vtorichka/vtoricchka-aktual";
+@import "layout/vtorichka/vtorichka-form";
 

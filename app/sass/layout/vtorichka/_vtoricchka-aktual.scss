@@ -1,0 +1,35 @@
+.vtorichka__aktual{
+  text-align: center;
+  margin-bottom: 210px;
+  .block__text{
+    width: 46%;
+    margin: 0 auto 40px;
+  }
+  .row{
+    display: flex;
+    text-align: left;
+    margin: 0 -2.5px;
+  }
+  .vtorichka__aktual__context{
+      .col-md-4{
+        background: #0098f4;
+        padding: 60px;
+        color: #ffffff;
+        margin: 0 2.5px;
+        .block__title{
+          width: 50%;
+          line-height: 36px;
+          margin-bottom: 20px;
+        }
+        .block__text{
+          width: 77%;
+          margin: 0;
+          color: #ffffff;
+        }
+      }
+      .col-md-4:nth-child(even){
+        background: #303030;
+      }
+  }
+
+}

@@ -1,0 +1,48 @@
+.vtorichka__form{
+  &__context{
+    margin-top: 100px;
+    width: 59.3%;
+    .block__title{
+      margin-bottom: 25px;
+    }
+    .block__text{
+      margin-bottom: 50px;
+      width: 80%;
+      color: #777777;
+    }
+    ol{
+      padding: 0 15px;
+    }
+    li{
+      padding-bottom: 20px;
+    }
+  }
+  &__block{
+    padding: 50px 60px;
+    border:solid 1px #dcdcdc;
+    width: 40.7%;
+    img{
+      padding-bottom: 20px;
+    }
+    .block__title{
+      margin: 0 0 15px;
+    }
+    .block__text{
+      margin-bottom: 45px;
+    }
+    span{
+      display: block;
+      font-family: "Roboto Slab", serif;
+      font-weight: 300;
+      font-size: 30px;
+      padding-bottom: 20px;
+    }
+    .block__text:nth-child(2){
+      margin-bottom: 30px;
+    }
+    input,textarea{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+}
