@@ -1,0 +1,42 @@
+/*TOWN*/
+
+.town {
+  padding: 150px 0 0 0;
+  &__title {
+    margin-top: 0;
+    text-align: center;
+  }
+  .rate__title {
+    margin: 0;
+    font-size: $s24;
+    text-align: center;
+  }
+  .builders-tabs__max-reiting-inscription {
+    margin: 0 0 25px 0;
+  }
+  &__description {
+    text-align: center;
+    @include myriadL(18, $mainFontFamily, 300);
+    @include breakpoint("max-width:1024px") {
+      font-size: $s30;
+    }
+  }
+  .object {
+    margin: 0 0 250px 0;
+    &-main-slider {
+      margin: 0 0 200px 0;
+    }
+  }
+  .famous__description {
+    @include myriadL(18, $mainFontFamily, 300);
+    color: color(default);
+    text-align: center;
+    margin: 0 0 25px 0;
+    @include breakpoint("max-width:1024px") {
+      font-size: $s30;
+    }
+  }
+
+}
+
+/*TOWN*/
