@@ -27,6 +27,26 @@
 
 }
 
+@mixin dark-input() {
+
+  width: 100%;
+  margin: 0 0 4px 0;
+  border-radius: 5px;
+  border: 1px solid rgba(209, 209, 209, 0.11);
+  padding: 5px 20px;
+  color: color(white);
+  transition: .2s;
+  font-weight: 300;
+  background: #313131;
+  &:focus {
+    box-shadow: 0 4px 14px #273acb;
+  }
+  @include breakpoint("max-width: 1024px") {
+    font-size: $s30;
+  }
+
+}
+
 @mixin btnSend() {
 
   width: 155px;
@@ -37,6 +57,7 @@
   opacity: .9;
   transition: .2s;
   font-weight: 300;
+  font-family: $mainFontFamily;
   &:hover {
     opacity: 1;
   }

@@ -1,0 +1,86 @@
+.articles-table {
+  margin: 0 0 172px 0;
+  @include breakpoint("max-width: 1024px") {
+    margin: 0 0 146px 0;
+  }
+  .col-md-5 {
+    @include breakpoint("max-width: 1024px") {
+      width: 100%;
+    }
+  }
+  .col-md-offset-2 {
+    @include breakpoint("max-width: 1024px") {
+      margin-left: 0;
+    }
+  }
+  .col-md-5:first-child {
+    tr:last-child {
+      @include breakpoint("max-width: 1024px") {
+        padding: 0 0 36px 0;
+      }
+    }
+  }
+  tr {
+    display: block;
+    padding: 0 0 19px 0;
+    @include breakpoint("max-width: 1024px") {
+      padding: 0 0 36px 0;
+    }
+    &:last-child {
+      padding: 0;
+    }
+  }
+  .reiting {
+    width: 40px;
+    position: relative;
+    @include breakpoint("max-width: 1024px") {
+      width: 60px;
+    }
+    .no {
+      position: absolute;
+      top: 0;
+      left: 5px;
+      @include text($mainFontFamily, #777777, block, 10px, 12px, 100);
+      @include breakpoint("max-width: 1024px") {
+        font-size: 15px;
+        left: 7px;
+      }
+    }
+    img {
+      width: 23px;
+      height: 23px;
+      float: right;
+      @include breakpoint("max-width: 1024px") {
+        width: 33px;
+        height: 32px;
+      }
+    }
+  }
+  .article-name {
+    padding-left: 10px;
+    @include breakpoint("max-width: 1024px") {
+      padding-left: 23px;
+    }
+    a {
+      @include text($mainFontFamily, #f5f5f5, inline-block, 18px, 19px, 100);
+      vertical-align: middle;
+      @include breakpoint("max-width: 1024px") {
+        font-size: 30px;
+        line-height: 32px;
+      }
+    }
+  }
+  .yet {
+    margin: 50px 0 0 0;
+    .down-arrow {
+      font-size: 20px;
+    }
+    @include breakpoint("min-width: 1025px") {
+      margin: 0;
+      display: none;
+    }
+    a:hover, a:active {
+      color: #777777;
+    }
+  }
+}
