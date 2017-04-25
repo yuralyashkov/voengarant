@@ -1,0 +1,29 @@
+.townhouse-main-block {
+  margin: 162px 0 200px 0;
+  .block_title {
+    @include text($titleFontFamily, #1f1f1f, block, 36px, 40px, 300);
+    margin: 0 0 12px 0;
+    @include breakpoint("max-width: 1024px") {
+      @include text($titleFontFamily, #1f1f1f, block, 45px, 50px, 300);
+      margin: 0 0 20px 0;
+    }
+  }
+  .block_subtitle {
+    @include text($titleFontFamily, #333333, block, 24px, 26px, 300);
+    margin: 0 0 25px 0;
+    @include breakpoint("max-width: 1024px") {
+      @include text($titleFontFamily, #333333, block, 36px, 40px, 300);
+      margin: 0 0 35px 0;
+    }
+  }
+  .block_context {
+    @include text($mainFontFamily, #333333, block, 18px, 24px, 100);
+    margin: 0 auto 78px auto;
+    width: ( 955px / $container * 100%);
+    @include breakpoint("max-width: 1024px") {
+      @include text($mainFontFamily, #333333, block, 30px, 35px, 100);
+      margin: 0 auto 80px auto;
+      width: 95%;
+    }
+  }
+}
