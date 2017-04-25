@@ -1,0 +1,110 @@
+.articles-title {
+  margin: 31px 0 43px 0;
+  @include breakpoint("max-width: 1024px") {
+    margin: 106px 0 60px 0;
+  }
+  &__main-image {
+    width: 298px;
+    height: 187px;
+    margin: 0 auto;
+    display: block;
+    @include breakpoint("max-width: 1024px") {
+      width: 443px;
+      height: 279px;
+    }
+  }
+  .subtitle {
+    @include text($titleFontFamily, #ffffff, block, 24px, 26px, 300);
+    margin: 37px 0 15px 0;
+    @include breakpoint("max-width: 1024px") {
+      @include text($titleFontFamily, #ffffff, block, 36px, 40px, 300);
+      margin: 52px 0 14px 0;
+    }
+  }
+  .title {
+    @include text($titleFontFamily, #ffffff, block, 36px, 40px, 300);
+    margin: 0 0 20px 0;
+    @include breakpoint("max-width: 1024px") {
+      @include text($titleFontFamily, #ffffff, block, 45px, 50px, 300);
+      margin: 0 0 34px 0;
+    }
+  }
+  .context {
+    @include text($mainFontFamily, #777777, block, 18px, 22px, 100);
+    margin: 0 0 35px 0;
+    @include breakpoint("max-width: 1024px") {
+      @include text($mainFontFamily, #777777, block, 30px, 32px, 100);
+      margin: 0 0 46px 0;
+    }
+  }
+  .link-add {
+    display: inline-block;
+    margin: 0 0 34px 0;
+    opacity: .9;
+    &:hover, &:active {
+      opacity: 1;
+    }
+    @include breakpoint("max-width: 1024px") {
+      margin: 0 0 56px 0;
+    }
+    img {
+      //width: 26px;
+      height: 26px;
+      padding-right: 8px;
+      @include breakpoint("max-width: 1024px") {
+        //width: 44px;
+        height: 33px;
+        padding-right: 12px;
+      }
+    }
+    span {
+      @include text($mainFontFamily, #ffffff, inline-block, 16px, 26px, 100);
+      vertical-align: middle;
+      @include breakpoint("max-width: 1024px") {
+        @include text($mainFontFamily, #ffffff, inline-block, 25px, 33px, 100);
+      }
+    }
+  }
+  .sorting-buttons {
+    margin: 0 0 42px 0;
+    @include breakpoint("max-width: 1024px") {
+      margin: 0 0 60px 0;
+    }
+    a {
+      display: inline-block;
+      border: 1px solid #777777;
+      border-radius: 5px;
+      box-sizing: border-box;
+      text-decoration: none;
+      width: (128px / $container * 100%);
+      text-align: center;
+      @include breakpoint("max-width: 1024px") {
+        width: 165px;
+      }
+      &:hover {
+        border: 1px solid #2891c0;
+        span {
+          color: #2891c0;
+          //font-weight: 400;
+        }
+        text-decoration: none;
+      }
+      span {
+        @include text($mainFontFamily, #777777, block, 18px, 22px, 100);
+        padding-top: 8px;
+        padding-bottom: 8px;
+        @include breakpoint("max-width: 1024px") {
+          @include text($mainFontFamily, #777777, block, 30px, 35px, 100);
+          padding-top: 17px;
+          padding-bottom: 17px;
+        }
+      }
+      &:first-child {
+        margin-right: (16px / $container * 100%);
+        @include breakpoint("max-width: 1024px") {
+          margin-right: (24px / $container * 100%);
+        }
+      }
+    }
+  }
+}
