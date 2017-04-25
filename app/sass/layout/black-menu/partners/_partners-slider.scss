@@ -1,0 +1,124 @@
+.partners-slider{
+  background: #fafafa;
+  .round-border{
+    @include breakpoint("max-width: 1680px") {
+      height: 400px;
+    }
+    @include breakpoint("max-width: 1280px") {
+      height: 300px;
+    }
+    @include breakpoint("max-width: 1024px") {
+      display: block;
+      height: 410px;
+    }
+  }
+  .round-image{
+    padding-top: 85px;
+    position: relative;
+    @include breakpoint("max-width: 1280px") {
+      padding-top: 50px;
+    }
+    &__block{
+      display: inline-block;
+      text-align: center;
+      margin: 0 auto 40px;
+      img{
+        display: inline-block;
+        float: left;
+        width: auto;
+        height:auto;
+        border-radius: 0;
+        padding-right: 15px;
+        @include breakpoint("max-width: 1280px") {
+          height: 50px;
+        }
+        @include breakpoint("max-width: 1024px") {
+          height: 70px;
+        }
+      }
+    }
+    .block__title,.block__text{
+      text-align: center;
+      display: block;
+      color: #333333;
+    }
+    .block__text{
+      width: 51%;
+      margin: 0 auto 20px;
+      @include breakpoint("max-width: 1024px") {
+        width: 100%;
+      }
+    }
+    .more{
+      @include breakpoint("max-width: 1680px") {
+        font-size: 16px;
+      }
+      @include breakpoint("max-width: 1280px") {
+        font-size: 14px;
+      }
+      @include breakpoint("max-width: 1024px") {
+        font-size: 30px;
+      }
+    }
+    .more:hover{
+      color: #00b3ee;
+    }
+    &__sale{
+      background: url(../images/black-menu/sale.png) no-repeat;
+      background-size: cover;
+      width: 189px;
+      height: 35px;
+      color: #ffffff;
+      position: absolute;
+      right: -150px;
+      top: 40px;
+      padding-left: 30px;
+      padding-right: 25px;
+      border-radius: 0 5px 15px 0;
+      font-size: 14px;
+      @include breakpoint("max-width: 1680px") {
+        right: -140px;
+        top: 0;
+      }
+      @include breakpoint("max-width: 1280px") {
+        right: -105px;
+      }
+      @include breakpoint("max-width: 1024px") {
+        background: url(../images/black-menu/sale-mob.png) no-repeat;
+        background-size: cover;
+        height: 86px;
+        width: 165px;
+        font-size: 25px;
+        line-height: 24px;
+        padding-top: 8px;
+        right: -100px;
+        top: -60px;
+        padding-right: 5px;
+        padding-left: 10px;
+      }
+    }
+  }
+  .swiper-slide .slider-home__text{
+    color: #333333;
+  }
+  .swiper-slide{
+    margin-top: 100px;
+    @include breakpoint("max-width: 1680px") {
+      margin-top: 200px;
+    }
+  }
+  .slider-home{
+    margin-bottom: 190px;
+  }
+  .slider-home{
+    @include breakpoint("max-width: 1680px") {
+      height: 635px;
+    }
+  }
+  .swiper-wrapper{
+    @include breakpoint("max-width: 1680px") {
+      height: 70%;
+    }
+
+  }
+}

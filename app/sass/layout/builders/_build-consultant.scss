@@ -134,12 +134,12 @@
           margin-left: 28.5%;
           margin-top: 40px;
         }
-
       }
       .lg-block {
         @include breakpoint("max-width: 1024px") {
           display: none;
-
+        }
+      }
         }
       }
       //.build-consultant__context{
@@ -221,5 +221,8 @@
       //  }
       //}
     }
+
   }
+
 }
+
