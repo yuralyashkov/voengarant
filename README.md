@@ -27,6 +27,7 @@
 <li><a href="http://voengarant.soffia.by/app/initiative.html">Инициатива</a></li>
 <li><a href="#">Партнеры</a></li>
 <li><a href="http://voengarant.soffia.by/app/contact.html">Контакты</a></li>
+<li><a href="http://voengarant.soffia.by/app/articles.html">Военная ипотека в 2017году (статьи)</a></li>
 </ul>
 
 Страницы вне меню
