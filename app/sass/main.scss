@@ -155,6 +155,7 @@ Build
 @import "layout/builders/build-consultant";
 @import "layout/builders/build-control";
 @import "layout/builders/build-anather";
+
 /**
 Black-menu
  */
@@ -207,11 +208,22 @@ Contact
 /*union*/
 @import "layout/black-menu/union/union";
 
+//ARTICLES
+@import "layout/articles/_articles-title";
+@import "layout/articles/_articles-table";
+@import "layout/articles/_articles-comments-block";
+@import "layout/articles/_articles-forma";
+
+/*town*/
+@import "layout/town";
+
+
 /**
 Partners
  */
 @import "layout/black-menu/partners/partners";
 @import "layout/black-menu/partners/partners-slider";
+
 /**
 Vtorichka
  */
@@ -219,3 +231,4 @@ Vtorichka
 @import "layout/vtorichka/vtorichka-title";
 @import "layout/vtorichka/vtoricchka-aktual";
 @import "layout/vtorichka/vtorichka-form";
+
