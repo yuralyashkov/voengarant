@@ -34,4 +34,5 @@
 <ul>
 
 <li><a href="http://voengarant.soffia.by">Главная</a></li>
+<li><a href="http://voengarant.soffia.by/text-page.html">Текстовая страница</a></li>
 </ul>
