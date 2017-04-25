@@ -37,6 +37,7 @@
       margin-bottom: 140px;
       @include breakpoint("max-width: 1024px"){
         display: block;
+        margin-bottom: 70px;
       }
       .span-block{
         display: block;
@@ -67,6 +68,8 @@
         @include breakpoint("max-width: 1024px"){
           margin-bottom: 150px;
           width: 100%;
+          border-radius: 0;
+          height: 420px;
         }
       }
       &__form{
@@ -74,6 +77,13 @@
         padding: 40px 30px ;
         border-radius: 5px;
         width: 490px;
+        @include breakpoint("max-width: 1024px"){
+          margin-bottom: 150px;
+          width: 100%;
+          border-radius: 0;
+          padding: 50px 15px ;
+
+        }
         .block__title{
           text-align: left;
         }
@@ -88,6 +98,17 @@
           @include breakpoint("max-width: 1280px"){
             font-size: 12px;
           }
+          @include breakpoint("max-width: 1024px"){
+            font-size: 20px;
+            color: #777777;
+            width: 100%;
+          }
+        }
+        textarea{
+          height: 85px;
+          @include breakpoint("max-width: 1024px") {
+            height: 170px;
+          }
         }
         .input-form,textarea{
           width: 100%;
@@ -96,6 +117,16 @@
         }
       }
     }
-
+  }
+  .desctop{
+    @include breakpoint("max-width: 1024px"){
+      display: none;
+    }
+  }
+  .mobile{
+    display: none;
+    @include breakpoint("max-width: 1024px"){
+      display: block;
+    }
   }
 }
