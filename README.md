@@ -33,6 +33,8 @@
 Страницы вне меню
 <ul>
 
-<li><a href="http://voengarant.soffia.by">Главная</a></li>
+<li><a href="http://voengarant.soffia.by/app/">Главная</a></li>
+<li><a href="http://voengarant.soffia.by/app/object.html">Объект</a></li>
 <li><a href="http://voengarant.soffia.by/text-page.html">Текстовая страница</a></li>
+<li><a href="http://voengarant.soffia.by/app/townhouse.html">Таунхаусы</a></li>
 </ul>
