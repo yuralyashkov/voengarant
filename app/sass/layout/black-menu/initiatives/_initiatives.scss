@@ -70,18 +70,6 @@
         font-family: "Roboto Slab";
         font-weight: 400;
       }
-      .more{
-        margin-left: 18px;
-        margin-top: 45px;
-        display: block;
-      }
-      .more:after{
-        content: '<';
-        margin-left: -60px;
-        @include breakpoint("max-width: 1024px") {
-          margin-left: -95px;
-        }
-      }
       .people-like{
         display: none;
         position: absolute;

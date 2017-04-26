@@ -458,3 +458,15 @@ ul.partners-ul {
     }
   }
 }
+/**Link Back**/
+.back{
+  display: inline-block;
+  margin-left: 18px;
+}
+.back:after{
+  content: '<';
+  margin-left: -60px;
+  @include breakpoint("max-width: 1024px") {
+    margin-left: -95px;
+  }
+}

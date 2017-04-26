@@ -1,0 +1,103 @@
+.new{
+  padding-top: 200px;
+  &-right{
+    img{
+      width: 100%;
+      height: 290px;
+      margin-bottom: 25px;
+    }
+    &__context{
+      background: #232323;
+      padding: 30px 150px 30px 50px;
+      position: relative;
+      margin-bottom: 70px;
+      &__action,&__date{
+        display: inline-block;
+        float: left;
+        margin-bottom: 35px;
+        color: #777777;
+        font-family: "Roboto Slab", serif;
+        font-weight: 100;
+        font-size: 16px;
+        @include breakpoint("max-width: 1680px") {
+          font-size: 14px;
+        }
+        @include breakpoint("max-width: 1280px") {
+          font-size: 12px;
+        }
+        @include breakpoint("max-width: 1024px") {
+          font-size: 20px;
+        }
+      }
+      &__action{
+        padding-right: 10px;
+        border-right: solid 1px #777777;
+      }
+      &__date{
+        width: 82%;
+        padding-left: 10px;
+      }
+      &__sale{
+        position: absolute;
+        right: 0;
+        background: url(../images/black-menu/sale-new.png);
+        background-size: cover;
+        padding: 0 10px;
+        font-size: 14px;
+        @include breakpoint("max-width: 1680px") {
+          font-size: 12px;
+        }
+        @include breakpoint("max-width: 1280px") {
+          font-size: 10px;
+        }
+        @include breakpoint("max-width: 1024px") {
+          font-size: 20px;
+        }
+      }
+      .block__title{
+        margin: 0 0 20px;
+        display: block;
+      }
+      p{
+        font-size: 18px;
+        font-weight: normal;
+        color: #777777;
+        padding-bottom: 20px;
+        font-family: "myriad-pro", sans-serif;
+        @include breakpoint("max-width: 1680px") {
+          font-size: 16px;
+        }
+        @include breakpoint("max-width: 1280px") {
+          font-size: 14px;
+        }
+        @include breakpoint("max-width: 1024px") {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  &-object{
+    .block__title{
+      text-align: center;
+      margin-top: 0;
+    }
+    .block__text{
+      width: 54%;
+      text-align: center;
+      margin: 0 auto 15px;
+    }
+    .more{
+      display: block;
+      text-align: center;
+      width: 15%;
+      margin: 0 auto;
+    }
+  }
+  .object{
+    .block__text,.object__next{
+      display: none;
+    }
+    margin-bottom: 100px;
+
+  }
+}
