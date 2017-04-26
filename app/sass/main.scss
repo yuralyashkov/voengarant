@@ -155,7 +155,6 @@ Build
 @import "layout/builders/build-consultant";
 @import "layout/builders/build-control";
 @import "layout/builders/build-anather";
-
 /**
 Black-menu
  */
@@ -194,12 +193,6 @@ Initiatives
 @import "layout/black-menu/initiatives/initiative";
 @import "layout/black-menu/initiatives/initiative-block";
 @import "layout/black-menu/initiatives/like";
-
-/**
-Contact
- */
-@import "layout/black-menu/contact/contact";
-
 /*analitic*/
 @import "layout/black-menu/analitic/analitic";
 @import "layout/black-menu/analitic/analitic-graph";
@@ -207,7 +200,6 @@ Contact
 @import "layout/black-menu/analitic/_analitic-list";
 /*union*/
 @import "layout/black-menu/union/union";
-
 //ARTICLES
 @import "layout/articles/_articles-title";
 @import "layout/articles/_articles-table";

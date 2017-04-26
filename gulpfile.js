@@ -116,6 +116,9 @@ gulp.task('default', ['browser-sync', 'sass', 'templates'], function () {
     gulp.watch('./app/sass/layout/articles/*.scss', ['sass']);
     gulp.watch('./app/sass/layout/articles/*.jade', ['jade']);
 
+    gulp.watch('./app/sass/layout/townhouse/*.scss', ['sass']);
+    gulp.watch('./app/sass/layout/townhouse/*.jade', ['jade']);
+
     gulp.watch('./app/sass/components/*.scss', ['sass']);
     gulp.watch('./app/sass/utils/*.scss', ['sass']);
     gulp.watch('./app/sass/*.scss', ['sass']);
