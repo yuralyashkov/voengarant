@@ -167,11 +167,6 @@ News
 @import "layout/black-menu/news/news-form";
 @import "layout/black-menu/news/news-banner";
 /**
-New
- */
-@import "layout/black-menu/news/new";
-@import "layout/black-menu/news/_new-forms";
-/**
 Initiatives
  */
 @import "layout/black-menu/initiatives/initiatives";
@@ -206,6 +201,9 @@ Initiatives
 @import "layout/articles/_articles-comments-block";
 @import "layout/articles/_articles-forma";
 
+//TOWNHOUSE
+@import "layout/townhouse/_townhouse";
+
 /*town*/
 @import "layout/town";
 
@@ -224,5 +222,3 @@ Vtorichka
 @import "layout/vtorichka/vtoricchka-aktual";
 @import "layout/vtorichka/vtorichka-form";
 
-//TOWNHOUSE
-@import "layout/townhouse/_townhouse";
