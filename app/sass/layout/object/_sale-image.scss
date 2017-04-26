@@ -27,28 +27,28 @@
 }
 .sale-information {
   .group-title {
-    position: relative;
     span {
       font-family: $titleFontFamily;
       font-size: 36px;
       color: #333333;
+      display: inline-block;
       @include breakpoint("max-width: 1024px") {
         font-size: 60px;
+        max-width: 90%;
       }
     }
     a {
       width: 16px;
       display: inline-block;
       height: 15px;
-      position: absolute;
-      top: 0;
+      margin-bottom: 18px;
       background-image: url("../images/icons/add-to-favorites.png");
       background-repeat: no-repeat;
       background-size: contain;
       @include breakpoint("max-width: 1024px") {
         width: 62px;
         height: 58px;
-        float: right;
+        margin-bottom: 31px;
         //background-size: contain;
       }
     }

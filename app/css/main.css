@@ -9286,29 +9286,29 @@ footer {
       height: 100%;
       border-radius: 100%; }
 
-.sale-information .group-title {
-  position: relative; }
-  .sale-information .group-title span {
-    font-family: "Roboto Slab", serif;
-    font-size: 36px;
-    color: #333333; }
-    @media screen and (max-width: 1024px) {
-      .sale-information .group-title span {
-        font-size: 60px; } }
-  .sale-information .group-title a {
-    width: 16px;
-    display: inline-block;
-    height: 15px;
-    position: absolute;
-    top: 0;
-    background-image: url("../images/icons/add-to-favorites.png");
-    background-repeat: no-repeat;
-    background-size: contain; }
-    @media screen and (max-width: 1024px) {
-      .sale-information .group-title a {
-        width: 62px;
-        height: 58px;
-        float: right; } }
+.sale-information .group-title span {
+  font-family: "Roboto Slab", serif;
+  font-size: 36px;
+  color: #333333;
+  display: inline-block; }
+  @media screen and (max-width: 1024px) {
+    .sale-information .group-title span {
+      font-size: 60px;
+      max-width: 90%; } }
+
+.sale-information .group-title a {
+  width: 16px;
+  display: inline-block;
+  height: 15px;
+  margin-bottom: 18px;
+  background-image: url("../images/icons/add-to-favorites.png");
+  background-repeat: no-repeat;
+  background-size: contain; }
+  @media screen and (max-width: 1024px) {
+    .sale-information .group-title a {
+      width: 62px;
+      height: 58px;
+      margin-bottom: 31px; } }
 
 .sale-information .group-name {
   display: inline-block;
